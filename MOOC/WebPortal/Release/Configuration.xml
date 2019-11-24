@@ -1,0 +1,440 @@
+<Configuration>
+  <Logger>
+    <LogLevel>1</LogLevel>
+    <LogPath>D:\SVN\Course\WebPortal\Logs</LogPath>
+    <LogFileName>Courses.log</LogFileName>
+    <LogFileSize>1</LogFileSize>
+    <LogType>file</LogType>
+    <LogDBConnectionString>Server=localhost;Port=3306;Database=College;Uid=root;Pwd=sndt;Pooling=false;Connect timeout=900;</LogDBConnectionString>
+  </Logger>
+  <EmailSettings>
+    <EmailAddress>vasim.ahmed@gmail.com</EmailAddress>
+    <UserName>wasim</UserName>
+    <Password>wasimahmed</Password>
+    <Port>25</Port>
+    <Server>gmail.com</Server>
+    <IsSSLEnabled>False</IsSSLEnabled>
+    <IsHTMLResponse>True</IsHTMLResponse>
+  </EmailSettings>
+  <SeatNumber>
+    <Course id="1" name="B.A. - I">
+      <Initial>A</Initial>
+      <Year>First Year</Year>
+      <Semester>october</Semester>
+      <StartNo>13401</StartNo>
+      <EndNo>13600</EndNo>
+    </Course>
+    <Course id="1" name="B.A. - I">
+      <Initial>A</Initial>
+      <Year>First Year</Year>
+      <Semester>march</Semester>
+      <StartNo>23401</StartNo>
+      <EndNo>23600</EndNo>
+    </Course>
+    <Course id="2" name="B.A. - II">
+      <Initial>A</Initial>
+      <Year>Second Year</Year>
+      <Semester>october</Semester>
+      <StartNo>33401</StartNo>
+      <EndNo>33600</EndNo>
+    </Course>
+    <Course id="2" name="B.A. - II">
+      <Initial>A</Initial>
+      <Year>Second Year</Year>
+      <Semester>march</Semester>
+      <StartNo>43401</StartNo>
+      <EndNo>43600</EndNo>
+    </Course>
+    <Course id="6" name="B.A. - III">
+      <Initial>A</Initial>
+      <Year>Third Year</Year>
+      <Semester>october</Semester>
+      <StartNo>51001</StartNo>
+      <EndNo>51300</EndNo>
+    </Course>
+    <Course id="6" name="B.A. - III">
+      <Initial>A</Initial>
+      <Year>Third Year</Year>
+      <Semester>march</Semester>
+      <StartNo>61001</StartNo>
+      <EndNo>61300</EndNo>
+    </Course>
+    <Course id="3" name="B.Com. - I">
+      <Initial>C</Initial>
+      <Year>First Year</Year>
+      <Semester>october</Semester>
+      <StartNo>13501</StartNo>
+      <EndNo>13700</EndNo>
+    </Course>
+    <Course id="3" name="B.Com. - I">
+      <Initial>C</Initial>
+      <Year>First Year</Year>
+      <Semester>march</Semester>
+      <StartNo>23501</StartNo>
+      <EndNo>23700</EndNo>
+    </Course>
+    <Course id="4" name="B.Com. - II">
+      <Initial>C</Initial>
+      <Year>Second Year</Year>
+      <Semester>october</Semester>
+      <StartNo>33501</StartNo>
+      <EndNo>33700</EndNo>
+    </Course>
+    <Course id="4" name="B.Com. - II">
+      <Initial>C</Initial>
+      <Year>Second Year</Year>
+      <Semester>march</Semester>
+      <StartNo>43501</StartNo>
+      <EndNo>43700</EndNo>
+    </Course>
+    <Course id="5" name="B.Com. - III">
+      <Initial>C</Initial>
+      <Year>Third Year</Year>
+      <Semester>october</Semester>
+      <StartNo>51001</StartNo>
+      <EndNo>51300</EndNo>
+    </Course>
+    <Course id="5" name="B.Com. - III">
+      <Initial>C</Initial>
+      <Year>Third Year</Year>
+      <Semester>march</Semester>
+      <StartNo>61001</StartNo>
+      <EndNo>61300</EndNo>
+    </Course>
+    <!-- For BMS -->
+    <Course id="1" name="B.M.S. - I">
+      <Initial>S</Initial>
+      <Year>First Year</Year>
+      <Semester>october</Semester>
+      <StartNo>10001</StartNo>
+      <EndNo>10100</EndNo>
+    </Course>
+    <Course id="1" name="B.M.S. - I">
+      <Initial>S</Initial>
+      <Year>First Year</Year>
+      <Semester>march</Semester>
+      <StartNo>20001</StartNo>
+      <EndNo>20100</EndNo>
+    </Course>
+    <Course id="2" name="B.M.S. - II">
+      <Initial>S</Initial>
+      <Year>Second Year</Year>
+      <Semester>october</Semester>
+      <StartNo>30001</StartNo>
+      <EndNo>30100</EndNo>
+    </Course>
+    <Course id="2" name="B.M.S. - II">
+      <Initial>S</Initial>
+      <Year>Second Year</Year>
+      <Semester>march</Semester>
+      <StartNo>40001</StartNo>
+      <EndNo>40100</EndNo>
+    </Course>
+    <Course id="3" name="B.M.S. - III">
+      <Initial>S</Initial>
+      <Year>Third Year</Year>
+      <Semester>october</Semester>
+      <StartNo>5</StartNo>
+      <EndNo>100</EndNo>
+    </Course>
+    <Course id="3" name="B.M.S. - III">
+      <Initial>S</Initial>
+      <Year>Third Year</Year>
+      <Semester>march</Semester>
+      <StartNo>6</StartNo>
+      <EndNo>100</EndNo>
+    </Course>
+    <!-- End -->
+    <!--For M.A. and M.Com.-->
+    <Course id="2" name="M.A. - I">
+      <Initial>M</Initial>
+      <Year>First Year</Year>
+      <Semester>december</Semester>
+      <StartNo>10001</StartNo>
+      <EndNo>10300</EndNo>
+    </Course>
+    <Course id="2" name="M.A. - I">
+      <Initial>M</Initial>
+      <Year>First Year</Year>
+      <Semester>may</Semester>
+      <StartNo>20001</StartNo>
+      <EndNo>20300</EndNo>
+    </Course>
+    <!-- End -->
+    <!--For B.M.M.-->
+    <Course id="1" name="B.M.M. - I">
+      <Initial>M</Initial>
+      <Year>First Year</Year>
+      <Semester>October</Semester>
+      <StartNo>10001</StartNo>
+      <EndNo>10300</EndNo>
+    </Course>
+    <Course id="2" name="B.M.M. - II">
+      <Initial>M</Initial>
+      <Year>First Year</Year>
+      <Semester>March</Semester>
+      <StartNo>20001</StartNo>
+      <EndNo>20300</EndNo>
+    </Course>
+    <!-- End -->
+  </SeatNumber>
+  <Semesters>
+    <Months>March</Months>
+    <Months>October</Months>
+  </Semesters>
+  <HallTicket>
+    <HeaderDetails>
+      <Header required="true">
+      </Header>
+      <Logo>~/static/images/mmpshah-logo.png</Logo>
+      <LogoSize width="70" height="40">
+      </LogoSize>
+      <CollegeName>Seva Mandal Education Society's</CollegeName>
+      <TagLine>Smt. Maniben M.P. Shah Women's College of Arts and Commerce</TagLine>
+      <Address></Address>
+    </HeaderDetails>
+    <LineBreaks>
+      <PostHeader>1</PostHeader>
+      <PostHallTicket>2</PostHallTicket>
+      <LineBreakHeight>12</LineBreakHeight>
+    </LineBreaks>
+    <PrintPerPage>2</PrintPerPage>
+  </HallTicket>
+  <AllowedAtkt>
+    <Number>6</Number>
+  </AllowedAtkt>
+  <ReserveSeatNo>
+    <Number>10</Number>
+  </ReserveSeatNo>
+  <MarkSheet>
+    <HeaderDetails>
+      <Header required="false">
+      </Header>
+      <Logo>~/static/images/mmpshah-logo.png</Logo>
+      <LogoSize width="70" height="40">
+      </LogoSize>
+      <CollegeName>Maniben Nanavati Women College</CollegeName>
+      <TagLine>(Affiliated to Shreemati Nathibai Damodar Thackersey Women's University)</TagLine>
+      <Address>Vallabhbhai Road, Vile Parle (West), Mumbai - 400 056.</Address>
+    </HeaderDetails>
+    <LineBreaks>
+      <PostHeader>1</PostHeader>
+      <PostMarkSheet>2</PostMarkSheet>
+      <LineBreakHeight>12</LineBreakHeight>
+    </LineBreaks>
+    <PrintPerPage>2</PrintPerPage>
+    <AtktSubjects display="true">
+    </AtktSubjects>
+    <Print DisplayURoNumber="false">
+    </Print>
+    <AllowedAtkt count="6">
+    </AllowedAtkt>
+    <Position>
+      <ResultYPosition y="135">
+      </ResultYPosition>
+      <ATKTYPosition y="110">
+      </ATKTYPosition>
+      <ATKTCounterYPosition y="110">
+      </ATKTCounterYPosition>
+      <DateYPosition y="85">
+      </DateYPosition>
+    </Position>
+  </MarkSheet>
+  <Pages>
+    <Page name="StudentDetails.aspx" Staff="Yes" ExamHead="Yes" />
+    <Page name="ExamMaster.aspx" Staff="No" ExamHead="Yes" />
+    <Page name="StudentSeatNumber.aspx" Staff="No" ExamHead="Yes" />
+    <Page name="SeatNumber.aspx" Staff="No" ExamHead="Yes" />
+    <Page name="MarksDetails.aspx" Staff="No" ExamHead="Yes" />
+    <Page name="GraceMarksDetails.aspx" Staff="No" ExamHead="Yes" />
+    <Page name="UserDetails.aspx" Staff="No" ExamHead="Yes" />
+    <Page name="StaffDetails.aspx" Staff="No" ExamHead="Yes" />
+    <Page name="ReportMaster.aspx" Staff="No" ExamHead="Yes" />
+    <Page name="ImportMarks.aspx" Staff="No" ExamHead="Yes" />
+    <Page name="ExamDashboard.aspx" Staff="No" ExamHead="Yes" />
+    <Page name="Dashboard.aspx" Staff="Yes" ExamHead="Yes" />
+  </Pages>
+  <SemesterName>
+    <Course name="B.A. - I" march="Sem - II" october="Sem - I" />
+    <Course name="B.A. - II" march="Sem - IV" october="Sem - III" />
+    <Course name="B.Com. - I" march="Sem - II" october="Sem - I" />
+    <Course name="B.Com. - II" march="Sem - IV" october="Sem - III" />
+    <Course name="F.Y.B.M.S" march="Sem - II" october="Sem - I" />
+    <Course name="S.Y.B.M.S" march="Sem - IV" october="Sem - III" />
+    <Course name="T.Y.B.M.S" march="Sem - VI" october="Sem - V" />
+    <Course name="M.Com. - I" may="Sem - II" december="Sem - I"/>
+    <Course name="M.Com. - II" may="Sem - IV" december="Sem - III"/>
+    <Course name="M.A. - I" may="Sem - I" december="Sem - I"/>
+    <Course name="M.A. - II" may="Sem - IV" december="Sem - III"/>
+  </SemesterName>
+  <ApplicationLogoTitle>
+    <Logo>~/static/images/mmpshah-logo.png</Logo>
+    <Title>Exam Management</Title>
+  </ApplicationLogoTitle>
+  <OrderbySubCourseId>
+    <Value>false</Value>
+  </OrderbySubCourseId>
+  <PrintMarksSheetReport pagesize="2">
+  </PrintMarksSheetReport>
+  <Scholarship>
+    <Type>None</Type>
+    <Type>Goverment Scholarship</Type>
+    <Type amount="500">Shama Scholarship</Type>
+    <Type amount="1000">State Scholarship</Type>
+    <Type amount="2000">Diya Scholarship</Type>
+  </Scholarship>
+  <ShowChallanNoFromAPI display="false">
+  </ShowChallanNoFromAPI>
+  <ChallanNumber>11</ChallanNumber>
+  <ShowExamFeePaidStudents display="false">
+  </ShowExamFeePaidStudents>
+  <ExamFeeReceipt>
+    <HeaderDetails>
+      <Header required="true">
+      </Header>
+      <Logo>~/static/images/mmpshah-logo.png</Logo>
+      <LogoSize width="70" height="40">
+      </LogoSize>
+      <CollegeName>Maniben Nanavati Women College</CollegeName>
+      <TagLine>(Affiliated to Shreemati Nathibai Damodar Thackersey Women's University)</TagLine>
+      <Address>Vallabhbhai Road, Vile Parle (West), Mumbai - 400 056.</Address>
+    </HeaderDetails>
+    <Title>Exam Fee Receipt</Title>
+    <ReceiptContent>
+      <Line>Student Name: {0}</Line>
+      <Line>Course Name: {0}</Line>
+      <Line>Roll Number Name: {0}</Line>
+      <Line>URo Number: {0}</Line>
+      <Line>Exam Name: {0}</Line>
+      <Line>Month: {0}</Line>
+      <Line>Year: {0}</Line>
+    </ReceiptContent>
+  </ExamFeeReceipt>
+  <Reports>
+    <SummaryReport>
+      <RecordCount count="13">
+      </RecordCount>
+    </SummaryReport>
+    <AttendanceSheet>
+      <RecordCount count="16">
+      </RecordCount>
+    </AttendanceSheet>
+    <Topperlist>
+      <RecordCount count="14">
+      </RecordCount>
+    </Topperlist>
+    <UnpaidStudent>
+      <RecordCount count="14">
+      </RecordCount>
+    </UnpaidStudent>
+    <PassedStudent>
+      <RecordCount count="150">
+      </RecordCount>
+    </PassedStudent>
+    <StudentFailed>
+      <RecordCount count="150">
+      </RecordCount>
+    </StudentFailed>
+    <StudentinternalMark>
+      <RecordCount count="16">
+      </RecordCount>
+    </StudentinternalMark>
+    <StudentMarksReport>
+      <RecordCount count="16">
+      </RecordCount>
+    </StudentMarksReport>
+    <StudentMarkSheetReport>
+      <RecordCount count="10">
+      </RecordCount>
+    </StudentMarkSheetReport>
+    <StudentReport>
+      <RecordCount count="12">
+      </RecordCount>
+    </StudentReport>
+    <StudentSeatNumberReport>
+      <RecordCount count="16">
+      </RecordCount>
+    </StudentSeatNumberReport>
+    <StudentValidationReport>
+      <RecordCount count="9">
+      </RecordCount>
+    </StudentValidationReport>
+  </Reports>
+  <ExamTime>
+    <Time start="8:00 AM" end="10:30 AM" />
+    <Time start="8:30 AM" end="11:00 AM" />
+  </ExamTime>
+  <IsCallDMSApi iscall="false">
+  </IsCallDMSApi>
+  <PrincipalName name="Dr. Harshada Rathod"></PrincipalName>
+  <LedgerFooter value="70"></LedgerFooter>
+  <PreviousAtktNull value="false"></PreviousAtktNull>
+  <LoadStaffCourse value="true"></LoadStaffCourse>
+  <!--Set flag for Passing Percentage-->
+  <Passing40 value="false"></Passing40>
+  <!--End-->
+  <!--Set flag for Sort Legder Report-->
+  <IsLegderSortbySubCourse value="true"></IsLegderSortbySubCourse >
+  <!--End-->
+  <!--Set flag for show subcourse in marksheet-->
+  <IsShowSubcourseInMarksheet value="true"></IsShowSubcourseInMarksheet>
+  <!--End-->
+  <!--Synonym for subcourse-->
+  <Subcoursename value="Specialization"></Subcoursename>
+  <!--Set flag for show fotter in marksheet-->
+  <IsShowFotterInMarksheet value="true"></IsShowFotterInMarksheet >
+  <!--End-->
+    <PasswordType>
+    <IsMobileNumber Type="False"></IsMobileNumber>
+    <IsDefault Type="True"></IsDefault>
+  </PasswordType>
+  <!--Auto Send Reports configuration which report should send to user-->
+  <AutoSendReports>
+    <CourseCompleted autosend="false"></CourseCompleted>
+    <ChapterWiseProgress autosend="false"></ChapterWiseProgress>
+    <StepWiseProgress autosend="false"></StepWiseProgress>
+    <TypingStats autosend="false"></TypingStats>  
+    <NotStartedCourse autosend="true"></NotStartedCourse>
+    <NotStartedTyping autosend="false"></NotStartedTyping>
+    <FullCompleted autosend="true"></FullCompleted>
+  </AutoSendReports>
+  <!-- end -->
+    
+  <!--<AutoSendOverAllReport>
+    <ccaddress>
+      <add cc="shrikant.gonjari@itmonarch.com"></add>
+      <add cc="rajesh.chaubey@itmonarch.com"></add>
+      <add cc="vasim.ahmed@itmonarch.com"></add>
+    </ccaddress>
+    <toaddress>
+      for ba english medium
+      <add course="B.A. - I (Eng.Med)" to="shrikant.gonjari@itmonarch.com"></add>
+      <add course="B.A. - I (Eng.Med)" to="rajesh.chaubey@gmail.com"></add>
+      <add course="B.A. - I (Eng.Med)" to="vasim.ahmed@gmail.com"></add>
+      for ba gujrati medium
+      <add course="B.A. - I (Guj.Med)" to="vasim.ahmed@gmail.com"></add>
+      for bcom
+      <add course="B.Com. - I" to="shrikant.gonjari@gmail.com"></add>
+      <add course="B.Com. - I" to="vasim.ahmed@gmail.com"></add>
+    </toaddress>
+  </AutoSendOverAllReport>-->
+
+  <AutoSendOverAllReport>
+    <ccaddress>
+      <add cc="jayashreepalit@gmail.com"></add>
+      <add cc="rajesh.chaubey@itmonarch.com"></add>
+      <add cc="vasim.ahmed@itmonarch.com"></add>
+    </ccaddress>
+    <toaddress>
+      <!--for ba english medium-->
+      <add course="B.A. - I (Eng.Med)" to="khanalmas3@gmail.com"></add>
+      <add course="B.A. - I (Eng.Med)" to="jasweenksour@gmail.com"></add>
+      <add course="B.A. - I (Eng.Med)" to="Pallavinandu913@gmail.com"></add>
+      <!--for ba gujrati medium-->
+      <add course="B.A. - I (Guj.Med)" to="poohwaghela@gmail.com"></add>
+      <!--for bcom-->
+      <add course="B.Com. - I" to="manishavishwakarma41@gmail.com"></add>
+      <add course="B.Com. - I" to="nehanishad931997@gmail.com"></add>
+    </toaddress>
+  </AutoSendOverAllReport>
+</Configuration>

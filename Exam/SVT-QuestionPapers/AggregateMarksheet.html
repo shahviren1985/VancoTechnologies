@@ -1,0 +1,621 @@
+﻿<!DOCTYPE html>
+<html ng-app="ExamSystemApp">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="CustomJs/Angular.js"></script>
+    <script src="CustomJs/angular-route.js"></script>
+    <script src="CustomJs/urlConfig.js"></script>
+    <script src="CustomJs/alasql.min.js"></script>
+    <script src="CustomJs/Index.js"></script>
+    <link href="Assets/bootstrap.min.css" rel="stylesheet" />
+    <link href="Assets/datepicker.css" rel="stylesheet" />
+    <script src="Assets/bootstrap.min.js"></script>
+    <link href="MarksheetModuleJs/Index2.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css">
+    <style>
+        /*@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);*/
+        @media print {
+            @page {
+                size: A4;
+            }
+            .colorRuleChrome {
+                color: #1F3C67 !important;
+            }
+
+            .ColorRedSetChrome {
+                color: red !important;
+            }
+            .colorRuleChromeGreen{
+                color: green;
+            }
+
+            @media print and (-webkit-min-device-pixel-ratio:0) {
+                .colorRuleChrome {
+                    color: #1F3C67 !important;
+                    -webkit-print-color-adjust: exact !important;
+                }
+
+                .ColorRedSetChrome {
+                    color: red !important;
+                    -webkit-print-color-adjust: exact !important;
+                }
+
+                .colorRuleChromeGreen {
+                    color: green !important;
+                    -webkit-print-color-adjust: exact !important;
+                }
+            }
+        }
+
+        body {
+            font-family: 'Eras ITC';
+            font-weight: 600;
+            color: #1F3C67;
+        }
+
+        table.height26ToAllTd td {
+            height: 25px;
+            padding: 2px;
+        }
+
+        table.leftrightBorder td {
+            border-left: 1px solid #4771c6;
+        }
+
+        table.leftrightBorder tr td:first-child {
+            border-left: 0px solid #4771c6;
+        }
+
+        .ResultText {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+            .ResultText td {
+                border-top: 2px solid #4771c6;
+            }
+
+        @media print {
+
+            .DivResult {
+                page-break-after: always;
+            }
+
+            #MarksheetData {
+                display: none;
+            }
+
+            #WidthYear {
+                width: 690px;
+            }
+        }
+
+        .HeadingSVT {
+            font-family: 'Eras ITC';
+            font-weight: 600;
+            color: #1F3C67;
+        }
+
+        .Heading2SmallFont {
+            font-weight: 400;
+            font-size: 19px;
+            color: black;
+            font-family: sans-serif,'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+        }
+
+        .BordredTable {
+            border-collapse: collapse;
+        }
+
+        .ThHeader {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .BordredTable td, table th {
+            border: 1px solid #4771c6;
+        }
+
+        .BordredTable tr:first-child th {
+            border-top: 0;
+        }
+
+        .BordredTable tr:last-child td {
+            border-bottom: 0;
+        }
+
+        .BordredTable tr td:first-child,
+        .BordredTable tr th:first-child {
+            border-left: 0;
+        }
+
+        .BordredTable tr td:last-child,
+        .BordredTable tr th:last-child {
+            border-right: 0;
+        }
+
+        .tdHeightSet {
+            height: 25px;
+        }
+
+        @page {
+            size: A4;
+        }
+        .markstable td {font-weight: bold;font-size: 14px;}
+    </style>
+</head>
+<body style="" ng-controller="AggregateMarksheetController" class="A3">
+    <div class="row" style="text-align: center; display:none" id="div_LoaderMarksheet">
+        <img src="images/MarksheetLoader.gif" style="width: 10%; height: auto;" /><br />
+        <span>Aggregate Marksheet is loading...</span>
+    </div>
+
+    <div id="DivHidden" class="DivResult">
+        <section ng-repeat="student in StudentData" class="sheet DivResult" style="padding:30px">
+            <article>
+                <table id="OriginalTable" style="text-align: center;width:100%;margin: 0 auto;" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td>
+                            <table id="MasterTable" style="border: 3px solid #4771c6;text-align: center;width:100%;margin: 0 auto;min-height: 1500px;" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td class="tdHeightSet colorRuleChrome" style="font-size:26px;font-weight: 800; padding-top:15px;color: #1F3C67;">SIR VITHALDAS THACKERSEY COLLEGE OF HOME SCIENCE</td>
+                                </tr>
+                                <tr>
+                                    <td class="tdHeightSet Heading2SmallFont" style="font-size:19px; padding:5px;">(AUTONOMOUS)</td>
+                                </tr>
+                                <tr>
+                                    <td class="tdHeightSet colorRuleChrome" style="font-size:26px;font-weight: 800;color: #1F3C67;">S.N.D.T.  WOMEN'S UNIVERSITY</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;height: 1px;">
+                                        <table style="text-align: center;margin: auto;width:85%">
+                                            <tr>
+                                                <td rospan="2">
+                                                    <img style="height:125%;width:auto" src="MarksheetModuleJs/SVTLogo.png" />
+                                                </td>
+                                                <td style="font-size:17px">
+                                                    <table style="width:100%">
+                                                        <tr>
+                                                            <td class="Heading2SmallFont" style="color:black;font-size:18px">JUHU ROAD,  SANTACRUZ (WEST), MUMBAI- 400 049</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="Heading2SmallFont colorRuleChromeGreen" style="font-weight: 0; padding: 5px; color: green; text-decoration: underline;">AGGREGATE MARKSHEET - APRIL 2019</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td rospan="2">
+                                                    <img style="height:125%;width:auto" src="MarksheetModuleJs/SVTLogo2.png" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tdHeightSet Heading2SmallFont" style="padding-top: 0px;">
+                                        NAME OF THE STUDENT : <span class="HeadingSVT colorRuleChrome" style="font-family:Perpetua Titling;font-size:22px">Ms.<span class="SpanNameOfStudent colorRuleChrome"> {{student.StudentFullName}}</span></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="height: 100px">
+                                        <table style="font-size:10px">
+                                            <tr class="Heading2SmallFont">
+                                                <td id="WidthYear" style="width:160px"></td>
+                                                <td>
+
+                                                    <table class="BordredTable" cellspacing="0" style="border: 2px solid #4771c6;text-align: center;font-size:17px">
+                                                        <tr>
+                                                            <td class="ThHeader" style="height:23px; text-align: center;width:300px; padding: 4px; padding-right: 35px; padding-left: 35px; border-right: 1px;border-bottom:1px;color:#073593">Specialization</td>
+                                                            <td class="ThHeader" style="height: 23px; text-align: center; width: 280px; padding: 4px; padding-right: 35px; padding-left: 35px; border-right: 1px; border-bottom: 1px; color: #073593">University Permanent</td>
+                                                            <td class="ThHeader" style="height:23px; text-align: center;width:140px; padding: 4px; padding-right: 25px; padding-left: 25px; border-right: 1px;border-bottom:1px;color:#073593">Seat No.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="ThHeader" style="height:23px; text-align: center;border-right: 1px;color:#073593;padding: 4px;">{{student.Specialisation}}{{student.StudentType}}</td>
+                                                            <td class="ThHeader" style="height:23px; text-align: center;border-right: 1px;color:#073593;padding: 4px;">{{student.PRN}}</td>
+                                                            <td style="text-align: center;padding: 3px;padding-right: 20px;padding-left: 20px;">{{student.CollegeRegistrationNumber}}</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td id="WidthYear" style="width:100px"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="height: 15px;">
+                                        <table class="Heading2SmallFont leftrightBorder height26ToAllTd" style="width:100%;border-left:0px solid #4771c6; font-size:12px; font-weight: bold;border-bottom:1px solid #4771c6;border-top:2px solid #4771c6;padding-top:2px;padding-bottom:2px" cellspacing="0" cellpadding="0">
+                                            <thead>
+                                                <tr class="ThHeader">
+                                                    <td style="width:2%;border-bottom:2px solid #4771c6;font-size:13px">Sr. No.</td>
+                                                    <td style="width:7%;border-bottom:2px solid #4771c6;font-size:13px">SEM.</td>
+                                                    <td style="width:34%;border-bottom:2px solid #4771c6;font-size:13px">SUBJECT</td>
+                                                    <td style="width:7%;border-bottom:2px solid #4771c6;font-size:13px">TH/PR</td>
+                                                    <td style="width:7%; border-bottom:2px solid #4771c6;font-size:13px">CREDITS</td>
+                                                    <td style="width:7%; border-bottom:2px solid #4771c6;font-size:13px">TOTAL MARKS</td>
+                                                    <td style="width:7%; border-bottom:2px solid #4771c6;font-size:13px">MARKS OBTAINED</td>
+                                                    <td style="width:7%; border-bottom:2px solid #4771c6;font-size:13px">WEIGHTED MARKS</td>
+                                                    <td style="width:7%; border-bottom:2px solid #4771c6;font-size:13px">GRADE</td>
+													<td style="width:7%; border-bottom:2px solid #4771c6;font-size:13px">GRADE POINT</td>
+													<td style="width:7%; border-bottom:2px solid #4771c6;font-size:13px">GRADE POINT TOTAL</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody ng-repeat="mark in student.Papers" class="markstable">
+                                                <tr>
+                                                    <td style="border-bottom:1px solid #4771c6;">{{$index+1}}</td>
+                                                    <td style="border-bottom:1px solid #4771c6;" ng-if="mark.RomanSemesterDisplay">{{mark.RomanSemester}}</td>
+                                                    <td style="border-bottom:1px solid #4771c6;" ng-if="!mark.RomanSemesterDisplay"></td>
+                                                    <td style="text-align:left;border-bottom:1px solid #4771c6;">
+                                                        <div style="min-height: 20px;display: table;">
+                                                            <span class="{{mark.PaperCodeFromJson}}"
+                                                                  style="vertical-align: middle;line-height: normal;display: table-cell;">{{mark.PaperTitle}}</span>
+                                                        </div>
+                                                    </td>
+                                                    <td style="border-bottom:1px solid #4771c6;">{{mark.PaperType}}</td>
+                                                    <td style="border-bottom:1px solid #4771c6;" class="Credit{{student.Index}}">{{mark.Credit}}</td>
+                                                    <!--InternalTotalMarks is Max internal mark-->
+                                                    <td style="border-bottom:1px solid #4771c6;">{{mark._TotalMarksdisp}}</td>
+                                                    <td style="border-bottom:1px solid #4771c6;">{{mark._ObtainedMarks}}</td>
+                                                    <td style="border-bottom:1px solid #4771c6;">{{mark._WeightedMarks}}</td>
+                                                    <td style="border-bottom:1px solid #4771c6;" ng-if="mark.GP!='F'">
+                                                        {{mark.GP}}
+                                                        <span ng-if="mark.RetryCount==2">*</span>
+                                                        <span ng-if="mark.RetryCount==3">**</span>
+                                                        <span ng-if="mark.RetryCount==4">***</span>
+                                                    </td>
+                                                    <td style="border-bottom:1px solid #4771c6;background-color: red; font-weight: bold" ng-if="mark.GP=='F'">{{mark.GP}}</td>
+                                                    <td style="border-bottom:1px solid #4771c6;">{{mark.GradePoint}}</td>
+                                                    <td style="border-bottom:1px solid #4771c6;">{{mark.TOTALGRADEPOINT}}</td>
+
+                                                </tr>
+                                                <!--<tr ng-if="mark.PaperTitle=='Internship'">
+        <td style="border-bottom:1px solid #4771c6;">{{$index+1}}</td>
+        <td style="border-bottom:1px solid #4771c6;">&nbsp;</td>
+        <td style="text-align:left;border-bottom:1px solid #4771c6;">
+            <div style="min-height: 20px;display: table;">
+                <span class="{{mark.PaperCodeFromJson}}"
+                      style="vertical-align: middle;line-height: normal;display: table-cell;">{{mark.PaperTitle}}</span>
+            </div>
+        </td>
+        <td style="border-bottom:1px solid #4771c6;">{{mark.PaperType}}</td>
+        <td style="border-bottom:1px solid #4771c6;" class="Credit{{student.Index}}">{{mark.Credit}}</td>
+        <td style="border-bottom:1px solid #4771c6;" colspan="4">{{mark.ResultStatus}}</td>
+    </tr>-->
+                                            </tbody>
+
+                                            <tr class="ResultText" style="height:15px">
+                                                <td style=""></td>
+                                                <td style=""></td>
+                                                <td style="padding: 2px;text-align:left">
+                                                    <b> TOTAL</b>
+                                                </td>
+                                                <td style=""></td>
+                                                <td style=""><b>{{student._FinalTotalCredits}}</b></td>
+                                                <td style="">
+                                                    <!--<b>{{SumOfInternalMark(student.Index)}} </b>-->
+                                                    <b>{{student._FinalTotalMarksTiDisp}} </b>
+                                                </td>
+                                                <td style="">
+                                                    <!--<b>{{SumOfExternalMark(student.Index)}}</b>-->
+                                                    <b>{{student._FinalObtainedMarks}}</b>
+                                                </td>
+                                                <td style="">
+                                                    <!-- <b id="TotalMark{{(StudentData.indexOf(student))}}"> -->
+                                                        <!--{{SumOfTotalMark(student.Index)}}-->
+														<b>
+                                                        {{student._FinalWeightedMarks}}
+														</b>
+                                                </td>
+                                                <td style=""> <b>{{student._FinalGrade}} </b></td>
+												<td style="">
+                                                    <b>
+                                                        <!--{{SumOfTotalMark(student.Index)}}-->
+                                                        {{student.AggregateGradePoint}}
+                                                    </b>
+                                                </td>
+												<td style="">
+                                                    <b>
+                                                        {{student.AggregateTotalGradePoint}}
+                                                    </b>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <!-- <tr>
+                                    <td class="Heading2SmallFont" style="text-align: left; border-bottom: 2px solid #4771c6; border-top: 1px solid #4771c6; height: 25px;">Remarks : PASS</td>
+                                </tr> -->
+                                <tr>
+                                    <td class="Heading2SmallFont" style="text-align: left;padding: 2px;font-size: 12px;height: 1px;padding-top: 8px;">
+                                        <span><b>TH - Theory / PR - Practical / * - 2nd Attempt / ** - 3rd Attempt / *** - 4th Attempt / DSE - Department Specific Elective</b></span><br />
+                                        <span ng-if="student.StudentType.indexOf('Honors')>=0"><b>Honors is 140 credits course. The aggregate marksheet is listing only core subjects of specialization.</b></span>
+                                        <span ng-if="student.StudentType.indexOf('Honors')<0">
+                                            <b>
+                                                This is 120 credits course. The aggregate marksheet is listing only core subjects of specialization.
+                                            </b>
+                                        </span>
+                                        <!--<span ng-if="(IsSamesterOneTwo==3) || (IsSamesterOneTwo==4)"><b>/ INTERNAL MARKS OUT OF 50, FINAL MARKS OUT OF 50, TOTAL MARKS OUT OF 100</b></span>-->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="Heading2SmallFont" style="width:100%; font-size:16px; margin-top: -10px;">
+                                            <tr>
+                                                <td style="padding-top: 5px;width: 120px;"><br/><br/><br/>&nbsp;</td>
+                                                <td>
+                                                    <!--<img src="MarksheetModuleJs/ControllerOfExam.png" />-->
+                                                    <img style="width: 150px;" src="MarksheetModuleJs/ControllerOfExam.png" />
+                                                    <br />
+                                                    Controller of Examinations
+                                                </td>
+                                                <td>
+                                                    <img style="padding:5px; width: 180px;" src="MarksheetModuleJs/Principal.png" /><br />
+                                                    Principal
+                                                </td>
+                                                <td>
+                                                    <div style="display:inline-block;text-align:left;">
+                                                        <table class="BordredTable Heading2SmallFont" style="border:2px solid #4771c6; font-size:17px">
+                                                            <tr>
+                                                                <td class="ThHeader" style="padding: 3px;">Remarks</td>
+                                                                <td style="width:85px;padding: 3px; text-align:center">
+                                                                    <b>PASS</b>
+                                                                </td>
+                                                            </tr>
+															<tr>
+                                                                <td class="ThHeader" style="padding: 3px;">Weighted Percentage</td>
+                                                                <td style="width:85px;padding: 3px; text-align:center">
+                                                                    <b>
+                                                                        {{student._FinalWeightedPercentage}}
+                                                                    </b>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="ThHeader" style="padding: 3px;">Average Grade</td>
+                                                                <td style="padding: 3px; text-align:center"><b>{{student._FinalGrade}}</b></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="ThHeader" style="padding: 3px;">Grade Point Average</td>
+                                                                <td style="padding: 3px; text-align:center"><b>{{student._FinalGradePoint}}</b></td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+            </article>
+        </section>
+    </div>
+    <script type="text/javascript">
+        var Examapp = angular.module("ExamSystemApp", ["ngRoute"]);
+        Examapp.controller('AggregateMarksheetController', function ($scope) {
+
+            function getUrlVars() {
+                var vars = [], hash;
+                var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+                for (var i = 0; i < hashes.length; i++) {
+                    hash = hashes[i].split('=');
+                    vars.push(hash[0]);
+                    vars[hash[0]] = hash[1];
+                }
+                return vars;
+            }
+
+            CallAPI("User/GetPaperList?Course=bsc&specialization=regular&sem=1").done(function (response) {
+
+            });
+
+            function sortByKey(array, key) {
+                return array.sort(function (a, b) {
+                    var x = a[key]; var y = b[key];
+                    return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+                });
+            }
+
+            $('#semester').on('change', function () {
+                CallAPI("User/GetPaperList?Course=" + $('#stream').val() + "&specialization=" + $('#course').val() + "&sem=" + $('#semester').val()).done(function (response) {
+                    SpecializationPaperData = response;
+                    var selectedCatrol = $('#Specialization');
+                    document.getElementById("Specialization").options.length = 0;
+                    selectedCatrol.append('<option disabled="disabled" selected="selected" value="">---Select----</option>');
+                    selectedCatrol.prop('disabled', false);
+                    for (i = 0; i < response.length; i++) {
+                        var optionstr = '<option value="' + response[i].specialisation + '" data-specialisationCode="' + response[i].specialisationCode + '">' + response[i].specialisation + '</option>'
+                        selectedCatrol.append(optionstr);
+                        //$('<option />', { value: response[i].specialisation, text: response[i].specialisation }).appendTo(selectedCatrol);
+                    }
+                })
+            });
+
+            CallAPI("/exam/GetCommonMarksheetResponse?examType=" + getUrlVars()["examType"] + "&specialisationCode=" + getUrlVars()["specialisationCode"] + "&sem=" + getUrlVars()["sem"]).done(function (response) {
+                if (response != null && response != undefined && response.length > 0) {
+                    for (var i = 0; i < response.length; i++) {
+                        response[i]._FinalTotalCredits = 0;
+                        response[i]._FinalTotalMarksTiDisp = 0;
+                        response[i]._FinalObtainedMarks = 0;
+                        response[i]._FinalWeightedMarks = 0;
+                        response[i]._FinalWeightedPercentage = 0;
+                        response[i]._FinalGrade = 0;
+                        response[i]._FinalCountGradePoint = 0;
+                        response[i]._FinalGradePoint = 0;
+						response[i].AggregateGradePoint = 0;
+						response[i].AggregateTotalGradePoint = 0;
+						
+                        response[i].StudentType = getUrlVars()["examType"] == "Honors" ? " - Honors" : "";
+                        var Sem1Display = true;
+                        var Sem2Display = true;
+                        var Sem3Display = true;
+                        var Sem4Display = true;
+                        var Sem5Display = true;
+                        var Sem6Display = true;
+                        for (var j = 0; j < response[i].Papers.length; j++) {
+
+                            if (response[i].Papers[j].Semester == 1) {
+                                response[i].Papers[j].RomanSemester = 'I';
+                                if (Sem1Display) {
+                                    response[i].Papers[j].RomanSemesterDisplay = true;
+                                    Sem1Display = false;
+                                } else {
+                                    response[i].Papers[j].RomanSemesterDisplay = false;
+                                }
+                            } else if (response[i].Papers[j].Semester == 2) {
+                                response[i].Papers[j].RomanSemester = 'II';
+                                if (Sem2Display) {
+                                    response[i].Papers[j].RomanSemesterDisplay = true;
+                                    Sem2Display = false;
+                                } else {
+                                    response[i].Papers[j].RomanSemesterDisplay = false;
+                                }
+                            } else if (response[i].Papers[j].Semester == 3) {
+                                response[i].Papers[j].RomanSemester = 'III';
+                                if (Sem3Display) {
+                                    response[i].Papers[j].RomanSemesterDisplay = true;
+                                    Sem3Display = false;
+                                } else {
+                                    response[i].Papers[j].RomanSemesterDisplay = false;
+                                }
+                            } else if (response[i].Papers[j].Semester == 4) {
+                                response[i].Papers[j].RomanSemester = 'IV';
+                                if (Sem4Display) {
+                                    response[i].Papers[j].RomanSemesterDisplay = true;
+                                    Sem4Display = false;
+                                } else {
+                                    response[i].Papers[j].RomanSemesterDisplay = false;
+                                }
+                            }
+                            else if (response[i].Papers[j].Semester == 5) {
+                                response[i].Papers[j].RomanSemester = 'V';
+                                if (Sem5Display) {
+                                    response[i].Papers[j].RomanSemesterDisplay = true;
+                                    Sem5Display = false;
+                                } else {
+                                    response[i].Papers[j].RomanSemesterDisplay = false;
+                                }
+                            }
+                            else if (response[i].Papers[j].Semester == 6) {
+                                response[i].Papers[j].RomanSemester = 'VI';
+                                if (Sem6Display) {
+                                    response[i].Papers[j].RomanSemesterDisplay = true;
+                                    Sem6Display = false;
+                                } else {
+                                    response[i].Papers[j].RomanSemesterDisplay = false;
+                                }
+                            }
+
+                            var flotCredit = parseFloat(response[i].Papers[j].Credit) || 0;
+                            var fltExternalmaxmark = parseFloat(response[i].Papers[j].externalMaxMarks) || 0;
+                            var fltInternalTotalMarks = parseFloat(response[i].Papers[j].InternalTotalMarks) || 0;
+                            var fltPracticalMaxMarks = parseFloat(response[i].Papers[j].PracticalMaxMarks) || 0;
+                            var fltInternalMarksObtained = parseFloat(response[i].Papers[j].InternalMarksObtained) || 0;
+                            var fltPracticalMarksObtained = parseFloat(response[i].Papers[j].PracticalMarksObtained) || 0;
+                            var fltExternalTotalMarks = parseFloat(response[i].Papers[j].ExternalTotalMarks) || 0;
+                            response[i].Papers[j]._TotalMarksdisp = (fltExternalmaxmark + fltInternalTotalMarks + fltPracticalMaxMarks);
+                            response[i].Papers[j]._ObtainedMarks = Math.round(fltInternalMarksObtained + fltPracticalMarksObtained + fltExternalTotalMarks);
+                            response[i].Papers[j]._WeightedMarks = ((response[i].Papers[j].Credit * response[i].Papers[j]._ObtainedMarks));
+
+                            if (response[i].Papers[j]._ObtainedMarks >= 90)
+                                response[i].Papers[j].GradePoint = "10";
+                            if (response[i].Papers[j]._ObtainedMarks >= 80 && response[i].Papers[j]._ObtainedMarks < 90)
+                                response[i].Papers[j].GradePoint = "9." + ((Math.round(response[i].Papers[j]._ObtainedMarks)) % 10) + "0";
+                            if (response[i].Papers[j]._ObtainedMarks >= 70 && response[i].Papers[j]._ObtainedMarks < 80)
+                                response[i].Papers[j].GradePoint = "8." + ((Math.round(response[i].Papers[j]._ObtainedMarks)) % 10) + "0";
+                            if (response[i].Papers[j]._ObtainedMarks >= 60 && response[i].Papers[j]._ObtainedMarks < 70)
+                                response[i].Papers[j].GradePoint = "7." + ((Math.round(response[i].Papers[j]._ObtainedMarks)) % 10) + "0";
+                            if (response[i].Papers[j]._ObtainedMarks >= 55 && response[i].Papers[j]._ObtainedMarks < 60)
+                                response[i].Papers[j].GradePoint = "6." + ((Math.round(response[i].Papers[j]._ObtainedMarks)) % 5) * 2 + "0";
+                            if (response[i].Papers[j]._ObtainedMarks >= 50 && response[i].Papers[j]._ObtainedMarks < 55)
+                                response[i].Papers[j].GradePoint = "5." + (((Math.round(response[i].Papers[j]._ObtainedMarks)) % 10) + 5) + "0";
+                            if (response[i].Papers[j]._ObtainedMarks >= 45 && response[i].Papers[j]._ObtainedMarks < 50)
+                                response[i].Papers[j].GradePoint = "5." + ((Math.round(response[i].Papers[j]._ObtainedMarks)) % 5) + "0";
+                            if (response[i].Papers[j]._ObtainedMarks >= 40 && response[i].Papers[j]._ObtainedMarks < 45)
+                                response[i].Papers[j].GradePoint = "4." + ((Math.round(response[i].Papers[j]._ObtainedMarks)) % 5) * 2 + "0";
+                            if (response[i].Papers[j]._ObtainedMarks >= 0 && response[i].Papers[j]._ObtainedMarks < 40)
+                                response[i].Papers[j].GradePoint = "0";
+                            //Credit
+                            response[i].Papers[j].fltGradePoint = parseFloat(response[i].Papers[j].GradePoint) || 0;
+
+                            response[i].Papers[j].TOTALGRADEPOINT = response[i].Papers[j].fltGradePoint * flotCredit;
+
+                            response[i].Papers[j].TOTALGRADEPOINT = parseFloat(response[i].Papers[j].TOTALGRADEPOINT).toFixed(2);
+
+                            response[i].AggregateGradePoint = parseFloat(response[i].AggregateGradePoint) + response[i].Papers[j].fltGradePoint;
+                            response[i].AggregateTotalGradePoint = parseFloat(response[i].AggregateTotalGradePoint) + parseFloat(response[i].Papers[j].TOTALGRADEPOINT);
+
+                            response[i]._FinalCountGradePoint = parseFloat(response[i]._FinalCountGradePoint) + parseFloat(response[i].Papers[j].TOTALGRADEPOINT);
+
+
+                            response[i]._FinalTotalCredits += flotCredit;
+                            response[i]._FinalTotalMarksTiDisp += response[i].Papers[j]._TotalMarksdisp;
+                            response[i]._FinalObtainedMarks += response[i].Papers[j]._ObtainedMarks;
+                            response[i]._FinalWeightedMarks += response[i].Papers[j]._WeightedMarks;
+
+                            //response[i]._FinalWeightedPercentage = ((100 * response[i]._FinalObtainedMarks) / response[i]._FinalTotalMarksTiDisp).toFixed(2);
+                            response[i]._FinalWeightedPercentage = (response[i]._FinalWeightedMarks / response[i]._FinalTotalCredits).toFixed(2);
+                            response[i]._FinalGradePoint = (response[i]._FinalCountGradePoint / response[i]._FinalTotalCredits).toFixed(2);
+
+
+
+                            //Final Grade
+                            if (response[i]._FinalWeightedPercentage < 40) response[i]._FinalGrade = 'F';
+                            else if (response[i]._FinalWeightedPercentage >= 40 && response[i]._FinalWeightedPercentage < 45) response[i]._FinalGrade = 'P';
+                            else if (response[i]._FinalWeightedPercentage >= 45 && response[i]._FinalWeightedPercentage < 50) response[i]._FinalGrade = 'C';
+                            else if (response[i]._FinalWeightedPercentage >= 50 && response[i]._FinalWeightedPercentage < 55) response[i]._FinalGrade = 'B';
+                            else if (response[i]._FinalWeightedPercentage >= 55 && response[i]._FinalWeightedPercentage < 60) response[i]._FinalGrade = 'B+';
+                            else if (response[i]._FinalWeightedPercentage >= 60 && response[i]._FinalWeightedPercentage < 70) response[i]._FinalGrade = 'A';
+                            else if (response[i]._FinalWeightedPercentage >= 70 && response[i]._FinalWeightedPercentage < 80) response[i]._FinalGrade = 'A+';
+                            else if (response[i]._FinalWeightedPercentage >= 80 && response[i]._FinalWeightedPercentage < 90) response[i]._FinalGrade = 'O';
+                            else if (response[i]._FinalWeightedPercentage >= 90 && response[i]._FinalWeightedPercentage < 101) response[i]._FinalGrade = 'O+';
+
+
+
+                            //response[i].Papers[j].GP = response[i]._FinalGrade;
+                            //if(response[i].Papers.length==(j+1)){
+                            //    response[i].Papers=sortByKey(response[i].Papers,Semester);
+                            //}
+
+                        }
+						
+						response[i].AggregateGradePoint  = parseFloat(response[i].AggregateGradePoint).toFixed(2);
+						response[i].AggregateTotalGradePoint = parseFloat(response[i].AggregateTotalGradePoint).toFixed(2);
+                        if ((i + 1) == response.length) {
+                            $scope.StudentData = response;
+                            console.log(response);
+                            $scope.$apply();
+                        }
+						
+						
+                    }
+                }
+            });
+
+            $scope.GetTotalMarks = function (intrnl, extrnl, prcticl) {
+                var iNum1 = parseInt(intrnl) || 0;
+                var iNum2 = parseInt(extrnl) || 0;
+                var iNum3 = parseInt(prcticl) || 0;
+                return (iNum1 + iNum2 + iNum3);
+            }
+            $scope.GetTotalMarks4 = function (intrnl, extrnl, prcticl, num4) {
+                var iNum1 = parseInt(intrnl) || 0;
+                var iNum2 = parseInt(extrnl) || 0;
+                var iNum3 = parseInt(prcticl) || 0;
+                var iNum4 = parseInt(num4) || 0;
+                return (iNum1 + iNum2 + iNum3 + iNum4);
+            }
+            $scope.GetWeightege = function (TotalMarks, ObtainedMarks) {
+                var va1 = parseFloat(TotalMarks) || 0;
+                var va2 = parseFloat(ObtainedMarks) || 0;
+                return ((100 * va2) / va1);
+            }
+
+        })
+    </script>
+    <script src="CustomJs/AppConfig.js"></script>
+</body>
+</html>

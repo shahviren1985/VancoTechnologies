@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <Logger>
+    <LogLevel>1</LogLevel>
+    <LogPath>~/Logs</LogPath>
+    <LogFileName>AppLogs.log</LogFileName>
+    <LogFileSize>1</LogFileSize>
+    <LogType>file</LogType>
+    <LogDBConnectionString>Server=localhost;Port=3306;Database=mnwcdms;Uid=root;Pwd=sndt;Pooling=false;Connect timeout=900;</LogDBConnectionString>
+  </Logger>
+  <EmailSettings>
+    <EmailAddress>abc@gmail.com</EmailAddress>
+    <EmailFromDisplayName>Administrator (DMS)</EmailFromDisplayName>
+    <NewUserEmailSubject>DMS - Invitation Details</NewUserEmailSubject>
+    <UserName>abc</UserName>
+    <Password>abc123</Password>
+    <Port>25</Port>
+    <Server>gmail.com</Server>
+    <IsSSLEnabled>True</IsSSLEnabled>
+    <IsHTMLResponse>True</IsHTMLResponse>
+    <IsMailSend>True</IsMailSend>
+    <EmailHost>smtp.gmail.com</EmailHost>
+    <EmailUseDefaultCredentials>True</EmailUseDefaultCredentials>
+  </EmailSettings>
+  <ApplicationLogoTitle>
+    <Logo>~/static/image/logo.png</Logo>
+    <Title>Document Management System</Title>
+  </ApplicationLogoTitle>
+  <Encryptions>
+    <EncryptionType>None</EncryptionType>
+    <EncryptionType>AES 256</EncryptionType>
+    <Salt>Kosher</Salt>
+    <HashAlgorithm>SHA1</HashAlgorithm>
+    <PasswordIterations>2</PasswordIterations>
+    <InitialVector>OFRna73m*aze01xY</InitialVector>
+    <Password>shah</Password>
+  </Encryptions>
+  <BasePath>
+    <Path>F:\DMS\WebPortal</Path>
+  </BasePath>
+  <ConnectionString>
+    <ConnectionName>ConnString</ConnectionName>
+    <Connection>Server=localhost;Port=3306;Database=mnwcdms;Uid=root;Pwd=sndt;Pooling=false;Connect timeout=900;</Connection>
+  </ConnectionString>
+  <Documents>
+    <DocumentType value="Mandatory">LC</DocumentType>
+    <DocumentType value="Mandatory">Marksheets</DocumentType>
+    <DocumentType value="Mandatory">Transfer Certificate</DocumentType>
+    <DocumentType value="NotMandatory">Others</DocumentType>
+  </Documents>
+  <ReminderSetting>
+    <SendReminderOnlyAdmin>True</SendReminderOnlyAdmin>
+	<SendReminderToStudentsWithAdmin>False</SendReminderToStudentsWithAdmin>
+    <SendReminderAfterDays>7</SendReminderAfterDays>
+  </ReminderSetting>
+</Configuration>

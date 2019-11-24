@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>MSConfig Utility</title>
+    <link rel="Stylesheet" href="../../../static/bootstrap.min.css" />
+    <link rel="Stylesheet" href="../../../static/styles/chapter-style.css" />
+    <script src="../../../static/scripts/jquery-1.9.1.js"></script>
+    <script src="../../../static/scripts/static.mooc.core.js"></script>
+</head>
+<body>
+    <div class="content-container">
+        <div>
+            <ul class="breadcrumb">
+            </ul>
+        </div>
+        <div class="left-navigation">
+        </div>
+        <div class="content">
+            <div class="content-summary pink">
+                <div class="summary-header">
+                </div>
+            </div>
+            <div class="content-main">
+                <div class="content-navigation">
+                    <div class="btn">
+                        Previous</div>
+                    <div class="btn">
+                        Next</div>
+                </div>
+                <br />
+                <br />
+                <p>
+                    In Windows, some background processes [software] can cause issues that may prevent
+                    applications from working correctly, opening, or even installing. Learn how you
+                    might resolve these conflicts by disabling some items using the System Configuration
+                    Utility (msconfig).</p>
+                <p>
+                    You will need to keep track of which items you disable and re-enable so after performing
+                    this troubleshooting, you can get your computer back to the way it was. Selecting
+                    Normal Startup may enable items that you were not using, and could cause issues.</p>
+                <ol>
+                    <li>On the <b>Start</b> menu, click <b>Run</b>. A Run window (command prompt) appears.</li>
+                    <li>Type “<i>msconfig</i>” in the Open field and click OK. The System Configuration
+                        Utility opens.</li>
+                    <li>Click the General tab.</li>
+                    <li>Select the "<i>Selective Startup</i>" option.</li>
+                    <li>Deselect the "<i>Load Startup Items</i>" checkbox.</li>
+                    <br />
+                    <div class="img1">
+                        <img src="../Images/system-config-utility.png" alt="System Configuration Utility" />
+                        <p>
+                            System Configuration Utility
+                        </p>
+                    </div>
+                    <br />
+                    <li>Click the Startup tab.</li>
+                    <li>Select the Software that you wish to run when the windows start E.g.: "<i>iTunesHelper</i>"
+                        and "<i>qttask</i>" checkboxes in the list.</li>
+                    <br />
+                    <div class="img1">
+                        <img src="../Images/system-config-utility1.png" alt="System Configuration Utility" />
+                        <p>
+                            System Configuration Utility
+                        </p>
+                    </div>
+                    <br />
+                    <li>Click OK.</li>
+                    <li>Click Restart. After restarting (and logging in to Windows), a window appears confirming
+                        that "You have used the System Configuration Utility to make changes to the way
+                        Windows starts." Click OK. The System Configuration Utility appears.</li>
+                </ol>
+                <br />
+                <div class="content-navigation">
+                    <div class="btn">
+                        Previous</div>
+                    <div class="btn">
+                        Next</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function () {
+        Init();
+    });
+</script>

@@ -1,0 +1,511 @@
+﻿<!DOCTYPE html>
+<html ng-app="MarksheetApp">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="Assets/angular.min.js"></script>
+    <script src="CustomJs/urlConfig.js"></script>
+    <script src="MarksheetModuleJs/MasterData.js"></script>
+    <script src="CustomJs/alasql.min.js"></script>
+    <script src="CustomJs/Index.js"></script>
+
+    <script src="MarksheetModuleJs/Index2.js"></script>
+    <script src="MarksheetModuleJs/DataRender.js"></script>
+    <script src="MarksheetModuleJs/import.js"></script>
+    <link href="Assets/bootstrap.min.css" rel="stylesheet" />
+    <link href="Assets/datepicker.css" rel="stylesheet" />
+    <script src="Assets/bootstrap.min.js"></script>
+    <script src="Assets/bootstrap-datepicker.js"></script>
+    <link href="MarksheetModuleJs/Index2.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css">
+
+    <style>
+        /*@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);*/
+        @media print {
+            .colorRuleChrome {
+                color: #1F3C67 !important;
+            }
+
+            .ColorRedSetChrome {
+                color: red !important;
+            }
+
+            @media print and (-webkit-min-device-pixel-ratio:0) {
+                .colorRuleChrome {
+                    color: #1F3C67 !important;
+                    -webkit-print-color-adjust: exact !important;
+                }
+
+                .ColorRedSetChrome {
+                    color: red !important;
+                    -webkit-print-color-adjust: exact !important;
+                }
+            }
+        }
+
+        body {
+            font-family: 'Eras ITC';
+            font-weight: 600;
+            color: #1F3C67;
+        }
+
+        table.height26ToAllTd td {
+            height: 26px;
+            padding: 2px;
+        }
+
+        table.leftrightBorder td {
+            border-left: 1px solid #4771c6;
+        }
+
+        table.leftrightBorder tr td:first-child {
+            border-left: 0px solid #4771c6;
+        }
+
+        .ResultText {
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+            .ResultText td {
+                border-top: 2px solid #4771c6;
+            }
+
+        @media print {
+            .DivResult {
+                page-break-after: always;
+            }
+
+            #MarksheetData {
+                display: none;
+            }
+
+            #WidthYear {
+                width: 690px;
+            }
+        }
+
+        .HeadingSVT {
+            font-family: 'Eras ITC';
+            font-weight: 600;
+            color: #1F3C67;
+        }
+
+        .Heading2SmallFont {
+            font-weight: 400;
+            font-size: 19px;
+            color: black;
+            font-family: sans-serif,'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+        }
+
+        .BordredTable {
+            border-collapse: collapse;
+        }
+
+        .ThHeader {
+            font-weight: 600;
+        }
+
+        .BordredTable td, table th {
+            border: 1px solid #4771c6;
+        }
+
+        .BordredTable tr:first-child th {
+            border-top: 0;
+        }
+
+        .BordredTable tr:last-child td {
+            border-bottom: 0;
+        }
+
+        .BordredTable tr td:first-child,
+        .BordredTable tr th:first-child {
+            border-left: 0;
+        }
+
+        .BordredTable tr td:last-child,
+        .BordredTable tr th:last-child {
+            border-right: 0;
+        }
+
+        .tdHeightSet {
+            height: 25px;
+        }
+
+        @page {
+            size: A3;
+        }
+    </style>
+</head>
+<body style="" ng-controller="MarksheetController" class="A3">
+    <div id="MarksheetData" style="display:none;background-color: #eee;margin: 0 auto;margin-bottom: 20px;     border-bottom: 1px solid lightsteelblue;text-align: left; font-family:Arial">
+        <div class="container" style="padding-top: 25px;">
+            <div class="row" style="">
+                <form class="form-horizontal" role="form">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="firstName" class="col-sm-3 control-label">Select File :</label>
+                            <div class="col-md-9">
+                                <input type="file" id="csvFile" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstName" class="col-sm-3 control-label">No Of Subject :</label>
+                            <div class="col-md-9">
+                                <input class="form-control" type="number" id="SubjectCount" required />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Date : </label>
+                            <div class="col-sm-6">
+                                <div class="col-md-12">
+                                    <div id="datepicker1212" class="newDatePicker input-group date" data-date-format="dd-mm-yyyy">
+                                        <input class="form-control" id="txtnewDatePicker" type="text" readonly required />
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-sm-3"></label>
+                            <div class="col-sm-6">
+                                <div class="col-md-2">
+                                    <button type="submit" style="" ng-click="readFile()" class="btn btn-primary">Submit</button>
+                                </div>
+                                <div class="col-md-6">
+                                    <button type="button" style="margin-left: 53px;" onclick="window.print()" class="btn btn-warning">Print</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- /.form-group -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row" style="text-align: center" id="div_LoaderMarksheet">
+        <img src="images/MarksheetLoader.gif" style="width: 10%; height: auto;" /><br />
+        <span>Marksheet is loading...</span>
+    </div>
+
+    <div id="DivHidden" class="DivResult">
+        <section ng-repeat="student in FinalStudenDetailsWithAllSpe" class="sheet DivResult" style="padding:30px">
+            <article>
+                <table id="OriginalTable" style="text-align: center;width:100%;margin: 0 auto;" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td>
+                            <table id="MasterTable" style="border: 3px solid #4771c6;text-align: center;width:100%;margin: 0 auto;min-height: 1500px;" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td class="tdHeightSet colorRuleChrome" style="font-size:26px;font-weight: 800; padding-top:15px;color: #1F3C67;">SIR VITHALDAS THACKERSEY COLLEGE OF HOME SCIENCE</td>
+                                </tr>
+                                <tr>
+                                    <td class="tdHeightSet Heading2SmallFont" style="font-size:19px; padding:5px;">(AUTONOMOUS)</td>
+                                </tr>
+                                <tr>
+                                    <td class="tdHeightSet colorRuleChrome" style="font-size:26px;font-weight: 800;color: #1F3C67;">S.N.D.T.  WOMEN'S UNIVERSITY</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;height: 1px;">
+                                        <table style="text-align: center;margin: auto;width:85%">
+                                            <tr>
+                                                <td rospan="2">
+                                                    <img style="height:125%;width:auto" src="MarksheetModuleJs/SVTLogo.png" />
+                                                </td>
+                                                <td style="font-size:17px">
+                                                    <table style="width:100%">
+                                                        <tr>
+                                                            <td class="Heading2SmallFont" style="color:black;font-size:18px">JUHU ROAD,  SANTACRUZ (WEST), MUMBAI- 400 049</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="Heading2SmallFont" style="font-weight: 700;padding:5px">STATEMENT  OF  MARKS</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td rospan="2">
+                                                    <img style="height:125%;width:auto" src="MarksheetModuleJs/SVTLogo2.png" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tdHeightSet Heading2SmallFont" style="padding-top: 15px;">
+                                        NAME OF THE STUDENT : <span class="HeadingSVT colorRuleChrome" style="font-family:Perpetua Titling;font-size:22px">Ms.<span class="SpanNameOfStudent colorRuleChrome"> {{student.LastName}} {{student.FirstName}} {{student.FatherName}} {{student.MotherName}}</span></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="height:99px">
+                                        <table style="font-size:10px">
+                                            <tr class="Heading2SmallFont">
+                                                <td id="WidthYear" style="width:690px"></td>
+                                                <td>
+                                                    <br />
+                                                    <table class="BordredTable" cellspacing="0" style="border: 2px solid #4771c6;text-align: center;font-size:17px">
+                                                        <tr>
+                                                            <td class="ThHeader" style="height:23px; text-align: center;width:135px; padding: 4px; padding-right: 35px; padding-left: 35px; border-right: 1px;border-bottom:1px;color:#073593">Year</td>
+                                                            <td style="text-align: center;width:90px;border-bottom:1px;"><span id="SpanSemesterYear">2018-19<!--{{GetYearLogicString(YearSelected)}}--></span></td>
+                                                            </
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="ThHeader" style="height:23px; text-align: center;border-right: 1px;color:#073593;padding: 4px;">Semester</td>
+                                                            <td style="text-align: center;padding: 3px;padding-right: 20px;padding-left: 20px;">{{GetWordFromNumber(student.Semester)}}</td>
+                                                        </tr>
+                                                    </table>
+                                                    <br />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <tr style="height:1px">
+                                    <td>
+                                        <table class="Heading2SmallFont BordredTable" style="width:100%;border-bottom:2px solid #4771c6;border-top:2px solid #4771c6; font-size:17px" cellspacing="0" cellpadding="0">
+                                            <tr class="ThHeader" style="color:darkblue">
+                                                <td style="width:20%;padding:2px">University  Permanent<br /> Registration No.</td>
+                                                <td style="width:20%">College Registration No.</td>
+                                                <td style="width:10%">Class</td>
+                                                <td style="width:25%">Department</td>
+                                                <td>Specialization</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-bottom: 5px;padding-top: 5px;border-top:2px solid #4771c6;">{{RemoveChar(student.PRN)}}</td>
+                                                <td style="border-top:2px solid #4771c6;">{{student.SeatNumber}}</td>
+                                                <td style="padding-bottom: 5px;padding-top: 5px;border-top:2px solid #4771c6;">{{student.Course}}<br /><span style="font-size:10px"></span> </td>
+                                                <td style="border-top:2px solid #4771c6;">{{GetDepartment(student.Specialisation) | uppercase}}</td>
+                                                <td style="border-top:2px solid #4771c6;">{{student.Specialisation | uppercase}}</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr style="height:50px">
+                                    <td style="height:1px"><div style=""></div></td>
+                                </tr>
+                                <tr>
+                                    <td style="height: 15px;">
+                                        <table class="Heading2SmallFont leftrightBorder height26ToAllTd" style="width:100%;border-left:0px solid #4771c6; font-size:18px;border-bottom:1px solid #4771c6;border-top:2px solid #4771c6;padding-top:2px;padding-bottom:2px" cellspacing="0" cellpadding="0">
+                                            <thead>
+                                                <tr class="ThHeader">
+                                                    <td style="width:27%;border-bottom:2px solid #4771c6;font-size:17px">SUBJECT</td>
+                                                    <td style="width:7%;border-bottom:2px solid #4771c6;font-size:15px">TH/PR</td>
+                                                    <td style="width:7%; border-bottom:2px solid #4771c6;font-size:15px">CREDITS</td>
+                                                    <td style="width:7%; border-bottom:2px solid #4771c6;font-size:15px">INTERNAL MARKS<br />(50)</td>
+                                                    <td style="width:7%; border-bottom:2px solid #4771c6;font-size:15px">FINAL MARKS<br />(50)</td>
+                                                    <td style="width:7%; border-bottom:2px solid #4771c6;font-size:15px">TOTAL MARKS<br />(100)</td>
+                                                    <td style="width:7%; border-bottom:2px solid #4771c6;font-size:15px">GRADE</td>
+                                                    <td style="width:7%; border-bottom:2px solid #4771c6;font-size:15px">GRADE POINT</td>
+                                                    <td style="width:7%; border-bottom:2px solid #4771c6;font-size:15px">TOTAL GRADE POINT</td>
+                                                    <td style="border-bottom:2px solid #4771c6;font-size:15px">REMARK</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody ng-repeat="mark in student.MarkSheetArray">
+                                                <tr>
+                                                    <td style="text-align:left;padding:5px;border-bottom:1px solid #4771c6;">
+                                                        <div style="min-height: 35px;display: table;">
+                                                            <span class="{{mark.PaperCodeFromJson}}"
+                                                                  style="vertical-align: middle;line-height: normal;display: table-cell;">{{mark.SubjectName}}</span>
+                                                        </div>
+                                                    </td>
+                                                    <td style="border-bottom:1px solid #4771c6;">{{mark.PaperTypeIs}}</td>
+                                                    <td style="border-bottom:1px solid #4771c6;" class="Credit{{student.Index}}">{{mark.CreditScore}}</td>
+                                                    <td style="border-bottom:1px solid #4771c6;font-size:13px" colspan="2" ng-if="mark.IsAssesment==1">Continuous Assessment</td>
+                                                    <td style="border-bottom:1px solid #4771c6;" ng-if="(ChecktheoryInternalMax(mark.PaperCodeFromJson)!=0) && (mark.IsAssesment!=1) && mark.StudentInternalAttended"
+                                                        class="InternalMark{{StudentData.indexOf(student)}}">
+                                                        {{mark.InternalMark}}
+                                                    </td>
+                                                    <td style="border-bottom:1px solid #4771c6;" ng-if="(ChecktheoryInternalMax(mark.PaperCodeFromJson)!=0) && (mark.IsAssesment!=1) && !mark.StudentInternalAttended" 
+                                                        class="InternalMark{{StudentData.indexOf(student)}}">
+                                                        {{mark.StudentInternalStatus}}
+                                                    </td>
+                                                    <td style="border-bottom:1px solid #4771c6;" ng-if="(ChecktheoryInternalMax(mark.PaperCodeFromJson)==0) &&
+                                                        (mark.IsAssesment!=1)" class="InternalNoMark{{StudentData.indexOf(student)}}">-</td>
+                                                    <td style="border-bottom:1px solid #4771c6;" ng-if="(mark.IsAssesment!=1) && mark.StudentExternalAttended" class="ExternalMark{{student.Index}}">{{mark.ExternalMark}}</td>
+                                                    <td style="border-bottom:1px solid #4771c6;" ng-if="(mark.IsAssesment!=1) && !mark.StudentExternalAttended" class="ExternalMark{{student.Index}}">{{mark.StudentExternalStatus}}</td>
+
+                                                    <td style="border-bottom:1px solid #4771c6;" class="TotalMark{{student.Index}}">{{mark.TotalMark}}</td>
+                                                    <td style="border-bottom:1px solid #4771c6;">{{mark.Grade}}</td>
+                                                    <td style=" border-bottom:1px solid #4771c6;" class="GradePoint{{student.Index}}">
+                                                        {{mark.GradePoint | number : 2}}
+                                                    </td>
+                                                    <td style="border-bottom:1px solid #4771c6;" class="TotalGradePoint{{student.Index}}">
+                                                        {{mark.TOTALGRADEPOINT | number : 2}}
+                                                    </td>
+                                                    <td class="ColorRedSetChrome" style="border-bottom:1px solid #4771c6;color:red">{{mark.Remark}}</td>
+                                                </tr>
+                                            </tbody>
+                                            <tr>
+                                                <td style="padding: 5px;text-align:left;"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                    <b></b>
+                                                </td>
+                                                <td>
+                                                    <b></b>
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding: 2px;text-align:left;min-height:35px"</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                    <b></b>
+                                                </td>
+                                                <td>
+                                                    <b></b>
+                                                </td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="ResultText" style="height:45px">
+                                                <td style="padding: 2px; height:45px;">
+                                                    <b> TOTAL</b>
+                                                </td>
+                                                <td style=""></td>
+                                                <td style=""><b>{{SumOfCredit(student.Index)}}</b></td>
+                                                <td style="">
+                                                    <!--<b>{{SumOfInternalMark(student.Index)}} </b>-->
+                                                    <b>{{student.InternalMarkTotal}} </b>
+                                                </td>
+                                                <td style="">
+                                                    <!--<b>{{SumOfExternalMark(student.Index)}}</b>-->
+                                                    <b>{{student.ExternalMarkTotal}}</b>
+                                                </td>
+                                                <td style="">
+                                                    <b id="TotalMark{{(StudentData.indexOf(student))}}">
+                                                        <!--{{SumOfTotalMark(student.Index)}}-->
+                                                        {{student.TotalMarks}}
+                                                    </b>
+                                                </td>
+                                                <td style=""></td>
+                                                <!--<td><b>{{TotalGradeCounter(StudentData.indexOf(student))}}</b></td>-->
+                                                <!--<td style="">-->
+                                                <td style=""><b>{{TotalBasedOnClass(student.Index) | number : 2 }}</b></td>
+                                                <td style=""><b>{{TotalGradePointBasedonClass(student.Index ) | number : 2}}</b></td>
+                                                <td style=""></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="Heading2SmallFont" style="text-align:left;padding:5px;border-bottom:2px solid #4771c6;border-top:1px solid #4771c6;height:23px">Remarks : {{student.Remarks}}</td>
+                                </tr>
+                                <tr>
+                                    <td class="Heading2SmallFont" style="text-align: left;padding: 2px;font-size: 12px;height: 1px;padding-top: 8px;">
+                                        <span><b>Th-Theory  /Pr- Practical  *2nd.Attempt/**3rd.Attempt/***4th.Attempt</b></span>
+                                        <!--<span ng-if="(IsSamesterOneTwo==1) || (IsSamesterOneTwo==2)"><b>/ *1 credit = 25 marks</b></span>-->
+                                        <span ng-if="(IsSamesterOneTwo==3) || (IsSamesterOneTwo==4)"><b>/ INTERNAL MARKS OUT OF 50, FINAL MARKS OUT OF 50, TOTAL MARKS OUT OF 100</b></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="height:10px"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="text-align: left;">
+                                            <div style="display:inline-block;text-align:left;">
+                                                <table class="Heading2SmallFont" style="font-size:17px;text-align:left;">
+                                                    <tr>
+                                                        <td style="height: 100px; padding-left:5px">Entered  by:</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="height:16px; width:675px;"></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align:left;padding:3px;padding-left:5px">Checked  by:</td>
+                                                        <td></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div style="display:inline-block;text-align:left;">
+                                                <table class="BordredTable Heading2SmallFont" style="border:2px solid #4771c6; font-size:17px">
+                                                    <tr>
+                                                        <td class="ThHeader" style="padding: 3px;">Percentage (Weighted)</td>
+                                                        <td ng-if="(student.Remarks | uppercase)!='PASS'" style="width:85px;padding: 3px; text-align:center"><b>-</b></td>
+                                                        <td ng-if="(student.Remarks| uppercase)=='PASS' && FinalResultDisplay" style="width:85px;padding: 3px; text-align:center"><b>-<!--GetPercentageOfStudent(student.Index)--></b></td>
+                                                        <td ng-if="(student.Remarks| uppercase)=='PASS' && !FinalResultDisplay" style="width:85px;padding: 3px; text-align:center"><b>{{student.Percentage | number : 2}}<!--GetPercentageOfStudent(student.Index)--></b></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="ThHeader" style="padding: 3px;">Grade</td>
+                                                        <td ng-if="(student.Remarks| uppercase)!='PASS'" style="padding: 3px; text-align:center"><b>-</b></td>
+                                                        <td ng-if="(student.Remarks| uppercase)=='PASS' && FinalResultDisplay" style="padding: 3px; text-align:center"><b><!--{{TotalGradeCounter(student.Index)}}-->-</b></td>
+                                                        <td ng-if="(student.Remarks| uppercase)=='PASS' && !FinalResultDisplay" style="width:85px;padding: 3px; text-align:center"><b>{{student.Grade}}<!--GetPercentageOfStudent(student.Index)--></b></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="ThHeader" style="padding: 3px;">Grade  Point</td>
+                                                        <td ng-if="(student.Remarks| uppercase)!='PASS'" style="padding: 3px; text-align:center"><b>-</b></td>
+                                                        <td ng-if="(student.Remarks| uppercase)=='PASS' && FinalResultDisplay"  style="padding: 3px; text-align:center"><b>-</b></td>
+                                                        <td ng-if="(student.Remarks| uppercase)=='PASS' && !FinalResultDisplay" style="width:85px;padding: 3px; text-align:center"><b>{{FinalGradePoint(student.Index) | number : 2}}<!--GetPercentageOfStudent(student.Index)--></b></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td style="width:645px"></td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="height:50px"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="Heading2SmallFont" style="width:100%; font-size:16px">
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <!--<img src="MarksheetModuleJs/ControllerOfExam.png" />-->
+                                                    <img style="width: 200px;" src="MarksheetModuleJs/ControllerOfExam.png" />
+                                                </td>
+                                                <td>
+                                                    <img style="padding:5px; width: 200px;" src="MarksheetModuleJs/Principal.png" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:30%">Date : {{DateOfExamToPrint}}</td>
+                                                <!--<td style="width:20%">Date : {{DateSelectedval}}</td>-->
+                                                <td style="width:
+                                                <td style=" width:40%">
+                                                    Controller of Examinations
+                                                </td>
+                                                <td style="width:30%">Principal</td>
+                                            </tr>
+
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+            </article>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1287 @@
+body
+{
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+.page
+{
+    float: left;
+    width: 100%;
+}
+/* Header - Start */
+.header-container
+{
+    float: left;
+    width: 100%;
+    box-shadow: 0 2px 2px #ddd;
+    margin-bottom: 2px;
+}
+.top-navigation
+{
+    float: left;
+    width: 100%;
+    background-color: #2c3747;
+    box-shadow: 0 2px 2px #999;
+    padding-bottom: 5px;
+}
+.top-navigation ul.top-nav
+{
+    float: right;
+    list-style: none; /*width: 30%;*/
+    width: 36%;
+    padding-right: 10%;
+}
+ul.top-nav li.top
+{
+    /*float: left;*/
+    float: right;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-top: 5px;
+    color: White;
+}
+ul.top-nav li.top a.top
+{
+    color: White;
+}
+.header
+{
+    float: left;
+    margin-left: 10%;
+    width: 80%;
+    margin-right: 10%;
+    margin-top: 1%;
+}
+.logo
+{
+    float: left; /*width: 80px;*/
+    width: auto;
+    height: 80px;
+    margin-right: 2%; /*border: 1px solid #CCC;*/
+    border-radius: 5px;
+    padding-bottom: 1%;
+}
+.college-name
+{
+    float: left;
+    font-size: 1.5em;
+    margin-top: 3%;
+}
+.search-container
+{
+    float: right;
+    margin-top: 3%; /* Added by anup to align it proprely*/
+    margin-right: 2%;
+}
+.search-container input
+{
+    float: left;
+    margin-right: 5px;
+}
+.search-container div
+{
+    float: left;
+}
+/* Header - end */
+/* Content container - start */
+.content-container
+{
+    /* make changes according to iframe*/ /*width: 80%; margin-left: 10%;     margin-right: 10%;*/
+    float: left;
+    margin-top: 2%;
+    width: 100%;
+}
+.left-navigation
+{
+    float: left;
+    width: 23%;
+    min-height: 500px;
+}
+ul.left-nav
+{
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #CCC;
+    border-bottom: none;
+    box-shadow: 0 2px 2px #999;
+    width: 100%;
+}
+ul.left-nav li
+{
+    float: left;
+    width: 95%;
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-bottom: 10px;
+    background-color: #EFEFEF;
+    cursor: pointer;
+    border-bottom: 1px solid #AAA;
+    color: #666;
+}
+ul.left-nav li.head
+{
+    background-color: #3090C7;
+    text-transform: uppercase;
+    color: White;
+    font-weight: bold;
+}
+ul.left-nav li.active
+{
+    background-color: #FFF;
+    color: #3090C7;
+    font-weight: bold;
+}
+ul.left-nav li:hover
+{
+    background-color: #3090C7;
+    color: #FFF;
+}
+.content, .quiz-content
+{
+    float: left;
+    margin-left: -1%;
+    width: 77%;
+    border: 1px solid #CCC;
+    box-shadow: 0 2px 2px #999;
+}
+.quiz-content
+{
+    margin-left: 0% !important;
+    width: 99% !important;
+}
+.content-summary
+{
+    float: left;
+    padding: 2%;
+    width: 96%;
+    background-color: #3090C7;
+    color: #FFF;
+}
+.summary-header
+{
+    float: left;
+    font-size: 2em;
+    color: White;
+    padding-bottom: 1%;
+    width: 98%;
+}
+.content-main
+{
+    float: left;
+    width: 96%;
+    background-color: #FFF;
+    padding: 2%;
+}
+.content-navigation
+{
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+/* Content container - end */
+/* Footer - start */
+.footer-container
+{
+}
+/* Footer - end */
+
+/* Themes */
+
+/* Blue */
+ul.blue li:hover, ul.blue li.head, .blue
+{
+    background-color: #3090C7;
+}
+
+ul.blue li:hover, ul.blue li:hover a
+{
+    color: #FFF !important;
+}
+ul.blue li.active
+{
+    color: #3090C7;
+}
+
+/* Green */
+ul.green li:hover, ul.green li.head, .green
+{
+    background-color: #89C35C;
+}
+
+ul.green li:hover, ul.green li:hover a
+{
+    color: #FFF !important;
+}
+ul.green li.active
+{
+    color: #89C35C;
+}
+
+/* Pink */
+ul.pink li:hover, ul.pink li.head, .pink
+{
+    background-color: #9F000F;
+}
+ul.pink li:hover, ul.pink li:hover a
+{
+    color: #FFF !important;
+}
+ul.pink li.active
+{
+    color: #9F000F;
+}
+/* orange */
+ul.orange li:hover, ul.orange li.head, .orange
+{
+    /*background-color: #ff7f50;*/
+    background-color: #FFA500;
+}
+ul.orange li:hover, ul.orange li:hover a
+{
+    color: #FFF !important;
+}
+ul.orange li.active
+{
+    /*color: #ff7f50;*/
+    color: #FFA500;
+}
+/* Purple */
+ul.purple li:hover, ul.purple li.head, .purple
+{
+    background-color: #8e35ef;
+}
+ul.purple li:hover, ul.purple li:hover a
+{
+    color: #FFF !important;
+}
+ul.purple li.active
+{
+    color: #8e35ef;
+}
+
+
+/*For All Image in Center*/
+
+.img1
+{
+    text-align: center !important;
+}
+
+/*added by Shrikant */
+/* For comparison.htm  */
+.divTable
+{
+    display: table; /*width: auto;     border: 1px solid #666666;*/
+}
+
+.divRow
+{
+    display: table-row;
+    width: auto; /*line-height : 20px;*/
+}
+
+.divCell
+{
+    float: left;
+    display: table-column;
+    width: 150px;
+    border: 1px solid #666666;
+    min-height: 41px;
+}
+
+/*.divCell1
+{
+    float: left;
+    display: table-column;
+    width: 150px;
+    border: 1px solid #666666;
+    min-height: 82px;
+}
+
+.divCell2
+{
+    float: left;
+    display: table-column;
+    width: 150px;
+    border: 1px solid #666666;
+    min-height: 104px;
+}
+
+.divCell3
+{
+    float: left;
+    display: table-column;
+    width: 150px;
+    border: 1px solid #666666;
+    min-height: 150px;
+}*/
+
+
+/*For protocols.htm*/
+
+.divCellP
+{
+    float: left;
+    display: table-column;
+    width: 46%;
+    border: 1px solid #666666;
+    min-height: 40px;
+    padding: 1%;
+    line-height: 20px;
+}
+
+.questionText
+{
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.answerOption
+{
+    margin-top: 10px;
+}
+
+.ansRadio
+{
+    margin-top: 3px !important;
+    margin-left: 5px !important;
+    width: 20px !important;
+    float: left;
+}
+.radioDiv
+{
+    float: left;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.quizContainer
+{
+    width: 94%;
+    float: left; /*padding: 20px;*/
+    padding: 3%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #EBF4FA;
+    box-shadow: 0 2px 2px #999;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.ErrorContainer
+{
+    width: 97%; /*padding: 10px;*/
+    padding: 1%;
+    float: left;
+    border-radius: 5px;
+    float: left;
+    background-color: pink;
+    margin-bottom: 10px;
+}
+
+.QuizText
+{
+    width: 25%;
+    padding: 10px;
+    float: left;
+    border-radius: 5px;
+    float: left;
+    background-color: pink;
+    margin-bottom: 10px;
+}
+
+/* added by vasim at 15-11-13 */
+
+#ql_SideBar
+{
+    position: fixed;
+    z-index: 1001;
+    width: 250px;
+    right: 20px;
+    bottom: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid #bbb;
+}
+#ql_Display
+{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+    font-size: .9em;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ccc;
+    -webkit-box-shadow: 0 1px 0 rgba(200, 200, 200, 0.2);
+    -moz-box-shadow: 0 1px 0 rgba(200, 200, 200, 0.2);
+    box-shadow: 0 1px 0 rgba(200, 200, 200, 0.2);
+    background-image: linear-gradient(top,#fff,#ccc);
+}
+
+/*Percent Bar*/
+.percent
+{
+    color: black;
+}
+
+.cl
+{
+    clear: both;
+}
+.fl
+{
+    /*float: left;*/
+}
+.range_wrap
+{
+    background: #000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.ui-widget-content
+{
+    background: url("images/slider_left.png") repeat-x;
+}
+.ui-slider-horizontal
+{
+    height: 0.7em;
+}
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled
+{
+    opacity: 1;
+}
+.ui-widget-content
+{
+    border: 0px;
+}
+.ui-slider .ui-slider-range
+{
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.ui-slider-horizontal .ui-slider-range-max
+{
+    right: 0;
+}
+.ui-slider-horizontal .ui-slider-handle
+{
+    top: 0.7em;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default
+{
+    background: url("../images/arrow_slide.png") no-repeat;
+    border: none;
+}
+.ui-slider-horizontal .ui-slider-handle
+{
+    margin-left: -0.5em;
+}
+
+
+.ChartContainer
+{
+    float: left;
+    width: 96%;
+    background-color: #FFF;
+    padding: 2%;
+    border: #ccc;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+}
+.HeadingDiv
+{
+    text-align: center;
+    margin-left: 35%;
+}
+.SubHead1
+{
+    background-color: rgba(146, 144, 144, 0.5);
+    float: left;
+    font-size: medium;
+    padding: 1%;
+    border-radius: 4px;
+}
+.SubHead2
+{
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: medium;
+    padding: 1%;
+}
+.SubHead3
+{
+    background-color: rgba(151,187,205,0.5);
+    float: left;
+    font-size: medium;
+    padding: 1%;
+    border-radius: 4px;
+}
+
+#SyllbusContainer
+{
+    width: 80%;
+    float: left;
+    background-color: #fff;
+    margin: 2% 10% 4% 10%;
+}
+
+#finalquizcontainer
+{
+    width: 80%;
+    min-height: 500px;
+    border: none;
+    margin-bottom: 1%;
+}
+
+.typing-image
+{
+    width: 70px;
+}
+
+.ExamStateContainer
+{
+    width: 100%;
+    border-radius: 5px;
+    margin-top: -3%; /*background-color: rgb(206, 195, 195);*/
+    float: left;
+    padding: 0 4%;
+}
+.ExamState
+{
+    width: 21%;
+    /*height: 20px;*/
+    float: left;
+    background-color: rgb(219, 219, 219);
+    padding: 1%;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    border: solid 0.1em #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:600px)
+{
+    #ql_SideBar
+    {
+        visibility: hidden !important;
+    }
+
+    canvas
+    {
+        height: 100px;
+    }
+
+    #ChangePassword, #RegisterStudent, #ReportIssue
+    {
+        visibility: hidden !important;
+    }
+    #liChangePass
+    {
+        display: none !important;
+    }
+
+    .search-container input[type="text"], textarea
+    {
+        width: 68%;
+    }
+
+    #NewsContainer, #studentreportsbutton, .user-name, #currentCourse, #reportissuelink
+    {
+        display: none !important;
+    }
+
+    #dataContainer
+    {
+        width: 100%;
+    }
+    ul.top-nav
+    {
+        width: 90% !important;
+    }
+
+    .content-container
+    {
+        margin-left: 0% !important;
+        padding: 0px !important;
+        width: 100% !important;
+    }
+
+    #ifContent
+    {
+        width: 100% !important;
+        min-height: 500px !important;
+    }
+    .left-navigation
+    {
+        font-size: 12px;
+        min-height: 0px !important;
+    }
+
+    .content
+    {
+        font-size: 12px;
+    }
+
+    .header
+    {
+        float: none;
+        margin-left: 0%;
+        width: 100%;
+        margin-right: 0%;
+        margin-top: 12%;
+        font-size: 15px !important;
+    }
+    .logo
+    {
+        float: left;
+        width: auto;
+        height: 55px;
+        margin-right: 6%;
+    }
+    #logoImage
+    {
+        margin-left: 30%;
+    }
+    .breadcrumb
+    {
+        font-size: 12px;
+    }
+    .header-container
+    {
+        font-size: 15px;
+    }
+
+    #dataContainer, #recentActivity
+    {
+        width: 48%;
+        min-height: 373px;
+    }
+    #imgStartContinue
+    {
+        width: 30px;
+    }
+    #hyperlink
+    {
+        font-size: 12px;
+    }
+    #SyllbusContainer
+    {
+        width: 98%;
+        float: left;
+        background-color: #fff;
+        margin: 2% 1% 4% 1%;
+    }
+
+    #ifHintContent
+    {
+        width: 100% !important;
+    }
+
+    .top-nav
+    {
+        float: right;
+        list-style: none;
+        width: 30%;
+        margin-right: 7%;
+    }
+    #completePer
+    {
+        width: 37%;
+    }
+    
+    .ExamStateContainer
+    {
+        display:none !important;
+    }
+}
+
+
+
+@media only screen and (max-width:568px)
+{
+    #ql_SideBar
+    {
+        visibility: hidden !important;
+    }
+
+    canvas
+    {
+        height: 100px;
+    }
+
+    #ChangePassword, #RegisterStudent, #ReportIssue
+    {
+        visibility: hidden !important;
+    }
+    #liChangePass
+    {
+        display: none !important;
+    }
+
+    .search-container input[type="text"], textarea
+    {
+        width: 68%;
+    }
+
+    #NewsContainer, #studentreportsbutton, .user-name, #currentCourse, #reportissuelink
+    {
+        display: none !important;
+    }
+
+    #dataContainer
+    {
+        width: 100%;
+    }
+    ul.top-nav
+    {
+        width: 90% !important;
+    }
+
+    .content-container
+    {
+        margin-left: 0% !important;
+        padding: 0px !important;
+        width: 100% !important;
+    }
+
+    #ifContent
+    {
+        width: 100% !important; /*min-height: 0px !important;*/
+    }
+    .left-navigation
+    {
+        font-size: 12px;
+        min-height: 0px !important;
+    }
+
+    .content
+    {
+        font-size: 12px;
+    }
+
+    .header
+    {
+        float: none;
+        margin-left: 0%;
+        width: 100%;
+        margin-right: 0%;
+        margin-top: 12%;
+        font-size: 15px !important;
+    }
+    .logo
+    {
+        float: left;
+        width: auto;
+        height: 55px;
+        margin-right: 6%;
+    }
+    #logoImage
+    {
+        margin-left: 30%;
+    }
+    .breadcrumb
+    {
+        font-size: 12px;
+    }
+    .header-container
+    {
+        font-size: 15px;
+    }
+
+    #dataContainer, #recentActivity
+    {
+        width: 48%;
+        min-height: 373px;
+    }
+    #imgStartContinue
+    {
+        width: 30px;
+    }
+    #hyperlink
+    {
+        font-size: 12px;
+    }
+    .top-nav
+    {
+        float: right;
+        list-style: none;
+        width: 30%;
+        margin-right: 7%;
+    }
+
+    #SyllbusContainer
+    {
+        width: 98%;
+        float: left;
+        background-color: #fff;
+        margin: 2% 1% 4% 1%;
+    }
+
+    #ifHintContent
+    {
+        width: 100% !important;
+    }
+
+    #finalquizcontainer
+    {
+        min-height: 500px !important;
+        width: 100% !important;
+    }
+    
+    .ExamStateContainer
+    {
+        display:none !important;
+    }
+}
+@media only screen and (max-width:480px)
+{
+    #ql_SideBar
+    {
+        visibility: hidden !important;
+    }
+
+    canvas
+    {
+        height: 100px;
+    }
+
+    #ChangePassword, #RegisterStudent, #ReportIssue
+    {
+        visibility: hidden !important;
+    }
+    #liChangePass
+    {
+        display: none !important;
+    }
+
+    .search-container input[type="text"], textarea
+    {
+        width: 68%;
+    }
+
+    #NewsContainer, #studentreportsbutton, .user-name, #currentCourse, #reportissuelink
+    {
+        display: none !important;
+    }
+
+    #dataContainer
+    {
+        width: 100%;
+    }
+    ul.top-nav
+    {
+        width: 90% !important;
+    }
+
+    .content-container
+    {
+        margin-left: 0% !important;
+        padding: 0px !important;
+        width: 100% !important;
+    }
+
+    #ifContent
+    {
+        width: 100% !important; /* min-height: 0px !important;*/
+    }
+    .left-navigation
+    {
+        font-size: 12px;
+        min-height: 0px !important;
+    }
+
+    .content
+    {
+        font-size: 12px;
+    }
+
+    .header
+    {
+        float: none;
+        margin-left: 0%;
+        width: 100%;
+        margin-right: 0%;
+        margin-top: 12%;
+        font-size: 15px !important;
+    }
+    .logo
+    {
+        float: left;
+        width: auto;
+        height: 55px;
+        margin-right: 2%;
+    }
+    .breadcrumb
+    {
+        font-size: 12px;
+    }
+    .header-container
+    {
+        font-size: 15px;
+    }
+
+    #dataContainer, #recentActivity
+    {
+        width: 48%;
+        min-height: 373px;
+    }
+    #imgStartContinue
+    {
+        width: 30px;
+    }
+    #hyperlink
+    {
+        font-size: 12px;
+    }
+
+    #SyllbusContainer
+    {
+        width: 98%;
+        float: left;
+        background-color: #fff;
+        margin: 2% 1% 4% 1%;
+    }
+
+    #ifHintContent
+    {
+        width: 100% !important;
+    }
+
+    #finalquizcontainer
+    {
+        min-height: 500px !important;
+        width: 100% !important;
+    }
+    
+    .ExamStateContainer
+    {
+        display:none !important;
+    }
+}
+
+@media only screen and (max-width:384px)
+{
+    #ql_SideBar
+    {
+        visibility: hidden !important;
+    }
+
+    canvas
+    {
+        height: 100px;
+    }
+
+    #ChangePassword, #RegisterStudent, #ReportIssue
+    {
+        visibility: hidden !important;
+    }
+    #liChangePass
+    {
+        display: none !important;
+    }
+
+    .search-container input[type="text"], textarea
+    {
+        width: 68%;
+    }
+
+    #NewsContainer, #recentActivity, #studentreportsbutton, .user-name, #currentCourse, #reportissuelink
+    {
+        display: none !important;
+    }
+
+    #dataContainer
+    {
+        width: 100%;
+    }
+    ul.top-nav
+    {
+        width: 90% !important;
+    }
+
+    .content-container
+    {
+        margin-left: 0% !important;
+        padding: 0px !important;
+        width: 100% !important;
+    }
+
+    #ifContent
+    {
+        width: 100% !important; /*min-height: 0px;*/
+    }
+    .left-navigation
+    {
+        font-size: xx-small;
+        min-height: 0px;
+    }
+
+    .content
+    {
+        font-size: xx-small;
+    }
+
+    .header
+    {
+        float: none;
+        margin-left: 0%;
+        width: 100%;
+        margin-right: 0%;
+        margin-top: 12%;
+        font-size: 12px;
+    }
+    .logo
+    {
+        float: left;
+        width: auto;
+        height: 45px;
+        margin-right: 2%;
+    }
+    .breadcrumb
+    {
+        font-size: xx-small;
+    }
+    .header-container
+    {
+        font-size: 12px;
+    }
+
+    #SyllbusContainer
+    {
+        width: 98%;
+        float: left;
+        background-color: #fff;
+        margin: 2% 1% 4% 1%;
+    }
+
+    #ifHintContent
+    {
+        width: 100% !important;
+    }
+    
+    .ExamStateContainer
+    {
+        display:none !important;
+    }
+}
+
+@media only screen and (max-width:320px)
+{
+    #ql_SideBar
+    {
+        visibility: hidden !important;
+    }
+
+    canvas
+    {
+        height: 100px;
+    }
+
+    #ChangePassword, #RegisterStudent, #ReportIssue
+    {
+        visibility: hidden !important;
+    }
+    #liChangePass
+    {
+        display: none !important;
+    }
+
+    .search-container input[type="text"], textarea
+    {
+        width: 68%;
+    }
+
+    #NewsContainer, #recentActivity, #studentreportsbutton, .user-name, #currentCourse, #reportissuelink
+    {
+        display: none !important;
+    }
+
+    #dataContainer
+    {
+        width: 100%;
+    }
+    ul.top-nav
+    {
+        width: 90% !important;
+    }
+
+    .content-container
+    {
+        margin-left: 0% !important;
+        padding: 0px !important;
+        width: 100% !important;
+    }
+
+    #ifContent
+    {
+        width: 100% !important; /* min-height: 0px;*/
+    }
+    .left-navigation
+    {
+        font-size: xx-small;
+        min-height: 0px;
+    }
+
+    .content
+    {
+        font-size: xx-small;
+    }
+
+    .header
+    {
+        float: none;
+        margin-left: 0%;
+        width: 100%;
+        margin-right: 0%;
+        margin-top: 12%;
+        font-size: 12px;
+    }
+    .logo
+    {
+        float: left;
+        width: auto;
+        height: 45px;
+        margin-right: 2%;
+    }
+    .breadcrumb
+    {
+        font-size: xx-small;
+    }
+    .header-container
+    {
+        font-size: 12px;
+    }
+
+    #SyllbusContainer
+    {
+        width: 98%;
+        float: left;
+        background-color: #fff;
+        margin: 2% 1% 4% 1%;
+    }
+
+    #ifHintContent
+    {
+        width: 100% !important;
+    }
+    .ExamStateContainer
+    {
+        display:none !important;
+    }
+}
+
+@media only screen and (max-width:240px)
+{
+    .ExamStateContainer
+    {
+        display:none !important;
+    }
+    
+    #ql_SideBar
+    {
+        visibility: hidden !important;
+    }
+
+    canvas
+    {
+        height: 100px;
+    }
+
+    #ChangePassword, #RegisterStudent, #ReportIssue
+    {
+        visibility: hidden !important;
+    }
+
+    #liChangePass
+    {
+        display: none !important;
+    }
+
+    .search-container input[type="text"], textarea
+    {
+        width: 68%;
+    }
+
+    #NewsContainer, #recentActivity, #studentreportsbutton, .user-name, #currentCourse, #reportissuelink
+    {
+        display: none !important;
+    }
+
+    #dataContainer
+    {
+        width: 100%;
+    }
+    ul.top-nav
+    {
+        width: 90% !important;
+    }
+
+    .content-container
+    {
+        margin-left: 0% !important;
+        padding: 0px !important;
+        width: 97% !important;
+    }
+
+    #ifContent
+    {
+        width: 100% !important;
+    }
+    .left-navigation
+    {
+        display: none !important;
+    }
+
+    .content
+    {
+        width: 102%;
+    }
+    #chapters, #secions
+    {
+        display: block !important;
+    }
+    #SyllbusContainer
+    {
+        width: 98%;
+        float: left;
+        background-color: #fff;
+        margin: 2% 1% 4% 1%;
+    }
+
+    #ifHintContent
+    {
+        width: 100% !important;
+    }
+    .breadcrumb
+    {
+        padding: 3% !important;
+    }
+
+    #my_progress_bar_1
+    {
+        display: none !important;
+    }
+}

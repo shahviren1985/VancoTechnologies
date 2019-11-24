@@ -1,0 +1,45 @@
+﻿<div class="row">
+    <div class="col col-lg-offset-3 col-lg-6">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">Generate Aggregate Marksheet</h3>
+            </div>
+            <form id="MarksheetGenerate">
+                <div class="box-body">
+                    <div class="form-group">
+                        <label for="sem">Semester</label>
+                        <!--<select name="sem" id="semester" ng-model="user.sem" class="form-control" data-validation="required" data-validation-error-msg="The Semester field is required">
+                            <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                        </select>-->
+                        <select class="Drp_Cnrtl form-control" id="semester" ng-model="UploadMarks.semester" data-validation="required"
+                                data-validation-error-msg="The semester field is required">
+                            <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                            <option value="All">All</option>
+                            <option value="4">4</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="examType">Exam Type</label>
+                        <select name="examType" ng-model="user.examType" id="examType" class="form-control" data-validation="required" data-validation-error-msg="The Exam Type field is required">
+                            <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                            <option value="Regular">Regular</option>
+                            <option value="Honors">Honors</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="Specialization">Specialization</label>
+                        <select name="Specialization" ng-model="user.Specialization" id="Specialization" class="form-control" data-validation="required" data-validation-error-msg="The Exam Type field is required">
+                            
+                        </select>
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary pull-right">Generate</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

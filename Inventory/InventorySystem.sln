@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "InventoryPortal", "http://localhost:3456", "{40DC1762-3678-496D-B76C-A24AEB6FE78E}"
+	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{8f21c133-f9ae-4225-a457-440401af8fdd}|DAO.dll;{98090444-4C2B-4FD7-AE36-57CF37B9A7DC}|DAOBase.dll;{A1CB010C-BA0E-4846-820F-A5266F43E59B}|Logger.dll;{32920BD5-3DF7-4589-ADF6-8BB4744D9310}|InventoryXmlConfiguration.dll;{C807E1CA-8C1E-49BA-8938-64F4C63BF58D}|Utilities.dll;{d7fce188-0db4-4583-bbe8-f6f7e0f2d92b}|ExcelGenerator.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_3456"
+		Debug.AspNetCompiler.PhysicalPath = "InventoryPortal\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_3456\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_3456"
+		Release.AspNetCompiler.PhysicalPath = "InventoryPortal\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_3456\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "InventoryPortal\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO", "DAO\DAO.csproj", "{8F21C133-F9AE-4225-A457-440401AF8FDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAOBase", "DAOBase\DAOBase.csproj", "{98090444-4C2B-4FD7-AE36-57CF37B9A7DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelGenerator", "ExcelGenerator\ExcelGenerator.csproj", "{D7FCE188-0DB4-4583-BBE8-F6F7E0F2D92B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logger", "Logger\Logger.csproj", "{A1CB010C-BA0E-4846-820F-A5266F43E59B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Utilities\Utilities.csproj", "{C807E1CA-8C1E-49BA-8938-64F4C63BF58D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryXmlConfiguration", "InventoryXmlConfiguration\InventoryXmlConfiguration.csproj", "{32920BD5-3DF7-4589-ADF6-8BB4744D9310}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40DC1762-3678-496D-B76C-A24AEB6FE78E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40DC1762-3678-496D-B76C-A24AEB6FE78E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40DC1762-3678-496D-B76C-A24AEB6FE78E}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{40DC1762-3678-496D-B76C-A24AEB6FE78E}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{8F21C133-F9AE-4225-A457-440401AF8FDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F21C133-F9AE-4225-A457-440401AF8FDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F21C133-F9AE-4225-A457-440401AF8FDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F21C133-F9AE-4225-A457-440401AF8FDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98090444-4C2B-4FD7-AE36-57CF37B9A7DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98090444-4C2B-4FD7-AE36-57CF37B9A7DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98090444-4C2B-4FD7-AE36-57CF37B9A7DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98090444-4C2B-4FD7-AE36-57CF37B9A7DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7FCE188-0DB4-4583-BBE8-F6F7E0F2D92B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7FCE188-0DB4-4583-BBE8-F6F7E0F2D92B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7FCE188-0DB4-4583-BBE8-F6F7E0F2D92B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7FCE188-0DB4-4583-BBE8-F6F7E0F2D92B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1CB010C-BA0E-4846-820F-A5266F43E59B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1CB010C-BA0E-4846-820F-A5266F43E59B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1CB010C-BA0E-4846-820F-A5266F43E59B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1CB010C-BA0E-4846-820F-A5266F43E59B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C807E1CA-8C1E-49BA-8938-64F4C63BF58D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C807E1CA-8C1E-49BA-8938-64F4C63BF58D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C807E1CA-8C1E-49BA-8938-64F4C63BF58D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C807E1CA-8C1E-49BA-8938-64F4C63BF58D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32920BD5-3DF7-4589-ADF6-8BB4744D9310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32920BD5-3DF7-4589-ADF6-8BB4744D9310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32920BD5-3DF7-4589-ADF6-8BB4744D9310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32920BD5-3DF7-4589-ADF6-8BB4744D9310}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

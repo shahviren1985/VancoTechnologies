@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html ng-app="ExamSystemApp">
+<head>
+    <title>Certificate</title>
+    <meta charset="utf-8" />
+    <script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="../../CustomJs/Angular.js"></script>
+    <script src="../../CustomJs/angular-route.js"></script>
+    <script src="../../CustomJs/alasql.min.js"></script>
+    <script src="../../CustomJs/Index.js"></script>
+    <link href="../../Assets/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../Assets/datepicker.css" rel="stylesheet" />
+    <script src="../../Assets/bootstrap.min.js"></script>
+    <script src="../../CustomJs/urlConfig.js"></script>
+    <script>
+        var Examapp = angular.module("ExamSystemApp", ["ngRoute"]);
+    </script>
+    <script src="../../CustomJs/AppConfig.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css">
+
+    <style>
+        /*@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);*/
+        @page {
+            size: A4 landscape;
+        }
+
+        @media print {
+            .HeadingText {
+                font-family: Broadway;
+                color: #0070C0 !important;
+                font-size: 35px;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .AutoNomText {
+                font-family: 'Comic Sans MS',sans-serif,'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+                font-size: 22px;
+                color: #003366 !important;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .AddressText {
+                font-family: 'Century Gothic';
+                font-size: 22px;
+                color: #632523 !important;
+                font-weight: 600;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .CertificateText {
+                font-family: 'Century Gothic';
+                font-size: 30px;
+                color: #974706 !important;
+                padding: 25px;
+                font-weight: 600;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .HonorText {
+                font-family: Arial;
+                font-size: 22px;
+                color: black !important;
+                text-align: justify;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .NameOfStudentcls {
+                font-style: italic;
+                color: #FF0000 !important;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .SemesterCls {
+                font-style: italic;
+                color: #70303C !important;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .Departmentcls {
+                font-style: italic;
+                color: #00B050 !important;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .specClass {
+                font-style: italic;
+                color: #002060 !important;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .GradeCls {
+                font-style: italic;
+                color: #FF0000 !important;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+
+        .HeadingText {
+            font-family: Broadway;
+            color: #0070C0;
+            font-size: 35px;
+        }
+
+        .AutoNomText {
+            font-family: 'Comic Sans MS',sans-serif,'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+            font-size: 22px;
+            color: #003366;
+        }
+
+        .AddressText {
+            font-family: 'Century Gothic';
+            font-size: 22px;
+            color: #632523;
+            font-weight: 600;
+        }
+
+        .CertificateText {
+            font-family: 'Century Gothic';
+            font-size: 40px;
+            color: #974706;
+            padding: 20px;
+            font-weight: 600;
+        }
+
+        .HonorText {
+            font-family: Arial;
+            font-size: 22px;
+            color: black;
+            text-align: justify;
+        }
+
+        .NameOfStudentcls {
+            font-style: italic;
+            color: #FF0000;
+        }
+    </style>
+
+</head>
+<body style="" ng-controller="GenerateMeritCertificateCtrl" class="A4 landscape">
+    <section class="sheet" style="padding: 50px; border: 10px black double;" ng-repeat="stud in DisplayData" ng-if="stud.Rank==1">
+        <article>
+            <div style="min-height: 580px">
+                <div class="row">
+                    <span class="pull-left" style="padding-left:60px">
+                        <img src="../../images/logo.png" />
+                    </span>
+                    <span class="pull-right" style="padding-right:60px">
+                        <img src="../../images/shree_logo.png" />
+                    </span>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center HeadingText">
+                        Sir Vithaldas Thackersey College Of Home Science
+                    </div>
+                    <div class="col-md-12 text-center AutoNomText">
+                        (Autonomous)
+                    </div>
+                    <div class="row text-center AddressText">
+                        S.N.D.T. Women’s University, Sir Vithaldas Vidyavihar, Juhu,
+                    </div>
+                    <div class="row text-center AddressText">
+                        Mumbai - 400049
+                    </div>
+                    <div class="row text-center CertificateText">
+                        Certificate
+                    </div>
+                </div>
+                <div class="row" style="padding-left:60px; padding-right:60px">
+                    <p style="font-family:Calibri;font-size:25px" class="HonorText">
+                        This is to certify that <span class="NameOfStudentcls" style="font-style: italic; color: #FF0000"> MS. {{stud.Name|uppercase}} </span>
+                        has  topped <span class="SemesterCls" style="font-style: italic; color: #70303C">SEMESTER - {{stud.Semester|RomanNumber}}</span> in the year <span class="SemesterCls" style="font-style: italic; color: #70303C">
+                            {{stud.CurrentMonth}} -  {{stud.CurrentYear}}
+                        </span> from       <span class="Departmentcls" style="font-style: italic; color: #00B050">{{stud.ActualDetails.Department}}</span>
+                        Specialization <span class="specClass" style="font-style: italic; color: #002060">{{stud.ActualDetails.Specialisation}}</span>
+                        with  <span class="GradeCls" style="font-style: italic; color: #FF0000">{{stud.Grade}} GRADE</span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <span class="pull-left" style="padding-left: 11%; padding-right: 60px; font-size: 25px; font-family: Calibri">
+                    <img src="../../MarksheetModuleJs/ControllerOfExam.png" style="height: 90px; width:auto" />
+                </span>
+                <span class="pull-right" style="padding-right: 9%; padding-top: 2.7%;">
+                    <img src="../../MarksheetModuleJs/Principal.png" />
+                </span>
+            </div>
+            <div class="row" style="padding-left:60px; padding-right:60px;font-size:25px;font-family:Calibri">
+                <span class="pull-left"> Controller  of  Examination</span>
+                <span class="pull-right" style="padding-right:9%"> Principal</span>
+            </div>
+        </article>
+    </section>
+</body>
+</html>

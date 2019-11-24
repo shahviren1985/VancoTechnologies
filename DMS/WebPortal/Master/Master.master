@@ -1,0 +1,212 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master.master.cs" Inherits="Master_Master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <%--<title>Email Sender</title>--%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="static/styles/style.css" rel="stylesheet" />
+        <link href="static/bootstrap.css" rel="stylesheet" />
+        <link href="static/bootstrap.icon-large.min.css" rel="stylesheet" />
+        <link href="../static/stylesheets/bootstrap.icon-large.min.css" rel="stylesheet" />
+
+        <script type="text/javascript" src="static/scripts/jquery-1.8.3.min.js"></script>
+
+        <script type="text/javascript" src="static/scripts/bootstrap-modal.js"></script>
+
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="HeaderScript" runat="server">
+        <link href="https://vancotech.com/dms/static/stylesheets/bootstrap.icon-large.min.css" rel="stylesheet" />
+        <script type="text/javascript">
+            var BASE_URL = "";
+            var College = '<%=College%>';
+
+            if (window.location.host.indexOf("localhost") > -1) {
+                BASE_URL = "http://localhost:45117/";
+            }
+            else {
+                //BASE_URL = "http://myclasstest.com/dms/";
+                BASE_URL = "https://vancotech.com/dms/";
+            }
+
+            LoadNotifications();
+
+            $(document).ready(function () {
+                $(".nav").find("li a").each(function () {
+                    var href = $(this).attr("href");
+                    if (href != "undefined" && href != null && href.indexOf(".aspx") > -1) {
+                        if (href.indexOf("http") > -1) {
+                            $(this).attr("href", $(this).attr("href"));
+                        }
+                        else {
+                            $(this).attr("href", BASE_URL + $(this).attr("href"));
+                        }
+                    }
+                });
+
+                $("#a-not").click(function () {
+                    if ($("#notifications").attr("display") == "block") {
+                        $("#notifications").hide(500);
+                        $("#notifications").attr("display", "none");
+                    }
+                    else {
+                        $("#notifications").show(500);
+                        $("#notifications").attr("display", "block");
+                    }
+                });
+
+                $("#btnclose").click(function () {
+                    $("#notifications").hide(500);
+                    $("#notifications").attr("display", "none");
+                });
+
+                $(".globe").attr("src", BASE_URL + "static/images/notification-globe.png");
+            });
+
+            function LoadNotifications() {
+                var fullUrl = BASE_URL + "api/AdvancedSearch.ashx?t=nt";
+                $.ajax({
+                    url: fullUrl,
+                    type: 'GET',
+                    dataType: 'text',
+                    success: PopulateNotifications
+                });
+            }
+
+            function PopulateNotifications(data) {
+                data = JSON.parse(data);
+
+                $("#not-body").empty();
+
+                if (data.length > 0) {
+                    $("#not-link").attr("style", "background-color:red");
+                    for (var i = 0; i < data.length; i++) {
+
+                        var title = data[i].FriendlyName;
+                        if (data[i].FriendlyName.length > 26)
+                            data[i].FriendlyName = data[i].FriendlyName.substring(0, 26) + " [...]";
+
+                        var ahref = "<a title='" + title + "' href='" + BASE_URL + "Documents.aspx?id=" + data[i].Id + "&doctype=" + data[i].DocumentType + "'>" + data[i].FriendlyName + " (" + data[i].Deadline + ")</a>";
+                        $("#not-body").append($("<div/>").attr("class", "not-row").html(ahref));
+                    }
+                }
+                else {
+                    $("#not-link").attr("style", "background-color:transparent");
+                    $("#not-body").append($("<div/>").attr("class", "not-row").html("No documents founds."));
+                }
+            }
+        </script>
+        <style>
+            #notifications {
+                width: 300px;
+                /* height: 200px; */
+                position: absolute;
+                /* float: right; */
+                right: 0;
+                border: 1px solid #ddd;
+                background-color: #fff;
+                text-align: left;
+                cursor: pointer;
+            }
+
+            #not-header {
+                float: left;
+                width: 97%;
+                padding: 5px;
+                border-bottom: 1px solid #ddd;
+            }
+
+            #not-body {
+                float: left;
+                width: 100%;
+                /* border-bottom: 1px solid #ddd; */
+            }
+
+            .not-row {
+                padding: 5px;
+                width: 97%;
+                border-bottom: 1px solid #ddd;
+                padding: 10px 5px 10px 5px;
+            }
+
+                .not-row:hover {
+                    background-color: aliceblue;
+                }
+
+            #not-counter {
+                background-color: red;
+                padding: 2px 4px;
+                color: white;
+                border-radius: 4px;
+                font-size: 10px;
+                position: absolute;
+                top: 10px;
+                right: 5px;
+            }
+
+            .notification-globe {
+                display: inline-block;
+                height: 28px;
+                line-height: 28px;
+                vertical-align: text-bottom;
+                width: 28px;
+            }
+        </style>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server" ID="sm1">
+        </asp:ScriptManager>
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="header-container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span
+                        class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </a>
+                    <div class="nav-collapse" style="float: right; margin-right: 100px;">
+                        <ul class="nav">
+                            <li><a>Welcome, <%=Session["FirstName"].ToString() %></a></li>
+                            <li><a href="Dashboard.aspx">Dashboard</a> </li>
+                            <li runat="server" id="Inward"><a href="Documents.aspx?doctype=inward">Inward Documents</a></li>
+                            <li runat="server" id="Outward"><a href="Documents.aspx?doctype=outward">Outward Documents</a></li>
+                            <li><a href="DocumentManagement/Dashboard.aspx">Employee Records</a></li>
+                            <li runat="server" id="Users"><a href="Admin/ManageUsers.aspx">Users</a> </li>
+                            <li runat="server" id="Locations"><a href="Admin/ManageStoreLocations.aspx">Store Locations</a> </li>
+                            <li runat="server" id="Reports"><a href="Admin/Reports.aspx">Reports</a> </li>
+                            <li runat="server" id="ChangePassword"><a href="ChangePassword.aspx">Change Password</a> </li>
+                            <li>
+                                <asp:LinkButton runat="server" ID="lbLogout" OnClick="lbLogout_Click" Text="Logout"></asp:LinkButton></li>
+                            <li id="not-link">
+                                <a id="a-not" href="javascript:void(0);" style="padding: 5px 6px 5px;">
+                                    <img class="globe" alt="notification image" />
+                                </a>
+                                <div id="notifications" style="display: none;">
+                                    <div id="not-header">
+                                        <b>Notifications</b><span id="btnclose" style="float: right; margin-right: 5px;" title="close notificatins">x</span>
+                                    </div>
+                                    <div id="not-body">
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="doc-container" style="margin-top: 50px">
+            <div id="logo" style="text-align: left; margin-left: 6%; float: left; width: 90%; margin-bottom: 20px;">
+                <asp:Image ID="imgLogo" runat="server" Width="65px" Style="float: left; margin-right: 20px;" />
+                <h3>Correspondance Management System</h3>
+            </div>
+            <div id="personal-info" style="display: none;">
+                <asp:Image ID="imgProfile" runat="server" Width="65px" Style="float: right; margin-right: 20px;" />
+                <div runat="server" id="PersonName"></div>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

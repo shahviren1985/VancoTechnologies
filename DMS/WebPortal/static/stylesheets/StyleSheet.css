@@ -1,0 +1,125 @@
+﻿input, textarea {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 5px;
+    width: 37%;
+    margin: 10px 0px 0px 0px;
+    margin-left: 0px;
+    float: left;
+}
+.marathi-key{float:left; margin-left: 5px; margin-top: 10px; padding: 5px;border:1px solid #333;font-weight:bold;border-radius: 4px;cursor:pointer;}
+.marathi-key:hover{background-color: #333;color:white;}
+.check-text {
+    float: left;
+    min-width: 135px;
+}
+
+#department-container, #user-tags-container, #file-tags-container {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#department-container {
+    margin-top: 10px;
+}
+
+.check-container, .radio-container {
+    width: 100%;
+    float: left;
+    min-height: 40px;
+}
+
+.file-upload {
+    float: left;
+    width: 200px;
+}
+
+.new-document {
+    float: left;
+    margin: 10px;
+    width: 100%;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    float: left;
+    width: 20px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.date-container {
+    float: left;
+    min-width: 150px;
+    margin: 0px 0px 10px 20px;
+}
+
+#inward-container, #inward-date-container {
+    float: left;
+}
+
+    #inward-container input, #inward-date-container input {
+        min-width: 150px;
+        margin-right: 10px;
+    }
+
+.error-message {
+    display: none;
+    margin-left: 20px;
+    color: red;
+}
+/**Form*/
+#to-container, #from-container, #department-container, #subject-container, #document-header, #file-tags-container, #user-tags-container {
+    float: left;
+    width: 100%;
+    /*margin-left: 6%;*/
+}
+
+#document-header-tube-container {
+    position: absolute;
+    top: 3%;
+    left: 36%;
+    margin-top: 10%;
+}
+
+#previous-comments-tube-container {
+    position: absolute;
+    margin-top: 7%;
+    right: 0%;
+}
+
+.previous-comments {
+    float: left;
+     
+    max-height: 435px;
+    margin-left: 5px;
+}
+
+#user-comments-container {
+    position: fixed;
+    z-index: 100;
+    left: 76%;
+    top: 86%;
+}
+
+    #user-comments-container textarea {
+        width: 275px;
+        float: left;
+        border-width: 2px;
+        border-color: #368BC1;
+        height: 60px;
+    }
+
+#file-tags, #department {
+    height: 60px;
+}
+
+.DocUploadStatus, .MarathiDocUploadStatus, .CommanUploadStatus {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#user-tags-container{
+    margin-bottom: 100px;
+}

@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master.master.cs" Inherits="Master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Inventory Management System</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <script type="text/javascript">
+            var BASE_URL = "<%=Util.BASE_URL%>";
+        </script>
+
+        <link href="<%=Util.BASE_URL%>/static/stylesheet/style.css" rel="stylesheet" />
+        <link href="<%=Util.BASE_URL%>/static/bootstrap.css" rel="stylesheet" />
+        <link href="<%=Util.BASE_URL%>/static/bootstrap.min.css" rel="stylesheet" />
+        <link href="<%=Util.BASE_URL%>/static/stylesheet/Form.css" />
+
+        <script type="text/javascript" src="<%=Util.BASE_URL%>/static/script/jquery-1.8.3.min.js"></script>
+        <script src="<%=Util.BASE_URL%>/static/script/Common.js" type="text/javascript"></script>
+
+        <link href="<%=Util.BASE_URL%>/static/StyleSheet/jquery-ui.css" rel="stylesheet"
+            type="text/css" />
+        <link rel="Stylesheet" href="<%= Util.BASE_URL%>/static/StyleSheet/Common.css" type="text/css" />
+        <link href="<%= Util.BASE_URL%>/static/StyleSheet/StyleSheet.css" rel="stylesheet"
+            type="text/css" />
+        <link href="<%= Util.BASE_URL%>/static/StyleSheet/Menu.css" rel="Stylesheet" type="text/css" />
+        <script type="text/javascript" src="<%= Util.BASE_URL%>/static/Script/jquery-1.7.1.min.js"
+            language="javascript"></script>
+        <script type="text/javascript" src="<%= Util.BASE_URL%>/static/Script/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="<%= Util.BASE_URL%>/static/Script/Common.js"></script>
+        <script type="text/javascript" src="<%= Util.BASE_URL%>/static/Script/OperationDetailsForm.js"></script>
+
+
+        <style type="text/css">
+            #Regions {
+                min-height: auto;
+            }
+
+            .LogoImage img {
+                float: left;
+                margin-top: 10px;
+                width: 100px;
+                height: 70px;
+            }
+        </style>
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="PageHeader" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ScriptManager runat="server" ID="sm1">
+            </asp:ScriptManager>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                <div id="Header">
+                    <div class="BackgroundContainer">
+                    </div>
+                    <div class="Logo">
+                        <a href="../Dashboard.aspx" class="LogoImage">
+                            <img src="<%= Util.BASE_URL%>/static/image/Logo.png" alt="Education Management Information System"
+                                title="Education Management Information System" id="img" /></a>
+                        <div style="width: 500px; float: left;">
+                            <div style="font-size: 24px; margin-top: 20px; font-family: Sans-Serif;">
+                                <asp:ContentPlaceHolder runat="server" ID="ApplicationTitle">
+                                    Inventory Management System
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="HeaderLinks">
+                        <%--<div class="Search">
+                            <a href="~/DocumentManagement/Dashboard.aspx" runat="server" id="serach" style="color: White;">Documents</a>
+                        </div>--%>
+                        <div class="Dashboard" runat="server" id="DashboardLink">
+                            <asp:LinkButton CausesValidation="false" runat="server" ID="lnkDashboard" Text="Dashboard"
+                                PostBackUrl="~/Dashboard.aspx" Style="color: White; text-decoration: none"></asp:LinkButton>
+                        </div>
+                        <div class="Login">
+                            <%----%>
+                            <%--<asp:LinkButton url="~/Login.aspx" class="LoginStatusText" runat="server"
+                            id="loginStatus">Login</a>--%>
+                            <asp:LinkButton runat="server" ID="lnkLogout" CausesValidation="false" OnClick="OnLogOut"
+                                Text="Logout" Style="color: White; text-decoration: none"></asp:LinkButton>
+                        </div>
+                    </div>
+                </div>
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder runat="server" ID="Content">
+            </asp:ContentPlaceHolder>
+        </div>
+        <asp:ContentPlaceHolder ID="FooterPlaceHolder" runat="server">            
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

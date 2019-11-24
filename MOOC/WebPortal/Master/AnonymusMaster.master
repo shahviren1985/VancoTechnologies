@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AnonymusMaster.master.cs"
+    Inherits="Master_AnonymusMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>MOOC Academy</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link rel="Stylesheet" href="static/bootstrap.css" />
+        <link rel="Stylesheet" href="static/styles/chapter-style.css" />
+        <script src="static/scripts/jquery-1.9.1.js"></script>
+        <%--<script src="static/scripts/AA.core.js"></script>--%>
+        <script src="static/scripts/mooc.core.js"></script>
+        <script type="text/javascript" src="static/scripts/bootstrap.min.js"></script>
+        <style type="text/css">
+            .ErrorContainer, .SuccessContainer {
+                padding: 10px;
+                float: left;
+                border-radius: 5px;
+                float: left;
+                background-color: pink;
+                margin-bottom: 10px;
+            }
+
+            .SuccessContainer {
+                background-color: lightgreen;
+            }
+        </style>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="page">
+                <div class="header-container">
+                    <div class="top-navigation">
+                        <ul class="top-nav" style="width: 36% !important; padding-right: 11%;">
+                            <li class="top"><a href="Login.aspx" class="top">
+                                <%= Session["UserName"] == null ? "Sign in" : "Logout"%>
+                            </a></li>
+                            <li class="user-name top">Welcome,
+                            <%= Session["Name"] == null ? "Guest" : Session["Name"].ToString().ToUpper()%></li>
+                        </ul>
+                    </div>
+                    <div class="header">
+                        <div class="logo">
+                            <a href="../Default.aspx" title="home">
+                                <asp:Image ID="logoImage" runat="server" Style="height: 100%; border-radius: 4px;"
+                                    ImageUrl="~/static/images/logo.png" /></a>
+                        </div>
+                        <div class="college-name" runat="server" id="divLogoHeader">
+                        </div>
+                        <div class="search-container">
+                            <input type="text" class="simplebox" placeholder="Search..." />
+                            <div class="btn btn-success">
+                                Go
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <asp:ContentPlaceHolder ID="Content" runat="server">
+                </asp:ContentPlaceHolder>
+                <div class="footer-container">
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+<script type="text/javascript">
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-46034211-1', 'auto');
+    ga('send', 'pageview');
+
+</script>

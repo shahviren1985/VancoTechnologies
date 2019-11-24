@@ -1,0 +1,295 @@
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+    color: #000;
+}
+@page
+{
+    size: A3 landscape;
+}
+
+.page_1 {
+    overflow: scroll;
+    overflow-y: hidden;
+    margin-left: 10px;
+    padding: 0px;
+    border: none;
+    page-break-after: always;
+}
+
+.page_1 .id1_1 {
+    border: none;
+    margin: 7px 0px 0px 0px;
+    padding: 0px;
+    border: none;
+    width: 1516px;
+    overflow: hidden;
+}
+
+.page_1 .id1_2 {
+    border: none;
+    margin: 10px 0px 0px 6px;
+    padding: 0px;
+    border: none;
+    width: 1510px;
+    overflow: hidden;
+}
+
+.ft0 {
+    font: 24px 'Arial';
+    line-height: 27px;
+}
+
+.ft1 {
+    font: 19px 'Arial';
+    line-height: 22px;
+}
+
+.ft2 {
+    font: 15px 'Arial';
+    line-height: 17px;
+}
+
+.ft12 {
+    font: 1px 'Arial';
+    line-height: 10px;
+}
+
+.ft15 {
+    font: 1px 'Arial';
+    line-height: 11px;
+}
+
+.ft17 {
+    font: 16px 'Arial';
+    line-height: 18px;
+}
+
+.ft18 {
+    font: 1px 'Arial';
+    line-height: 14px;
+}
+
+.ft19 {
+    font: 10px 'Arial';
+    line-height: 13px;
+}
+
+.p0 {
+    text-align: left;
+    padding-left: 442px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.p1 {
+    text-align: left;
+    padding-left: 275px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+}
+
+.p2 {
+    text-align: left;
+    padding-left: 402px;
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+
+.p12 {
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    white-space: nowrap;
+}
+
+.p13 {
+    text-align: left;
+    padding-left: 7px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    white-space: nowrap;
+}
+
+.p20 {
+    text-align: center;
+    padding-right: 277px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    white-space: nowrap;
+}
+
+.p21 {
+    text-align: center;
+    padding-right: 273px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    white-space: nowrap;
+}
+
+.p22 {
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.td38 {
+    padding: 0px;
+    margin: 0px;
+    width: 58px;
+    vertical-align: bottom;
+}
+
+.td39 {
+    padding: 0px;
+    margin: 0px;
+    width: 661px;
+    vertical-align: bottom;
+}
+
+.td40 {
+    padding: 0px;
+    margin: 0px;
+    width: 465px;
+    vertical-align: bottom;
+}
+
+.td41 {
+    padding: 0px;
+    margin: 0px;
+    width: 160px;
+    vertical-align: bottom;
+}
+
+.tr11 {
+    height: 25px;
+}
+
+.tr15 {
+    height: 10px;
+}
+
+.tr16 {
+    height: 26px;
+}
+
+.tr21 {
+    height: 11px;
+}
+
+.tr24 {
+    height: 36px;
+}
+
+.tr25 {
+    height: 21px;
+}
+
+.tr26 {
+    height: 14px;
+}
+
+.t0 {
+    width: 1486px;
+    margin-top: 20px;
+    font: 13px 'Arial';
+}
+
+.t1 {
+    width: 1344px;
+    margin-left: 6px;
+    margin-top: 73px;
+    font: 16px 'Arial';
+}
+
+.main
+{
+    border: 1px solid;
+    width: 1486px;
+}
+
+
+.rollnumer 
+{
+    float: right;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+table tr td
+{
+    padding: 3px;
+}
+
+.padding-div
+{
+    padding-bottom: 10%;
+}
+
+.bold
+{
+    font-weight: bold !important;
+}
+.center
+{
+    text-align: center;
+}
+
+
+
+
+
+
+.main
+{
+    border: 1px solid;
+    width: 1486px;
+    padding: 1%;
+    text-transform: uppercase;
+}
+
+.Logo
+{
+    float: left;
+    margin-left: 4%;
+}
+
+.clearfix
+{
+    clear: both;
+}
+
+
+
+
+.rollnumer 
+{
+    float: right;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+table tr td
+{
+    padding: 3px;
+}
+
+.padding-div
+{
+    padding-bottom: 10%;
+}
+
+
+
+pre 
+{
+    font:13px 'Arial';
+    font-weight: bold !important;
+    margin: 0;
+    background: #fff;
+    padding: 0;
+    color: #000;
+}
+@media print {
+	.page_1::-webkit-scrollbar { width: 0 !important }
+}

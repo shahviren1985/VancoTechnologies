@@ -1,0 +1,117 @@
+[
+  {
+    "department": "BMS",
+    "staff": [
+      "Ms. Madhavi Neman",
+      "Ms. Madhuri Ayekar",
+      "Ms. Snehal Obhan",
+      "Ms. Pranaya Revandkar",
+      "Ms. Jyotsna Sawant",
+      "Mr. Prashant Chaugule"
+    ]
+  },
+  {
+    "department": "BAFFI",
+    "staff": [
+      "Ms. Madhavi Neman",
+      "Ms. Madhuri Ayekar",
+      "Ms. Snehal Obhan",
+      "Ms. Pranaya Revandkar",
+      "Ms. Jyotsna Sawant",
+      "Mr. Prashant Chaugule"
+    ]
+  },
+  {
+    "department": "PG DEPT",
+    "staff": [
+      "Ms. Shaheen Khan",
+      "Ms. Anuja Deshpande",
+      "Mrs. Nehal Nimesh",
+      "Mrs. Sneha Raorane"
+    ]
+  },
+  {
+    "department": "TCLV UNAIDED",
+    "staff": [
+      "Mr. Avinash Shrungarpure",
+      "Ms. Kavita Vaidya",
+      "Ms. Sarita Maurya1"
+    ]
+  },
+  {
+    "department": "MNWC",
+    "staff": [
+      "Dr. Harashada S. Rathod",
+      "Dr. (Ms.) Sunita Sharma",
+      "Dr. (Mrs.) Jayashree Palit",
+      "Dr. (Mrs.) Falguni Desai",
+      "Dr. (Mrs.) Rita Patil",
+      "Dr. (Mrs.) Rajshree Trivedi",
+      "Mrs. Twinkle Sanghavi",
+      "Dr.(Mrs.) Sejal Shah",
+      "Dr.(Ms.) Cicilia Chettiar",
+      "Mrs. Shama Chavan",
+      "Ms. Geeta Varun",
+      "Dr. Ravindra Katyayan",
+      "Mrs. Prerna Ramteke",
+      "Mrs. Sheetal Sawant",
+      "Mrs. Anuja Deshpande",
+      "Mrs. Neha Gada",
+      "Dr. (Mrs.) Rekha Kaklotar",
+      "Mrs. Trupti Sabharanjak",
+      "Mrs. Shobha Dighe",
+      "Mrs. Rita Chandarana",
+      "Dr. Swati Partani",
+      "Ms. Vaishali Ranadive",
+      "Ms. Annabel Rebello",
+      "Ms. Dhanashree Joshi",
+      "Mrs. Keyaa Mukherjee",
+      "Mrs. Aarati Mahadik",
+      "Mrs. Ujwala Padhye",
+      "Mr. Naresh Lad",
+      "Ms. Aruna Gotad",
+      "Ms. Gayatri Sarode",
+      "Mrs. Anushka Shivade",
+      "Mr. Santosh Okate"
+    ]
+  },
+  {
+    "department": "TCLV",
+    "staff": [
+      "Mrs. Deepa Amin",
+      "Mrs. Jayshree Gandhi",
+      "Mrs. Sonali Kapoor",
+      "Dr. (Mrs.) Kavita Sonde",
+      "Mrs. Paragini Killawala",
+      "Mrs. Manisha Vesvikar",
+      "Mr. Atole Zumber",
+      "Mrs. Anupama Sharma",
+      "Mrs. Radha Devadiga",
+      "Ms. Suri Sameera Naaz",
+      "Ms. Kinjal Mehta",
+      "Mrs. Nilu Singh",
+      "Mrs. Heli Jotania",
+      "Mrs. Purvi Shah",
+      "Mrs. Parul Parikh",
+      "Mrs. Sonu Pandey",
+      "Mrs. Anita Samant"
+    ]
+  },
+  {
+    "department": "BNCDC",
+    "staff": [
+      "Mrs. Sudha Narkar",
+      "Mrs. Sakshi Tatkare",
+      "Mrs. Anuradha Arekar"
+    ]
+  },
+  {
+    "department": "SCNWI",
+    "staff": [
+      "Mrs. Swara Haryan",
+      "Ms. Anuradha Dalvi",
+      "Ms. Sarika Zeple",
+      "Ms. Shilpa"
+    ]
+  }
+]

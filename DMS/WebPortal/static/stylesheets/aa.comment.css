@@ -1,0 +1,128 @@
+﻿.previous-comments {
+    float: left;
+}
+
+.comment {
+   /* float: left;
+    width: 62%;
+    min-width: 240px;*/
+}
+
+.arrow_container {
+    padding: 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    width: 85%;
+    margin-left: 4%;
+    /*height: 250px;
+    margin-right: 2%;
+        min-width: 400px;*/
+    margin-top: 4%;
+    float: left;
+    background-color: white;
+}
+
+.comment-name, .date-created {
+    float: left;
+    margin: 10px;
+    width: 40%;
+    color: #368BC1;
+    text-decoration: underline;
+    cursor: default;
+}
+
+.date-created {
+    float: right;
+    text-align: right;
+}
+/*.left {
+    float: left;
+    width: 34%;
+    min-width: 110px;
+}*/
+
+.clear {
+    clear: both;
+}
+
+.arrow_box {
+    position: relative;
+    background: #f5f5f5;
+    border: 1px solid #dedede;
+    /*height: 60%;*/
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+/*
+    .arrow_box:after, .arrow_box:before {
+        right: 100%;
+        top: 20%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+
+    .arrow_box:after {
+        border-color: rgba(245, 245, 245, 0);
+        border-right-color: #f5f5f5;
+        border-width: 20px;
+        margin-top: -20px;
+    }
+
+    .arrow_box:before {
+        border-color: rgba(222, 222, 222, 0);
+        border-right-color: #dedede;
+        border-width: 23px;
+        margin-top: -23px;
+    }
+    */
+/*.arrow_box .review-content {
+        padding: 5px;
+    }*/
+
+blockquote.quote {
+    font: 14px/20px italic Times, serif;
+    font-family: 'Segoe UI';
+    border: none;
+}
+
+.comment-content {
+    padding: 10px;
+}
+
+.close-button {
+    position: fixed;
+    right: 15px;
+    top: 130px;
+    width: 20px;
+    border-radius: 5px;
+    background-color: #368BC1;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+#user-save-comments{
+    float: right;
+    padding: 5px;
+    background-color: #368BC1;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 20px;
+    position: fixed;
+    bottom: 90px;
+    right: 180px;
+}
+#documenttitle-container{float:left;width:100%; }
+#store-location-container {float:left;width:100%;margin-bottom:10px;
+}

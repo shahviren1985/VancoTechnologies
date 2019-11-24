@@ -1,0 +1,115 @@
+<Settings>
+  <Document>
+    <Content>
+      <Line id="1" show="true" fontsize="12" bold="true" llx="150" lly="830" urx="800" ury="810">MANIBEN NANAVATI WOMEN'S COLLEGE</Line>
+      <Line id="2" show="true" fontsize="7" bold="true" llx="150" lly="810" urx="800" ury="790">(Affiliated to S.N.D.T. Women's University)</Line>
+      <Line id="3" show="true" fontsize="7" bold="true" llx="150" lly="795" urx="800" ury="775">Conducted by: SHREE CHANDULAL NANAVATI WOMEN'S INSTITUTE AND GIRLS' HIGH SCHOOL)</Line>
+      <Line id="4" show="true" fontsize="7" bold="false" llx="150" lly="780" urx="800" ury="760">Vallabhbhai Road, Vile Parle (West), Mumbai - 400 056</Line>
+      <Line id="5" show="true" fontsize="7" bold="false" llx="150" lly="765" urx="800" ury="745">Tel: 2612 8840, Telefax: 91-22-26176196</Line>
+      <Line id="6" show="true" fontsize="7" bold="false" llx="150" lly="750" urx="800" ury="730">E-mail: mnwcollege@hotmail.com | Website: www.mnwc-sndt.org, www.mnwc-sndt.com</Line>
+      <Line id="7" show="true" fontsize="6" bold="false" llx="35" lly="765" urx="200" ury="745">NAAC Reaccredited 'B' Grade</Line>
+      <Line id="8" show="true" fontsize="6" bold="false" llx="30" lly="750" urx="220" ury="730">(2.89 CGPA out of 4 point scale)</Line>
+      <Line id="9" show="true" llx="30" lly="90" urx="570" ury="90" type="line">
+      </Line>
+      <Line id="10" show="true" fontsize="9" bold="false" llx="30" lly="720" urx="450" ury="700">Chairman Mg. Committee</Line>
+      <Line id="11" show="true" fontsize="9" bold="true" llx="30" lly="705" urx="450" ury="685">Smt. Mandakini J. Nanavati</Line>
+      <Line id="12" show="true" fontsize="9" bold="false" llx="600" lly="720" urx="450" ury="700">Principal</Line>
+      <Line id="13" show="true" fontsize="9" bold="true" llx="600" lly="705" urx="450" ury="685">Dr. (Ms.) Harshada Rathod</Line>
+      <Line id="14" show="true" llx="30" lly="125" urx="570" ury="125" type="line">
+      </Line>
+      <Line id="15" show="true" fontsize="9" bold="false" llx="420" lly="165" urx="650" ury="70">Yours faithfully,</Line>
+      <Line id="16" show="true" fontsize="9" bold="false" llx="400" lly="105" urx="620" ury="65">Dr. (Ms.) Harshada Rathod</Line>
+      <Line id="17" show="true" fontsize="9" bold="false" llx="430" lly="90" urx="620" ury="60">Principal</Line>
+      <Line id="18" show="true" fontsize="9" bold="false" llx="370" lly="75" urx="650" ury="55">MANIBEN NANAVATI WOMEN'S COLLEGE,</Line>
+      <Line id="19" show="true" fontsize="9" bold="false" llx="420" lly="60" urx="630" ury="40">Mumbai - 400 056</Line>
+      <Line id="20" show="true" fontsize="9" bold="false" llx="30" lly="670" urx="200" ury="650">Ref.: </Line>
+      <Line id="21" show="true" fontsize="9" bold="false" llx="450" lly="670" urx="600" ury="650">Date: </Line>
+      <Line id="22" show="true" fontsize="9" bold="false" llx="30" lly="640" urx="100" ury="620">To,</Line>
+      <Line id="23" show="true" fontsize="9" bold="false" llx="30" lly="540" urx="200" ury="520">Sub: </Line>
+      <Line id="24" show="true" fontsize="10" bold="false" llx="30" lly="510" urx="500" ury="180">
+      </Line>
+      <!--Content-->
+      <!--Ref #-->
+      <Line id="25" show="true" fontsize="9" bold="false" llx="50" lly="670" urx="400" ury="650">
+      </Line>
+      <!--Date-->
+      <Line id="26" show="true" fontsize="9" bold="false" llx="470" lly="670" urx="600" ury="650">
+      </Line>
+      <!--Address-->
+      <Line id="27" show="true" fontsize="9" bold="false" llx="30" lly="620" urx="250" ury="500">
+      </Line>
+      <!--Subject-->
+      <Line id="28" show="true" fontsize="9" bold="false" llx="50" lly="540" urx="500" ury="520">
+      </Line>
+      <!--stamp image-->
+      <Line id="29" type="image" scale="20" show="true" fontsize="9" bold="false" llx="385" lly="100" urx="640" ury="140">~/static/images/signature.png</Line>
+      <!--<Line id="29" show="true" llx="50" lly="330">~/static/images/logo1.gif</Line>-->
+    </Content>
+  </Document>
+  <Email>
+    <!--Server, Port, SSL, HTML, To, From, CC, BCC-->
+    <add key="Host" value="relay-hosting.secureserver.net" />
+    <add key="Port" value="25" />
+    <add key="User" value="mnwccollege@gmail.com" />
+    <add key="Password" value="M@niben#234" />
+    <add key="MailDisplayName" value="Maniben Nanavati Women's College" />
+    <add key="ToAddress" value="viren@itmonarch.com" />
+    <add key="FromAddress" value="mnwccollege@gmail.com" />
+    <add key="Subject" value="" />
+    <add key="EnableSsl" value="false" />
+    <add key="UseDefaultCredentials" value="true" />
+    <add key="ToCC" value="mnwccollege@gmail.com" />
+    <add key="ToBCC" value="" />
+    <add key="SendCreateEmail" value="true" />
+    <add key="SendUpdateEmail" value="true" />
+    <add key="SendCommentEmail" value="false" />
+    <add key="SendApproveEmail" value="false" />
+  </Email>
+  <General>
+    <!--When New Users are created, create corresponding folder structure to maintain the ESR-->
+    <Folders create="true" rename="true">
+    </Folders>
+    <!--Add files/folders record in DB when ASHX is hit. It should not create duplicate records.-->
+    <Files upload="true">
+    </Files>
+    <FileRecordCount>
+      <add key="Pay-Slip" value="6"></add>
+      <add key="Leave-Records" value="6"></add>
+    </FileRecordCount>
+  </General>
+  <DocumentNumber>
+    <add key="inward" value="702">
+    </add>
+    <add key="outward" value="623">
+    </add>
+  </DocumentNumber>
+  <OutwardDocument>
+    <Initials>MNWC</Initials>
+    <!--Academic year starts in april-->
+    <AcademicYearStart>4</AcademicYearStart>
+  </OutwardDocument>
+  <EmailTemplates>
+    <Email>
+      <!--
+      Email subject - document title
+      New inward document is created and assigned to you. Click here to view this new document.
+      Content - 
+      Document Subject - 
+      Assigned to - you and other users
+      Date received - 
+      Deadline - 
+      -->
+      <!--
+      Email subject - Re: document title
+      Comment is added to this document by user (user name). 
+      Content - comment - its date and by which user 
+      Date received - 
+      Deadline - 
+      -->
+      <!--
+      Outward document 
+      Content entered by user in text fields. PDF document shall be attached in the mail
+      -->
+    </Email>
+  </EmailTemplates>
+</Settings>

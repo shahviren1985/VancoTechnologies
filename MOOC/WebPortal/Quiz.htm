@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Quiz</title>
+    <link rel="Stylesheet" href="static/bootstrap.min.css" />
+    <link rel="Stylesheet" href="static/styles/chapter-style.css" />
+    <script src="static/scripts/jquery-1.9.1.js"></script>
+    <script src="static/scripts/AA.core.js"></script>
+    <style type="text/css">
+        .questionText
+        {
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: large;
+        }
+        
+        .answerOption
+        {
+            margin-top: 10px;
+        }
+        
+        .ansRadio
+        {
+            margin-top: -3px !important;
+            margin-left: 5px !important;
+            width: 20px !important;
+        }
+        .radioDiv
+        {
+            float: left;
+            width: 90px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header-container">
+            <div class="top-navigation">
+                <ul>
+                    <li class="user-name"><i class="icon-white icon-user"></i>&nbsp;Welcome, User</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+            <div class="header">
+                <div class="logo">
+                </div>
+                <div class="college-name">
+                    Maniben Nanavati Women's College
+                </div>
+                <div class="search-container">
+                    <input type="text" class="simplebox" placeholder="Search..." />
+                    <div class="btn btn-success">
+                        Go</div>
+                </div>
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="left-navigation">
+                <ul class="left-nav blue">
+                    <li class="head">Introduction</li>
+                    <li>What is Computer?</li>
+                    <li class="active">Computer Structure</li>
+                    <li>Hardware</li>
+                    <li>Software</li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="content-summary blue">
+                    <div class="summary-header">
+                        Quiz
+                    </div>
+                    <div>
+                        Welcome User, please select appropriate options for following question.
+                    </div>
+                </div>
+                <div class="content-main">
+                    <div id="QuesionText" class="questionText">
+                    </div>
+                    <div id="QuestionOption">
+                    </div>
+                    <div id="AnswerOption" class="answerOption">
+                    </div>
+                    <div id="btnField" style="margin-top: 25px; width: 100%; float: left;">
+                        <div class="btn" onclick="SaveQuiz();">
+                            Submit</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container">
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        GetQuizFromDatabase();
+    });
+
+        function SaveQuiz() {
+        
+            var userAnswer;
+            var isCurrect;
+            var isChecked;
+
+            $(".ansRadio").each(function () {
+                if ($(this).prop("checked")) {
+                    userAnswer = $(this).attr("answer");
+                    isCurrect = $(this).attr("iscurrect");
+                    isChecked = true;
+                }
+            });
+        
+            var questionId = $("#QuesionText").attr("quesId");
+
+            if (!isChecked) {
+                alert("Please checked answer");
+
+            }
+            else {
+                var path = "Handler/SaveQuiz.ashx?questionId=" + questionId + "&useranswer=" + userAnswer + "&iscurrect=" + isCurrect;
+                CallHandler(path, onSavedSuccessfully);
+            }
+        }
+
+        function onSavedSuccessfully(result) {
+            alert(result.Status);
+            GetQuizFromDatabase();
+        }
+</script>

@@ -1,0 +1,12 @@
+.react-datepicker-wrapper
+{
+    width: 100% !important;
+
+}
+.react-datepicker__input-container
+{
+    width: 100% !important;
+}
+.section {
+    padding: 3rem 0.5rem !important;
+}

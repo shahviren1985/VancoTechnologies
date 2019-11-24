@@ -1,0 +1,79 @@
+[
+  {
+    "user": "diva",
+    "password": "12345",
+    "courseCode": "Div-A",
+    "system_title": "SVT Junior",
+    "division": "A"
+  },
+  {
+    "user": "divb",
+    "password": "12345",
+    "courseCode": "Div-B",
+    "system_title": "SVT Junior",
+    "division": "B"
+  },
+  {
+    "user": "divd",
+    "password": "12345",
+    "courseCode": "Div-D",
+    "system_title": "SVT Junior",
+    "division": "D"
+  },
+  {
+    "user": "fd",
+    "password": "123",
+    "courseCode": "fashion_designing",
+    "system_title": "Fashion Designing",
+    "division": "FD"
+  },
+  {
+    "user": "id",
+    "password": "123",
+    "courseCode": "adv_diploma_inter_design",
+    "system_title": "Interior Designing",
+    "division": "ID"
+  },
+  {
+    "user": "idatkt",
+    "password": "123",
+    "courseCode": "adv_diploma_inter_design_atkt",
+    "system_title": "Interior Designing",
+    "division": "ID"
+  },
+  {
+    "user": "counseling",
+    "password": "123",
+    "courseCode": "counseling",
+    "system_title": "Counseling",
+    "division": "Counseling"
+  },
+  {
+    "user": "advcounseling",
+    "password": "123",
+    "courseCode": "advcounseling",
+    "system_title": "Advance Diploma in Counselling",
+    "division": "Advance Counseling"
+  },
+  {
+    "user": "ecce",
+    "password": "123",
+    "courseCode": "Child-Care-1",
+    "system_title": "DIPLOMA IN EARLY CHILDHOOD CARE AND EDUCATION",
+    "division": "ECCE"
+  },
+  {
+    "user": "nut",
+    "password": "123",
+    "courseCode": "nut",
+    "system_title": "Certificate Course in Nutrition and Wellness",
+    "division": "nutrition"
+  },
+	{
+    "user": "ld",
+    "password": "123",
+    "courseCode": "ld",
+    "system_title": "Certificate Course on Learning Disability & Remediation",
+    "division": "LD"
+  }     
+]

@@ -1,0 +1,202 @@
+body {
+	margin-top: 0px;
+    margin-left: 0px;
+    color: #000;
+}
+
+.page_1 {
+	position: relative;
+	overflow: hidden;
+	margin: 72px 0px 84px 67px;
+	padding: 0px;
+	border: none;
+	width: 1520px;
+    height: 967px;
+    page-break-after: always;
+}
+
+.page_1 .id1_1 {
+	border: none;
+	margin: 2px 0px 0px 0px;
+	padding: 0px;
+	border: none;
+	width: 1520px;
+	overflow: hidden;
+}
+
+.p18{text-align: left;margin-top: 0px;margin-bottom: 0px;}
+.ft9{font: 13px 'Arial';line-height: 16px;}
+
+.page_1 .id1_2 {border:none;margin: 62px 0px 0px 3px;padding: 0px;border:none;width: 1517px;overflow: hidden;}
+
+
+.ft0 {
+	font: bold 21px 'Arial';
+	line-height: 24px;
+}
+
+.ft1 {
+	font: bold 13px 'Arial';
+	line-height: 16px;
+}
+
+.ft2 {
+	font: bold 15px 'Arial';
+	line-height: 18px;
+}
+
+.ft3 {
+	font: 1px 'Arial';
+	line-height: 1px;
+}
+
+.ft4 {
+	font: 15px 'Arial';
+	line-height: 17px;
+}
+
+.p0 {
+	text-align: left;
+	padding-left: 375px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.p1 {
+	text-align: left;
+	padding-left: 353px;
+	margin-top: 3px;
+	margin-bottom: 0px;
+}
+
+.p2 {
+	text-align: left;
+	padding-left: 665px;
+	margin-top: 2px;
+	margin-bottom: 0px;
+}
+
+.p4 {
+	text-align: left;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	white-space: nowrap;
+}
+
+.p17 {
+	text-align: center;
+	padding-right: 165px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	white-space: nowrap;
+}
+
+.td14 {
+	padding: 0px;
+	margin: 0px;
+	width: 384px;
+	vertical-align: bottom;
+}
+
+.td15 {
+	padding: 0px;
+	margin: 0px;
+	width: 342px;
+	vertical-align: bottom;
+}
+
+.td16 {
+	padding: 0px;
+	margin: 0px;
+	width: 250px;
+	vertical-align: bottom;
+}
+
+.td17 {
+	padding: 0px;
+	margin: 0px;
+	width: 109px;
+	vertical-align: bottom;
+}
+
+.tr0 {
+	height: 20px;
+}
+
+.t0 {
+	width: 1330px;
+	margin-top: 75px;
+	font: 15px 'Arial';
+}
+
+.t2 {
+	width: 1085px;
+	margin-left: 4px;
+	margin-top: 160px;
+	font: 15px 'Arial';
+}
+
+.bold {
+	font-weight: bold !important;
+}
+
+.center {
+	text-align: center;
+}
+
+.main {
+	border: 1px solid;
+	width: 1330px;
+	padding: 1%;
+}
+
+.right {
+	float: right;
+}
+
+table tr td {
+	padding: 5px;
+}
+
+.t0-w {
+	width: 85%;
+}
+
+.name {
+	font-weight: bold;
+	padding-left: 5px;
+	padding-right: 5%
+}
+
+.rollno {
+	font-weight: bold;
+	padding-right: 50px;
+}
+
+.total {
+	margin-top: 5px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+.center {
+	text-align: center;
+}
+
+.Logo
+{
+    float: left;
+    margin-left: 5%;
+    margin-top: -1%;
+}
+
+.pb-15
+{
+    padding-bottom: 15px;
+}
+.clearfix
+{
+    clear: both;
+}

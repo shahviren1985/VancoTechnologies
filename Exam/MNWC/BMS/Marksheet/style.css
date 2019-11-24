@@ -1,0 +1,174 @@
+@page {
+  size: A4 Portrait;
+  margin:0;
+}
+
+html
+{
+	font-family: Arial;
+	margin:10px;
+}
+
+
+table {
+    border-collapse: collapse;
+	border: 2px solid black; 
+}
+
+th, td {
+    border: 1px solid black;
+	padding: 5px;
+}
+
+.HeaderDetails
+{
+	float: left;
+	text-align: center;
+	width: 100%;
+	margin-top: 30%;
+	font-size: 24px;
+	font-weight:bold;
+}
+.CourseDetails
+{
+	float: left;
+	text-align: center;
+	width: 100%;
+	margin-top: 21%;
+	font-size: 11px;
+	font-weight:bold;
+}
+.ExamDetails
+{
+	float: left;
+	text-align: center;
+	width: 100%;
+	margin-top: 20%;
+	font-size: 14px;
+	font-weight:bold;
+}
+.CourseDetails
+{
+	margin-top: 35px;
+	font-size: 20px; 	
+}
+.ExamDetails{
+	margin-top: 5px;
+	font-size: 18px;
+}
+
+#StudentDetails {
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+	font-size:9pt;
+	font-weight:bold;
+}
+#StudentName {
+	 font-size:11pt; 
+	/*font-size:10pt;	*/
+	font-weight:bold;
+	
+	
+}
+.Medium {
+	float: right;
+	margin-right: 10px;
+	text-align:right;
+}
+#PRN{
+	
+	float: right;
+	margin-right: 10px;
+	text-align:right;
+}
+#ExamCenterDetails
+{
+	float: left;
+	font-size:13px;
+	width: 100%;
+	margin-top:10px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+#ExamCenterDetails div
+{
+	float: left;
+	width: 25%;
+}
+
+.marksheads td { height:65px; font-size: 12px !important;}
+#Marks  {width: 100%; text-align: center;}
+#Marks td { height:50px; font-size: 14px;}
+
+
+#SummaryDetails table {width: 100%; text-align: center; font-weight:bold; margin-top: -10px; margin-bottom: 10px}
+.marksdetails {
+	font-weight:bold;}
+
+.Place{margin-top: 0px;}
+.Place,.Date{
+	float: left;
+	text-align: left;
+	width: 100%;
+	font-weight:bold;
+	font-size:11pt;
+}
+.Principal
+{
+	float: left;
+	margin-top: 60px;
+	width: 40%;
+	margin-left: 1%;
+	text-align: center;
+	font-weight:bold;
+	font-size: 14px;
+}
+.Controller{
+	float: right;
+	margin-top: 60px;
+	
+	text-align: center;
+	font-weight:bold;
+	font-size: 14px;
+}
+.CollegeName{
+	float: left;
+	width: 25%;
+	margin-left: 5%;
+	text-align: center;
+}
+.University{
+	float: left;
+	width: 25%;
+	margin-left: 35%;
+	text-align: center;
+}
+
+#FooterDetails{
+	float: left;
+	width: 100%;
+	margin-top: 35px;
+	text-align: left;
+	font-size: 10px;
+	
+}
+
+@media print {
+	body * {
+    visibility: hidden;
+  }
+  #MarksheetContainer, #MarksheetContainer * {
+    visibility: visible;
+  }
+  #MarksheetContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+	footer {page-break-after: initial;}
+
+  }
+  	
+

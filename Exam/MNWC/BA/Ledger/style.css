@@ -1,0 +1,81 @@
+.HeaderDetails, .CourseDetails, .ExamDetails
+{
+	float: left;
+	text-align: center;
+	width: 100%;
+	margin-top: 10%;
+	font-size: 20px;
+}
+.CourseDetails
+{
+	margin-top: 10px;
+	font-size: 18px;
+}
+.ExamDetails{
+	margin-top: 0px;
+	font-size: 18px;
+}
+#StudentDetails {
+	float: left;
+	width: 100%;
+	margin-top: 10px;
+}
+.Medium {
+	float: right;
+	margin-right: 20px;
+}
+#ExamCenterDetails
+{
+	float: left;
+	font-size: 12px;
+	width: 100%;
+}
+#ExamCenterDetails div
+{
+	float: left;
+	width: 25%;
+}
+#Marks, #SummaryDetails table {width: 100%; text-align: center;}
+.Place{margin-top: 20px;}
+.Place,.Date{
+	float: left;
+	text-align: left;
+	width: 100%;
+}
+.Principal
+{
+	float: left;
+	margin-top: 20px;
+	width: 20%;
+	margin-left: 15%;
+}
+.Controller{
+	float: left;
+	margin-top: 20px;
+	width: 20%;
+	margin-left: 30%;
+}
+.CollegeName{
+	float: left;
+	width: 25%;
+	margin-left: 5%;
+}
+.University{
+	float: left;
+	width: 25%;
+	margin-left: 35%;
+}
+
+#FooterDetails{
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+	text-align: left;
+	font-size: 10px;
+	
+}
+@media print {
+  #Previous, #Next {
+    display: none;
+  }
+}

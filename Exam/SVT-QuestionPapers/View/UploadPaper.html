@@ -1,0 +1,210 @@
+﻿<div class="row">
+    <div class="col col-md-12">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">Upload Exam Paper</h3>
+            </div>
+            <form id="PaperUpload">
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col col-lg-12 form-group">
+                            <label for="stream">Exam Year</label>
+                            <input type="text" id="txtExamYear" maxlength="4" />
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="ddMonth">Month</label>
+                            <select id="ddMonth" name="month" data-validation="required" data-validation-error-msg="The Month field is required" class="Drp_Cnrtl form-control">
+                                <option value="" selected="selected">--- Select ---</option>
+                                <option value="October">October</option>
+                                <option value="March">March</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="stream">Stream</label>
+                            <select id="stream" name="stream" ng-change="GetSemester()" ng-model="InternalMark.stream" data-validation="required"
+                                    data-validation-error-msg="The Stream field is required" class="Drp_Cnrtl form-control">
+                                <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                                <option value="BSc">BSc</option>
+                                <option value="MSc">MSc</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="course">Course</label>
+                            <select id="course" name="course" ng-model="InternalMark.course" data-validation="required"
+                                    data-validation-error-msg="The course field is required" class="Drp_Cnrtl form-control">
+                                <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                                <option value="Regular">Regular</option>
+                                <option value="Honors">Honors</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="semester">Semester</label>
+                            <select id="semester" name="semester" ng-model="InternalMark.semester" data-validation="required"
+                                    data-validation-error-msg="The semester field is required" class="Drp_Cnrtl form-control">
+                                <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="examType">Exam Type</label>
+                            <select id="examType" name="examType" ng-model="InternalMark.examType" data-validation="required"
+                                    data-validation-error-msg="The examType field is required" class="Drp_Cnrtl form-control">
+                                <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                                <option value="Regular">Regular</option>
+                                <option value="ATKT">ATKT</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="sem">Specialization</label>
+                            <select disabled="disabled" name="Specialization" ng-model="InternalMark.Specialization" data-validation="required"
+                                    data-validation-error-msg="The Specialization field is required" id="Specialization" class="Drp_Cnrtl form-control">
+                                <option selected="selected" disabled="disabled" value="">--- Select ---</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="paper">Paper</label>
+                            <select disabled="disabled" id="paper" name="Paper" ng-model="InternalMark.paper" data-validation="required"
+                                    data-validation-error-msg="The Paper field is required" class="Drp_Cnrtl form-control">
+                                <option selected="selected" disabled="disabled" value="">--- Select ---</option>
+                            </select>
+                        </div>
+                        <!--<div class="col col-lg-12 form-group">
+                            <input type="radio" name="PaperSet" id="rdSet1" value="1" />Set 1
+                            <input type="radio" name="PaperSet" id="rdSet2" value="2" />Set 2
+                        </div>-->
+                        <div class="col col-lg-12 form-group">
+                            <span>Set 1</span><input type="file" id="Paper1" /><br />
+                            <span>Set 2</span><input type="file" id="Paper2" /><br />
+                            <span>Set 3</span><input type="file" id="Paper3" /><br />
+                        </div>
+                        <div class="col col-md-12 form-group">
+                            <button type="submit" class="btn btn-primary pull-right">Upload</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    $("#txtExamYear").val(new Date().getFullYear());
+    var _validFileExtensions = [".pdf"];
+    function ValidateFile() {
+        var arrInputs = document.getElementsByTagName("input");
+        for (var i = 0; i < arrInputs.length; i++) {
+            var oInput = arrInputs[i];
+            if (oInput.type == "file") {
+                var sFileName = oInput.value;
+                if (sFileName.length > 0) {
+                    var blnValid = false;
+                    for (var j = 0; j < _validFileExtensions.length; j++) {
+                        var sCurExtension = _validFileExtensions[j];
+                        if (sFileName.substr(sFileName.length - sCurExtension.length, sCurExtension.length).toLowerCase() == sCurExtension.toLowerCase()) {
+                            blnValid = true;
+                            break;
+                        }
+                    }
+
+                    if (!blnValid) {
+                        alert(sFileName + " is invalid, only PDF files are accepted");
+                        return false;
+                    }
+                }
+                else {
+                    alert("Please select all papers to upload");
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
+    $("#PaperUpload").submit(function () {
+        if (ValidateFile()) {
+            // Files are having valid extensions, now check of paper set
+            // Validate of paper set is selected
+            // Upload Path for PDF files - /SVT/Exam/<Year>/<Month>/<Sem>/<Specialisation>/<PaperCode>_Paper_1_Set_1_<timestamp>.pdf
+            // Clear the form after successful upload
+            var fd = new FormData();
+            var file1 = $('#Paper1')[0].files[0];
+            var file2 = $('#Paper2')[0].files[0];
+            var file3 = $('#Paper3')[0].files[0];
+            fd.append('Paper1', file1);
+            fd.append('Paper2', file2);
+            fd.append('Paper3', file3);
+
+            var year = $("#txtExamYear").val();
+            var month = $("#ddMonth option:selected").val();
+            var semester = $("#semester option:selected").val();
+            var specialisation = $("#Specialization option:selected").attr("data-specialisationcode");
+            var paper = $("#paper option:selected").val();
+            var paperTitle = $("#paper option:selected").text();
+            //var set = $("input[name='PaperSet']:checked").val();
+            var course = $("#course option:selected").val();
+            var examType = $("#examType option:selected").val();
+            var user = JSON.parse(localStorage.getItem("LoggedInUserDetail"));
+            
+            $.ajax({
+                url: _CommonUr + 'File/UploadExamPaper/Papers/Exam?year=' + year + "&month=" + month + "&semester=" + semester + "&specialisation=" + specialisation + "&paperCode=" + paper + "&paperTitle=" + paperTitle + "&course=" + course + "&examType=" + examType + "&uploadedBy=" + user.userName,
+                type: 'post',
+                data: fd,
+                contentType: false,
+                processData: false,
+                success: function (response) {
+                    if (response != 0) {
+                        alert('Question papers uploaded successfully');
+                        location.reload();
+                    }
+                    else {
+                        alert('Unable to upload question papers');
+                    }
+                },
+            });
+        }
+        else {
+            // Files are not having PDF extension
+            return false;
+        }
+    });
+    $('#semester').on('change', function () {
+        var selectedCourse = $('#course').val();
+
+        CallAPI("User/GetPaperList?Course=" + $('#stream').val() + "&specialization=" + selectedCourse + "&sem=" + $('#semester').val()).done(function (response) {
+            SpecializationPaperData = response;
+            var selectedCatrol = $('#Specialization');
+            document.getElementById("Specialization").options.length = 0;
+            selectedCatrol.append('<option disabled="disabled" selected="selected" value="">---Select----</option>');
+            selectedCatrol.prop('disabled', false);
+            for (i = 0; i < response.length; i++) {
+                var optionstr = '<option value="' + response[i].specialisation + '" data-specialisationCode="' + response[i].specialisationCode + '">' + response[i].specialisation + '</option>'
+                selectedCatrol.append(optionstr);
+                //$('<option />', { value: response[i].specialisation, text: response[i].specialisation }).appendTo(selectedCatrol);
+            }
+        })
+    });
+    $('#Specialization').on('change', function () {
+        for (i = 0; i < SpecializationPaperData.length; i++) {
+            if (SpecializationPaperData[i].specialisation == $('#Specialization').val()) {
+                var selectedCatrol = $('#paper');
+                document.getElementById("paper").options.length = 0;
+                selectedCatrol.append('<option disabled="disabled" selected="selected" value="">---Select----</option>');
+                selectedCatrol.prop('disabled', false);
+                for (var j = 0; j < SpecializationPaperData[i].paperDetails.length; j++) {
+                    if (SpecializationPaperData[i].paperDetails[j].paperType == "Theory") {
+                        var optionstr = '<option value="' + SpecializationPaperData[i].paperDetails[j].code + '" data-theoryExternalSection2Max="' + SpecializationPaperData[i].paperDetails[j].theoryExternalSection2Max + '" data-theoryExternalSection1Max="' + SpecializationPaperData[i].paperDetails[j].theoryExternalSection1Max + '" data-theoryExternalPassing="' + SpecializationPaperData[i].paperDetails[j].theoryExternalPassing + '" data-InternalMax="' + SpecializationPaperData[i].paperDetails[j].theoryInternalMax + '" data-passingmark="' + SpecializationPaperData[i].paperDetails[j].theoryInternalPassing + '">' + SpecializationPaperData[i].paperDetails[j].paperTitle + '</option>'
+                        selectedCatrol.append(optionstr);
+                        //$('<option />', { value: SpecializationPaperData[i].paperDetails[j].code, text: SpecializationPaperData[i].paperDetails[j].paperTitle, 'data-passingmark': SpecializationPaperData[i].paperDetails[j].theoryInternalPassing }).appendTo(selectedCatrol);
+                    }
+                }
+            }
+        }
+    });
+
+    /*
+        1. Validate uploaded file is PDF
+        2. Validate previously uploaded files
+        3. Upload the paper
+        4. View the paper which are uploaded by same user
+        5. View all the papers which are uploaded by all users
+    */
+</script>

@@ -1,0 +1,157 @@
+body {
+}
+
+/* = MAIN WRAPPER
+----------------------------------------------------------------------------------------------------------------------*/
+.main-wrapper {
+    width: 960px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+h3 {
+    font-size: 31px;
+}
+
+h3, p, pre {
+    margin: 10px 0;
+}
+
+.syntaxhighlighter {
+    padding: 5px 0;
+}
+
+/* = MISCELLANEOUS
+----------------------------------------------------------------------------------------------------------------------*/
+.align-center {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.block {
+    display: block;
+}
+
+.bottom {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.first {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.highlight {
+    background: #ccf;
+}
+
+.inline {
+    display: inline;
+}
+
+.last {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.left {
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+
+.none {
+    display: none;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.right {
+    float: left;
+    text-align: left;
+    width: 100%;
+}
+
+.stretch {
+    width: 100%;
+}
+
+.top {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.visible {
+    visibility: visible;
+}
+/*Dashboard style - start */
+.DashboardLinks ul {
+    float: left;
+    width: 90%;
+    margin-left: 5%;
+    padding: 0px;
+}
+
+    .DashboardLinks ul li {
+        float: left;
+        margin: 20px;
+        list-style: none;
+    }
+
+#GridContainer {
+    float: left;
+    width: 80%;
+    
+}
+
+.search-bar {
+    width: 92%;
+    margin-left: 8%;
+    text-align: left;
+    float: left;
+}
+.search-text, input[type='text']{height: 20px; margin-bottom: 0px; width: 300px;}
+.grid{float:left;
+      width: 1080px;
+      margin-left: 8%;
+      margin-top: 20px;
+      
+}
+.document-grid-header{float: left; width: 100%; background-color: #08c; height: 20px; padding: 5px; color: white; font-weight: bold;}
+.grid-header-cell{float: left; width: 180px; text-align: center; margin-right: 10px;}
+.grid-row{float: left; width: 101%; min-height: 20px;border-bottom: 1px solid #eee;padding-top: 5px;padding-bottom:5px;}
+.grid-row:hover{background-color: #eee;border-bottom:1px solid #ddd; cursor: pointer;}
+.grid-cell{float:left; min-height: 20px; text-align: left; margin-right: 10px;}
+.discarded{background-color:#FFDCB1;}
+/*Dashboard style - end*/
+#approve-button-container{position: fixed;top: 50px;right: 0px;}
+#save-button-container{position:fixed;top:50px;right:160px;z-index:100;}
+#discard-button-container{position:fixed;top: 70px;right: 20px;}
+#email-button-container{position:fixed;top: 70px;right: 105px;}
+#print-button-container{position:fixed;top: 70px;right: 170px;}
+#link-button-container{position:fixed;top: 70px;right: 235px;}
+#documentaddress-container{float:left;width: 100%;}
+.pdfdoc{float:left;width: 100%; border:0px;height: 80%;min-height: 525px;}
+#related-document-links{float: left;width:90%;text-align:left;margin-left:5%;margin-bottom:20px;}

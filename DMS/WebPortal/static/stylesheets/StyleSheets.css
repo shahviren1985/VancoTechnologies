@@ -1,0 +1,121 @@
+﻿#Content
+{
+    float: left;
+    margin-top: 2%;
+    width: 98%;
+    margin-left: 2%;
+}
+#Banner
+{
+    float: left;
+    width: 52%;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 3px 3px 3px #EEE;
+    margin: 1%;
+}
+.MidSizeBox
+{
+    float: left;
+    margin: 1%;
+    width: 250px;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 3px 3px 3px #EEE;
+}
+.LoginBox
+{
+    float: left;
+    border-collapse: separate !important;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 3px 3px 3px #EEE;
+    width: 50%;
+}
+.LoginHeaderText
+{
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.Box, .SmallBox
+{
+    float: left;
+    height: 300px;
+    width: 250px;
+    margin: 1%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 3px 3px 3px #EEE;
+}
+.SmallBox
+{
+    width: 110px;
+    height: auto;
+    padding-bottom: 20px;
+}
+.HeaderText, .SmallHeaderText
+{
+    float: left;    
+    font-size: 30px;
+    font-family: Segoe UI Light;
+    color: Black;
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 20px;
+    text-align: left; 
+    font: bold;
+}
+.SmallHeaderText
+{
+    font-size: 18px;
+}
+.BoxRed
+{
+    border-bottom: 2px solid red !important;
+}
+.BoxOrange
+{
+    border-bottom: 2px solid #F59026 !important;
+}
+.BoxGreen
+{
+    border-bottom: 2px solid #71BF5C !important;
+}
+.BoxYellow
+{
+    border-bottom: 2px solid #FBB917 !important;
+}
+.BoxBlue
+{
+    border-bottom: 2px solid #2E87C8 !important;
+}
+.BoxIndigo
+{
+    border-bottom: 2px solid #4B0082 !important;
+}
+    
+ul.QuickLinks
+{
+    font-family: Arial;
+    list-style: none;
+    font-size: 14px;
+    padding: 3px;
+    padding-top: 10px;
+}
+ul.QuickLinks li
+{
+    margin: 10px;
+    margin-left: 30px;
+}
+
+.loginDiv
+{
+    position: absolute; 
+    top: 25%; 
+    left: 40%; 
+    bottom: 20%;
+}
+

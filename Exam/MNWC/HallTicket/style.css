@@ -1,0 +1,210 @@
+
+
+html {
+    font-family: Arial;
+}
+
+#marksheet {
+    float: left;
+    width: 100%;
+	min-height: 500px;
+	max-height: 800px;
+}
+
+.header {
+    text-align: center;
+    float: left;
+    padding: 10px;
+    font-family: Arial;
+    border-bottom: 1px solid #000;
+}
+
+.logo {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+
+.header1 {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    width: 70%;
+}
+
+.header2 {
+    font-size: 13px;
+    float: left;
+    width: 70%;
+}
+
+.header3 {
+    font-size: 11px;
+    float: left;
+    width: 70%;
+}
+
+#StudentName,#CourseName{
+    float: left;
+    margin-left: 2%;
+    margin-top: 1%;
+    width: 85%;
+    font-weight: bold;
+}
+#StudentName{margin-top: 2%;}
+#SeatNumber, #ExamName{
+    float: left;
+    margin-left: 2%;
+    margin-top: 1%;
+    width: 30%;
+    font-weight: bold;
+}
+#ExamName{
+	width: 50%;
+}
+#StudentName span, #CourseName span,#ExamName span, #SeatNumber span
+{
+    float: left;
+    margin-right: 10px;
+}
+#StudentNameValue,#CourseNameValue {
+    float: left;
+    font-weight: normal;
+}
+
+
+#ExamNameValue, #SeatNumberValue{
+    float: left;
+    
+    font-weight: normal;
+}
+
+#StudentPhoto {
+    float: right;
+    border: 1px solid;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+#ClassName {
+    float: left;
+    margin-left: 7%;
+    width: 80%;
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#RollNumber {
+    float: right;
+    text-align: left;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#GrNumber {
+    float: left;
+    margin-left: 5%;
+    width: 40%;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#PrnNumber {
+    float: right;
+    width: 40%;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+#DateOfBirth, #Email, #Mobile, #Caste, #YearlyIncome, #PlaceOfBirth {
+    float: left;
+    width: 100%;
+}
+
+.formlabel {
+    float: left;
+    width: 250px;
+    margin-left: 5%;
+}
+
+.formlabelseparator {
+    float: left;
+    margin-left: 5px;
+}
+
+#StudentNameValue, #DateOfBirthValue, #EmailValue, #MobileValue, #PlaceOfBirthValue, #YearlyValue, #CasteValue, #AddressValue, #AddressValue2 {
+    float: left;
+    margin-left: 10px;
+}
+
+#AddressValue, #AddressValue2 {
+    float: left;
+    width: 50%;
+}
+
+
+#Address {
+    margin-top: 50px;
+}
+
+#Address, #Address2 {
+    float: left;
+    width: 100%;
+    height: 80px;
+    word-wrap: break-word;
+}
+
+#academic {
+    float: left;
+    margin-left: 5%;
+    width: 80%;
+}
+
+#MarksDetails {
+    float: left;
+    margin: 1%;
+	max-height: 170px;
+}
+
+    #MarksDetails td {
+        text-align: center;
+        min-width: 50px;
+       font-size: 13px;
+    }
+
+#NoteDetails {
+    float: left;
+    margin-left: 5%;
+    width: 95%;
+    margin-top: 90px;
+}
+
+
+.footerdetails {
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    padding-bottom: 120px;
+}
+.footerdetails div{
+    float: left;
+    width: 80%;
+}
+footer {
+    page-break-after: always;
+    margin-bottom: 50px;
+    
+}
+ @media print{
+ @page{
+  size: A4;
+  margin: 0px;
+ }
+}

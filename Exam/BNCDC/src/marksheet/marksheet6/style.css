@@ -1,0 +1,55 @@
+@page {
+	size: A4 landscape;
+}
+
+body {
+	margin-top: 0px;
+	margin-left: 0px;
+	color: #000;
+}
+
+.page_1 {
+	position: relative;
+	overflow: hidden;
+	padding: 0px;
+	page-break-after: always;
+	border: 1px solid #000;
+	margin: 20px;
+}
+.Result{float: left !important; width: 300px !important;}
+.Percent{float: right !important; width: 300px !important;}
+div{float: left;}
+.container { border: 1px solid #000; float:left;}
+.header {float: left; width: 100%;}
+.college{text-align: center;width: 80%;padding-top: 10px;}
+h2,h3,h4,p{margin: 0px;}
+.logo{padding: 20px;}
+.HeadRow td {font-weight: bold;}
+.Marks td:first-child{width: 300px; text-align: left; padding-left: 10px;}
+.NoBoder div { margin-left: 2%; padding: 8px; width: 300px;}
+.stamp{float: left; width: 100%;margin-left: 1%; margin-top: 90px; }
+.Signature div {width:300px; float: left}
+.nameContainer{ width: 91.5%; margin-top: 1%;margin-left: 5%; }
+.topborder { border-top: 1px solid #000;}
+.bottomborder { border-bottom: 1px solid #000;}
+.notopborder { border-top: 0px !important;}
+.nobottomborder { border-bottom: 1px  solid #fff !important;}
+.norightborder {border-right: 0px !important;}
+.rightborder {border-right: 1px solid #000;}
+.part20{float: left; width: 18%;text-align: center;border: 1px solid #000;}
+.part80{float: left; width: 79%;text-align: left;padding-left: 2%;border: 1px solid #000; }
+.nopad { padding: 0%;}
+.Marksheet{float: left; width: 89%; border: 1px solid #000;margin-left: 5%; margin-top: 1%;}
+.MarksHeader{float: left; width: 100%; font-weight: bold; text-align: center;  border-bottom: 1px solid #000;}
+.MarksRow{float: left; width: 100%; text-align: center;border-bottom: 1px  solid #000;}
+.MarksRow div {font-size: 16px;}
+.percent20{width: 15%; padding: 3px;}
+.percent10{width: 8%;  padding: 3px;}
+.percent30{width: 32%;float: left; }
+.pad5{padding-top: 3px;padding-bottom: 3px;}
+.left{text-align: left;}
+.percent40 {text-align: center;width: 35%;}
+.Footer{float: left; width: 93%;margin-left: 5%; margin-top: 1%;page-break-after:always; }
+.FooterDetails{float: left; width: 100%;}
+.FooterNote{position: relative; bottom: 10px; width: 96%; margin-left: 2%; margin-right: 1%; font-size: 11px;}
+.FooterSignature div {position: relative; bottom: 20px; left: 400px; min-width: 200px; margin-top: 20px;}

@@ -1,0 +1,19 @@
+<Configuration>
+  <Logger>
+    <LogLevel>1</LogLevel>
+    <LogPath>D:\SVN-Projects\trunk\InventorySystem\InventoryPortal\Logs</LogPath>
+    <LogFileName>InventoryLog.log</LogFileName>
+    <LogFileSize>1</LogFileSize>
+    <LogType>file</LogType>
+    <LogDBConnectionString>Server=localhost;Port=3306;Database=mnwc_cms_registration;Uid=root;Pwd=sndt;Pooling=false;Connect timeout=900;</LogDBConnectionString>
+  </Logger>
+  <EmailSettings>
+    <EmailAddress>vasim.ahmed@gmail.com</EmailAddress>
+    <UserName>wasim</UserName>
+    <Password>wasimahmed</Password>
+    <Port>25</Port>
+    <Server>gmail.com</Server>
+    <IsSSLEnabled>False</IsSSLEnabled>
+    <IsHTMLResponse>True</IsHTMLResponse>
+  </EmailSettings>
+</Configuration>

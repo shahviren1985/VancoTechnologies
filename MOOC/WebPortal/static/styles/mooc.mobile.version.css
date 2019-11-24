@@ -1,0 +1,406 @@
+﻿body
+{
+}
+
+/* iPad landscape · width: 1024px */
+@media only screen and (max-width:1024px)
+{
+    .logo
+    {
+        width: 15% !important;
+        margin: 10px 0px 10px -60px !important;
+    }
+
+    .slider
+    {
+        width: 124% !important;
+        margin-top: 103px !important;
+        margin-left: 0px !important;
+    }
+
+    .container
+    {
+        width: 920px !important;
+    }
+
+    .magn-left
+    {
+        margin-left: 0px !important;
+    }
+
+    .full-width-section
+    {
+        background-size: 30% 38% !important;
+    }
+
+    .contact-left
+    {
+        margin-left: 3% !important;
+        width: 35% !important;
+        float: left !important;
+    }
+
+    .mobile-conpact
+    {
+        margin-right: 0px !important;
+    }
+
+    .login_form
+    {
+        /*margin: -23% -20% 5% -10% !important;*/
+    }
+
+    .flex-viewport, .flex-control-nav, .flex-direction-nav
+    {
+        /*display: none !important;*/
+    }
+
+    .block
+    {
+        /*display: none !important;*/
+    }
+
+    .start-learn
+    {
+    }
+
+    .form-signin
+    {
+        /*width: 51% !important;*/
+    }
+}
+
+/* iPad portrait · width: 768px */
+@media only screen and (max-width:768px)
+{
+    .logo
+    {
+        width: 20% !important;
+        margin: 0px !important;
+    }
+
+    .slider
+    {
+        width: 124% !important;
+        margin-top: 103px !important;
+        margin-left: 0px !important;
+    }
+
+    .flex-viewport, .flex-control-nav, .flex-direction-nav
+    {
+        display: none !important;
+    }
+
+    #students, #colleges
+    {
+        display: none !important;
+    }
+
+    .syllabus-left
+    {
+        margin-left: 10px !important;
+    }
+
+    .container
+    {
+        width: 820px !important;
+    }
+
+    .featured-services
+    {
+        font-size: 42px;
+        width: 90%;
+        margin-top: 15%;
+    }
+
+    .magn-left
+    {
+        margin-left: 0px !important;
+    }
+
+    .full-width-section
+    {
+        background-size: 30% 38% !important;
+    }
+
+    .contact-left
+    {
+        margin-left: 3% !important;
+        width: 35% !important;
+        float: left !important;
+    }
+
+    .mobile-conpact
+    {
+        margin-right: 0px !important;
+    }
+
+    .login_form
+    {
+        margin: -10% 0% 0% 5% !important;
+    }
+
+    .flex-viewport, .flex-control-nav, .flex-direction-nav
+    {
+        /*display: none !important;*/
+    }
+
+    .block
+    {
+        /*display: none !important;*/
+    }
+
+    .start-learn
+    {
+    }
+
+    .form-signin
+    {
+        /*width: 51% !important;*/
+    }
+}
+
+/* Android (Nexus 4) landscape · width: 600px */
+@media only screen and (max-width:600px)
+{
+    .logo
+    {
+        width: 20% !important;
+        margin: 0 !important;
+    }
+    .slider
+    {
+        width: 100% !important;
+        margin-top: 103px !important;
+        margin-left: 120px !important;
+    }
+    .container
+    {
+        width: auto !important;
+    }
+
+    .login_form
+    {
+        margin: -23% -20% 5% -10% !important;
+    }
+
+    .flex-viewport, .flex-control-nav, .flex-direction-nav
+    {
+        display: none !important;
+    }
+
+    .block
+    {
+        display: none !important;
+    }
+
+    .start-learn
+    {
+        width: 70% !important;
+        font-size: 350% !important;
+    }
+
+    .form-signin
+    {
+        width: 51% !important;
+    }
+}
+
+/* iPhone 5 landscape · width: 568px */
+@media only screen and (max-width:568px)
+{
+    .login_form
+    {
+        margin: -23% -20% 5% -10% !important;
+    }
+    .slider
+    {
+        width: 100% !important;
+        margin-top: 103px !important;
+        margin-left: 120px !important;
+    }
+    .container
+    {
+        width: auto !important;
+    }
+
+    .flex-viewport, .flex-control-nav, .flex-direction-nav
+    {
+        display: none !important;
+    }
+
+    .block
+    {
+        display: none !important;
+    }
+
+    .start-learn
+    {
+        width: 70% !important;
+        font-size: 350% !important;
+    }
+
+    .form-signin
+    {
+        width: 51% !important;
+    }
+}
+
+/* landscape · width: 480px */
+@media only screen and (max-width:480px)
+{
+    .login_form
+    {
+        margin: -28% -21% -63% -21% !important;
+    }
+
+    .slider
+    {
+        width: 100% !important;
+        margin-top: 103px !important;
+        margin-left: 120px !important;
+    }
+
+    .container
+    {
+        width: auto !important;
+    }
+
+    .flex-viewport, .flex-control-nav, .flex-direction-nav
+    {
+        display: none !important;
+    }
+
+    .block
+    {
+        display: none !important;
+    }
+
+    .start-learn
+    {
+        width: 70% !important;
+        font-size: 350% !important;
+    }
+
+    .form-signin
+    {
+        width: 80% !important;
+    }
+}
+
+/* Android (Nexus 4) portrait · width: 384px */
+@media only screen and (max-width:384px)
+{
+    .login_form
+    {
+        margin: -28% -21% -63% -21% !important;
+    }
+
+    .container
+    {
+        width: auto !important;
+    }
+
+    .flex-viewport, .flex-control-nav, .flex-direction-nav
+    {
+        display: none !important;
+    }
+
+    .block
+    {
+        display: none !important;
+    }
+
+    .start-learn
+    {
+        width: 70% !important;
+        font-size: 350% !important;
+    }
+
+    .form-signin
+    {
+        width: 51% !important;
+    }
+}
+
+/* portrait · width: 320px */
+@media only screen and (max-width:320px)
+{
+    .login_form
+    {
+        margin: -36% !important;
+    }
+    .slider
+    {
+        width: 100% !important;
+        margin-top: 103px !important;
+        margin-left: 120px !important;
+    }
+    .container
+    {
+        width: auto !important;
+    }
+
+    .flex-viewport, .flex-control-nav, .flex-direction-nav
+    {
+        display: none !important;
+    }
+
+    .block
+    {
+        display: none !important;
+    }
+
+    .start-learn
+    {
+        width: 68% !important;
+        font-size: 350% !important;
+    }
+
+    .form-signin
+    {
+        width: 51% !important;
+    }
+}
+
+/* Crappy Android portrait · width: 240px */
+@media only screen and (max-width:240px)
+{
+    .login_form
+    {
+        margin: -60% 15% 10% -50% !important;
+    }
+
+    .slider
+    {
+        width: 100% !important;
+        margin-top: 103px !important;
+        margin-left: 120px !important;
+    }
+
+    .container
+    {
+        width: auto !important;
+    }
+
+    .flex-viewport, .flex-control-nav, .flex-direction-nav
+    {
+        display: none !important;
+    }
+
+    .block
+    {
+        display: none !important;
+    }
+
+    .start-learn
+    {
+        width: 68% !important;
+        font-size: 250% !important;
+    }
+
+    .form-signin
+    {
+        width: 48% !important;
+    }
+}

@@ -1,0 +1,5015 @@
+{
+	"Div-A": {
+		"marksheetTemplate": "6",
+		"reportTemplate": "6",
+		"title": "JUNIOR COLLEGE",
+		"years": [{
+			"code": "F.Y.J.C.",
+			"value": "F.Y.J.C."
+		}],
+		"grades": [{
+			"code": "I WITH DISTINCTION",
+			"start": 75,
+			"end": 100
+		},
+		{
+			"code": "I",
+			"start": 60,
+			"end": 74.99
+		},
+		{
+			"code": "II",
+			"start": 45,
+			"end": 59.99
+		},
+		{
+			"code": "PASS",
+			"start": 35,
+			"end": 44.99
+		},
+		{
+			"code": "FAIL",
+			"start": 0,
+			"end": 34.99
+		}],
+		"F.Y.J.C.": {
+			"papers": [{
+				"code": "1001",
+				"paperTitle": "ENGLISH",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "UT I (A)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "UT II (B)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM I (C)",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM II (D)",
+					"passing": "35",
+					"maximum": "100",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "1002",
+				"paperTitle": "HINDI",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "UT I (A)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "UT II (B)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM I (C)",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM II (D)",
+					"passing": "35",
+					"maximum": "100",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "1003",
+				"paperTitle": "SOCIOLOGY",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "UT I (A)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "UT II (B)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM I (C)",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM II (D)",
+					"passing": "35",
+					"maximum": "100",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "1004",
+				"paperTitle": "PSYCHOLOGY",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "UT I (A)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "UT II (B)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM I (C)",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM II (D)",
+					"passing": "35",
+					"maximum": "100",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "1005",
+				"paperTitle": "CHEMISTRY",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "UT I (A)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "UT II (B)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM I (C)",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM II (D)",
+					"passing": "35",
+					"maximum": "100",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "1006",
+				"paperTitle": "BIOLOGY",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "UT I (A)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "UT II (B)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM I (C)",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM II (D)",
+					"passing": "35",
+					"maximum": "100",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "1007",
+				"paperTitle": "E.V.S.",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "TERM II (D)",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "1008",
+				"paperTitle": "PHYSICAL EDUCATION",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "Grade",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			}],
+			"maxGrace": "15"
+		}
+	},
+	"Div-B": {
+		"marksheetTemplate": "6",
+		"reportTemplate": "6",
+		"title": "JUNIOR COLLEGE",
+		"years": [{
+			"code": "F.Y.J.C.",
+			"value": "F.Y.J.C."
+		}],
+		"grades": [{
+			"code": "I WITH DISTINCTION",
+			"start": 75,
+			"end": 100
+		},
+		{
+			"code": "I",
+			"start": 60,
+			"end": 74.99
+		},
+		{
+			"code": "II",
+			"start": 45,
+			"end": 59.99
+		},
+		{
+			"code": "PASS",
+			"start": 35,
+			"end": 44.99
+		},
+		{
+			"code": "FAIL",
+			"start": 0,
+			"end": 34.99
+		}],
+		"F.Y.J.C.": {
+			"papers": [{
+				"code": "1001",
+				"paperTitle": "ENGLISH",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "UT I (A)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "UT II (B)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM I (C)",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM II (D)",
+					"passing": "35",
+					"maximum": "100",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "1002",
+				"paperTitle": "Hindi/Marathi",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "Language",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": "",
+					"isGradeOnly": true
+				},
+				{
+					"title": "UT I (A)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "UT II (B)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM I (C)",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM II (D)",
+					"passing": "35",
+					"maximum": "100",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "1003",
+				"paperTitle": "SOCIOLOGY",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "UT I (A)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "UT II (B)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM I (C)",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM II (D)",
+					"passing": "35",
+					"maximum": "100",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "1004",
+				"paperTitle": "PSYCHOLOGY",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "UT I (A)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "UT II (B)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM I (C)",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM II (D)",
+					"passing": "35",
+					"maximum": "100",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "1005",
+				"paperTitle": "CHEMISTRY",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "UT I (A)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "UT II (B)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM I (C)",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM II (D)",
+					"passing": "35",
+					"maximum": "100",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "1006",
+				"paperTitle": "BIOLOGY",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "UT I (A)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "UT II (B)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM I (C)",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM II (D)",
+					"passing": "35",
+					"maximum": "100",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "1007",
+				"paperTitle": "E.V.S.",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "TERM II (D)",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "1008",
+				"paperTitle": "PHYSICAL EDUCATION",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "Grade",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": "",
+					"isGradeOnly": true
+				}]
+			}],
+			"maxGrace": "15"
+		}
+	},
+	"Div-D": {
+		"marksheetTemplate": "6",
+		"reportTemplate": "6",
+		"title": "JUNIOR COLLEGE",
+		"years": [{
+			"code": "F.Y.J.C.",
+			"value": "F.Y.J.C."
+		}],
+		"grades": [{
+			"code": "I WITH DISTINCTION",
+			"start": 75,
+			"end": 100
+		},
+		{
+			"code": "I",
+			"start": 60,
+			"end": 74.99
+		},
+		{
+			"code": "II",
+			"start": 45,
+			"end": 59.99
+		},
+		{
+			"code": "PASS",
+			"start": 35,
+			"end": 44.99
+		},
+		{
+			"code": "FAIL",
+			"start": 0,
+			"end": 34.99
+		}],
+		"F.Y.J.C.": {
+			"papers": [{
+				"code": "1001",
+				"paperTitle": "ENGLISH",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "UT I (A)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "UT II (B)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM I (C)",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM II (D)",
+					"passing": "35",
+					"maximum": "100",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "1002",
+				"paperTitle": "HINDI/Marathi",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "Language",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": "",
+					"isGradeOnly": true
+				},
+				{
+					"title": "UT I (A)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "UT II (B)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM I (C)",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM II (D)",
+					"passing": "35",
+					"maximum": "100",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "1003",
+				"paperTitle": "Mathematics/PSYCHOLOGY/SOCIOLOGY",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "Elective",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": "",
+					"isGradeOnly": true
+				},
+				{
+					"title": "UT I (A)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "UT II (B)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM I (C)",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM II (D)",
+					"passing": "35",
+					"maximum": "100",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "1004",
+				"paperTitle": "Physics",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "UT I (A)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "UT II (B)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM I (C)",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM II (D)",
+					"passing": "35",
+					"maximum": "100",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "1005",
+				"paperTitle": "CHEMISTRY",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "UT I (A)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "UT II (B)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM I (C)",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM II (D)",
+					"passing": "35",
+					"maximum": "100",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "1006",
+				"paperTitle": "BIOLOGY",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "UT I (A)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "UT II (B)",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM I (C)",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "TERM II (D)",
+					"passing": "35",
+					"maximum": "100",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "1007",
+				"paperTitle": "E.V.S.",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "TERM II (D)",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "1008",
+				"paperTitle": "PHY. EDU.",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "Grade",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": "",
+					"isGradeOnly": true
+				}]
+			}],
+			"maxGrace": "15"
+		}
+	},
+	"Child-Care-1": {
+		"marksheetTemplate": "2",
+		"reportTemplate": "2",
+		"title": "DIPLOMA IN EARLY CHILDHOOD CARE AND EDUCATION ",
+		"years": [{
+			"code": "first",
+			"value": "First Year"
+		}],
+		"grades": [{
+			"code": "O",
+			"start": 80,
+			"end": 100
+		},
+		{
+			"code": "A+",
+			"start": 70,
+			"end": 79
+		},
+		{
+			"code": "A",
+			"start": 60,
+			"end": 69
+		},
+		{
+			"code": "B",
+			"start": 50,
+			"end": 59
+		},
+		{
+			"code": "C",
+			"start": 40,
+			"end": 49
+		},
+		{
+			"code": "D",
+			"start": 35,
+			"end": 39
+		},
+		{
+			"code": "F",
+			"start": 0,
+			"end": 34
+		}],
+		"first": {
+			"papers": [{
+				"code": "100001",
+				"paperTitle": "CHILD GROWTH & DEVELOPMENT ­1",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "18",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "100002",
+				"paperTitle": "LESSON PLANNING & ACTIVITIES",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "18",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "18",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "100003",
+				"paperTitle": "NUTRITION, HEALTH, HYGIENE & SAFETY",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "18",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "100004",
+				"paperTitle": "APPROACHES IN EARLY CHILDHOOD EDUCATION",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "18",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "100005",
+				"paperTitle": "PRACTICAL­1",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "35",
+					"maximum": "100",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "0",
+					"isGrace": false,
+					"marksObtained": "NA",
+					"isDisabled": true
+				}]
+			},
+			{
+				"code": "200001",
+				"paperTitle": "CHILD GROWTH & DEVELOPMENT ­ 2",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "18",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "200002",
+				"paperTitle": "CURRICULUM PLANNING & ASSESSMENT",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "18",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "18",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "200003",
+				"paperTitle": " PRESCHOOL ORGANISATION & MANAGEMENT",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "18",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "200004",
+				"paperTitle": "WORKING WITH PARENTS",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "18",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"code": "200005",
+				"paperTitle": "PRACTICAL­2",
+				"credits": 4,
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "35",
+					"maximum": "100",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "0",
+					"isGrace": false,
+					"marksObtained": "NA",
+					"isDisabled": true
+				}]
+			}],
+			"maxGrace": "5"
+		}
+	},
+	"fashion_designing": {
+		"marksheetTemplate": "3",
+		"reportTemplate": "3",
+		"title": "FASHION DESIGNING",
+		"years": [{
+			"code": "first",
+			"value": "First Year"
+		},
+		{
+			"code": "second",
+			"value": "Second Year"
+		},
+		{
+			"code": "third",
+			"value": "Third Year"
+		}],
+		"grades": [{
+			"code": "O",
+			"start": 80,
+			"end": 100
+		},
+		{
+			"code": "A+",
+			"start": 70,
+			"end": 79
+		},
+		{
+			"code": "A",
+			"start": 60,
+			"end": 69
+		},
+		{
+			"code": "B",
+			"start": 50,
+			"end": 59
+		},
+		{
+			"code": "C",
+			"start": 40,
+			"end": 49
+		},
+		{
+			"code": "D",
+			"start": 35,
+			"end": 39
+		},
+		{
+			"code": "F",
+			"start": 0,
+			"end": 34
+		}],
+		"first": {
+			"papers": [{
+				"paperTitle": "Pattern Making",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "30",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Academic Performance",
+					"passing": "0",
+					"maximum": "20",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Garment Construction",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "30",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Academic Performance",
+					"passing": "0",
+					"maximum": "20",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Basic Textiles",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "30",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Academic Performance",
+					"passing": "0",
+					"maximum": "20",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Fashion Illustration - Basic",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "30",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Academic Performance",
+					"passing": "0",
+					"maximum": "20",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Computer Aided Fashion Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "30",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Academic Performance",
+					"passing": "0",
+					"maximum": "20",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Surface Ornamentation - Basic",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "30",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Academic Performance",
+					"passing": "0",
+					"maximum": "20",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Foundation of Fashion Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "30",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Academic Performance",
+					"passing": "0",
+					"maximum": "20",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			}],
+			"maxGrace": "5"
+		},
+		"second": {
+			"papers": [{
+				"paperTitle": "Pattern Making",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "30",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Academic Performance",
+					"passing": "0",
+					"maximum": "20",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Garment Construction",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "30",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Academic Performance",
+					"passing": "0",
+					"maximum": "20",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Fabric Study",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "30",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Academic Performance",
+					"passing": "0",
+					"maximum": "20",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Fashion Illustration - Advance",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "30",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Academic Performance",
+					"passing": "0",
+					"maximum": "20",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Computer Aided Fashion Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "30",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Academic Performance",
+					"passing": "0",
+					"maximum": "20",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Indian Traditional Embroideries",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "30",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Academic Performance",
+					"passing": "0",
+					"maximum": "20",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Indian Costumes",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "30",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Academic Performance",
+					"passing": "0",
+					"maximum": "20",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			}],
+			"maxGrace": "5"
+		},
+		"third": {
+			"papers": [{
+				"paperTitle": "Pattern Making",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "30",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Academic Performance",
+					"passing": "0",
+					"maximum": "20",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Garment Construction",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "30",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Academic Performance",
+					"passing": "0",
+					"maximum": "20",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Fabric Printing & Dyeing",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "30",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Academic Performance",
+					"passing": "0",
+					"maximum": "20",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Illustration & Portfolio Making",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "30",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Academic Performance",
+					"passing": "0",
+					"maximum": "20",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Computer Aided Fashion Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "30",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Academic Performance",
+					"passing": "0",
+					"maximum": "20",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Surface Ornamentation - Advance",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "30",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Academic Performance",
+					"passing": "0",
+					"maximum": "20",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Draping",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "30",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Academic Performance",
+					"passing": "0",
+					"maximum": "20",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "History of Fashion",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "30",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Academic Performance",
+					"passing": "0",
+					"maximum": "20",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Fashion Marketing & Merchandising",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "30",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Academic Performance",
+					"passing": "0",
+					"maximum": "20",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			}],
+			"maxGrace": "5"
+		}
+	},
+	"adv_diploma_inter_design": {
+		"marksheetTemplate": "4",
+		"reportTemplate": "4",
+		"title": "Advance Diploma in Interior Designing and Decoration",
+		"years": [{
+			"code": "sem_1",
+			"value": "Semester 1"
+		},
+		{
+			"code": "sem_2",
+			"value": "Semester 2"
+		},
+		{
+			"code": "sem_3",
+			"value": "Semester 3"
+		},
+		{
+			"code": "sem_4",
+			"value": "Semester 4"
+		},
+		{
+			"code": "sem_5",
+			"value": "Semester 5"
+		},
+		{
+			"code": "sem_6",
+			"value": "Semester 6"
+		}],
+		"grades": [{
+			"code": "O",
+			"start": 80,
+			"end": 100
+		},
+		{
+			"code": "A+",
+			"start": 70,
+			"end": 79
+		},
+		{
+			"code": "A",
+			"start": 60,
+			"end": 69
+		},
+		{
+			"code": "B",
+			"start": 50,
+			"end": 59
+		},
+		{
+			"code": "C",
+			"start": 40,
+			"end": 49
+		},
+		{
+			"code": "D",
+			"start": 35,
+			"end": 39
+		},
+		{
+			"code": "F",
+			"start": 0,
+			"end": 34
+		}],
+		"sem_1": {
+			"papers": [{
+				"paperTitle": "Computer",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Services",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Basic Designs",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Construction",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Graphic Designs",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Materials",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			}],
+			"maxGrace": "5"
+		},
+		"sem_2": {
+			"papers": [{
+				"paperTitle": "Computer",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Services",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Graphic Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Construction",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Interior Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Materials",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			}],
+			"maxGrace": "5"
+		},
+		"sem_3": {
+			"papers": [{
+				"paperTitle": "Computer",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Services",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Professional Practice",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Construction",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Interior Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Materials",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			}],
+			"maxGrace": "5"
+		},
+		"sem_4": {
+			"papers": [{
+				"paperTitle": "Computer",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Services",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Professional Pratice",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Construction",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Interior Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Materials",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			}],
+			"maxGrace": "5"
+		},
+		"sem_5": {
+			"papers": [{
+				"paperTitle": "Materials",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Construction",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Furniture Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Display Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Interior Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Computer",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			}],
+			"maxGrace": "5"
+		},
+		"sem_6": {
+			"papers": [{
+				"paperTitle": "Materials",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Construction",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Furniture Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Display Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Interior Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Computer",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			}],
+			"maxGrace": "5"
+		}
+	},
+	"adv_diploma_inter_design_atkt": {
+		"marksheetTemplate": "4",
+		"reportTemplate": "4",
+		"title": "Advance Diploma in Interior Designing and Decoration (ATKT)",
+		"years": [{
+			"code": "sem_1",
+			"value": "Semester 1"
+		},
+		{
+			"code": "sem_2",
+			"value": "Semester 2"
+		},
+		{
+			"code": "sem_3",
+			"value": "Semester 3"
+		},
+		{
+			"code": "sem_4",
+			"value": "Semester 4"
+		},
+		{
+			"code": "sem_5",
+			"value": "Semester 5"
+		},
+		{
+			"code": "sem_6",
+			"value": "Semester 6"
+		}],
+		"grades": [{
+			"code": "O",
+			"start": 80,
+			"end": 100
+		},
+		{
+			"code": "A+",
+			"start": 70,
+			"end": 79
+		},
+		{
+			"code": "A",
+			"start": 60,
+			"end": 69
+		},
+		{
+			"code": "B",
+			"start": 50,
+			"end": 59
+		},
+		{
+			"code": "C",
+			"start": 40,
+			"end": 49
+		},
+		{
+			"code": "D",
+			"start": 35,
+			"end": 39
+		},
+		{
+			"code": "F",
+			"start": 0,
+			"end": 34
+		}],
+		"sem_1": {
+			"papers": [{
+				"paperTitle": "Computer",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Services",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Basic Designs",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Construction",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Graphic Designs",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Materials",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			}],
+			"maxGrace": "5"
+		},
+		"sem_2": {
+			"papers": [{
+				"paperTitle": "Computer",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Services",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Graphic Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Construction",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Interior Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Materials",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			}],
+			"maxGrace": "5"
+		},
+		"sem_3": {
+			"papers": [{
+				"paperTitle": "Computer",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Services",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Professional Practice",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Construction",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Interior Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Materials",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			}],
+			"maxGrace": "5"
+		},
+		"sem_4": {
+			"papers": [{
+				"paperTitle": "Computer",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Services",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Professional Pratice",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Construction",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Interior Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Materials",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			}],
+			"maxGrace": "5"
+		},
+		"sem_5": {
+			"papers": [{
+				"paperTitle": "Materials",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Construction",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Furniture Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Display Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Interior Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Computer",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			}],
+			"maxGrace": "5"
+		},
+		"sem_6": {
+			"papers": [{
+				"paperTitle": "Materials",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Construction",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Furniture Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Display Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Interior Design",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			},
+			{
+				"paperTitle": "Computer",
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "0",
+					"maximum": "45",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "0",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Attendance",
+					"passing": "0",
+					"maximum": "5",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			}],
+			"maxGrace": "5"
+		}
+	},
+	"counseling": {
+		"marksheetTemplate": "1",
+		"reportTemplate": "1",
+		"title": "Diploma in Counselling",
+		"years": [{
+			"code": "first",
+			"value": "First Year"
+		}],
+		"grades": [{
+			"code": "O",
+			"start": 80,
+			"end": 100
+		},
+		{
+			"code": "A+",
+			"start": 70,
+			"end": 79
+		},
+		{
+			"code": "A",
+			"start": 60,
+			"end": 69
+		},
+		{
+			"code": "B",
+			"start": 50,
+			"end": 59
+		},
+		{
+			"code": "C",
+			"start": 40,
+			"end": 49
+		},
+		{
+			"code": "D",
+			"start": 35,
+			"end": 39
+		},
+		{
+			"code": "F",
+			"start": 0,
+			"end": 34
+		}],
+		"first": {
+			"papers": [{
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "51",
+					"maximum": "150",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "External",
+					"passing": "35",
+					"maximum": "100",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			}],
+			"maxGrace": "3"
+		}
+	},
+	"advcounseling": {
+		"marksheetTemplate": "8",
+		"reportTemplate": "8",
+		"title": "Advance Diploma in Counselling",
+		"years": [{
+			"code": "first",
+			"value": "First Year"
+		}],
+		"grades": [{
+			"code": "O",
+			"start": 80,
+			"end": 100
+		},
+		{
+			"code": "A+",
+			"start": 70,
+			"end": 79
+		},
+		{
+			"code": "A",
+			"start": 60,
+			"end": 69
+		},
+		{
+			"code": "B",
+			"start": 50,
+			"end": 59
+		},
+		{
+			"code": "C",
+			"start": 40,
+			"end": 49
+		},
+		{
+			"code": "D",
+			"start": 35,
+			"end": 39
+		},
+		{
+			"code": "F",
+			"start": 0,
+			"end": 34
+		}],
+		"first": {
+			"papers": [{
+				"paperDetails": [{
+					"title": "Internal",
+					"passing": "20",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Theory",
+					"passing": "40",
+					"maximum": "100",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Practical",
+					"passing": "40",
+					"maximum": "100",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Grace",
+					"isGrace": true,
+					"isRequired": false,
+					"marksObtained": ""
+				}]
+			}],
+			"maxGrace": "3"
+		}
+	},
+	"nut": {
+		"marksheetTemplate": "7",
+		"reportTemplate": "7",
+		"title": "Certificate Course in Nutrition and Wellness",
+		"years": [{
+			"code": "first",
+			"value": "First Year"},
+		{
+			"code": "second",
+			"value": "Second Year"
+		}],
+		"grades": [{
+			"code": "O",
+			"start": 80,
+			"end": 100
+		},
+		{
+			"code": "A+",
+			"start": 70,
+			"end": 79
+		},
+		{
+			"code": "A",
+			"start": 60,
+			"end": 69
+		},
+		{
+			"code": "B",
+			"start": 50,
+			"end": 59
+		},
+		{
+			"code": "C",
+			"start": 40,
+			"end": 49
+		},
+		{
+			"code": "D",
+			"start": 35,
+			"end": 39
+		},
+		{
+			"code": "F",
+			"start": 0,
+			"end": 34
+		}],
+		"first": {
+			"papers": [{
+				"paperDetails": [{
+					"title": "Theory",
+					"passing": "28",
+					"maximum": "75",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Practical",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Internal",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				}
+				]
+			}],
+			"maxGrace": "2"
+		},
+		"second": {
+			"papers": [{
+				"paperDetails": [{
+					"title": "Theory",
+					"passing": "28",
+					"maximum": "75",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Practical",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Internal",
+					"passing": "9",
+					"maximum": "25",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				}
+				]
+			}],
+			"maxGrace": "2"
+		}
+	},
+	"ld": {
+		"marksheetTemplate": "9",
+		"reportTemplate": "9",
+		"title": "Certificate Course on Learning Disability & Remediation",
+		"years": [{
+			"code": "first",
+			"value": "First Year"}],
+		"grades": [{
+			"code": "O",
+			"start": 90,
+			"end": 100
+		},
+		{
+			"code": "A+",
+			"start": 80,
+			"end": 89
+		},
+		{
+			"code": "A",
+			"start": 70,
+			"end": 79
+		},
+		{
+			"code": "B+",
+			"start": 60,
+			"end": 69
+		},
+		{
+			"code": "B",
+			"start": 50,
+			"end": 59
+		},
+		{
+			"code": "C",
+			"start": 40,
+			"end": 49
+		},
+		{
+			"code": "F",
+			"start": 0,
+			"end": 40
+		}],
+		"first": {
+			"papers": [{
+				"paperDetails": [{
+					"title": "Written",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": true,
+					"marksObtained": ""
+				},
+				{
+					"title": "Submission",
+					"passing": "18",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "Practical",
+					"passing": "17",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				},
+				{
+					"title": "General",
+					"passing": "18",
+					"maximum": "50",
+					"isGrace": false,
+					"isRequired": false,
+					"marksObtained": ""
+				}
+				]
+			}],
+			"maxGrace": "2"
+		}
+	}
+}

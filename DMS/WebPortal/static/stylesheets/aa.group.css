@@ -1,0 +1,66 @@
+﻿.section-title {
+    float: left;
+    font-size: 20px;
+    font-family: Segoe UI Light;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 100%;
+    
+    text-align: left;
+}
+
+.half-row {
+    float: left;
+    width: 55%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+.full-row {
+    float: left;
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+}
+
+#previous-comments-tube-container {
+    width: 23%;
+    height: 500px;
+    padding-left: 20px;
+    box-shadow: -5px 0px 10px #ddd;
+    overflow-y: auto;
+    position: fixed;
+    top: 25px;
+    background-color: white;
+}
+#previous-comments-tube-container .section-title{
+    width: 80%;
+    border-left: 0px;
+}
+#save-button,#approve-button{
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right:20px;
+}
+#save-button-container ul
+{
+    float: left;
+    width: 100%;
+    color: red;
+    margin-bottom: 20px;
+}
+#save-button-container ul li{
+    list-style: disc;
+}
+.loading {position: absolute;top: -10px;left: 45%;width: 100px;padding: 10px;background-color: #FFA500;border-radius: 0px 0px 5px 5px; font-weight: bold; display: block;}
+#form-container{display:none;}
+.radio-text {margin-left: 10px;}
+#error-container{position: fixed;right:0px;top:110px;width:22%;overflow: auto;z-index:9999;color:red;text-align:left;padding:20px;background-color:white;display:none;box-shadow: -2px 2px 2px 2px #DDD;min-height:100px;}
+.error-close{position: absolute;right:20px;top:10px;cursor:pointer;font-weight:bold;}
+#error-container ul{list-style:disc;}
+#store-location { display: none;}
+.dropdown { width: 100px !important; margin-top: 10px; margin-right: 10px;}
