@@ -1,0 +1,193 @@
+﻿[
+  {
+    "Specialization": "Mass Communication And Extension",
+    "specialisationCode": "MCE",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "MDV01",
+            "Title": "Program Planning and Evaluation"
+          },
+          {
+            "Code": "RCV17",
+            "Title": "Event Management"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Textiles And Apparel Designing",
+    "specialisationCode": "TAD",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "TDV02",
+            "Title": "Fashion Forecasting and Styling"
+          },
+          {
+            "Code": "TDV03",
+            "Title": "Global Costumes"
+          },
+          {
+            "Code": "TDV31",
+            "Title": "Eco-Friendly Textiles"
+          },
+          {
+            "Code": "TDV19",
+            "Title": "Computer Aided Textile Designing"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Food Nutrition & Dietetics",
+    "specialisationCode": "FND",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "FCV01",
+            "Title": "Public Health Nutrition (Theory)"
+          },
+          {
+            "Code": "FCV02",
+            "Title": "Public Health Nutrition (Practical)"
+          },
+          {
+            "Code": "FCV03",
+            "Title": "Specialized Dietetics  (Theory)"
+          },
+          {
+            "Code": "FCV04",
+            "Title": "Specialized Dietetics  (Practical)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Hospitality And Tourism Management",
+    "specialisationCode": "HTM",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "RCV17",
+            "Title": "Event Management"
+          },
+          {
+            "Code": "RDV03",
+            "Title": "Disaster Management"
+          },
+          {
+            "Code": "RDV06",
+            "Title": "Tourism Resources in India"
+          },
+          {
+            "Code": "RDV02",
+            "Title": "Consumer Durables"
+          },
+          {
+            "Code": "RDV04",
+            "Title": "Safety Practices at Workplace"
+          },
+          {
+            "Code": "RDV11",
+            "Title": "Creative Up-scaling of Dry Waste"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Interior Design And Resource Management",
+    "specialisationCode": "IDRM",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "RDVI14",
+            "Title": "Landscape Design"
+          },
+          {
+            "Code": "RDV03",
+            "Title": "Disaster Management"
+          },
+          {
+            "Code": "RDVI15",
+            "Title": "Industrial Visit"
+          },
+          {
+            "Code": "RDV02",
+            "Title": "Consumer Durables"
+          },
+          {
+            "Code": "RDV04",
+            "Title": "Safety Practices at Workplace"
+          },
+          {
+            "Code": "RDV11",
+            "Title": "Creative Up-scaling of Dry Waste"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Developmental Counselling",
+    "specialisationCode": "DC",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "HDV07",
+            "Title": "Preschool Education (Theory)"
+          },
+          {
+            "Code": "HDV08",
+            "Title": "Preschool Education (Practical)"
+          },
+          {
+            "Code": "HDV06",
+            "Title": "Positive Psychology"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Early Childhood Care And Education",
+    "specialisationCode": "ECCE",
+
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "HCV18",
+            "Title": "Guidance and Counselling (Theory)"
+          },
+          {
+            "Code": "HCV19",
+            "Title": "Guidance and Counselling (Practical)"
+          },
+          {
+            "Code": "HDV06",
+            "Title": "Positive Psychology"
+          }
+        ]
+      }
+    ]
+  }
+
+]

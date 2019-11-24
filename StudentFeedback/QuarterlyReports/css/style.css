@@ -1,0 +1,394 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/* font-family:Arial,Helvetica,sans-serif; */	
+body,h1,h2,h3,h4,h5,h6{
+	font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";	
+}
+body{
+	background: #f3f3f3;	
+}
+/* Login Form Css Start */
+.login-form{
+	margin-top: 70px;
+    padding: 30px 30px 40px;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+}
+.login-form label{
+	font-weight: normal;
+    font-size: 16px;
+}
+label{
+	padding-top:4px
+}
+.login-form .form-control{
+    height: 38px;
+    padding: 0px 12px;
+    font-size: 16px;
+}
+.login-form .btn{
+	font-size:16px
+}
+.btn-primary:focus {
+    box-shadow: 0 0 0 3px rgb(151, 191, 226);
+}
+/* Login Form Css End */
+
+/* Teachers List Css End */
+header{
+	background:#81017a;
+	color:#fff;
+	padding:15px;
+	font-size:16px
+}
+header .text-left{
+	padding-top: 4px;
+    font-size: 20px;
+}
+header a{
+	color:#fff
+}
+header a:hover,header a:focus,header a:active{
+	text-decoration:none;
+	color: #bdb3b3;
+	outline:none
+}
+.panel-title {
+    background: #545353;
+    border-radius: 6px 6px 0 0;
+    padding: 10px;
+	margin-top:20px;
+    color: #fff;
+    text-transform: uppercase;
+    font: bold 17px Arial, Helvetica;
+    text-decoration: none;
+    z-index: 10000000000000000000;
+    text-shadow: 1px 1px #5f3b00;
+}
+.panel-body {
+    border-radius: 0 0 6px 6px;
+    padding:3px 0;
+    margin-bottom: 18px;
+    background: #fff;
+	-webkit-box-shadow:0 0 6px #b1aaaa;
+	-moz-box-shadow:0 0 6px #b1aaaa;
+	box-shadow:0 0 6px #b1aaaa
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.panel-body ul li {
+    list-style: none;    
+}
+.panel-body ul li a {
+    border-bottom: 1px dotted #bbb;
+    display:inline-block;
+	width:100%;
+	color:#000
+}
+.panel-body ul li:last-child a {
+	border-bottom:0
+}
+.panel-body li a:hover{
+	background:#81017a;
+	color:#fff;
+	text-decoration:none
+}
+.panel-body li.active {
+	background:#81017a;
+	color:#fff;
+	text-decoration:none
+}
+.btn-default{
+	padding: 5px 12px
+}
+.right-panel label.radio,.right-panel label.checkbox{
+	font-weight:normal
+}
+.ques + div{
+	padding-left:25px
+}
+/* Teachers List Css End */
+
+/* Feedback Css Start */
+.feedback{
+	padding:15px
+}
+.top-form input.form-control{
+	width:auto;
+	margin-left: 4px;
+}
+.form-data {
+    background: #fff;
+    margin-top: 20px;
+	-webkit-box-shadow: 0 0 6px #b1aaaa;
+    -moz-box-shadow: 0 0 6px #b1aaaa;
+    box-shadow: 0 0 6px #b1aaaa;
+    font-size:16px;
+}
+.feedback-form .panel-title{
+	margin-top:0
+}
+.ques span{
+	width: 25px;
+    float: left;
+}
+.feedback-form{
+	padding-bottom:15px;
+	padding-top:0
+}
+.right-panel textarea{
+	margin-top: 4px;
+}
+.feedback-form .ques {
+    border-top: 1px dotted #bfbdbd;
+    padding-top: 11px;
+    margin-top: 15px;
+}
+.feedback-form .form-group .ques {
+    border-top: 0;
+	padding-top:0;
+}
+label.radio-inline,label.checkbox-inline{
+	padding-top:0
+}
+label.radio-inline input[type="radio"],label.checkbox-inline input[type="checkbox"] {
+    margin-top: 6px;
+}
+.feedback-form .form-group:last-child {
+    border-bottom: 0;
+	margin-bottom: 0;
+}
+.right-panel{
+	padding:0 10px
+}
+.feedback-form h4.panel-title + h4 {
+    padding: 10px;
+    margin: 3px 0 -6px;
+    border-bottom: 1px solid 
+}
+.feedback-form h4.panel-title + h4 span{
+	padding-right:20px;
+	color: #828181;
+	line-height: 1.5;
+}
+#btnSubmitAns{
+	margin:10px
+}
+.panel-body li div {
+    padding: 0;
+    margin: 0;
+}
+.panel-body input[type="radio"] {
+    display:none;
+}
+.panel-body input[type="radio"]:disabled + label, .panel-body input[type="radio"]:disabled + label span{
+    background: green;
+	color:#fff
+}
+.panel-body input[type="radio"] + label {
+    width:100%;
+	height:100%;
+	padding:0;
+	margin:0
+}
+.panel-body input[type="radio"] + label span {
+    display:inline-block;
+    cursor:pointer;
+    padding:10px;
+	width: 60%;
+    height: 100%;
+    text-align: left;
+    color: black;
+}
+.error {
+    color: red;
+}
+.panel-body input[type="radio"] + label span:last-child{
+	text-align:right;
+	float:right;
+	width: 40%;
+}
+.panel-body input[type="radio"]:checked + label,.panel-body input[type="radio"]:checked + label span{
+     background-color:#81017a;
+	 color:#fff
+}
+.InvalidError{
+	border:1px solid red
+}
+.successmsg span,.validationerrormsg span{
+    display:inline-block;
+	padding: 20px 10px;
+	width:100%;
+    text-align: center;
+    background: #fff;
+    margin-top: 20px;
+    -webkit-box-shadow: 0 0 6px #b1aaaa;
+    -moz-box-shadow: 0 0 6px #b1aaaa;
+    box-shadow: 0 0 6px #b1aaaa;
+}
+.successmsg span{
+	color: green;	
+}
+.validationerrormsg span{
+	color: red;
+}
+.errormsg{
+	color: red;
+    padding: 16px 0 0 35px;
+    float: left;
+}
+.loader-img{
+	display:none;
+	position: fixed;
+    background: rgba(000,000,000,.5);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.loader-img img{
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+/* Feedback Css End */
+
+/* Edit Css End */
+.exit-form .right-panel{
+	padding:4px 10px
+}
+.exit-form .form-group {
+    border-bottom: 1px dotted #bfbdbd;
+    padding-bottom: 12px;
+    margin: 8px 0;
+}
+.choose-comment {
+    padding: 10px 10px 0px;
+}
+.subject-choose li{
+	width:33.33%;
+	float:left;
+	list-style:none
+}
+.left-p,.input-left{
+	padding-left:25px
+}
+ol{
+	margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 100%;	
+}
+.multiple-ques .radio-inline{
+	 padding-left: 46px;
+}
+.mul-row{
+	padding-top:10px
+}
+.exit-form .errormsg{
+	padding-top:5px
+}
+#dv_a2_mostvaluable,#dv_a2_valuable,#dv_a2_lessvaluable{
+	margin: 0 1.3% 0 0%;
+    width: 32%;
+    padding-right: 0;
+}
+.multiple-ques .col-xs-12.col-md-8{
+	width: 65.666667%;
+}
+.multiple-ques .form-control{
+	margin-bottom:10px;
+	width: 153px;
+}
+.choose-comment textarea{
+	margin-bottom:5px
+}
+.input-left{
+	margin-top:4px
+}
+/* Edit Css End */
+
+/* Responsive CSS Start */
+@media(max-width:767px){
+	.list-t li{
+		width:100%
+	}
+	.radio-inline,.radio-inline+.radio-inline{
+		padding-left:0;
+		display:block;
+		margin-left:15px
+	}
+	.multiple-ques .radio-inline,.multiple-ques .radio-inline+.radio-inline{
+		padding-left: 27px;
+		display: inline-block
+	}
+	.left-p {
+		padding-left: 10px;
+	}
+	.ques + div,.input-left{
+		padding-left: 10px;
+	}
+	.multiple-ques{
+		padding-top:10px
+	}
+	.subject-choose li{
+		width:100%;
+		float:none		
+	}
+	.feedback-form h4.panel-title + h4 span {
+		padding-right:0;
+		width: 100%;
+		display: block;
+		padding-bottom: 5px;
+	}
+	
+	header .text-left.page-ttl,.page-ttl{
+		width: 71%;
+		font-size:18px
+	}	
+}
+@media(max-width:991px){
+	header .col-xs-12.col-md-3.text-right{
+		margin-top:15px
+	}
+	.multiple-ques .form-control{
+		width:100%;
+		margin-top:5px;
+		margin-bottom:0
+	}
+	.exit-form #btnSubmit{
+		margin-top:10px
+	}
+	.multiple-ques .col-xs-12.col-md-8{
+		margin: 0 auto;
+		width: 90%;
+		padding:0
+	}
+	#dv_a2_mostvaluable,#dv_a2_valuable,#dv_a2_lessvaluable{
+		margin:0 5% 10px 2%;
+		width: 93%;
+		padding-right: 0;
+	}
+}
+@media (min-width: 992px){
+	.login-page.col-md-offset-4 {
+		margin-left: 29%;
+	}
+	.login-page.col-md-4 {
+		width: 42%;
+	}
+	.feedback-form{
+		padding-left:0
+	}
+	header .btn-default{
+		width:auto
+	}
+    #commonfeedbackForm, #validationerrormsg, #successmsg{
+        margin-left: 10%;
+    }
+}
+/* Responsive CSS Start */

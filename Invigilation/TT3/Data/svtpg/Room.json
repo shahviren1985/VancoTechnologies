@@ -1,0 +1,58 @@
+[
+  {
+    "RoomName": "100",
+    "IsTypeRelOrStandBy": "room"
+  },
+  {
+    "RoomName": "101",
+    "IsTypeRelOrStandBy": "room"
+  },
+  {
+    "RoomName": "104",
+    "IsTypeRelOrStandBy": "room"
+  },
+  {
+    "RoomName": "110",
+    "IsTypeRelOrStandBy": "room"
+  },
+  {
+    "RoomName": "119",
+    "IsTypeRelOrStandBy": "room"
+  },
+  {
+    "RoomName": "105",
+    "IsTypeRelOrStandBy": "room"
+  },
+  {
+    "RoomName": "016",
+    "IsTypeRelOrStandBy": "room"
+  },
+  {
+    "RoomName": "007",
+    "IsTypeRelOrStandBy": "room"
+  },
+  {
+    "RoomName": "112",
+    "IsTypeRelOrStandBy": "room"
+  },
+  {
+    "RoomName": "109",
+    "IsTypeRelOrStandBy": "room"
+  },
+  {
+    "RoomName": "Stand By",
+    "IsTypeRelOrStandBy": "stand by"
+  },
+  {
+    "RoomName": "Reliver",
+    "IsTypeRelOrStandBy": "reliver"
+  },
+  {
+    "RoomName": "Reliver 2",
+    "IsTypeRelOrStandBy": "reliver"
+  },
+  {
+    "RoomName": "Stand By 2",
+    "IsTypeRelOrStandBy": "room"
+  }
+]

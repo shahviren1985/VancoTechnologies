@@ -1,0 +1,387 @@
+{
+	"clsactivities": [{
+			"id": "a1",
+			"question": "To what extent Group Projects helped you in life and career after graduation?",
+			"type": "radio",
+			"optionValues": [
+				"To a great extent",
+				"Average",
+				"Not much",
+				"Not at all"
+			]
+		},
+		{
+			"id": "a2",
+			"question": "To what extent Individual Seminar Presentations helped you in life and career after graduation?",
+			"type": "radio",
+			"optionValues": [
+				"Excellent",
+				"Very Good",
+				"Good",
+				"Average",
+				"Very Poor"
+			]
+		},
+		{
+			"id": "a3",
+			"question": "To what extent Guest lectures helped you in life and career after graduation?",
+			"type": "radio",
+			"optionValues": [
+				"To a great extent",
+				"Average",
+				"Not much",
+				"Not at all"
+			]
+		},
+		{
+			"id": "a4",
+			"question": "To what extent Workshops helped you in life and career after graduation?",
+			"type": "radio",
+			"optionValues": [
+				"To a great extent",
+				"Average",
+				"Not much",
+				"Not at all"
+			]
+		},
+		{
+			"id": "a5",
+			"question": "To what extent Field visits/Educational tours helped you in life and career after graduation?",
+			"type": "radio",
+			"optionValues": [
+				"To a great extent",
+				"Average",
+				"Not much",
+				"Not at all"
+			]
+		},
+		{
+			"id": "a6",
+			"question": "To what extent Internship helped you in life and career after graduation?",
+			"type": "radio",
+			"optionValues": [
+				"To a great extent",
+				"Average",
+				"Not much",
+				"Not at all"
+			]
+		},
+		{
+			"id": "a7",
+			"question": "To what extent Gymkhana/Extra-curricular activities helped you in life and career after graduation?",
+			"type": "radio",
+			"optionValues": [
+				"To a great extent",
+				"Average",
+				"Not much",
+				"Not at all"
+			]
+		},
+		{
+			"id": "a8",
+			"question": "To what extent Sports helped you in life and career after graduation?",
+			"type": "radio",
+			"optionValues": [
+				"To a great extent",
+				"Average",
+				"Not much",
+				"Not at all"
+			]
+		},
+		{
+			"id": "a9",
+			"question": "To what extent NSS helped you in life and career after graduation?",
+			"type": "radio",
+			"optionValues": [
+				"To a great extent",
+				"Average",
+				"Not much",
+				"Not at all"
+			]
+		}
+	],
+	"clsalumini": [{
+			"id": "a3",
+			"question": "Marital Status",
+			"type": "radio",
+			"optionValues": [
+				"Married",
+				"UnMarried"
+			]
+		},
+		{
+			"id": "a8",
+			"question": "Department",
+			"type": "radio",
+			"optionValues": [
+				"Food and Nutrition",
+				"Human Development",
+				"Mass Communication and Extension",
+				"Resource Management",
+				"Textiles and Apparel Design",
+				"English/Science"
+			]
+		},
+		{
+			"id": "a9",
+			"question": "Specialization",
+			"type": "radio",
+			"optionValues": [
+				"Developmental Counselling",
+				"Early Childhood Care and Education",
+				"Food, Nutrition and Dietetics",
+				"Hospitality and Tourism Management",
+				"Interior Design and Resource Management",
+				"Mass Communication and Extension",
+				"Textiles and Apparel Design"
+			]
+		},
+		{
+			"id": "a10",
+			"question": "Have you done Internship?",
+			"type": "radio",
+			"optionValues": [
+				"Yes",
+				"No"
+			]
+		},
+		{
+			"id": "a12",
+			"question": "Are you placed in company?",
+			"type": "radio",
+			"optionValues": [
+				"Yes",
+				"No"
+			]
+		},
+		{
+			"id": "a14",
+			"question": "Has your choice of specialization been fruitful?",
+			"type": "radio",
+			"optionValues": [
+				"Yes",
+				"No"
+			]
+		},
+		{
+			"id": "a15",
+			"question": "Have you been employed since graduation?",
+			"type": "radio",
+			"optionValues": [
+				"Yes",
+				"No"
+			]
+		},
+		{
+			"id": "a16",
+			"question": "Were you able to find a job related to your field in specialization?",
+			"type": "radio",
+			"optionValues": [
+				"Yes",
+				"No"
+			]
+		},
+		{
+			"id": "a17",
+			"question": "Currently you are working?",
+			"type": "radio",
+			"optionValues": [
+				"Yes",
+				"No"
+			]
+		},
+		{
+			"id": "a22",
+			"question": "In what way did your course work prepare you for your job?",
+			"type": "radio",
+			"optionValues": [
+				"To a great extent",
+				"To some extent",
+				"To a lesser extent"
+			]
+		},
+		{
+			"id": "a23",
+			"question": "Curriculum inputs of B.Sc. programme offered by the institution are up to the mark for a student to be more competent",
+			"type": "radio",
+			"optionValues": [
+				"Strongly agree",
+				"Agree",
+				"Unsure",
+				"Disagree",
+				"Strongly disagree"
+			]
+		},
+		{
+			"id": "a24",
+			"question": "Have you done any post graduation or professional qualification?",
+			"type": "radio",
+			"optionValues": [
+				"Yes",
+				"No"
+			]
+		},
+		{
+			"id": "a25",
+			"question": "How much credit would you give SVT college for your success in your field of work?",
+			"type": "radio",
+			"optionValues": [
+				"1",
+				"2",
+				"3",
+				"4",
+				"5",
+				"6",
+				"7",
+				"8",
+				"9",
+				"10"
+			]
+		}
+	],
+	"clsrating": [{
+			"id": "a1",
+			"question": "Rate your college on Study Environment",
+			"type": "radio",
+			"optionValues": [
+				"Excellent",
+				"Very Good",
+				"Good",
+				"Average",
+				"Very Poor"
+			]
+		},
+		{
+			"id": "a2",
+			"question": "Rate your college on Faculty",
+			"type": "radio",
+			"optionValues": [
+				"Excellent",
+				"Very Good",
+				"Good",
+				"Average",
+				"Very Poor"
+			]
+		},
+		{
+			"id": "a3",
+			"question": "Rate your college on Quality of study material",
+			"type": "radio",
+			"optionValues": [
+				"Excellent",
+				"Very Good",
+				"Good",
+				"Average",
+				"Very Poor"
+			]
+		},
+		{
+			"id": "a4",
+			"question": "Rate your college on Co-curricular activities",
+			"type": "radio",
+			"optionValues": [
+				"Excellent",
+				"Very Good",
+				"Good",
+				"Average",
+				"Very Poor"
+			]
+		},
+		{
+			"id": "a5",
+			"question": "Rate your college on Opportunities for Personal Growth",
+			"type": "radio",
+			"optionValues": [
+				"Excellent",
+				"Very Good",
+				"Good",
+				"Average",
+				"Very Poor"
+			]
+		},
+		{
+			"id": "a6",
+			"question": "Rate your college on Infrastructure - Class rooms",
+			"type": "radio",
+			"optionValues": [
+				"Excellent",
+				"Very Good",
+				"Good",
+				"Average",
+				"Very Poor"
+			]
+		},
+		{
+			"id": "a7",
+			"question": "Rate your college on Infrastructure - Laboratories",
+			"type": "radio",
+			"optionValues": [
+				"Excellent",
+				"Very Good",
+				"Good",
+				"Average",
+				"Very Poor"
+			]
+		},
+		{
+			"id": "a8",
+			"question": "Rate your college on Infrastructure - Audio Visual Aids",
+			"type": "radio",
+			"optionValues": [
+				"Excellent",
+				"Very Good",
+				"Good",
+				"Average",
+				"Very Poor"
+			]
+		},
+		{
+			"id": "a9",
+			"question": "Rate your college on Infrastructure - Fee Structure",
+			"type": "radio",
+			"optionValues": [
+				"Excellent",
+				"Very Good",
+				"Good",
+				"Average",
+				"Very Poor"
+			]
+		},
+		{
+			"id": "a10",
+			"question": "Rate your college on Infrastructure - Placements",
+			"type": "radio",
+			"optionValues": [
+				"Excellent",
+				"Very Good",
+				"Good",
+				"Average",
+				"Very Poor"
+			]
+		},
+		{
+			"id": "a11",
+			"question": "Rate your college on Infrastructure - Library",
+			"type": "radio",
+			"optionValues": [
+				"Excellent",
+				"Very Good",
+				"Good",
+				"Average",
+				"Very Poor"
+			]
+		},
+		{
+			"id": "a12",
+			"question": "Rate your college on Infrastructure - Student facilities like common room, etc.",
+			"type": "radio",
+			"optionValues": [
+				"Excellent",
+				"Very Good",
+				"Good",
+				"Average",
+				"Very Poor"
+			]
+		}
+	]
+}

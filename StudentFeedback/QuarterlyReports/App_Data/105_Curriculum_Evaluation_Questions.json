@@ -1,0 +1,172 @@
+[
+    {
+        "id": "a1",
+        "question": "Class you Teach",
+        "type": "radio",
+        "optionValues": [
+            "B.COM. PART III ENGLISH (SEMESTER V & VI)-B",
+            "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+            "B.A. PART II GUJARATI (SEMESTER III & IV)-G",
+            "B.A. PART III MARATHI (SEMESTER V & VI)-A",
+            "B.A. PART II MARATHI (SEMESTER III & IV)-A",
+            "B.A. PART III HINDI (SEMESTER V & VI)-B",
+            "B.A. PART III HINDI (SEMESTER V & VI)-A",
+            "B.A. PART II HINDI (SEMESTER III & IV)-A",
+            "B.A. PART I HINDI (SEMESTER I & II)-B",
+            "B.A. PART I HINDI (SEMESTER I & II)-A",
+            "B.COM. PART III ENGLISH (SEMESTER V & VI)-C",
+            "B.COM. PART III ENGLISH (SEMESTER V & VI)-A",
+            "B.COM. PART II ENGLISH (SEMESTER III & IV)-C",
+            "B.COM. PART II ENGLISH (SEMESTER III & IV)-B",
+            "B .COM. PART II ENGLISH (SEMESTER III & IV)-A",
+            "B.COM. PART I ENGLISH (SEMESTER I & II)-B",
+            "B.COM. PART I ENGLISH (SEMESTER I & II)-A",
+            "B.A. PART I GUJARATI (SEMESTER I & II)-G",
+            "B.A. PART III GUJARATI (SEMESTER V & VI)-G",
+            "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+            "B.A. PART III ENGLISH (SEMESTER V & VI)-A"
+        ]
+    },
+    {
+        "id": "a2",
+        "question": "Syllabus is suitable to the course",
+        "type": "radio",
+        "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+    },
+  {
+    "id": "a3",
+    "question": "Syllabus is need based",
+    "type": "radio",
+    "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a4",
+    "question": "Aims and objectives of the syllabus are well defined and clear to teachers and students",
+    "type": "radio",
+    "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a5",
+    "question": "Course content is followed by corresponding reference materials",
+    "type": "radio",
+    "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a6",
+    "question": "Sufficient number of prescribed books are available in the Library",
+    "type": "radio",
+    "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a7",
+    "question": "The course/syllabus has good balance between theory and application",
+    "type": "radio",
+    "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a8",
+    "question": "The course/syllabus has made me interested in the subject area",
+    "type": "radio",
+    "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },{
+    "id": "a9",
+    "question": "The course/syllabus of this subject increased my knowledge and perspective in the subject",
+    "type": "radio",
+    "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a10",
+    "question": "The course/programme of studies carries sufficient number of optional papers",
+    "type": "radio",
+    "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a11",
+    "question": "The books prescribed/listed as reference materials are relevant, updated and appropriate",
+    "type": "radio",
+    "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a12",
+    "question": "Have you incorporated new topics in the syllabus which you think are missing in the syllabus",
+    "type": "radio",
+    "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  }
+]

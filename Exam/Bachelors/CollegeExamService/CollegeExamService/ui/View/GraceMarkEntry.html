@@ -1,0 +1,115 @@
+﻿<div class="row">
+    <div class="col col-md-12">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">Grace Marks Entry</h3>
+            </div>
+            <form id="InternalMarkEntry">
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col col-lg-12 form-group">
+                            <label for="stream">Stream</label>
+                            <select id="stream" name="stream" ng-change="GetSemester()" ng-model="InternalMark.stream" data-validation="required"
+                                    data-validation-error-msg="The Stream field is required" class="form-control">
+                                <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                                <option value="BSc">BSc</option>
+                                <option value="MSc">MSc</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="course">Course</label>
+                            <select id="course" name="course" ng-model="InternalMark.course" data-validation="required"
+                                    data-validation-error-msg="The course field is required" class="form-control">
+                                <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                                <option value="Regular">Regular</option>
+                                <option value="Honors">Honors</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="semester">Semester</label>
+                            <select id="semester" name="semester" ng-model="InternalMark.semester" data-validation="required"
+                                    data-validation-error-msg="The semester field is required" class="form-control">
+                                <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="examType">Exam Type</label>
+                            <select id="examType" name="examType" ng-model="InternalMark.examType" data-validation="required"
+                                    data-validation-error-msg="The examType field is required" class="form-control">
+                                <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                                <option value="Regular">Regular</option>
+                                <option value="ATKT">ATKT</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="sem">Specialization</label>
+                            <select disabled="disabled" name="Specialization" ng-model="InternalMark.Specialization" data-validation="required"
+                                    data-validation-error-msg="The Specialization field is required" id="Specialization" class="form-control">
+                                <option selected="selected" disabled="disabled" value="">--- Select ---</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="paper">Paper</label>
+                            <select disabled="disabled" id="paper" name="Paper" ng-model="InternalMark.paper" data-validation="required"
+                                    data-validation-error-msg="The Paper field is required" class="form-control">
+                                <option selected="selected" disabled="disabled" value="">--- Select ---</option>
+                            </select>
+                        </div>
+                        <div class="col col-md-12 form-group">
+                            <button type="submit" class="btn btn-primary pull-right">Get</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <style>
+            div.form-error {
+                background-color: #f2dede !important;
+                margin: 15px !important;
+            }
+        </style>
+        <div class="box box-primary" id="InternalMarkEntryForm" style="display:none">
+            <form id="StudentInternalMark">
+                <div class="box-header with-border">
+                    <h3 id="TitleForSubject1" class="box-title">Internal Mark Exam System </h3> <!---->
+                </div>
+                <div class="box-body">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th style="text-align:center">Seat Number</th>
+                                <th style="text-align:center">Name</th>
+                                <!--<th style="text-align:center">Paper Name</th>-->
+                                <th style="text-align:center">Internal Mark</th>
+                                <th style="text-align:center">External Mark</th>
+                                <th style="text-align:center">Grace Mark</th>
+                                <th style="text-align:center">Max Eligible</th>
+                            </tr>
+                        </thead>
+                        <tbody style="max-height: 500px; overflow: auto;">
+                            <tr ng-repeat="stu in array" style="text-align:center">
+                                <td style="text-align:center">{{stu.SeatNumber}}</td>
+                                <!--<th style="text-align:center">{{stu.RollNumber}}</th>-->
+                                <td style="text-align:left">{{stu.LastName}} {{stu.FirstName}} {{stu.FatherName}} {{stu.MotherName}}</td>
+                                <!--<td style="text-align:center">{{SelectedPaperNameToShow}}</td>-->
+                                <td style="text-align:center">{{stu.InternalMark}}</td>
+								<td style="text-align:center" ng-if="stu.External1!='' && stu.External2!=''">{{stu.External1 + stu.External2 + stu.PracticalMark}}</td>
+                                <td style="text-align:center" ng-if="stu.External1=='' && stu.External2==''">{{stu.ExternalTotal}}</td>
+                                <td style="text-align:center"><input value="{{stu.GraceMark}}" data-validation="number" data-validation-allowing="range[0;{{stu.MaxAllowedGraceMark}}]" data-validation-error-msg="" style="max-width: 80px; margin-left: 32%; text-align: center;" class="form-control StudentInternalMark" name="InternalMark_{{stu.RollNumber}}" id="InternalMark_{{stu.SeatNumber}}" type="text" /></td>
+                                <td style="text-align:center">{{stu.MaxAllowedGraceMark}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> <!---->
+                <div class="box-footer">
+                    <div class="form-group">
+                        <!--<button type="button" class="btn btn-primary pull-left" ng-click="OpenEntrySheet()">Entry Sheet</button>-->
+                        <button type="submit" class="btn btn-primary pull-right">Save Marks</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>

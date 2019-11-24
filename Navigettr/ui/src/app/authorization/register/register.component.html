@@ -1,0 +1,102 @@
+<div class="app flex-row align-items-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card mx-4">
+          <div class="card-body p-4">
+            <form [formGroup]="regdForm" (ngSubmit)="onSubmit()">
+              <h1>Register</h1>
+              <p class="text-muted mb-0">Create your account</p>
+              <div class="form-group">
+                <select class="form-control" id="userType" formControlName="UserTypeID">
+                  <option value='' disabled selected>Select User Type</option>
+                  <option *ngFor="let user of userType" [value]="user.id">{{user.name}}</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <span class="input-group-addon"><i class="icon-user"></i></span>
+                  <input type="text" class="form-control" formControlName="FirstName" placeholder="FirstName">
+                </div>
+                <div *ngIf="f.FirstName.invalid && (f.FirstName.dirty || f.FirstName.touched)" class="alert alert-danger">
+                  <div [hidden]="this. regdForm.controls['FirstName'].valid">
+                    First Name is required
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <span class="input-group-addon"><i class="icon-user"></i></span>
+                  <input type="text" class="form-control" formControlName="LastName" placeholder="Last Name">
+                </div>
+                <div *ngIf="f.LastName.invalid && (f.LastName.dirty || f.LastName.touched)" class="alert alert-danger">
+                  <div [hidden]="this.regdForm.controls['LastName'].valid">
+                    Last Name is required
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <span class="input-group-addon"><i class="fa fa-mobile-phone  fa-lg "></i></span>
+                  <input type="text" class="form-control" formControlName="PhoneNumber" placeholder="Phone Number">
+                </div>
+                <div *ngIf="f.PhoneNumber.invalid && (f.PhoneNumber.dirty || f.PhoneNumber.touched)" class="alert alert-danger">
+                  <div [hidden]="f.PhoneNumber.valid  ||f.PhoneNumber.errors.minlength||f.PhoneNumber.errors.maxlength">
+                    Phone Number is required </div>
+                  <div *ngIf="f.PhoneNumber.errors.minlength">
+                    Phone Number length must be less than or equal to 10 characters long
+                  </div>
+                  <div *ngIf="f.PhoneNumber.errors.maxlength">
+                    Phone Number length must be less than or equal to 10 characters long
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <span class="input-group-addon">@</span>
+                  <input type="password" class="form-control" formControlName="EmailId" placeholder="Email Id">
+                </div>
+                <div *ngIf="f.EmailId.invalid && (f.EmailId.dirty || f.EmailId.touched)" class="alert alert-danger">
+                  <div [hidden]="this.regdForm.controls['EmailId'].valid ">
+                    Please enter a valid email
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group mb-4">
+                  <span class="input-group-addon"><i class="icon-lock"></i></span>
+                  <input type="password" class="form-control" formControlName="Password" placeholder="Password">
+                </div>
+                <div *ngIf="f.Password.invalid && (f.Password.dirty || f.Password.touched)" class="alert alert-danger">
+                  <div [hidden]="this.regdForm.controls['Password'].valid">
+                    Password is required
+                  </div>
+                </div>
+              </div>
+              <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+              <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }" [template]="customLoadingTemplate"></ngx-loading>
+              <!-- <div class="form-group">
+                <div class="input-group mb-4">
+                  <span class="input-group-addon"><i class="icon-lock"></i></span>
+                  <input type="password" class="form-control" formControlName="ConfirmPassword" placeholder=" Confirm Password ">
+                </div>
+                <div *ngIf="f.ConfirmPassword.invalid && (f.ConfirmPassword.dirty || f.ConfirmPassword.touched)" class="alert alert-danger">
+                  <div [hidden]="this.regdForm.controls['ConfirmPassword'].valid">
+                    Confirm Password
+                  </div>
+                </div>
+              </div> -->
+              <button type="submit" [disabled]="!regdForm.valid" class="btn btn-block btn-success" [disabled]="! isValid">Create
+                Account</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

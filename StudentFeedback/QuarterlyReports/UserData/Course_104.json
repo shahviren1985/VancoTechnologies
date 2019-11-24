@@ -1,0 +1,138 @@
+[
+  {
+    "Course": "BAFI",
+    "SubCourse": [
+      "REG"
+    ]
+  },
+  {
+    "Course": "FYBAFI",
+    "SubCourse": [
+      "REG"
+    ]
+  },
+  {
+    "Course": "FYBMS",
+    "SubCourse": [
+      "REG"
+    ]
+  },
+  {
+    "Course": "TYBMS",
+    "SubCourse": [
+      "Finance",
+      "Marketing"
+    ]
+  },
+   {
+    "Course": "TYBAFI",
+    "SubCourse": [
+      "Reg"
+    ]
+  },
+  {
+    "Course": "B.Com. III",
+    "SubCourse": [
+      "Reg",
+      "OM",
+      "TTM"
+    ]
+  },
+  {
+    "Course": "BA III Guj",
+    "SubCourse": [
+      "Eco/APC",
+      "Eco/FN",
+      "Guj/APC",
+      "Guj/FN"
+    ]
+  },
+  {
+    "Course": "BA III Eng",
+    "SubCourse": [
+      "Eng/APC",
+      "Eng/CD",
+      "Eng/FN",
+      "Psy/CD",
+      "Psy/FN",
+      "Socio/APC",
+      "Socio/CD",
+      "Socio/FN"
+    ]
+  },
+  {
+    "Course": "SYBMS",
+    "SubCourse": [
+      "Reg"
+    ]
+  },
+  {
+    "Course": "B.Com. II",
+    "SubCourse": [
+      "ADVT",
+      "Hindi",
+      "IP",
+      "OM",
+      "TTM"
+    ]
+  },
+  {
+    "Course": "SYBAFI",
+    "SubCourse": [
+      "Reg"
+    ]
+  },
+  {
+    "Course": "BA II Guj",
+    "SubCourse": [
+      "Eco/FN", 
+      "Eco/HN",
+      "Guj/HN",
+      "Guj/FN"
+    ]
+  },
+  {
+    "Course": "BA II Eng",
+    "SubCourse": [
+      "Eng/CD",
+      "Eng/FN",
+      "Eng/HN",
+      "Psy/CD",
+      "Psy/FN",
+      "Socio/CD",
+      "Socio/FN",
+      "Socio/HN"
+    ]
+  },
+  {
+    "Course": "B.Com. I",
+    "SubCourse": [
+      "Reg",
+      "OM",
+      "TTM"
+    ]
+  },
+  {
+    "Course": "BA I Guj",
+    "SubCourse": [
+      "Guj/FN",
+      "Guj/HN",
+      "Eco/FN",
+      "Eco/HN"
+    ]
+  },
+  {
+    "Course": "BA I Eng",
+    "SubCourse": [
+      "Eng/CD",
+      "Eng/FN",
+      "Eng/HN",
+      "Psy/CD",
+      "Psy/FN",
+      "Socio/CD",
+      "Socio/FN",
+      "Socio/HN"
+    ]
+  }
+  
+]

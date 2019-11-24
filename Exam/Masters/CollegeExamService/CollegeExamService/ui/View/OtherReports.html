@@ -1,0 +1,64 @@
+﻿<div class="row">
+    <div class="col col-md-12">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">Other Reports Exam System</h3>
+            </div>
+            <form id="InternalMarkEntry">
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col col-lg-12 form-group">
+                            <label for="stream">Stream</label>
+                            <select id="stream" name="stream" ng-change="GetSemester()" ng-model="InternalMark.stream" data-validation="required"
+                                    data-validation-error-msg="The Stream field is required" class="form-control">
+                                <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                                <option value="BSc">BSc</option>
+                                <option value="MSc">MSc</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="course">Course</label>
+                            <select id="course" name="course" ng-model="InternalMark.course" data-validation="required"
+                                    data-validation-error-msg="The course field is required" class="form-control">
+                                <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                                <option value="Regular">Regular</option>
+                                <option value="Honors">Honors</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="semester">Semester</label>
+                            <select id="semester" name="semester" ng-model="InternalMark.semester" data-validation="required"
+                                    data-validation-error-msg="The semester field is required" class="form-control">
+                                <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="examType">Exam Type</label>
+                            <select id="examType" name="examType" ng-model="InternalMark.examType" data-validation="required"
+                                    data-validation-error-msg="The examType field is required" class="form-control">
+                                <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                                <option value="Regular">Regular</option>
+                                <option value="ATKT">ATKT</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="sem">Specialization</label>
+                            <select disabled="disabled" name="Specialization" ng-model="InternalMark.Specialization" data-validation="required"
+                                    data-validation-error-msg="The Specialization field is required" id="Specialization" class="form-control">
+                                <option selected="selected" disabled="disabled" value="">--- Select ---</option>
+                            </select>
+                        </div>
+                        <div class="col col-md-12 form-group">
+                            <button type="button" class="btn btn-primary pull-left" ng-click="OpenReportAttendancesheet()">Attendance Sheet</button>
+                            <button type="button" class="btn btn-primary pull-right" style="margin-right:10px;margin-left:10px" ng-click="OpenReportSeatnumber2()">Seat Number Report II</button>
+                            <button type="button" class="btn btn-primary pull-right" ng-click="OpenReportSeatnumber()">Seat Number Report</button>
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        
+    </div>
+</div>

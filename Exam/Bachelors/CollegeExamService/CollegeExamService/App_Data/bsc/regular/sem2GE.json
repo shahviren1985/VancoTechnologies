@@ -1,0 +1,341 @@
+[
+  {
+    "Specialization": "Mass Communication And Extension",
+    "specialisationCode": "MCE",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "LG102",
+            "Title": "Advanced English"
+          },
+          {
+            "Code": "LG101",
+            "Title": "Functional English"
+          }
+        ]
+      },
+      {
+        "Title": "RM GE",
+        "Subject": [
+          {
+            "Code": "RG101",
+            "Title": "Consumer Education and Financial Literacy"
+          },
+          {
+            "Code": "RG102",
+            "Title": "Travel Arrangements and Formalities"
+          }
+        ]
+      },
+      {
+        "Title": "HD GE",
+        "Subject": [
+          {
+            "Code": "HG101",
+            "Title": "Personal and Professional Relationships in Adulthood"
+          },
+          {
+            "Code": "HG102",
+            "Title": "Marriage and Parenting"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Developmental Counselling",
+    "specialisationCode": "DC",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "LG102",
+            "Title": "Advanced English"
+          },
+          {
+            "Code": "LG101",
+            "Title": "Functional English"
+          },
+          {
+            "Code": "SG101",
+            "Title": "Science for Life"
+          }
+        ]
+      },
+      {
+        "Title": "RM GE",
+        "Subject": [
+          {
+            "Code": "RG101",
+            "Title": "Consumer Education and Financial Literacy"
+          },
+          {
+            "Code": "RG102",
+            "Title": "Travel Arrangements and Formalities"
+          }
+        ]
+      },
+      {
+        "Title": "FN GE",
+        "Subject": [
+          {
+            "Code": "FG101",
+            "Title": "Nutrition for Health Promotion"
+          },
+          {
+            "Code": "FG102",
+            "Title": "Fundamentals of Baking"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Food Nutrition And Dietetics",
+    "specialisationCode": "FND",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "LG102",
+            "Title": "Advanced English"
+          },
+          {
+            "Code": "LG101",
+            "Title": "Functional English"
+          },
+          {
+            "Code": "SG101",
+            "Title": "Science for Life"
+          }
+        ]
+      },
+      {
+        "Title": "TAD GE",
+        "Subject": [
+          {
+            "Code": "TG102",
+            "Title": "Fundamentals of Fashion"
+          },
+          {
+            "Code": "TG101",
+            "Title": "Fashion Craft"
+          }
+        ]
+      },
+      {
+        "Title": "MCE GE",
+        "Subject": [
+          {
+            "Code": "MG104",
+            "Title": "Voice Culture and Modulation"
+          },
+          {
+            "Code": "MG103",
+            "Title": "Digital Photography"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "HOSPITALITY & TOURISM MANAGEMENT",
+    "specialisationCode": "HTM",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "LG102",
+            "Title": "Advanced English"
+          },
+          {
+            "Code": "LG101",
+            "Title": "Functional English"
+          },
+          {
+            "Code": "SG101",
+            "Title": "Science for Life"
+          }
+        ]
+      },
+      {
+        "Title": "HD GE",
+        "Subject": [
+          {
+            "Code": "HG101",
+            "Title": "Personal and Professional Relationships in Adulthood"
+          },
+          {
+            "Code": "HG102",
+            "Title": "Marriage and Parenting"
+          }
+        ]
+      },
+      {
+        "Title": "MCE GE",
+        "Subject": [
+          {
+            "Code": "MG104",
+            "Title": "Voice Culture and Modulation"
+          },
+          {
+            "Code": "MG103",
+            "Title": "Digital Photography"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Interior Design And Resource Management",
+    "specialisationCode": "IDRM",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "LG102",
+            "Title": "Advanced English"
+          },
+          {
+            "Code": "LG101",
+            "Title": "Functional English"
+          },
+          {
+            "Code": "SG101",
+            "Title": "Science for Life"
+          }
+        ]
+      },
+      {
+        "Title": "HD GE",
+        "Subject": [
+          {
+            "Code": "HG101",
+            "Title": "Personal and Professional Relationships in Adulthood"
+          },
+          {
+            "Code": "HG102",
+            "Title": "Marriage and Parenting"
+          }
+        ]
+      },
+      {
+        "Title": "MCE GE",
+        "Subject": [
+          {
+            "Code": "MG104",
+            "Title": "Voice Culture and Modulation"
+          },
+          {
+            "Code": "MG101",
+            "Title": "Digital Photography"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Mass Communication And Extension",
+    "specialisationCode": "MCE",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "LG102",
+            "Title": "Advanced English"
+          },
+          {
+            "Code": "LG101",
+            "Title": "Functional English"
+          },
+          {
+            "Code": "SG101",
+            "Title": "Science for Life"
+          }
+        ]
+      },
+      {
+        "Title": "RM GE",
+        "Subject": [
+          {
+            "Code": "RG101",
+            "Title": "Consumer Education and Financial Literacy"
+          },
+          {
+            "Code": "RG102",
+            "Title": "Travel Arrangements and Formalities"
+          }
+        ]
+      },
+      {
+        "Title": "HD GE",
+        "Subject": [
+          {
+            "Code": "HG101",
+            "Title": "Personal and Professional Relationships in Adulthood"
+          },
+          {
+            "Code": "HG102",
+            "Title": "Marriage and Parenting"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Textiles And Apparel Designing",
+    "specialisationCode": "TAD",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "LG102",
+            "Title": "Advanced English"
+          },
+          {
+            "Code": "LG101",
+            "Title": "Functional English"
+          },
+          {
+            "Code": "SG101",
+            "Title": "Science for Life"
+          }
+        ]
+      },
+      {
+        "Title": "RM GE",
+        "Subject": [
+          {
+            "Code": "RG101",
+            "Title": "Consumer Education and Financial Literacy"
+          },
+          {
+            "Code": "RG102",
+            "Title": "Travel Arrangements and Formalities"
+          }
+        ]
+      },
+      {
+        "Title": "FN GE",
+        "Subject": [
+          {
+            "Code": "FG101",
+            "Title": "Nutrition for Health Promotion"
+          },
+          {
+            "Code": "FG102",
+            "Title": "Fundamentals of Baking"
+          }
+        ]
+      }
+    ]
+  }
+]

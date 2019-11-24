@@ -1,0 +1,261 @@
+﻿
+
+<script src="js/plugins/bootstrap-datepicker.min.js"></script>
+
+
+<main class="app-content">
+    <div class="row">
+
+
+        <!-- modal -->
+        <div class="app-title">
+            <div>
+                <h1><i class="fa fa-users"></i> Exam</h1>
+                <p><!--Modify current professor list--></p>
+            </div>
+            <ul class="app-breadcrumb breadcrumb">
+                <a class="btn btn-primary" ng-click="CreateOrUpdateExamName(-1)" style="color:white"><i class="fa fa-lg fa-plus" style="margin-top: -3px;"></i> Add Exam</a>
+            </ul>
+        </div>
+        <div class="col-md-12">
+            <div class="tile">
+                <div class="overlay">
+                    <div class="m-loader mr-4">
+                        <svg class="m-circular" viewBox="25 25 50 50">
+                            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="l-text">Loading</h3>
+                </div>
+                <div class="tile-body">
+                    <table class="table table-hover table-bordered" id="sampleTable">
+                        <thead>
+                            <tr role="row">
+                                <th style="max-width:50px">Sr No</th>
+                                <th style="">Exam Name</th>
+                                <th style="">Option</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbodyOfExamList">
+                            <tr ng-repeat="au in AllExamArray">
+                                <td style="max-width:50px">{{$index + 1}}</td>
+                                <td style="text-align: left !important;">{{au.ExamName}}</td>
+                                <td>
+                                    <a class="btn btn-primary" ng-click="CreateOrUpdateExamName($index)" style="color:white"><i class="fa fa-lg fa-edit" style="margin-top: -3px;"></i> Edit</a>
+                                    <a class="btn btn-primary" ng-click="ExamScheduleModal($index)" style="color:white"><i class="fa fa-lg fa-clock-o" style="margin-top: -3px;"></i> Schedule</a>
+                                    <a class="btn btn-primary" ng-click="deleteExam($index)" style="color:white"><i class="fa fa-lg fa-trash" style="margin-top: -3px;"></i> Delete</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="ExamNameModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-2">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel-2">
+                            {{NewExamName}}
+                        </h4>
+                    </div>
+                    <form class="form-horizontal" id="ExamNameCreateForm">
+                        <div class="modal-body" style="overflow-y: auto;">
+                            <div class="form-group">
+                                <label class="control-label col-sm-10" for="email">Exam Name:</label>
+                                <div class="col-sm-12">
+                                    <input type="text" data-validation="required" class="form-control" ng-model="NewExamName" id="txt_name" placeholder="Enter Exam Name" name="ExamName">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary" style="color:white"><i class="fa fa-lg fa-check" style="margin-top: -3px;"></i>  Save</button>
+                            <!--<a class="btn btn-primary" ng-click="create()" style="color:white"><i class="fa fa-lg fa-check" style="margin-top: -3px;"></i> Save</a>-->
+                            <a class="btn btn-primary" style="color:white" data-dismiss="modal"><i class="fa fa-lg fa-times" style="margin-top: -3px;"></i> Cancel</a>
+                        </div>
+                    </form>
+                </div><!-- modal-content -->
+            </div><!-- modal-dialog -->
+        </div>
+        <style>
+            .select2 {
+                width: 100% !important;
+            }
+        </style>
+        <div class="modal fade" id="ExamScheduleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-2">
+            <div class="modal-dialog" role="document" style="max-width: 1100px;overflow-y: initial !important">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel-2">
+                            {{CurrentExamNameForSchedule}}
+                        </h4>
+                    </div>
+                    <div class="modal-body" style="min-height: 300px; height:460px; overflow-y: auto;">
+                        <form class="form-horizontal" id="ExamNameCreateForm">
+                            <table class="table">
+                                <tr>
+                                    <td style="border-top: none; min-width: 150px">
+                                        <input name="OriginalDate" data-validation="required" ng-model="AddNewDate.OriginalDate" class="form-control" id="demoDate" type="text" placeholder="Select Date">
+                                    </td>
+                                    <td style="border-top: none; min-width: 150px">
+                                        <select data-validation="required" name="FromTime" ng-model="AddNewDate.FromTime" class="form-control" id="FromTime">
+                                            <option value="">From Time</option>
+                                            <option value="0000">00:00</option>
+                                            <option value="0030">00:30</option>
+                                            <option value="0100">01:00</option>
+                                            <option value="0130">01:30</option>
+                                            <option value="0200">02:00</option>
+                                            <option value="0230">02:30</option>
+                                            <option value="0300">03:00</option>
+                                            <option value="0330">03:30</option>
+                                            <option value="0400">04:00</option>
+                                            <option value="0430">04:30</option>
+                                            <option value="0500">05:00</option>
+                                            <option value="0530">05:30</option>
+                                            <option value="0600">06:00</option>
+                                            <option value="0630">06:30</option>
+                                            <option value="0700">07:00</option>
+                                            <option value="0730">07:30</option>
+                                            <option value="0800">08:00</option>
+                                            <option value="0830">08:30</option>
+                                            <option value="0900">09:00</option>
+                                            <option value="0930">09:30</option>
+                                            <option value="0100">10:00</option>
+                                            <option value="1030">10:30</option>
+                                            <option value="1100">11:00</option>
+                                            <option value="1130">11:30</option>
+                                            <option value="1200">12:00</option>
+                                            <option value="1230">12:30</option>
+                                            <option value="1300">01:00</option>
+                                            <option value="1330">01:30</option>
+                                            <option value="1400">02:00</option>
+                                            <option value="1430">02:30</option>
+                                            <option value="1500">03:00</option>
+                                            <option value="1530">03:30</option>
+                                            <option value="1600">04:00</option>
+                                            <option value="1630">04:30</option>
+                                            <option value="1700">05:00</option>
+                                            <option value="1730">05:30</option>
+                                            <option value="1800">06:00</option>
+                                            <option value="1830">06:30</option>
+                                            <option value="1900">07:00</option>
+                                            <option value="1930">07:30</option>
+                                            <option value="2000">08:00</option>
+                                            <option value="2030">08:30</option>
+                                            <option value="2100">09:00</option>
+                                            <option value="2130">09:30</option>
+                                            <option value="2200">10:00</option>
+                                            <option value="2230">10:30</option>
+                                            <option value="2300">11:00</option>
+                                            <option value="2330">11:30</option>
+                                            <option value="2400">12:00</option>
+                                        </select>
+                                    </td>
+                                    <td style="border-top: none; min-width: 150px">
+                                        <select data-validation="required" name="ToTime" ng-model="AddNewDate.ToTime" class="form-control" id="ToTime">
+                                            <option value="">To Time</option>
+                                            <option value="0000">00:00</option>
+                                            <option value="0030">00:30</option>
+                                            <option value="0100">01:00</option>
+                                            <option value="0130">01:30</option>
+                                            <option value="0200">02:00</option>
+                                            <option value="0230">02:30</option>
+                                            <option value="0300">03:00</option>
+                                            <option value="0330">03:30</option>
+                                            <option value="0400">04:00</option>
+                                            <option value="0430">04:30</option>
+                                            <option value="0500">05:00</option>
+                                            <option value="0530">05:30</option>
+                                            <option value="0600">06:00</option>
+                                            <option value="0630">06:30</option>
+                                            <option value="0700">07:00</option>
+                                            <option value="0730">07:30</option>
+                                            <option value="0800">08:00</option>
+                                            <option value="0830">08:30</option>
+                                            <option value="0900">09:00</option>
+                                            <option value="0930">09:30</option>
+                                            <option value="0100">10:00</option>
+                                            <option value="1030">10:30</option>
+                                            <option value="1100">11:00</option>
+                                            <option value="1130">11:30</option>
+                                            <option value="1200">12:00</option>
+                                            <option value="1230">12:30</option>
+                                            <option value="1300">01:00</option>
+                                            <option value="1330">01:30</option>
+                                            <option value="1400">02:00</option>
+                                            <option value="1430">02:30</option>
+                                            <option value="1500">03:00</option>
+                                            <option value="1530">03:30</option>
+                                            <option value="1600">04:00</option>
+                                            <option value="1630">04:30</option>
+                                            <option value="1700">05:00</option>
+                                            <option value="1730">05:30</option>
+                                            <option value="1800">06:00</option>
+                                            <option value="1830">06:30</option>
+                                            <option value="1900">07:00</option>
+                                            <option value="1930">07:30</option>
+                                            <option value="2000">08:00</option>
+                                            <option value="2030">08:30</option>
+                                            <option value="2100">09:00</option>
+                                            <option value="2130">09:30</option>
+                                            <option value="2200">10:00</option>
+                                            <option value="2230">10:30</option>
+                                            <option value="2300">11:00</option>
+                                            <option value="2330">11:30</option>
+                                            <option value="2400">12:00</option>
+                                        </select>
+                                    </td>
+                                    <td style="border-top: none; width: 100%">
+                                        <div class="tile-body">
+                                            <select data-validation="required" name="AllRoomMultiSelect" ng-model="AddNewDate.Room" class="form-control my-select-box" id="AllRoomMultiSelect" multiple=""></select>
+                                        </div>
+                                    </td>
+                                    <td style="border-top: none;min-width: 45px;">
+                                        <button type="submit" ng-click="AddDateToExam()" class="btn btn-primary" style="color:white">
+                                            <i class="fa fa-lg fa-save" style="margin-top: -3px;"></i> Add
+                                        </button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Date</th>
+                                    <th style="min-width: 105px;vertical-align: middle;">Time</th>
+                                    <th>Rooms</th>
+                                    <th style="min-width: 80px;">Option</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="CEE in CurrentExamToEdit">
+                                    <td>{{$index+1}}</td>
+                                    <td>{{CEE.OriginalDate| CustomDateForm}}</td>
+                                    <td style="text-align: left !important; vertical-align:middle;min-width: 115px;">{{CEE.FromTime | ConvertTime}} To {{CEE.ToTime | ConvertTime}}</td>
+                                    <td>
+                                        <span style="margin:3px" ng-repeat="rm in CEE.Room track by $index" class="badge badge-grey">{{rm}}</span>
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-primary" ng-click="DeleteCurrentExamObj($index)" style="color:white"><i class="fa fa-lg fa-trash" style="margin-top: -3px;"></i> Delete</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" ng-click="SaveCurrentExamToEditObj()" style="color:white"><i class="fa fa-lg fa-check" style="margin-top: -3px;"></i>  Save</button>
+                        <a class="btn btn-primary" style="color:white" data-dismiss="modal"><i class="fa fa-lg fa-times" style="margin-top: -3px;"></i> Cancel</a>
+                    </div>
+
+                </div><!-- modal-content -->
+            </div><!-- modal-dialog -->
+        </div>
+
+
+
+
+    </div>
+</main>

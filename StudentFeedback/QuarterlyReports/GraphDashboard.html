@@ -1,0 +1,314 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feedback System - Dashboard</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/adminStyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script type="text/javascript" src="jquery/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="js/GraphDashboard.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+        @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+        .white-space_Chart {
+            background: #fff;
+            -webkit-box-shadow: 0 0 6px #b1aaaa;
+            -moz-box-shadow: 0 0 6px #b1aaaa;
+            box-shadow: 0 0 1px #b1aaaa;
+            margin: 0 0 20px;
+            display: inline-block;
+            width: 100%;
+            padding: 15px;
+        }
+
+        .QuestionDivClass {
+            text-align: center;
+            padding-bottom: 10px;
+            font-weight: 600;
+        }
+
+        p:not(:last-child) {
+            margin: 0 0 20px;
+        }
+
+        main {
+            max-width: 100%;
+            padding: 10px;
+        }
+
+        section {
+            display: none;
+            padding: 20px 0 0;
+            border-top: 1px solid #abc;
+        }
+
+        input {
+            display: none;
+        }
+
+        .tab-content {
+            padding-top: 15px;
+        }
+
+        label {
+            display: inline-block;
+            margin: 0 0 -1px;
+            padding: 15px 25px;
+            font-weight: 600;
+            text-align: center;
+            color: #abc;
+            border: 1px solid transparent;
+        }
+
+            label:before {
+                font-family: fontawesome;
+                font-weight: normal;
+                margin-right: 10px;
+            }
+
+
+
+            label:hover {
+                color: #789;
+                cursor: pointer;
+            }
+
+        input:checked + label {
+            color: #0af;
+            border: 1px solid #abc;
+            border-top: 2px solid #0af;
+            border-bottom: 1px solid #fff;
+        }
+
+        #tab1:checked ~ #content1,
+        #tab2:checked ~ #content2,
+        #tab3:checked ~ #content3,
+        #tab4:checked ~ #content4 {
+            display: block;
+        }
+
+        @media screen and (max-width: 800px) {
+            label {
+                font-size: 0;
+            }
+
+                label:before {
+                    margin: 0;
+                    font-size: 18px;
+                }
+        }
+
+        @media screen and (max-width: 500px) {
+            label {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader-img"><img src="images/preloader.gif" /></div>
+    <header>
+        <div class="row">
+            <div class="col-xs-12 col-md-9 text-left">
+                <div class="row">
+                    <a class="page-ttl col-xs-9 col-md-4" href="Dashboard.html">Feedback System</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 text-right">
+                <span id="userName"> </span> &nbsp;
+                <button class="btn btn-default" id="logout">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="col-xs-12 col-md-3">
+        <div class="panel-body left-nav">
+            <ul class="plan plan2">
+                <li>
+                    <a href="GraphDashboard.html"><div><input checked type='radio' /><label for='Dashboard'><span> Dashboard </span> <span> </span> </label></div></a>
+                </li>
+                <li>
+                    <a href="Dashboard.html"><div><input type='radio' /><label for='Reports'><span> Reports </span> <span> </span> </label></div></a>
+                </li>
+                <li>
+                    <a href="ManageTeacher.html"><div><input type='radio' /><label for='Reports'><span> Manage Teachers </span> <span> </span> </label></div></a>
+                </li>
+                <li>
+                    <a href="ManageUser.html"><div><input type='radio' /><label for='Reports'><span> Manage Users </span> <span> </span> </label></div></a>
+                </li>
+                <li>
+                    <a href="Summary.html"><div><input type='radio' /><label for='Reports'><span> Summary Report</span> <span> </span> </label></div></a>
+                </li>
+                <li>
+                    <a href="Analysis.html"><div><input type='radio' /><label for='Reports'><span> Analysis Report</span> <span> </span> </label></div></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-md-9 right-block">
+        <h4 class="panel-title">Dashboard</h4>
+        <div class="col-xs-12 white-space">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="#tabCustomer">Student</a>
+                </li>
+                <li onclick="GetEmployerGraph('Student')">
+                    <a href="#tabStudent">Learner</a>
+                </li>
+                <li onclick="GetEmployerGraph('Employer')">
+                    <a href="#tabEmployer">Employer</a>
+                </li>
+                <li onclick="GetEmployerGraph('Teacher')">
+                    <a href="#tabTeacher">Teacher</a>
+                </li>
+                <li onclick="GetEmployerGraph('Parent')">
+                    <a href="#tabParent">Parent</a>
+                </li>
+                <li onclick="GetAlumniTabInformation('Alumni')">
+                    <a href="#tabAlumani">Alumni</a>
+                </li>
+                <li onclick="GetExitFormGraph('a2tab')">
+                    <a href="#tabExitForm">Exit Feedback</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade active in" id="tabCustomer">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group row">
+                                <label class="col-xs-12 col-md-3" style=" padding-top: 5px; color: black;"><b>Semester</b></label>
+                                <div class="col-xs-12 col-md-9">
+                                    <select class="form-control" id="txt_Cource" onchange="BindTeacherDetails()">
+                                        <option value="" selected=""><b>Select Semester</b></option>
+                                        <option value="Even">Even</option>
+                                        <option value="Odd">Odd</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group row">
+                                <label class="col-xs-12 col-md-3" style=" padding-top: 5px; color: black;"><b>Teacher</b></label>
+                                <div class="col-xs-12 col-md-9">
+                                    <select class="form-control" id="dd_Teacher" disabled>
+                                        <option value="" selected="">Select Teacher</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group row">
+                                <button type="button" onclick="GetTeacherGraphByTeacherAndCourse()" id="btnAddEditTeacher" class="btn btn-primary">Get Report</button>
+                                <button type="button" onclick="GetTeacherReportCard1()" id="btnRCone" class="btn btn-primary">Report Card 1</button>
+                                <button type="button" onclick="GetTeacherReportCard2()" id="btnRCtwo" class="btn btn-primary">Report Card 2</button>
+                                <button type="button" onclick="GetAllReports1InExcel()" id="btnARCOne" class="btn btn-primary">Download All Report Card 1</button>
+                                <button type="button" onclick="GetAllReports2InExcel()" id="btnARCTwo" class="btn btn-primary">Download All Report Card 2</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="GraphAppendGrid_Customer"></div>
+                    <div class="row" id="CustomerDownloadButton" style="display:none">
+                        <div class="col-md-12">
+                            <button type="button" style="float:right" id="btnDownloadStudent" onclick="DownloadExcelStudentTab()" class="btn btn-primary">Download</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade in" id="tabStudent">
+                    <div class="row" id="GraphAppendGrid_Student"></div>
+                    <div class="row" id="Student_DownloadButton" style="display:none">
+                        <div class="col-md-12">
+                            <button type="button" style="float:right" id="btnDownloadStudent" onclick="DownloadExcelCommonFeedbackTab('Student')" class="btn btn-primary">Download</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade in" id="tabEmployer">
+                    <div class="row" id="GraphAppendGrid_Employer"></div>
+                    <div class="row" id="Employer_DownloadButton" style="display:none">
+                        <div class="col-md-12">
+                            <button type="button" style="float:right" id="btnDownloadStudent" onclick="DownloadExcelCommonFeedbackTab('Employer')" class="btn btn-primary">Download</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade in" id="tabTeacher">
+                    <div class="row" id="GraphAppendGrid_Teacher"></div>
+                    <div class="row" id="Teacher_DownloadButton" style="display:none">
+                        <div class="col-md-12">
+                            <button type="button" style="float:right" id="btnDownloadStudent" onclick="DownloadExcelCommonFeedbackTab('Teacher')" class="btn btn-primary">Download</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade in" id="tabParent">
+                    <div class="row" id="GraphAppendGrid_Parent"></div>
+                    <div class="row" id="Parent_DownloadButton" style="display:none">
+                        <div class="col-md-12">
+                            <button type="button" style="float:right" id="btnDownloadStudent" onclick="DownloadExcelCommonFeedbackTab('Parent')" class="btn btn-primary">Download</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade in" id="tabAlumani">
+                    <div class="row" id="GraphAppendGrid_Alumni"></div>
+
+                    <div class="row" id="Alumni_DownloadButton" style="display:none">
+                        <div class="col-md-12">
+                            <button type="button" style="float:right" id="btnDownloadStudent" onclick="DownloadExcelCommonFeedbackTab('Alumni')" class="btn btn-primary">Download</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade in" id="tabExitForm">
+                    <ul class="nav nav-tabs">
+                        <li onclick="GetExitFormGraph('a2tab')" class="active">
+                            <a href="#a2tab">a2</a>
+                        </li>
+                        <li onclick="GetExitFormGraph('a3tab')">
+                            <a href="#a3tab">a3</a>
+                        </li>
+                        <li onclick="GetExitFormGraph('exitformtab')">
+                            <a href="#exitformtab">Exit Form</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="a2tab">
+                            <div class="row" id="a2tab_divResult">
+                            </div>
+                            <div class="row" id="a2tab_DownloadButton" style="display:none">
+                                <div class="col-md-12">
+                                    <button type="button" style="float:right" id="btnDownloadStudent" onclick="ExportGetExitFormGraph('a2tab')" class="btn btn-primary">Download</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="a3tab">
+                            <div class="row" id="a3tab_divResult"></div>
+                            <div class="row" id="a3tab_DownloadButton" style="display:none">
+                                <div class="col-md-12">
+                                    <button type="button" style="float:right" id="btnDownloadStudent" onclick="ExportGetExitFormGraph('a3tab')" class="btn btn-primary">Download</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="exitformtab">
+                            <div class="row" id="exitformtab_divResult"></div>
+                            <div class="row" id="exitformtab_DownloadButton" style="display:none">
+                                <div class="col-md-12">
+                                    <button type="button" style="float:right" id="btnDownloadStudent" onclick="ExportGetExitFormGraph('exitformtab')" class="btn btn-primary">Download</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="tab-pane fade" id="tabExitForm">
+                        <div class="tabbable">
+                            
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/Global.js"></script>
+</body>
+</html>

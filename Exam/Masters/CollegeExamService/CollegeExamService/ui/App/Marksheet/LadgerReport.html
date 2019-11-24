@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html ng-app="ExamSystemApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Ledger Report | SVT</title>
+    <link href="../../Assets/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        /*@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);*/
+        /*@page {
+            size: A4 landscape;
+        }*/
+        .DivResult {
+            page-break-after: always;
+        }
+
+        .datepicker {
+            display: block;
+            top: 148px;
+            left: 248px;
+            width: 20%;
+        }
+
+        @media print {
+            #MarksheetData {
+                display: none;
+            }
+
+            .HeaderClass {
+                margin-left: 80px;
+            }
+        }
+
+        @media print {
+            /*@page {
+                size: A4 landscape;
+            }*/
+
+            .AddPageBreak {
+                page-break-after: always;
+            }
+        }
+
+        body {
+            font-family: 'Eras ITC';
+            color: #1F3C67;
+            font-weight: 600;
+            font-size: 13px;
+        }
+
+        .BordredTable {
+            border-collapse: collapse;
+        }
+
+        .BordredTable td, table th {
+            border: 1px solid black;
+            padding: 2px;
+        }
+
+        .BordredTable tr:first-child th {
+            border-top: 0;
+        }
+
+        .BordredTable tr:last-child td {
+            border-bottom: 0;
+        }
+
+        .BordredTable tr td:first-child,
+        .BordredTable tr th:first-child {
+            border-left: 0;
+        }
+
+        .BordredTable tr td:last-child,
+        .BordredTable tr th:last-child {
+            border-right: 0;
+        }
+
+        .tdHeightSet {
+            height: 25px;
+        }
+
+        tr td:last-child {
+            width: 1%;
+            white-space: nowrap;
+        }
+
+
+        .rotate {
+            /* FF3.5+ */
+            -moz-transform: rotate(-90.0deg);
+            /* Opera 10.5 */
+            height: 90px;
+            -o-transform: rotate(-90.0deg);
+            /* Saf3.1+, Chrome */
+            -webkit-transform: rotate(-90.0deg);
+            /* IE6,IE7 */
+            filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+            /* IE8 */
+            -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+            /* Standard */
+            transform: rotate(-90.0deg);
+        }
+        .BordredTable .smallfont {
+            font-size: 14px;
+        }
+        .mediumfont {
+            font-size: 13px !important;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body ng-controller="LadgerReportController" class="A3 landscape">
+    <div class="row" style="text-align: center" id="div_LoaderMarksheet">
+        <img src="../../images/MarksheetLoader.gif" style="width: 10%; height: auto;" /><br />
+        <span id="marksheetStatusText">Ledger Report is loading...</span>
+    </div>
+    <section class="sheet" style="padding:30px">
+        <article>
+            <div id="HeaderLadgerScraper" ng-repeat="spec in FinalObject" class="AddPageBreak" style="display:none">
+                <div style="text-align: center;font-family:Arial; font-size:15px;color:black">
+                    <span style="font-size:24px">S.V.T. COLLEGE OF HOME SCIENCE (AUTONOMOUS)</span>
+                    <div class="row" style="margin-top: 10px;">
+                        <div style="float: left;">
+                            <table class="HeaderClass" style="border:2px solid black;margin-left: 15px;margin-right: 15px;text-align: left;width:300px;">
+                                <tr style="border-bottom:1px solid"><td style="padding:5px"><span>YEAR</span></td><td style="padding:5px"><span class="spnYear"> : {{spec.StudentData[0].MarksheetYear}}</span> </td></tr>
+                                <tr><td style="padding:5px"><span>Class</span></td><td style="padding:5px;width: 82%;"><span class="spnCourse"> : {{spec.StudentData[0].Course}}</span> </td></tr>
+                            </table>
+                        </div>
+                        <div style="float: left; text-align: center; width: 750px;">
+                            <table class="">
+                                <tr style="border-bottom:1px solid"><td style="padding:5px"><span>S.N.D.T. WOMEN'S UNIVERSITY</span></td></tr>
+                                <tr><td style="padding:5px;border:2px solid black;">STATEMENT OF MARKS</td></tr>
+                            </table>
+                        </div>
+                        <div style="float: right">
+                            <table class="" style="border:2px solid black;text-align: left;width:400px;margin-right: 15px;">
+                                <tr style="border-bottom:1px solid"><td style="padding:5px">Semester</td><td style="padding:5px"><span class="spnSemester"> : {{spec.StudentData[0].semesterInRoman}}</span></td></tr>
+                                <tr><td style="padding:5px">Specialization</td><td style="padding:5px"><span id="spnSpecialization"> :  {{spec.Specilization.specialisation}} </span></td></tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div style="height:20px"></div>
+                <div>
+                    <table class="BordredTable" style="text-align:center;font-family:Arial;color:black;border:2px solid black">
+                        <tr>
+                            <td rowspan="7" class="rotate smallfont">Sr #</td>
+							<td rowspan="7" class="rotate smallfont">Reg #</td>
+                            <!--<td rowspan="7" class="rotate smallfont">Seat No.</td>-->
+                            <td rowspan="7" class="smallfont">PRN</td>
+                            <td rowspan="7" class="smallfont" style="width: 120px;">Name Of Student</td>
+                            <td style="max-width: 80px" ng-repeat="paper in spec.Specilization.paperDetails" colspan="3" rowspan="2" class="smallfont">
+                                <div style="padding: 2px; font-size: 12px;">{{paper.paperTitle}}</div>
+                            </td>
+                            <td rowspan="7" class="rotate smallfont">Remark</td>
+                            <td rowspan="7" class="rotate smallfont">%</td>
+                            <td rowspan="7" class="rotate smallfont">Grade</td>
+                            <td rowspan="7" class="rotate smallfont">GP</td>
+							<td rowspan="7" class="rotate smallfont">GP*CR</td>
+                            <!--<td rowspan="7" class="rotate smallfont">Credit Balance</td>-->
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                        <tr>
+                            <td ng-repeat-start="paper in spec.Specilization.paperDetails" colspan="2" class="smallfont">Cr.</td>
+                            <td ng-repeat-end  class="smallfont">{{paper.credits}}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" ng-repeat="paper in spec.Specilization.paperDetails"  class="smallfont">
+                                {{paper.paperType}}
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td  class="smallfont" colspan="3" ng-repeat-start="paper in spec.Specilization.paperDetails"
+                                ng-if="comparestringToIntValue(paper.practicalMaxMarks) > 0 && comparestringToIntValue(paper.theoryInternalMax) == 0">
+                                {{paper.practicalMaxMarks}}
+                            </td>
+							<td  class="smallfont" colspan="3"
+                                ng-if="comparestringToIntValue(paper.practicalMaxMarks) > 0 && comparestringToIntValue(paper.theoryInternalMax) > 0">
+                                {{comparestringToIntValue(paper.practicalMaxMarks)+comparestringToIntValue(paper.theoryInternalMax)}}
+                            </td>
+                            <td  class="smallfont" colspan="3"
+                                ng-if="comparestringToIntValue(paper.practicalMaxMarks) == 0 && comparestringToIntValue(paper.theoryInternalMax) == 0">
+                                {{comparestringToIntValue(paper.theoryExternalSection1Max)+comparestringToIntValue(paper.theoryExternalSection2Max)}}
+                            </td>
+                            <td  class="smallfont" ng-if="comparestringToIntValue(paper.practicalMaxMarks) == 0 && comparestringToIntValue(paper.theoryInternalMax) > 0">{{comparestringToIntValue(paper.theoryInternalMax)}}</td>
+                            <td  class="smallfont" ng-if="comparestringToIntValue(paper.practicalMaxMarks) == 0 && comparestringToIntValue(paper.theoryInternalMax) > 0">{{comparestringToIntValue(paper.theoryExternalSection1Max)+comparestringToIntValue(paper.theoryExternalSection2Max)}}</td>
+                            <td  class="smallfont" ng-repeat-end ng-if="comparestringToIntValue(paper.practicalMaxMarks) == 0 && comparestringToIntValue(paper.theoryInternalMax) > 0">{{comparestringToIntValue(paper.theoryInternalMax)+comparestringToIntValue(paper.theoryExternalSection1Max)+comparestringToIntValue(paper.theoryExternalSection2Max)}}</td>
+                        </tr>
+                        <tr>
+                            <td  class="smallfont" colspan="3" ng-repeat-start="paper in spec.Specilization.paperDetails"
+                                ng-if="comparestringToIntValue(paper.practicalMaxMarks) > 0 && comparestringToIntValue(paper.theoryInternalMax) == 0">
+                                P
+                            </td>
+                            <td  class="smallfont" colspan="3"
+                                ng-if="comparestringToIntValue(paper.practicalMaxMarks) == 0 && comparestringToIntValue(paper.theoryInternalMax) == 0">
+                                F
+                            </td>
+                            <td class="smallfont" ng-if="comparestringToIntValue(paper.practicalMaxMarks) >= 0 && comparestringToIntValue(paper.theoryInternalMax) > 0">I</td>
+                            <td class="smallfont" ng-if="comparestringToIntValue(paper.practicalMaxMarks) >= 0 && comparestringToIntValue(paper.theoryInternalMax) > 0">F</td>
+							<td class="smallfont" ng-repeat-end ng-if="(paper.practicalMaxMarks) >= 0 && comparestringToIntValue(paper.theoryInternalMax) > 0">T</td>
+                        </tr>
+
+                        <tr ng-repeat="student in spec.StudentData" class="BodyTable">
+                            <td  class="smallfont" style="padding-left: 5px;padding-right: 5px;">{{student.SerialNumber}}</td>
+                            <td class="mediumfont">
+                                    {{student.College_Registration_No_}}
+                            </td>
+							<!--<td class="mediumfont">
+                                    {{student.SeatNumber}}
+                            </td>-->
+                            <td  class="smallfont" style="padding-left: 2px;padding-right: 2px;">{{student.PRN}}</td>
+                            <td  class="smallfont">
+                                <div style="text-align: left; padding-left: 2px;padding-right: 2px; float: left; width: 120px;" class="mediumfont">
+                                    {{student.FullName}}
+                                </div>
+                            </td>
+                            <td colspan="3" ng-repeat-start="paper in student.SubjectDetail"
+                                ng-if="comparestringToIntValue(paper.practicalMaxMarks) > 0 && comparestringToIntValue(paper.theoryInternalMax) == 0">
+                                <div ng-if="paper.IsSelected">
+                                    {{paper._FloatPracticalMark==0?paper._PracticalMark:paper._PracticalMark == "ABS" ? "ABS" : paper._FloatPracticalMark}}
+                                    <span ng-if="paper._FloatGraceMark>0"> + {{paper._FloatGraceMark}}</span>
+                                </div>
+                                <div ng-if="!paper.IsSelected">-</div>
+                            </td>
+
+                            <td colspan="3"
+                                ng-if="comparestringToIntValue(paper.practicalMaxMarks) == 0 && comparestringToIntValue(paper.theoryInternalMax) == 0">
+                                <div ng-if="paper.IsSelected">{{paper._ExternalTotal}} <span ng-if="paper._FloatGraceMark>0"> + {{paper._FloatGraceMark}}</span> </div>
+                                <div ng-if="!paper.IsSelected">-</div>
+                            </td>
+
+
+                            <td ng-if="comparestringToIntValue(paper.practicalMaxMarks) == 0 && comparestringToIntValue(paper.theoryInternalMax) > 0">
+                                <div ng-if="paper.IsSelected">
+                                    {{paper._FloatInternalMark==0?paper._InternalMark:paper._FloatInternalMark}}
+                                </div>
+                                <div ng-if="!paper.IsSelected">
+                                    -
+                                </div>
+                            </td>
+							<td ng-if="comparestringToIntValue(paper.practicalMaxMarks) > 0 && comparestringToIntValue(paper.theoryInternalMax) > 0">
+                                <div ng-if="paper.IsSelected">
+                                    	{{paper._FloatInternalMark==0?paper._InternalMark:paper._FloatInternalMark}}
+									</div>
+                                </div>
+                                <div ng-if="!paper.IsSelected">
+                                    -
+                                </div>
+                            </td>
+							<td ng-if="comparestringToIntValue(paper.practicalMaxMarks) >= 0 && comparestringToIntValue(paper.theoryInternalMax) > 0">
+                                <div ng-if="paper.IsSelected">
+                                    <!--{{(paper._ExternalTotal + paper._FloatPracticalMark)>0?(paper._ExternalTotalWithOutGrace + paper._FloatPracticalMark)+(paper._GraceMark > 0 ? '+' + paper._GraceMark : ''):(paper._FloatInternalMark>0?'ABS':'NP')}}-->
+                                    {{(paper._ExternalTotal + paper._FloatPracticalMark)>0?(paper._ExternalTotalWithOutGrace + paper._FloatPracticalMark)+(paper._GraceMark > 0 ? '+' + paper._GraceMark : ''):(paper._FloatInternalMark>0?'ABS':'NP')}}
+                                </div>
+                                <div ng-if="!paper.IsSelected">
+                                    -
+                                </div>
+                            </td>
+							<td ng-repeat-end ng-if="comparestringToIntValue(paper.practicalMaxMarks) >= 0 && comparestringToIntValue(paper.theoryInternalMax) > 0">
+                                <div ng-if="paper.IsSelected">
+                                    <!--{{paper._ExternalTotalWithOutGrace + paper._FloatPracticalMark + paper._FloatInternalMark}}-->
+                                    {{paper._FinalTotalMarks}}
+                                </div>
+                                <div ng-if="!paper.IsSelected">
+                                    -
+                                </div>
+                            </td>
+                            <!--status for result-->
+                            <td ng-if="student.semester < 6" class="smallfont">
+                                <span ng-if="student.FailedCredits==0">PASS</span>
+								<span ng-if="student.FailedCredits> 0 && student.FailedCredits < 13 && ExamType != 'ATKT'">PASSES with ATKT</span>
+								<span ng-if="student.FailedCredits> 12">FAIL</span>
+								<span ng-if="student.FailedCredits < student._FinalTotalCredit && ExamType=='ATKT' && student.FailedCredits > 0">PASSES with ATKT</span>
+								<span ng-if="student.FailedCredits> 0 && student.FailedCredits == student._FinalTotalCredit && student.FailedCredits <= 12 && ExamType=='ATKT'">FAIL</span>
+                            </td>
+							<td ng-if="student.semester == 6" class="smallfont">
+                                <span ng-if="student.FailedCredits==0">PASS</span>
+								<span ng-if="student.FailedCredits>0">FAIL</span>
+                            </td>
+                            <td style="max-width: 40px; padding-right: 2px;padding-left: 2px;" class="smallfont">
+                                <div ng-if="student.FailedCredits==0">
+                                    {{student._FinalPercentage | number : 2}}
+                                </div>
+                                <div ng-if="student.FailedCredits>0">-</div>
+                            </td>
+							 <td style="max-width: 30px; padding-right: 2px;padding-left: 2px;" class="smallfont">
+                                <div ng-if="student.FailedCredits==0">
+                                    {{student._FinalPercentageGrade}}
+                                </div>
+                                <div ng-if="student.FailedCredits>0">-</div>
+                            </td>
+                            <td style="max-width: 40px; padding-right: 2px;padding-left: 2px;" class="smallfont">
+                                <div ng-if="student.FailedCredits==0">
+                                    {{student._FinalTotalGrade | number : 2}}
+                                </div>
+                                <div ng-if="student.FailedCredits>0">-</div>
+                            </td>
+                            <td style=" padding-right: 2px;padding-left: 2px;" class="smallfont">
+                                <div ng-if="student.FailedCredits==0">
+                                    {{student._FinalTotalGradePoint | number : 2}}
+                                </div>
+                                <div ng-if="student.FailedCredits>0">-</div>
+                            </td>
+                            <!--<td></td>-->
+                        </tr>
+                    </table>
+                </div>
+                <div style="padding-top: 30px">
+                    <table style="min-width:100%">
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <img src="../../MarksheetModuleJs/ControllerOfExam.png">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width:40%"></td>
+                                <td style="width:40%"></td>
+                                <td style="width:20%">Controller of Examinations</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </article>
+    </section>
+    <div>
+        <script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../../CustomJs/urlConfig.js"></script>
+        <script src="../../CustomJs/Angular.js"></script>
+        <script src="../../CustomJs/Index.js"></script>
+        <script type="text/javascript">
+            var Examapp = angular.module("ExamSystemApp", []);
+        </script>
+        <script src="../../CustomJs/AppConfig.js"></script>
+        <script src="LadgerReport.controller.js"></script>
+    </div>
+</body>
+</html>

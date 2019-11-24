@@ -1,0 +1,197 @@
+[
+  {
+    "id": null,
+    "name": "Dr. Meena Godhia (HOD)",
+    "MaxSuperVision": 4,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Dr. Suja Koshy (HOD)",
+    "MaxSuperVision": 4,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Mrs. Armaity Shukla (HOD)",
+    "MaxSuperVision": 4,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Mrs. Chetna Raje (HOD)",
+    "MaxSuperVision": 4,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Mrs. Vipra Banerjee (HOD)",
+    "MaxSuperVision": 4,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Mrs. Archana Jain",
+    "MaxSuperVision": 6,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "name": "Mrs. Sulakshna Mane",
+    "MaxSuperVision": 6,
+    "AllowedReliver": "true",
+    "AllowedStandBy": "true"
+  },
+  {
+    "id": null,
+    "name": "Mrs. Roshani Dange",
+    "MaxSuperVision": 6,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Mrs. Madhuri Nigudkar",
+    "MaxSuperVision": 6,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Mrs. Panchali Moitra",
+    "MaxSuperVision": 6,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Dr. Nisha Bellare",
+    "MaxSuperVision": 6,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Dr. K. P. Anuradha",
+    "MaxSuperVision": 6,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "DR. Suman Mundkur",
+    "MaxSuperVision": 6,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Mrs. Anju Tulshiyan",
+    "MaxSuperVision": 6,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Dr. Sabita Baruah",
+    "MaxSuperVision": 6,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Mrs. Akansha",
+    "MaxSuperVision": 6,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Mrs. Hemani Malhotra",
+    "MaxSuperVision": 6,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Ar. Uday Govalkar",
+    "MaxSuperVision": 6,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Dr. Bhamini Mehta",
+    "MaxSuperVision": 6,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Mrs. Kamini Pradhan",
+    "MaxSuperVision": 6,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Mr. Rohit Pawar",
+    "MaxSuperVision": 6,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Mrs. Sangeeta Chowala",
+    "MaxSuperVision": 6,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Mr. Prakash Navgire",
+    "MaxSuperVision": 6,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Mrs. Rajeshree Shinde",
+    "MaxSuperVision": 6,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Dr. Amar Dhere",
+    "MaxSuperVision": 6,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Ms. Prachi Patel",
+    "MaxSuperVision": 6,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Ms. Ashwini Gaikwad",
+    "MaxSuperVision": 6,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  },
+  {
+    "id": null,
+    "name": "Ms. Nagma Naik",
+    "MaxSuperVision": 6,
+    "AllowedReliver": true,
+    "AllowedStandBy": true
+  }
+]

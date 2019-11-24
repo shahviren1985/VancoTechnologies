@@ -1,0 +1,219 @@
+﻿<!DOCTYPE html>
+<html ng-app="LadgerReport">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.js"></script>-->
+    <script src="Assets/angular.min.js"></script>
+    <script src="MarksheetModuleJs/MasterData.js"></script>
+    <script src="MarksheetModuleJs/DataRender.js"></script>
+    <script src="MarksheetModuleJs/import.js"></script>
+    <!--<script src="SemesterLogic.js"></script>-->
+    <script src="Marksheet/Sem1Json.js"></script>
+    <script src="Marksheet/Sem2Josn.js"></script>
+    <script src="Marksheet/Sem3Json.js"></script>
+    <script src="Marksheet/Sem4Json.js"></script>
+    <script src="CustomJs/Index.js"></script>
+    <script src="MarksheetModuleJs/LadgerReport.js"></script>
+    <link href="Assets/bootstrap.min.css" rel="stylesheet" />
+    <link href="Assets/datepicker.css" rel="stylesheet" />
+    <script src="Assets/bootstrap.min.js"></script>
+    <script src="Assets/bootstrap-datepicker.js"></script>
+    <script src="CustomJs/alasql.min.js"></script>
+</head>
+<style>
+    /*@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);*/
+    .DivResult {
+        page-break-after: always;
+    }
+
+    .datepicker {
+        display: block;
+        top: 148px;
+        left: 248px;
+        width: 20%;
+    }
+
+    @media print {
+        #MarksheetData {
+            display: none;
+        }
+
+        .HeaderClass {
+            margin-left: 80px;
+        }
+    }
+
+    @media print {
+        @page {
+            size: A3 landscape;
+        }
+    }
+
+    body {
+        font-family: 'Eras ITC';
+        color: #1F3C67;
+        font-weight: 600;
+        font-size: 13px;
+    }
+
+    .BordredTable {
+        border-collapse: collapse;
+    }
+
+    tr.BodyTable {
+        white-space: nowrap;
+    }
+
+    .BordredTable td, table th {
+        border: 1px solid black;
+    }
+
+    .BordredTable tr:first-child th {
+        border-top: 0;
+    }
+
+    .BordredTable tr:last-child td {
+        border-bottom: 0;
+    }
+
+    .BordredTable tr td:first-child,
+    .BordredTable tr th:first-child {
+        border-left: 0;
+    }
+
+    .BordredTable tr td:last-child,
+    .BordredTable tr th:last-child {
+        border-right: 0;
+    }
+
+    .tdHeightSet {
+        height: 25px;
+    }
+
+    tr td:last-child {
+        width: 1%;
+        white-space: nowrap;
+    }
+
+
+    .rotate {
+        /* FF3.5+ */
+        -moz-transform: rotate(-90.0deg);
+        /* Opera 10.5 */
+        height: 90px;
+        -o-transform: rotate(-90.0deg);
+        /* Saf3.1+, Chrome */
+        -webkit-transform: rotate(-90.0deg);
+        /* IE6,IE7 */
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+        /* IE8 */
+        -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+        /* Standard */
+        transform: rotate(-90.0deg);
+    }
+</style>
+<body ng-controller="LadgerController">
+    <div id="MarksheetData" style="background-color: #eee;margin: 0 auto;margin-bottom: 20px;display:none;border-bottom: 1px solid lightsteelblue;text-align: left; font-family:Arial">
+        <div class="container" style="padding-top: 25px;">
+            <div class="row" style="">
+                <form class="form-horizontal" role="form">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="firstName" class="col-sm-3 control-label">Select File :</label>
+                            <div class="col-md-9">
+                                <input type="file" id="csvFile" required />
+                            </div>
+                        </div>
+                        <div class="form-group TopperData">
+                            <label for="ControllerName" class="col-sm-3 control-label">Exam Controller</label>
+                            <div class="col-sm-9">
+                                <input type="text" id="ControllerName" placeholder="Name of exam controller" class="form-control" autofocus>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="ControllerName" class="col-sm-3 control-label">Date</label>
+                            <div class="col-md-9">
+                                <div id="datepicker1212" class="newDatePicker input-group date" data-date-format="dd-mm-yyyy">
+                                    <input class="form-control" id="txtnewDatePicker" type="text" required />
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label class="control-label col-sm-3">Report Type</label>
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="Report" id="reportrd" value="1">Ladger Report
+                                        </label>
+
+                                    </div><div class="col-sm-6">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="Report" id="reportrd" value="2">Topper Report
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="SubjectCount" class="col-sm-3 control-label">No Of Subject</label>
+                            <div class="col-sm-9">
+                                <input type="number" id="SubjectCount" placeholder="Subject" class="form-control" required autofocus>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-2">
+                                <button type="submit" style="margin-left: 53px;" ng-click="CreateLadgerReport()" class="btn btn-primary">Submit</button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" style="margin-left: 53px;" onclick="window.print()" class="btn btn-warning">Print</button>
+                            </div>
+                        </div>
+                    </div><!-- /.form-group -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="HeaderLadgerScraper" style="display:none">
+        <div style="text-align: center;font-family:Arial; font-size:15px;color:black">
+            <span style="font-size:24px">S.V.T. COLLEGE OF HOME SCIENCE (AUTONOMOUS)</span>
+            <div class="row" style="margin-top: 15px;">
+                <div class="col-md-4">
+                    <table class="HeaderClass" style="border:2px solid black;margin-left: 30px;text-align: left;width:400px;">
+                        <tr style="border-bottom:1px solid"><td style="padding:5px"><span>YEAR</span></td><td style="padding:5px"><span class="spnYear">_Year</span> </td></tr>
+                        <tr><td style="padding:5px"><span>Class</span></td><td style="padding:5px;width: 82%;"><span class="spnCourse">_Course</span> </td></tr>
+                    </table>
+                </div>
+                <div class="col-md-4">
+                    <table class="">
+                        <tr style="border-bottom:1px solid"><td style="padding:5px"><span>S.N.D.T. WOMEN'S UNIVERSITY</span></td></tr>
+                        <tr><td style="padding:5px;border:2px solid black;">STATEMENT OF MARKS</td></tr>
+                    </table>
+                </div>
+                <div class="col-md-4">
+                    <table class="" style="border:2px solid black;text-align: left;width:400px;margin-left: 30px;">
+                        <tr style="border-bottom:1px solid"><td style="padding:5px">Semester</td><td style="padding:5px"><span class="spnSemester">_SemestedDetails</span></td></tr>
+                        <tr><td style="padding:5px">Specialization</td><td style="padding:5px"><span id="spnSpecialization"> _Specialization </span></td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div style="height:20px"></div>
+    </div>
+    <div id="htmlText"></div>
+
+
+    <div id="ToppersContainer">
+        <table class="BordredTable" id="htmlTextToppers" style="text-align:center;font-family:Arial;color:black;width: 1100px;margin: 0 auto"></table>
+    </div>
+</body>
+</html>

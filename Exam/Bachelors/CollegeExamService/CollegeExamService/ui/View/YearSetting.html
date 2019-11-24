@@ -1,0 +1,96 @@
+﻿<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap.tagsinput/0.4.2/bootstrap-tagsinput.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bootstrap.tagsinput/0.4.2/bootstrap-tagsinput.min.js"></script>
+<div class="row">
+    <div class="col col-md-12">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">Year Setting</h3>
+            </div>
+            <form id="PageViewForm">
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col col-lg-12 form-group">
+                            <label for="stream">Year</label>
+                            <input type="text" class="form-control" placeholder="Enter Year" ng-model="CurrentYear" data-validation="ValidateYear"
+                                   data-validation-error-msg="Invalid Year" />
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="stream">Month</label>
+                            <input type="text" class="form-control" placeholder="Enter Month" ng-model="CurrentMonth" data-validation="required"
+                                   data-validation-error-msg="Month is required" />
+                        </div>
+
+
+                    </div>
+                    <div class="row">
+                        <div class="col col-lg-12 form-group">
+                            <label for="stream">Result Declaration Date (on website)</label>
+                            <input id="ResultDate" type="text" class="form-control" placeholder="Enter Result Declaration Date DD/MM/YYYY" data-validation="ValidateConfig" />
+                        </div>
+                        <div class="col col-lg-12 form-group results">
+                            <label for="stream">Declaration Results for:</label><br />
+                            <input type="checkbox" id="semester1" name="semester" value="1" /> Semester 1<br />
+                            <input type="checkbox" id="semester2" name="semester" value="2" /> Semester 2<br />
+                            <input type="checkbox" id="semester3" name="semester" value="3" /> Semester 3<br />
+                            <input type="checkbox" id="semester4" name="semester" value="4" /> Semester 4<br />
+                            <input type="checkbox" id="semester5" name="semester" value="5" /> Semester 5<br />
+                            <input type="checkbox" id="semester6" name="semester" value="6" /> Semester 6
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="stream">Block specific students to access result on website:</label><br />
+                            <input id="seatNumbers" class="form-control" data-role="tagsinput" type="text" />
+                            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+                        </div>
+                        <div class="col col-lg-12 form-group results">
+                            <label for="stream">Start Seat Number:</label><br />
+                            <input type="text" id="seatNumberSeed" class="form-control" name="seatNumberSeed" placeholder="Start Seat Number" /><br />
+                        </div>
+                        <div class="col col-lg-12 form-group results">
+                            <label for="stream">Seat Numbers Generated:</label><br />
+                            <input type="checkbox" id="generate" name="generate" value="false" /> Seat Numbers Generated<br />
+                        </div>
+                        <div class="col col-lg-12 form-group results">
+                            <label for="stream">Regenerate Seat Numbers:</label><br />
+                            <input type="checkbox" id="regenerate" name="regenerate" value="false" disabled="disabled" /> Regenerate<br />
+                        </div>
+                        <div class="col col-lg-12 form-group results">
+                            <label for="stream">HTM Student Count:</label><br />
+                            <input type="text" id="HTMRegularCount" class="form-control" name="HTMRegularCount" placeholder="HTM Student Count" /><br />
+                        </div>
+                        <div class="col col-lg-12 form-group results">
+                            <label for="stream">IDRM Student Count:</label><br />
+                            <input type="text" id="IDRMRegularCount" class="form-control" name="IDRMRegularCount" placeholder="IDRM Student Count" /><br />
+                        </div>
+                        <div class="col col-lg-12 form-group results">
+                            <label for="stream">FND Student Count:</label><br />
+                            <input type="text" id="FNDRegularCount" class="form-control" name="FNDRegularCount" placeholder="FND Student Count" /><br />
+                        </div>
+                        <div class="col col-lg-12 form-group results">
+                            <label for="stream">DC Student Count:</label><br />
+                            <input type="text" id="DCRegularCount" class="form-control" name="DCRegularCount" placeholder="DC Student Count" /><br />
+                        </div>
+
+                        <div class="col col-lg-12 form-group results">
+                            <label for="stream">ECCE Student Count:</label><br />
+                            <input type="text" id="ECCERegularCount" class="form-control" name="ECCERegularCount" placeholder="ECCE Student Count" /><br />
+                        </div>
+                        <div class="col col-lg-12 form-group results">
+                            <label for="stream">MCE Student Count:</label><br />
+                            <input type="text" id="MCERegularCount" class="form-control" name="MCERegularCount" placeholder="MCE Student Count" /><br />
+                        </div>
+
+                        <div class="col col-lg-12 form-group results">
+                            <label for="stream">TAD Student Count:</label><br />
+                            <input type="text" id="TADRegularCount" class="form-control" name="TADRegularCount" placeholder="TAD Student Count" /><br />
+                        </div>
+                        <div class="col col-md-12 form-group">
+                            <button type="submit" class="btn btn-primary pull-right">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

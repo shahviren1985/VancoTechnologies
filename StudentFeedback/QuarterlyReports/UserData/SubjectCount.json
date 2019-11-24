@@ -1,0 +1,81 @@
+[{
+		"SubjectName": "BAFI",
+		"Count": "4",
+		"IsFinalYear": "True"
+	},
+	{
+		"SubjectName": "FYBAFI",
+		"Count": "4",
+		"IsFinalYear": "False"
+	},
+	{
+		"SubjectName": "FYBMS",
+		"Count": "4",
+		"IsFinalYear": "False"
+	},
+	{
+		"SubjectName": "TYBMS",
+		"Count": "3",
+		"IsFinalYear": "True"
+	},
+	{
+		"SubjectName": "B.Com. III",
+		"Count": "5",
+		"IsFinalYear": "True"
+	},
+	{
+		"SubjectName": "TYBAFI",
+		"Count": "3",
+		"IsFinalYear": "True"
+	},
+	{
+		"SubjectName": "BA III Guj",
+		"Count": "4",
+		"IsFinalYear": "True"
+	},
+	{
+		"SubjectName": "BA III Eng",
+		"Count": "5",
+		"IsFinalYear": "True"
+	},
+	{
+		"SubjectName": "SYBMS",
+		"Count": "4",
+		"IsFinalYear": "True"
+	},
+	{
+		"SubjectName": "B.Com. II",
+		"Count": "5",
+		"IsFinalYear": "False"
+	},
+	{
+		"SubjectName": "SYBAFI",
+		"Count": "4",
+		"IsFinalYear": "False"
+	},
+	{
+		"SubjectName": "BA II Guj",
+		"Count": "5",
+		"IsFinalYear": "False"
+	},
+	{
+		"SubjectName": "BA II Eng",
+		"Count": "5",
+		"IsFinalYear": "False"
+	},
+	{
+		"SubjectName": "B.Com. I",
+		"Count": "5",
+		"IsFinalYear": "False"
+	},
+	{
+		"SubjectName": "BA I Guj",
+		"Count": "5",
+		"IsFinalYear": "False"
+	},
+	{
+		"SubjectName": "BA I Eng",
+		"Count": "6",
+		"IsFinalYear": "False"
+	}
+]

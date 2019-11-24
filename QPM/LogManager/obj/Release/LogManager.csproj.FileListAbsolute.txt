@@ -1,0 +1,7 @@
+D:\VancoTechnologies\Code\QPM\LogManager\bin\Release\LogManager.dll
+D:\VancoTechnologies\Code\QPM\LogManager\bin\Release\LogManager.pdb
+D:\VancoTechnologies\Code\QPM\LogManager\bin\Release\Util.dll
+D:\VancoTechnologies\Code\QPM\LogManager\bin\Release\Util.pdb
+D:\VancoTechnologies\Code\QPM\LogManager\obj\Release\LogManager.csprojResolveAssemblyReference.cache
+D:\VancoTechnologies\Code\QPM\LogManager\obj\Release\LogManager.dll
+D:\VancoTechnologies\Code\QPM\LogManager\obj\Release\LogManager.pdb

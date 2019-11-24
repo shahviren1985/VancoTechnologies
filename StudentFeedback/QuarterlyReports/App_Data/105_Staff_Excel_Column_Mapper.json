@@ -1,0 +1,14 @@
+{
+    "Type1": [ "A", "B", "BD", "BE", "BF", "BG", "BH", "BI", "BJ", "BK", "BL", "BM", "BN", "BO", "BP", "BQ", "BR", "AK" ],
+    "Type2": [ "A", "B", "CL", "CM", "CN", "CO", "CP", "CQ", "CR", "CS", "CT", "CU", "CV", "CW", "CX", "CY", "CZ", "BT" ],
+    "Type3": [ "A", "B", "DT", "DU", "DV", "DW", "DX", "DY", "DZ", "EA", "EB", "EC", "ED", "EE", "EF", "EG", "EH", "DB" ],
+    "Type4": [ "A", "B", "EI", "EJ", "EK", "EL", "EM", "EN", "EO", "EP", "EQ", "ER", "ES", "ET", "EU", "EV" ],
+    "Type5": [ "A", "B", "EW", "EX", "EY", "EZ", "FA", "FB", "FC", "FD", "FE", "FF", "FG", "FH", "FI" ],
+    "Type6": [ "A", "B", "FY", "FZ", "GA", "GB", "GC", "GD", "GE", "GF", "GG", "GW1", "GX1", "GY1" ],
+    "Type7": [ "A", "B", "FJ", "FK", "FL", "FM", "FN", "FO", "FP", "FQ", "FR", "FS", "FT", "FU", "FV", "FW", "FX", "GW1", "GX1", "GY1" ],
+    "Type8": [ "A", "B", "GH", "GI", "GJ", "GK", "GL", "GM", "GN", "GO", "GP", "GQ", "GR", "GR", "GT", "GU", "GV", "GW1", "GX1", "GY1" ],
+    "Type9": [ "A", "B", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "AA", "AB", "AC", "AD", "AE", "AF", "AG", "AH", "AI", "AJ", "AK" ],
+    "Type10": ["E","AK","AM","AN","AO","AP","AQ","AR","AS","AT","AU","AV","AW","AX","AY","AZ","BA","BB"],
+    "Type11": ["E", "BT", "BU", "BV", "BW", "BX", "BY", "BZ", "CA", "CB", "CC", "CD", "CE", "CF", "CG", "CH", "CI", "CJ"],
+    "Type12": ["E","DB","DC","DD","DE","DF","DG","DH","DI","DJ","DK","DL","DM","DN","DO","DP","DQ","DR"]
+}

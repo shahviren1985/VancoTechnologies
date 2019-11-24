@@ -1,0 +1,298 @@
+﻿<!DOCTYPE html>
+<html ng-app="EnteredSheet">
+<head>
+    <title>SVT - External Exam Sheet</title>
+    <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="CustomJs/Angular.js"></script>
+    <script src="CustomJs/urlConfig.js"></script>
+    <script src="CustomJs/Index.js"></script>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css">
+   
+    <style>
+        body.A4 .sheet {
+            height: 100%;
+        }
+
+        body.A4.landscape .sheet {
+            height: unset !important;
+        }
+
+        @page {
+            size: portrait;
+        }
+
+        .print-page2 {
+            font-size: 16px;
+            display: inline-block;
+            height: 100vh;
+            width: 100vw;
+            border-bottom: 1px solid #000;
+            padding: 30px;
+        }
+
+        .PageBreakOnlAfter2 {
+            page-break-after: always;
+        }
+
+        #HeaderTableInfo > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+            border-top: none;
+        }
+
+        body {
+            font-size: 13px;
+        }
+
+        .CustomConfig > thead > tr > th, .table > tbody > tr > th, .CustomConfig > tfoot > tr > th, .CustomConfig > thead > tr > td, .CustomConfig > tbody > tr > td, .CustomConfig > tfoot > tr > td {
+            padding: 0px;
+        }
+
+        #StudemtEmtryTable {
+            border-collapse: collapse;
+        }
+
+        #StudemtEmtryTable {
+            width: 100%;
+        }
+
+            #StudemtEmtryTable, #StudemtEmtryTable th, #StudemtEmtryTable td {
+                border: 1px solid black;
+                padding: 8px;
+            }
+
+        @media screen {
+            .SetMarginToPrint {
+                margin-right: 0px;
+                margin-left: 0px;
+            }
+        }
+
+        @media print {
+            .SetMarginToPrint {
+                margin-right: 25px;
+                margin-left: 25px;
+            }
+
+            @page {
+                size: A4;
+            }
+        }
+
+        @page {
+            margin: 5mm 0 5mm 0;
+        }
+
+        table {
+            page-break-inside: auto;
+        }
+
+        tr {
+            page-break-inside: avoid;
+            page-break-after: auto;
+        }
+
+        thead {
+            display: table-header-group;
+        }
+
+        tfoot {
+            display: table-footer-group;
+        }
+    </style>
+    <script type="text/javascript">
+        var ExamSystem = angular.module("EnteredSheet", []);
+        ExamSystem.controller("MarkEntryCtrl", function ($scope) {
+            $scope.stream = getUrlVars()["stream"];
+            $scope.Course = getUrlVars()["course"];
+            $scope.specialization = getUrlVars()["Specialization"];
+            $scope.sem = getUrlVars()["sem"];
+            $scope.examType = getUrlVars()["examType"];
+            $scope.year = getUrlVars()["year"];
+            $scope.UearToShow = getUrlVars()["year"];
+            $scope.paper = getUrlVars()["paper"];
+            $scope.PaperName = decodeURI(getUrlVars()["PaperName"]);
+            $scope.section = decodeURI(getUrlVars()["section"]);
+            $scope.StudentData = [];
+
+            function findWithAttr(array, attr, value) {
+                for (var i = 0; i < array.length; i += 1) {
+                    if (array[i][attr] === value) {
+                        return i;
+                    }
+                }
+                return -1;
+            }
+            function getKeyByValue(object, value) {
+                return Object.keys(object).find(key => object[key] === value);
+            }
+            $scope.MarkEntryArray = [];
+            GetCsvToJsonData('File/Download/Data/SVT?fileName=' + $scope.stream + '-' + $scope.Course + '_sem' + $scope.sem
+                + '_' + $scope.year + '_' + $scope.examType + '.csv').done(function (dataresponse) {
+                    $scope.StudentData = csvJSON(dataresponse);
+                    for (var i = 0; i < $scope.StudentData.length; i++) {
+                        if ($scope.StudentData[i].Specialisation != undefined && $scope.StudentData[i].Specialisation != '' && $scope.StudentData[i].Specialisation.toLowerCase() == $scope.specialization.toLowerCase()) {
+                            var Key = getKeyByValue($scope.StudentData[i], $scope.paper);
+                            if (Key == undefined) {
+                                continue;
+                            }
+                            var lastChar = Key[Key.length - 1];
+                            var Number = parseInt(lastChar);
+                            //var Number=1;
+                            var internalmarkKey = 'InternalC' + Number;
+                            var ExternalMark1Key = 'ExternalSection1C' + Number;
+                            var ExternalMark2Key = 'ExternalSection2C' + Number;
+                            var PracticalMarkKey = 'PracticalMarksC' + Number;
+                            var GraceKey = 'GraceC' + Number;
+                            $scope.CurrentStudent = {};
+                            $scope.CurrentStudent.SeatNumber = $scope.StudentData[i].SeatNumber;
+                            $scope.MarkEntryArray.push($scope.CurrentStudent);
+                        }
+                    }
+                    $scope.MarkEntryArray = SortArrayWithSeatNumber($scope.MarkEntryArray, 'SeatNumber');
+                    $scope.$apply();
+                });
+        });
+
+    </script>
+</head>
+<body ng-controller="MarkEntryCtrl" class="A4 landscape">
+    <div id="app" class="skin-blue">
+        <div>
+            <div>
+                <div>
+                    <!--ng-repeat="stu in StudentData"-->
+                    <section class="print-page-header sheet padding-5mm" style="padding:10px">
+                        <article>
+                            <div class="row divFooter">
+                                <div class="col-md-12">
+                                    <div class="print-page-header">
+                                        <table style="width: 100%; font-size: 13px;">
+                                            <tbody>
+                                                <tr>
+                                                    <td><img src="images/logo.png" alt="" style="margin-top: 10px;"></td>
+                                                    <td>
+                                                        <div class="text-center">
+                                                            <h4>Sir Vithaldas Thackersey College of Home Science (Autonomous)</h4>
+                                                            <h5>SNDT Women's University, Mumbai</h5>
+                                                            <h4>External Exam Sheet</h4>
+                                                        </div>
+                                                    </td>
+                                                    <td><img src="images/shree_logo.png" alt="" class="pull-right"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="clearfix">
+                                        </div>
+                                        <hr>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 SetMarginToPrint" style="">
+                                    <table id="HeaderTableInfo" class="table CustomConfig" style="border:none">
+                                        <tr>
+                                            <td style="width: 40px;">Course</td>
+                                            <td style="padding-left: 3px">: {{stream}} - {{Course}}</td>
+                                            <td style="float:right">Exam name</td>
+                                            <td style="padding-left: 3px">: Semester {{sem}} {{examType}} {{year}}</td>
+                                            <td style="float:right">Specialization</td>
+                                            <td style="padding-left: 3px">:  {{specialization | uppercase}}</td>
+                                            <td style="float:right">Subject</td>
+                                            <td style="padding-left: 3px;min-width: 75px;">:  {{PaperName}}</td>
+                                        </tr>
+                                        <tr></tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="row" style="">
+                                <div class="col-md-12 SetMarginToPrint">
+                                    <table id="StudemtEmtryTable" class="table CustomConfig" style="border: 1px solid; text-align:center">
+                                        <thead>
+                                            <tr>
+                                                <!--<td rowspan="2" style="min-width: 40px;vertical-align: middle;">Sr No</td>-->
+                                                <td rowspan="2" style="vertical-align: middle;">#</td>
+                                                <td rowspan="2" style="min-width: 70px;vertical-align: middle;">Seat No</td>
+                                                <!--<td style="min-width: 65px;">Roll Number</td>-->
+                                                <td rowspan="2" class="tdSignatureBlank" style="vertical-align: middle;">Q1</td>
+                                                <td rowspan="2" class="tdSignatureBlank" style="vertical-align: middle;">Q2</td>
+                                                <td rowspan="2" class="tdSignatureBlank" style="vertical-align: middle;">Q3</td>
+                                                <td rowspan="2" class="tdSignatureBlank" style="vertical-align: middle;">Q4</td>
+                                                <td rowspan="2" class="tdSignatureBlank" style="vertical-align: middle;">Q5</td>
+                                                <td rowspan="2" class="tdSignatureBlank" style="vertical-align: middle;">Q6</td>
+                                                <td rowspan="2" class="tdSignatureBlank" style="vertical-align: middle;">Q7</td>
+                                                <td rowspan="2" class="tdSignatureBlank" style="vertical-align: middle;">Q8</td>
+                                                <td colspan="2" class="tdSignatureBlank" style="vertical-align: middle;">SECTION I</td>
+                                                <td colspan="2" class="tdSignatureBlank" style="vertical-align: middle;">SECTION II</td>
+                                                <td class="tdSignatureBlank">Total I+II</td>
+                                                <td class="tdSignatureBlank">Total I+II</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tdSignatureBlank">Examiner</td>
+                                                <td class="tdSignatureBlank">Moderator</td>
+                                                <td class="tdSignatureBlank">Examiner</td>
+                                                <td class="tdSignatureBlank">Moderator</td>
+                                                <td class="tdSignatureBlank">Examiner</td>
+                                                <td class="tdSignatureBlank">Moderator</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="mk in MarkEntryArray">
+                                                <td>{{$index+1}}</td>
+                                                <td style="vertical-align: middle;">{{mk.SeatNumber}}</td>
+                                                <!--<td>{{mk.RollNumber}}</td>-->
+                                                <td class="tdSignatureBlank"></td>
+
+
+                                                <td class="tdSignatureBlank"></td>
+                                                <td class="tdSignatureBlank"></td>
+                                                <td class="tdSignatureBlank"></td>
+                                                <td class="tdSignatureBlank"></td>
+                                                <td class="tdSignatureBlank"></td>
+                                                <td class="tdSignatureBlank"></td>
+                                                <td class="tdSignatureBlank"></td>
+                                                <td class="tdSignatureBlank"></td>
+                                                <td class="tdSignatureBlank"></td>
+                                                <td class="tdSignatureBlank"></td>
+                                                <td class="tdSignatureBlank"></td>
+                                                <td class="tdSignatureBlank"></td>
+                                                <td class="tdSignatureBlank"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <style>
+                                        .tdSignatureBlank {
+                                            vertical-align: middle;
+                                        }
+                                    </style>
+                                </div>
+                                <div class="col-md-12">
+                                    <table id="BottomTable" class="table">
+                                        <tr>
+                                            <td style="width: 155px;">Name Of Examnier</td>
+                                            <td style="padding-right: 5px;width: 300px;"> : </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Signature Of Examnier</td>
+                                            <td style="padding-right: 5px;"> : </td>
+                                            <td style="width:45px">Date</td>
+                                            <td> : ______________________</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Name Of Moderator</td>
+                                            <td style="padding-right: 5px;"> : </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Signature Of Moderator</td>
+                                            <td style="padding-right: 5px;"> : </td>
+                                            <td>Date</td>
+                                            <td> : ______________________</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,712 @@
+[
+	{
+		"excel": "B",
+		"table": "tbluser",
+		"column": "userid"
+	},
+	{
+		"excel": "E",
+		"table": "tbluser",
+		"column": "academicyear"
+	},
+	{
+		"excel": "F",
+		"table": "tbluser",
+		"column": "firstname"
+	},
+    {
+        "excel": "H",
+        "table": "tbluser",
+        "column": "lastname"
+    },
+    {
+        "excel": "AG",
+        "table": "teacherfeedback",
+        "column": "a1"
+    },
+    {
+        "excel": "AH",
+        "table": "teacherfeedback",
+        "column": "a2"
+    },
+    {
+        "excel": "AI",
+        "table": "teacherfeedback",
+        "column": "a3"
+    },
+    {
+        "excel": "AJ",
+        "table": "teacherfeedback",
+        "column": "a4"
+    },
+    {
+        "excel": "AK",
+        "table": "teacherfeedback",
+        "column": "a5"
+    },
+    {
+        "excel": "AL",
+        "table": "teacherfeedback",
+        "column": "a6"
+    },
+    {
+        "excel": "AM",
+        "table": "teacherfeedback",
+        "column": "a7"
+    },
+    {
+        "excel": "AN",
+        "table": "teacherfeedback",
+        "column": "a8"
+    },
+    {
+        "excel": "AO",
+        "table": "teacherfeedback",
+        "column": "a9"
+    },
+    {
+        "excel": "AP",
+        "table": "teacherfeedback",
+        "column": "a10"
+    },
+    {
+        "excel": "AQ",
+        "table": "teacherfeedback",
+        "column": "a11"
+    },
+    {
+        "excel": "AR",
+        "table": "teacherfeedback",
+        "column": "a12"
+    },
+    {
+        "excel": "AS",
+        "table": "teacherfeedback",
+        "column": "a13"
+    },
+    {
+        "excel": "AT",
+        "table": "teacherfeedback",
+        "column": "a14"
+    },
+    {
+        "excel": "AU",
+        "table": "teacherfeedback",
+        "column": "a15"
+    },
+    {
+        "excel": "AV",
+        "table": "teacherfeedback",
+        "column": "a16"
+    },
+    {
+        "excel": "AW",
+        "table": "teacherfeedback",
+        "column": "a17"
+    },
+    {
+        "excel": "AZ",
+        "table": "teacherfeedback",
+        "column": "a1"
+    },
+    {
+        "excel": "BA",
+        "table": "teacherfeedback",
+        "column": "a2"
+    },
+    {
+        "excel": "BB",
+        "table": "teacherfeedback",
+        "column": "a3"
+    },
+    {
+        "excel": "BC",
+        "table": "teacherfeedback",
+        "column": "a4"
+    },
+    {
+        "excel": "BD",
+        "table": "teacherfeedback",
+        "column": "a5"
+    },
+    {
+        "excel": "BE",
+        "table": "teacherfeedback",
+        "column": "a6"
+    },
+    {
+        "excel": "BF",
+        "table": "teacherfeedback",
+        "column": "a7"
+    },
+    {
+        "excel": "BG",
+        "table": "teacherfeedback",
+        "column": "a8"
+    },
+    {
+        "excel": "BH",
+        "table": "teacherfeedback",
+        "column": "a9"
+    },
+    {
+        "excel": "BI",
+        "table": "teacherfeedback",
+        "column": "a10"
+    },
+    {
+        "excel": "BJ",
+        "table": "teacherfeedback",
+        "column": "a11"
+    },
+    {
+        "excel": "BK",
+        "table": "teacherfeedback",
+        "column": "a12"
+    },
+    {
+        "excel": "BL",
+        "table": "teacherfeedback",
+        "column": "a13"
+    },
+    {
+        "excel": "BM",
+        "table": "teacherfeedback",
+        "column": "a14"
+    },
+    {
+        "excel": "BN",
+        "table": "teacherfeedback",
+        "column": "a15"
+    },
+    {
+        "excel": "BO",
+        "table": "teacherfeedback",
+        "column": "a16"
+    },
+    {
+        "excel": "BP",
+        "table": "teacherfeedback",
+        "column": "a17"
+    },
+    {
+        "excel": "BR",
+        "table": "teacherfeedback",
+        "column": "a1"
+    },
+    {
+        "excel": "BS",
+        "table": "teacherfeedback",
+        "column": "a2"
+    },
+    {
+        "excel": "BT",
+        "table": "teacherfeedback",
+        "column": "a3"
+    },
+    {
+        "excel": "BU",
+        "table": "teacherfeedback",
+        "column": "a4"
+    },
+    {
+        "excel": "BV",
+        "table": "teacherfeedback",
+        "column": "a5"
+    },
+    {
+        "excel": "BW",
+        "table": "teacherfeedback",
+        "column": "a6"
+    },
+    {
+        "excel": "BX",
+        "table": "teacherfeedback",
+        "column": "a7"
+    },
+    {
+        "excel": "BY",
+        "table": "teacherfeedback",
+        "column": "a8"
+    },
+    {
+        "excel": "BZ",
+        "table": "teacherfeedback",
+        "column": "a9"
+    },
+    {
+        "excel": "CA",
+        "table": "teacherfeedback",
+        "column": "a10"
+    },
+    {
+        "excel": "CB",
+        "table": "teacherfeedback",
+        "column": "a11"
+    },
+    {
+        "excel": "CC",
+        "table": "teacherfeedback",
+        "column": "a12"
+    },
+    {
+        "excel": "CD",
+        "table": "teacherfeedback",
+        "column": "a13"
+    },
+    {
+        "excel": "CE",
+        "table": "teacherfeedback",
+        "column": "a14"
+    },
+    {
+        "excel": "CF",
+        "table": "teacherfeedback",
+        "column": "a15"
+    },
+    {
+        "excel": "CG",
+        "table": "teacherfeedback",
+        "column": "a16"
+    },
+    {
+        "excel": "DB",
+        "table": "teacherfeedback",
+        "column": "a1"
+    },
+    {
+        "excel": "DC",
+        "table": "teacherfeedback",
+        "column": "a2"
+    },
+    {
+        "excel": "DD",
+        "table": "teacherfeedback",
+        "column": "a3"
+    },
+    {
+        "excel": "DE",
+        "table": "teacherfeedback",
+        "column": "a4"
+    },
+    {
+        "excel": "DF",
+        "table": "teacherfeedback",
+        "column": "a5"
+    },
+    {
+        "excel": "DG",
+        "table": "teacherfeedback",
+        "column": "a6"
+    },
+    {
+        "excel": "DH",
+        "table": "teacherfeedback",
+        "column": "a7"
+    },
+    {
+        "excel": "DI",
+        "table": "teacherfeedback",
+        "column": "a8"
+    },
+    {
+        "excel": "DJ",
+        "table": "teacherfeedback",
+        "column": "a9"
+    },
+    {
+        "excel": "DK",
+        "table": "teacherfeedback",
+        "column": "a10"
+    },
+    {
+        "excel": "DL",
+        "table": "teacherfeedback",
+        "column": "a11"
+    },
+    {
+        "excel": "DM",
+        "table": "teacherfeedback",
+        "column": "a12"
+    },
+    {
+        "excel": "DN",
+        "table": "teacherfeedback",
+        "column": "a13"
+    },
+    {
+        "excel": "DO",
+        "table": "teacherfeedback",
+        "column": "a14"
+    },
+    {
+        "excel": "DP",
+        "table": "teacherfeedback",
+        "column": "a15"
+    },
+    {
+        "excel": "DQ",
+        "table": "teacherfeedback",
+        "column": "a16"
+    },
+     {
+        "excel": "DT",
+        "table": "teacherfeedback",
+        "column": "a1"
+    },
+    {
+        "excel": "DU",
+        "table": "teacherfeedback",
+        "column": "a2"
+    },
+    {
+        "excel": "DV",
+        "table": "teacherfeedback",
+        "column": "a3"
+    },
+    {
+        "excel": "DW",
+        "table": "teacherfeedback",
+        "column": "a4"
+    },
+    {
+        "excel": "DX",
+        "table": "teacherfeedback",
+        "column": "a5"
+    },
+    {
+        "excel": "DY",
+        "table": "teacherfeedback",
+        "column": "a6"
+    },
+    {
+        "excel": "DZ",
+        "table": "teacherfeedback",
+        "column": "a7"
+    },
+    {
+        "excel": "EA",
+        "table": "teacherfeedback",
+        "column": "a8"
+    },
+    {
+        "excel": "EB",
+        "table": "teacherfeedback",
+        "column": "a9"
+    },
+    {
+        "excel": "EC",
+        "table": "teacherfeedback",
+        "column": "a10"
+    },
+    {
+        "excel": "ED",
+        "table": "teacherfeedback",
+        "column": "a11"
+    },
+    {
+        "excel": "EE",
+        "table": "teacherfeedback",
+        "column": "a12"
+    },
+    {
+        "excel": "EF",
+        "table": "teacherfeedback",
+        "column": "a13"
+    },
+    {
+        "excel": "EG",
+        "table": "teacherfeedback",
+        "column": "a14"
+    },
+    {
+        "excel": "EH",
+        "table": "teacherfeedback",
+        "column": "a15"
+    },
+    {
+        "excel": "EI",
+        "table": "teacherfeedback",
+        "column": "a16"
+    },
+    {
+        "excel": "EL",
+        "table": "teacherfeedback",
+        "column": "a1"
+    },
+    {
+        "excel": "EM",
+        "table": "teacherfeedback",
+        "column": "a2"
+    },
+    {
+        "excel": "EN",
+        "table": "teacherfeedback",
+        "column": "a3"
+    },
+    {
+        "excel": "EO",
+        "table": "teacherfeedback",
+        "column": "a4"
+    },
+    {
+        "excel": "EP",
+        "table": "teacherfeedback",
+        "column": "a5"
+    },
+    {
+        "excel": "EQ",
+        "table": "teacherfeedback",
+        "column": "a6"
+    },
+    {
+        "excel": "ER",
+        "table": "teacherfeedback",
+        "column": "a7"
+    },
+    {
+        "excel": "ES",
+        "table": "teacherfeedback",
+        "column": "a8"
+    },
+    {
+        "excel": "ET",
+        "table": "teacherfeedback",
+        "column": "a9"
+    },
+    {
+        "excel": "EU",
+        "table": "teacherfeedback",
+        "column": "a10"
+    },
+    {
+        "excel": "EV",
+        "table": "teacherfeedback",
+        "column": "a11"
+    },
+    {
+        "excel": "EW",
+        "table": "teacherfeedback",
+        "column": "a12"
+    },
+    {
+        "excel": "EX",
+        "table": "teacherfeedback",
+        "column": "a13"
+    },
+    {
+        "excel": "EY",
+        "table": "teacherfeedback",
+        "column": "a14"
+    },
+    {
+        "excel": "EZ",
+        "table": "teacherfeedback",
+        "column": "a15"
+    },
+    {
+        "excel": "FA",
+        "table": "teacherfeedback",
+        "column": "a16"
+    },
+    {
+        "excel": "FD",
+        "table": "teacherfeedback",
+        "column": "a1"
+    },
+    {
+        "excel": "FE",
+        "table": "teacherfeedback",
+        "column": "a2"
+    },
+    {
+        "excel": "FF",
+        "table": "teacherfeedback",
+        "column": "a3"
+    },
+    {
+        "excel": "FG",
+        "table": "teacherfeedback",
+        "column": "a4"
+    },
+    {
+        "excel": "FH",
+        "table": "teacherfeedback",
+        "column": "a5"
+    },
+    {
+        "excel": "FI",
+        "table": "teacherfeedback",
+        "column": "a6"
+    },
+    {
+        "excel": "FJ",
+        "table": "teacherfeedback",
+        "column": "a7"
+    },
+    {
+        "excel": "FK",
+        "table": "teacherfeedback",
+        "column": "a8"
+    },
+    {
+        "excel": "FL",
+        "table": "teacherfeedback",
+        "column": "a9"
+    },
+    {
+        "excel": "FM",
+        "table": "teacherfeedback",
+        "column": "a10"
+    },
+    {
+        "excel": "FN",
+        "table": "teacherfeedback",
+        "column": "a11"
+    },
+    {
+        "excel": "FO",
+        "table": "teacherfeedback",
+        "column": "a12"
+    },
+    {
+        "excel": "FP",
+        "table": "teacherfeedback",
+        "column": "a13"
+    },
+    {
+        "excel": "FQ",
+        "table": "teacherfeedback",
+        "column": "a14"
+    },
+    {
+        "excel": "FR",
+        "table": "teacherfeedback",
+        "column": "a15"
+    },
+    {
+        "excel": "FS",
+        "table": "teacherfeedback",
+        "column": "a16"
+    },
+    {
+		"course": "F.Y.B.A.",
+		"excel": "K",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "S.Y.B.A.",
+		"excel": "L",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "T.Y.B.A.",
+		"excel": "M",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "F.Y.B.COM.",
+		"excel": "N",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "S.Y.B.COM.",
+		"excel": "O",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "T.Y.B.COM.",
+		"excel": "P",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "F.Y.B.M.S.",
+		"excel": "Q",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "S.Y.B.M.S.",
+		"excel": "R",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "T.Y.B.M.S.",
+		"excel": "S",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "F.Y.B.C.A.",
+		"excel": "T",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "S.Y.B.C.A.",
+		"excel": "U",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "T.Y.B.C.A.",
+		"excel": "V",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "F.Y.B.A.F.I.",
+		"excel": "W",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "S.Y.B.A.F.I.",
+		"excel": "X",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "T.Y.B.A.F.I.",
+		"excel": "Y",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "F.Y.B.M.M.",
+		"excel": "Z",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "S.Y.B.M.M.",
+		"excel": "AA",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "T.Y.B.M.M.",
+		"excel": "AB",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "M.C.O.M.",
+		"excel": "AC",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "M.A.",
+		"excel": "AD",
+		"table": "tbluser",
+		"column": "subcourse"
+	}
+]

@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html ng-app="ExamSystemApp">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="CustomJs/Angular.js"></script>
+    <script src="CustomJs/angular-route.js"></script>
+    <script src="CustomJs/alasql.min.js"></script>
+    <script src="CustomJs/urlConfig.js"></script>
+    <script src="CustomJs/Index.js"></script>
+    <link href="Assets/bootstrap.min.css" rel="stylesheet" />
+    <link href="Assets/datepicker.css" rel="stylesheet" />
+    <script src="Assets/bootstrap.min.js"></script>
+    <style>
+        /*@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);*/
+        @page {
+            size: A4 landscape;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+    </style>
+
+</head>
+<body style="" ng-controller="SummaryReportGenerateCtrl" class="A4 landscape">
+    <!--<div class="row" style="text-align: center; display:none" id="div_LoaderMarksheet">
+        <img src="images/MarksheetLoader.gif" style="width: 10%; height: auto;" /><br />
+        <span>Aggregate Marksheet is loading...</span>
+    </div>-->
+
+    <div id="DivHidden" class="DivResult">
+        <section ng-repeat="spec in FinalObjtoDisp" ng-if="ViewSpecilisation.toUpperCase()==spec.Specialization.toUpperCase()" class="sheet DivResult" style="padding:30px">
+            <article>
+                <!--<div style="text-align:center"><b>{{spec.Specialization}}</b></div>-->
+                <table id="sampleTable" class="table" style="text-align: center;width:100%;margin: 0 auto;" cellspacing="0" cellpadding="0">
+                    <thead>
+                        <tr>
+                            <th style="background-color: rgb(141, 180, 226);">Paper Code</th>
+                            <th style="text-align: left; background-color: rgb(141, 180, 226);">Paper Title</th>
+                            <th style="background-color: rgb(141, 180, 226);">Enrolled</th>
+                            <th style="width: 70px; background-color: rgb(141, 180, 226);">Appered</th>
+                            <th style="width: 50px; background-color: rgb(141, 180, 226);">ABS</th>
+                            <th style="width: 50px; background-color: rgb(141, 180, 226);">O+</th>
+                            <th style="width: 50px; background-color: rgb(141, 180, 226);">O</th>
+                            <th style="width: 50px; background-color: rgb(141, 180, 226);">A+</th>
+                            <th style="width: 50px; background-color: rgb(141, 180, 226);">A</th>
+                            <th style="width: 50px; background-color: rgb(141, 180, 226);">B+</th>
+                            <th style="width: 50px; background-color: rgb(141, 180, 226);">B</th>
+                            <th style="width: 50px; background-color: rgb(141, 180, 226);">C</th>
+                            <th style="width: 50px; background-color: rgb(141, 180, 226);">P</th>
+                            <th style="width: 50px; background-color: rgb(141, 180, 226);">F</th>
+                            <th style="background-color: rgb(141, 180, 226);">Overall Pass%</th>
+                        </tr>
+                    </thead>
+                    <tr ng-repeat="paper in spec.PaperDetails">
+                        <td style="text-align:center">{{paper.PaperCode}}</td>
+                        <td style="text-align:left">{{paper.PaperTitle}}</td>
+                        <td style="text-align:center">{{paper.Enrolled}}</td>
+                        <td style="text-align:center">{{paper.Appered}}</td>
+                        <td style="text-align:center">{{paper.Abs}}</td>
+                        <td style="text-align:center">{{paper.OPlus}}</td>
+                        <td style="text-align:center">{{paper.O}}</td>
+                        <td style="text-align:center">{{paper.APlus}}</td>
+                        <td style="text-align:center">{{paper.A}}</td>
+                        <td style="text-align:center"> {{paper.BPlus}}</td>
+                        <td style="text-align:center">{{paper.B}}</td>
+                        <td style="text-align:center">{{paper.C}}</td>
+                        <td style="text-align:center">{{paper.P}}</td>
+                        <td style="text-align:center">{{paper.F}}</td>
+                        <td style="text-align:center">{{paper.OverAllPassPercentage|number:2}}</td>
+                    </tr>
+                </table>
+
+                <div class="row">
+                    <div class="col-md-11"></div>
+                    <div class="col-md-1" style="padding-top:50px;">
+                        <button type="button" onclick="tableToExcel()" class="btn btn-primary pull-right">Download</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+    <script type="text/javascript">
+        var Examapp = angular.module("ExamSystemApp", ["ngRoute"]);
+        Examapp.controller('SummaryReportGenerateCtrl', function ($scope, StudentCsvFile, PaperService, MarksheetService) {
+            $(document).prop('title', 'Summary Report | ' + getUrlVars()["Specialization"].toUpperCase());
+            function getUrlVars() {
+                var vars = [], hash;
+                var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+                for (var i = 0; i < hashes.length; i++) {
+                    hash = hashes[i].split('=');
+                    vars.push(hash[0]);
+                    vars[hash[0]] = hash[1];
+                }
+                return vars;
+            }
+            var tableToExcel = (function () {
+                var uri = 'data:application/vnd.ms-excel;base64,',
+                    template = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>{table}</table></body></html>',
+                    base64 = function (s) { return window.btoa(unescape(encodeURIComponent(s))) },
+                    format = function (s, c) { return s.replace(/{(\w+)}/g, function (m, p) { return c[p]; }) }
+                return function (table, name) {
+                    table = "sampleTable"
+                    name = "Summary Report"
+                    if (!table.nodeType) table = document.getElementById(table)
+                    var ctx = { worksheet: name || 'Worksheet', table: table.innerHTML }
+                    window.location.href = uri + base64(format(template, ctx))
+                }
+            })();
+            function sortByKey(array, key) {
+                return array.sort(function (a, b) {
+                    var x = a[key]; var y = b[key];
+                    return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+                });
+            }
+
+            $scope.ViewSpecilisation = getUrlVars()["Specialization"];
+            CallAPI("User/GetPaperList?Course=" + getUrlVars()["stream"] + "&specialization=" + getUrlVars()["course"] + "&sem=" + getUrlVars()["sem"]).done(function (response) {
+                var CurrentSubjectRecord = response;
+                StudentCsvFile.GetFileObj(getUrlVars()["stream"], getUrlVars()["course"], getUrlVars()["sem"], CurrentYear, getUrlVars()['examType']).done(function (dataresponse) {
+                    try {
+                        var StudentDetail_Obj = {};
+                        StudentDetail_Obj.Course = getUrlVars()["course"];
+                        StudentDetail_Obj.ExamType = getUrlVars()['examType'];
+                        StudentDetail_Obj.Semester = getUrlVars()["sem"];
+                        var MainObject = [];
+                        var StudentData = csvJSON(dataresponse);
+
+                        for (var speci = 0; speci < CurrentSubjectRecord.length; speci++) {
+                            var StudentCurrentData = StudentData.filter(x => x.Specialisation == CurrentSubjectRecord[speci].specialisationCode);
+                            var StudentSubObj = {};
+                            StudentSubObj.Specilization = CurrentSubjectRecord[speci].specialisationCode;
+                            StudentSubObj.StudentSubject = [];
+                            for (let aj = 0; aj < StudentCurrentData.length; aj++) {
+                                try {
+                                    throw aj;
+                                } catch (ii) {
+                                    var SpecializationObj = PaperService.GetSpecilizationObj(CurrentSubjectRecord, StudentCurrentData[ii]['Specialisation']);
+                                    var MarksheetObjFinal = MarksheetService.GetMarksheetObjectFromCsvObj(StudentCurrentData[ii], SpecializationObj, StudentDetail_Obj);
+                                    //console.log(MarksheetObjFinal);
+                                    var UpdatedArray = StudentSubObj.StudentSubject.concat(MarksheetObjFinal.SubjectDetail);
+                                    StudentSubObj.StudentSubject = UpdatedArray;
+                                }
+                                if (aj == (StudentCurrentData.length - 1)) {
+                                    MainObject.push(StudentSubObj)
+                                }
+                            }
+                            if (speci == (CurrentSubjectRecord.length - 1)) {
+                                RunObject(MainObject)
+                            }
+                        }
+
+                        function RunObject(objectOfStudent) {
+                            var FinalMainObj = [];
+                            for (var obji = 0; obji < objectOfStudent.length; obji++) {
+                                var Subjectobj = CurrentSubjectRecord.filter(x => x.specialisationCode == objectOfStudent[obji].Specilization)[0].paperDetails;
+                                var objSpecilization = {};
+                                objSpecilization.Specialization = objectOfStudent[obji].Specilization;
+                                objSpecilization.PaperDetails = [];
+                                for (var subi = 0; subi < Subjectobj.length; subi++) {
+                                    var currentStd = objectOfStudent[obji].StudentSubject.filter(x => x.paperCode == Subjectobj[subi].paperCode);
+                                    var FinalObj = {};
+                                    FinalObj.PaperCode = Subjectobj[subi].paperCode;
+                                    FinalObj.PaperTitle = Subjectobj[subi].paperTitle;
+                                    FinalObj.Enrolled = currentStd.length;
+                                    FinalObj.Appered = currentStd.filter(x => x._FinalTotalMarks != 0).length;
+                                    FinalObj.Abs = currentStd.filter(x => x._FinalTotalMarks == 0).length;;
+                                    FinalObj.OPlus = currentStd.filter(x => x._Grade == 'O+').length;
+                                    FinalObj.O = currentStd.filter(x => x._Grade == 'O').length;
+                                    FinalObj.APlus = currentStd.filter(x => x._Grade == 'A+').length;
+                                    FinalObj.A = currentStd.filter(x => x._Grade == 'A').length;
+                                    FinalObj.BPlus = currentStd.filter(x => x._Grade == 'B+').length;
+                                    FinalObj.B = currentStd.filter(x => x._Grade == 'B').length;
+                                    FinalObj.C = currentStd.filter(x => x._Grade == 'C').length;
+                                    FinalObj.P = currentStd.filter(x => x._Grade == 'P').length;
+                                    FinalObj.F = currentStd.filter(x => x._Grade == 'F').length;
+                                    FinalObj.PassCount = currentStd.filter(x => x._Status == '').length;
+                                    FinalObj.FailCount = currentStd.filter(x => x._Status != '').length;
+                                    FinalObj.OverAllPassPercentage = ((FinalObj.PassCount * 100) / currentStd.length);
+                                    objSpecilization.PaperDetails.push(FinalObj);
+                                }
+                                FinalMainObj.push(objSpecilization);
+                            }
+                            $scope.FinalObjtoDisp = FinalMainObj;
+                            $scope.$apply();
+                        }
+                    } catch (e) {
+                        console.log(e)
+                    }
+                });
+            });
+
+
+        })
+    </script>
+    <script src="CustomJs/AppConfig.js"></script>
+</body>
+</html>

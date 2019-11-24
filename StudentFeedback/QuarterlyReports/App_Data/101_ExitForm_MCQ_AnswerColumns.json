@@ -1,0 +1,169 @@
+{
+    "exitform": [
+        {
+            "id": "a1",
+            "question": "What do you plan to do after completion of your graduation?",
+            "type": "radio",
+            "optionValues": [
+                "1 - Study further",
+                "2 - Work",
+                "3 - Any other"
+            ]
+        },
+        {
+            "id": "a4",
+            "question": "Would you like to keep in touch with the institute after you leave it?",
+            "type": "radio",
+            "optionValues": [
+                "Yes",
+                "No"
+            ]
+        },
+        {
+            "id": "a5",
+            "question": "What was your experience with the administration of the institute?",
+            "type": "radio",
+            "optionValues": [
+                "Positive experience (good)",
+                "Negative experience (not good)"
+            ]
+        }
+    ],
+    "a2": [
+        {
+            "id": "MostValuable",
+            "question": "Most Valuable",
+            "type": "radio",
+            "optionValues": [
+                "1 - Psychology",
+                "2 - Sociology",
+                "3 - C.D.",
+                "4 - F.N.",
+                "5 - History",
+                "6 - Gujarati",
+                "7 - Economics",
+                "8 - Hindi",
+                "9 - English",
+                "10 - Travel & Tourism",
+                "11 - Secretarial Practice",
+                "12 - Commerce",
+                "13 - Advertising"
+            ]
+        },
+        {
+            "id": "valuable",
+            "question": "Valuable",
+            "type": "radio",
+            "optionValues": [
+                "1 - Psychology",
+                "2 - Sociology",
+                "3 - C.D.",
+                "4 - F.N.",
+                "5 - History",
+                "6 - Gujarati",
+                "7 - Economics",
+                "8 - Hindi",
+                "9 - English",
+                "10 - Travel & Tourism",
+                "11 - Secretarial Practice",
+                "12 - Commerce",
+                "13 - Advertising"
+            ]
+        },
+        {
+            "id": "LessValuable",
+            "question": "Less Valuable",
+            "type": "radio",
+            "optionValues": [
+                "1 - Psychology",
+                "2 - Sociology",
+                "3 - C.D.",
+                "4 - F.N.",
+                "5 - History",
+                "6 - Gujarati",
+                "7 - Economics",
+                "8 - Hindi",
+                "9 - English",
+                "10 - Travel & Tourism",
+                "11 - Secretarial Practice",
+                "12 - Commerce",
+                "13 - Advertising"
+            ]
+        }
+    ],
+    "a9": [
+        {
+            "id": "deptname",
+            "question": "Department",
+            "type": "radio",
+            "optionValues": [
+                "Canteen",
+                "Library",
+                "Office",
+                "Gym/Fitness Center",
+                "Sport",
+                "Health Services"
+            ]
+        },
+        {
+            "id": "a1",
+            "question": "Quality of food",
+            "type": "radio",
+            "optionValues": [
+                "1 - Excellent",
+                "2 - Good",
+                "3 - Average",
+                "4 - Poor",
+                "5 - Very Poor"
+            ]
+        },
+        {
+            "id": "a2",
+            "question": "Price of food",
+            "type": "radio",
+            "optionValues": [
+                "1 - Excellent",
+                "2 - Good",
+                "3 - Average",
+                "4 - Poor",
+                "5 - Very Poor"
+            ]
+        },
+        {
+            "id": "a3",
+            "question": "Variety of food",
+            "type": "radio",
+            "optionValues": [
+                "1 - Excellent",
+                "2 - Good",
+                "3 - Average",
+                "4 - Poor",
+                "5 - Very Poor"
+            ]
+        },
+        {
+            "id": "a4",
+            "question": "Service",
+            "type": "radio",
+            "optionValues": [
+                "1 - Excellent",
+                "2 - Good",
+                "3 - Average",
+                "4 - Poor",
+                "5 - Very Poor"
+            ]
+        },
+        {
+            "id": "a5",
+            "question": "Hygiene",
+            "type": "radio",
+            "optionValues": [
+                "1 - Excellent",
+                "2 - Good",
+                "3 - Average",
+                "4 - Poor",
+                "5 - Very Poor"
+            ]
+        }
+    ]
+}

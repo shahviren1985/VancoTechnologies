@@ -1,0 +1,86 @@
+﻿<div class="row">
+    <div class="col col-lg-6">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">Generate Seat Numbers</h3>
+            </div>
+            <form id="SeatNumber">
+                <div class="box-body">
+                    <div class="form-group">
+                        <label for="course">Course</label>
+                        <select name="course" ng-change="GetSemester()" ng-model="user.course" id="course"
+                                class="form-control" data-validation="required"
+                                data-validation-error-msg="The Course field is required">
+                            <option value="" selected="selected">--- Select ---</option>
+                            <option value="bsc">BSc</option>
+                            <option value="msc">MSc</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="specialization">Specialization</label>
+                        <select name="specialization" ng-model="user.specialization" id="specialization" class="form-control" data-validation="required" data-validation-error-msg="The Specialization field is required">
+                            <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                            <option value="regular">Regular</option>
+                            <option value="honors">Honors</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sem">Semester</label>
+                        <select name="sem" id="sem" ng-model="user.sem" class="form-control" data-validation="required" data-validation-error-msg="The Semester field is required">
+                            <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="examType">Exam Type</label>
+                        <select name="examType" ng-model="user.examType" id="examType" class="form-control" data-validation="required" data-validation-error-msg="The Exam Type field is required">
+                            <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                            <option value="Regular">Regular</option>
+                            <option value="ATKT">ATKT</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="box-footer">
+                    <div class="form-group">
+                        <button type="submit" id="Generate" ng-click="GenerateRollNumber()" class="btn btn-primary pull-right" value="Generate" style="margin-left: 10px;">Generate</button>
+                        <button type="submit" value="PrintWithRollNumber" id="PrintWithRollNumber" class="btn btn-primary pull-right" style="margin-left: 10px;">Print with Roll Numbers</button>
+                        <button type="submit" value="Print" id="Print" class="btn btn-primary pull-right">Print</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col col-lg-6">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">Generated seat numbers</h3> <!---->
+            </div>
+            <div class="box-body">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Roll Number</th>
+                            <th>Seat Number</th>
+                            <th>Name</th>
+                            <th>Specialization</th>
+                        </tr>
+                    </thead>
+                    <tbody style="max-height: 500px; overflow: auto;">
+                        <tr ng-repeat="Stud in FinalStudentData">
+                            <td>{{Stud.RollNumber}}</td>
+                            <td>{{Stud.SeatNumber}}</td>
+                            <td>{{Stud.LastName}} {{Stud.FirstName}} {{Stud.FatherName}} {{Stud.MotherName}}</td>
+                            <td>{{Stud.Specialisation}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div> <!---->
+            <div class="box-footer">
+                <div class="form-group">
+                    <button type="button" id="SaveRecordbtn" ng-click="SaveRecord()" class="btn btn-primary pull-right" style="margin-left: 10px; display:none">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

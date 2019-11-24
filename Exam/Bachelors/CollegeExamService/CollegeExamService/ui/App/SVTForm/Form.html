@@ -1,0 +1,66 @@
+﻿<div class="row">
+    <div class="col col-md-12">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">{{this.PageDetail.PageTitle}}</h3>
+            </div>
+            <form id="PageForm" ng-submit="this.PageDetailFormSubmit()">
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col col-lg-12 form-group" ng-if="this.PageDetail.Stram">
+                            <label for="stream">Stream</label>
+                            <select id="stream" name="stream" ng-change="this.GetSemester()" ng-model="this.PageDetail._Stram" ng-required="this.PageDetail.Stram"class="form-control">
+                                <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                                <option value="BSc">BSc</option>
+                                <option value="MSc">MSc</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group" ng-if="this.PageDetail.Course">
+                            <label for="course">Course</label>
+                            <select id="course" name="course" ng-model="this.PageDetail._Course" ng-required="this.PageDetail.Course" class="form-control">
+                                <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                                <option value="Regular">Regular</option>
+                                <option value="Honors">Honors</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group" ng-if="this.PageDetail.Semester">
+                            <label for="semester">Semester</label>
+                            <select id="semester" name="semester" ng-model="this.PageDetail._Semester" ng-required="this.PageDetail.Semester" ng-change="this.GetSpecialization()" class="form-control">
+                                <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group" ng-if="this.PageDetail.ExamType">
+                            <label for="examType">Exam Type</label>
+                            <select id="examType" name="examType" ng-model="this.PageDetail._ExamType" ng-required="this.PageDetail.ExamType" class="form-control">
+                                <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                                <option value="Regular">Regular</option>
+                                <option value="ATKT">ATKT</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group" ng-if="this.PageDetail.Specialization">
+                            <label for="sem">Specialization</label>
+                            <select disabled="disabled" name="Specialization" ng-model="this.PageDetail._Specialization" ng-required="this.PageDetail.Specialization" id="Specialization" class="form-control">
+                                <option selected="selected" disabled="disabled" value="">--- Select ---</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group" ng-if="this.PageDetail.Paper">
+                            <label for="paper">Paper</label>
+                            <select disabled="disabled" id="paper" name="Paper" ng-model="InternalMark.paper" ng-required="this.PageDetail.Paper" class="form-control">
+                                <option selected="selected" disabled="disabled" value="">--- Select ---</option>
+                            </select>
+                        </div>
+                        <div class="col col-md-12 form-group">
+                            <button type="submit" class="btn btn-primary pull-right">Get</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <style>
+            div.form-error {
+                background-color: #f2dede !important;
+                margin: 15px !important;
+            }
+        </style>
+    </div>
+</div>

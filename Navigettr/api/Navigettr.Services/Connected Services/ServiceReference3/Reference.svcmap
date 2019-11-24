@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="72acfaa3-e52a-45bb-a2b3-332942a9419d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://techdev2.corpgov.tech/API/SurveyUserManagmentApi.SVC/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="ee98ee81-8fa2-4703-bf19-16922dceb483" SourceId="1" SourceUrl="https://techdev2.corpgov.tech/API/SurveyUserManagmentApi.SVC/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="396bab37-4ff7-416c-b8f9-c2bf9d6007f6" SourceId="1" SourceUrl="https://techdev2.corpgov.tech/API/SurveyUserManagmentApi.SVC/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="c32e447b-5239-428d-8cac-3a324e6375fa" SourceId="1" SourceUrl="https://techdev2.corpgov.tech/API/SurveyUserManagmentApi.SVC/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

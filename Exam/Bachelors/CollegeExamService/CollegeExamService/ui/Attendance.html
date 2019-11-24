@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Summary</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="CustomJs/urlConfig.js"></script>
+    <script src="CustomJs/Index.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ["timeline"] });
+
+        function PopulateGraph(month, year) {
+            $("#current_month").html("Loading attendance data...");
+            CallAPI('Attendance/GetAttendanceSummary?bioEmpCode=' + getUrlVars()["bioEmpCode"] + '&year=' + year + '&month=' + month, 'GET', '').done(function (data) {
+                var currentMonth = [];
+
+                for (i = 0; i < data.length; i++) {
+                    var d = {};
+                    d.punchin = new Date(data[i].punchin);
+                    d.punchout = new Date(data[i].punchout);
+                    currentMonth.push(d);
+                }
+
+                if (currentMonth.length > 1) {
+                    drawChart(currentMonth, "current_month");
+                }
+                else {
+                    $("#current_month").html("System doesn't have attendance data for selected month/year");
+                }
+            });
+        }
+
+        function drawChart(data, id) {
+
+            var container = document.getElementById(id);
+            var chart = new google.visualization.Timeline(container);
+            var dataTable = new google.visualization.DataTable();
+            dataTable.addColumn({ type: 'string', id: 'Room' });
+            dataTable.addColumn({ type: 'string', id: 'Name' });
+            dataTable.addColumn({ type: 'date', id: 'Start' });
+            dataTable.addColumn({ type: 'date', id: 'End' });
+
+            for (i = 0; i < data.length; i++) {
+                if (data[i].punchout.getYear() == -1899) {
+                    data[i].punchout = data[i].punchin;
+                }
+
+                var yAxis = data[i].punchin.getDate() + "-" + parseInt(data[i].punchin.getMonth() + 1) + "-" + data[i].punchin.getFullYear();
+                var inTime = new Date(0, 0, 0, data[i].punchin.getHours(), data[i].punchin.getMinutes(), data[i].punchin.getSeconds());
+                var outTime = new Date(0, 0, 0, data[i].punchout.getHours(), data[i].punchout.getMinutes(), data[i].punchout.getSeconds());
+                dataTable.addRows([
+                    [yAxis, '', inTime, outTime]]);
+            }
+
+            var options = {
+                timeline: { colorByRowLabel: true, barLabelStyle: { fontSize: 6 } }
+            };
+
+            chart.draw(dataTable, options);
+        }
+
+        function GetAttendance() {
+            PopulateGraph($("#month :selected").val(), $("#year :selected").val());
+        }
+
+        $(document).ready(function () {
+            $("#month").val(new Date().getMonth() + 1);
+            $("#year").val(new Date().getFullYear());
+            PopulateGraph($("#month :selected").val(), $("#year :selected").val());
+        });
+
+    </script>
+    <style>
+        body{padding: 20px;}
+        #current_month{margin-top: 20px;}
+        select {
+            margin: 5px;
+            width: 150px;
+            padding: 5px 35px 5px 5px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            height: 34px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+    </style>
+</head>
+<body>
+    <select id="month" class="selectpicker">
+        <option value="-1">--Select Month--</option>
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="8">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+    </select>
+    <select id="year" class="selectpicker">
+        <option value="-1">--Select Year--</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+    </select>
+    <button id="btnGetAttendance" onclick="GetAttendance()" class="btn btn-primary">View Attendance</button>
+    <div id="current_month" style="height: 300px; width: 500px"></div>
+</body>
+</html>

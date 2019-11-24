@@ -1,0 +1,181 @@
+[
+    {
+        "id": "a1",
+        "question": "SINCERITY IN WORK",
+        "type": "radio",
+        "optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+    },
+	{
+        "id": "a2",
+        "question": "RESPECTS COLLEAGUES / PEERS",
+        "type": "radio",
+        "optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+    },
+  {
+    "id": "a3",
+    "question": "RESPECTS SUPPORT STAFF",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a4",
+    "question": "DEVELOPS AND MAINTAINS EFFECTIVE WORKING RELATIONSHIP",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a5",
+    "question": "DEVELOPS AND MAINTAINS EFFECTIVE SOCIAL RELATIONS",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a6",
+    "question": "WILLING TO LEARN NEW SKILLS",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a7",
+    "question": "HAS SUBJECT /FIELD COMPETENCY UNDERTAKES CONTINUOUS PROFESSIONAL DEVELOPMENT (Seminar ETC)",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a8",
+    "question": "UNDERTAKES ADMINISTRATIVE TASKS RELATED TO DEVELOPMENT",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },{
+    "id": "a9",
+    "question": "UNDERTAKE ADMINISTRATIVE TASKS RELATED TO INSTITUTION SUBJECT",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a10",
+    "question": "ATTENDS / PARTICIPATES IN SEMINAR / WORKSHOP / CONFERENCES",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a11",
+    "question": "EVALUATION METHOD",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a12",
+    "question": "CLASS CONTROL",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a13",
+    "question": "VOICE MODULATION",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a14",
+    "question": "PUNCTUALITY",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a15",
+    "question": "OVERALL IMPRESSION",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  }
+]

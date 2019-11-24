@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:clickable="true"
+    tools:context=".Fragment.SearchresultMoneyFragment">
+
+    <LinearLayout
+        android:id="@+id/LL_sort_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/LL_sort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@color/color_white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="7dp">
+
+            <ImageView
+                android:id="@+id/ic_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_upward" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="SORT"
+                android:textColor="@color/color_purple"
+                android:textSize="@dimen/font_size_16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LL_filter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@color/color_white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="7dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_filter_blue" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="FILTER"
+                android:textColor="@color/color_purple"
+                android:textSize="@dimen/font_size_16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/View"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="5dp"
+        android:background="@color/color_hint_grey"
+        app:layout_constraintTop_toBottomOf="@+id/LL_sort_filter" />
+
+    <LinearLayout
+        android:id="@+id/LL_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/View"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/currentlocation_blue" />
+
+        <TextView
+            android:id="@+id/tv_locationdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/searching_loc"
+            android:maxLines="1"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/font_size_14dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LL_bankData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/LL_location">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/iv_brand_logo"
+                android:layout_width="0dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:padding="3dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:orientation="vertical"
+                android:paddingHorizontal="5dp"
+                android:paddingVertical="5dp">
+
+                <TextView
+                    android:id="@+id/tv_brandName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/font_size_18dp" />
+
+                <TextView
+                    android:id="@+id/tv_convert_currency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/color_green"
+                    android:textSize="@dimen/font_size_14dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_totalLocations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="7dp"
+            android:text="-"
+            android:textColor="@color/color_purple"
+            android:textSize="@dimen/font_size_14dp" />
+
+        <View
+            android:id="@+id/View1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginVertical="3dp"
+            android:background="@color/color_hint_grey" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_available_providers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/font_size_14dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LL_bankData" />
+
+    <ImageView
+        android:id="@+id/ic_all_location"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:padding="10dp"
+        android:src="@drawable/navigate_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_available_providers"
+        app:layout_constraintTop_toBottomOf="@+id/LL_bankData" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_available_providers">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_searchdata"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_loadmore" />
+
+        <TextView
+            android:id="@+id/tv_loadmore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@color/color_white"
+            android:text="@string/btn_loadmore"
+            android:textColor="@color/color_dark_grey"
+            android:textSize="@dimen/font_size_16dp"
+            android:visibility="gone"
+            android:gravity="center"/>
+
+        <ProgressBar
+            android:id="@+id/loadmore_progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:paddingBottom="20dp"
+            android:layout_gravity="center"/>
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_msg_noData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="fdfsdf"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/font_size_18dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

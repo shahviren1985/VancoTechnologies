@@ -1,0 +1,4 @@
+D:\VancoTechnologies\Code\QPM\Util\bin\Release\Util.dll
+D:\VancoTechnologies\Code\QPM\Util\bin\Release\Util.pdb
+D:\VancoTechnologies\Code\QPM\Util\obj\Release\Util.dll
+D:\VancoTechnologies\Code\QPM\Util\obj\Release\Util.pdb

@@ -1,0 +1,118 @@
+[
+    {
+        "id": "a1",
+        "question": "I am treated with respect at this college",
+        "type": "radio",
+        "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+    },
+	{
+        "id": "a2",
+        "question": "I receive recognition for doing good work",
+        "type": "radio",
+        "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+    },
+  {
+    "id": "a3",
+    "question": "I know what is expected of me in my work",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a4",
+    "question": "College guidelines and processes for budget development are clearly communicated",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a5",
+    "question": "The college leaders encourage all members of the college community to take initiative",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a6",
+    "question": "The college administrators and Heads consistently execute the college policies",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a7",
+    "question": "The administration is teacher friendly",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a8",
+    "question": "Provisions for professional development are non-discriminatory and fair",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },{
+    "id": "a9",
+    "question": "My Principal / HOD / Head encourages and supports my professional growth and development",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  }
+]

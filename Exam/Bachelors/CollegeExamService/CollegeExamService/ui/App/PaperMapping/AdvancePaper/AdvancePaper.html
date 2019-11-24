@@ -1,0 +1,61 @@
+﻿
+<div ng-include="GetString() | trusted"></div>
+<style>
+    #divToScroll {
+        overflow-x: scroll;
+        margin-left: 2em;
+    }
+
+    /*.headcol {
+        position: absolute;
+        width: 300px;
+        left: 0;
+    }*/
+</style>
+<script>
+    $(function () {
+        $("[data-toggle='tooltip']").tooltip();
+    });
+</script>
+
+<div class="box box-primary" id="PageDetailData" style="display:none">
+    <form id="StudentInternalMark">
+        <div class="box-header with-border">
+            <h3 id="TitleForSubject1" class="box-title">Advance Paper Mapping - Elective Selection</h3> <!---->
+        </div>
+        <div class="box-body" id="divToScroll">
+            <table class="table table-hover" style="text-align:center">
+                <tr>
+                    <th>#</th>
+                    <th class="headcol" style="text-align:left">Name</th>
+                    <th>Seat Number</th>
+                    <th ng-repeat="subject in HeaderData">
+                        <center>
+                            {{subject.paperTitle}}<br />
+                            ({{subject.paperType}})
+                        </center>
+                    </th>
+                </tr>
+                <tbody style="max-height: 500px; overflow: auto;">
+                    <tr ng-repeat="student in array">
+                        <td>{{$index+1}}</td>
+                        <td class="headcol" style="text-align:left">{{student.LastName}} {{student.FirstName}} {{student.FatherName}} {{student.MotherName}}</td>
+                        <td nowrap>{{student.SeatNumber}}</td>
+                        <td ng-repeat="subject in student.Subjects">
+                            <center>
+                                <input type='checkbox' data-toggle='tooltip' data-placement='top'
+                                       data-original-title="{{HeaderData[$index].paperTitle}} : {{subject._Code}}" class='checkbox'
+                                       ng-checked="subject._IsChecked" ng-change="IsMarkEntryDone(subject)" ng-model="subject._IsChecked" />
+                            </center>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> <!---->
+        <div class="box-footer">
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary pull-right">Save Papers</button>
+            </div>
+        </div>
+    </form>
+</div>

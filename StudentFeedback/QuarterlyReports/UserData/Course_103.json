@@ -1,0 +1,53 @@
+[
+  {
+    "Course": "Fashion Designing",
+    "SubCourse": [
+      "Ist Year", "2nd Year", "3rd Year"
+    ]
+  },
+  {
+    "Course": "Interior Designing",
+    "SubCourse": [
+      "Ist Year", "2nd Year", "3rd Year"
+    ]
+  },
+   {
+    "Course": "P.G. ECCE",
+    "SubCourse": [
+      "Regular"
+    ]
+  },
+  {
+    "Course": "Diploma in ECCE",
+    "SubCourse": [
+      "Reg",
+      "OM",
+      "TTM"
+    ]
+  },
+  {
+    "Course": "Banking",
+    "SubCourse": [
+      "Regular"
+    ]
+  },
+  {
+    "Course": "Counselling",
+    "SubCourse": [
+      "Ist Year" ,
+	  "IInd Year"
+    ]
+  },
+  {
+    "Course": "Nutrition & Fitness",
+    "SubCourse": [
+      "Regular"
+    ]
+  },
+  {
+    "Course": "Home Science",
+    "SubCourse": [
+      "Regular"
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+    <item android:id="@+id/login"
+        android:icon="@drawable/ic_login"
+        android:title="Login"/>
+    <item android:id="@+id/register"
+        android:icon="@drawable/ic_register"
+        android:title="Register"/>
+    <item android:id="@+id/rewards"
+        android:icon="@drawable/ic_rewards"
+        android:title="Rewards"/>
+    <item android:id="@+id/alerts"
+        android:icon="@drawable/ic_alerts"
+        android:title="Alerts"
+        android:visible="false"/>
+    <item android:id="@+id/notifications"
+        android:icon="@drawable/ic_notifications"
+        android:title="Notifications"
+        android:visible="false"/>
+    <item android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Logout"/>
+
+</menu>

@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html ng-app="PrintSeatingArragement">
+<head>
+    <title>Print - Timetable</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Main CSS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="css/paper.css" rel="stylesheet" />
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="CustomJs/CommonConfig.js"></script>
+    <script src="CustomJs/angular.js"></script>
+    <script src="https://cdn.rawgit.com/peterkhayes/multisort/master/multisort.js"></script>
+    <script src="CustomJs/app.js"></script>
+
+    <style>
+        @page {
+            size: A4 landscape;
+        }
+    </style>
+    <style>
+        .table th, .table td {
+            padding: 6px;
+            font-size: 13px;
+            vertical-align:middle;
+        }
+
+        .table-bordered th, .table-bordered td {
+            border: 1px solid black;
+        }
+        .table thead th {
+            vertical-align: bottom;
+            border-bottom: 1px solid black;
+        }
+        @media print {
+            .table-bordered th, .table-bordered td {
+                border: 1px solid black !important;
+                -webkit-print-color-adjust: exact;
+            }
+            #printHide {
+                display:none;
+            }
+        }
+    </style>
+
+    <!-- Font-icon css-->
+    <script type="text/javascript">
+
+        var app = angular.module("PrintSeatingArragement", []);
+        app.controller('PrintSeatingArragementCtrl', function ($scope) {
+            var UserDetails = jQuery.parseJSON(localStorage.getItem('LoggedUser'));
+            //$scope.templateUrl = function () {
+            //    console.log(CommonPath + '/' + UserDetails.HeaderTemplate)
+            //    return CommonPath + '/' + UserDetails.HeaderTemplate;
+            //}
+
+            function getUrlVars() {
+                var vars = [], hash;
+                var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+                for (var i = 0; i < hashes.length; i++) {
+                    hash = hashes[i].split('=');
+                    vars.push(hash[0]);
+                    vars[hash[0]] = hash[1];
+                }
+                return vars;
+            }
+            var PrintTimeTableId = getUrlVars()["PrintTimeTableId"];
+            function CreateIndianDateform(y) {
+                var z = y.toString();
+                var x = new Date(z);
+                var dd = x.getDate();
+                var mm = x.getMonth() + 1;
+                var yyyy = x.getFullYear();
+                if (dd < 10) {
+                    dd = '0' + dd;
+                }
+                if (mm < 10) {
+                    mm = '0' + mm;
+                }
+                var today = dd + '/' + mm + '/' + yyyy;
+                return today;
+            };
+
+            function CreateTimeFormate(x) {
+                var str = x.toString();
+                if (str == '0' || str == '00' || str == '000') {
+                    str = '0000'
+                }
+                var len = str.length;
+                var time = str.substring(0, len - 2) + ":" + str.substring(len - 2);
+                return time;
+            }
+
+            function ProcessArray(SortedPrint) {
+                var UniqueArray = [];
+                for (var sp = 0; sp < SortedPrint.length; sp++) {
+                    var IndexISView = UniqueArray.findIndex(x=>x==SortedPrint[sp].ClassRoom);
+                    if(IndexISView==-1)
+                    {
+                        UniqueArray.push(SortedPrint[sp].ClassRoom);
+                        SortedPrint[sp].IsToView=true;
+                        SortedPrint[sp].TotalCount=SortedPrint.filter(x=>x.ClassRoom==SortedPrint[sp].ClassRoom).length;
+                    }else{
+                        SortedPrint[sp].IsToView=false;
+                    }
+                }
+                return SortedPrint;
+            }
+            $scope.PrintTimeTableArray=[];
+            function GenerateHtmlTable(ArrayToPrint) {
+                const criteria = ['ClassRoom'];
+                var SortedPrint = multisort($scope.SeatingArrangementToPrint.SeatingArrange, criteria);
+                $('#TimeTableArea').css('display', '');
+                console.log(ProcessArray(SortedPrint))
+                $scope.PrintTimeTableArray=ProcessArray(SortedPrint);
+                $scope.$apply();
+                $('.overlay').css('display', 'none');
+                //window.print();
+            }
+
+            $.ajax({
+                url: CommonPath + 'api/Professor/SelectAllItem?FileName=SeatingArrangement.json&UserGroup=' + UserDetails.UserGroup,
+                type: 'GET',
+                dataType: 'json', // added data type
+                success: function (res) {
+                    var JsonData = JSON.parse(res)
+                    console.log(JsonData);
+                    $scope.SeatingArrangementToPrint = JsonData[parseInt(PrintTimeTableId)]
+                    GenerateHtmlTable($scope.SeatingArrangementToPrint)
+                }
+            });
+
+        })
+
+
+    </script>
+</head>
+<body class="A4 landscape" ng-controller="PrintSeatingArragementCtrl">
+    <section class="sheet" style="padding:15px">
+        <article>
+            <div class="overlay">
+                <div class="m-loader mr-4">
+                    <svg class="m-circular" viewBox="25 25 50 50">
+                        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+                    </svg>
+                </div>
+                <h3 class="l-text">Loading</h3>
+            </div>
+            <div class="col-md-12">
+                <ng-include src="templateUrl()"></ng-include>
+            </div>
+            <table class="table table-hover table-bordered" id="sampleTable">
+                <thead>
+                    <tr>
+                        <th style="vertical-align: middle; text-align: center;min-width:200px">Class Room</th>
+                        <th style="vertical-align: middle; text-align: center;min-width:200px">Student of Class</th>
+                        <th style="vertical-align: middle; text-align: center;min-width:200px">Roll No</th>
+                        <th style="vertical-align: middle; text-align: center;min-width:200px">Total</th>
+                        <th style="vertical-align: middle; text-align: center;min-width:200px">Total Student In Class</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyOfExamList" style="text-align: center;">
+                    <tr ng-repeat="pt in PrintTimeTableArray">
+                        <td style="vertical-align: middle; text-align: center;min-width:200px" ng-if="pt.IsToView" rowspan="{{pt.TotalCount}}">{{pt.ClassRoom}}</td>
+                        <td style="vertical-align: middle; text-align: center; min-width: 200px; ">{{pt.StudentOfClass}}</td>
+                        <td style="vertical-align: middle; text-align: center; min-width: 200px; ">{{pt.FromRollNumber}} To {{pt.ToRollNumber}}</td>
+                        <td style="vertical-align: middle; text-align: center; min-width: 200px; ">{{(pt.ToRollNumber+1) - (pt.FromRollNumber)}}</td>
+                        <td style="vertical-align: middle; text-align: center; min-width: 200px; " ng-if="pt.IsToView" rowspan="{{pt.TotalCount}}">{{pt.TotalStudent}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="row" style="padding-top:100px">
+                <div class="col-md-10">
+                </div>
+                <div class="col-md-2">
+                    Exam Incharge
+                </div>
+            </div>
+            <div class="row" style="padding-top:30px" id="printHide">
+                <div class="col-md-10">
+                </div>
+                <div class="col-md-2">
+                    <a class="btn btn-primary" onclick="tableToExcel()" style="color:white"><i class="fa fa-lg fa-file-excel-o" style="margin-top: -3px;"></i> Download</a>
+                </div>
+            </div>
+        </article>
+    </section>
+
+</body>
+</html>

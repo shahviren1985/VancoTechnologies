@@ -1,0 +1,217 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feedback System - Dashboard</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/adminStyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script type="text/javascript" src="jquery/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="js/GraphDashboard.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+        @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+        .white-space_Chart {
+            background: #fff;
+            -webkit-box-shadow: 0 0 6px #b1aaaa;
+            -moz-box-shadow: 0 0 6px #b1aaaa;
+            box-shadow: 0 0 1px #b1aaaa;
+            margin: 0 0 20px;
+            display: inline-block;
+            width: 100%;
+            padding: 15px;
+        }
+
+        .QuestionDivClass {
+            text-align: center;
+            padding-bottom: 10px;
+            font-weight: 600;
+        }
+
+        p:not(:last-child) {
+            margin: 0 0 20px;
+        }
+
+        main {
+            max-width: 100%;
+            padding: 10px;
+        }
+
+        section {
+            display: none;
+            padding: 20px 0 0;
+            border-top: 1px solid #abc;
+        }
+
+        input {
+            display: none;
+        }
+
+        .tab-content {
+            padding-top: 15px;
+        }
+
+        label {
+            display: inline-block;
+            margin: 0 0 -1px;
+            padding: 15px 25px;
+            font-weight: 600;
+            text-align: center;
+            color: #abc;
+            border: 1px solid transparent;
+        }
+
+            label:before {
+                font-family: fontawesome;
+                font-weight: normal;
+                margin-right: 10px;
+            }
+
+
+
+            label:hover {
+                color: #789;
+                cursor: pointer;
+            }
+
+        input:checked + label {
+            color: #0af;
+            border: 1px solid #abc;
+            border-top: 2px solid #0af;
+            border-bottom: 1px solid #fff;
+        }
+
+        #tab1:checked ~ #content1,
+        #tab2:checked ~ #content2,
+        #tab3:checked ~ #content3,
+        #tab4:checked ~ #content4 {
+            display: block;
+        }
+
+        @media screen and (max-width: 800px) {
+            label {
+                font-size: 0;
+            }
+
+                label:before {
+                    margin: 0;
+                    font-size: 18px;
+                }
+        }
+
+        @media screen and (max-width: 500px) {
+            label {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader-img"><img src="images/preloader.gif" /></div>
+    <header>
+        <div class="row">
+            <div class="col-xs-12 col-md-9 text-left">
+                <div class="row">
+                    <a class="page-ttl col-xs-9 col-md-4" href="Dashboard.html">Feedback System</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 text-right">
+                <span id="userName"> </span> &nbsp;
+                <button class="btn btn-default" id="logout">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="col-xs-12 col-md-3">
+        <div class="panel-body left-nav">
+            <ul class="plan plan2">
+                <li>
+                    <a href="GraphDashboard.html"><div><input checked type='radio' /><label for='Dashboard'><span>Student Feedback Dashboard </span> <span> </span> </label></div></a>
+                </li>
+                <li>
+                    <a href="StaffDashboard.html"><div><input type='radio' /><label for='Dashboard'><span>Staff Feedback Dashboard</span> <span> </span> </label></div></a>
+                </li>
+                <li>
+                    <a href="UploadFeedback.html"><div><input type='radio' /><label for='Reports'><span> Upload Feedbacks </span> <span> </span> </label></div></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-md-9 right-block">
+        <h4 class="panel-title">Dashboard</h4>
+        <div class="col-xs-12 white-space">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="#tabStudent">Student</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade active in" id="tabStudent">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group row">
+                                <label class="col-xs-12 col-md-3" style=" padding-top: 5px; color: black;"><b>Semester</b></label>
+                                <div class="col-xs-12 col-md-9">
+                                    <select class="form-control" id="txt_Cource" onchange="BindTeacherDetails()">
+                                        <option value="" selected="">Select Semester</option>
+                                        <option value="Even">Even</option>
+                                        <option value="Odd">Odd</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group row">
+                                <label class="col-xs-12 col-md-3" style=" padding-top: 5px; color: black;"><b>Teacher</b></label>
+                                <div class="col-xs-12 col-md-9">
+                                    <select class="form-control" id="dd_Teacher" disabled>
+                                        <option value="" selected="">Select Teacher</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div><div class="col-md-4">
+                            <div class="form-group row">
+                                <label class="col-xs-12 col-md-3" style=" padding-top: 5px; color: black;"><b>Academic Year</b></label>
+                                <div class="col-xs-12 col-md-9">
+                                    <select class="form-control" id="ddAcademicYear">
+                                        <option selected="selected">2018-2019</option>
+                                        <option>2017-2018</option>
+                                        <option>2016-2017</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group row" style="margin-left: 15px;">
+                            <button type="button" style="margin-top: 15px;" onclick="GetTeacherGraphByTeacherAndCourse()" id="btnAddEditTeacher" class="btn btn-primary">Generate Graphical Report</button>
+                            <button type="button" style="margin-top: 15px;" onclick="GetTeacherReportCard1()" id="btnRCone" class="btn btn-primary">Performance Report Card 1</button>
+                            <button type="button" style="margin-top: 15px;" onclick="GetTeacherReportCard2()" id="btnRCtwo" class="btn btn-primary">Performance Report Card 2</button>
+                            <button type="button" style="margin-top: 15px;" onclick="GetAllReports1InExcel()" id="btnRCthree" class="btn btn-primary">Download All Report Card 1 (Excel)</button>
+                            <button type="button" style="margin-top: 15px;" onclick="GetAllReports2InExcel()" id="btnRCfour" class="btn btn-primary">Download All Report Card 2 (Excel)</button>
+                            <button type="button" style="margin-top: 15px;" onclick="GetAllReports1InPDF()" id="btnRCfive" class="btn btn-primary">Download All Report Card 1 (PDF)</button>
+                            <button type="button" style="margin-top: 15px;" onclick="GetAllReports2InPDF()" id="btnRCsix" class="btn btn-primary">Download All Report Card 2 (PDF)</button>
+                        </div>
+
+                    </div>
+                    <div class="row" id="GraphAppendGrid_Student"></div>
+                    <div class="row" id="GraphAppendGrid_Customer"></div>
+                    <div class="row" id="StudentDownloadButton" style="display:none">
+                        <div class="col-md-12">
+                            <button type="button" style="float:right" id="btnDownloadStudent" onclick="DownloadExcelStudentTab()" class="btn btn-primary">Download</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/Global.js"></script>
+</body>
+</html>

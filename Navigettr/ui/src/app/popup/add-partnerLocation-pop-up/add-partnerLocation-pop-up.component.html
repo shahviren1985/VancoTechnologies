@@ -1,0 +1,275 @@
+<div
+  bsModal
+  #addItemModal="bs-modal"
+  class="modal fade"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="dialog-child-name"
+>
+  <form [formGroup]="partnerLocationForm" (ngSubmit)="onFormSubmit()">
+    <div class="modal-dialog ">
+      <ngx-loading
+        [show]="loading"
+        [config]="{ backdropBorderRadius: '3px' }"
+        [template]="customLoadingTemplate"
+      ></ngx-loading>
+      <div class="modal-content an-modal-full">
+        <div class="modal-header">
+          <h4 id="dialog-child-name" class="modal-title pull-left">
+            {{ modelTitle }}
+          </h4>
+          <button
+            type="button"
+            class="close pull-right"
+            aria-label="Close"
+            (click)="hideModal()"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body add-inner-format">
+          <div class="form-group">
+            <label for="addressline1" class="col-form-label"
+              >Address Line 1</label
+            >
+            <input
+              type="text"
+              formControlName="addressline1"
+              class="form-control"
+            />
+            <!-- <ng4geo-autocomplete
+              (componentCallback)="autoCompleteCallback1($event)"
+            ></ng4geo-autocomplete> -->
+            <div
+              *ngIf="
+                f.addressline1.invalid &&
+                (f.addressline1.dirty || f.addressline1.touched)
+              "
+              class="alert alert-danger"
+            >
+              <div
+                [hidden]="
+                  this.partnerLocationForm.controls['addressline1'].valid
+                "
+              >
+                Address Line 1 is required
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="addressline2" class="col-form-label"
+              >Address Line 2</label
+            >
+            <input
+              type="text"
+              formControlName="addressline2"
+              class="form-control"
+            />
+          </div>
+          <div class="form-group">
+            <label for="city" class="col-form-label">City</label>
+            <input type="text" formControlName="city" class="form-control" />
+            <div
+              *ngIf="f.city.invalid && (f.city.dirty || f.city.touched)"
+              class="alert alert-danger"
+            >
+              <div [hidden]="this.partnerLocationForm.controls['city'].valid">
+                City is required
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="state" class="col-form-label">State</label>
+            <input type="text" formControlName="state" class="form-control" />
+            <div
+              *ngIf="f.state.invalid && (f.state.dirty || f.state.touched)"
+              class="alert alert-danger"
+            >
+              <div [hidden]="this.partnerLocationForm.controls['state'].valid">
+                State is required
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="country" class="col-form-label">Country</label>
+            <input type="text" formControlName="country" class="form-control" />
+            <div
+              *ngIf="
+                f.country.invalid && (f.country.dirty || f.country.touched)
+              "
+              class="alert alert-danger"
+            >
+              <div
+                [hidden]="this.partnerLocationForm.controls['country'].valid"
+              >
+                Country is required
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="zip_code" class="col-form-label">Zip Code</label>
+            <input
+              type="text"
+              formControlName="zip_code"
+              class="form-control"
+            />
+            <div
+              *ngIf="
+                f.zip_code.invalid && (f.zip_code.dirty || f.zip_code.touched)
+              "
+              class="alert alert-danger"
+            >
+              <div
+                [hidden]="this.partnerLocationForm.controls['zip_code'].valid"
+              >
+                Zip Code is required
+              </div>
+            </div>
+          </div>
+          <div class="an-log-tute">
+            <div class="form-group">
+              <label for="Latitude" class="col-form-label">Latitude</label>
+              <input
+                type="text"
+                class="form-control"
+                (input)="onLatChange($event.target.value)"
+                formControlName="latitude"
+                placeholder=""
+                required
+                [readonly]="showLat"
+              />
+            </div>
+            <div class="form-group">
+              <label for="Longitude" class="col-form-label">Longitude</label>
+              <input
+                type="text"
+                class="form-control"
+                formControlName="longitude"
+                placeholder=""
+                required
+                [readonly]="showLng"
+              />
+            </div>
+            <!-- <a (click)="toggleMap()" class="active"
+              ><i class="fa fa-map fa-10x" aria-hidden="true"></i
+            ></a> -->
+            <a (click)="getLatLong()" class="active"
+              ><i class="fa fa-map fa-10x" aria-hidden="true"></i
+            ></a>
+          </div>
+          <div *ngIf="showMap" #gmap style="width:100%;height:400px"></div>
+          <div class="form-group form-group-full">
+            <label for="mobile_number" class="col-form-label"
+              >Mobile Number:</label
+            >
+            <input
+              type="text"
+              formControlName="mobile_number"
+              class="form-control"
+            />
+            <div
+              *ngIf="
+                f.mobile_number.invalid &&
+                (f.mobile_number.dirty || f.mobile_number.touched)
+              "
+              class="alert alert-danger"
+            >
+              <div
+                [hidden]="
+                  this.partnerLocationForm.controls['mobile_number'].valid
+                "
+              >
+                Mobile Number is required
+              </div>
+            </div>
+          </div>
+          <div style="width:100% !important">
+            <label class="col-form-label">Work Timings:</label>
+            <div *ngFor="let w of workingTime; let i = index">
+              <div style="width:30%;display: inline-block;">
+                <div class="outer-sign">
+                  <div
+                    style="width:100% !important"
+                    class="checksign"
+                    style="height:50px"
+                  >
+                    <input
+                      type="checkbox"
+                      (change)="w.isSelected = !w.isSelected"
+                      [checked]="w.isSelected"
+                    />
+                    {{ w.day }}
+                  </div>
+                </div>
+              </div>
+              <div style="width:30%;display: inline-block;">
+                <div class="outer-sign">
+                  <div
+                    style="width:100% !important"
+                    class="checksign"
+                    style="height:50px"
+                  >
+                    <select
+                      (change)="onStartChange($event.target.value, i)"
+                      style="width: initial;"
+                      class="form-control"
+                    >
+                      <option
+                        *ngFor="let time of w.startTime; let i = index"
+                        [ngValue]="time.id"
+                        [selected]="w.selectedStartTime === time.name"
+                      >
+                        {{ time.name }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div style="width:30%;display: inline-block;">
+                <div class="outer-sign">
+                  <div
+                    style="width:100% !important"
+                    class="checksign"
+                    style="height:50px"
+                  >
+                    <select
+                      (change)="onEndChange($event.target.value, i)"
+                      style="width: initial;"
+                      class="form-control"
+                    >
+                      <option
+                        *ngFor="let time of w.EndTime; let i = index"
+                        [ngValue]="time.id"
+                        [selected]="w.selectedEndTime === time.name"
+                      >
+                        {{ time.name }}
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer an-model-foot">
+          <button
+            type="button"
+            class="btn btn-default"
+            data-dismiss="modal"
+            (click)="hideModal()"
+          >
+            Close
+          </button>
+          <button
+            type="submit"
+            class="btn btn-primary"
+            [disabled]="!partnerLocationForm.valid"
+          >
+            Save Location
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

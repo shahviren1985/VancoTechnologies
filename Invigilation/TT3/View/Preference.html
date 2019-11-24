@@ -1,0 +1,88 @@
+﻿<!-- modal -->
+<script src="../js/plugins/bootstrap-datepicker.min.js"></script>
+
+<main class="app-content">
+    <div class="row">
+
+
+
+
+
+        <div class="app-title">
+            <div>
+                <h1><i class="fa fa-user-times"></i> Preference</h1>
+                <p><!--Modify current professor list--></p>
+            </div>
+            <ul class="app-breadcrumb breadcrumb">
+                <a class="btn btn-primary" ng-click="edit(-1)" style="color:white"><i class="fa fa-lg fa-plus" style="margin-top: -3px;"></i> Add Preference</a>
+            </ul>
+        </div>
+        <div class="col-md-12">
+            <div class="tile">
+                <div class="overlay">
+                    <div class="m-loader mr-4">
+                        <svg class="m-circular" viewBox="25 25 50 50">
+                            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="l-text">Loading</h3>
+                </div>
+                <div class="tile-body">
+                    <table class="table table-hover table-bordered" id="sampleTable">
+                        <thead>
+                            <tr role="row">
+                                <th>Sr No</th>
+                                <!--<th>User Id</th>-->
+                                <th style="width:370px;">Professor Name</th>
+                                <th>Date Of Preference</th>
+                                <th style="width:180px">Option</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="au in AllPreference">
+                                <td>{{$index + 1}}</td>
+                                <td style="text-align: left !important;">{{au.ProfessorName}}</td>
+                                <td>{{au.DateOfLeave | CustomDateForm}}</td>
+                                <td>
+                                    <a class="btn btn-primary" ng-click="edit($index)" style="color:white"><i class="fa fa-lg fa-edit" style="margin-top: -3px;"></i> Edit</a>
+                                    <a class="btn btn-primary" ng-click="delete($index)" style="color:white"><i class="fa fa-lg fa-trash" style="margin-top: -3px;"></i> Delete</a>
+                                    <!--<button class="btn btn-secondary" type="button" >Delete</button>-->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="ProfessorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-2">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel-2">
+                            {{NewProf.name}}
+                        </h4>
+                    </div>
+                    <form class="form-horizontal" id="PreferenceAddForm">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="dd_ProfName">Example select</label>
+                                <select class="form-control" data-validation="required" id="dd_ProfName"></select>
+                            </div>
+                            <div class="form-group">
+                                <label for="dd_ProfName">Example select</label>
+                                <input name="OriginalDate" data-validation="required" class="form-control" id="demoDate" type="text" placeholder="Select Date">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary" style="color:white"><i class="fa fa-lg fa-check" style="margin-top: -3px;"></i>  Save</button>
+                            <a class="btn btn-primary" style="color:white" data-dismiss="modal"><i class="fa fa-lg fa-times" style="margin-top: -3px;"></i> Cancel</a>
+                        </div>
+                    </form>
+                </div><!-- modal-content -->
+            </div><!-- modal-dialog -->
+        </div>
+
+
+    </div>
+</main>

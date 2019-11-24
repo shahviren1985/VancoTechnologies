@@ -1,0 +1,1996 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="NavigettrModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="LoginHistory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="IPAddress" Type="varchar" MaxLength="250" Nullable="false" />
+          <Property Name="LoginDate" Type="datetime" Nullable="false" />
+          <Property Name="LoginStatus" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PartnerCharges">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PartnerId" Type="int" Nullable="false" />
+          <Property Name="Frequency" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Category" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Charges" Type="float" Nullable="false" />
+          <Property Name="IsDefault" Type="bit" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PartnerDetails">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="PartnerName" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="PartnerLogoPath" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="DateExpiry" Type="datetime" />
+          <Property Name="Status" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="RedirectLink" Type="varchar(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'navigettr.dbo.PartnerLocationDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="PartnerLocationDetails">
+          <Key>
+            <PropertyRef Name="ID" />
+            
+            
+            
+            
+            
+            
+            
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PartnerId" Type="int" Nullable="false" />
+          <Property Name="AddressLine1" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="AddressLine2" Type="varchar" MaxLength="500" Nullable="false" />
+          <Property Name="City" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="State" Type="varchar" MaxLength="100" />
+          <Property Name="Country" Type="varchar" MaxLength="100" />
+          <Property Name="ZipCode" Type="varchar" MaxLength="100" />
+          <Property Name="Latitude" Type="float" />
+          <Property Name="Longitude" Type="float" />
+          <Property Name="MobileNumber" Type="varchar" MaxLength="20" />
+          <Property Name="DateCreated" Type="datetime" />
+          <Property Name="DateActivated" Type="datetime" Nullable="false" />
+          <Property Name="DateExpiry" Type="datetime" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="IFSCCode" Type="nchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="PartnerLocationWorkTime">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PartnerId" Type="int" />
+          <Property Name="LocationId" Type="int" />
+          <Property Name="WorkDay" Type="varchar" MaxLength="500" />
+          <Property Name="WorkStartTime" Type="varchar" MaxLength="100" />
+          <Property Name="WorkEndTime" Type="varchar" MaxLength="100" />
+          <Property Name="Status" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PartnerOffers">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PartnerId" Type="int" Nullable="false" />
+          <Property Name="OfferName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="OfferType" Type="varchar" MaxLength="5" Nullable="false" />
+          <Property Name="OfferText" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="OfferStartDate" Type="datetime" Nullable="false" />
+          <Property Name="OfferEndDate" Type="datetime" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="LastModfied" Type="datetime" Nullable="false" />
+          <Property Name="DateActivation" Type="datetime" Nullable="false" />
+          <Property Name="DateExpiry" Type="datetime" Nullable="false" />
+          <Property Name="offerImage" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="PartnerRates">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PartnerId" Type="int" Nullable="false" />
+          <Property Name="FromRate" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="ToRate" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Guaranteed" Type="float" Nullable="false" />
+          <Property Name="Indicative" Type="float" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="LastModified" Type="datetime" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="RateType" Type="nchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Roles">
+          <Key>
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="RoleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RoleName" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SystemParam">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PartnerId" Type="int" Nullable="false" />
+          <Property Name="Key" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="DisplayValue" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="Value" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="ParentId" Type="int" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserDetails">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LoginType" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="100" />
+          <Property Name="RoleId" Type="int" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="EmailAddress" Type="varchar" MaxLength="250" />
+          <Property Name="MobileNumber" Type="varchar" MaxLength="50" />
+          <Property Name="FirstName" Type="varchar" MaxLength="50" />
+          <Property Name="LastName" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'navigettr.dbo.UserLocationTracker' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="UserLocationTracker">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="PartnerId" />
+            <PropertyRef Name="LocationId" />
+            <PropertyRef Name="ReachedDestinationAt" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="PartnerId" Type="int" Nullable="false" />
+          <Property Name="LocationId" Type="int" Nullable="false" />
+          <Property Name="ReachedDestinationAt" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserNotifications">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="NotificationText" Type="varchar" MaxLength="200" Nullable="false" />
+          <Property Name="NotificationType" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="IsRead" Type="bit" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="DateRead" Type="datetime" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'navigettr.dbo.UserQRCodeTracker' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="UserQRCodeTracker">
+          <Key>
+            <PropertyRef Name="PartnerId" />
+            <PropertyRef Name="TransactionAmount" />
+            <PropertyRef Name="FromCurrency" />
+            <PropertyRef Name="ToCurrency" />
+            <PropertyRef Name="DateScanned" />
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="LocationId" />
+          </Key>
+          <Property Name="PartnerId" Type="int" Nullable="false" />
+          <Property Name="TransactionAmount" Type="float" Nullable="false" />
+          <Property Name="FromCurrency" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="ToCurrency" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="DateScanned" Type="datetime" Nullable="false" />
+          <Property Name="UserId" Type="int" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LocationId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserReminders">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="RateCondition" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Rate" Type="float" Nullable="false" />
+          <Property Name="Distance" Type="float" Nullable="false" />
+          <Property Name="DateCreated" Type="datetime" Nullable="false" />
+          <Property Name="Status" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'navigettr.dbo.UserRewardPoints' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="UserRewardPoints">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="TransactionId" />
+            <PropertyRef Name="RewardPointsEarned" />
+            <PropertyRef Name="DateEarned" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="TransactionId" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="RewardPointsEarned" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="DateEarned" Type="datetime" Nullable="false" />
+          <Property Name="Comments" Type="varchar(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="UserSearchTracker">
+          <Key>
+            <PropertyRef Name="City" />
+            <PropertyRef Name="Country" />
+            <PropertyRef Name="ZipCode" />
+            <PropertyRef Name="Latitude" />
+            <PropertyRef Name="Longitude" />
+            <PropertyRef Name="Amount" />
+            <PropertyRef Name="FromCurrency" />
+            <PropertyRef Name="ToCurrency" />
+            <PropertyRef Name="DateSearched" />
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="UserId" Type="int" />
+          <Property Name="City" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="Country" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="ZipCode" Type="nchar" MaxLength="20" Nullable="false" />
+          <Property Name="Latitude" Type="float" Nullable="false" />
+          <Property Name="Longitude" Type="float" Nullable="false" />
+          <Property Name="Amount" Type="float" Nullable="false" />
+          <Property Name="FromCurrency" Type="nchar" MaxLength="5" Nullable="false" />
+          <Property Name="ToCurrency" Type="nchar" MaxLength="5" Nullable="false" />
+          <Property Name="DateSearched" Type="datetime" Nullable="false" />
+          <Property Name="ResultsCount" Type="int" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_PartnerCharges_PartnerDetails">
+          <End Role="PartnerDetails" Type="Self.PartnerDetails" Multiplicity="1" />
+          <End Role="PartnerCharges" Type="Self.PartnerCharges" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PartnerDetails">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PartnerCharges">
+              <PropertyRef Name="PartnerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PartnerDetails_UserDetails">
+          <End Role="UserDetails" Type="Self.UserDetails" Multiplicity="1" />
+          <End Role="PartnerDetails" Type="Self.PartnerDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserDetails">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="PartnerDetails">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PartnerLocationDetails_PartnerDetails">
+          <End Role="PartnerDetails" Type="Self.PartnerDetails" Multiplicity="1" />
+          <End Role="PartnerLocationDetails" Type="Self.PartnerLocationDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PartnerDetails">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PartnerLocationDetails">
+              <PropertyRef Name="PartnerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PartnerLocationWorkTime_PartnerDetails">
+          <End Role="PartnerDetails" Type="Self.PartnerDetails" Multiplicity="0..1" />
+          <End Role="PartnerLocationWorkTime" Type="Self.PartnerLocationWorkTime" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PartnerDetails">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PartnerLocationWorkTime">
+              <PropertyRef Name="PartnerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PartnerLocationWorkTime_PartnerLocationWorkTime">
+          <End Role="PartnerLocationWorkTime" Type="Self.PartnerLocationWorkTime" Multiplicity="1" />
+          <End Role="PartnerLocationWorkTime1" Type="Self.PartnerLocationWorkTime" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="PartnerLocationWorkTime">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PartnerLocationWorkTime1">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PartnerOffers_PartnerDetails">
+          <End Role="PartnerDetails" Type="Self.PartnerDetails" Multiplicity="1" />
+          <End Role="PartnerOffers" Type="Self.PartnerOffers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PartnerDetails">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PartnerOffers">
+              <PropertyRef Name="PartnerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PartnerRates_PartnerDetails">
+          <End Role="PartnerDetails" Type="Self.PartnerDetails" Multiplicity="1" />
+          <End Role="PartnerRates" Type="Self.PartnerRates" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PartnerDetails">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PartnerRates">
+              <PropertyRef Name="PartnerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserDetails_Roles">
+          <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+          <End Role="UserDetails" Type="Self.UserDetails" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Roles">
+              <PropertyRef Name="RoleId" />
+            </Principal>
+            <Dependent Role="UserDetails">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="SP_changePassword" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="oldPassword" Type="varchar" Mode="In" />
+          <Parameter Name="newPassword" Type="varchar" Mode="In" />
+          <Parameter Name="StatusResult" Type="varchar" Mode="InOut" />
+        </Function>
+        <Function Name="SP_FetchLocationWorkTimeDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="PartnerID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_FetchPartnerCharges" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_FetchPartnerChargesByPartnerID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="PartnerID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_FetchPartnerCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_FetchPartnerDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Status" Type="varchar" Mode="In" />
+          <Parameter Name="PartnerName" Type="varchar" Mode="In" />
+          <Parameter Name="Page" Type="int" Mode="In" />
+          <Parameter Name="Pagedata" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_FetchPartnerLocationDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="PartnerID" Type="int" Mode="In" />
+          <Parameter Name="Status" Type="varchar" Mode="In" />
+          <Parameter Name="ZipCode" Type="varchar" Mode="In" />
+          <Parameter Name="City" Type="varchar" Mode="In" />
+          <Parameter Name="Page" Type="int" Mode="In" />
+          <Parameter Name="Pagedata" Type="int" Mode="In" />
+          <Parameter Name="TotalCount" Type="int" Mode="InOut" />
+        </Function>
+        <Function Name="SP_FetchPartnerLocationDetailsCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="PartnerID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_FetchPartnerOffers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="Status" Type="varchar" Mode="In" />
+          <Parameter Name="OfferName" Type="varchar" Mode="In" />
+          <Parameter Name="Page" Type="int" Mode="In" />
+          <Parameter Name="Pagedata" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_FetchPartnerOffersCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_FetchPartnerRates" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="PartnerID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_FetchPartnerSettings" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_FetchSystemParam" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_FetchUnProcessedLocations" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="SP_FetchUserRewardPoints" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_forgotPassword" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="EmailId" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_PartnerCharges_InsertUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="PartnerChargesID" Type="int" Mode="In" />
+          <Parameter Name="PartnerID" Type="int" Mode="In" />
+          <Parameter Name="Frequency" Type="varchar" Mode="In" />
+          <Parameter Name="Category" Type="varchar" Mode="In" />
+          <Parameter Name="Charges" Type="float" Mode="In" />
+          <Parameter Name="IsDefault" Type="bit" Mode="In" />
+          <Parameter Name="Status" Type="varchar" Mode="In" />
+          <Parameter Name="StatusResult" Type="varchar" Mode="InOut" />
+        </Function>
+        <Function Name="SP_PartnerDetails_InsertUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="LoginType" Type="varchar" Mode="In" />
+          <Parameter Name="UserName" Type="varchar" Mode="In" />
+          <Parameter Name="Password" Type="varchar" Mode="In" />
+          <Parameter Name="RoleId" Type="int" Mode="In" />
+          <Parameter Name="UStatus" Type="varchar" Mode="In" />
+          <Parameter Name="EmailAddress" Type="varchar" Mode="In" />
+          <Parameter Name="MobileNumber" Type="varchar" Mode="In" />
+          <Parameter Name="PartnerID" Type="int" Mode="In" />
+          <Parameter Name="PartnerName" Type="varchar" Mode="In" />
+          <Parameter Name="PartnerLogoPath" Type="varchar" Mode="In" />
+          <Parameter Name="DateExpiry" Type="datetime" Mode="In" />
+          <Parameter Name="PStatus" Type="varchar" Mode="In" />
+          <Parameter Name="StatusResult" Type="varchar" Mode="InOut" />
+          <Parameter Name="StatusResultUserId" Type="varchar" Mode="InOut" />
+        </Function>
+        <Function Name="SP_PartnerLocationDetails_InsertUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="PartnerLocationID" Type="int" Mode="In" />
+          <Parameter Name="PartnerID" Type="int" Mode="In" />
+          <Parameter Name="AddressLine1" Type="varchar" Mode="In" />
+          <Parameter Name="AddressLine2" Type="varchar" Mode="In" />
+          <Parameter Name="City" Type="varchar" Mode="In" />
+          <Parameter Name="State" Type="varchar" Mode="In" />
+          <Parameter Name="Country" Type="varchar" Mode="In" />
+          <Parameter Name="ZipCode" Type="varchar" Mode="In" />
+          <Parameter Name="Latitude" Type="float" Mode="In" />
+          <Parameter Name="Longitude" Type="float" Mode="In" />
+          <Parameter Name="MobileNumber" Type="varchar" Mode="In" />
+          <Parameter Name="DateActivated" Type="datetime" Mode="In" />
+          <Parameter Name="DateExpiry" Type="datetime" Mode="In" />
+          <Parameter Name="Status" Type="varchar" Mode="In" />
+          <Parameter Name="StatusResult" Type="varchar" Mode="InOut" />
+        </Function>
+        <Function Name="SP_PartnerLocationWorkTime_InsertUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="PartnerId" Type="int" Mode="In" />
+          <Parameter Name="LocationId" Type="int" Mode="In" />
+          <Parameter Name="WorkDay" Type="varchar" Mode="In" />
+          <Parameter Name="WorkStartTime" Type="varchar" Mode="In" />
+          <Parameter Name="WorkEndTime" Type="varchar" Mode="In" />
+          <Parameter Name="Status" Type="varchar" Mode="In" />
+          <Parameter Name="StatusResult" Type="varchar" Mode="InOut" />
+        </Function>
+        <Function Name="SP_PartnerOffers_InsertUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="PartnerID" Type="int" Mode="In" />
+          <Parameter Name="OfferName" Type="varchar" Mode="In" />
+          <Parameter Name="OfferType" Type="varchar" Mode="In" />
+          <Parameter Name="OfferText" Type="varchar" Mode="In" />
+          <Parameter Name="OfferStartDate" Type="datetime" Mode="In" />
+          <Parameter Name="OfferEndDate" Type="datetime" Mode="In" />
+          <Parameter Name="Status" Type="varchar" Mode="In" />
+          <Parameter Name="DateActivation" Type="datetime" Mode="In" />
+          <Parameter Name="DateExpiry" Type="datetime" Mode="In" />
+          <Parameter Name="StatusResult" Type="varchar" Mode="InOut" />
+        </Function>
+        <Function Name="SP_PartnerRates_InsertUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="PartnerID" Type="int" Mode="In" />
+          <Parameter Name="FromRate" Type="varchar" Mode="In" />
+          <Parameter Name="ToRate" Type="varchar" Mode="In" />
+          <Parameter Name="Guaranteed" Type="float" Mode="In" />
+          <Parameter Name="Indicative" Type="float" Mode="In" />
+          <Parameter Name="Status" Type="varchar" Mode="In" />
+          <Parameter Name="RateType" Type="varchar" Mode="In" />
+          <Parameter Name="StatusResult" Type="varchar" Mode="InOut" />
+        </Function>
+        <Function Name="SP_PartnerSettings" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="BrandName" Type="varchar" Mode="In" />
+          <Parameter Name="BrandLogoPath" Type="varchar" Mode="In" />
+          <Parameter Name="RedirectLink" Type="varchar(max)" Mode="In" />
+          <Parameter Name="EmailAddress" Type="varchar(max)" Mode="In" />
+          <Parameter Name="StatusResult" Type="varchar" Mode="InOut" />
+        </Function>
+        <Function Name="SP_SystemParam_InsertUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="PartnerID" Type="int" Mode="In" />
+          <Parameter Name="Key" Type="varchar" Mode="In" />
+          <Parameter Name="DisplayValue" Type="varchar" Mode="In" />
+          <Parameter Name="Value" Type="varchar" Mode="In" />
+          <Parameter Name="ParentId" Type="int" Mode="In" />
+          <Parameter Name="Status" Type="varchar" Mode="In" />
+          <Parameter Name="StatusResult" Type="varchar" Mode="InOut" />
+        </Function>
+        <Function Name="SP_UserDetails_InsertUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="LoginType" Type="varchar" Mode="In" />
+          <Parameter Name="UserName" Type="varchar" Mode="In" />
+          <Parameter Name="Password" Type="varchar" Mode="In" />
+          <Parameter Name="RoleId" Type="int" Mode="In" />
+          <Parameter Name="UStatus" Type="varchar" Mode="In" />
+          <Parameter Name="FirstName" Type="varchar" Mode="In" />
+          <Parameter Name="LastName" Type="varchar" Mode="In" />
+          <Parameter Name="MobileNumber" Type="varchar" Mode="In" />
+          <Parameter Name="Email" Type="varchar" Mode="In" />
+          <Parameter Name="StatusResult" Type="varchar" Mode="InOut" />
+          <Parameter Name="StatusResultUserId" Type="varchar" Mode="InOut" />
+        </Function>
+        <Function Name="SP_UserLocationTracker_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="PartnerId" Type="int" Mode="In" />
+          <Parameter Name="LocationId" Type="int" Mode="In" />
+          <Parameter Name="ReachedDestinationAt" Type="datetime" Mode="In" />
+          <Parameter Name="StatusResult" Type="varchar" Mode="InOut" />
+        </Function>
+        <Function Name="SP_UserLogIn" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserName" Type="varchar" Mode="In" />
+          <Parameter Name="Password" Type="varchar" Mode="In" />
+        </Function>
+        <Function Name="SP_UserQRCodeTracker_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="LocationId" Type="varchar" Mode="In" />
+          <Parameter Name="PartnerId" Type="int" Mode="In" />
+          <Parameter Name="TransactionAmount" Type="float" Mode="In" />
+          <Parameter Name="FromCurrency" Type="varchar" Mode="In" />
+          <Parameter Name="ToCurrency" Type="varchar" Mode="In" />
+          <Parameter Name="DateScanned" Type="datetime" Mode="In" />
+          <Parameter Name="StatusResult" Type="varchar" Mode="InOut" />
+        </Function>
+        <Function Name="SP_UserRewardPoints_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="TransactionId" Type="varchar" Mode="In" />
+          <Parameter Name="RewardPointsEarned" Type="varchar" Mode="In" />
+          <Parameter Name="DateEarned" Type="datetime" Mode="In" />
+          <Parameter Name="Comments" Type="varchar(max)" Mode="In" />
+          <Parameter Name="StatusResult" Type="varchar" Mode="InOut" />
+        </Function>
+        <Function Name="SP_UserSearchTracker_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="City" Type="varchar" Mode="In" />
+          <Parameter Name="Country" Type="varchar" Mode="In" />
+          <Parameter Name="ZipCode" Type="varchar" Mode="In" />
+          <Parameter Name="Latitude" Type="float" Mode="In" />
+          <Parameter Name="Longitude" Type="float" Mode="In" />
+          <Parameter Name="Amount" Type="float" Mode="In" />
+          <Parameter Name="FromCurrency" Type="varchar" Mode="In" />
+          <Parameter Name="ToCurrency" Type="varchar" Mode="In" />
+          <Parameter Name="DateSearched" Type="datetime" Mode="In" />
+          <Parameter Name="ResultsCount" Type="int" Mode="In" />
+          <Parameter Name="StatusResult" Type="varchar" Mode="InOut" />
+        </Function>
+        <Function Name="usp_Roles_Get" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="NavigettrModelStoreContainer">
+          <EntitySet Name="LoginHistory" EntityType="Self.LoginHistory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PartnerCharges" EntityType="Self.PartnerCharges" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PartnerDetails" EntityType="Self.PartnerDetails" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PartnerLocationWorkTime" EntityType="Self.PartnerLocationWorkTime" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PartnerOffers" EntityType="Self.PartnerOffers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PartnerRates" EntityType="Self.PartnerRates" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SystemParam" EntityType="Self.SystemParam" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserDetails" EntityType="Self.UserDetails" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserNotifications" EntityType="Self.UserNotifications" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserReminders" EntityType="Self.UserReminders" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PartnerLocationDetails" EntityType="Self.PartnerLocationDetails" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [PartnerLocationDetails].[ID] AS [ID], 
+    [PartnerLocationDetails].[PartnerId] AS [PartnerId], 
+    [PartnerLocationDetails].[AddressLine1] AS [AddressLine1], 
+    [PartnerLocationDetails].[AddressLine2] AS [AddressLine2], 
+    [PartnerLocationDetails].[City] AS [City], 
+    [PartnerLocationDetails].[State] AS [State], 
+    [PartnerLocationDetails].[Country] AS [Country], 
+    [PartnerLocationDetails].[ZipCode] AS [ZipCode], 
+    [PartnerLocationDetails].[Latitude] AS [Latitude], 
+    [PartnerLocationDetails].[Longitude] AS [Longitude], 
+    [PartnerLocationDetails].[MobileNumber] AS [MobileNumber], 
+    [PartnerLocationDetails].[DateCreated] AS [DateCreated], 
+    [PartnerLocationDetails].[DateActivated] AS [DateActivated], 
+    [PartnerLocationDetails].[DateExpiry] AS [DateExpiry], 
+    [PartnerLocationDetails].[Status] AS [Status], 
+    [PartnerLocationDetails].[IFSCCode] AS [IFSCCode]
+    FROM [dbo].[PartnerLocationDetails] AS [PartnerLocationDetails]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="UserLocationTracker" EntityType="Self.UserLocationTracker" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [UserLocationTracker].[Id] AS [Id], 
+    [UserLocationTracker].[UserId] AS [UserId], 
+    [UserLocationTracker].[PartnerId] AS [PartnerId], 
+    [UserLocationTracker].[LocationId] AS [LocationId], 
+    [UserLocationTracker].[ReachedDestinationAt] AS [ReachedDestinationAt]
+    FROM [dbo].[UserLocationTracker] AS [UserLocationTracker]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="UserQRCodeTracker" EntityType="Self.UserQRCodeTracker" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [UserQRCodeTracker].[PartnerId] AS [PartnerId], 
+    [UserQRCodeTracker].[TransactionAmount] AS [TransactionAmount], 
+    [UserQRCodeTracker].[FromCurrency] AS [FromCurrency], 
+    [UserQRCodeTracker].[ToCurrency] AS [ToCurrency], 
+    [UserQRCodeTracker].[DateScanned] AS [DateScanned], 
+    [UserQRCodeTracker].[UserId] AS [UserId], 
+    [UserQRCodeTracker].[Id] AS [Id], 
+    [UserQRCodeTracker].[LocationId] AS [LocationId]
+    FROM [dbo].[UserQRCodeTracker] AS [UserQRCodeTracker]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="UserRewardPoints" EntityType="Self.UserRewardPoints" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [UserRewardPoints].[Id] AS [Id], 
+    [UserRewardPoints].[UserId] AS [UserId], 
+    [UserRewardPoints].[TransactionId] AS [TransactionId], 
+    [UserRewardPoints].[RewardPointsEarned] AS [RewardPointsEarned], 
+    [UserRewardPoints].[DateEarned] AS [DateEarned], 
+    [UserRewardPoints].[Comments] AS [Comments]
+    FROM [dbo].[UserRewardPoints] AS [UserRewardPoints]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="UserSearchTracker" EntityType="Self.UserSearchTracker" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [UserSearchTracker].[UserId] AS [UserId], 
+    [UserSearchTracker].[City] AS [City], 
+    [UserSearchTracker].[Country] AS [Country], 
+    [UserSearchTracker].[ZipCode] AS [ZipCode], 
+    [UserSearchTracker].[Latitude] AS [Latitude], 
+    [UserSearchTracker].[Longitude] AS [Longitude], 
+    [UserSearchTracker].[Amount] AS [Amount], 
+    [UserSearchTracker].[FromCurrency] AS [FromCurrency], 
+    [UserSearchTracker].[ToCurrency] AS [ToCurrency], 
+    [UserSearchTracker].[DateSearched] AS [DateSearched], 
+    [UserSearchTracker].[ResultsCount] AS [ResultsCount], 
+    [UserSearchTracker].[Id] AS [Id]
+    FROM [dbo].[UserSearchTracker] AS [UserSearchTracker]</DefiningQuery>
+          </EntitySet>
+          <AssociationSet Name="FK_PartnerCharges_PartnerDetails" Association="Self.FK_PartnerCharges_PartnerDetails">
+            <End Role="PartnerDetails" EntitySet="PartnerDetails" />
+            <End Role="PartnerCharges" EntitySet="PartnerCharges" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PartnerDetails_UserDetails" Association="Self.FK_PartnerDetails_UserDetails">
+            <End Role="UserDetails" EntitySet="UserDetails" />
+            <End Role="PartnerDetails" EntitySet="PartnerDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PartnerLocationDetails_PartnerDetails" Association="Self.FK_PartnerLocationDetails_PartnerDetails">
+            <End Role="PartnerDetails" EntitySet="PartnerDetails" />
+            <End Role="PartnerLocationDetails" EntitySet="PartnerLocationDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PartnerLocationWorkTime_PartnerDetails" Association="Self.FK_PartnerLocationWorkTime_PartnerDetails">
+            <End Role="PartnerDetails" EntitySet="PartnerDetails" />
+            <End Role="PartnerLocationWorkTime" EntitySet="PartnerLocationWorkTime" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PartnerLocationWorkTime_PartnerLocationWorkTime" Association="Self.FK_PartnerLocationWorkTime_PartnerLocationWorkTime">
+            <End Role="PartnerLocationWorkTime" EntitySet="PartnerLocationWorkTime" />
+            <End Role="PartnerLocationWorkTime1" EntitySet="PartnerLocationWorkTime" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PartnerOffers_PartnerDetails" Association="Self.FK_PartnerOffers_PartnerDetails">
+            <End Role="PartnerDetails" EntitySet="PartnerDetails" />
+            <End Role="PartnerOffers" EntitySet="PartnerOffers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PartnerRates_PartnerDetails" Association="Self.FK_PartnerRates_PartnerDetails">
+            <End Role="PartnerDetails" EntitySet="PartnerDetails" />
+            <End Role="PartnerRates" EntitySet="PartnerRates" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserDetails_Roles" Association="Self.FK_UserDetails_Roles">
+            <End Role="Roles" EntitySet="Roles" />
+            <End Role="UserDetails" EntitySet="UserDetails" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="NavigettrModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="NavigettrEntities" annotation:LazyLoadingEnabled="true">
+          <FunctionImport Name="usp_Roles_Get" ReturnType="Collection(NavigettrModel.usp_Roles_Get_Result)">
+          <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_FetchPartnerCount" ReturnType="Collection(NavigettrModel.SP_FetchPartnerCount_Result)" />
+          <FunctionImport Name="SP_FetchPartnerLocationDetailsCount" ReturnType="Collection(NavigettrModel.SP_FetchPartnerLocationDetailsCount_Result)">
+          <Parameter Name="PartnerID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <EntitySet Name="LoginHistories" EntityType="NavigettrModel.LoginHistory" />
+          <EntitySet Name="PartnerDetails" EntityType="NavigettrModel.PartnerDetail" />
+          <EntitySet Name="PartnerLocationDetails" EntityType="NavigettrModel.PartnerLocationDetail" />
+          <EntitySet Name="PartnerLocationWorkTimes" EntityType="NavigettrModel.PartnerLocationWorkTime" />
+          <EntitySet Name="PartnerOffers" EntityType="NavigettrModel.PartnerOffer" />
+          <EntitySet Name="PartnerRates" EntityType="NavigettrModel.PartnerRate" />
+          <EntitySet Name="Roles" EntityType="NavigettrModel.Role" />
+          <EntitySet Name="SystemParams" EntityType="NavigettrModel.SystemParam" />
+          <EntitySet Name="UserDetails" EntityType="NavigettrModel.UserDetail" />
+          <EntitySet Name="UserNotifications" EntityType="NavigettrModel.UserNotification" />
+          <EntitySet Name="UserReminders" EntityType="NavigettrModel.UserReminder" />
+          <AssociationSet Name="FK_PartnerDetails_UserDetails" Association="NavigettrModel.FK_PartnerDetails_UserDetails">
+            <End Role="UserDetail" EntitySet="UserDetails" />
+            <End Role="PartnerDetail" EntitySet="PartnerDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PartnerLocationDetails_PartnerDetails" Association="NavigettrModel.FK_PartnerLocationDetails_PartnerDetails">
+            <End Role="PartnerDetail" EntitySet="PartnerDetails" />
+            <End Role="PartnerLocationDetail" EntitySet="PartnerLocationDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PartnerLocationWorkTime_PartnerDetails" Association="NavigettrModel.FK_PartnerLocationWorkTime_PartnerDetails">
+            <End Role="PartnerDetail" EntitySet="PartnerDetails" />
+            <End Role="PartnerLocationWorkTime" EntitySet="PartnerLocationWorkTimes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PartnerOffers_PartnerDetails" Association="NavigettrModel.FK_PartnerOffers_PartnerDetails">
+            <End Role="PartnerDetail" EntitySet="PartnerDetails" />
+            <End Role="PartnerOffer" EntitySet="PartnerOffers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PartnerRates_PartnerDetails" Association="NavigettrModel.FK_PartnerRates_PartnerDetails">
+            <End Role="PartnerDetail" EntitySet="PartnerDetails" />
+            <End Role="PartnerRate" EntitySet="PartnerRates" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PartnerLocationWorkTime_PartnerLocationDetails" Association="NavigettrModel.FK_PartnerLocationWorkTime_PartnerLocationDetails">
+            <End Role="PartnerLocationDetail" EntitySet="PartnerLocationDetails" />
+            <End Role="PartnerLocationWorkTime" EntitySet="PartnerLocationWorkTimes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserDetails_Roles" Association="NavigettrModel.FK_UserDetails_Roles">
+            <End Role="Role" EntitySet="Roles" />
+            <End Role="UserDetail" EntitySet="UserDetails" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserNotifications_UserDetails" Association="NavigettrModel.FK_UserNotifications_UserDetails">
+            <End Role="UserDetail" EntitySet="UserDetails" />
+            <End Role="UserNotification" EntitySet="UserNotifications" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserReminders_UserDetails" Association="NavigettrModel.FK_UserReminders_UserDetails">
+            <End Role="UserDetail" EntitySet="UserDetails" />
+            <End Role="UserReminder" EntitySet="UserReminders" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PartnerLocationWorkTime_PartnerLocationWorkTime" Association="NavigettrModel.FK_PartnerLocationWorkTime_PartnerLocationWorkTime">
+            <End Role="PartnerLocationWorkTime" EntitySet="PartnerLocationWorkTimes" />
+            <End Role="PartnerLocationWorkTime1" EntitySet="PartnerLocationWorkTimes" />
+          </AssociationSet>
+          <FunctionImport Name="SP_PartnerOffers_InsertUpdate">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="PartnerID" Mode="In" Type="Int32" />
+            <Parameter Name="OfferName" Mode="In" Type="String" />
+            <Parameter Name="OfferType" Mode="In" Type="String" />
+            <Parameter Name="OfferText" Mode="In" Type="String" />
+            <Parameter Name="OfferStartDate" Mode="In" Type="DateTime" />
+            <Parameter Name="OfferEndDate" Mode="In" Type="DateTime" />
+            <Parameter Name="Status" Mode="In" Type="String" />
+            <Parameter Name="DateActivation" Mode="In" Type="DateTime" />
+            <Parameter Name="DateExpiry" Mode="In" Type="DateTime" />
+            <Parameter Name="StatusResult" Mode="InOut" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_PartnerLocationDetails_InsertUpdate">
+            <Parameter Name="PartnerLocationID" Mode="In" Type="Int32" />
+            <Parameter Name="PartnerID" Mode="In" Type="Int32" />
+            <Parameter Name="AddressLine1" Mode="In" Type="String" />
+            <Parameter Name="AddressLine2" Mode="In" Type="String" />
+            <Parameter Name="City" Mode="In" Type="String" />
+            <Parameter Name="State" Mode="In" Type="String" />
+            <Parameter Name="Country" Mode="In" Type="String" />
+            <Parameter Name="ZipCode" Mode="In" Type="String" />
+            <Parameter Name="Latitude" Mode="In" Type="Double" />
+            <Parameter Name="Longitude" Mode="In" Type="Double" />
+            <Parameter Name="MobileNumber" Mode="In" Type="String" />
+            <Parameter Name="DateActivated" Mode="In" Type="DateTime" />
+            <Parameter Name="DateExpiry" Mode="In" Type="DateTime" />
+            <Parameter Name="Status" Mode="In" Type="String" />
+            <Parameter Name="StatusResult" Mode="InOut" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_FetchPartnerRates" ReturnType="Collection(NavigettrModel.SP_FetchPartnerRates_Result1)">
+          <Parameter Name="PartnerID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_PartnerCharges_InsertUpdate">
+            <Parameter Name="PartnerChargesID" Mode="In" Type="Int32" />
+            <Parameter Name="PartnerID" Mode="In" Type="Int32" />
+            <Parameter Name="Frequency" Mode="In" Type="String" />
+            <Parameter Name="Category" Mode="In" Type="String" />
+            <Parameter Name="Charges" Mode="In" Type="Double" />
+            <Parameter Name="IsDefault" Mode="In" Type="Boolean" />
+            <Parameter Name="Status" Mode="In" Type="String" />
+            <Parameter Name="StatusResult" Mode="InOut" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_PartnerRates_InsertUpdate">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="PartnerID" Mode="In" Type="Int32" />
+            <Parameter Name="FromRate" Mode="In" Type="String" />
+            <Parameter Name="ToRate" Mode="In" Type="String" />
+            <Parameter Name="Guaranteed" Mode="In" Type="Double" />
+            <Parameter Name="Indicative" Mode="In" Type="Double" />
+            <Parameter Name="Status" Mode="In" Type="String" />
+            <Parameter Name="RateType" Mode="In" Type="String" />
+            <Parameter Name="StatusResult" Mode="InOut" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="PartnerCharges" EntityType="NavigettrModel.PartnerCharge" />
+          <AssociationSet Name="FK_PartnerCharges_PartnerDetails" Association="NavigettrModel.FK_PartnerCharges_PartnerDetails">
+            <End Role="PartnerDetail" EntitySet="PartnerDetails" />
+            <End Role="PartnerCharge" EntitySet="PartnerCharges" />
+          </AssociationSet>
+          <FunctionImport Name="SP_SystemParam_InsertUpdate">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="PartnerID" Mode="In" Type="Int32" />
+            <Parameter Name="Key" Mode="In" Type="String" />
+            <Parameter Name="DisplayValue" Mode="In" Type="String" />
+            <Parameter Name="Value" Mode="In" Type="String" />
+            <Parameter Name="ParentId" Mode="In" Type="Int32" />
+            <Parameter Name="Status" Mode="In" Type="String" />
+            <Parameter Name="StatusResult" Mode="InOut" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_PartnerSettings">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="BrandName" Mode="In" Type="String" />
+            <Parameter Name="BrandLogoPath" Mode="In" Type="String" />
+            <Parameter Name="RedirectLink" Mode="In" Type="String" />
+            <Parameter Name="EmailAddress" Mode="In" Type="String" />
+            <Parameter Name="StatusResult" Mode="InOut" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_FetchPartnerSettings" ReturnType="Collection(NavigettrModel.SP_FetchPartnerSettings_Result)">
+          <Parameter Name="ID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_FetchPartnerOffersCount">
+          </FunctionImport>
+          <FunctionImport Name="SP_PartnerLocationWorkTime_InsertUpdate">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="PartnerId" Mode="In" Type="Int32" />
+            <Parameter Name="LocationId" Mode="In" Type="Int32" />
+            <Parameter Name="WorkDay" Mode="In" Type="String" />
+            <Parameter Name="WorkStartTime" Mode="In" Type="String" />
+            <Parameter Name="WorkEndTime" Mode="In" Type="String" />
+            <Parameter Name="Status" Mode="In" Type="String" />
+            <Parameter Name="StatusResult" Mode="InOut" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_PartnerDetails_InsertUpdate">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="LoginType" Mode="In" Type="String" />
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+            <Parameter Name="RoleId" Mode="In" Type="Int32" />
+            <Parameter Name="UStatus" Mode="In" Type="String" />
+            <Parameter Name="EmailAddress" Mode="In" Type="String" />
+            <Parameter Name="MobileNumber" Mode="In" Type="String" />
+            <Parameter Name="PartnerID" Mode="In" Type="Int32" />
+            <Parameter Name="PartnerName" Mode="In" Type="String" />
+            <Parameter Name="PartnerLogoPath" Mode="In" Type="String" />
+            <Parameter Name="DateExpiry" Mode="In" Type="DateTime" />
+            <Parameter Name="PStatus" Mode="In" Type="String" />
+            <Parameter Name="StatusResult" Mode="InOut" Type="String" />
+            <Parameter Name="StatusResultUserId" Mode="InOut" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_FetchPartnerCharges" ReturnType="Collection(NavigettrModel.SP_FetchPartnerCharges_Result)" />
+          <FunctionImport Name="SP_FetchPartnerChargesByPartnerID" ReturnType="Collection(NavigettrModel.SP_FetchPartnerChargesByPartnerID_Result)">
+          <Parameter Name="PartnerID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_FetchPartnerDetails" ReturnType="Collection(NavigettrModel.SP_FetchPartnerDetails_Result)">
+            <Parameter Name="Status" Mode="In" Type="String" />
+            <Parameter Name="PartnerName" Mode="In" Type="String" />
+            <Parameter Name="Page" Mode="In" Type="Int32" />
+            <Parameter Name="Pagedata" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_FetchPartnerLocationDetails" ReturnType="Collection(NavigettrModel.SP_FetchPartnerLocationDetails_Result)">
+            <Parameter Name="PartnerID" Mode="In" Type="Int32" />
+            <Parameter Name="Status" Mode="In" Type="String" />
+            <Parameter Name="ZipCode" Mode="In" Type="String" />
+            <Parameter Name="City" Mode="In" Type="String" />
+            <Parameter Name="Page" Mode="In" Type="Int32" />
+            <Parameter Name="Pagedata" Mode="In" Type="Int32" />
+            <Parameter Name="TotalCount" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_FetchPartnerOffers" ReturnType="Collection(NavigettrModel.SP_FetchPartnerOffers_Result)">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="Status" Mode="In" Type="String" />
+            <Parameter Name="OfferName" Mode="In" Type="String" />
+            <Parameter Name="Page" Mode="In" Type="Int32" />
+            <Parameter Name="Pagedata" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_FetchSystemParam" ReturnType="Collection(NavigettrModel.SP_FetchSystemParam_Result)" />
+          <FunctionImport Name="SP_UserLogIn" ReturnType="Collection(NavigettrModel.SP_UserLogIn_Result)">
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_changePassword">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="oldPassword" Mode="In" Type="String" />
+            <Parameter Name="newPassword" Mode="In" Type="String" />
+            <Parameter Name="StatusResult" Mode="InOut" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_FetchLocationWorkTimeDetails" ReturnType="Collection(NavigettrModel.SP_FetchLocationWorkTimeDetails_Result)">
+          <Parameter Name="PartnerID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_forgotPassword" ReturnType="Collection(NavigettrModel.SP_forgotPassword_Result1)">
+          <Parameter Name="EmailId" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_FetchUnProcessedLocations" ReturnType="Collection(NavigettrModel.SP_FetchUnProcessedLocations_Result)" />
+          <FunctionImport Name="SP_UserDetails_InsertUpdate">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="LoginType" Mode="In" Type="String" />
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+            <Parameter Name="RoleId" Mode="In" Type="Int32" />
+            <Parameter Name="UStatus" Mode="In" Type="String" />
+            <Parameter Name="FirstName" Mode="In" Type="String" />
+            <Parameter Name="LastName" Mode="In" Type="String" />
+            <Parameter Name="MobileNumber" Mode="In" Type="String" />
+            <Parameter Name="Email" Mode="In" Type="String" />
+            <Parameter Name="StatusResult" Mode="InOut" Type="String" />
+            <Parameter Name="StatusResultUserId" Mode="InOut" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="UserLocationTrackers" EntityType="NavigettrModel.UserLocationTracker" />
+          <EntitySet Name="UserRewardPoints" EntityType="NavigettrModel.UserRewardPoint" />
+          <EntitySet Name="UserSearchTrackers" EntityType="NavigettrModel.UserSearchTracker" />
+          <FunctionImport Name="SP_FetchUserRewardPoints" ReturnType="Collection(NavigettrModel.SP_FetchUserRewardPoints_Result)">
+          <Parameter Name="UserId" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_UserLocationTracker_Insert">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="PartnerId" Mode="In" Type="Int32" />
+            <Parameter Name="LocationId" Mode="In" Type="Int32" />
+            <Parameter Name="ReachedDestinationAt" Mode="In" Type="DateTime" />
+            <Parameter Name="StatusResult" Mode="InOut" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_UserQRCodeTracker_Insert">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="LocationId" Mode="In" Type="String" />
+            <Parameter Name="PartnerId" Mode="In" Type="Int32" />
+            <Parameter Name="TransactionAmount" Mode="In" Type="Double" />
+            <Parameter Name="FromCurrency" Mode="In" Type="String" />
+            <Parameter Name="ToCurrency" Mode="In" Type="String" />
+            <Parameter Name="DateScanned" Mode="In" Type="DateTime" />
+            <Parameter Name="StatusResult" Mode="InOut" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_UserRewardPoints_Insert">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="TransactionId" Mode="In" Type="String" />
+            <Parameter Name="RewardPointsEarned" Mode="In" Type="String" />
+            <Parameter Name="DateEarned" Mode="In" Type="DateTime" />
+            <Parameter Name="Comments" Mode="In" Type="String" />
+            <Parameter Name="StatusResult" Mode="InOut" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_UserSearchTracker_Insert">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="City" Mode="In" Type="String" />
+            <Parameter Name="Country" Mode="In" Type="String" />
+            <Parameter Name="ZipCode" Mode="In" Type="String" />
+            <Parameter Name="Latitude" Mode="In" Type="Double" />
+            <Parameter Name="Longitude" Mode="In" Type="Double" />
+            <Parameter Name="Amount" Mode="In" Type="Double" />
+            <Parameter Name="FromCurrency" Mode="In" Type="String" />
+            <Parameter Name="ToCurrency" Mode="In" Type="String" />
+            <Parameter Name="DateSearched" Mode="In" Type="DateTime" />
+            <Parameter Name="ResultsCount" Mode="In" Type="Int32" />
+            <Parameter Name="StatusResult" Mode="InOut" Type="String" />
+          </FunctionImport>
+          <EntitySet Name="UserQRCodeTrackers" EntityType="NavigettrModel.UserQRCodeTracker" />
+          </EntityContainer>
+        <ComplexType Name="usp_Roles_Get_Result">
+          <Property Type="Int32" Name="RoleId" Nullable="false" />
+          <Property Type="String" Name="RoleName" Nullable="false" MaxLength="20" />
+        </ComplexType>
+        <ComplexType Name="SP_FetchPartnerCount_Result">
+          <Property Type="Int32" Name="TotalCount" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_FetchPartnerLocationDetailsCount_Result">
+          <Property Type="Int32" Name="TotalCount" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="LoginHistory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="IPAddress" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="LoginDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LoginStatus" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="PartnerDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="PartnerName" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="PartnerLogoPath" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateExpiry" Type="DateTime" Precision="3" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="UserDetail" Relationship="NavigettrModel.FK_PartnerDetails_UserDetails" FromRole="PartnerDetail" ToRole="UserDetail" />
+          <NavigationProperty Name="PartnerLocationDetails" Relationship="NavigettrModel.FK_PartnerLocationDetails_PartnerDetails" FromRole="PartnerDetail" ToRole="PartnerLocationDetail" />
+          <NavigationProperty Name="PartnerLocationWorkTimes" Relationship="NavigettrModel.FK_PartnerLocationWorkTime_PartnerDetails" FromRole="PartnerDetail" ToRole="PartnerLocationWorkTime" />
+          <NavigationProperty Name="PartnerOffers" Relationship="NavigettrModel.FK_PartnerOffers_PartnerDetails" FromRole="PartnerDetail" ToRole="PartnerOffer" />
+          <NavigationProperty Name="PartnerRates" Relationship="NavigettrModel.FK_PartnerRates_PartnerDetails" FromRole="PartnerDetail" ToRole="PartnerRate" />
+          <NavigationProperty Name="PartnerCharges" Relationship="NavigettrModel.FK_PartnerCharges_PartnerDetails" FromRole="PartnerDetail" ToRole="PartnerCharge" />
+          <Property Name="RedirectLink" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="PartnerLocationDetail">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PartnerId" Type="Int32" Nullable="false" />
+          <Property Name="AddressLine1" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="AddressLine2" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="City" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="State" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Country" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ZipCode" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Latitude" Type="Double" />
+          <Property Name="Longitude" Type="Double" />
+          <Property Name="MobileNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DateCreated" Type="DateTime" Precision="3" />
+          <Property Name="DateActivated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateExpiry" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="PartnerDetail" Relationship="NavigettrModel.FK_PartnerLocationDetails_PartnerDetails" FromRole="PartnerLocationDetail" ToRole="PartnerDetail" />
+          <NavigationProperty Name="PartnerLocationWorkTimes" Relationship="NavigettrModel.FK_PartnerLocationWorkTime_PartnerLocationDetails" FromRole="PartnerLocationDetail" ToRole="PartnerLocationWorkTime" />
+          <Property Name="IFSCCode" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="PartnerLocationWorkTime">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PartnerId" Type="Int32" />
+          <Property Name="LocationId" Type="Int32" />
+          <Property Name="WorkDay" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="WorkStartTime" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="WorkEndTime" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="PartnerDetail" Relationship="NavigettrModel.FK_PartnerLocationWorkTime_PartnerDetails" FromRole="PartnerLocationWorkTime" ToRole="PartnerDetail" />
+          <NavigationProperty Name="PartnerLocationDetail" Relationship="NavigettrModel.FK_PartnerLocationWorkTime_PartnerLocationDetails" FromRole="PartnerLocationWorkTime" ToRole="PartnerLocationDetail" />
+          <NavigationProperty Name="PartnerLocationWorkTime1" Relationship="NavigettrModel.FK_PartnerLocationWorkTime_PartnerLocationWorkTime" FromRole="PartnerLocationWorkTime" ToRole="PartnerLocationWorkTime1" />
+          <NavigationProperty Name="PartnerLocationWorkTime2" Relationship="NavigettrModel.FK_PartnerLocationWorkTime_PartnerLocationWorkTime" FromRole="PartnerLocationWorkTime1" ToRole="PartnerLocationWorkTime" />
+        </EntityType>
+        <EntityType Name="PartnerOffer">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PartnerId" Type="Int32" Nullable="false" />
+          <Property Name="OfferName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="OfferType" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="OfferText" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="OfferStartDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="OfferEndDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastModfied" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateActivation" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateExpiry" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="offerImage" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="PartnerDetail" Relationship="NavigettrModel.FK_PartnerOffers_PartnerDetails" FromRole="PartnerOffer" ToRole="PartnerDetail" />
+        </EntityType>
+        <EntityType Name="PartnerRate">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PartnerId" Type="Int32" Nullable="false" />
+          <Property Name="FromRate" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ToRate" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Guaranteed" Type="Double" Nullable="false" />
+          <Property Name="Indicative" Type="Double" Nullable="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="LastModified" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="PartnerDetail" Relationship="NavigettrModel.FK_PartnerRates_PartnerDetails" FromRole="PartnerRate" ToRole="PartnerDetail" />
+          <Property Name="RateType" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Role">
+          <Key>
+            <PropertyRef Name="RoleId" />
+          </Key>
+          <Property Name="RoleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RoleName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="UserDetails" Relationship="NavigettrModel.FK_UserDetails_Roles" FromRole="Role" ToRole="UserDetail" />
+        </EntityType>
+        <EntityType Name="SystemParam">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="PartnerId" Type="Int32" Nullable="false" />
+          <Property Name="Key" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="DisplayValue" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Value" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ParentId" Type="Int32" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="UserDetail">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LoginType" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="RoleId" Type="Int32" Nullable="false" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="EmailAddress" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="MobileNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="PartnerDetails" Relationship="NavigettrModel.FK_PartnerDetails_UserDetails" FromRole="UserDetail" ToRole="PartnerDetail" />
+          <NavigationProperty Name="Role" Relationship="NavigettrModel.FK_UserDetails_Roles" FromRole="UserDetail" ToRole="Role" />
+          <NavigationProperty Name="UserNotifications" Relationship="NavigettrModel.FK_UserNotifications_UserDetails" FromRole="UserDetail" ToRole="UserNotification" />
+          <NavigationProperty Name="UserReminders" Relationship="NavigettrModel.FK_UserReminders_UserDetails" FromRole="UserDetail" ToRole="UserReminder" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="UserNotification">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="NotificationText" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="NotificationType" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="IsRead" Type="Boolean" Nullable="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="DateRead" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="UserDetail" Relationship="NavigettrModel.FK_UserNotifications_UserDetails" FromRole="UserNotification" ToRole="UserDetail" />
+        </EntityType>
+        <EntityType Name="UserReminder">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="RateCondition" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Rate" Type="Double" Nullable="false" />
+          <Property Name="Distance" Type="Double" Nullable="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="UserDetail" Relationship="NavigettrModel.FK_UserReminders_UserDetails" FromRole="UserReminder" ToRole="UserDetail" />
+        </EntityType>
+        <Association Name="FK_PartnerDetails_UserDetails">
+          <End Type="NavigettrModel.UserDetail" Role="UserDetail" Multiplicity="1" />
+          <End Type="NavigettrModel.PartnerDetail" Role="PartnerDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserDetail">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="PartnerDetail">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PartnerLocationDetails_PartnerDetails">
+          <End Type="NavigettrModel.PartnerDetail" Role="PartnerDetail" Multiplicity="1" />
+          <End Type="NavigettrModel.PartnerLocationDetail" Role="PartnerLocationDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PartnerDetail">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PartnerLocationDetail">
+              <PropertyRef Name="PartnerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PartnerLocationWorkTime_PartnerDetails">
+          <End Type="NavigettrModel.PartnerDetail" Role="PartnerDetail" Multiplicity="0..1" />
+          <End Type="NavigettrModel.PartnerLocationWorkTime" Role="PartnerLocationWorkTime" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PartnerDetail">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PartnerLocationWorkTime">
+              <PropertyRef Name="PartnerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PartnerOffers_PartnerDetails">
+          <End Type="NavigettrModel.PartnerDetail" Role="PartnerDetail" Multiplicity="1" />
+          <End Type="NavigettrModel.PartnerOffer" Role="PartnerOffer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PartnerDetail">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PartnerOffer">
+              <PropertyRef Name="PartnerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PartnerRates_PartnerDetails">
+          <End Type="NavigettrModel.PartnerDetail" Role="PartnerDetail" Multiplicity="1" />
+          <End Type="NavigettrModel.PartnerRate" Role="PartnerRate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PartnerDetail">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PartnerRate">
+              <PropertyRef Name="PartnerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PartnerLocationWorkTime_PartnerLocationDetails">
+          <End Type="NavigettrModel.PartnerLocationDetail" Role="PartnerLocationDetail" Multiplicity="0..1" />
+          <End Type="NavigettrModel.PartnerLocationWorkTime" Role="PartnerLocationWorkTime" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PartnerLocationDetail">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PartnerLocationWorkTime">
+              <PropertyRef Name="LocationId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserDetails_Roles">
+          <End Type="NavigettrModel.Role" Role="Role" Multiplicity="1" />
+          <End Type="NavigettrModel.UserDetail" Role="UserDetail" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Role">
+              <PropertyRef Name="RoleId" />
+            </Principal>
+            <Dependent Role="UserDetail">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserNotifications_UserDetails">
+          <End Type="NavigettrModel.UserDetail" Role="UserDetail" Multiplicity="1" />
+          <End Type="NavigettrModel.UserNotification" Role="UserNotification" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserDetail">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="UserNotification">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserReminders_UserDetails">
+          <End Type="NavigettrModel.UserDetail" Role="UserDetail" Multiplicity="1" />
+          <End Type="NavigettrModel.UserReminder" Role="UserReminder" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserDetail">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="UserReminder">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PartnerLocationWorkTime_PartnerLocationWorkTime">
+          <End Type="NavigettrModel.PartnerLocationWorkTime" Role="PartnerLocationWorkTime" Multiplicity="1" />
+          <End Type="NavigettrModel.PartnerLocationWorkTime" Role="PartnerLocationWorkTime1" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="PartnerLocationWorkTime">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PartnerLocationWorkTime1">
+              <PropertyRef Name="ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="SP_FetchPartnerRates_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="from" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="to" Nullable="false" MaxLength="100" />
+          <Property Type="Double" Name="guaranteed" Nullable="false" />
+          <Property Type="Double" Name="indicative" Nullable="false" />
+          <Property Type="String" Name="Status" Nullable="false" MaxLength="20" />
+        </ComplexType>
+        <EntityType Name="PartnerCharge">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PartnerId" Type="Int32" Nullable="false" />
+          <Property Name="Frequency" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Category" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Charges" Type="Double" Nullable="false" />
+          <Property Name="IsDefault" Type="Boolean" Nullable="false" />
+          <Property Name="Status" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="PartnerDetail" Relationship="NavigettrModel.FK_PartnerCharges_PartnerDetails" FromRole="PartnerCharge" ToRole="PartnerDetail" />
+        </EntityType>
+        <Association Name="FK_PartnerCharges_PartnerDetails">
+          <End Type="NavigettrModel.PartnerDetail" Role="PartnerDetail" Multiplicity="1" />
+          <End Type="NavigettrModel.PartnerCharge" Role="PartnerCharge" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PartnerDetail">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PartnerCharge">
+              <PropertyRef Name="PartnerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="SP_forgotPassword_Result">
+          <Property Type="String" Name="Password" Nullable="true" MaxLength="100" />
+        </ComplexType>
+        <ComplexType Name="SP_FetchPartnerSettings_Result">
+          <Property Type="String" Name="brandName" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="brandLogo" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="redirectLink" Nullable="true" />
+          <Property Type="String" Name="emailAddress" Nullable="true" MaxLength="250" />
+        </ComplexType>
+        <ComplexType Name="SP_FetchPartnerCharges_Result">
+          <Property Type="String" Name="frequency" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="category" Nullable="false" MaxLength="100" />
+          <Property Type="Double" Name="charges" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_FetchPartnerChargesByPartnerID_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="String" Name="frequency" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="category" Nullable="false" MaxLength="100" />
+          <Property Type="DateTime" Name="dateActivation" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="dateExpiry" Nullable="false" Precision="23" />
+          <Property Type="Double" Name="charges" Nullable="false" />
+          <Property Type="Boolean" Name="isDefault" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_FetchPartnerDetails_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="Int32" Name="userId" Nullable="false" />
+          <Property Type="String" Name="partnerName" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="partnerLogoPath" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="dateCreated" Nullable="true" MaxLength="30" />
+          <Property Type="DateTime" Name="dateExpiry" Nullable="true" Precision="23" />
+          <Property Type="String" Name="status" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="userName" Nullable="false" MaxLength="50" />
+          <Property Type="Int32" Name="locationId" Nullable="false" />
+          <Property Type="Int32" Name="totalCount" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_FetchPartnerLocationDetails_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="Int32" Name="partnerId" Nullable="false" />
+          <Property Type="String" Name="addressLine1" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="addressLine2" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="city" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="state" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Country" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="zipCode" Nullable="true" MaxLength="100" />
+          <Property Type="Double" Name="latitude" Nullable="true" />
+          <Property Type="Double" Name="longitude" Nullable="true" />
+          <Property Type="String" Name="mobileNumber" Nullable="true" MaxLength="20" />
+          <Property Type="DateTime" Name="dateCreated" Nullable="true" Precision="23" />
+          <Property Type="String" Name="activatedDate" Nullable="true" MaxLength="11" />
+          <Property Type="String" Name="expiryDate" Nullable="true" MaxLength="11" />
+          <Property Type="String" Name="partnerName" Nullable="false" MaxLength="500" />
+          <Property Type="Int32" Name="totalCount" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_FetchPartnerOffers_Result">
+          <Property Type="Int32" Name="id" Nullable="false" />
+          <Property Type="Int32" Name="partnerId" Nullable="false" />
+          <Property Type="String" Name="offerName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="OfferType" Nullable="false" MaxLength="5" />
+          <Property Type="String" Name="offerText" Nullable="false" MaxLength="200" />
+          <Property Type="DateTime" Name="offerStartDate" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="offerEndDate" Nullable="false" Precision="23" />
+          <Property Type="String" Name="status" Nullable="false" MaxLength="20" />
+          <Property Type="DateTime" Name="dateCreated" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="lastModfied" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="dateActivation" Nullable="false" Precision="23" />
+          <Property Type="DateTime" Name="dateExpiry" Nullable="false" Precision="23" />
+          <Property Type="Int32" Name="totalCount" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="SP_FetchSystemParam_Result">
+          <Property Type="Int32" Name="partnerId" Nullable="false" />
+          <Property Type="String" Name="Key" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="displayValue" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="value" Nullable="false" MaxLength="100" />
+          <Property Type="Int32" Name="parentId" Nullable="true" />
+          <Property Type="DateTime" Name="dateCreated" Nullable="false" Precision="23" />
+          <Property Type="String" Name="status" Nullable="false" MaxLength="20" />
+          <Property Type="Int32" Name="Id" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_UserLogIn_Result">
+          <Property Type="String" Name="name" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="logo" Nullable="false" MaxLength="500" />
+          <Property Type="Int32" Name="UserId" Nullable="false" />
+          <Property Type="String" Name="RoleName" Nullable="false" MaxLength="20" />
+          <Property Type="Int32" Name="ID" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_FetchLocationWorkTimeDetails_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="Int32" Name="LocationId" Nullable="true" />
+          <Property Type="String" Name="WorkDay" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="WorkStartTime" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="WorkEndTime" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Status" Nullable="false" MaxLength="20" />
+        </ComplexType>
+        <ComplexType Name="SP_FetchLocationWorkTimeDetails1_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="Int32" Name="LocationId" Nullable="true" />
+          <Property Type="String" Name="WorkDay" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="WorkStartTime" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="WorkEndTime" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Status" Nullable="false" MaxLength="20" />
+        </ComplexType>
+        <ComplexType Name="SP_FetchLocationWorkTimeDetails_Result1">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="Int32" Name="LocationId" Nullable="true" />
+          <Property Type="String" Name="WorkDay" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="WorkStartTime" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="WorkEndTime" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Status" Nullable="false" MaxLength="20" />
+        </ComplexType>
+        <ComplexType Name="SP_FetchLocationWorkTimeDetails1_Result1">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="Int32" Name="LocationId" Nullable="true" />
+          <Property Type="String" Name="WorkDay" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="WorkStartTime" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="WorkEndTime" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Status" Nullable="false" MaxLength="20" />
+        </ComplexType>
+        <ComplexType Name="SP_forgotPassword_Result1">
+          <Property Type="Int32" Name="UserId" Nullable="false" />
+        </ComplexType>
+        <ComplexType Name="SP_FetchUnProcessedLocations_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="Int32" Name="PartnerId" Nullable="false" />
+          <Property Type="String" Name="AddressLine1" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="AddressLine2" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="City" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="State" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Country" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="ZipCode" Nullable="true" MaxLength="100" />
+          <Property Type="Double" Name="Latitude" Nullable="true" />
+          <Property Type="Double" Name="Longitude" Nullable="true" />
+          <Property Type="String" Name="MobileNumber" Nullable="true" MaxLength="20" />
+          <Property Type="DateTime" Name="DateCreated" Nullable="true" Precision="23" />
+          <Property Type="String" Name="ActivatedDate" Nullable="true" MaxLength="11" />
+          <Property Type="String" Name="ExpiryDate" Nullable="true" MaxLength="11" />
+          <Property Type="String" Name="Status" Nullable="false" MaxLength="20" />
+        </ComplexType>
+        <EntityType Name="UserLocationTracker">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="PartnerId" />
+            <PropertyRef Name="LocationId" />
+            <PropertyRef Name="ReachedDestinationAt" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="PartnerId" Type="Int32" Nullable="false" />
+          <Property Name="LocationId" Type="Int32" Nullable="false" />
+          <Property Name="ReachedDestinationAt" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
+        <EntityType Name="UserRewardPoint">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="TransactionId" />
+            <PropertyRef Name="RewardPointsEarned" />
+            <PropertyRef Name="DateEarned" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="TransactionId" Type="String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="RewardPointsEarned" Type="String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="DateEarned" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="UserSearchTracker">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="City" />
+            <PropertyRef Name="Country" />
+            <PropertyRef Name="ZipCode" />
+            <PropertyRef Name="Latitude" />
+            <PropertyRef Name="Longitude" />
+            <PropertyRef Name="Amount" />
+            <PropertyRef Name="FromCurrency" />
+            <PropertyRef Name="ToCurrency" />
+            <PropertyRef Name="DateSearched" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="UserId" Type="Int32" />
+          <Property Name="City" Type="String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="Country" Type="String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="ZipCode" Type="String" Nullable="false" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Latitude" Type="Double" Nullable="false" />
+          <Property Name="Longitude" Type="Double" Nullable="false" />
+          <Property Name="Amount" Type="Double" Nullable="false" />
+          <Property Name="FromCurrency" Type="String" Nullable="false" MaxLength="5" FixedLength="true" Unicode="true" />
+          <Property Name="ToCurrency" Type="String" Nullable="false" MaxLength="5" FixedLength="true" Unicode="true" />
+          <Property Name="DateSearched" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ResultsCount" Type="Int32" />
+        </EntityType>
+        <ComplexType Name="SP_FetchUserRewardPoints_Result">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="TransactionId" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="RewardPointsEarned" Nullable="false" MaxLength="100" />
+          <Property Type="DateTime" Name="DateEarned" Nullable="false" Precision="23" />
+          <Property Type="String" Name="Comments" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="UserQRCodeTracker">
+          <Key>
+            <PropertyRef Name="PartnerId" />
+            <PropertyRef Name="TransactionAmount" />
+            <PropertyRef Name="FromCurrency" />
+            <PropertyRef Name="ToCurrency" />
+            <PropertyRef Name="DateScanned" />
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="LocationId" />
+          </Key>
+          <Property Name="PartnerId" Type="Int32" Nullable="false" />
+          <Property Name="TransactionAmount" Type="Double" Nullable="false" />
+          <Property Name="FromCurrency" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="ToCurrency" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="DateScanned" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UserId" Type="Int32" />
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LocationId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <ComplexType Name="SP_FetchPartnerRates_Result1">
+          <Property Type="Int32" Name="Id" Nullable="false" />
+          <Property Type="String" Name="from" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="to" Nullable="false" MaxLength="100" />
+          <Property Type="Double" Name="guaranteed" Nullable="false" />
+          <Property Type="Double" Name="indicative" Nullable="false" />
+          <Property Type="String" Name="Status" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="RateType" Nullable="false" MaxLength="10" />
+        </ComplexType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="NavigettrModelStoreContainer" CdmEntityContainer="NavigettrEntities">
+          <FunctionImportMapping FunctionImportName="usp_Roles_Get" FunctionName="NavigettrModel.Store.usp_Roles_Get">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NavigettrModel.usp_Roles_Get_Result">
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_FetchPartnerCount" FunctionName="NavigettrModel.Store.SP_FetchPartnerCount" >
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NavigettrModel.SP_FetchPartnerCount_Result">
+                <ScalarProperty Name="TotalCount" ColumnName="TotalCount" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_FetchPartnerLocationDetailsCount" FunctionName="NavigettrModel.Store.SP_FetchPartnerLocationDetailsCount" >
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NavigettrModel.SP_FetchPartnerLocationDetailsCount_Result">
+                <ScalarProperty Name="TotalCount" ColumnName="TotalCount" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <EntitySetMapping Name="LoginHistories">
+            <EntityTypeMapping TypeName="NavigettrModel.LoginHistory">
+              <MappingFragment StoreEntitySet="LoginHistory">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="LoginStatus" ColumnName="LoginStatus" />
+                <ScalarProperty Name="LoginDate" ColumnName="LoginDate" />
+                <ScalarProperty Name="IPAddress" ColumnName="IPAddress" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PartnerDetails">
+            <EntityTypeMapping TypeName="NavigettrModel.PartnerDetail">
+              <MappingFragment StoreEntitySet="PartnerDetails">
+                <ScalarProperty Name="RedirectLink" ColumnName="RedirectLink" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="DateExpiry" ColumnName="DateExpiry" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="PartnerLogoPath" ColumnName="PartnerLogoPath" />
+                <ScalarProperty Name="PartnerName" ColumnName="PartnerName" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PartnerLocationDetails">
+            <EntityTypeMapping TypeName="NavigettrModel.PartnerLocationDetail">
+              <MappingFragment StoreEntitySet="PartnerLocationDetails">
+                <ScalarProperty Name="IFSCCode" ColumnName="IFSCCode" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="DateExpiry" ColumnName="DateExpiry" />
+                <ScalarProperty Name="DateActivated" ColumnName="DateActivated" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+                <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+                <ScalarProperty Name="PartnerId" ColumnName="PartnerId" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PartnerLocationWorkTimes">
+            <EntityTypeMapping TypeName="NavigettrModel.PartnerLocationWorkTime">
+              <MappingFragment StoreEntitySet="PartnerLocationWorkTime">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="WorkEndTime" ColumnName="WorkEndTime" />
+                <ScalarProperty Name="WorkStartTime" ColumnName="WorkStartTime" />
+                <ScalarProperty Name="WorkDay" ColumnName="WorkDay" />
+                <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+                <ScalarProperty Name="PartnerId" ColumnName="PartnerId" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PartnerOffers">
+            <EntityTypeMapping TypeName="NavigettrModel.PartnerOffer">
+              <MappingFragment StoreEntitySet="PartnerOffers">
+                <ScalarProperty Name="offerImage" ColumnName="offerImage" />
+                <ScalarProperty Name="DateExpiry" ColumnName="DateExpiry" />
+                <ScalarProperty Name="DateActivation" ColumnName="DateActivation" />
+                <ScalarProperty Name="LastModfied" ColumnName="LastModfied" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="OfferEndDate" ColumnName="OfferEndDate" />
+                <ScalarProperty Name="OfferStartDate" ColumnName="OfferStartDate" />
+                <ScalarProperty Name="OfferText" ColumnName="OfferText" />
+                <ScalarProperty Name="OfferType" ColumnName="OfferType" />
+                <ScalarProperty Name="OfferName" ColumnName="OfferName" />
+                <ScalarProperty Name="PartnerId" ColumnName="PartnerId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PartnerRates">
+            <EntityTypeMapping TypeName="NavigettrModel.PartnerRate">
+              <MappingFragment StoreEntitySet="PartnerRates">
+                <ScalarProperty Name="RateType" ColumnName="RateType" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="Indicative" ColumnName="Indicative" />
+                <ScalarProperty Name="Guaranteed" ColumnName="Guaranteed" />
+                <ScalarProperty Name="ToRate" ColumnName="ToRate" />
+                <ScalarProperty Name="FromRate" ColumnName="FromRate" />
+                <ScalarProperty Name="PartnerId" ColumnName="PartnerId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Roles">
+            <EntityTypeMapping TypeName="NavigettrModel.Role">
+              <MappingFragment StoreEntitySet="Roles">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SystemParams">
+            <EntityTypeMapping TypeName="NavigettrModel.SystemParam">
+              <MappingFragment StoreEntitySet="SystemParam">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="DisplayValue" ColumnName="DisplayValue" />
+                <ScalarProperty Name="Key" ColumnName="Key" />
+                <ScalarProperty Name="PartnerId" ColumnName="PartnerId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserDetails">
+            <EntityTypeMapping TypeName="NavigettrModel.UserDetail">
+              <MappingFragment StoreEntitySet="UserDetails">
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+                <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="LoginType" ColumnName="LoginType" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserNotifications">
+            <EntityTypeMapping TypeName="NavigettrModel.UserNotification">
+              <MappingFragment StoreEntitySet="UserNotifications">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="DateRead" ColumnName="DateRead" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="IsRead" ColumnName="IsRead" />
+                <ScalarProperty Name="NotificationType" ColumnName="NotificationType" />
+                <ScalarProperty Name="NotificationText" ColumnName="NotificationText" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserReminders">
+            <EntityTypeMapping TypeName="NavigettrModel.UserReminder">
+              <MappingFragment StoreEntitySet="UserReminders">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="Distance" ColumnName="Distance" />
+                <ScalarProperty Name="Rate" ColumnName="Rate" />
+                <ScalarProperty Name="RateCondition" ColumnName="RateCondition" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SP_PartnerOffers_InsertUpdate" FunctionName="NavigettrModel.Store.SP_PartnerOffers_InsertUpdate" />
+          <FunctionImportMapping FunctionImportName="SP_PartnerLocationDetails_InsertUpdate" FunctionName="NavigettrModel.Store.SP_PartnerLocationDetails_InsertUpdate" />
+          <FunctionImportMapping FunctionImportName="SP_FetchPartnerRates" FunctionName="NavigettrModel.Store.SP_FetchPartnerRates">
+          <ResultMapping>
+              <ComplexTypeMapping TypeName="NavigettrModel.SP_FetchPartnerRates_Result1">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="from" ColumnName="from" />
+                <ScalarProperty Name="to" ColumnName="to" />
+                <ScalarProperty Name="guaranteed" ColumnName="guaranteed" />
+                <ScalarProperty Name="indicative" ColumnName="indicative" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="RateType" ColumnName="RateType" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_PartnerCharges_InsertUpdate" FunctionName="NavigettrModel.Store.SP_PartnerCharges_InsertUpdate" />
+          <FunctionImportMapping FunctionImportName="SP_PartnerRates_InsertUpdate" FunctionName="NavigettrModel.Store.SP_PartnerRates_InsertUpdate" />
+          <EntitySetMapping Name="PartnerCharges">
+            <EntityTypeMapping TypeName="NavigettrModel.PartnerCharge">
+              <MappingFragment StoreEntitySet="PartnerCharges">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+                <ScalarProperty Name="Charges" ColumnName="Charges" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="Frequency" ColumnName="Frequency" />
+                <ScalarProperty Name="PartnerId" ColumnName="PartnerId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SP_SystemParam_InsertUpdate" FunctionName="NavigettrModel.Store.SP_SystemParam_InsertUpdate" />
+          <FunctionImportMapping FunctionImportName="SP_PartnerSettings" FunctionName="NavigettrModel.Store.SP_PartnerSettings" />
+          <FunctionImportMapping FunctionImportName="SP_FetchPartnerSettings" FunctionName="NavigettrModel.Store.SP_FetchPartnerSettings">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NavigettrModel.SP_FetchPartnerSettings_Result">
+                <ScalarProperty Name="brandName" ColumnName="brandName" />
+                <ScalarProperty Name="brandLogo" ColumnName="brandLogo" />
+                <ScalarProperty Name="redirectLink" ColumnName="redirectLink" />
+                <ScalarProperty Name="emailAddress" ColumnName="emailAddress" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_FetchPartnerOffersCount" FunctionName="NavigettrModel.Store.SP_FetchPartnerOffersCount" />
+          <FunctionImportMapping FunctionImportName="SP_PartnerLocationWorkTime_InsertUpdate" FunctionName="NavigettrModel.Store.SP_PartnerLocationWorkTime_InsertUpdate" />
+          <FunctionImportMapping FunctionImportName="SP_PartnerDetails_InsertUpdate" FunctionName="NavigettrModel.Store.SP_PartnerDetails_InsertUpdate" />
+          <FunctionImportMapping FunctionImportName="SP_FetchPartnerCharges" FunctionName="NavigettrModel.Store.SP_FetchPartnerCharges">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NavigettrModel.SP_FetchPartnerCharges_Result">
+                <ScalarProperty Name="frequency" ColumnName="frequency" />
+                <ScalarProperty Name="category" ColumnName="category" />
+                <ScalarProperty Name="charges" ColumnName="charges" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_FetchPartnerChargesByPartnerID" FunctionName="NavigettrModel.Store.SP_FetchPartnerChargesByPartnerID">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NavigettrModel.SP_FetchPartnerChargesByPartnerID_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="frequency" ColumnName="frequency" />
+                <ScalarProperty Name="category" ColumnName="category" />
+                <ScalarProperty Name="dateActivation" ColumnName="dateActivation" />
+                <ScalarProperty Name="dateExpiry" ColumnName="dateExpiry" />
+                <ScalarProperty Name="charges" ColumnName="charges" />
+                <ScalarProperty Name="isDefault" ColumnName="isDefault" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_FetchPartnerDetails" FunctionName="NavigettrModel.Store.SP_FetchPartnerDetails">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NavigettrModel.SP_FetchPartnerDetails_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="userId" ColumnName="userId" />
+                <ScalarProperty Name="partnerName" ColumnName="partnerName" />
+                <ScalarProperty Name="partnerLogoPath" ColumnName="partnerLogoPath" />
+                <ScalarProperty Name="dateCreated" ColumnName="dateCreated" />
+                <ScalarProperty Name="dateExpiry" ColumnName="dateExpiry" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="userName" ColumnName="userName" />
+                <ScalarProperty Name="locationId" ColumnName="locationId" />
+                <ScalarProperty Name="totalCount" ColumnName="totalCount" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_FetchPartnerLocationDetails" FunctionName="NavigettrModel.Store.SP_FetchPartnerLocationDetails">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NavigettrModel.SP_FetchPartnerLocationDetails_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="partnerId" ColumnName="partnerId" />
+                <ScalarProperty Name="addressLine1" ColumnName="addressLine1" />
+                <ScalarProperty Name="addressLine2" ColumnName="addressLine2" />
+                <ScalarProperty Name="city" ColumnName="city" />
+                <ScalarProperty Name="state" ColumnName="state" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="zipCode" ColumnName="zipCode" />
+                <ScalarProperty Name="latitude" ColumnName="latitude" />
+                <ScalarProperty Name="longitude" ColumnName="longitude" />
+                <ScalarProperty Name="mobileNumber" ColumnName="mobileNumber" />
+                <ScalarProperty Name="dateCreated" ColumnName="dateCreated" />
+                <ScalarProperty Name="activatedDate" ColumnName="activatedDate" />
+                <ScalarProperty Name="expiryDate" ColumnName="expiryDate" />
+                <ScalarProperty Name="partnerName" ColumnName="partnerName" />
+                <ScalarProperty Name="totalCount" ColumnName="totalCount" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_FetchPartnerOffers" FunctionName="NavigettrModel.Store.SP_FetchPartnerOffers">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NavigettrModel.SP_FetchPartnerOffers_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="partnerId" ColumnName="partnerId" />
+                <ScalarProperty Name="offerName" ColumnName="offerName" />
+                <ScalarProperty Name="OfferType" ColumnName="OfferType" />
+                <ScalarProperty Name="offerText" ColumnName="offerText" />
+                <ScalarProperty Name="offerStartDate" ColumnName="offerStartDate" />
+                <ScalarProperty Name="offerEndDate" ColumnName="offerEndDate" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="dateCreated" ColumnName="dateCreated" />
+                <ScalarProperty Name="lastModfied" ColumnName="lastModfied" />
+                <ScalarProperty Name="dateActivation" ColumnName="dateActivation" />
+                <ScalarProperty Name="dateExpiry" ColumnName="dateExpiry" />
+                <ScalarProperty Name="totalCount" ColumnName="totalCount" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_FetchSystemParam" FunctionName="NavigettrModel.Store.SP_FetchSystemParam">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NavigettrModel.SP_FetchSystemParam_Result">
+                <ScalarProperty Name="partnerId" ColumnName="partnerId" />
+                <ScalarProperty Name="Key" ColumnName="Key" />
+                <ScalarProperty Name="displayValue" ColumnName="displayValue" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="parentId" ColumnName="parentId" />
+                <ScalarProperty Name="dateCreated" ColumnName="dateCreated" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_UserLogIn" FunctionName="NavigettrModel.Store.SP_UserLogIn">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NavigettrModel.SP_UserLogIn_Result">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="logo" ColumnName="logo" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_changePassword" FunctionName="NavigettrModel.Store.SP_changePassword" />
+          <FunctionImportMapping FunctionImportName="SP_FetchLocationWorkTimeDetails" FunctionName="NavigettrModel.Store.SP_FetchLocationWorkTimeDetails" >
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NavigettrModel.SP_FetchLocationWorkTimeDetails_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+                <ScalarProperty Name="WorkDay" ColumnName="WorkDay" />
+                <ScalarProperty Name="WorkStartTime" ColumnName="WorkStartTime" />
+                <ScalarProperty Name="WorkEndTime" ColumnName="WorkEndTime" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_forgotPassword" FunctionName="NavigettrModel.Store.SP_forgotPassword">
+          <ResultMapping>
+              <ComplexTypeMapping TypeName="NavigettrModel.SP_forgotPassword_Result1">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_FetchUnProcessedLocations" FunctionName="NavigettrModel.Store.SP_FetchUnProcessedLocations">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NavigettrModel.SP_FetchUnProcessedLocations_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PartnerId" ColumnName="PartnerId" />
+                <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+                <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="ActivatedDate" ColumnName="ActivatedDate" />
+                <ScalarProperty Name="ExpiryDate" ColumnName="ExpiryDate" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_UserDetails_InsertUpdate" FunctionName="NavigettrModel.Store.SP_UserDetails_InsertUpdate" />
+          <EntitySetMapping Name="UserLocationTrackers">
+            <EntityTypeMapping TypeName="NavigettrModel.UserLocationTracker">
+              <MappingFragment StoreEntitySet="UserLocationTracker">
+                <ScalarProperty Name="ReachedDestinationAt" ColumnName="ReachedDestinationAt" />
+                <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+                <ScalarProperty Name="PartnerId" ColumnName="PartnerId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserRewardPoints">
+            <EntityTypeMapping TypeName="NavigettrModel.UserRewardPoint">
+              <MappingFragment StoreEntitySet="UserRewardPoints">
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+                <ScalarProperty Name="DateEarned" ColumnName="DateEarned" />
+                <ScalarProperty Name="RewardPointsEarned" ColumnName="RewardPointsEarned" />
+                <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserSearchTrackers">
+            <EntityTypeMapping TypeName="NavigettrModel.UserSearchTracker">
+              <MappingFragment StoreEntitySet="UserSearchTracker">
+                <ScalarProperty Name="ResultsCount" ColumnName="ResultsCount" />
+                <ScalarProperty Name="DateSearched" ColumnName="DateSearched" />
+                <ScalarProperty Name="ToCurrency" ColumnName="ToCurrency" />
+                <ScalarProperty Name="FromCurrency" ColumnName="FromCurrency" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SP_FetchUserRewardPoints" FunctionName="NavigettrModel.Store.SP_FetchUserRewardPoints">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NavigettrModel.SP_FetchUserRewardPoints_Result">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+                <ScalarProperty Name="RewardPointsEarned" ColumnName="RewardPointsEarned" />
+                <ScalarProperty Name="DateEarned" ColumnName="DateEarned" />
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_UserLocationTracker_Insert" FunctionName="NavigettrModel.Store.SP_UserLocationTracker_Insert" />
+          <FunctionImportMapping FunctionImportName="SP_UserQRCodeTracker_Insert" FunctionName="NavigettrModel.Store.SP_UserQRCodeTracker_Insert" />
+          <FunctionImportMapping FunctionImportName="SP_UserRewardPoints_Insert" FunctionName="NavigettrModel.Store.SP_UserRewardPoints_Insert" />
+          <FunctionImportMapping FunctionImportName="SP_UserSearchTracker_Insert" FunctionName="NavigettrModel.Store.SP_UserSearchTracker_Insert" />
+          <EntitySetMapping Name="UserQRCodeTrackers">
+            <EntityTypeMapping TypeName="NavigettrModel.UserQRCodeTracker">
+              <MappingFragment StoreEntitySet="UserQRCodeTracker">
+                <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="DateScanned" ColumnName="DateScanned" />
+                <ScalarProperty Name="ToCurrency" ColumnName="ToCurrency" />
+                <ScalarProperty Name="FromCurrency" ColumnName="FromCurrency" />
+                <ScalarProperty Name="TransactionAmount" ColumnName="TransactionAmount" />
+                <ScalarProperty Name="PartnerId" ColumnName="PartnerId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

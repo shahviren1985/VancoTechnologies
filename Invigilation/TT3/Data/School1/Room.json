@@ -1,0 +1,67 @@
+[
+  {
+    "RoomName": "IA",
+    "IsTypeRelOrStandBy": "room",
+    "OrderNo": "10"
+  },
+  {
+    "RoomName": "IB",
+    "IsTypeRelOrStandBy": "room",
+    "OrderNo": "20"
+  },
+  {
+    "RoomName": "IIA",
+    "IsTypeRelOrStandBy": "room",
+    "OrderNo": "30"
+  },
+  {
+    "RoomName": "IIB",
+    "IsTypeRelOrStandBy": "room",
+    "OrderNo": "40"
+  },
+  {
+    "RoomName": "IIIA",
+    "IsTypeRelOrStandBy": "room",
+    "OrderNo": "50"
+  },
+  {
+    "RoomName": "IIIB",
+    "IsTypeRelOrStandBy": "room",
+    "OrderNo": "60"
+  },
+  {
+    "RoomName": "IV",
+    "IsTypeRelOrStandBy": "room",
+    "OrderNo": "70"
+  },
+  {
+    "RoomName": "V",
+    "IsTypeRelOrStandBy": "room",
+    "OrderNo": "80"
+  },
+  {
+    "RoomName": "VI",
+    "IsTypeRelOrStandBy": "room",
+    "OrderNo": "90"
+  },
+  {
+    "RoomName": "VII",
+    "IsTypeRelOrStandBy": "room",
+    "OrderNo": "100"
+  },
+  {
+    "RoomName": "ART ROOM",
+    "IsTypeRelOrStandBy": "room",
+    "OrderNo": "110"
+  },
+  {
+    "RoomName": "Reliver",
+    "IsTypeRelOrStandBy": "reliver",
+    "OrderNo": "120"
+  },
+  {
+    "RoomName": "StandBy",
+    "IsTypeRelOrStandBy": "stand by",
+    "OrderNo": "130"
+  }
+]

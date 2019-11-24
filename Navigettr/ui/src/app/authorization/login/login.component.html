@@ -1,0 +1,122 @@
+<div class="app flex-row align-items-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card-group mb-0">
+          <div class="card p-4">
+            <div class="card-body">
+              <form [formGroup]="loginForm" (submit)="onSubmit()">
+                <h1>Login</h1>
+                <p class="text-muted">Sign In to your account</p>
+                <div class="navi-Success">
+                  <alert></alert>
+                </div>
+                <div class="form-group">
+                  <div class="input-group mb-3">
+                    <span class="input-group-addon"
+                      ><i class="icon-user"></i
+                    ></span>
+                    <input
+                      type="text"
+                      formControlName="userName"
+                      class="form-control"
+                      placeholder="User Name"
+                    />
+                  </div>
+                  <div
+                    *ngIf="
+                      f.userName.errors?.required &&
+                      (f.userName.dirty || f.userName.touched)
+                    "
+                    class="alert alert-danger"
+                  >
+                    <div [hidden]="this.loginForm.controls['userName'].valid">
+                      User Name is required
+                    </div>
+                  </div>
+                  <div
+                    *ngIf="f.userName.errors?.maxlength"
+                    class="alert alert-danger"
+                  >
+                    <div [hidden]="this.loginForm.controls['userName'].valid">
+                      User Name must be less than 50 characters.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="input-group mb-4">
+                    <span class="input-group-addon"
+                      ><i class="icon-lock"></i
+                    ></span>
+                    <input
+                      type="password"
+                      placeholder="Password"
+                      formControlName="password"
+                      class="form-control"
+                    />
+                  </div>
+                  <div
+                    *ngIf="
+                      f.password.errors?.required &&
+                      (f.password.dirty || f.password.touched)
+                    "
+                    class="alert alert-danger"
+                  >
+                    <div [hidden]="this.loginForm.controls['password'].valid">
+                      Password is required
+                    </div>
+                  </div>
+                  <div
+                    *ngIf="f.password.errors?.maxlength"
+                    class="alert alert-danger"
+                  >
+                    <div [hidden]="this.loginForm.controls['password'].valid">
+                      Password must be less than 50 characters.
+                    </div>
+                  </div>
+                </div>
+                <ngx-loading
+                  [show]="loading"
+                  [config]="{ backdropBorderRadius: '3px' }"
+                  [template]="customLoadingTemplate"
+                ></ngx-loading>
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col-6">
+                      <button
+                        type="submit"
+                        class="btn btn-primary px-4"
+                        [disabled]="!loginForm.valid"
+                      >
+                        Login
+                      </button>
+                    </div>
+                    <div class="col-6 text-right">
+                      <button
+                        type="button"
+                        [routerLink]="['/forgotPassword']"
+                        class="btn btn-link px-0"
+                      >
+                        Forgot password?
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- <div class="card text-white bg-primary py-5 d-md-down-none" style="width:44%">
+            <div class="card-body text-center">
+              <div>
+                <h2>Sign up</h2>
+                <button type="button" [routerLink]="['/register']" class="btn btn-primary active mt-3">Register
+                  Now!</button>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

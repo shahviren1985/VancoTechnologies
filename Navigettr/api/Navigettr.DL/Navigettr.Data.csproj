@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3D2D111-D146-417B-B1C1-82F83AD21DB1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Navigettr.Data</RootNamespace>
+    <AssemblyName>Navigettr.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EmailData.cs" />
+    <Compile Include="SP_FetchLocationWorkTimeDetails1_Result.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FetchLocationWorkTimeDetails1_Result1.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FetchLocationWorkTimeDetails_Result.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FetchLocationWorkTimeDetails_Result1.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FetchPartnerRates_Result1.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FetchPartnerSettings_Result.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LoginHistory.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NavigettrDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NavigettrDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NavigettrDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NavigettrDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NavigettrDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="PartnerCharge.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PartnerData.cs" />
+    <Compile Include="PartnerDetail.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PartnerLocationData.cs" />
+    <Compile Include="PartnerLocationDetail.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PartnerLocationWorkTime.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PartnerOffer.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PartnerOffersData.cs" />
+    <Compile Include="PartnerRate.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Role.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RoleData.cs" />
+    <Compile Include="SP_FetchPartnerChargesByPartnerID_Result.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FetchPartnerCharges_Result.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FetchPartnerCount_Result.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FetchPartnerDetails_Result.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FetchPartnerLocationDetailsCount_Result.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FetchPartnerLocationDetails_Result.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FetchPartnerOffers_Result.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FetchPartnerRates_Result.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FetchSystemParam_Result.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FetchUnProcessedLocations_Result.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FetchUserRewardPoints_Result.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_forgotPassword_Result.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_forgotPassword_Result1.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_UserLogIn_Result.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SystemParam.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserData.cs" />
+    <Compile Include="UserDetail.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserLocationTracker.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserNotification.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserQRCodeTracker.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserReminder.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserRewardPoint.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserSearchTracker.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_Roles_Get_Result.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="NavigettrDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>NavigettrDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="NavigettrDB.edmx.diagram">
+      <DependentUpon>NavigettrDB.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NavigettrDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NavigettrDB.edmx</DependentUpon>
+      <LastGenOutput>NavigettrDB.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="NavigettrDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NavigettrDB.edmx</DependentUpon>
+      <LastGenOutput>NavigettrDB.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

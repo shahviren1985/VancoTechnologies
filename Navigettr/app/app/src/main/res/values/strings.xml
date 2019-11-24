@@ -1,0 +1,96 @@
+<resources>
+    <string name="google_maps_key"></string>
+    <string name="app_name">Navigettr</string>
+
+    <string name="crashed">Oops, I crashed, Notify developer!</string>
+    <string name="tv_money_text">Locate the nearest money transfer company offering the best rate.</string>
+    <string name="tv_money_title">Send Money</string>
+    <string name="tv_forex_text">Locate the nearest Foreign Exchange providers offering best rate.</string>
+    <string name="tv_forex_title">Get Forex</string>
+    <string name="tv_travelcard_text">Locate the nearest travel card providers offering best rate.</string>
+    <string name="tv_travelcard_title">Get Travel Card</string>
+    <string name="reach_des">You have reached your destination. You can earn rewards by scanning QR code</string>
+    <string name="reach_des_noQRCode">You have reached your destination.</string>
+    <string name="btn_loadmore">Load More</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+    <string name="apiCall_text">Getting near by locations...</string>
+    <string name="apiCall_rewards">Getting Rewards...</string>
+    <string name="searching_loc">Searching Location...</string>
+    <string name="title_dialoglocation">Search Location</string>
+    <string name="autoCTV_location">Enter City Name</string>
+    <string name="et_firstname">First Name</string>
+    <string name="et_lastname">Last Name</string>
+    <string name="et_email">E-mail</string>
+    <string name="et_password_reg">Password</string>
+    <string name="et_phone">Mobile Number</string>
+    <string name="et_username">Enter Username</string>
+    <string name="et_password">Enter Password</string>
+    <string name="tv_login">LOGIN</string>
+    <string name="tv_register">Register </string>
+    <string name="tv_send">SEND</string>
+    <string name="txt_register">Signup With</string>
+    <string name="txt_signup">Register here</string>
+    <string name="txt_signin">Login</string>
+    <string name="msg_already_register">Already have an account?</string>
+    <string name="txt_forget">Forgot Password? </string>
+    <string name="txt_RegisterTitle">Resgister</string>
+    <string name="txt_forgotTitle">Forgot Password</string>
+    <string name="msg_register">Don\'t have an account?</string>
+    <string name="tv_what_you_want">You want to</string>
+    <string name="error_currency">Currency should not be same</string>
+    <string name="error_currency_valid">Select Valid Currency</string>
+    <string name="error_amount">Enter Amount</string>
+    <string name="error_internet">Please Check Your Internet Connection</string>
+    <string name="opening_soon">Opening Soon</string>
+    <string name="closing_soon">Closing Soon</string>
+    <string name="open_now">Open Now</string>
+    <string name="close_now">Closed Now</string>
+    <string name="money_providers">money transfer providers available.</string>
+    <string name="forex_providers">foregin exchange providers available.</string>
+    <string name="travelcard_providers">travel card providers available.</string>
+    <string name="spinner_text">Select Currency</string>
+    <string name="text_alert_filter">Distance (in KM)</string>
+    <string name="str_ASC">ASC</string>
+    <string name="str_DESC">DESC</string>
+    <string name="error_nolocation">Please activate location service on your device.</string>
+    <string name="error_un_pwd">Invalid Username/Passowrd</string>
+    <string name="error_un">Enter Username</string>
+    <string name="error_pwd">Enter Passowrd</string>
+    <string name="error_email">Enter E-mail</string>
+    <string name="error_fn">Enter First Name</string>
+    <string name="error_ln">Enter Last Name</string>
+    <string name="error_phone">Enter Mobile Number</string>
+    <string name="frg_money">Money Transfer</string>
+    <string name="frg_foreign">Forex</string>
+    <string name="frg_travel">Travel Card</string>
+    <string name="err_currency_list">There is something error</string>
+    <string name="err_change_location">Location can\'t be Empty</string>
+    <string name="success_register_api">Successfully Registered</string>
+    <string name="toast_register_api">Please try registering using different mobile number</string>
+    <string name="err_register_api">Username already exist. Please try registering using different mobile number or try forgot password from website.</string>
+    <string name="msg_noData">No data found for search criteria. Try changing search criteria or increase the radius using FILTER</string>
+    <string name="msg_scanQRCode">You have successfully completed the trasaction. You have earned reward points. Click here to view your reward.</string>
+    <string name="tv_msg_scanQRCode">Thank you for scanning the QR Code. You can get the reward on completing the transaction.
+    Your transaction details are: </string>
+
+    <string-array name="filter_distance">
+        <item>5</item>
+        <item>10</item>
+        <item>25</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+
+    <string name="scanner_activity">ZXing Scanner - Full Activity</string>
+    <string name="scanner_fragment_activity">ZXing Scanner - Full Fragment Activity</string>
+    <string name="formats">Formats</string>
+    <string name="choose_formats">Choose Formats</string>
+    <string name="ok_button">OK</string>
+    <string name="cancel_button">Cancel</string>
+    <bool name="cameraPreviewShouldFillView">true</bool>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

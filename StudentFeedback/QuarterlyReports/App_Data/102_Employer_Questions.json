@@ -1,0 +1,143 @@
+[
+	{
+		"id": "a1",
+		"question": "Name of Employer",
+		"type": "text",
+		"controlCount": "1",
+		"placeHolder": "Full Name of Employer"
+	},
+	{
+		"id": "a2",
+		"question": "Designation",
+		"type": "text",
+		"controlCount": "1",
+		"placeHolder": "Designation"
+	},
+	{
+		"id": "a3",
+		"question": "Name of Company/Institution",
+		"type": "text",
+		"controlCount": "1",
+		"placeHolder": "Name of Company/Institution"
+	},
+	{
+		"id": "a4",
+		"question": "Please rate the curriculum based on the students’ performance:",
+		"type": "header",
+		"controlCount": "1",
+		"placeHolder": ""
+	},
+	{
+		"id": "a5",
+		"question": "Curriculum proved useful at workplace",
+		"type": "radio",
+		"optionValues": [
+			"1 - Excellent",
+			"2 - Good",
+			"3 - Average",
+			"4 - Below Average"			
+		]
+	},
+	{
+		"id": "a6",
+		"question": "Weightage given to theoretical knowledge/employability",
+		"type": "radio",
+		"optionValues": [
+			"1 - Excellent",
+			"2 - Good",
+			"3 - Average",
+			"4 - Below Average"			
+		]
+	},
+	{
+		"id": "a7",
+		"question": "Weightage given to, hands-on practical/skill development",
+		"type": "radio",
+		"optionValues": [
+			"1 - Excellent",
+			"2 - Good",
+			"3 - Average",
+			"4 - Below Average"			
+		]
+	},
+	{
+		"id": "a8",
+		"question": "Weightage given to entrepreneurship/vocational training",
+		"type": "radio",
+		"optionValues": [
+			"1 - Excellent",
+			"2 - Good",
+			"3 - Average",
+			"4 - Below Average"			
+		]
+	},
+	{
+		"id": "a9",
+		"question": "Depth of course content for innovativeness and creativity",
+		"type": "radio",
+		"optionValues": [
+			"1 - Excellent",
+			"2 - Good",
+			"3 - Average",
+			"4 - Below Average"			
+		]
+	},
+	{
+		"id": "a10",
+		"question": "Inclusion/Incorporation of latest advancements in the subject/updating of knowledge",
+		"type": "radio",
+		"optionValues": [
+			"1 - Excellent",
+			"2 - Good",
+			"3 - Average",
+			"4 - Below Average"			
+		]
+	},
+	{
+		"id": "a11",
+		"question": "Leadership qualities (Ability to take initiative, be proactive and manage)",
+		"type": "radio",
+		"optionValues": [
+			"1 - Excellent",
+			"2 - Good",
+			"3 - Average",
+			"4 - Below Average"			
+		]
+	},
+	{
+		"id": "a12",
+		"question": "Weightage given in the curriculum tolearning values (in terms of concepts, practical skills, analytical abilities and broadening perspectives)",
+		"type": "radio",
+		"optionValues": [
+			"1 - Excellent",
+			"2 - Good",
+			"3 - Average",
+			"4 - Below Average"			
+		]
+	},
+    {
+        "id": "a13",
+        "question": "Overall rating",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a14",
+        "question": "Mobile Number",
+        "type": "text",
+        "controlCount": "1",
+        "placeHolder": "Mobile Number"
+    },
+    {
+        "id": "a15",
+        "question": "Email Address",
+        "type": "text",
+        "controlCount": "1",
+        "placeHolder": "Email Address"
+    }
+]

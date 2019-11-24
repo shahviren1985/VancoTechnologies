@@ -1,0 +1,84 @@
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-header">
+        <h4>Partner Details ({{ partnerName }}) – Offers</h4>
+        <button
+          *ngIf="!isAdmin"
+          type="button"
+          class="btn btn-primary pull-right icon-plus"
+          (click)="addOffer()"
+        >
+          <span class="glyphicon glyphicon-plus"></span> Add New Offer
+        </button>
+        <div class="navi-Success">
+          <alert></alert>
+        </div>
+        <input type="text" [(ngModel)]="email" placeholder="Search here" />
+      </div>
+      <div class="card-body">
+        <ngx-loading
+          [show]="loading"
+          [config]="{ backdropBorderRadius: '3px' }"
+          [template]="customLoadingTemplate"
+        ></ngx-loading>
+        <table class="table table-bordered table-striped table-sm">
+          <thead>
+            <tr>
+              <th>Offer Name</th>
+              <th>Date Activated</th>
+              <th>Date Expired</th>
+              <th>Offer Text</th>
+              <th *ngIf="!isAdmin">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of pagedItems; let i = index">
+              <td>{{ item.offerName }}</td>
+              <td>{{ item.dateActivation }}</td>
+              <td>{{ item.dateExpiry }}</td>
+              <td>{{ item.offerText }}</td>
+              <td *ngIf="!isAdmin" class="text-center">
+                <a (click)="updateOfferItem(item)" style="cursor:pointer;"
+                  ><i class="fa fa-edit fa-10x" aria-hidden="true"></i
+                ></a>
+              </td>
+            </tr>
+            <tr *ngIf="showNoRecord">
+              <td class="center-align" colspan="10">{{ notFoundMessage }}</td>
+            </tr>
+          </tbody>
+        </table>
+        <nav>
+          <ul *ngIf="pager.pages && pager.pages.length" class="pagination">
+            <li [ngClass]="{ disabled: pager.currentPage === 1 }">
+              <a (click)="getPartnerOffers(1)">First</a>
+            </li>
+            <li [ngClass]="{ disabled: pager.currentPage === 1 }">
+              <a (click)="getPartnerOffers(pager.currentPage - 1)">Previous</a>
+            </li>
+            <li
+              *ngFor="let page of pager.pages"
+              [ngClass]="{ active: pager.currentPage === page }"
+            >
+              <a (click)="getPartnerOffers(page)">{{ page }}</a>
+            </li>
+            <li
+              [ngClass]="{ disabled: pager.currentPage === pager.totalPages }"
+            >
+              <a (click)="getPartnerOffers(pager.currentPage + 1)">Next</a>
+            </li>
+            <li
+              [ngClass]="{ disabled: pager.currentPage === pager.totalPages }"
+            >
+              <a (click)="getPartnerOffers(pager.totalPages)">Last</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<app-add-partner-offers-pop-up
+  #addPartnerOffersModal
+></app-add-partner-offers-pop-up>

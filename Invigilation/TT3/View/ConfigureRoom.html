@@ -1,0 +1,82 @@
+﻿<main class="app-content">
+    <div class="row">
+        <div class="app-title">
+            <div>
+                <h1><i class="fas fa-chalkboard-teacher"></i> Configure</h1>
+                <p><!--Modify current professor list--></p>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="tile">
+                <div class="overlay">
+                    <div class="m-loader mr-4">
+                        <svg class="m-circular" viewBox="25 25 50 50">
+                            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="l-text">Loading</h3>
+                </div>
+                <div class="tile-body">
+                    <table class="table table-hover table-bordered" id="sampleTable">
+                        <thead>
+                            <tr role="row">
+                                <th>Sr No</th>
+                                <!--<th>User Id</th>-->
+                                <th style="width:150px">Room Name</th>
+                                <th style="width: 400px">Teachers</th>
+                                <th style="">Option</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="au in AllRooms">
+                                <td>{{$index+1}}</td>
+                                <td style="text-align: left !important;">{{au.RoomName}}</td>
+                                <td style="text-align: left !important;">{{GetTeacherNames($index)}}</td>
+                                <td>
+                                    <a class="btn btn-primary" ng-click="CreateOrUpdate($index)" style="color:white"><i class="fa fa-lg fa-cog" style="margin-top: -3px;"></i> Edit</a>
+                                    <!--<button class="btn btn-secondary" type="button" >Delete</button>-->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<div class="modal fade" id="ExamScheduleModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-2">
+    <div class="modal-dialog" role="document" style="max-width: 500px;overflow-y: initial !important">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel-2">
+                    {{CurrentRoomTOUpdate.RoomName}}
+                </h4>
+            </div>
+            <div class="modal-body" style="min-height: 300px; height:350px;overflow-y: auto;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <table class="table">
+                            <tr>
+                                <td>
+                                   #
+                                </td>
+                                <td>Teacher Name</td>
+                            </tr>
+                            <tr ng-repeat="teacher in Teachers">
+                                <td><input type="checkbox" class="chkTeacherSelect" ng-checked="IsCheckReqired(teacher.name)" data-teachername="{{teacher.name}}" /></td>
+                                <td>{{teacher.name}}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary" ng-click="SaveTeacherMapping()" style="color:white"><i class="fa fa-lg fa-check" style="margin-top: -3px;"></i>  Save</button>
+                <a class="btn btn-primary" style="color:white" data-dismiss="modal"><i class="fa fa-lg fa-times" style="margin-top: -3px;"></i> Cancel</a>
+            </div>
+
+        </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+</div>

@@ -1,0 +1,819 @@
+﻿<!DOCTYPE html>
+<html ng-app="ExamSystemApp">
+<head>
+    <title>Certificate</title>
+    <meta charset="utf-8" />
+    <script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="../../CustomJs/Angular.js"></script>
+    <script src="../../CustomJs/urlConfig.js"></script>
+    <script src="../../CustomJs/Index.js"></script>
+    <script>
+        var Examapp = angular.module("ExamSystemApp", []);
+    </script>
+    <script src="../../CustomJs/AppConfig.js"></script>
+    <script src="../../App/OnlineQueries/Transcript_Certficate.controller.js"></script>
+    <script src="../../App/Directive/A4LatterPad.directive.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css">
+    <link href="../../App/App.css" rel="stylesheet" />
+    <style>
+        /*@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);*/
+        @media print {
+            .colorRuleChrome {
+                color: #1F3C67 !important;
+            }
+
+            .ColorRedSetChrome {
+                color: red !important;
+            }
+
+            @media print and (-webkit-min-device-pixel-ratio:0) {
+                .colorRuleChrome {
+                    color: #1F3C67 !important;
+                    -webkit-print-color-adjust: exact !important;
+                }
+
+                .ColorRedSetChrome {
+                    color: red !important;
+                    -webkit-print-color-adjust: exact !important;
+                }
+            }
+        }
+		table { border-collapse: collapse;}
+        /*body {
+            font-family: 'Eras ITC';
+            font-weight: 600;
+            color: #1F3C67;
+        }*/
+        .CollegeHeading {
+            font-family: "Bahnschrift";
+            font-size: 25px;
+            text-align: center;
+        }
+
+        .CollegeHeading1 {
+            font-family: "Bahnschrift";
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .CollegeHeading2 {
+            font-family: "Bahnschrift";
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .Heading2SmallFont {
+            font-family: 'Comic Sans MS',sans-serif,'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        @page {
+            size: A4 portrait;
+        }
+
+        .bordered {
+            width: 100%;
+        }
+
+            .bordered td {
+                border: 1px black solid;
+                padding: 2px;
+                text-align: center;
+            }
+
+        .rotate {
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            width: 1.5em;
+        }
+
+            .rotate div {
+                -ms-writing-mode: tb-rl;
+                -webkit-writing-mode: vertical-rl;
+                writing-mode: vertical-rl;
+                transform: rotate(180deg);
+                height: 100px;
+                text-align: left;
+                /*white-space: nowrap;*/
+            }
+        .svtA4WaterMark{
+            margin-top: 21%;
+        }
+        table{
+            font-size: 16px !important;
+        }
+        #StudentDetails td{
+            padding-top: 10px;
+            float: left;
+        }
+
+        @media print {
+            * {
+                -webkit-print-color-adjust: exact !important; /*Chrome, Safari */
+                color-adjust: exact !important; /*Firefox*/
+            }
+        }
+    </style>
+
+</head>
+<body style="" ng-controller="GenerateTranscriptCertificateCtrl" class="A4 portrait">
+    <div class="row" style="text-align: center" id="div_LoaderMarksheet" ng-show="!IsLoadingCompleted">
+        <img id="ImgLoader" src="../../images/MarksheetLoader.gif" style="width: 10%; height: auto;" /><br />
+        <span id="marksheetStatusText">Transcript is loading...</span>
+    </div>
+    <div id="MainView" ng-show="IsLoadingCompleted">
+        <section class="sheet" style="padding:15px">
+            <article class="svtA4WaterMark">
+                <!--<div>
+                    <div ng-include="'../../App/Common/LatterPad_Heading.html'"></div>
+                </div>
+                <br />-->
+                <div class="row" style="font-family: Calibri; padding-right: 50px; padding-left: 50px; font-size: 18px;">
+                    <div class="col-md-12" style="padding-top: 20px; float: right">
+                        <span> <b>Date - {{DateOfToday}}</b></span>
+                    </div>
+                    <div class="col-md-12" style="text-align:center; padding-top:50px;font-size:20px;font-weight:600">
+                        TRANSCRIPT CERTIFICATE
+                    </div>
+                    <div class="col-md-12" style="text-align: justify; padding-top: 40px; font-size: 18px;">
+                        This is certify that, <span><b>Ms. {{TranscriptData.LastName}} {{TranscriptData.FirstName}} {{TranscriptData.FatherName}} {{TranscriptData.MotherName}}</b></span> has been a bonafide student of Sir
+                        Vithaldas Thackersey College of Home Science (Autonomous) S.N.D.T. Women's University Juhu, Mumbai from
+                        <span>July 2016</span> to <span>June 2019</span>. She has successfully completed the B.Sc. course in
+                        <span><b>{{TranscriptData.Specialisation}}</b></span> offered by S.N.D.T Women's University and the duration
+                        of the program is three years. College conducts the examinations twice in every year. The medium of instruction for above program is English.
+                    </div>
+                    <div class="col-md-12" style="text-align: justify; padding-top: 30px; font-size: 18px;">
+                        The detail about credits, teaching hours and grade
+                        obtained by <span><b>Ms. {{TranscriptData.LastName}} {{TranscriptData.FirstName}} {{TranscriptData.FatherName}} {{TranscriptData.MotherName}}</b></span> in each courses are given in the enclosure.
+                    </div>
+                    <div class="col-md-12" style="font-size: 18px; width: 80%;">
+                        <br /><br /><br /><br /><br /><br /><br /><br />
+                        <div class="watermark"></div>
+                        <div class="col-md-12">
+                            &nbsp;
+                        </div>
+                        <div class="col-md-10" style="font-size: 17px; float: left;margin-top: 20px">
+                            <b style="padding-left: 11%;">Dr. Rekha Battalwar</b>
+                            <br />
+                            Controller of Examinations
+                        </div>
+                        <div class="col-md-10" style="font-size: 17px; text-align: right;float: right;margin-top: 20px">
+                            <b style="">Dr. Jagmeet Madan</b>
+                            <br />
+                            <span style="padding-right: 28%;">Principal</span>
+                        </div>
+                    </div>
+                    <div class="col-md-12" style="font-size: 18px">
+                        <span class="pull-left">
+
+                        </span>
+                        <span class="pull-right">
+
+                        </span>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="sheet" style="padding:15px">
+            <!--sem1 and student details-->
+            <article class="svtA4WaterMark">
+                <!--<div>
+                    <div ng-include="'../../App/Common/LatterPad_Heading.html'"></div>
+                </div>-->
+                <div class="row" style="font-family: Calibri; padding-right: 50px; padding-left: 50px; font-size: 18px;">
+                    <div class="col-md-12" style="padding-top: 0px">
+                        <span class="pull-left"> <b>SVT/EXAM/TRANSCRIPT/{{CurrentAcademicYear}}/{{InwardNumber}}</b></span>
+                        <span style="float: right"> <b>Date - {{DateOfToday}}</b></span>
+                    </div>
+                    <div class="col-md-12" style="text-align:center; padding-top:10px;font-size:20px;font-weight:600">
+                        <u>OFFICIAL TRANSCRIPT</u>
+                    </div>
+                    <div class="col-md-12" style="text-align: justify; font-size: 15px; float: left; width: 100%;">
+                        <table id="StudentDetails" style="font-style:italic; float: left; width: 100%;">
+                            <tr>
+                                <td style="width:40%"><i style="float:right">Name of the Student</i></td>
+                                <td style="width:30px"></td>
+                                <td style="width:30px">:</td>
+                                <td><b>Ms. <span>{{TranscriptData.LastName}} {{TranscriptData.FirstName}} {{TranscriptData.FatherName}} {{TranscriptData.MotherName}}</span></b></td>
+                            </tr>
+                            <tr>
+                                <td style="width:40%"><i style="float:right">Name of the Program</i></td>
+                                <td style="width:30px"></td>
+                                <td style="width:30px">:</td>
+                                <td><b><span>B.Sc. in Home Science</span></b></td>
+                            </tr>
+                            <tr>
+                                <td style="width:40%"><i style="float:right">Duration</i></td>
+                                <td style="width:30px"></td>
+                                <td style="width:30px">:</td>
+                                <td><b><span>Three Years Degree Program (Total Six Semesters)</span></b></td>
+                            </tr>
+                            <tr>
+                                <td style="width:40%"><i style="float:right">Medium of Instruction</i></td>
+                                <td style="width:30px"></td>
+                                <td style="width:30px">:</td>
+                                <td><b><span>English</span></b></td>
+                            </tr>
+                            <tr>
+                                <td style="width:40%"><i style="float:right">Name of the University</i></td>
+                                <td style="width:30px"></td>
+                                <td style="width:30px">:</td>
+                                <td><b><span>S.N.D.T Women's University</span></b></td>
+                            </tr>
+                            <tr>
+                                <td style="width:40%"><i style="float:right">Name of the Institute</i><br /></td>
+                                <td style="width:30px"></td>
+                                <td style="width:30px">:</td>
+                                <td><b><span>Sir Vithaldas Thackersey College of Home Science<br/> (Autonomous)</span></b></td>
+                            </tr>
+                            <tr>
+                                <td style="width:40%"><i style="float:right">Registration No.</i></td>
+                                <td style="width:30px"></td>
+                                <td style="width:30px">:</td>
+                                <td><b><span>{{TranscriptData.CollegeRegistrationNumber}}</span></b></td>
+                            </tr>
+                            <tr>
+                                <td style="width:40%"><i style="float:right">Department</i></td>
+                                <td style="width:30px"></td>
+                                <td style="width:30px">:</td>
+                                <!--<td><b><span>{{TranscriptData.DepartmentName}}</span></b></td>-->
+                                <td><b><span>FOOD, NUTRITION AND DIETETICS</span></b></td>
+                                
+                            </tr>
+                            <tr>
+                                <td style="width:40%"><i style="float:right">Specialization</i></td>
+                                <td style="width:30px"></td>
+                                <td style="width:30px">:</td>
+                                <!--<td><b><span>{{TranscriptData.Specialisation | uppercase}}</span></b></td>-->
+                                <td><b><span>FOOD, NUTRITION AND DIETETICS</span></b></td>
+                            </tr>
+                            <tr>
+                                <td style="width:40%"><i style="float:right">Weighted Percentage</i></td>
+                                <td style="width:30px"></td>
+                                <td style="width:30px">:</td>
+                                <!--<td><b><span>{{TranscriptData.TotalOverAllPercentage | number:2}}</span></b></td>-->
+                                <td><b><span>73.89</span></b></td>
+                            </tr>
+                            <tr>
+                                <td style="width:40%"><i style="float:right">Aggregate Grade</i></td>
+                                <td style="width:30px"></td>
+                                <td style="width:30px">:</td>
+                                <!--<td><b><span>{{TranscriptData.OverAllGrade}}</span></b></td>-->
+                                <td><b><span>A+</span></b></td>
+                            </tr>
+                            <tr>
+                                <td style="width:40%"><i style="float:right">Grade Point Average</i></td>
+                                <td style="width:30px"></td>
+                                <td style="width:30px">:</td>
+                                <!--<td><b><span>{{TranscriptData.OverAllGradePOint | number:2}}</span></b></td>-->
+                                <td><b><span>8.39</span></b></td>
+                            </tr>
+                            <tr style="padding-top:10px; width: 100%;">
+                                <td colspan="3" style="width: 100%;">
+                                    <div class="col-md-12" style="float: right; margin-bottom: 5px;">
+                                        <b style="font-style: normal; font-size: 18px; text-decoration: underline">F.Y.B.Sc. Semester - I (October - {{TranscriptExamData.Semester1}})</b>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-12">
+                        <table class="bordered" style="font-size:14px">
+                            <tr>
+                                <td><b>Course Title</b></td>
+                                <td class="rotate"><div><b>TH/PR</b></div></td>
+                                <td class="rotate"><div><b>Credits</b></div></td>
+                                <td class="rotate"><div><b>Total Marks</b></div></td>
+                                <td class="rotate"><div><b>Marks <br />Obtained</b></div></td>
+                                <td class="rotate"><div><b>Grade</b></div></td>
+                                <td class="rotate"><div><b>Grade Point</b></div></td>
+                                <td class="rotate"><div><b>Total Grade<br />Point</b></div></td>
+                                <td class="rotate"><div><b>No. of TH/PR<br /> per Week</b></div></td>
+                                <td class="rotate"><div><b>Teaching<br> Weeks</b></div></td>
+                            </tr>
+                            <tr ng-repeat="paper in TranscriptData.Sem1.Papers">
+                                <td style="text-align:left">{{paper.papertitle}}</td>
+                                <td>{{paper.papertype}}</td>
+                                <td>{{paper.credit}}</td>
+                                <td>{{GetCountTotalMark(paper)}}</td>
+                                <td>{{GetCountObtainedTotalMark(paper)}}</td>
+                                <td ng-if="paper.RetryCount<=1">{{paper.gp}}</td>
+                                <td>{{paper._Grade}}</td>
+                                <td>{{paper._GradePoint}}</td>
+                                <td ng-if="paper.RetryCount>1">*</td>
+                                <td ng-if="paper.papertype == 'TH'">{{paper.credit}}</td>
+                                <td ng-if="paper.papertype == 'PR'">{{paper.credit*2}}</td>
+                                <td>15</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="col-md-5">
+
+                    </div>
+                    <div class="col-md-6" style="padding-top:10px">
+                        <table class="bordered" style="font-size:14px">
+                            <tr>
+                                <td><b>Percentage</b></td>
+                                <td><div><b>Grade</b></div></td>
+                                <td><div><b>Grade Point Average</b></div></td>
+                            </tr>
+                            <tr>
+
+                                <td><b>{{TranscriptData.Sem1._percentege  | number : 2 }}</b></td>
+                                <td><b>{{TranscriptData.Sem1._percentegeGrade}}</b></td>
+                                <td><b>{{TranscriptData.Sem1._FinalPercentageGradePoint | number : 2}}</b> </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="Footer" style="margin-top: 50px;position: absolute; bottom: 30px;">
+                        <div class="col-md-12">
+                            &nbsp;
+                        </div>
+                        <div class="col-md-10" style="font-size: 17px; margin-top: 40px;">
+                            <b style="padding-left: 12%;">Dr. Rekha Battalwar</b>
+                            <br />
+                            Controller of Examinations
+                        </div>
+                    </div>
+                    <div class="col-md-2" style="font-size:12px; position:absolute; bottom: 5%; right: 50px;">
+                        <span class="pull-right"><b>Page 1 of 4</b></span>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="sheet" style="padding:15px">
+            <!--3 and 2 sem-->
+            <article class="svtA4WaterMark">
+                <!--<div>
+                    <div ng-include="'../../App/Common/LatterPad_Heading.html'"></div>
+                </div>-->
+                <div class="row" style="font-family: Calibri; padding-right: 50px; padding-left: 50px; font-size: 18px;">
+                    <table class="pull-right" style="width: 100%;">
+                        <tr>
+                            <td>
+                                <div class="col-md-12" style="text-align:left;font-size:18px;">
+                                    <span class="pull-right"><i>Name of the Student </i>: <i><b>Ms. <span>{{TranscriptData.LastName}} {{TranscriptData.FirstName}} {{TranscriptData.FatherName}} {{TranscriptData.MotherName}}</span></b></i></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="float: right;font-size: 18px; text-decoration: underline; margin-bottom: 5px">
+                                <b>F.Y.B.Sc. Semester - II (April - {{TranscriptExamData.Semester2}})</b>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div>
+                        <div class="col-md-12">
+                            <table class="bordered" style="font-size:14px">
+                                <tr>
+                                    <td><b>Course Title</b></td>
+                                    <td class="rotate"><div><b>TH/PR</b></div></td>
+                                    <td class="rotate"><div><b>Credits</b></div></td>
+                                    <td class="rotate"><div><b>Total Marks</b></div></td>
+                                    <td class="rotate"><div><b>Marks <br />Obtained</b></div></td>
+                                    <td class="rotate"><div><b>Grade</b></div></td>
+                                    <td class="rotate"><div><b>Grade Point</b></div></td>
+                                    <td class="rotate"><div><b>Total Grade<br />Point</b></div></td>
+                                    <td class="rotate"><div><b>No. of TH/PR<br /> per Week</b></div></td>
+                                    <td class="rotate"><div><b>Teaching<br> Weeks</b></div></td>
+                                </tr>
+                                <tr ng-repeat="paper in TranscriptData.Sem2.Papers">
+                                    <td style="text-align:left">{{paper.papertitle}}</td>
+                                    <td>{{paper.papertype}}</td>
+                                    <td>{{paper.credit}}</td>
+                                    <td>{{GetCountTotalMark(paper)}}</td>
+                                    <td>{{GetCountObtainedTotalMark(paper)}}</td>
+                                    <td ng-if="paper.RetryCount<=1">{{paper.gp}}</td>
+                                    <td ng-if="paper.RetryCount<=1">{{paper._Grade}}</td>
+                                    <td ng-if="paper.RetryCount<=1">{{paper._GradePoint}}</td>
+                                    <td ng-if="paper.RetryCount>1">*</td>
+                                    <td ng-if="paper.papertype == 'TH'">{{paper.credit}}</td>
+                                    <td ng-if="paper.papertype == 'PR'">{{paper.credit*2}}</td>
+                                    <td>15</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="col-md-5">
+
+                        </div>
+                        <div class="col-md-6" style="padding-top:10px">
+                            <table class="bordered" style="font-size:14px">
+                                <tr>
+                                    <td><b>Percentage</b></td>
+                                    <td><div><b>Grade</b></div></td>
+                                    <td><div><b>Grade Point Average</b></div></td>
+                                </tr>
+                                <tr>
+                                    <td><b>{{TranscriptData.Sem2._percentege  | number : 2 }}</b></td>
+                                    <td><b>{{TranscriptData.Sem2._percentegeGrade}}</b></td>
+                                    <td><b>{{TranscriptData.Sem2._FinalPercentageGradePoint | number : 2}}</b> </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+
+                    <div>
+                        <div class="col-md-12" style="padding-top:10px; float: right;font-size: 18px; text-decoration: underline; margin-bottom: 5px">
+                            <b>S.Y.B.Sc. Semester - III (October - {{TranscriptExamData.Semester3}})</b>
+                        </div>
+                        <div class="col-md-12">
+                            <table class="bordered" style="font-size:14px">
+                                <tr>
+                                    <td><b>Course Title</b></td>
+                                    <td class="rotate"><div><b>TH/PR</b></div></td>
+                                    <td class="rotate"><div><b>Credits</b></div></td>
+                                    <td class="rotate"><div><b>Total Marks</b></div></td>
+                                    <td class="rotate"><div><b>Marks <br />Obtained</b></div></td>
+                                    <td class="rotate"><div><b>Grade</b></div></td>
+                                    <td class="rotate"><div><b>Grade Point</b></div></td>
+                                    <td class="rotate"><div><b>Total Grade<br />Point</b></div></td>
+                                    <td class="rotate"><div><b>No. of TH/PR<br /> per Week</b></div></td>
+                                    <td class="rotate"><div><b>Teaching<br> Weeks</b></div></td>
+                                </tr>
+                                <tr ng-repeat="paper in TranscriptData.Sem3.Papers">
+                                    <td style="text-align:left">{{paper.papertitle}}</td>
+                                    <td>{{paper.papertype}}</td>
+                                    <td>{{paper.credit}}</td>
+                                    <td>{{GetCountTotalMark(paper)}}</td>
+                                    <td>{{GetCountObtainedTotalMark(paper)}}</td>
+                                    <td ng-if="paper.RetryCount<=1">{{paper.gp}}</td>
+                                    <td ng-if="paper.RetryCount<=1">{{paper._Grade}}</td>
+                                    <td ng-if="paper.RetryCount<=1">{{paper._GradePoint}}</td>
+                                    <td ng-if="paper.RetryCount>1">*</td>
+                                    <td ng-if="paper.papertype == 'TH'">{{paper.credit}}</td>
+                                    <td ng-if="paper.papertype == 'PR'">{{paper.credit*2}}</td>
+                                    <td>15</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="col-md-5">
+
+                        </div>
+                        <div class="col-md-6" style="padding-top:10px">
+                            <table class="bordered" style="font-size:14px">
+                                <tr>
+                                    <td><b>Percentage</b></td>
+                                    <td><div><b>Grade</b></div></td>
+                                    <td><div><b>Grade Point Average</b></div></td>
+                                </tr>
+                                <tr>
+                                    <td><b>{{TranscriptData.Sem3._percentege  | number : 2 }}</b></td>
+                                    <td><b>{{TranscriptData.Sem3._percentegeGrade}}</b></td>
+                                    <td><b>{{TranscriptData.Sem3._FinalPercentageGradePoint | number : 2}}</b> </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+
+                    <div class="Footer" style="margin-top: 50px;position: absolute; bottom: 30px;">
+                        <div class="col-md-12">
+                            &nbsp;
+                        </div>
+                        <div class="col-md-10" style="font-size: 17px; margin-top: 40px;">
+                            <b style="padding-left: 12%;">Dr. Rekha Battalwar</b>
+                            <br />
+                            Controller of Examinations
+                        </div>
+                    </div>
+                    <div class="col-md-2" style="font-size:12px; position:absolute; bottom: 5%; right: 50px;">
+                        <span class="pull-right"><b>Page 2 of 4</b></span>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="sheet" style="padding:15px">
+            <!--5 & 4 sem-->
+            <article class="svtA4WaterMark">
+                <!--<div>
+                    <div ng-include="'../../App/Common/LatterPad_Heading.html'"></div>
+                </div>-->
+                <div class="row" style="font-family: Calibri; padding-right: 50px; padding-left: 50px; font-size: 18px;">
+                    <table class="pull-right" style="width: 100%;">
+                        <tr>
+                            <td>
+                                <div class="col-md-12" style="text-align:left;font-size:18px;">
+                                    <span class="pull-right"><i>Name of the student </i>: <i><b>Ms. <span>{{TranscriptData.LastName}} {{TranscriptData.FirstName}} {{TranscriptData.FatherName}} {{TranscriptData.MotherName}}</span></b></i></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="col-md-12" style="float: right;font-size: 18px; text-decoration: underline; margin-bottom: 5px">
+                                    <b>S.Y.B.Sc. Semester - IV (April - {{TranscriptExamData.Semester4}})</b>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div>
+                        <div class="col-md-12">
+                            <table class="bordered" style="font-size:14px">
+                                <tr>
+                                    <td><b>Course Title</b></td>
+                                    <td class="rotate"><div><b>TH/PR</b></div></td>
+                                    <td class="rotate"><div><b>Credits</b></div></td>
+                                    <td class="rotate"><div><b>Total Marks</b></div></td>
+                                    <td class="rotate"><div><b>Marks <br />Obtained</b></div></td>
+                                    <td class="rotate"><div><b>Grade</b></div></td>
+                                    <td class="rotate"><div><b>Grade Point</b></div></td>
+                                    <td class="rotate"><div><b>Total Grade<br />Point</b></div></td>
+                                    <td class="rotate"><div><b>No. of TH/PR<br /> per Week</b></div></td>
+                                    <td class="rotate"><div><b>Teaching<br> Weeks</b></div></td>
+                                </tr>
+                                <tr ng-repeat="paper in TranscriptData.Sem4.Papers">
+                                    <td style="text-align:left">{{paper.papertitle}}</td>
+                                    <td>{{paper.papertype}}</td>
+                                    <td>{{paper.credit}}</td>
+                                    <td>{{GetCountTotalMark(paper)}}</td>
+                                    <td>{{GetCountObtainedTotalMark(paper)}}</td>
+                                    <td ng-if="paper.RetryCount<=1">{{paper.gp}}</td>
+                                    <td ng-if="paper.RetryCount<=1">{{paper._Grade}}</td>
+                                    <td ng-if="paper.RetryCount<=1">{{paper._GradePoint}}</td>
+                                    <td ng-if="paper.RetryCount>1">*</td>
+                                    <td ng-if="paper.papertype == 'TH'">{{paper.credit}}</td>
+                                    <td ng-if="paper.papertype == 'PR'">{{paper.credit*2}}</td>
+                                    <td>15</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="col-md-5">
+
+                        </div>
+                        <div class="col-md-6" style="padding-top:10px">
+                            <table class="bordered" style="font-size:14px">
+                                <tr>
+                                    <td><b>Percentage</b></td>
+                                    <td><div><b>Grade</b></div></td>
+                                    <td><div><b>Grade Point Average</b></div></td>
+                                </tr>
+                                <tr>
+                                    <td><b>{{TranscriptData.Sem4._percentege  | number : 2 }}</b></td>
+                                    <td><b>{{TranscriptData.Sem4._percentegeGrade}}</b></td>
+                                    <td><b>{{TranscriptData.Sem4._FinalPercentageGradePoint | number : 2}}</b> </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+
+                    <div>
+                        <div class="col-md-12" style="padding-top:10px; float: right;font-size: 18px; text-decoration: underline; margin-bottom: 5px">
+                            <b>T.Y.B.Sc. Semester - V (October - {{TranscriptExamData.Semester5}})</b>
+                        </div>
+                        <div class="col-md-12">
+                            <table class="bordered" style="font-size:14px">
+                                <tr>
+                                    <td><b>Course Title</b></td>
+                                    <td class="rotate"><div><b>TH/PR</b></div></td>
+                                    <td class="rotate"><div><b>Credits</b></div></td>
+                                    <td class="rotate"><div><b>Total Marks</b></div></td>
+                                    <td class="rotate"><div><b>Marks <br />Obtained</b></div></td>
+                                    <td class="rotate"><div><b>Grade</b></div></td>
+                                    <td class="rotate"><div><b>Grade Point</b></div></td>
+                                    <td class="rotate"><div><b>Total Grade<br />Point</b></div></td>
+                                    <td class="rotate"><div><b>No. of TH/PR<br /> per Week</b></div></td>
+                                    <td class="rotate"><div><b>Teaching<br> Weeks</b></div></td>
+                                </tr>
+                                <tr ng-repeat="paper in TranscriptData.Sem5.Papers">
+                                    <td style="text-align:left">{{paper.papertitle}}</td>
+                                    <td>{{paper.papertype}}</td>
+                                    <td>{{paper.credit}}</td>
+                                    <td>{{GetCountTotalMark(paper)}}</td>
+                                    <td>{{GetCountObtainedTotalMark(paper)}}</td>
+                                    <td ng-if="paper.RetryCount<=1">{{paper.gp}}</td>
+                                    <td ng-if="paper.RetryCount<=1">{{paper._Grade}}</td>
+                                    <td ng-if="paper.RetryCount<=1">{{paper._GradePoint}}</td>
+                                    <td ng-if="paper.RetryCount>1">*</td>
+                                    <td ng-if="paper.papertype == 'TH'">{{paper.credit}}</td>
+                                    <td ng-if="paper.papertype == 'PR'">{{paper.credit*2}}</td>
+                                    <td>15</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="col-md-5">
+
+                        </div>
+                        <div class="col-md-6" style="padding-top:10px">
+                            <table class="bordered" style="font-size:14px">
+                                <tr>
+                                    <td><b>Percentage</b></td>
+                                    <td><div><b>Grade</b></div></td>
+                                    <td><div><b>Grade Point Average</b></div></td>
+                                </tr>
+                                <tr>
+                                    <td><b>{{TranscriptData.Sem5._percentege  | number : 2 }}</b></td>
+                                    <td><b>{{TranscriptData.Sem5._percentegeGrade}}</b></td>
+                                    <td><b>{{TranscriptData.Sem5._FinalPercentageGradePoint | number : 2}}</b> </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+
+                    <div class="Footer" style="margin-top: 30px;">
+                        <div class="col-md-12">
+                            &nbsp;
+                        </div>
+                        <div class="col-md-10" style="font-size: 17px; margin-top: 10px;">
+                            <b style="padding-left: 3%;">Dr. Rekha Battalwar</b>
+                            <br />
+                            Controller of Examinations
+                        </div>
+                    </div>
+                    <div class="col-md-2" style="font-size:12px; position:absolute; bottom: 5%; right: 50px;">
+                        <span class="pull-right"><b>Page 3 of 4</b></span>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="sheet" style="padding:15px">
+            <!--6th sem-->
+            <article class="svtA4WaterMark">
+                <!--<div>
+                    <div ng-include="'../../App/Common/LatterPad_Heading.html'"></div>
+                </div>-->
+                <div class="row" style="font-family: Calibri; padding-right: 50px; padding-left: 50px; font-size: 18px;">
+                    <table class="pull-right" style="width: 100%;">
+                        <tr>
+                            <td>
+                                <div class="col-md-12" style="text-align:left;font-size:18px;">
+                                    <span class="pull-right"><i>Name of the student </i>: <i><b>Ms. <span>{{TranscriptData.LastName}} {{TranscriptData.FirstName}} {{TranscriptData.FatherName}} {{TranscriptData.MotherName}}</span></b></i></span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="col-md-12" style="float: right;font-size: 18px; text-decoration: underline; margin-bottom: 5px">
+                                    <b>T.Y.B.Sc. Semester - VI (April - {{TranscriptExamData.Semester6}})</b>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div>
+                        <div class="col-md-12">
+                            <table class="bordered" style="font-size:14px">
+                                <tr>
+                                    <td><b>Course Title</b></td>
+                                    <td class="rotate"><div><b>TH/PR</b></div></td>
+                                    <td class="rotate"><div><b>Credits</b></div></td>
+                                    <td class="rotate"><div><b>Total Marks</b></div></td>
+                                    <td class="rotate"><div><b>Marks <br />Obtained</b></div></td>
+                                    <td class="rotate"><div><b>Grade</b></div></td>
+                                    <td class="rotate"><div><b>Grade Point</b></div></td>
+                                    <td class="rotate"><div><b>Total Grade<br />Point</b></div></td>
+                                    <td class="rotate"><div><b>No. of TH/PR<br /> per Week</b></div></td>
+                                    <td class="rotate"><div><b>Teaching<br> Weeks</b></div></td>
+                                </tr>
+                                <tr ng-repeat="paper in TranscriptData.Sem6.Papers">
+                                    <td style="text-align:left">{{paper.papertitle}}</td>
+                                    <td>{{paper.papertype}}</td>
+                                    <td ng-if="paper.papertitle.indexOf('Incentive')<0">{{paper.credit}}</td>
+                                    <td ng-if="paper.papertitle.indexOf('Incentive')>=0">-</td>
+
+                                    <td>{{GetCountTotalMark(paper)}}</td>
+                                    <td>{{GetCountObtainedTotalMark(paper)}}</td>
+
+                                    <td ng-if="paper.RetryCount<=1 && paper.papertitle.indexOf('Incentive')<0">{{paper.gp}}</td>
+                                    <td ng-if="paper.RetryCount > 1 || paper.papertitle.indexOf('Incentive')>=0">-</td>
+
+                                    <td ng-if="paper.RetryCount<=1 && paper.papertitle.indexOf('Incentive')<0">{{paper._Grade}}</td>
+                                    <td ng-if="paper.RetryCount > 1 || paper.papertitle.indexOf('Incentive')>=0">-</td>
+
+                                    <td ng-if="paper.RetryCount<=1 && paper.papertitle.indexOf('Incentive')<0">{{paper._GradePoint}}</td>
+                                    <td ng-if="paper.RetryCount > 1 || paper.papertitle.indexOf('Incentive')>=0">-</td>
+
+                                    <td ng-if="paper.RetryCount>1 && paper.papertitle.indexOf('Incentive')<0">*</td>
+                                    <td ng-if="paper.RetryCount > 1 && paper.papertitle.indexOf('Incentive')>=0">-</td>
+
+                                    <td ng-if="paper.papertype == 'TH'">{{paper.credit}}</td>
+                                    <td ng-if="paper.papertype == 'PR' && paper.papertitle.indexOf('Incentive')<0">{{paper.credit*2}}</td>
+                                    <td ng-if="paper.papertype == 'PR' && paper.papertitle.indexOf('Incentive')>=0">-</td>
+
+                                    <td ng-if="paper.papertitle != 'Internship' &&  paper.papertitle.indexOf('Incentive')<0">15</td>
+                                    <td ng-if="paper.papertitle == 'Internship'">6</td>
+                                    <td ng-if="paper.papertitle == 'Incentive Marks for Sports Activities'">-</td>
+                                    <td ng-if="paper.papertitle == 'Incentive Marks for NSS Activities'">-</td>
+
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="col-md-5">
+
+                        </div>
+                        <div class="col-md-6" style="padding-top:10px">
+                            <table class="bordered" style="font-size:14px">
+                                <tr>
+                                    <td><b>Percentage</b></td>
+                                    <td><div><b>Grade</b></div></td>
+                                    <td><div><b>Grade Point Average</b></div></td>
+                                </tr>
+                                <tr>
+                                    <td><b>{{TranscriptData.Sem6._percentege  | number : 2 }}</b></td>
+                                    <td><b>{{TranscriptData.Sem6._percentegeGrade}}</b></td>
+                                    <td><b>{{TranscriptData.Sem6._FinalPercentageGradePoint | number : 2}}</b> </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="Footer">
+                        <div class="col-md-12">
+                            &nbsp;
+
+                        </div>
+                        <div style="font-size: 11px;" class="col-md-10">
+                            <i>Note: DSE - Department Specific Electives, * - Paper cleared in repeater exams, TH/PR - Theory/Practical</i>
+                        </div>
+                    </div>
+                    <div class="grade-table" style="font-size: 11px">
+                        <br>
+                        <div>
+                            No. of credit of the subject * GP obtained in the subject = Total GP
+                        </div>
+                        <div>
+                            <span>sum of (Grade Point * Credit) / Total of credits of all subjects</span> <span>= Grade point average (GPA)</span>
+                        </div> <br>
+                        <div>
+                            Conversion for Grade Point Average (GPA)
+                        </div>
+                        <table border="1" style="font-size: 11px !important">
+                            <tbody>
+                                <tr>
+                                    <td>Point of Grade Point Average</td>
+                                    <td>Average Grade</td>
+                                </tr>
+                                <tr>
+                                    <td>10.00</td>
+                                    <td>O+</td>
+                                </tr>
+                                <tr>
+                                    <td>9.00 to 9.99</td>
+                                    <td>O</td>
+                                </tr>
+                                <tr>
+                                    <td>8.00 to 8.99</td>
+                                    <td>A+</td>
+                                </tr>
+                                <tr>
+                                    <td>7.00 to 7.99</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td>6.00 to 6.99</td>
+                                    <td>B+</td>
+                                </tr>
+                                <tr>
+                                    <td>5.50 to 5.99</td>
+                                    <td>B</td>
+                                </tr>
+                                <tr>
+                                    <td>5.00 to 5.49</td>
+                                    <td>C</td>
+                                </tr>
+                                <tr>
+                                    <td>4.00 to 4.99</td>
+                                    <td>P</td>
+                                </tr>
+                                <tr>
+                                    <td>0 to 3.99</td>
+                                    <td>F</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="position: absolute; width: 88%; bottom: 2%;" class="Footer">
+
+                        <div style="font-size: 17px; float: left;" class="col-md-10">
+                            <b style="padding-left: 12%;">Dr. Rekha Battalwar</b> <br>                            Controller of Examinations
+
+                        </div>
+                        <div style="width: 25%; float: left;" class="col-md-12">
+                            &nbsp;
+
+                        </div>
+                        <div style="font-size: 17px; float: left; margin-left: 40px;" class="col-md-10">
+                            <b>Dr. Jagmeet Madan</b> <br> <span style="padding-left: 40px;">Principal</span>
+                        </div>
+                    </div>
+                    <div style="font-size: 12px; position: absolute; bottom: 2%; right: 50px;" class="col-md-2">
+                        <span class="pull-right"><b>Page 4 of 4</b></span>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+</body>
+</html>

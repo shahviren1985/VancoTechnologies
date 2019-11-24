@@ -1,0 +1,11 @@
+D:\VancoTechnologies\Code\QPM\DAO\bin\Release\DAO.dll
+D:\VancoTechnologies\Code\QPM\DAO\bin\Release\DAO.pdb
+D:\VancoTechnologies\Code\QPM\DAO\bin\Release\DAOBase.dll
+D:\VancoTechnologies\Code\QPM\DAO\bin\Release\LogManager.dll
+D:\VancoTechnologies\Code\QPM\DAO\bin\Release\Util.dll
+D:\VancoTechnologies\Code\QPM\DAO\bin\Release\DAOBase.pdb
+D:\VancoTechnologies\Code\QPM\DAO\bin\Release\LogManager.pdb
+D:\VancoTechnologies\Code\QPM\DAO\bin\Release\Util.pdb
+D:\VancoTechnologies\Code\QPM\DAO\obj\Release\DAO.csprojResolveAssemblyReference.cache
+D:\VancoTechnologies\Code\QPM\DAO\obj\Release\DAO.dll
+D:\VancoTechnologies\Code\QPM\DAO\obj\Release\DAO.pdb

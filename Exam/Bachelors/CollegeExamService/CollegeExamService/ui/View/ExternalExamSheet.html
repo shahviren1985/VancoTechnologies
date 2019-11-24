@@ -1,0 +1,82 @@
+﻿<div class="row">
+    <div class="col col-md-12">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">External Marks Entry</h3>
+            </div>
+            <form id="ExternalMarkEntry">
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col col-lg-12 form-group">
+                            <label for="stream">Stream</label>
+                            <select id="stream" name="stream" ng-change="GetSemester()" ng-model="InternalMark.stream" data-validation="required"
+                                    data-validation-error-msg="The Stream field is required" class="form-control">
+                                <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                                <option value="BSc">BSc</option>
+                                <option value="MSc">MSc</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="course">Course</label>
+                            <select id="course" name="course" ng-model="InternalMark.course" data-validation="required"
+                                    data-validation-error-msg="The course field is required" class="form-control">
+                                <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                                <option value="Regular">Regular</option>
+                                <option value="Honors">Honors</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="semester">Semester</label>
+                            <select id="semester" name="semester" ng-model="InternalMark.semester" data-validation="required"
+                                    data-validation-error-msg="The semester field is required" class="form-control">
+                                <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="examType">Exam Type</label>
+                            <select id="examType" name="examType" ng-model="InternalMark.examType" data-validation="required"
+                                    data-validation-error-msg="The examType field is required" class="form-control">
+                                <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                                <option value="Regular">Regular</option>
+                                <option value="ATKT">ATKT</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="sem">Specialization</label>
+                            <select disabled="disabled" name="Specialization" ng-model="InternalMark.Specialization" data-validation="required"
+                                    data-validation-error-msg="The Specialization field is required" id="Specialization" class="form-control">
+                                <option selected="selected" disabled="disabled" value="">--- Select ---</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="paper">Paper</label>
+                            <select disabled="disabled" id="paper" name="Paper" ng-model="InternalMark.paper" data-validation="required"
+                                    data-validation-error-msg="The Paper field is required" class="form-control">
+                                <option selected="selected" disabled="disabled" value="">--- Select ---</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="course">Section</label>
+                            <select id="Section" name="Section" ng-model="InternalMark.Section" data-validation="required"
+                                    data-validation-error-msg="The Section field is required" class="form-control">
+                                <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                                <option value="1">Section 1</option>
+                                <option value="2">Section 2</option>
+                            </select>
+                        </div>
+                        <div class="col col-md-12 form-group">
+                            <button type="submit" class="btn btn-primary pull-right">Get Report</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <style>
+            div.form-error {
+                background-color: #f2dede !important;
+                margin: 15px !important;
+            }
+        </style>
+    </div>
+</div>

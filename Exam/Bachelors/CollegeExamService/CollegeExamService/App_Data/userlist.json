@@ -1,0 +1,101 @@
+[
+  {
+    "userId": 1,
+    "userName": "anil",
+    "password": "123456",
+    "mobileNumber": "7405220736",
+    "firstName": "Anil",
+    "lastName": "Chavda",
+    "role": "teacher",
+    "paper": [
+      {
+        "code": "LA101",
+        "sections": 2
+      },
+      {
+        "code": "SA101",
+        "sections": 1
+      },
+      {
+        "code": "TG102",
+        "sections": 2
+      }
+    ]
+  },
+  {
+    "userId": 2,
+    "userName": "viren",
+    "password": "123456",
+    "mobileNumber": "7405220736",
+    "firstName": "SVT Exam",
+    "lastName": "Admin",
+    "role": "moderator",
+    "paper": [
+      {
+        "code": "RG101",
+        "sections": 1
+      },
+      {
+        "code": "LG101",
+        "sections": 1
+      },
+      {
+        "code": "FCII06",
+        "sections": 2
+      }
+    ]
+  },
+  {
+    "userId": 3,
+    "userName": "rushikesh",
+    "password": "123456",
+    "mobileNumber": "8080311733",
+    "firstName": "Rushikesh",
+    "lastName": "K",
+    "role": "teacher",
+    "paper": [
+      {
+        "code": "MG101",
+        "sections": 2
+      },
+      {
+        "code": "TG101",
+        "sections": 1
+      },
+      {
+        "code": "HCI03",
+        "sections": 2
+      }
+    ]
+  },
+  {
+    "userId": 4,
+    "userName": "vipul",
+    "password": "123456",
+    "mobileNumber": "1234567890",
+    "firstName": "Vipul",
+    "lastName": "Bhaskar",
+    "role": "teacher",
+    "paper": null
+  },
+  {
+    "userId": 5,
+    "userName": "dinesh",
+    "password": "123456",
+    "mobileNumber": "9999999999",
+    "firstName": "Dinesh",
+    "lastName": "Krishnan",
+    "role": "moderator",
+    "paper": null
+  },
+  {
+    "userId": 6,
+    "userName": "dinesh",
+    "password": "123456",
+    "mobileNumber": "9999999999",
+    "firstName": "Dinesh",
+    "lastName": "Krishnan",
+    "role": "moderator",
+    "paper": null
+  }
+]

@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="AggregateStudentForm">
+<head>
+    <title>Aggregate Marksheet - Update Student Information</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="../../CustomJs/urlConfig.js"></script>
+    <script src="../../CustomJs/Angular.js"></script>
+    <script src="../../Assets/bootstrap.min.js"></script>
+    <style>
+        .card {
+            background: #fff;
+            border-radius: 2px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .card-1 {
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        }
+
+        .HeaderText {
+            color: #1F3C67;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        table td {
+            padding: 5px;
+        }
+
+        .paper:hover {
+            background-color: #DDD;
+        }
+    </style>
+</head>
+<body style="background: #b6b7bc;" ng-controller="AggregateStudentForm">
+    <div class="container card-1" data-text="Custom text" style="margin-top:30px;background:white;padding:30px;min-height:500px">
+        <div class="row text-center">
+            <h3 style="margin-top:0px">Aggregate Marksheet - Student Information Update </h3>
+            <br />
+        </div>
+        <div class="row">
+            <div class="container">
+                <form ng-submit="SubmitMyForm()">
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12"></div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="form-group">
+                                <label for="txtCollegeRegistration">College Registration Number:</label>
+                                <input type="text" required class="form-control" id="txtCollegeRegistration">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12"></div>
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-success" onclick="SearchStudent()">Search</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12"></div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="form-group">
+                                <label for="txtLastName">Last Name:</label>
+                                <input type="text" required class="form-control" id="txtLastName">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12"></div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="form-group">
+                                <label for="txtFirstName">First Name:</label>
+                                <input type="text" required class="form-control" id="txtFirstName">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12"></div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="form-group">
+                                <label for="txtFatherName">Father Name:</label>
+                                <input type="text" required class="form-control" id="txtFatherName">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12"></div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="form-group">
+                                <label for="txtMotherName">Mother Name:</label>
+                                <input type="text" required class="form-control" id="txtMotherName">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12"></div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="form-group">
+                                <label for="txtPrn">PRN:</label>
+                                <input type="text" required class="form-control" id="txtPrn">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12"></div>
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-warning" onclick="update()">Update</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12"></div>
+                        <div class="col-md-4">
+                            <label for="txtPrn">Transfer this student from Honors to Regular. This will just remove "Honors" from aggregate marksheet.</label>
+                            <button type="button" class="btn btn-danger" onclick="Transfer()">Transfer</button>
+                        </div>
+                    </div>
+                    <div class="row" id="PaperList">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        var app = angular.module("StudentForm", []);
+        var studentId = 0;
+        function SearchStudent() {
+            $.ajax({
+                type: "GET",
+                url: _CommonUr + "/Data/GetAggregateMarksheetStudentDetails?collegeRegistrationNumber=" + $('#txtCollegeRegistration').val(),
+                contentType: "application/json;", // this
+                dataType: "json", // and this
+                success: function (data) {
+                    $('#txtLastName').val(data.LastName);
+                    $('#txtFirstName').val(data.FirstName);
+                    $('#txtFatherName').val(data.FatherName);
+                    $('#txtMotherName').val(data.MotherName);
+                    $('#txtPrn').val(data.PRN);
+                    studentId = data.Id;
+                    GetPapers();
+                },
+                error: function (errormessage) {
+                    $('#div_Error').css('display', '')
+                    if (errormessage == undefined || errormessage == '') {
+                        $('#div_Error').html('Invalid request');
+                    } else {
+                        $('#div_Error').html(errormessage);
+                    }
+                }
+            });
+        }
+
+        function Transfer() {
+            $.ajax({
+                type: "GET",
+                url: _CommonUr + "/Data/TransferStudentFromHonorsToRegular?studentId=" + studentId,
+                contentType: "application/json;", // this
+                dataType: "json", // and this
+                success: function (data) {
+                    alert("Student transferred from Honors to Regular. Only course name is changed. Papers are not removed.");
+                },
+                error: function (errormessage) {
+                    alert(errormessage);
+                }
+            });
+        }
+
+        function update() {
+            $('#div_Error').css('display', 'none')
+            $('#div_Success').css('display', 'none')
+
+            $.ajax({
+                type: "GET",
+                url: _CommonUr + "/Data/UpdateAggregateMarksheetStudentDetails?firstName=" + $('#txtFirstName').val() + '&lastName=' + $('#txtLastName').val() + '&fatherName=' + $('#txtFatherName').val() + '&motherName=' + $('#txtMotherName').val() + '&prn=' + $('#txtPrn').val() + '&collegeRegistrationNumber=' + $('#txtCollegeRegistration').val(),
+                data: {},
+                contentType: "application/json; charset=utf-8", // this
+                dataType: "json", // and this
+                success: function (data) {
+                    if (data == 0) {
+                        alert("Student information update successfully");
+                    }
+                },
+                error: function (errormessage) {
+                    $('#div_Error').css('display', '')
+                    if (errormessage == undefined || errormessage == '') {
+                        $('#div_Error').html('Invalid request');
+                    } else {
+                        $('#div_Error').html(errormessage);
+                    }
+                }
+            });
+        }
+
+        function GetPapers() {
+
+            $.ajax({
+                type: "GET",
+                url: _CommonUr + "/Data/GetAggregateMarksheetMarksDetails?studentId=" + studentId,
+                contentType: "application/json;", // this
+                dataType: "json", // and this
+                success: function (data) {
+                    console.log(data);
+                    // populate grid with papers
+                    GetHeader();
+                    for (i = 0; i < data.Papers.length; i++) {
+                        GetRow(data.Papers[i], i + 1);
+                    }
+                },
+                error: function (errormessage) {
+                    $('#div_Error').css('display', '')
+                    if (errormessage == undefined || errormessage == '') {
+                        $('#div_Error').html('Invalid request');
+                    } else {
+                        $('#div_Error').html(errormessage);
+                    }
+                }
+            });
+
+        }
+
+        function GetHeader() {
+            $("#PaperList").remove("table");
+            var table = $("<table id='PaperTable' border='1' style='margin: 10px;'><td>Serial #</td><td>Paper Title</td><td>Paper Type</td><td>Internal</td><td>External</td><td>Practical</td><td>Total</td><td>Grade</td><td>Attempt</td><td>Action</td><tbody id='papers'></tbody></table>");
+            $("#PaperList").append(table);
+        }
+
+        function GetRow(paper, serialNumber) {
+            var total = parseFloat(paper.InternalMarksObtained) + parseFloat(paper.ExternalTotalMarks) + parseFloat(paper.PracticalMarksObtained);
+            var attempt = paper.RetryCount < 2 ? "0" : (paper.RetryCount - 1);
+            var row = "<tr class='paper' papercode='" + paper.PaperCode + "' studentid='" + paper.StudentId + "' rowid='" + paper.Id + "'><td>" + serialNumber + "</td><td>" + paper.PaperTitle + "</td><td>" + paper.PaperType + "</td><td><input style='width: 50px' type='text' id='internal_" + paper.Id + "' value='" + paper.InternalMarksObtained + "' /></td><td><input style='width: 50px' type='text' id='external_" + paper.Id + "' value='" + paper.ExternalTotalMarks + "' /></td><td><input style='width: 50px' type='text' id='practical_" + paper.Id + "' value='" + paper.PracticalMarksObtained + "' /></td><td>" + total + "</td><td><input style='width: 50px' type='text' id='grade_" + paper.Id + "' value='" + paper.GP + "' /></td><td><input style='width: 50px' type='text' id='attempt_" + paper.Id + "' value='" + attempt + "' /></td><td><input type='button' onclick='UpdateMarks(" + paper.Id + ")' class='btn btn-primary' value='Update' /></td></tr>";
+            $("#PaperTable").append(row);
+        }
+
+        function UpdateMarks(id) {
+            var row = $("tr[rowid='" + id + "']");
+            var rowId = id;//$(row).attr("rowid");
+            var studentId = $(row).attr("studentid");
+            var internalMarks = $(row).find("#internal_" + rowId).val();
+            var externalMarks = $(row).find("#external_" + rowId).val();
+            var practicalMarks = $(row).find("#practical_" + rowId).val();
+            var grade = $(row).find("#grade_" + rowId).val();
+            var attempt = $(row).find("#attempt_" + rowId).val();
+            var paperCode = $(row).attr("papercode");
+
+            console.log(rowId + ':' + studentId + ':' + internalMarks + ':' + externalMarks + ':' + practicalMarks + ':' + grade + ':' + attempt + ':' + paperCode);
+
+            $.ajax({
+                type: "GET",
+                url: _CommonUr + "/Data/UpdateAggregateMarksheetMarks?rowid=" + rowId + "&studentId=" + studentId + "&paperCode=" + paperCode + "&internalMarks=" + internalMarks + "&externalMarks=" + externalMarks + "&practicalMarks=" + practicalMarks + " &grade=" + encodeURIComponent(grade) + "&attempt=" + parseFloat(parseFloat(attempt)+1),
+                contentType: "application/json;", // this
+                dataType: "json", // and this
+                success: function (data) {
+                    alert("Marks Updated successfully");
+                },
+                error: function (errormessage) {
+                    $('#div_Error').css('display', '')
+                    if (errormessage == undefined || errormessage == '') {
+                        $('#div_Error').html('Invalid request');
+                    } else {
+                        $('#div_Error').html(errormessage);
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>

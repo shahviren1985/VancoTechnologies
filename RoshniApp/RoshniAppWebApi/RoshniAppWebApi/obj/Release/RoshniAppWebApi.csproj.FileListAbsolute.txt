@@ -1,0 +1,17 @@
+D:\VancoTechnologies\Code\RoshniApp\RoshniAppWebApi\RoshniAppWebApi\bin\RoshniAppWebApi.dll.config
+D:\VancoTechnologies\Code\RoshniApp\RoshniAppWebApi\RoshniAppWebApi\bin\RoshniAppWebApi.dll
+D:\VancoTechnologies\Code\RoshniApp\RoshniAppWebApi\RoshniAppWebApi\bin\RoshniAppWebApi.pdb
+D:\VancoTechnologies\Code\RoshniApp\RoshniAppWebApi\RoshniAppWebApi\obj\Release\RoshniAppWebApi.csprojResolveAssemblyReference.cache
+D:\VancoTechnologies\Code\RoshniApp\RoshniAppWebApi\RoshniAppWebApi\obj\Release\RoshniAppWebApi.dll
+D:\VancoTechnologies\Code\RoshniApp\RoshniAppWebApi\RoshniAppWebApi\obj\Release\RoshniAppWebApi.pdb
+D:\VancoTechnologies\Code\RoshniApp\RoshniAppWebApi\RoshniAppWebApi\bin\bin\Newtonsoft.Json.dll
+D:\VancoTechnologies\Code\RoshniApp\RoshniAppWebApi\RoshniAppWebApi\bin\bin\System.Net.Http.Formatting.dll
+D:\VancoTechnologies\Code\RoshniApp\RoshniAppWebApi\RoshniAppWebApi\bin\bin\System.Web.Cors.dll
+D:\VancoTechnologies\Code\RoshniApp\RoshniAppWebApi\RoshniAppWebApi\bin\bin\System.Web.Helpers.dll
+D:\VancoTechnologies\Code\RoshniApp\RoshniAppWebApi\RoshniAppWebApi\bin\bin\System.Web.Http.Cors.dll
+D:\VancoTechnologies\Code\RoshniApp\RoshniAppWebApi\RoshniAppWebApi\bin\bin\System.Web.Http.dll
+D:\VancoTechnologies\Code\RoshniApp\RoshniAppWebApi\RoshniAppWebApi\bin\bin\System.Web.Http.WebHost.dll
+D:\VancoTechnologies\Code\RoshniApp\RoshniAppWebApi\RoshniAppWebApi\bin\bin\System.Web.Razor.dll
+D:\VancoTechnologies\Code\RoshniApp\RoshniAppWebApi\RoshniAppWebApi\bin\bin\System.Web.Webpages.Deployment.dll
+D:\VancoTechnologies\Code\RoshniApp\RoshniAppWebApi\RoshniAppWebApi\bin\bin\System.Web.Webpages.dll
+D:\VancoTechnologies\Code\RoshniApp\RoshniAppWebApi\RoshniAppWebApi\bin\bin\System.Web.Webpages.Razor.dll

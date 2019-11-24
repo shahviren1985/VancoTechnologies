@@ -1,0 +1,78 @@
+﻿[
+  {
+    "Specialization": "Developmental Counselling",
+    "specialisationCode": "DC",
+    "ElectiveSubject": [
+      {
+        "Title": "DC GE",
+        "Subject": [
+          {
+            "Code": "MG201",
+            "Title": "Media and Information Literacy"
+          },
+          {
+            "Code": "LG201",
+            "Title": "Foreign Language (French)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Early Childhood Care And Education",
+    "specialisationCode": "ECCE",
+    "ElectiveSubject": [
+      {
+        "Title": "ECCE GE",
+        "Subject": [
+          {
+            "Code": "MG201",
+            "Title": "Media and Information Literacy"
+          },
+          {
+            "Code": "LG201",
+            "Title": "Foreign Language (French)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Mass Communication And Extension",
+    "specialisationCode": "MCE",
+    "ElectiveSubject": [
+      {
+        "Title": "MCE GE",
+        "Subject": [
+          {
+            "Code": "MG201",
+            "Title": "Media and Information Literacy"
+          },
+          {
+            "Code": "LG201",
+            "Title": "Foreign Language (French)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Textiles And Apparel Designing",
+    "specialisationCode": "TAD",
+    "ElectiveSubject": [
+      {
+        "Title": "TAD GE",
+        "Subject": [
+          {
+            "Code": "MG201",
+            "Title": "Media and Information Literacy"
+          },
+          {
+            "Code": "LG201",
+            "Title": "Foreign Language (French)"
+          }
+        ]
+      }
+    ]
+  }
+]

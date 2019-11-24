@@ -1,0 +1,26 @@
+{
+  "sideMenu": [
+    {
+      "title": "About Us",
+      "isActive": true,
+      "link": "https://google.com"
+    },
+    {
+      "title": "Website",
+      "isActive": true,
+      "link": "http://mnwc-sndt.org/"
+    },
+    {
+      "title": "Contact Us",
+      "isActive": true,
+      "link": "http://mnwc-sndt.org/contact.html"
+    },
+    {
+      "title": "Trending Topics",
+      "isActive": true,
+      "link": "https://microsoft.com"
+    }
+  ],
+  "logo": "http://mnwc-sndt.org/images/logo.png",
+  "collegeName": "Maniben Nanavati Women's College"
+}

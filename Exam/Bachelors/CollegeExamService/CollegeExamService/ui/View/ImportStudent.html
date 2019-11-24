@@ -1,0 +1,79 @@
+﻿<div class="row">
+    
+    <div class="col col-lg-6">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">Import New Students</h3>
+            </div>
+            <form name="ImportStudentForm" id="ImportStudentForm">
+                <div class="box-body">
+                    <div class="form-group">
+                        <label for="course">Course</label>
+                        <select name="course" ng-change="GetSemester()" ng-model="user.course" id="course" 
+                                class="form-control" data-validation="required" 
+                                data-validation-error-msg="The Course field is required">
+                            <option value="" selected="selected" >--- Select ---</option>
+                            <option value="bsc">BSc</option>
+                            <option value="msc">MSc</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="specialization">Specialization</label>
+                        <select name="specialization" ng-model="user.specialization" id="specialization" class="form-control" data-validation="required" data-validation-error-msg="The Specialization field is required">
+                            <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                            <option value="regular">Regular</option>
+                            <option value="honors">Honors</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sem">Semester</label>
+                        <select name="sem" id="sem" ng-model="user.sem" class="form-control" data-validation="required" data-validation-error-msg="The Semester field is required">
+                            <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="examType">Exam Type</label>
+                        <select name="examType" ng-model="user.examType" id="examType" class="form-control" data-validation="required" data-validation-error-msg="The Exam Type field is required">
+                            <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                            <option value="Regular">Regular</option>
+                            <option value="ATKT">ATKT</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Academic Year</label>
+                        <input type="text" id="year" placeholder="Year" class="form-control" data-validation="required" data-validation-error-msg="Year field is required" />
+                    </div>
+                    <!--<div class="form-group">
+                        <label for="file">CSV File</label>
+                        <input ng-model="user.file" type="file" accept=".csv" id="file" data-validation-error-msg-required="The File is required" data-validation="required extension" data-validation-error-msg-allowing="Only csv files are allowed" data-validation-allowing="csv"" class="form-control">
+                    </div>-->
+                </div>
+                <div class="box-footer">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success pull-right">Import from MIS</button>
+                        <!--<button type="submit" class="btn btn-primary pull-right">Import students</button>-->
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col col-lg-6">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">Template</h3>
+            </div>
+            <div class="box-body">
+                <a href="http://adminapps.in/SVTExams/SVTExam/api/File/Download/Data/SVT?fileName=student.csv">
+                    Download Student Import Template File
+                </a>
+            </div>
+            <div class="box-footer">
+                <div class="form-group">
+                    <button class="btn btn-primary pull-right">Manually Add New Student</button>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</div>

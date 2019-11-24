@@ -1,0 +1,162 @@
+[
+  {
+    "id": "1",
+    "name": "VARNITA",
+    "MaxSuperVision": 8,
+    "AllowedReliver": "true",
+    "AllowedStandBy": "true",
+    "Department": "Teacher"
+  },
+  {
+    "id": "2",
+    "name": "TANVEER",
+    "MaxSuperVision": 8,
+    "AllowedReliver": "true",
+    "AllowedStandBy": "true",
+    "Department": "HOD"
+  },
+  {
+    "id": "3",
+    "name": "APARNA",
+    "MaxSuperVision": 8,
+    "AllowedReliver": "false",
+    "AllowedStandBy": "false",
+    "Department": "Teacher"
+  },
+  {
+    "id": "4",
+    "name": "LALITA",
+    "MaxSuperVision": 8,
+    "AllowedReliver": "false",
+    "AllowedStandBy": "false",
+    "Department": "HOD"
+  },
+  {
+    "id": "5",
+    "name": "SABA",
+    "MaxSuperVision": 8,
+    "AllowedReliver": "false",
+    "AllowedStandBy": "false",
+    "Department": "HOD"
+  },
+  {
+    "id": "6",
+    "name": "RITU",
+    "MaxSuperVision": 8,
+    "AllowedReliver": "false",
+    "AllowedStandBy": "false",
+    "Department": "Teacher"
+  },
+  {
+    "id": "7",
+    "name": "SHIKHA",
+    "MaxSuperVision": 8,
+    "AllowedReliver": "true",
+    "AllowedStandBy": "false",
+    "Department": "Teacher"
+  },
+  {
+    "id": "8",
+    "name": "PRIYANKA",
+    "MaxSuperVision": 8,
+    "AllowedReliver": "false",
+    "AllowedStandBy": "true",
+    "Department": "Teacher"
+  },
+  {
+    "id": "9",
+    "name": "YASHASHREE",
+    "MaxSuperVision": 8,
+    "AllowedReliver": "true",
+    "AllowedStandBy": "false",
+    "Department": "HOD"
+  },
+  {
+    "id": "10",
+    "name": "SAGAR",
+    "MaxSuperVision": 8,
+    "AllowedReliver": "false",
+    "AllowedStandBy": "true",
+    "Department": "Teacher"
+  },
+  {
+    "id": "11",
+    "name": "POOJA.L",
+    "MaxSuperVision": 8,
+    "AllowedReliver": "true",
+    "AllowedStandBy": "true",
+    "Department": "Teacher"
+  },
+  {
+    "id": "12",
+    "name": "MEERA",
+    "MaxSuperVision": 8,
+    "AllowedReliver": "false",
+    "AllowedStandBy": "true",
+    "Department": "HOD"
+  },
+  {
+    "id": "13",
+    "name": "CHHAYA",
+    "MaxSuperVision": 8,
+    "AllowedReliver": "true",
+    "AllowedStandBy": "true",
+    "Department": "Teacher"
+  },
+  {
+    "id": "14",
+    "name": "RONIEL",
+    "MaxSuperVision": 8,
+    "AllowedReliver": "false",
+    "AllowedStandBy": "true",
+    "Department": "Teacher"
+  },
+  {
+    "id": "15",
+    "name": "DARSHINI",
+    "MaxSuperVision": 8,
+    "AllowedReliver": "true",
+    "AllowedStandBy": "false",
+    "Department": "HOD"
+  },
+  {
+    "id": "16",
+    "name": "TAIHREEN",
+    "MaxSuperVision": 8,
+    "AllowedReliver": "false",
+    "AllowedStandBy": "true",
+    "Department": "Teacher"
+  },
+  {
+    "id": "17",
+    "name": "SUBHRA",
+    "MaxSuperVision": 8,
+    "AllowedReliver": "true",
+    "AllowedStandBy": "false",
+    "Department": "Teacher"
+  },
+  {
+    "id": "18",
+    "name": "KIMBERLY",
+    "MaxSuperVision": 8,
+    "AllowedReliver": "false",
+    "AllowedStandBy": "true",
+    "Department": "HOD"
+  },
+  {
+    "id": "19",
+    "name": "RUPALI",
+    "MaxSuperVision": 8,
+    "AllowedReliver": "true",
+    "AllowedStandBy": "true",
+    "Department": "Teacher"
+  },
+  {
+    "id": "20",
+    "name": "FALGUNI",
+    "MaxSuperVision": 8,
+    "AllowedReliver": "false",
+    "AllowedStandBy": "true",
+    "Department": "Teacher"
+  }
+]

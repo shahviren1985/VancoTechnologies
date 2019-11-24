@@ -1,0 +1,197 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Feedback - Manage Teachers</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/adminStyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="jquery/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/managertecher.js"></script>
+    <script src="js/Global.js"></script>
+</head>
+<body>
+    <div class="loader-img"><img src="images/preloader.gif" /></div>
+    <header>
+        <div class="row">
+            <div class="col-xs-12 col-md-9 text-left">
+                <div class="row">
+                    <a class="page-ttl col-xs-9 col-md-4" href="Dashboard.html">Feedback System</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 text-right">
+                <span id="userName"> </span> &nbsp;
+                <button class="btn btn-default" id="logout">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="col-xs-12 col-md-3">
+        <div class="panel-body left-nav">
+            <ul class="plan plan2">
+                <li>
+                    <a href="GraphDashboard.html"><div><input type='radio' /><label for='Dashboard'><span> Dashboard </span> <span> </span> </label></div></a>
+                </li>
+                <li>
+                    <a href="Dashboard.html"><div><input type='radio' /><label for='Reports'><span> Reports </span> <span> </span> </label></div></a>
+                </li>
+                <li>
+                    <a href="ManageTeacher.html"><div><input checked type='radio' /><label for='Reports'><span> Manage Teachers </span> <span> </span> </label></div></a>
+                </li>
+                <li>
+                    <a href="ManageUser.html"><div><input type='radio' /><label for='Reports'><span> Manage Users </span> <span> </span> </label></div></a>
+                </li>
+                <li>
+                    <a href="Summary.html"><div><input type='radio' /><label for='Reports'><span> Summary Report</span> <span> </span> </label></div></a>
+                </li>
+                <li>
+                    <a href="Analysis.html"><div><input type='radio' /><label for='Reports'><span> Analysis Report</span> <span> </span> </label></div></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-md-9 right-block">
+        <h4 class="panel-title">Manage Teachers</h4>
+        <div class="white-space">
+            <div class="text-left successmsg" id="successmsg">
+                <span>Feedback successfully saved.</span>
+            </div>
+            <div class="col-xs-12 text-center errormsg" id="errormsg">
+                <span>An error has occurred while saving your feedback.</span>
+            </div>
+
+            <div style="width:100%;display:inline-block">
+                <div class="tbl">
+                    <div class="tbl-ttl"><a data-toggle="modal" data-target="#myModal" id="btnNewTecher" title="Add new teacher" class="btn theme-btn">Add New Teacher</a></div>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">Sr. No</th>
+                                    <th>Teacher Code</th>
+                                    <th>Teacher Name</th>
+                                    <th>Subject Code</th>
+                                    <th>Subject Name</th>
+                                    <th>Course</th>
+                                    <th>Sub Course</th>
+                                    <th>Semester</th>
+                                    <th class="text-center">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="techerList"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <button style="margin:15px 0 0" type="button" id="btnSaveChanges" class="pull-right btn btn-primary">Save Changes</button>
+            </div>
+        </div>
+    </div>
+    <!-- Add/Edit Modal Start -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-adjust">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <button type="button" id="btnClose1" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Teacher Details</h4>
+                        <span id="techerIndex">-1</span>
+
+                    </div>
+                    <div class="col-xs-12 col-md-12 text-left validationerrormsg" id="validationerrormsg">
+                        <span>All are mandatory fields. </span>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="form-group row">
+                            <label class="col-xs-12 col-md-3">Teacher Code <span class="error">*</span></label>
+                            <div class="col-xs-12 col-md-9">
+                                <input type="text" id="txt_TechderCode" class="form-control" placeholder="Enter teacher code" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-xs-12 col-md-3">Teacher Name <span class="error">*</span></label>
+                            <div class="col-xs-12 col-md-9">
+                                <input type="text" id="txt_TechderName" class="form-control" placeholder="Enter teacher name" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-xs-12 col-md-3">Subject Code <span class="error">*</span></label>
+                            <div class="col-xs-12 col-md-9">
+                                <input type="text" id="txt_SubjectCode" class="form-control" placeholder="Enter subject code" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-xs-12 col-md-3">Subject Name <span class="error">*</span></label>
+                            <div class="col-xs-12 col-md-9">
+                                <input type="text" id="txt_SubjectName" class="form-control" placeholder="Enter subject name" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-xs-12 col-md-3">Course <span class="error">*</span></label>
+                            <div class="col-xs-12 col-md-9">
+                                <select class="form-control" id="txt_Cource">
+                                    <option value="" selected>Select Course</option>
+                                </select>
+                                <!--<input type="text" id="txt_Cource" class="form-control" placeholder="Enter course"/>-->
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-xs-12 col-md-3">Sub Course <span class="error">*</span></label>
+                            <div class="col-xs-12 col-md-9">
+                                <select class="form-control" id="txt_SubCourse">
+                                    <option value="" selected>Select SubCourse</option>
+                                </select>
+                                <!--<input type="text" id="txt_SubCourse" class="form-control" placeholder="Enter sub course"/>-->
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-xs-12 col-md-3">Semester <span class="error">*</span></label>
+                            <div class="col-xs-12 col-md-9">
+                                <select class="form-control" id="drp_Semester">
+                                    <option value="odd"> Odd	</option>
+                                    <option value="even"> Even	</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="btnAddEditTeacher" class="btn btn-primary">Save</button>
+                        <button type="button" id="btnClose" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add/Edit Modal End -->
+    <!-- Delete Start -->
+    <div class="modal fade" id="deleterec" tabindex="-1" role="dialog">
+        <div class="modal-adjust">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Confirm</h4>
+                        <span id="techerRemoveIndex">-1</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-12 confirm-text">
+                                Are you sure you want to remove this teacher?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="btnRemoveTeacher" class="btn btn-primary">Remove</button>
+                        <button type="button" id="btn_Close2" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Delete End -->
+</body>
+</html>

@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html ng-app="ExamSystemApp">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <link href="Assets/bootstrap.min.css" rel="stylesheet" />
+    <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="CustomJs/Index.js"></script>
+    <script src="CustomJs/Angular.js"></script>
+    <script src="CustomJs/angular-route.js"></script>
+    <script src="CustomJs/AppConfig.js"></script>
+    <script src="Assets/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="CustomJs/alasql.min.js"></script>
+</head>
+<style>
+    /*@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);*/
+    .DivResult {
+        page-break-after: always;
+    }
+
+    .datepicker {
+        display: block;
+        top: 148px;
+        left: 248px;
+        width: 20%;
+    }
+
+    @media print {
+        #MarksheetData {
+            display: none;
+        }
+
+        .HeaderClass {
+            margin-left: 80px;
+        }
+    }
+
+    @media print {
+        @page {
+            size: A3 landscape;
+        }
+    }
+
+    body {
+        font-family: 'Eras ITC';
+        color: #1F3C67;
+        font-weight: 600;
+        font-size: 13px;
+    }
+
+    .BordredTable {
+        border-collapse: collapse;
+    }
+
+    tr.BodyTable {
+        white-space: nowrap;
+    }
+
+    .BordredTable td, table th {
+        border: 1px solid black;
+    }
+
+    .BordredTable tr:first-child th {
+        border-top: 0;
+    }
+
+    .BordredTable tr:last-child td {
+        border-bottom: 0;
+    }
+
+    .BordredTable tr td:first-child,
+    .BordredTable tr th:first-child {
+        border-left: 0;
+    }
+
+    .BordredTable tr td:last-child,
+    .BordredTable tr th:last-child {
+        border-right: 0;
+    }
+
+    .tdHeightSet {
+        height: 25px;
+    }
+
+    tr td:last-child {
+        width: 1%;
+        white-space: nowrap;
+    }
+
+
+    .rotate {
+        /* FF3.5+ */
+        -moz-transform: rotate(-90.0deg);
+        /* Opera 10.5 */
+        height: 90px;
+        -o-transform: rotate(-90.0deg);
+        /* Saf3.1+, Chrome */
+        -webkit-transform: rotate(-90.0deg);
+        /* IE6,IE7 */
+        filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.083);
+        /* IE8 */
+        -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)";
+        /* Standard */
+        transform: rotate(-90.0deg);
+    }
+</style>
+<body ng-controller="LadgerReportNewCtrl">
+    <div class="row" ng-repeat="StudentDetailDispl in StudentMarksheet track by $index">
+        <div class="col-md-12">
+            Name : {{StudentDetailDispl.FullName}}
+        </div>
+        <div class="col-md-12">
+            Department : {{StudentDetailDispl.Department}}
+        </div>
+        <div class="col-md-12">
+            Specialisation : {{StudentDetailDispl.Specialisation}}
+        </div>
+        <div class="col-md-12">
+            <table id="cssTable" class="table">
+                <thead>
+                    <tr>
+                        <th style="text-align: left;">Subject</th>
+                        <th>TH/PR</th>
+                        <th>Credits</th>
+                        <th>Internal Marks(50)</th>
+                        <th>Final Marks(50)</th>
+                        <th>Total Marks(100)</th>
+                        <th>Grade</th>
+                        <th>Grade Point</th>
+                        <th>Total Grade Point</th>
+                        <th>Remarks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="stu in StudentDetailDispl.SubjectDetail track by $index">
+                        <td style="text-align: left;">{{stu.paperTitle}}</td>
+                        <td ng-if="stu.paperType=='Theory'">TH</td>
+                        <td ng-if="stu.paperType=='Practical'">PR</td>
+                        <td>{{stu._FloatCredit}}</td>
+                        <td ng-if="stu.isContAssessment==false">{{stu._FloatInternalMark}}</td>
+                        <td ng-if="stu.isContAssessment==false">{{stu._ExternalTotal+stu._FloatPracticalMark}}</td>
+                        <td colspan="2" ng-if="stu.isContAssessment==true && (stu.code=='FCIII10' || stu.code=='FCIII12')">Internal / Final</td>
+                        <td colspan="2" ng-if="stu.isContAssessment==true && (stu.code=='RDV33' || stu.code=='RDV02')">Internal / Final</td>
+                        <td colspan="2" ng-if="stu.isContAssessment==true && (stu.code=='FCV20' || stu.code=='FCV21')">Internal / Final</td>
+                        <td colspan="2" ng-if="stu.isContAssessment==true && (stu.code=='FCV04' || stu.code=='TDV17')">Internal / Final</td>
+                        <td colspan="2" ng-if="stu.isContAssessment==true && (stu.code=='TDVI26' || stu.code=='MCV17' || stu.code=='MCVI06')">Internal / Final</td>
+                        <td colspan="2" ng-if="stu.isContAssessment==true && (stu.code!='FCIII10' && stu.code!='FCIII12' && stu.code!='RDV33' && stu.code!='RDV02' && stu.code!='FCV20' && stu.code!='FCV21' && stu.code!='FCV04' && stu.code!='TDV17' && stu.code!='MCV17' && stu.code!='MCVI06' && stu.code!='TDVI26')">Continous Assessment</td>
+                        <td>{{stu._FinalTotalMarks}}</td>
+                        <td>{{stu._Grade}}</td>
+                        <td>{{stu._TotalGrade | number : 2}}</td>
+                        <td>{{stu._TotalGradePoint | number : 2}}</td>
+                        <td style="min-width: 110px;">{{stu._Status}}</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th style="text-align: left;">Total</th>
+                        <th></th>
+                        <th>{{StudentDetailDispl._FinalTotalCredit}}</th>
+                        <th>{{StudentDetailDispl._FinalTotalInternalMark}}</th>
+                        <th>{{StudentDetailDispl._FinalPract_ExternalTotal}}</th>
+                        <th>{{StudentDetailDispl.TotalAllSubjectMark}}</th>
+                        <th></th>
+                        <th>{{StudentDetailDispl._FinalTotalGrade | number : 2}}</th>
+                        <th>{{StudentDetailDispl._FinalTotalGradePoint | number : 2}}</th>
+                        <th></th>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="row" style="margin: 15px; background: #f9f9f9; border-radius: 6px; padding: 10px;">
+                <div class="col-md-4">
+                    <div class="row" ng-if="StudentDetailDispl.Semester==1||StudentDetailDispl.Semester==5">
+                        <span><b>Result : </b></span>
+                        <span class="" ng-if="StudentDetailDispl.FailureCount==0"><b>Pass</b></span>
+                        <span class="" ng-if="StudentDetailDispl.FailedCredits>0 && StudentDetailDispl.FailedCredits<13"><b> Passes with ATKT</b></span>
+                        <span class="" ng-if="StudentDetailDispl.FailedCredits>0 && StudentDetailDispl.FailedCredits>12"><b> Fail</b></span>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-md-6"><b>Percentage : </b></div>
+                        <div class="col-md-6" ng-if="StudentDetailDispl.FailureCount>0"><b>-</b></div>
+                        <div class="col-md-6" ng-if="StudentDetailDispl.FailureCount==0"><b>{{StudentDetailDispl._FinalPercentage | number : 2}}</b></div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="row">
+                        <div class="col-md-6"><b>Grade : </b></div>
+                        <div class="col-md-6" ng-if="StudentDetailDispl.FailureCount>0"><b>-</b></div>
+                        <div class="col-md-6" ng-if="StudentDetailDispl.FailureCount==0"><b>{{StudentDetailDispl._FinalPercentageGrade}}</b></div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-md-6"><b>Grade Point : </b></div>
+                        <div class="col-md-6" ng-if="StudentDetailDispl.FailureCount>0"><b>-</b></div>
+                        <div class="col-md-6" ng-if="StudentDetailDispl.FailureCount==0"><b>{{StudentDetailDispl._FinalPercentageGradePoint | number : 2}}</b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

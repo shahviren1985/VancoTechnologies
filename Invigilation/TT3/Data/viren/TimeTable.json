@@ -1,0 +1,1293 @@
+[
+  {
+    "ExamName": "External Mid Sem Exam 2018",
+    "ExamTimeTableData": [
+      {
+        "Date": "2018-10-25T18:30:00Z",
+        "Associated": [
+          [
+            {
+              "Room": "101",
+              "ProfName": "Rahulc",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "15:30 to 17:00"
+            }
+          ]
+        ]
+      }
+    ],
+    "ExamTimeTableRoomData": [
+      "101"
+    ]
+  },
+  {
+    "ExamName": "FINAL SEMESTER EXAMINATIONS",
+    "ExamTimeTableData": [
+      {
+        "Date": "2018-10-21T18:30:00Z",
+        "Associated": [
+          [
+            {
+              "Room": "007",
+              "ProfName": "Mrs. Hemani Malhotra",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "016",
+              "ProfName": "Mrs. Sangeeta Chowala",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "100",
+              "ProfName": "Ms. Ashwini Gaikwad",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "101",
+              "ProfName": "Mrs. Roshani Dange",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "104",
+              "ProfName": "Ms. Nagma Naik",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "105",
+              "ProfName": "Mrs. Sulakshna Mane",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "109",
+              "ProfName": "Dr. Amar Dhere",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "110",
+              "ProfName": "Mrs. Armaity Shukla (HOD)",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "112",
+              "ProfName": "Mr. Prakash Navgire",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "119",
+              "ProfName": "Dr. Sabita Baruah",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "Ar. Uday Govalkar",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Reliver 2",
+              "ProfName": "Dr. Bhamini Mehta",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Stand By",
+              "ProfName": "Mrs. Chetna Raje (HOD)",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            }
+          ],
+          [
+            {
+              "Room": "007",
+              "ProfName": "Mrs. Rajeshree Shinde",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "016",
+              "ProfName": "Dr. Suja Koshy (HOD)",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "100",
+              "ProfName": "Mrs. Madhuri Nigudkar",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "101",
+              "ProfName": "Dr. Nisha Bellare",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "104",
+              "ProfName": "Mrs. Archana Jain",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "105",
+              "ProfName": "Mr. Rohit Pawar",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "109",
+              "ProfName": "Mrs. Anju Tulshiyan",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "110",
+              "ProfName": "DR. Suman Mundkur",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "112",
+              "ProfName": "Dr. K. P. Anuradha",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "119",
+              "ProfName": "Dr. Meena Godhia (HOD)",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "Mrs. Panchali Moitra",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "Reliver 2",
+              "ProfName": "Mrs. Akansha",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "Stand By",
+              "ProfName": "Mrs. Vipra Banerjee (HOD)",
+              "dateAssigned": "2018-10-21T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            }
+          ]
+        ]
+      },
+      {
+        "Date": "2018-10-22T18:30:00Z",
+        "Associated": [
+          [
+            {
+              "Room": "007",
+              "ProfName": "Mrs. Sulakshna Mane",
+              "dateAssigned": "2018-10-22T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "016",
+              "ProfName": "Dr. Sabita Baruah",
+              "dateAssigned": "2018-10-22T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "100",
+              "ProfName": "Mrs. Kamini Pradhan",
+              "dateAssigned": "2018-10-22T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "101",
+              "ProfName": "Ms. Prachi Patel",
+              "dateAssigned": "2018-10-22T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "104",
+              "ProfName": "Ms. Ashwini Gaikwad",
+              "dateAssigned": "2018-10-22T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "105",
+              "ProfName": "Mrs. Armaity Shukla (HOD)",
+              "dateAssigned": "2018-10-22T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "109",
+              "ProfName": "Mrs. Hemani Malhotra",
+              "dateAssigned": "2018-10-22T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "110",
+              "ProfName": "Mrs. Roshani Dange",
+              "dateAssigned": "2018-10-22T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "112",
+              "ProfName": "Mrs. Sangeeta Chowala",
+              "dateAssigned": "2018-10-22T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "119",
+              "ProfName": "Ms. Nagma Naik",
+              "dateAssigned": "2018-10-22T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "Dr. Amar Dhere",
+              "dateAssigned": "2018-10-22T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Reliver 2",
+              "ProfName": "Mrs. Madhuri Nigudkar",
+              "dateAssigned": "2018-10-22T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Stand By",
+              "ProfName": "Mr. Prakash Navgire",
+              "dateAssigned": "2018-10-22T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            }
+          ]
+        ]
+      },
+      {
+        "Date": "2018-10-23T18:30:00Z",
+        "Associated": [
+          [
+            {
+              "Room": "007",
+              "ProfName": "Mr. Rohit Pawar",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "016",
+              "ProfName": "Dr. Meena Godhia (HOD)",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "100",
+              "ProfName": "Mrs. Chetna Raje (HOD)",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "101",
+              "ProfName": "Ar. Uday Govalkar",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "104",
+              "ProfName": "Dr. Bhamini Mehta",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "105",
+              "ProfName": "DR. Suman Mundkur",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "109",
+              "ProfName": "Mrs. Rajeshree Shinde",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "110",
+              "ProfName": "Dr. Nisha Bellare",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "112",
+              "ProfName": "Dr. Suja Koshy (HOD)",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "119",
+              "ProfName": "Mrs. Archana Jain",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "Mrs. Anju Tulshiyan",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Reliver 2",
+              "ProfName": "Mrs. Kamini Pradhan",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Stand By",
+              "ProfName": "Dr. K. P. Anuradha",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            }
+          ],
+          [
+            {
+              "Room": "007",
+              "ProfName": "Mrs. Armaity Shukla (HOD)",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "016",
+              "ProfName": "Ms. Nagma Naik",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "100",
+              "ProfName": "Mrs. Vipra Banerjee (HOD)",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "101",
+              "ProfName": "Mrs. Panchali Moitra",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "104",
+              "ProfName": "Mrs. Akansha",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "105",
+              "ProfName": "Mrs. Roshani Dange",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "109",
+              "ProfName": "Mrs. Sulakshna Mane",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "110",
+              "ProfName": "Ms. Prachi Patel",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "112",
+              "ProfName": "Dr. Sabita Baruah",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "119",
+              "ProfName": "Ms. Ashwini Gaikwad",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "Mrs. Hemani Malhotra",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "Reliver 2",
+              "ProfName": "Mr. Prakash Navgire",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "Stand By",
+              "ProfName": "Mrs. Sangeeta Chowala",
+              "dateAssigned": "2018-10-23T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            }
+          ]
+        ]
+      },
+      {
+        "Date": "2018-10-24T18:30:00Z",
+        "Associated": [
+          [
+            {
+              "Room": "007",
+              "ProfName": "DR. Suman Mundkur",
+              "dateAssigned": "2018-10-24T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "016",
+              "ProfName": "Mrs. Archana Jain",
+              "dateAssigned": "2018-10-24T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "100",
+              "ProfName": "Dr. Amar Dhere",
+              "dateAssigned": "2018-10-24T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "101",
+              "ProfName": "Mrs. Chetna Raje (HOD)",
+              "dateAssigned": "2018-10-24T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "104",
+              "ProfName": "Ar. Uday Govalkar",
+              "dateAssigned": "2018-10-24T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "105",
+              "ProfName": "Dr. Nisha Bellare",
+              "dateAssigned": "2018-10-24T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "109",
+              "ProfName": "Mr. Rohit Pawar",
+              "dateAssigned": "2018-10-24T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "110",
+              "ProfName": "Dr. Bhamini Mehta",
+              "dateAssigned": "2018-10-24T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "112",
+              "ProfName": "Dr. Meena Godhia (HOD)",
+              "dateAssigned": "2018-10-24T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "119",
+              "ProfName": "Mrs. Madhuri Nigudkar",
+              "dateAssigned": "2018-10-24T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "Mrs. Rajeshree Shinde",
+              "dateAssigned": "2018-10-24T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Reliver 2",
+              "ProfName": "Ms. Prachi Patel",
+              "dateAssigned": "2018-10-24T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Stand By",
+              "ProfName": "Dr. Suja Koshy (HOD)",
+              "dateAssigned": "2018-10-24T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            }
+          ]
+        ]
+      },
+      {
+        "Date": "2018-10-25T18:30:00Z",
+        "Associated": [
+          [
+            {
+              "Room": "007",
+              "ProfName": "Mrs. Roshani Dange",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "016",
+              "ProfName": "Ms. Ashwini Gaikwad",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "100",
+              "ProfName": "Dr. K. P. Anuradha",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "101",
+              "ProfName": "Mrs. Anju Tulshiyan",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "104",
+              "ProfName": "Mrs. Vipra Banerjee (HOD)",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "105",
+              "ProfName": "Mrs. Kamini Pradhan",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "109",
+              "ProfName": "Mrs. Armaity Shukla (HOD)",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "110",
+              "ProfName": "Mrs. Panchali Moitra",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "112",
+              "ProfName": "Ms. Nagma Naik",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "119",
+              "ProfName": "Mrs. Akansha",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "Mrs. Sulakshna Mane",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Reliver 2",
+              "ProfName": "Dr. Nisha Bellare",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Stand By",
+              "ProfName": "Dr. Sabita Baruah",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            }
+          ],
+          [
+            {
+              "Room": "007",
+              "ProfName": "Mrs. Madhuri Nigudkar",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "016",
+              "ProfName": "Dr. Bhamini Mehta",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "100",
+              "ProfName": "Mrs. Sangeeta Chowala",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "101",
+              "ProfName": "Mrs. Hemani Malhotra",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "104",
+              "ProfName": "Mr. Prakash Navgire",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "105",
+              "ProfName": "Ar. Uday Govalkar",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "109",
+              "ProfName": "DR. Suman Mundkur",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "110",
+              "ProfName": "Dr. Amar Dhere",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "112",
+              "ProfName": "Mrs. Archana Jain",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "119",
+              "ProfName": "Mrs. Chetna Raje (HOD)",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "Mr. Rohit Pawar",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "Reliver 2",
+              "ProfName": "Dr. Suja Koshy (HOD)",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "Stand By",
+              "ProfName": "Dr. Meena Godhia (HOD)",
+              "dateAssigned": "2018-10-25T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            }
+          ]
+        ]
+      },
+      {
+        "Date": "2018-10-26T18:30:00Z",
+        "Associated": [
+          [
+            {
+              "Room": "007",
+              "ProfName": "Ms. Prachi Patel",
+              "dateAssigned": "2018-10-26T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "016",
+              "ProfName": "Mrs. Kamini Pradhan",
+              "dateAssigned": "2018-10-26T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "100",
+              "ProfName": "Mrs. Rajeshree Shinde",
+              "dateAssigned": "2018-10-26T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "101",
+              "ProfName": "Dr. K. P. Anuradha",
+              "dateAssigned": "2018-10-26T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "104",
+              "ProfName": "Mrs. Anju Tulshiyan",
+              "dateAssigned": "2018-10-26T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "105",
+              "ProfName": "Mrs. Akansha",
+              "dateAssigned": "2018-10-26T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "109",
+              "ProfName": "Mrs. Roshani Dange",
+              "dateAssigned": "2018-10-26T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "110",
+              "ProfName": "Mrs. Vipra Banerjee (HOD)",
+              "dateAssigned": "2018-10-26T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "112",
+              "ProfName": "Ms. Ashwini Gaikwad",
+              "dateAssigned": "2018-10-26T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "119",
+              "ProfName": "Mrs. Panchali Moitra",
+              "dateAssigned": "2018-10-26T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "Mrs. Archana Jain",
+              "dateAssigned": "2018-10-26T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Reliver 2",
+              "ProfName": "DR. Suman Mundkur",
+              "dateAssigned": "2018-10-26T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Stand By",
+              "ProfName": "Ms. Nagma Naik",
+              "dateAssigned": "2018-10-26T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            }
+          ]
+        ]
+      },
+      {
+        "Date": "2018-10-28T18:30:00Z",
+        "Associated": [
+          [
+            {
+              "ProfName": "-",
+              "Room": "007",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "016",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "100",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "101",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "104",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "105",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "109",
+              "ProfName": "Mrs. Hemani Malhotra",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "110",
+              "ProfName": "Dr. Sabita Baruah",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "112",
+              "ProfName": "Mrs. Sangeeta Chowala",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "119",
+              "ProfName": "Mrs. Sulakshna Mane",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "Mrs. Roshani Dange",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Reliver 2",
+              "ProfName": "Dr. K. P. Anuradha",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Stand By",
+              "ProfName": "Ms. Ashwini Gaikwad",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            }
+          ],
+          [
+            {
+              "Room": "007",
+              "ProfName": "Dr. Bhamini Mehta",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "016",
+              "ProfName": "Ar. Uday Govalkar",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "100",
+              "ProfName": "Mr. Prakash Navgire",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "ProfName": "-",
+              "Room": "101",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "ProfName": "-",
+              "Room": "104",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "105",
+              "ProfName": "Dr. Amar Dhere",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "ProfName": "-",
+              "Room": "109",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "ProfName": "-",
+              "Room": "110",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "ProfName": "-",
+              "Room": "112",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "ProfName": "-",
+              "Room": "119",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "Ms. Nagma Naik",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "Reliver 2",
+              "ProfName": "Dr. Nisha Bellare",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "Stand By",
+              "ProfName": "Mrs. Madhuri Nigudkar",
+              "dateAssigned": "2018-10-28T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            }
+          ]
+        ]
+      },
+      {
+        "Date": "2018-10-29T18:30:00Z",
+        "Associated": [
+          [
+            {
+              "ProfName": "-",
+              "Room": "007",
+              "dateAssigned": "2018-10-29T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "016",
+              "dateAssigned": "2018-10-29T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "100",
+              "dateAssigned": "2018-10-29T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "101",
+              "dateAssigned": "2018-10-29T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "104",
+              "dateAssigned": "2018-10-29T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "105",
+              "dateAssigned": "2018-10-29T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "109",
+              "dateAssigned": "2018-10-29T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "110",
+              "ProfName": "Mr. Rohit Pawar",
+              "dateAssigned": "2018-10-29T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "112",
+              "dateAssigned": "2018-10-29T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "119",
+              "ProfName": "Mrs. Rajeshree Shinde",
+              "dateAssigned": "2018-10-29T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "Dr. Sabita Baruah",
+              "dateAssigned": "2018-10-29T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Reliver 2",
+              "ProfName": "Mrs. Sangeeta Chowala",
+              "dateAssigned": "2018-10-29T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Stand By",
+              "ProfName": "Mrs. Anju Tulshiyan",
+              "dateAssigned": "2018-10-29T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            }
+          ]
+        ]
+      },
+      {
+        "Date": "2018-10-30T18:30:00Z",
+        "Associated": [
+          [
+            {
+              "Room": "007",
+              "ProfName": "Mr. Prakash Navgire",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "016",
+              "ProfName": "Mrs. Hemani Malhotra",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "100",
+              "ProfName": "Mrs. Panchali Moitra",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "101",
+              "ProfName": "Mrs. Akansha",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "104",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "105",
+              "ProfName": "Mrs. Sulakshna Mane",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "109",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "110",
+              "ProfName": "Mrs. Kamini Pradhan",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "112",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "119",
+              "ProfName": "Ms. Prachi Patel",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "Ar. Uday Govalkar",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Reliver 2",
+              "ProfName": "Dr. Bhamini Mehta",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Stand By",
+              "ProfName": "Dr. Amar Dhere",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            }
+          ],
+          [
+            {
+              "Room": "007",
+              "ProfName": "Mrs. Rajeshree Shinde",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "016",
+              "ProfName": "Mr. Rohit Pawar",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "100",
+              "ProfName": "Mrs. Madhuri Nigudkar",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "ProfName": "-",
+              "Room": "101",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "ProfName": "-",
+              "Room": "104",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "105",
+              "ProfName": "DR. Suman Mundkur",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "ProfName": "-",
+              "Room": "109",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "110",
+              "ProfName": "Dr. Nisha Bellare",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "ProfName": "-",
+              "Room": "112",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "119",
+              "ProfName": "Mrs. Archana Jain",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "Mrs. Anju Tulshiyan",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "ProfName": "-",
+              "Room": "Reliver 2",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            },
+            {
+              "Room": "Stand By",
+              "ProfName": "Dr. K. P. Anuradha",
+              "dateAssigned": "2018-10-30T18:30:00Z",
+              "Time": "14:00 to 16:00"
+            }
+          ]
+        ]
+      },
+      {
+        "Date": "2018-11-01T18:30:00Z",
+        "Associated": [
+          [
+            {
+              "Room": "007",
+              "ProfName": "Mrs. Akansha",
+              "dateAssigned": "2018-11-01T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "016",
+              "dateAssigned": "2018-11-01T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "100",
+              "ProfName": "Mrs. Panchali Moitra",
+              "dateAssigned": "2018-11-01T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "101",
+              "dateAssigned": "2018-11-01T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "104",
+              "dateAssigned": "2018-11-01T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "105",
+              "dateAssigned": "2018-11-01T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "109",
+              "dateAssigned": "2018-11-01T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "110",
+              "dateAssigned": "2018-11-01T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "112",
+              "dateAssigned": "2018-11-01T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "119",
+              "dateAssigned": "2018-11-01T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "Ms. Prachi Patel",
+              "dateAssigned": "2018-11-01T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "ProfName": "-",
+              "Room": "Reliver 2",
+              "dateAssigned": "2018-11-01T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            },
+            {
+              "Room": "Stand By",
+              "ProfName": "Mrs. Kamini Pradhan",
+              "dateAssigned": "2018-11-01T18:30:00Z",
+              "Time": "10:30 to 12:30"
+            }
+          ]
+        ]
+      }
+    ],
+    "ExamTimeTableRoomData": [
+      "007",
+      "016",
+      "100",
+      "101",
+      "104",
+      "105",
+      "109",
+      "110",
+      "112",
+      "119",
+      "Reliver",
+      "Reliver 2",
+      "Stand By"
+    ]
+  }
+]

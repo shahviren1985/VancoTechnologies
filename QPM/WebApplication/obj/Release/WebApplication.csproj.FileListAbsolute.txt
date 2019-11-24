@@ -1,0 +1,14 @@
+D:\VancoTechnologies\Code\QPM\WebApplication\bin\WebApplication.dll.config
+D:\VancoTechnologies\Code\QPM\WebApplication\bin\WebApplication.dll
+D:\VancoTechnologies\Code\QPM\WebApplication\bin\WebApplication.pdb
+D:\VancoTechnologies\Code\QPM\WebApplication\bin\DAO.dll
+D:\VancoTechnologies\Code\QPM\WebApplication\bin\DAOBase.dll
+D:\VancoTechnologies\Code\QPM\WebApplication\bin\LogManager.dll
+D:\VancoTechnologies\Code\QPM\WebApplication\bin\Util.dll
+D:\VancoTechnologies\Code\QPM\WebApplication\bin\DAOBase.pdb
+D:\VancoTechnologies\Code\QPM\WebApplication\bin\DAO.pdb
+D:\VancoTechnologies\Code\QPM\WebApplication\bin\LogManager.pdb
+D:\VancoTechnologies\Code\QPM\WebApplication\bin\Util.pdb
+D:\VancoTechnologies\Code\QPM\WebApplication\obj\Release\WebApplication.csprojResolveAssemblyReference.cache
+D:\VancoTechnologies\Code\QPM\WebApplication\obj\Release\WebApplication.dll
+D:\VancoTechnologies\Code\QPM\WebApplication\obj\Release\WebApplication.pdb

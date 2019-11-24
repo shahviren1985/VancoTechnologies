@@ -1,0 +1,23 @@
+UserId,FirstName,LastName,MobileNumber,CollegeCode,Course,SubCourse,IsActive,IsFinalYearStudent,RoleType,CurrentSemester,AcademicYear
+,POOJA ,CHHEDA,7021449914,102,M.Sc.,Specialized Dietetics,TRUE,TRUE,Customer,even,2018
+,VAIBHAVI,GALA,8080653863,102,M.Sc.,Specialized Dietetics,TRUE,TRUE,Customer,even,2018
+,RUPAL,SHAH,9967902801,102,M.Sc.,Specialized Dietetics,TRUE,TRUE,Customer,even,2018
+,MAHENOOR,PEERZADA,9769948005,102,M.Sc.,Specialized Dietetics,TRUE,TRUE,Customer,even,2018
+,PURVI,LODAYA,9870026432,102,M.Sc.,Specialized Dietetics,TRUE,TRUE,Customer,even,2018
+,SIMRAN,KHANDAGALE,8652524723,102,M.Sc.,Specialized Dietetics,TRUE,TRUE,Customer,even,2018
+,KAINAT,SHAIKH,7738447912,102,M.Sc.,Specialized Dietetics,TRUE,TRUE,Customer,even,2018
+,RUHI,QUREISHI,9967415009,102,M.Sc.,Specialized Dietetics,TRUE,TRUE,Customer,even,2018
+,ZOYA,MUSA,9819056773,102,M.Sc.,Specialized Dietetics,TRUE,TRUE,Customer,even,2018
+,HENAL,DOSHI,9167750004,102,M.Sc.,Specialized Dietetics,TRUE,TRUE,Customer,even,2018
+,RASHMI,BHATT,9619200945,102,M.Sc.,Specialized Dietetics,TRUE,TRUE,Customer,even,2018
+,SHEMA,NAWAB,7350468424,102,M.Sc.,Specialized Dietetics,TRUE,TRUE,Customer,even,2018
+,KIRTI,MUNOT,8692820603,102,M.Sc.,Specialized Dietetics,TRUE,TRUE,Customer,even,2018
+,MAHIMA,BHANUSHALI,7506560252,102,M.Sc.,Specialized Dietetics,TRUE,TRUE,Customer,even,2018
+,PRIYANKA,KAMDAR,9088333866,102,M.Sc.,Specialized Dietetics,TRUE,TRUE,Customer,even,2018
+,VARSHA,GOENKA,8017358103,102,M.Sc.,Specialized Dietetics,TRUE,TRUE,Customer,even,2018
+,MARIYAM,DALAL,7666867277,102,M.Sc.,Specialized Dietetics,TRUE,TRUE,Customer,even,2018
+,ANAM,GUBITRA,9867201208,102,M.Sc.,Specialized Dietetics,TRUE,TRUE,Customer,even,2018
+,SWAPNALI,MANE,9987772003,102,M.Sc.,Specialized Dietetics,TRUE,TRUE,Customer,even,2018
+,FATIMA,ADAM,9820759268,102,M.Sc.,Specialized Dietetics,TRUE,TRUE,Customer,even,2018
+,SUMAIYA,BHAMANI,7045034452,102,M.Sc.,Specialized Dietetics,TRUE,TRUE,Customer,even,2018
+,HUMRAH,FAROOQUI,9619093464,102,M.Sc.,Specialized Dietetics,TRUE,TRUE,Customer,even,2018

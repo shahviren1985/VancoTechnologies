@@ -1,0 +1,59 @@
+﻿<div class="box box-primary" id="InternalMarkEntryForm">
+    <div class="box-header with-border">
+        <span style="float:left">
+            <h3 id="TitleForSubject1" class="box-title">Transcript Request </h3>
+        </span>
+        <span style="float:right; width:20%;">
+            <select class="form-control" ng-model="drpType" ng-change="GetAllPedingRequest(drpType)">
+                <option value="0" selected>All</option>
+                <option value="1">Pending</option>
+                <option value="2">Completed</option>
+            </select>
+        </span>
+    </div>
+    <div class="box-body">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>College Registration #</th>
+                    <th>Admission Year</th>
+                    <th>Request Date</th>
+                    <th>Inward Number</th>
+                    <th>status</th>
+                    <th>Option</th>
+                </tr>
+            </thead>
+            <tbody style="max-height: 500px; overflow: auto;">
+                <tr ng-repeat="stu in TranscriptRecords">
+                    <td>{{stu.RequestId}}</td>
+                    <td>{{stu.FirstName}}</td>
+                    <td>{{stu.LastName}}</td>
+                    <td>{{stu.PNR}}</td>
+                    <td>{{stu.AdmissionYear}}</td>
+                    <td>{{stu.ReqRecvdOn | date : 'dd/MM/yyyy'}}</td>
+                    <td>
+                        <input type="text" class="txtInwardNumber" onchange="SetInwardNumber(this);" />
+                    </td>
+                    <td>
+                        <span ng-if="stu.RequestStatus==0" class="badge badge-success">Pending</span>
+                        <span ng-if="stu.RequestStatus==1" class="badge badge-danger">Completed</span>
+                    </td>
+                    <td>
+                        <button class="btn btn-sm btn-warning" ng-click="OpenTranscript(stu)">Download</button>
+                        <button class="btn btn-sm btn-primary" ng-disabled="stu.RequestStatus==1" ng-click="ComplatedRequest(stu)">Completed</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="box-footer">
+    </div>
+</div>
+<script>
+    function SetInwardNumber(element) {
+        localStorage.setItem("InwardNumber", $(element).val());
+    }
+</script>

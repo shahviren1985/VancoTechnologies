@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="font_size_16dp">16dp</dimen>
+    <dimen name="font_size_18dp">18dp</dimen>
+    <dimen name="font_size_12dp">12dp</dimen>
+    <dimen name="font_size_22dp">22dp</dimen>
+    <dimen name="font_size_14dp">14dp</dimen>
+    <dimen name="font_size_10dp">10dp</dimen>
+    <dimen name="font_size_20dp">20dp</dimen>
+    <dimen name="font_size_24dp">24dp</dimen>
+    <dimen name="font_size_8dp">8dp</dimen>
+
+    <dimen name="padding">5dp</dimen>
+    <dimen name="padding_mapview">10dp</dimen>
+    <dimen name="marginHorizontal_register">30dp</dimen>
+    <dimen name="marginTop_register">7dp</dimen>
+</resources>

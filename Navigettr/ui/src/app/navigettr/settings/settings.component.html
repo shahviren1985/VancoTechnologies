@@ -1,0 +1,253 @@
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-header">
+        <h4>Partner Settings</h4>
+        <!-- <button type="button" class="btn btn-primary pull-right icon-plus" (click)="addRates()">
+          <span class="glyphicon glyphicon-plus"></span> Partner Settings
+        </button> -->
+        <!-- <input type="text" [(ngModel)]="email" placeholder="Search here" /> -->
+      </div>
+      <div class="card-body">
+        <form [formGroup]="partnerbandNameForm" (ngSubmit)="uploadBrandLogo()">
+          <div class="form-group">
+            <label for="brand_name" class="col-form-label">Brand Name</label>
+            <input
+              type="text"
+              formControlName="brand_name"
+              class="form-control"
+              placeholder="Brand Name"
+            />
+            <div
+              *ngIf="
+                f.brand_name.invalid &&
+                (f.brand_name.dirty || f.brand_name.touched)
+              "
+              class="alert alert-danger"
+            >
+              <div [hidden]="f.brand_name.valid">
+                Brand Name is required
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="brand_logo" class="col-form-label">Brand Logo</label>
+            <input
+              #fileInput
+              type="file"
+              formControlName="brand_logo"
+              (change)="fileChangeEvent($event)"
+              class="form-control"
+            />
+            <img *ngIf="showFinalLogo" [src]="croppedImage" />
+          </div>
+          <button
+            type=" submit"
+            class="btn btn-primary"
+            [disabled]="!partnerbandNameForm.valid"
+          >
+            Save Brand
+          </button>
+        </form>
+
+        <form [formGroup]="partnerLinkForm" (ngSubmit)="onAddLink()">
+          <div class="form-group">
+            <label for="redirect_link" class="col-form-label"
+              >Redirect Link</label
+            >
+            <input
+              type="text"
+              formControlName="redirect_link"
+              class="form-control"
+              placeholder="Brand Name"
+            />
+            <div
+              *ngIf="
+                g.redirect_link.invalid &&
+                (g.redirect_link.dirty || g.redirect_link.touched)
+              "
+              class="alert alert-danger"
+            >
+              <div [hidden]="g.redirect_link.valid">
+                Redirect Link is required
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email_address" class="col-form-label"
+              >Email Address</label
+            >
+            <input
+              type="text"
+              formControlName="email_address"
+              class="form-control"
+              placeholder="Email Address"
+            />
+            <div
+              *ngIf="
+                g.email_address.invalid &&
+                (g.email_address.dirty || g.email_address.touched) &&
+                !g.email_address.pristine
+              "
+              class="alert alert-danger"
+            >
+              <div [hidden]="g.email_address.valid">
+                Email must be a valid email address
+              </div>
+            </div>
+          </div>
+          <div
+            *ngIf="
+              g.email_address.invalid &&
+              !g.email_address.dirty &&
+              g.email_address.touched
+            "
+            class="alert alert-danger"
+          >
+            <div [hidden]="g.email_address.valid">
+              Email is required
+            </div>
+          </div>
+          <button
+            type=" submit"
+            class="btn btn-primary"
+            [disabled]="!partnerLinkForm.valid"
+          >
+            Save
+          </button>
+        </form>
+
+        <form [formGroup]="partnerPasswordForm" (ngSubmit)="onChangePassword()">
+          <h5>Change Password</h5>
+          <div class="form-group">
+            <label for="old_password" class="col-form-label"
+              >Old Password</label
+            >
+            <input
+              type="text"
+              formControlName="old_password"
+              class="form-control"
+              placeholder="Old Password"
+            />
+            <div
+              *ngIf="
+                h.old_password.invalid &&
+                (h.old_password.dirty || h.old_password.touched)
+              "
+              class="alert alert-danger"
+            >
+              <div [hidden]="h.old_password.valid">
+                Old Password is required
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="new_password" class="col-form-label"
+              >New Password</label
+            >
+            <input
+              type="password"
+              formControlName="new_password"
+              class="form-control"
+              placeholder="New Password"
+            />
+            <div
+              *ngIf="
+                h.new_password.invalid &&
+                (h.new_password.dirty || h.new_password.touched)
+              "
+              class="alert alert-danger"
+            >
+              <div [hidden]="h.new_password.valid">
+                New Password is required
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="reenter_new_password" class="col-form-label"
+              >Reenter New Password</label
+            >
+            <input
+              type="password"
+              formControlName="reenter_new_password"
+              class="form-control"
+              placeholder="Reenter New Password"
+            />
+            <div
+              *ngIf="
+                h.reenter_new_password.invalid &&
+                (h.reenter_new_password.dirty || h.reenter_new_password.touched)
+              "
+              class="alert alert-danger"
+            >
+              <div [hidden]="h.reenter_new_password.valid">
+                New Password is required
+              </div>
+            </div>
+          </div>
+          <button
+            type=" submit"
+            class="btn btn-primary"
+            [disabled]="!partnerPasswordForm.valid"
+          >
+            Change Password
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div
+  bsModal
+  #cropLogoModal="bs-modal"
+  class="modal fade"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="dialog-child-name"
+>
+  <div class="navi-Success">
+    <alert></alert>
+  </div>
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="dialog-child-name" class="modal-title pull-left">
+          Crop Brand Logo
+        </h4>
+        <button
+          type="button"
+          class="close pull-right"
+          aria-label="Close"
+          (click)="hideModal()"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <image-cropper
+          [imageChangedEvent]="imageChangedEvent"
+          [maintainAspectRatio]="true"
+          [aspectRatio]="4 / 3"
+          [resizeToWidth]="128"
+          format="png"
+          (imageCropped)="imageCropped($event)"
+          (imageLoaded)="imageLoaded()"
+          (loadImageFailed)="loadImageFailed()"
+        ></image-cropper>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-default"
+          data-dismiss="modal"
+          (click)="hideModal()"
+        >
+          Close
+        </button>
+        <button type="button" (click)="cropLogo()" class="btn btn-primary">
+          Crop Logo
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

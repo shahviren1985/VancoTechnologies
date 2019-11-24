@@ -1,0 +1,260 @@
+[
+    {
+        "id": "a1",
+        "question": "Name of Alumni",
+        "type": "text",
+        "controlCount": "1",
+        "placeHolder": "Name of Alumni"
+    },
+    {
+        "id": "a2",
+        "question": "Year of Passing",
+        "type": "dropdown",
+        "optionValues": [
+			"2020-21",
+			"2019-20",
+			"2018-19",
+            "2017-18",
+            "2016-17",
+            "2015-16",
+            "2014-15",
+            "2013-14",
+            "2012-13",
+            "2011-12",
+            "2010-11",
+            "2009-10",
+            "2008-09",
+            "2007-08",
+            "2006-07",
+            "2005-06",
+            "2004-05",
+            "2003-04",
+            "2002-03",
+            "2001-02",
+            "2000-01",
+            "Prior to 2000"
+		]
+    },
+    {
+        "id": "a3",
+        "question": "Specialisation",
+        "type": "radio",
+        "optionValues": [
+            "Developmental Counselling",
+            "Early Childhood Care and Education",
+            "Food, Nutrition and Dietetics",
+            "Hospitality and Tourism Management",
+            "Interior Design and Resource Management",
+            "Mass Communication and Extension",
+            "Textiles and Apparel Design"
+        ]
+    },
+    {
+        "id": "a4",
+        "question": "Please rate the curriculum",
+        "type": "header",
+        "controlCount": "1",
+        "placeHolder": ""
+    },
+    {
+        "id": "a5",
+        "question": "Relevance of curriculum to real life situations and local development needs",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a6",
+        "question": "The Course Objectives were clear, in fulfilment of leaning objectives and needs",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a7",
+        "question": "Curriculum content exposed me to new knowledge and practices",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a8",
+        "question": "Coverage of Course work with adequate student time",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a9",
+        "question": "Weightage given to Projects",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a10",
+        "question": "Weightage given to practical and field work",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a11",
+        "question": "Weightage given to skill development",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a12",
+        "question": "Weightage given to entrepreneurship",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a13",
+        "question": "Weightage given to Learning values (in terms of knowledge, concepts, practical skills, analytical abilities and broadening perspectives)",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a14",
+        "question": "Inclusion/Incorporation of latest advancements in the subject",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a15",
+        "question": "Awareness of expected course outcomes",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a16",
+        "question": "Weightage given to employability",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a17",
+        "question": "Clarity and relevance of Reference material/study material",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a18",
+        "question": "Relevance and usefulness of Course content at workplace",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a19",
+        "question": "Curriculum promoted environmental awareness",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a20",
+        "question": "Improved overall personality",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a23",
+        "question": "Overall rating of curriculum",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a24",
+        "question": "Mobile Number",
+        "type": "text",
+        "controlCount": "1",
+        "placeHolder": "Mobile Number"
+    },
+    {
+        "id": "a25",
+        "question": "Email Address",
+        "type": "text",
+        "controlCount": "1",
+        "placeHolder": "Email Address"
+    }
+]

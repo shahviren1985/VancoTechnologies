@@ -1,0 +1,93 @@
+<div class="app flex-row align-items-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card mx-4">
+          <ng-container *ngIf="!show && !confirm">
+            <div class="card-body p-4">
+              <form [formGroup]="forgot" (ngSubmit)="onSubmit()">
+                <h2>Forgot Password</h2>
+                <p class="text-muted">Please enter your registered Phone Number to receive One Time Password (OTP).</p>
+                <div class="form-group">
+                  <div class="input-group mb-3">
+                    <span class="input-group-addon"><i class="fa fa-mobile-phone  fa-lg "></i></span>
+                    <input type="text" class="form-control" formControlName="PhoneNumber" placeholder="Phone Number">
+                  </div>
+                  <div *ngIf="f.invalid && (f.dirty || f.touched)" class="alert alert-danger">
+                    <div [hidden]="f.valid  ||f.errors.minlength||f.errors.maxlength">
+                      Phone Number is required </div>
+                    <div *ngIf="f.errors.minlength">
+                      Phone Number length must be equal to 10 characters long
+                    </div>
+                    <div *ngIf="f.errors.maxlength">
+                      Phone Number length must be equal to 10 characters long
+                    </div>
+                  </div>
+                </div>
+                <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+                <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }" [template]="customLoadingTemplate"></ngx-loading>
+                <button type="submit" [disabled]="!forgot.valid" class="btn btn-block btn-success">Send OTP</button>
+              </form>
+            </div>
+          </ng-container>
+          <ng-container *ngIf="show && !confirm">
+            <div class="card-body p-4">
+              <form [formGroup]="OTP" (ngSubmit)="onOtp()">
+                <h2>Enter OTP</h2>
+                <p class="text-muted">Please enter your Otp below and we have send the Otp to your number.Do you want
+                  to change <button type="button" (click)="changeNumber()" class="btn btn-link px-0"> Phone Number ?</button></p>
+                <div class="form-group">
+                  <div class="input-group mb-3">
+                    <span class="input-group-addon"><i class="fa fa-mobile-phone  fa-lg "></i></span>
+                    <input type="text" class="form-control" formControlName="Otp" placeholder="One Time Password">
+                  </div>
+                  <div *ngIf="o.invalid && (o.dirty || o.touched)" class="alert alert-danger">
+                    <div [hidden]="o.valid  ||o.errors.minlength||o.errors.maxlength">
+                      OTP is required </div>
+                    <div *ngIf="o.errors.minlength">
+                      OTP length must be equal to 6 characters long
+                    </div>
+                    <div *ngIf="o.errors.maxlength">
+                      OTP length must be equal to 6 characters long
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" [disabled]="!OTP.valid" class="btn btn-block btn-success">Confirm OTP</button>
+              </form>
+            </div>
+          </ng-container>
+          <ng-container *ngIf="confirm">
+            <div class="card-body p-4">
+              <form [formGroup]="reset" (ngSubmit)="onSubmit()">
+                <h2>Reset Password</h2>
+                <p class="text-muted">Please enter your New Password.</p>
+                <div class="form-group">
+                  <div class="input-group mb-3">
+                    <span class="input-group-addon"><i class="icon-lock "></i></span>
+                    <input type="text" class="form-control" formControlName="Password" placeholder="Password">
+                  </div>
+                  <div *ngIf="r.Password.invalid && (r.Password.dirty || r.Password.touched)" class="alert alert-danger">
+                    <div [hidden]="r.Password.valid ">
+                      Password is required </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group mb-3">
+                    <span class="input-group-addon"><i class="icon-lock"></i></span>
+                    <input type="text" class="form-control" formControlName="confirmPassword" placeholder="Confirm Password">
+                  </div>
+                  <div *ngIf="r.confirmPassword.invalid && (r.confirmPassword.dirty || r.confirmPassword.touched)"
+                    class="alert alert-danger">
+                    <div [hidden]="r.confirmPassword.valid ">
+                      Password is required </div>
+                  </div>
+                </div>
+                <button type="submit" [disabled]="!reset.valid" class="btn btn-block btn-success">Reset Password</button>
+              </form>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

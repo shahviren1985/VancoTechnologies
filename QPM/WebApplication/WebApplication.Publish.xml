@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\Publish Builds\MIS_PaperManagment\10-03-2015_2" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="qpmadmin" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="03/10/2015 18:16:53" />
+    <file relUrl="bin/WebApplication.pdb" publishTime="03/10/2015 18:27:55" />
+    <file relUrl="Login.aspx" publishTime="03/03/2015 12:32:41" />
+    <file relUrl="bin/DAO.pdb" publishTime="03/10/2015 18:16:07" />
+    <file relUrl="bin/DAO.dll" publishTime="03/10/2015 18:16:07" />
+    <file relUrl="bin/Util.pdb" publishTime="03/10/2015 18:16:05" />
+    <file relUrl="bin/WebApplication.dll" publishTime="03/10/2015 18:27:55" />
+    <file relUrl="bin/LogManager.dll" publishTime="03/10/2015 18:16:05" />
+    <file relUrl="Admin/Dashboard.aspx" publishTime="03/09/2015 21:10:42" />
+    <file relUrl="bin/DAOBase.pdb" publishTime="03/10/2015 18:16:06" />
+    <file relUrl="bin/LogManager.pdb" publishTime="03/10/2015 18:16:05" />
+    <file relUrl="Admin/DeletePaper.aspx" publishTime="03/09/2015 21:09:29" />
+    <file relUrl="MasterPages/MasterPage.Master" publishTime="03/09/2015 20:33:36" />
+    <file relUrl="MasterPages/AdminMaster.Master" publishTime="03/09/2015 20:34:02" />
+    <file relUrl="bin/DAOBase.dll" publishTime="03/10/2015 18:16:06" />
+    <file relUrl="bin/MySql.Data.dll" publishTime="09/17/2013 21:18:21" />
+    <file relUrl="bin/Util.dll" publishTime="03/10/2015 18:16:05" />
+    <file relUrl="Global.asax" publishTime="03/02/2015 18:06:26" />
+    <file relUrl="User/UploadControl.aspx" publishTime="03/09/2015 20:22:11" />
+  </publishProfile>
+</publishData>

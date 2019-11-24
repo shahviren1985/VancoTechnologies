@@ -1,0 +1,18 @@
+[{
+"userName" : "anil",
+"password"  :"123456",
+"mobileNumber" : "7405220736",
+"firstName" : "anil",
+"lastName" : "chavda",
+"role" : "teacher",
+"paperCode" : [ "LA101" ,"SA101" ,"TG102" ]
+},
+{
+"userName" : "viren",
+"password"  :"123456",
+"mobileNumber" : "7405220736",
+"firstName" : "viren",
+"lastName" : "shah",
+"role" : "teacher",
+"paperCode" : [ "LA101" ,"SA101" ,"TG102" ]
+}]

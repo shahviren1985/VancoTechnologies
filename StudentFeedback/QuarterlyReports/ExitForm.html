@@ -1,0 +1,631 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Feedback Form</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/style.css" />
+	<script type = "text/javascript" src="jquery/jquery-1.11.3.min.js"></script>
+	<script type = "text/javascript" src="js/exitform.js"></script>
+    <script src="js/Global.js"></script>
+</head>
+
+<body>
+	<div class="loader-img"><img src="images/preloader.gif"/></div>
+    <header>
+        <div class="row">
+            <div class="col-xs-12 col-md-9 text-left" >
+				<div class="row">
+					<a class="page-ttl col-xs-9 col-md-4" href="Feedback.html">Feedback System</a> 
+					<a class="btn btn-default" id="exitForm" href="ExitForm.html">Exit Form</a> 
+				</div>
+            </div>
+            <div class="col-xs-12 col-md-3 text-right" >
+				<span id="userName"> </span> &nbsp; 
+                <button class="btn btn-default" id="logout">Logout</button>
+            </div>
+        </div>
+    </header>	
+    
+	<div class="col-xs-12 text-left successmsg" id="successmsg">
+    	<span>Feedback successfully saved.</span>        
+    </div>
+	<div class="col-xs-12 text-left validationerrormsg" id="validationerrormsg">
+    	<span>All questions are mandatory</span>        
+    </div>
+    <div class="col-xs-12 exit-form" id="studentExitForm">
+        <div class="form-data">
+            <h4 class="panel-title">Exit Form</h4>
+            <div class="right-panel">
+                <div class="form-group">
+                    <div class="ques">
+                        <strong> <span>1.</span>What do you plan to do after completion of your graduation?</strong>
+                    </div>
+                    <div id="dv_a1">
+                        <label class="radio-inline">
+                            <input type="radio" value="Study further" name="rd_a1"> Study further
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" value="Work" name="rd_a1"> Work
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" value="Any other" name="rd_a1"> Any other
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="ques">
+                        <strong> <span>2.</span>Your top 3 from the following :</strong>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-4">
+                                <label>Most Valuable</label>
+                                <select id="drp_a2_mostvaluable" class="form-control">
+                                    <option value=""> --Select--</option>
+                                    <option value="Psychology"> Psychology</option>
+                                    <option value="Sociology"> Sociology</option>
+                                    <option value="C.D."> C.D. </option>
+                                    <option value="F.N."> F.N.</option>
+                                    <option value="History"> History</option>
+                                    <option value="Gujarati"> Gujarati</option>
+                                    <option value="Economics"> Economics</option>
+                                    <option value="Hindi"> Hindi</option>
+                                    <option value="English"> English</option>
+                                    <option value="Travel & Tourism"> Travel & Tourism</option>
+                                    <option value="Secretarial Practice"> Secretarial Practice</option>
+                                    <option value="Commerce"> Commerce</option>
+                                    <option value="Advertising"> Advertising </option>
+                                </select>
+                            </div>
+                            <div class="col-xs-12 col-md-4" id="dv_a2_valuable">
+                                <label>Valuable</label>
+                                <select id="drp_a2_valuable" class="form-control">
+                                    <option value=""> --Select--</option>
+                                    <option value="Psychology"> Psychology</option>
+                                    <option value="Sociology"> Sociology</option>
+                                    <option value="C.D."> C.D. </option>
+                                    <option value="F.N."> F.N.</option>
+                                    <option value="History"> History</option>
+                                    <option value="Gujarati"> Gujarati</option>
+                                    <option value="Economics"> Economics</option>
+                                    <option value="Hindi"> Hindi</option>
+                                    <option value="English"> English</option>
+                                    <option value="Travel & Tourism"> Travel & Tourism</option>
+                                    <option value="Secretarial Practice"> Secretarial Practice</option>
+                                    <option value="Commerce"> Commerce</option>
+                                    <option value="Advertising"> Advertising </option>
+                                </select>
+                            </div>
+                            <div class="col-xs-12 col-md-4" id="dv_a2_lessvaluable">
+                                <label>Less Valuable</label>
+                                <select id="drp_a2_lessvaluable" class="form-control">
+                                    <option value=""> --Select--</option>
+                                    <option value="Psychology"> Psychology</option>
+                                    <option value="Sociology"> Sociology</option>
+                                    <option value="C.D."> C.D. </option>
+                                    <option value="F.N."> F.N.</option>
+                                    <option value="History"> History</option>
+                                    <option value="Gujarati"> Gujarati</option>
+                                    <option value="Economics"> Economics</option>
+                                    <option value="Hindi"> Hindi</option>
+                                    <option value="English"> English</option>
+                                    <option value="Travel & Tourism"> Travel & Tourism</option>
+                                    <option value="Secretarial Practice"> Secretarial Practice</option>
+                                    <option value="Commerce"> Commerce</option>
+                                    <option value="Advertising"> Advertising </option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="ques">
+                        <strong> <span>3.</span>In what ways has your personality changed as a result of being enrolled in the college.</strong>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <label>Positive Effect</label>
+                            <textarea class="form-control" id="txt_a3_possitive" rows="2" placeholder="Type positive effect"></textarea>
+                        </div>
+                        <div class="col-xs-12 col-md-12">
+                            <label>Negative Effect</label>
+                            <textarea class="form-control" rows="2" id="txt_a3_negative" placeholder="Type negative effect"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="ques">
+                        <strong> <span>4.</span>Would you like to keep in touch with the institute after you leave it?</strong>
+                    </div>
+                    <div id="dv_a4">
+                        <label class="radio-inline">
+                            <input value="yes" type="radio" name="rd_a4"> Yes
+                        </label>
+                        <label class="radio-inline">
+                            <input value="no" type="radio" name="rd_a4"> No
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="ques">
+                        <strong> <span>5.</span>What was your experience with the administration of the institute?</strong>
+                    </div>
+                    <div id="dv_a5">
+                        <label class="radio-inline">
+                            <input value="Positive Experience" type="radio" name="rd_a5"> Positive experience (good)
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" value="Negative Experience" name="rd_a5"> Negative experience (not good)
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="ques">
+                        <strong> <span>6.</span>What are your comments on the social interaction in the departments(any two) ?</strong>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <label>1. Name of the Department</label>
+                            <input id="txt_a6_department1" type="text" class="form-control" placeholder="Type the name of the department" />
+                            <div class="choose-comment">
+                                Positive Comment
+                                <textarea id="txt_a6_positive1" class="form-control" rows="2" placeholder="Type positive comment"></textarea>
+                                Negative Comment
+                                <textarea id="txt_a6_negative1" class="form-control" rows="2" placeholder="Type negative comment"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-12">
+                            <label>2. Name of the Department</label>
+                            <input id="txt_a6_department2" type="text" class="form-control" placeholder="Type the name of the department" />
+                            <div class="choose-comment">
+                                Positive Comment
+                                <textarea id="txt_a6_positive2" class="form-control" rows="2" placeholder="Type positive comments"></textarea>
+                                Negative Comment
+                                <textarea id="txt_a6_negative2" class="form-control" rows="2" placeholder="Type negative comments"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="ques">
+                        <strong> <span>7.</span>What extracurricular activities did you participate in?</strong>
+                    </div>
+                    <div id="dv_a7">
+                        <label class="radio-inline">
+                            <input value="yes" type="radio" name="rd_a7"> Yes
+                        </label>
+                        <label class="radio-inline">
+                            <input value="no" type="radio" name="rd_a7"> No
+                        </label>
+                        <label class="radio-inline">
+                            <input value="N.A." type="radio" name="rd_a7"> N.A.
+                        </label>
+                    </div>
+                    <div class="input-left">
+                        <input type="text" id="txt_a7" class="form-control" placeholder="Type the name of activity" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="ques">
+                        <strong> <span>8.</span>In what way you can contribute to this college?</strong>
+                    </div>
+                    <div>
+                        <textarea id="txt_a8" class="form-control" rows="2" placeholder="Type the way you can contribute to this college"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="ques">
+                        <strong>
+                            <span>9.</span>Evaluate the following department according to a 5 pt. rating scale by putting a tickmark at a Number where.
+                            <!--div class="left-p">5 is excellent<br>4 is good<br>3 is average<br> 2 is poor<br> 1 is very poor</div-->
+                        </strong>
+                    </div>
+                    <div></div>
+                    <div class="ques">
+                        <div class="row mul-row">
+                            <div class="col-xs-12">
+                                <label>9.1 - Canteen</label>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Quality of food</div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_canteen_a1">
+                                        <select id="drp_a9_canteen_a1" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Price of food</div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_canteen_a2">
+                                        <select id="drp_a9_canteen_a2" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Variety of food</div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_canteen_a3">
+                                        <select id="drp_a9_canteen_a3" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Service</div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_canteen_a4">
+                                        <select id="drp_a9_canteen_a4" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Hygiene</div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_canteen_a5">
+                                        <select id="drp_a9_canteen_a5" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mul-row">
+                            <div class="col-xs-12">
+                                <label>9.2 - Library</label>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Book availability</div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_library_a1">
+                                        <select id="drp_a9_library_a1" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Staff helpfulness in getting book</div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_library_a2">
+                                        <select id="drp_a9_library_a2" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Adequate space/seating</div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_library_a3">
+                                        <select id="drp_a9_library_a3" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Library timing</div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_library_a4">
+                                        <select id="drp_a9_library_a4" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Frequency of your library visits</div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_library_a5">
+                                        <select id="drp_a9_library_a5" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mul-row">
+                            <div class="col-xs-12">
+                                <label>9.3 - Office</label>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Co-Operation</div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_office_a1">
+                                        <select id="drp_a9_office_a1" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Information (Adequate Communication)</div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_office_a2">
+                                        <select id="drp_a9_office_a2" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Timelines</div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_office_a3">
+                                        <select id="drp_a9_office_a3" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Politeness (Courtesy)</div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_office_a4">
+                                        <select id="drp_a9_office_a4" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mul-row">
+                            <div class="col-xs-12">
+                                <label>9.4 - Gym/Fitness Center</label>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Timing</div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_gym_a1">
+                                        <select id="drp_a9_gym_a1" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Environment</div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_gym_a2">
+                                        <select id="drp_a9_gym_a2" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Equipment </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_gym_a3">
+                                        <select id="drp_a9_gym_a3" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Training</div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_gym_a4">
+                                        <select id="drp_a9_gym_a4" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mul-row">
+                            <div class="col-xs-12">
+                                <label>9.5 - Sport</label>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Facilities</div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_sport_a1">
+                                        <select id="drp_a9_sport_a1" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Equipment</div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_sport_a2">
+                                        <select id="drp_a9_sport_a2" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Training </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_sport_a3">
+                                        <select id="drp_a9_sport_a3" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mul-row">
+                            <div class="col-xs-12">
+                                <label>9.6 - Health Services</label>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Regular of health check-up</div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_health_a1">
+                                        <select id="drp_a9_health_a1" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Availabilities of emergency medical facilities</div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_health_a2">
+                                        <select id="drp_a9_health_a2" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row multiple-ques">
+                                    <div class="col-xs-12 col-md-4">
+                                        <div class="left-p">Quality of Psychological counseling service provided </div>
+                                    </div>
+                                    <div class="col-xs-12 col-md-8" id="dv_a9_health_a3">
+                                        <select id="drp_a9_health_a3" class="form-control">
+                                            <option value=""> --Select--</option>
+                                            <option value="5"> Excellent</option>
+                                            <option value="4"> Good</option>
+                                            <option value="3"> Average </option>
+                                            <option value="2"> Poor</option>
+                                            <option value="1"> Very  Poor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-left errormsg" id="errormsg">
+                        <span>An error has occurred while saving your feedback.</span>
+                    </div>
+                    <div class="text-right">
+                        <button type="button" id="btnSubmit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>

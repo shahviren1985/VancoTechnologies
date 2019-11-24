@@ -1,0 +1,186 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feedback System - Dashboard</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/adminStyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script type="text/javascript" src="jquery/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="js/UploadFeedback.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+        @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+        .white-space_Chart {
+            background: #fff;
+            -webkit-box-shadow: 0 0 6px #b1aaaa;
+            -moz-box-shadow: 0 0 6px #b1aaaa;
+            box-shadow: 0 0 1px #b1aaaa;
+            margin: 0 0 20px;
+            display: inline-block;
+            width: 100%;
+            padding: 15px;
+        }
+
+        .QuestionDivClass {
+            text-align: center;
+            padding-bottom: 10px;
+            font-weight: 600;
+        }
+
+        p:not(:last-child) {
+            margin: 0 0 20px;
+        }
+
+        main {
+            max-width: 100%;
+            padding: 10px;
+        }
+
+        section {
+            display: none;
+            padding: 20px 0 0;
+            border-top: 1px solid #abc;
+        }
+
+        input {
+            display: none;
+        }
+
+        .tab-content {
+            padding-top: 15px;
+        }
+
+        label {
+            display: inline-block;
+            margin: 0 0 -1px;
+            padding: 15px 25px;
+            font-weight: 600;
+            text-align: center;
+            color: #abc;
+            border: 1px solid transparent;
+        }
+
+            label:before {
+                font-family: fontawesome;
+                font-weight: normal;
+                margin-right: 10px;
+            }
+
+
+
+            label:hover {
+                color: #789;
+                cursor: pointer;
+            }
+
+        input:checked + label {
+            color: #0af;
+            border: 1px solid #abc;
+            border-top: 2px solid #0af;
+            border-bottom: 1px solid #fff;
+        }
+
+        #tab1:checked ~ #content1,
+        #tab2:checked ~ #content2,
+        #tab3:checked ~ #content3,
+        #tab4:checked ~ #content4 {
+            display: block;
+        }
+
+        @media screen and (max-width: 800px) {
+            label {
+                font-size: 0;
+            }
+
+                label:before {
+                    margin: 0;
+                    font-size: 18px;
+                }
+        }
+
+        @media screen and (max-width: 500px) {
+            label {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader-img"><img src="images/preloader.gif" /></div>
+    <header>
+        <div class="row">
+            <div class="col-xs-12 col-md-9 text-left">
+                <div class="row">
+                    <a class="page-ttl col-xs-9 col-md-4" href="Dashboard.html">Feedback System</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 text-right">
+                <span id="userName"> </span> &nbsp;
+                <button class="btn btn-default" id="logout">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="col-xs-12 col-md-3">
+        <div class="panel-body left-nav">
+            <ul class="plan plan2">
+                <li>
+                    <a href="StudentDashboard.html"><div><input type='radio' /><label for='Dashboard'><span>Student Feedback Dashboard </span> <span> </span> </label></div></a>
+                </li>
+                <li>
+                    <a href="StaffDashboard.html"><div><input type='radio' /><label for='Dashboard'><span>Staff Feedback Dashboard </span> <span> </span> </label></div></a>
+                </li>
+                <li>
+                    <a href="UploadFeedback.html"><div><input checked type='radio' /><label for='Reports'><span> Upload Feedbacks </span> <span> </span> </label></div></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-md-9 right-block">
+        <h4 class="panel-title">Upload Feedbacks</h4>
+        <div class="white-space">
+            <div class="row" style="margin-left:10px">
+                <h6>Import Student Feedbacks</h6>
+                <form id="ImportStudentFeedbackForm" enctype="multipart/form-data" method="POST">
+                    <select id="ddAcademicYear">
+                        <option selected="selected">2018-2019</option>
+                        <option>2017-2018</option>
+                        <option>2016-2017</option>
+                    </select>
+                    <input type="file" name="data" id="file1">
+                        <input class="btn btn-primary" id="btnSubmit" value="Submit" type="button" />
+                </form>
+            </div>
+            <div class="row" style="margin-left:10px">
+                <h6>Import Staff Feedbacks</h6>
+                <form id="ImportStaffFeedback" enctype="multipart/form-data" method="POST">
+                    <select id="ddAcademicYear">
+                        <option selected="selected">2018-2019</option>
+                        <option>2017-2018</option>
+                        <option>2016-2017</option>
+                    </select>
+                    <input type="file" name="data" id="file2">
+                    <input class="btn btn-primary" id="btnStaffSubmit" value="Submit" type="button" />
+                </form>
+            </div>
+            <div class="col-xs-12 col-md-12 text-left successmsg" id="successmsg">
+                <span> Record inserted successfully.</span>
+            </div>
+            <div class="col-xs-12 col-md-12 text-left validationerrormsg" id="validationerrormsg">
+                <span>Please select csv the file</span>
+            </div>
+            <div class="col-xs-12 col-md-12 text-center errormsg" id="errormsg">
+                <span>An error has occurred while uploading your csv file.</span>
+            </div>
+        </div>
+    </div>
+    <script src="js/Global.js"></script>
+</body>
+</html>

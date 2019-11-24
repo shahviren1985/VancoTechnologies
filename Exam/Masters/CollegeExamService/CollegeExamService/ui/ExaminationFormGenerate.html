@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html ng-app="ExamFormGenerateApp">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="CustomJs/Angular.js"></script>
+    <script src="CustomJs/urlConfig.js"></script>
+    <script src="CustomJs/Index.js"></script>
+    <link href="CustomCss/app.css" rel="stylesheet" />
+    <script src="CustomJs/ExamFormGenerate.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css">
+    <style>
+        @page {
+            size: A4 portrait;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body ng-controller="ExamFormGenerateCtrl" class="A4 portrait">
+    <div id="app" class="skin-blue">
+        <div>
+            <div>
+
+
+
+                <div class="print-page" style="border-bottom:none" ng-repeat="stu in StudentData">
+                    <section class="print-page-header sheet padding-5mm" style="padding:10px">
+                        <article>
+                            <div class="print-page-header">
+                                <table style="width: 100%;">
+                                    <tbody>
+                                        <tr>
+                                            <td><img src="/images/logo.png" alt="" style="margin-top: 10px;"></td>
+                                            <td>
+                                                <div class="text-center">
+                                                    <h3>Sir Vithaldas Thackersey College of Home Science (Autonomous)</h3> 
+                                                    <h4>SNDT Women's University, Mumbai</h4> 
+                                                    <h3 style="margin-top: 5px;">Examination Form</h3>
+                                                    October 2018, Regular
+                                                </div>
+                                            </td>
+                                            <td><img src="/images/shree_logo.png" alt="" class="pull-right"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="clearfix">
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="clearfix">
+                                <ol class="pull-left" style="max-width: 85%; list-style-type:none">
+                                    <li>Course: {{stu.Course}} &emsp;Semester: {{stu.Semester}}</li>
+                                    <li>Medium: English</li>
+                                    <li>Specialization: {{stu.Course}} / {{stu.Specialisation}}</li>
+                                    <li>Student Name: {{stu.LastName}} {{stu.FirstName}} {{stu.FatherName}} {{stu.MotherName}}</li>
+                                    <li>Residential Address : {{stu.Address}}<br><br><br><br><br></li>
+                                    <li>Contact #</li>
+                                    <li>Paper Details: Please write Paper Details which you want to appear:</li>
+                                </ol>
+                                <div class="pull-right">
+                                    <div class="print-photo">
+                                        <img src="images/100x120.png" />
+                                        <!--<img src="http://adminapps.in/SVTExams/SVTExam//UI/Photographs/Photo_PATHARE_YADNIKI_06-29-2017_001332.jpg" alt="No photo">-->
+                                    </div> <br><br>
+                                    <div class="print-signature">
+                                        <img src="http://adminapps.in/SVTExams/SVTExam//UI/Signatures/Sign_PATHARE_YADNIKI_06-29-2017_001332.jpg" alt="No signature">
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="table table-bordered text-center" style="min-width: 500px; width: auto;">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 80px; vertical-align: middle;">Serial #</th>
+                                        <th style="width: 110px; vertical-align: middle;">Paper Code</th>
+                                        <th style="vertical-align: middle;">Paper Title</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="paper in stu.paperDetails">
+                                        <td>{{$index+1}}</td>
+                                        <td>{{paper.PaperCode}}</td>
+                                        <td style="padding-left: 30px; padding-right: 30px; text-align: left;">{{paper.PaperName}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="line" style="margin-top: -10px;">
+                                &emsp;&emsp;Date: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Amount Paid:
+                            </div>
+                            <br><br><br><br><br>
+                            <div class="line">
+                                &emsp;&emsp;I&nbsp;certify&nbsp;that&nbsp;the&nbsp;above&nbsp;information&nbsp;are&nbsp;accurate&nbsp;as&nbsp;per&nbsp;my&nbsp;knowledge.
+                            </div> <br>
+                            <div class="line">
+                                &emsp;&emsp;Sign:
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

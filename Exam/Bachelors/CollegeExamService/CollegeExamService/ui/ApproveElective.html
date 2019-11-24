@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="ApproveElectiveCtrlApp">
+<head>
+    <title>Approve Elective Papers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="CustomJs/Angular.js"></script>
+    <script src="CustomJs/urlConfig.js"></script>
+    <script src="CustomJs/Index.js"></script>
+    <link href="CustomCss/app.css" rel="stylesheet" />
+    <script type="text/javascript">
+        var Examapp = angular.module("ExamSystemApp", ["ngRoute"]);
+    </script>
+    <script src="CustomJs/ApproveElective.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .card {
+            background: #fff;
+            border-radius: 2px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .card-1 {
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        }
+
+        .electives {
+            border: solid #333 1px;
+            border-collapse: collapse;
+        }
+        .footer td {
+            font-size: 18px !important;
+            color: red;
+        }
+
+            .electives td {
+                padding: 5px;
+                font-size: 14px;
+                text-align: center;
+                min-width: 50px;
+                max-width: 150px;
+            }
+
+                .electives td.large {
+                    width: 250px !important;
+                }
+
+        .HeaderText {
+            color: #1F3C67;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .elective input {
+            float: left;
+            margin-right: 10px;
+        }
+
+        .elective label {
+            font-weight: 100;
+            width: 90%;
+            float: left;
+        }
+    </style>
+</head>
+<body ng-controller="ApproveElectiveCtrl" style="background: #b6b7bc;">
+    <div class="container card-1" data-text="Custom text" style="margin-top:30px;background:white;padding-top:30px;min-height:500px">
+        <div class="row" style="margin:0 auto;padding:15px">
+            <div class="col-md-12">
+                <form class="ng-valid has-validation-callback ng-dirty ng-valid-parse" id="ElectiveForms">
+                    <div class="row">
+                        <h2>Approve Electives for Students</h2>
+                        <h4 id="Specialisation"></h4>
+                        <h4 id="Semester"></h4>
+                    </div>
+                    <div class="row" id="electives">
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="row" id="row_error" style="display:none">
+            <div class="col-md-12">
+                <div id="Error_Text" class="alert alert-danger">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

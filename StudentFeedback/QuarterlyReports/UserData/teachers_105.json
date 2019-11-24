@@ -1,0 +1,4701 @@
+[
+  {
+    "teacherCode": 1001,
+    "teacherName": "DR. DEEPA N. SHARMA",
+    "subjectCode": 375304,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1003,
+    "teacherName": "DR. URMILA A. GOR",
+    "subjectCode": 345610,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1003,
+    "teacherName": "DR. URMILA A. GOR",
+    "subjectCode": 375308,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1003,
+    "teacherName": "DR. URMILA A. GOR",
+    "subjectCode": 330500,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1003,
+    "teacherName": "DR. URMILA A. GOR",
+    "subjectCode": 130200,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1004,
+    "teacherName": "DR.MITALEE SHOME",
+    "subjectCode": 130200,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1006,
+    "teacherName": "MRS. JYOTI R.JOSHI",
+    "subjectCode": 130200,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1007,
+    "teacherName": "MAHENDRA B. JOSHI",
+    "subjectCode": 345611,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1007,
+    "teacherName": "MAHENDRA B. JOSHI",
+    "subjectCode": 375308,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1007,
+    "teacherName": "MAHENDRA B. JOSHI",
+    "subjectCode": 355301,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1007,
+    "teacherName": "MAHENDRA B. JOSHI",
+    "subjectCode": 145203,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1009,
+    "teacherName": "DR. RANJANA R. MISHRA",
+    "subjectCode": 330500,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1009,
+    "teacherName": "DR. RANJANA R. MISHRA",
+    "subjectCode": 175106,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1009,
+    "teacherName": "DR. RANJANA R. MISHRA",
+    "subjectCode": 275208,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1009,
+    "teacherName": "DR. RANJANA R. MISHRA",
+    "subjectCode": 27520,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1010,
+    "teacherName": "DR. SARAT C. PATRA",
+    "subjectCode": 345503,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1010,
+    "teacherName": "DR. SARAT C. PATRA",
+    "subjectCode": 345606,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1010,
+    "teacherName": "DR. SARAT C. PATRA",
+    "subjectCode": 240205,
+    "subjectName": "",
+    "course": "F.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1010,
+    "teacherName": "DR. SARAT C. PATRA",
+    "subjectCode": 145105,
+    "subjectName": "",
+    "course": "F.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1013,
+    "teacherName": "MRS. SHUBHA S. ACHARYA",
+    "subjectCode": 250201,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1013,
+    "teacherName": "MRS. SHUBHA S. ACHARYA",
+    "subjectCode": 180121,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1013,
+    "teacherName": "MRS. SHUBHA S. ACHARYA",
+    "subjectCode": 410401,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1013,
+    "teacherName": "MRS. SHUBHA S. ACHARYA",
+    "subjectCode": 315301,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1013,
+    "teacherName": "MRS. SHUBHA S. ACHARYA",
+    "subjectCode": 415401,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1013,
+    "teacherName": "MRS. SHUBHA S. ACHARYA",
+    "subjectCode": 355301,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1013,
+    "teacherName": "MRS. SHUBHA S. ACHARYA",
+    "subjectCode": 55501,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1013,
+    "teacherName": "MRS. SHUBHA S. ACHARYA",
+    "subjectCode": 545306,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1013,
+    "teacherName": "MRS. SHUBHA S. ACHARYA",
+    "subjectCode": 610601,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1013,
+    "teacherName": "MRS. SHUBHA S. ACHARYA",
+    "subjectCode": 615601,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1013,
+    "teacherName": "MRS. SHUBHA S. ACHARYA",
+    "subjectCode": 515501,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1011,
+    "teacherName": "DR. RAJARAM R. JADHAV",
+    "subjectCode": 345604,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1011,
+    "teacherName": "DR. RAJARAM R. JADHAV",
+    "subjectCode": 330500,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1011,
+    "teacherName": "DR. RAJARAM R. JADHAV",
+    "subjectCode": 545904,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1011,
+    "teacherName": "DR. RAJARAM R. JADHAV",
+    "subjectCode": 540904,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1011,
+    "teacherName": "DR. RAJARAM R. JADHAV",
+    "subjectCode": 345504,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1015,
+    "teacherName": "DR. MAHENDRA B. GUHA",
+    "subjectCode": 345603,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1015,
+    "teacherName": "DR. MAHENDRA B. GUHA",
+    "subjectCode": 3450603,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1016,
+    "teacherName": "MRS. OLGA PEREIRA",
+    "subjectCode": 3450603,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1018,
+    "teacherName": "MRS. GEETA PATIL",
+    "subjectCode": 545910,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1019,
+    "teacherName": "MRS. PRIYAMVADA NARULLA",
+    "subjectCode": 545910,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1014,
+    "teacherName": "KISHOR M. GUPTE",
+    "subjectCode": 365106,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1014,
+    "teacherName": "KISHOR M. GUPTE",
+    "subjectCode": 355301,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1014,
+    "teacherName": "KISHOR M. GUPTE",
+    "subjectCode": 330500,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1014,
+    "teacherName": "KISHOR M. GUPTE",
+    "subjectCode": 545906,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3008,
+    "teacherName": "DR. ARUN R. MISHRA",
+    "subjectCode": 145206,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3008,
+    "teacherName": "DR. ARUN R. MISHRA",
+    "subjectCode": 345603,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3008,
+    "teacherName": "DR. ARUN R. MISHRA",
+    "subjectCode": 375308,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3008,
+    "teacherName": "DR. ARUN R. MISHRA",
+    "subjectCode": 546006,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3008,
+    "teacherName": "DR. ARUN R. MISHRA",
+    "subjectCode": 545306,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3008,
+    "teacherName": "DR. ARUN R. MISHRA",
+    "subjectCode": 546106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3008,
+    "teacherName": "DR. ARUN R. MISHRA",
+    "subjectCode": 546206,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1021,
+    "teacherName": "DR. VIJAYA KOPIKAR",
+    "subjectCode": 650601,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1021,
+    "teacherName": "DR. VIJAYA KOPIKAR",
+    "subjectCode": 255401,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1021,
+    "teacherName": "DR. VIJAYA KOPIKAR",
+    "subjectCode": 355301,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1021,
+    "teacherName": "DR. VIJAYA KOPIKAR",
+    "subjectCode": 150101,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1021,
+    "teacherName": "DR. VIJAYA KOPIKAR",
+    "subjectCode": 150102,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1021,
+    "teacherName": "DR. VIJAYA KOPIKAR",
+    "subjectCode": 3003,
+    "subjectName": "",
+    "course": "F.Y.BAFI",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1021,
+    "teacherName": "DR. VIJAYA KOPIKAR",
+    "subjectCode": 3003,
+    "subjectName": "",
+    "course": "S.Y.B.M.S.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1021,
+    "teacherName": "DR. VIJAYA KOPIKAR",
+    "subjectCode": 1101,
+    "subjectName": "",
+    "course": "F.Y.B.M.S.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1021,
+    "teacherName": "DR. VIJAYA KOPIKAR",
+    "subjectCode": 330500,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1022,
+    "teacherName": "DR. CEENA PAUL",
+    "subjectCode": 345503,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1022,
+    "teacherName": "DR. CEENA PAUL",
+    "subjectCode": 345603,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1022,
+    "teacherName": "DR. CEENA PAUL",
+    "subjectCode": 145105,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1023,
+    "teacherName": "MRS. PRABHA KRISHNAN",
+    "subjectCode": 375308,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1023,
+    "teacherName": "MRS. PRABHA KRISHNAN",
+    "subjectCode": 345603,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1023,
+    "teacherName": "MRS. PRABHA KRISHNAN",
+    "subjectCode": 345610,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1023,
+    "teacherName": "MRS. PRABHA KRISHNAN",
+    "subjectCode": 110101,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1023,
+    "teacherName": "MRS. PRABHA KRISHNAN",
+    "subjectCode": 201201,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1023,
+    "teacherName": "MRS. PRABHA KRISHNAN",
+    "subjectCode": 210201,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1024,
+    "teacherName": "MR. DINESH S.KOTADIA",
+    "subjectCode": 210201,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3005,
+    "teacherName": "MRS. TAMASHA ACHARYA",
+    "subjectCode": 641401,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3005,
+    "teacherName": "MRS. TAMASHA ACHARYA",
+    "subjectCode": 650601,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3005,
+    "teacherName": "MRS. TAMASHA ACHARYA",
+    "subjectCode": 345603,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3005,
+    "teacherName": "MRS. TAMASHA ACHARYA",
+    "subjectCode": 355301,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3005,
+    "teacherName": "MRS. TAMASHA ACHARYA",
+    "subjectCode": 555501,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3005,
+    "teacherName": "MRS. TAMASHA ACHARYA",
+    "subjectCode": 150101,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1017,
+    "teacherName": "MRS. SIMHA MOSES",
+    "subjectCode": 465211,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1017,
+    "teacherName": "MRS. SIMHA MOSES",
+    "subjectCode": 641311,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1017,
+    "teacherName": "MRS. SIMHA MOSES",
+    "subjectCode": 445811,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1017,
+    "teacherName": "MRS. SIMHA MOSES",
+    "subjectCode": 140211,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1017,
+    "teacherName": "MRS. SIMHA MOSES",
+    "subjectCode": 145211,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1017,
+    "teacherName": "MRS. SIMHA MOSES",
+    "subjectCode": 355301,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1020,
+    "teacherName": "MR. AMITABH SETH",
+    "subjectCode": 345610,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3010,
+    "teacherName": "DR. RAJESH CHHEDA",
+    "subjectCode": 355301,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3010,
+    "teacherName": "DR. RAJESH CHHEDA",
+    "subjectCode": 330500,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3010,
+    "teacherName": "DR. RAJESH CHHEDA",
+    "subjectCode": 345603,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3010,
+    "teacherName": "DR. RAJESH CHHEDA",
+    "subjectCode": 140107,
+    "subjectName": "",
+    "course": "F.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3010,
+    "teacherName": "DR. RAJESH CHHEDA",
+    "subjectCode": 555315,
+    "subjectName": "",
+    "course": "T.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3009,
+    "teacherName": "MRS. SHEENA SOMAN",
+    "subjectCode": 510501,
+    "subjectName": "",
+    "course": "T.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3009,
+    "teacherName": "MRS. SHEENA SOMAN",
+    "subjectCode": 610601,
+    "subjectName": "",
+    "course": "T.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3009,
+    "teacherName": "MRS. SHEENA SOMAN",
+    "subjectCode": 641301,
+    "subjectName": "",
+    "course": "T.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3009,
+    "teacherName": "MRS. SHEENA SOMAN",
+    "subjectCode": 310301,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3009,
+    "teacherName": "MRS. SHEENA SOMAN",
+    "subjectCode": 345603,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3009,
+    "teacherName": "MRS. SHEENA SOMAN",
+    "subjectCode": 355301,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3009,
+    "teacherName": "MRS. SHEENA SOMAN",
+    "subjectCode": 345503,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3009,
+    "teacherName": "MRS. SHEENA SOMAN",
+    "subjectCode": 330500,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3009,
+    "teacherName": "MRS. SHEENA SOMAN",
+    "subjectCode": 410401,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1034,
+    "teacherName": "MRS. SUDHA PRABHU",
+    "subjectCode": 345503,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1034,
+    "teacherName": "MRS. SUDHA PRABHU",
+    "subjectCode": 345603,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1034,
+    "teacherName": "MRS. SUDHA PRABHU",
+    "subjectCode": 345606,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1034,
+    "teacherName": "MRS. SUDHA PRABHU",
+    "subjectCode": 355301,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1034,
+    "teacherName": "MRS. SUDHA PRABHU",
+    "subjectCode": 515501,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1034,
+    "teacherName": "MRS. SUDHA PRABHU",
+    "subjectCode": 140106,
+    "subjectName": "",
+    "course": "F.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1035,
+    "teacherName": "MR. VINAY P.HAWARE",
+    "subjectCode": 140106,
+    "subjectName": "",
+    "course": "F.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1025,
+    "teacherName": "MR. PUNDLIK G. JADHAV",
+    "subjectCode": 345603,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1025,
+    "teacherName": "MR. PUNDLIK G. JADHAV",
+    "subjectCode": 330500,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1025,
+    "teacherName": "MR. PUNDLIK G. JADHAV",
+    "subjectCode": 355301,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1025,
+    "teacherName": "MR. PUNDLIK G. JADHAV",
+    "subjectCode": 345503,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1025,
+    "teacherName": "MR. PUNDLIK G. JADHAV",
+    "subjectCode": 545904,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1026,
+    "teacherName": "MR. PARAG THAKAR",
+    "subjectCode": 400101,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1026,
+    "teacherName": "MR. PARAG THAKAR",
+    "subjectCode": 345503,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1026,
+    "teacherName": "MR. PARAG THAKAR",
+    "subjectCode": 330500,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1026,
+    "teacherName": "MR. PARAG THAKAR",
+    "subjectCode": 145203,
+    "subjectName": "",
+    "course": "T.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1027,
+    "teacherName": "MRS. SEEMA DALVI",
+    "subjectCode": 380327,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1027,
+    "teacherName": "MRS. SEEMA DALVI",
+    "subjectCode": 345608,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1027,
+    "teacherName": "MRS. SEEMA DALVI",
+    "subjectCode": 365111,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1027,
+    "teacherName": "MRS. SEEMA DALVI",
+    "subjectCode": 366104,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1027,
+    "teacherName": "MRS. SEEMA DALVI",
+    "subjectCode": 345604,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1027,
+    "teacherName": "MRS. SEEMA DALVI",
+    "subjectCode": 365106,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1027,
+    "teacherName": "MRS. SEEMA DALVI",
+    "subjectCode": 330500,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1028,
+    "teacherName": "MRS. SONIA RANE",
+    "subjectCode": 330500,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1028,
+    "teacherName": "MRS. SONIA RANE",
+    "subjectCode": 366104,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1029,
+    "teacherName": "MRS. ZANKHANA THAKKAR",
+    "subjectCode": 330500,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1029,
+    "teacherName": "MRS. ZANKHANA THAKKAR",
+    "subjectCode": 345606,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1029,
+    "teacherName": "MRS. ZANKHANA THAKKAR",
+    "subjectCode": 345604,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1031,
+    "teacherName": "MRS. SHILPA SHAH",
+    "subjectCode": 130100,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1031,
+    "teacherName": "MRS. SHILPA SHAH",
+    "subjectCode": 180121,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1031,
+    "teacherName": "MRS. SHILPA SHAH",
+    "subjectCode": 145111,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1031,
+    "teacherName": "MRS. SHILPA SHAH",
+    "subjectCode": 145211,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1031,
+    "teacherName": "MRS. SHILPA SHAH",
+    "subjectCode": 365111,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1031,
+    "teacherName": "MRS. SHILPA SHAH",
+    "subjectCode": 330500,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1031,
+    "teacherName": "MRS. SHILPA SHAH",
+    "subjectCode": 345606,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1031,
+    "teacherName": "MRS. SHILPA SHAH",
+    "subjectCode": 345611,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1031,
+    "teacherName": "MRS. SHILPA SHAH",
+    "subjectCode": 345611,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1032,
+    "teacherName": "MR. SUJIT CHANDAK",
+    "subjectCode": 510501,
+    "subjectName": "",
+    "course": "T.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1032,
+    "teacherName": "MR. SUJIT CHANDAK",
+    "subjectCode": 355301,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1032,
+    "teacherName": "MR. SUJIT CHANDAK",
+    "subjectCode": 345503,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1032,
+    "teacherName": "MR. SUJIT CHANDAK",
+    "subjectCode": 110001,
+    "subjectName": "",
+    "course": "F.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1032,
+    "teacherName": "MR. SUJIT CHANDAK",
+    "subjectCode": 110101,
+    "subjectName": "",
+    "course": "F.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1032,
+    "teacherName": "MR. SUJIT CHANDAK",
+    "subjectCode": 1101,
+    "subjectName": "",
+    "course": "F.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1033,
+    "teacherName": "MR. HITESH PANDYA",
+    "subjectCode": 145202,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1033,
+    "teacherName": "MR. HITESH PANDYA",
+    "subjectCode": 646302,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1033,
+    "teacherName": "MR. HITESH PANDYA",
+    "subjectCode": 345610,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1033,
+    "teacherName": "MR. HITESH PANDYA",
+    "subjectCode": 345503,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1033,
+    "teacherName": "MR. HITESH PANDYA",
+    "subjectCode": 345602,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1036,
+    "teacherName": "DR. HIRAL R. THAKOR",
+    "subjectCode": 145103,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1036,
+    "teacherName": "DR. HIRAL R. THAKOR",
+    "subjectCode": 365106,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1036,
+    "teacherName": "DR. HIRAL R. THAKOR",
+    "subjectCode": 345503,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3004,
+    "teacherName": "MRS. SMITA VORA",
+    "subjectCode": 620606,
+    "subjectName": "",
+    "course": "T.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3004,
+    "teacherName": "MRS. SMITA VORA",
+    "subjectCode": 355301,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3004,
+    "teacherName": "MRS. SMITA VORA",
+    "subjectCode": 3553031,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3004,
+    "teacherName": "MRS. SMITA VORA",
+    "subjectCode": 345503,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3004,
+    "teacherName": "MRS. SMITA VORA",
+    "subjectCode": 355301,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3004,
+    "teacherName": "MRS. SMITA VORA",
+    "subjectCode": 100180,
+    "subjectName": "",
+    "course": "F.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3003,
+    "teacherName": "MR. P. SONAWANE",
+    "subjectCode": 345606,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3003,
+    "teacherName": "MR. P. SONAWANE",
+    "subjectCode": 546106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3003,
+    "teacherName": "MR. P. SONAWANE",
+    "subjectCode": 330500,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3003,
+    "teacherName": "MR. P. SONAWANE",
+    "subjectCode": 355301,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3006,
+    "teacherName": "MRS. HEMLATA MUKANE",
+    "subjectCode": 330500,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3006,
+    "teacherName": "MRS. HEMLATA MUKANE",
+    "subjectCode": 565308,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3011,
+    "teacherName": "MR. MANOJ K MISHRA",
+    "subjectCode": 100130,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3011,
+    "teacherName": "MR. MANOJ K MISHRA",
+    "subjectCode": 145106,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3011,
+    "teacherName": "MR. MANOJ K MISHRA",
+    "subjectCode": 145203,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3011,
+    "teacherName": "MR. MANOJ K MISHRA",
+    "subjectCode": 175108,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3011,
+    "teacherName": "MR. MANOJ K MISHRA",
+    "subjectCode": 345603,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3011,
+    "teacherName": "MR. MANOJ K MISHRA",
+    "subjectCode": 345604,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3011,
+    "teacherName": "MR. MANOJ K MISHRA",
+    "subjectCode": 330500,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3011,
+    "teacherName": "MR. MANOJ K MISHRA",
+    "subjectCode": 375308,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1038,
+    "teacherName": "MR. RAVINDRA  KAMBLE",
+    "subjectCode": 366104,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1038,
+    "teacherName": "MR. RAVINDRA  KAMBLE",
+    "subjectCode": 345604,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1038,
+    "teacherName": "MR. RAVINDRA  KAMBLE",
+    "subjectCode": 546004,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1038,
+    "teacherName": "MR. RAVINDRA  KAMBLE",
+    "subjectCode": 330500,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1038,
+    "teacherName": "MR. RAVINDRA  KAMBLE",
+    "subjectCode": 355301,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3001,
+    "teacherName": "DR. JAYSHREE MEHTA",
+    "subjectCode": 145106,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3002,
+    "teacherName": "MRS. MINAKSHI  DADRAWALA",
+    "subjectCode": 145106,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3012,
+    "teacherName": "DR. BABITA SHUKLA",
+    "subjectCode": 145106,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3012,
+    "teacherName": "DR. BABITA SHUKLA",
+    "subjectCode": 34506,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3012,
+    "teacherName": "DR. BABITA SHUKLA",
+    "subjectCode": 365106,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3012,
+    "teacherName": "DR. BABITA SHUKLA",
+    "subjectCode": 546906,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3012,
+    "teacherName": "DR. BABITA SHUKLA",
+    "subjectCode": 345606,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3012,
+    "teacherName": "DR. BABITA SHUKLA",
+    "subjectCode": 345610,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3012,
+    "teacherName": "DR. BABITA SHUKLA",
+    "subjectCode": 345611,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3012,
+    "teacherName": "DR. BABITA SHUKLA",
+    "subjectCode": 546106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1501,
+    "teacherName": "MS. PATEL VARSHA",
+    "subjectCode": 546106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1502,
+    "teacherName": "MS. SAKARIA PAYAL J.",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1503,
+    "teacherName": "MS. PARMAR NIMISHA N.",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1504,
+    "teacherName": "MS. JADHAV DEEPA",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1505,
+    "teacherName": "MS. SINGH RENUKA",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1506,
+    "teacherName": "SMT. RAINA CHAMPAWAT",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1507,
+    "teacherName": "MS. BHARATI MISHRA",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1508,
+    "teacherName": "SMT. JAYSHREE YEDAGE",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1509,
+    "teacherName": "MS. SWARLEENA PATEKAR",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1510,
+    "teacherName": "MS. SHITAL SAO",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1511,
+    "teacherName": "MS. SUSHEELA YADAV",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1513,
+    "teacherName": "MS. ADITI MAHAJAN",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+
+  {
+    "teacherCode": 1514,
+    "teacherName": "MS. SWARDA JOSHI",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1515,
+    "teacherName": "MS. DIVYA YOGESHWAR",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1516,
+    "teacherName": "MS. LEANDRA DEMELLO",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1517,
+    "teacherName": "Ms. PRIYANKA TIKAWADE",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1518,
+    "teacherName": "Mr. Prathemesh Shinde",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1519,
+    "teacherName": "Mr. PRASHANT CHARI",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 4001,
+    "teacherName": "MRS. ANAYA THATEA",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 4002,
+    "teacherName": "MRS. VANDANA PAWAR",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 4003,
+    "teacherName": "MS. SWARUPA APENDKAR",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 4004,
+    "teacherName": "MRS. PRAMILA KUNDER",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 4005,
+    "teacherName": "MR. PRAKASH W",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 4006,
+    "teacherName": "MRS. REKHA SAMANT",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 4007,
+    "teacherName": "MRS. SHILPA GANGATIRKAR",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 4008,
+    "teacherName": "MS. NAZIA SAYYED",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 4009,
+    "teacherName": "SMT. P. EASWARAN",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1403,
+    "teacherName": "MS. EKTA SHAH",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "PG- INCHARGE",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1406,
+    "teacherName": "MRS. JAYSHREE DHOOT",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "PG - LECTURER - CHB",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1407,
+    "teacherName": "MS. THRIVIKRAMAN M. V.",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "PG - LECTURER - CHB",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1408,
+    "teacherName": "DR. PRAGNYA SHUKLA",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "PG - LECTURER - CHB",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1409,
+    "teacherName": "DR. SANTOSH KAUL",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "PG - LECTURER - CHB",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1410,
+    "teacherName": "DR. KUSUM VISHWAKARMA",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "PG - LECTURER - CHB",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1411,
+    "teacherName": "DR. SHOBHA SHARMA",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "PG - LECTURER - CHB",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1412,
+    "teacherName": "MRS. JYOTI THORAT",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "PG - LECTURER - CHB",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1413,
+    "teacherName": "MRS. JYOTI SONPAL",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "PG - LECTURER - CHB",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1414,
+    "teacherName": "MR. MANIKANANDAN",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "PG - LECTURER - CHB",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1415,
+    "teacherName": "MS. REENA CHINA",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "PG - LECTURER - CHB",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8001,
+    "teacherName": "MR. R. R. SHAH",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.M.S.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8002,
+    "teacherName": "MRS. K. SARASWATI",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.M.S.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8003,
+    "teacherName": "MR. ROHIT J YADAV",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.C.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8004,
+    "teacherName": "Ms. KRINA GANDHI",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.M.S.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8005,
+    "teacherName": "MRS. PREETI JAIN",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.C.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8006,
+    "teacherName": "MRS. MANSI GHULE",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.C.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8007,
+    "teacherName": "MS. VAIDEHI PATIL",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.C.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8008,
+    "teacherName": "MRS. VIDYA DESAI",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.M.S.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8009,
+    "teacherName": "MS. CHATURTHI APTE",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.M.S.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8010,
+    "teacherName": "MS. PRIYANKA GUPTA",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.C.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8011,
+    "teacherName": "MS. HINA SHARMA",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.A.F.I.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8012,
+    "teacherName": "MS. FATIMA VAPIWALA",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.A.F.I.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8013,
+    "teacherName": "MS. POOJA AGARWAL",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.A.F.I.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8014,
+    "teacherName": "MR. CHIRAG THOBHANI",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.A.F.I.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8015,
+    "teacherName": "MRS. MONI MEHTA",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.C.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8016,
+    "teacherName": "MRS. SANGEETA JAIN",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.M.S.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8017,
+    "teacherName": "MR. DEEPIKA KOTIAN",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.M.S.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8018,
+    "teacherName": "MRS. SRIVIDHYA",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.M.S.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8019,
+    "teacherName": "MR. VATSAL OZA",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.A.F.I.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8021,
+    "teacherName": "MS. AMRUTA PAWAR",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.M.M.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8022,
+    "teacherName": "MS. SHWETA SHIRODE",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.M.M.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8023,
+    "teacherName": "MR. VIKASH SHIRODE",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.M.M.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8026,
+    "teacherName": "MR.VINOD P.MORE",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.M.S.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 8030,
+    "teacherName": "PRAJAKTA KALYANKAR",
+    "subjectCode": 746106,
+    "subjectName": "",
+    "course": "F.Y.B.A.F.I.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 3007,
+    "teacherName": "MRS. SHOBHA DIGHE",
+    "subjectCode": 330500,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  /*{
+    "teacherCode": 3007,
+    "teacherName": "MRS. SHOBHA DIGHE",
+    "subjectCode": 3007,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },*/
+  {
+    "teacherCode": 3007,
+    "teacherName": "MRS. SHOBHA DIGHE",
+    "subjectCode": 110101,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10001,
+    "teacherName": "ASHISH NAVIK",
+    "subjectCode": 440119,
+    "subjectName": "",
+    "course": "S.Y.B.A.F.I.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10001,
+    "teacherName": "ASHISH NAVIK",
+    "subjectCode": 440219,
+    "subjectName": "",
+    "course": "S.Y.B.A.F.I.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10001,
+    "teacherName": "ASHISH NAVIK",
+    "subjectCode": 140119,
+    "subjectName": "",
+    "course": "F.Y.B.A.F.I.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10002,
+    "teacherName": "ADITI",
+    "subjectCode": 210201,
+    "subjectName": "",
+    "course": "F.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10003,
+    "teacherName": "AMRUTA PAWAR",
+    "subjectCode": 1101,
+    "subjectName": "",
+    "course": "F.Y.B.C.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10004,
+    "teacherName": "DIVYA YOGESHWARI",
+    "subjectCode": 310301,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10004,
+    "teacherName": "DIVYA YOGESHWARI",
+    "subjectCode": 410401,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10004,
+    "teacherName": "DIVYA YOGESHWARI",
+    "subjectCode": 401401,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10005,
+    "teacherName": "IMANUEL KANKA",
+    "subjectCode": 3101,
+    "subjectName": "",
+    "course": "S.Y.B.C.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10006,
+    "teacherName": "LIANDRA",
+    "subjectCode": 110101,
+    "subjectName": "",
+    "course": "F.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10006,
+    "teacherName": "LIANDRA",
+    "subjectCode": 140101,
+    "subjectName": "",
+    "course": "F.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10006,
+    "teacherName": "LIANDRA",
+    "subjectCode": 210201,
+    "subjectName": "",
+    "course": "F.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10006,
+    "teacherName": "LIANDRA",
+    "subjectCode": 220201,
+    "subjectName": "",
+    "course": "F.Y.B.COM.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10007,
+    "teacherName": "MANASI GHULE",
+    "subjectCode": 5101,
+    "subjectName": "",
+    "course": "T.Y.B.C.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10007,
+    "teacherName": "MANASI GHULE",
+    "subjectCode": 6101,
+    "subjectName": "",
+    "course": "T.Y.B.C.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10007,
+    "teacherName": "MANASI GHULE",
+    "subjectCode": 3103,
+    "subjectName": "",
+    "course": "S.Y.B.C.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10008,
+    "teacherName": "EKTA SHAH",
+    "subjectCode": 300002,
+    "subjectName": "",
+    "course": "S.Y.MCOM",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10009,
+    "teacherName": "VIDYALAXMI DESAI",
+    "subjectCode": 1001,
+    "subjectName": "",
+    "course": "F.Y.B.M.S.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10010,
+    "teacherName": "JYOTI SONPAL",
+    "subjectCode": 100001,
+    "subjectName": "",
+    "course": "F.Y.MCOM",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10011,
+    "teacherName": "NAZIYA SAYYAD",
+    "subjectCode": 140105,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10011,
+    "teacherName": "NAZIYA SAYYAD",
+    "subjectCode": 240205,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10011,
+    "teacherName": "NAZIYA SAYYAD",
+    "subjectCode": 245306,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10012,
+    "teacherName": "SWERLINA PATKAR",
+    "subjectCode": 240213,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10013,
+    "teacherName": "SANGEETA JAIN",
+    "subjectCode": 2001,
+    "subjectName": "",
+    "course": "F.Y.B.M.M.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10014,
+    "teacherName": "SHWETA SHIRODE",
+    "subjectCode": 3001,
+    "subjectName": "",
+    "course": "S.Y.B.M.M.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10015,
+    "teacherName": "POOJA NAIR",
+    "subjectCode": 1104,
+    "subjectName": "",
+    "course": "F.Y.B.C.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 10016,
+    "teacherName": "REKHA",
+    "subjectCode": 230400,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1012,
+    "teacherName": "MARGRATE R. HENRY",
+    "subjectCode": 480527,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 2018,
+    "teacherName": "SHILPA D. DESAI",
+    "subjectCode": 245311,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 2018,
+    "teacherName": "SHILPA D. DESAI",
+    "subjectCode": 145111,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "Regular",
+    "semester": "Odd"
+  },
+  {
+    "teacherCode": 1020,
+    "teacherName": "Amitabh",
+    "subjectCode": 245310,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1020,
+    "teacherName": "Amitabh",
+    "subjectCode": 445710,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1020,
+    "teacherName": "Amitabh",
+    "subjectCode": 646510,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8021,
+    "teacherName": "Amruta Pawar",
+    "subjectCode": 1001,
+    "subjectName": "",
+    "course": "F.Y.B.M.M.",
+    "subCourse": "B.M.M. PART I ENGLISH (SEMESTER I & II)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8021,
+    "teacherName": "Amruta Pawar",
+    "subjectCode": 2001,
+    "subjectName": "",
+    "course": "F.Y.B.M.M.",
+    "subCourse": "B.M.M. PART I ENGLISH (SEMESTER I & II)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8021,
+    "teacherName": "Amruta Pawar",
+    "subjectCode": 2003,
+    "subjectName": "",
+    "course": "F.Y.B.M.M.",
+    "subCourse": "B.M.M. PART I ENGLISH (SEMESTER I & II)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8021,
+    "teacherName": "Amruta Pawar",
+    "subjectCode": 3002,
+    "subjectName": "",
+    "course": "S.Y.B.M.M.",
+    "subCourse": "B.M.M. PART II ENGLISH (SEMESTER III & IV)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8021,
+    "teacherName": "Amruta Pawar",
+    "subjectCode": 3003,
+    "subjectName": "",
+    "course": "S.Y.B.M.M.",
+    "subCourse": "B.M.M. PART II ENGLISH (SEMESTER III & IV)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8021,
+    "teacherName": "Amruta Pawar",
+    "subjectCode": 4003,
+    "subjectName": "",
+    "course": "S.Y.B.M.M.",
+    "subCourse": "B.M.M. PART II ENGLISH (SEMESTER III & IV)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8021,
+    "teacherName": "Amruta Pawar",
+    "subjectCode": 5301,
+    "subjectName": "",
+    "course": "T.Y.B.M.M.",
+    "subCourse": "B.M.M. PART III ENGLISH (SEMESTER V & VI)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12001,
+    "teacherName": "Ankita Chedda",
+    "subjectCode": 385310,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12001,
+    "teacherName": "Ankita Chedda",
+    "subjectCode": 280277,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3008,
+    "teacherName": "Arun Mishra",
+    "subjectCode": 3008,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I HINDI (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3008,
+    "teacherName": "Arun Mishra",
+    "subjectCode": 646306,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3008,
+    "teacherName": "Arun Mishra",
+    "subjectCode": 646406,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3008,
+    "teacherName": "Arun Mishra",
+    "subjectCode": 445706,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3008,
+    "teacherName": "Arun Mishra",
+    "subjectCode": 665406,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3008,
+    "teacherName": "Arun Mishra",
+    "subjectCode": 646606,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1022,
+    "teacherName": "Ceena Paul",
+    "subjectCode": 1022,
+    "subjectName": "",
+    "course": "F.Y.B.COM.",
+    "subCourse": "B.COM. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1022,
+    "teacherName": "Ceena Paul",
+    "subjectCode": 245306,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1022,
+    "teacherName": "Ceena Paul",
+    "subjectCode": 665406,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1022,
+    "teacherName": "Ceena Paul",
+    "subjectCode": 646406,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8009,
+    "teacherName": "Chaturthi Apte",
+    "subjectCode": 2003,
+    "subjectName": "",
+    "course": "F.Y.B.M.M.",
+    "subCourse": "B.M.M. PART I ENGLISH (SEMESTER I & II)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8009,
+    "teacherName": "Chaturthi Apte",
+    "subjectCode": 1005,
+    "subjectName": "",
+    "course": "F.Y.B.M.M.",
+    "subCourse": "B.M.M. PART I ENGLISH (SEMESTER I & II)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8009,
+    "teacherName": "Chaturthi Apte",
+    "subjectCode": 3005,
+    "subjectName": "",
+    "course": "S.Y.B.M.M.",
+    "subCourse": "B.M.M. PART II ENGLISH (SEMESTER III & IV)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8009,
+    "teacherName": "Chaturthi Apte",
+    "subjectCode": 4002,
+    "subjectName": "",
+    "course": "S.Y.B.M.M.",
+    "subCourse": "B.M.M. PART II ENGLISH (SEMESTER III & IV)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1001,
+    "teacherName": "Deepa Sharma",
+    "subjectCode": 280227,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12002,
+    "teacherName": "Dinesh Shinde",
+    "subjectCode": 210201,
+    "subjectName": "",
+    "course": "F.Y.B.COM.",
+    "subCourse": "B.COM. PART I ENGLISH (SEMESTER I & II)-C",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12003,
+    "teacherName": "Afroz Rizvi",
+    "subjectCode": 475408,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8021,
+    "teacherName": "Amruta Pawar",
+    "subjectCode": 5301,
+    "subjectName": "",
+    "course": "T.Y.B.M.M.",
+    "subCourse": "B.M.M. PART III ENGLISH (SEMESTER V & VI)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12004,
+    "teacherName": "Gauri Kulkarni",
+    "subjectCode": 240024,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I MARATHI (SEMESTER I & II)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12004,
+    "teacherName": "Gauri Kulkarni",
+    "subjectCode": 646304,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III MARATHI (SEMESTER V & VI)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12004,
+    "teacherName": "Gauri Kulkarni",
+    "subjectCode": 646604,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III MARATHI (SEMESTER V & VI)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1036,
+    "teacherName": "Hiral Thakor",
+    "subjectCode": 445703,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II HINDI (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1036,
+    "teacherName": "Hiral Thakor",
+    "subjectCode": 245303,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I HINDI (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1036,
+    "teacherName": "Hiral Thakor",
+    "subjectCode": 445203,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II HINDI (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1036,
+    "teacherName": "Hiral Thakor",
+    "subjectCode": 465203,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II HINDI (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1036,
+    "teacherName": "Hiral Thakor",
+    "subjectCode": 465203,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1036,
+    "teacherName": "Hiral Thakor",
+    "subjectCode": 465703,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II HINDI (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12005,
+    "teacherName": "Mehruprabha Mishra",
+    "subjectCode": 275208,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I &amp; II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12005,
+    "teacherName": "Mehruprabha Mishra",
+    "subjectCode": 230400,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I &amp; II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1021,
+    "teacherName": "Vijaya Kopikar",
+    "subjectCode": 110101,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I &amp; II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1021,
+    "teacherName": "Vijaya Kopikar",
+    "subjectCode": 210201,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I &amp; II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1021,
+    "teacherName": "Vijaya Kopikar",
+    "subjectCode": 450401,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1021,
+    "teacherName": "Vijaya Kopikar",
+    "subjectCode": 640601,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1021,
+    "teacherName": "Vijaya Kopikar",
+    "subjectCode": 210210,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I &amp; II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3005,
+    "teacherName": "Tamasha Acharaya",
+    "subjectCode": 3005,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I HINDI (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3005,
+    "teacherName": "Tamasha Acharaya",
+    "subjectCode": 3005,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3005,
+    "teacherName": "Tamasha Acharaya",
+    "subjectCode": 450401,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3005,
+    "teacherName": "Tamasha Acharaya",
+    "subjectCode": 455401,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3005,
+    "teacherName": "Tamasha Acharaya",
+    "subjectCode": 465804,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3005,
+    "teacherName": "Tamasha Acharaya",
+    "subjectCode": 465804,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II MARATHI (SEMESTER III & IV)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3005,
+    "teacherName": "Tamasha Acharaya",
+    "subjectCode": 465205,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3005,
+    "teacherName": "Tamasha Acharaya",
+    "subjectCode": 465205,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II MARATHI (SEMESTER III & IV)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3005,
+    "teacherName": "Tamasha Acharaya",
+    "subjectCode": 655601,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8023,
+    "teacherName": "Vikas Shirode",
+    "subjectCode": 5302,
+    "subjectName": "",
+    "course": "T.Y.B.M.M.",
+    "subCourse": "B.M.M. PART III ENGLISH (SEMESTER V & VI)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8023,
+    "teacherName": "Vikas Shirode",
+    "subjectCode": 5303,
+    "subjectName": "",
+    "course": "T.Y.B.M.M.",
+    "subCourse": "B.M.M. PART III ENGLISH (SEMESTER V & VI)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8023,
+    "teacherName": "Vikas Shirode",
+    "subjectCode": 5304,
+    "subjectName": "",
+    "course": "T.Y.B.M.M.",
+    "subCourse": "B.M.M. PART III ENGLISH (SEMESTER V & VI)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8023,
+    "teacherName": "Vikas Shirode",
+    "subjectCode": 6302,
+    "subjectName": "",
+    "course": "T.Y.B.M.M.",
+    "subCourse": "B.M.M. PART III ENGLISH (SEMESTER V & VI)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8023,
+    "teacherName": "Vikas Shirode",
+    "subjectCode": 6304,
+    "subjectName": "",
+    "course": "T.Y.B.M.M.",
+    "subCourse": "B.M.M. PART III ENGLISH (SEMESTER V & VI)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1018,
+    "teacherName": "Gita Patil",
+    "subjectCode": 110001,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1018,
+    "teacherName": "Gita Patil",
+    "subjectCode": 245410,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1018,
+    "teacherName": "Gita Patil",
+    "subjectCode": 445810,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1018,
+    "teacherName": "Gita Patil",
+    "subjectCode": 646310,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3011,
+    "teacherName": "Manoj Mishra",
+    "subjectCode": 245303,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I HINDI (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3011,
+    "teacherName": "Manoj Mishra",
+    "subjectCode": 275208,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I HINDI (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3011,
+    "teacherName": "Manoj Mishra",
+    "subjectCode": 430600,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3011,
+    "teacherName": "Manoj Mishra",
+    "subjectCode": 475408,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II HINDI (SEMESTER III & IV)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3011,
+    "teacherName": "Manoj Mishra",
+    "subjectCode": 430633,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3011,
+    "teacherName": "Manoj Mishra",
+    "subjectCode": 440600,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3011,
+    "teacherName": "Manoj Mishra",
+    "subjectCode": 646608,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III HINDI (SEMESTER V & VI)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1013,
+    "teacherName": "Subha Accharya",
+    "subjectCode": 615601,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1015,
+    "teacherName": "Mahendra Guha",
+    "subjectCode": 245403,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I HINDI (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1015,
+    "teacherName": "Mahendra Guha",
+    "subjectCode": 445803,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II HINDI (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1031,
+    "teacherName": "Shilpa Shah",
+    "subjectCode": 1031,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1031,
+    "teacherName": "Shilpa Shah",
+    "subjectCode": 280227,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1031,
+    "teacherName": "Shilpa Shah",
+    "subjectCode": 445811,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II GUJARATI (SEMESTER III & IV)-G",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1031,
+    "teacherName": "Shilpa Shah",
+    "subjectCode": 445711,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II GUJARATI (SEMESTER III & IV)-G",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1017,
+    "teacherName": "Simha Moses",
+    "subjectCode": 1017,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1017,
+    "teacherName": "Simha Moses",
+    "subjectCode": 145111,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1017,
+    "teacherName": "Simha Moses",
+    "subjectCode": 245411,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1017,
+    "teacherName": "Simha Moses",
+    "subjectCode": 646411,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1017,
+    "teacherName": "Simha Moses",
+    "subjectCode": 646311,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1017,
+    "teacherName": "Simha Moses",
+    "subjectCode": 614601,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1403,
+    "teacherName": "Ekta shah",
+    "subjectCode": 400001,
+    "subjectName": "",
+    "course": "M.C.O.M.",
+    "subCourse": "MCOM PART II ENGLISH (SEMESTER III & IV)",
+    "semester": "Even"
+  },
+  /*{
+    "teacherCode": 12006,
+    "teacherName": "Gauri Kulkarni",
+    "subjectCode": 475404,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I MARATHI (SEMESTER I & II)-B",
+    "semester": "Even"
+  },*/
+  {
+    "teacherCode": 12006,
+    "teacherName": "Gauri Kulkarni",
+    "subjectCode": 646604,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III MARATHI (SEMESTER V & VI)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12006,
+    "teacherName": "Gauri Kulkarni",
+    "subjectCode": 240024,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II MARATHI (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12006,
+    "teacherName": "Gauri Kulkarni",
+    "subjectCode": 470404,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II MARATHI (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12006,
+    "teacherName": "Gauri Kulkarni",
+    "subjectCode": 646304,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III MARATHI (SEMESTER V & VI)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8011,
+    "teacherName": "Hina Sharma",
+    "subjectCode": 2003,
+    "subjectName": "",
+    "course": "F.Y.B.M.M.",
+    "subCourse": "B.M.M. PART I ENGLISH (SEMESTER I & II)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8011,
+    "teacherName": "Hina Sharma",
+    "subjectCode": 2004,
+    "subjectName": "",
+    "course": "F.Y.B.M.M.",
+    "subCourse": "B.M.M. PART I ENGLISH (SEMESTER I & II)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8011,
+    "teacherName": "Hina Sharma",
+    "subjectCode": 3004,
+    "subjectName": "",
+    "course": "S.Y.B.M.M.",
+    "subCourse": "B.M.M. PART II ENGLISH (SEMESTER III & IV)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8011,
+    "teacherName": "Hina Sharma",
+    "subjectCode": 3004,
+    "subjectName": "",
+    "course": "F.Y.B.M.M.",
+    "subCourse": "B.M.M. PART I ENGLISH (SEMESTER I & II)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8011,
+    "teacherName": "Hina Sharma",
+    "subjectCode": 1002,
+    "subjectName": "",
+    "course": "F.Y.B.M.M.",
+    "subCourse": "B.M.M. PART I ENGLISH (SEMESTER I & II)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8011,
+    "teacherName": "Hina Sharma",
+    "subjectCode": 4004,
+    "subjectName": "",
+    "course": "S.Y.B.M.M.",
+    "subCourse": "B.M.M. PART II ENGLISH (SEMESTER III & IV)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8011,
+    "teacherName": "Hina Sharma",
+    "subjectCode": 2002,
+    "subjectName": "",
+    "course": "F.Y.B.M.M.",
+    "subCourse": "B.M.M. PART I ENGLISH (SEMESTER I & II)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1018,
+    "teacherName": "Gita Patil",
+    "subjectCode": 445810,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1018,
+    "teacherName": "Gita Patil",
+    "subjectCode": 245410,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1018,
+    "teacherName": "Gita Patil",
+    "subjectCode": 110001,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1018,
+    "teacherName": "Gita Patil",
+    "subjectCode": 646310,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1014,
+    "teacherName": "Kishor Gupte",
+    "subjectCode": 1014,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1014,
+    "teacherName": "Kishor Gupte",
+    "subjectCode": 646508,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1014,
+    "teacherName": "Kishor Gupte",
+    "subjectCode": 640606,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1014,
+    "teacherName": "Kishor Gupte",
+    "subjectCode": 665406,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1014,
+    "teacherName": "Kishor Gupte",
+    "subjectCode": 646306,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1014,
+    "teacherName": "Kishor Gupte",
+    "subjectCode": 465206,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II MARATHI (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12007,
+    "teacherName": "Merup Tiwari",
+    "subjectCode": 280227,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12007,
+    "teacherName": "Merup Tiwari",
+    "subjectCode": 230400,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12007,
+    "teacherName": "Merup Tiwari",
+    "subjectCode": 275208,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12007,
+    "teacherName": "Merup Tiwari",
+    "subjectCode": 210201,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1033,
+    "teacherName": "Hitesh Pandya",
+    "subjectCode": 1033,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I GUJARATI (SEMESTER I & II)-G",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1033,
+    "teacherName": "Hitesh Pandya",
+    "subjectCode": 45802,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II GUJARATI (SEMESTER III & IV)-G",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1025,
+    "teacherName": "Pundlik Jadhav",
+    "subjectCode": 646404,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III MARATHI (SEMESTER V & VI)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1025,
+    "teacherName": "Pundlik Jadhav",
+    "subjectCode": 665406,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III MARATHI (SEMESTER V & VI)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1025,
+    "teacherName": "Pundlik Jadhav",
+    "subjectCode": 665404,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III MARATHI (SEMESTER V & VI)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1025,
+    "teacherName": "Pundlik Jadhav",
+    "subjectCode": 465204,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II MARATHI (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1025,
+    "teacherName": "Pundlik Jadhav",
+    "subjectCode": 465204,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II MARATHI (SEMESTER III & IV)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1025,
+    "teacherName": "Pundlik Jadhav",
+    "subjectCode": 465804,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II MARATHI (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1025,
+    "teacherName": "Pundlik Jadhav",
+    "subjectCode": 465208,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II MARATHI (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1025,
+    "teacherName": "Pundlik Jadhav",
+    "subjectCode": 443547,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II MARATHI (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1025,
+    "teacherName": "Pundlik Jadhav",
+    "subjectCode": 465205,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II MARATHI (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1025,
+    "teacherName": "Pundlik Jadhav",
+    "subjectCode": 475404,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II MARATHI (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1011,
+    "teacherName": "Rajaram Jadhav",
+    "subjectCode": 145204,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART I MARATHI (SEMESTER I & II)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1011,
+    "teacherName": "Rajaram Jadhav",
+    "subjectCode": 445704,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II MARATHI (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1011,
+    "teacherName": "Rajaram Jadhav",
+    "subjectCode": 443547,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II MARATHI (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1011,
+    "teacherName": "Rajaram Jadhav",
+    "subjectCode": 646304,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III MARATHI (SEMESTER V & VI)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8006,
+    "teacherName": "Mansi Ghule",
+    "subjectCode": 3104,
+    "subjectName": "",
+    "course": "S.Y.B.C.A.",
+    "subCourse": "B.C.A. PART II ENGLISH (SEMESTER III & IV)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8006,
+    "teacherName": "Mansi Ghule",
+    "subjectCode": 4102,
+    "subjectName": "",
+    "course": "S.Y.B.C.A.",
+    "subCourse": "B.C.A. PART II ENGLISH (SEMESTER III & IV)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8006,
+    "teacherName": "Mansi Ghule",
+    "subjectCode": 6101,
+    "subjectName": "",
+    "course": "T.Y.B.C.A.",
+    "subCourse": "B.C.A. PART III ENGLISH (SEMESTER V & VI)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8006,
+    "teacherName": "Mansi Ghule",
+    "subjectCode": 6102,
+    "subjectName": "",
+    "course": "T.Y.B.C.A.",
+    "subCourse": "B.C.A. PART III ENGLISH (SEMESTER V & VI)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8007,
+    "teacherName": "Vaidehi Patil",
+    "subjectCode": 3101,
+    "subjectName": "",
+    "course": "S.Y.B.C.A.",
+    "subCourse": "B.C.A. PART II ENGLISH (SEMESTER III & IV)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8007,
+    "teacherName": "Vaidehi Patil",
+    "subjectCode": 4101,
+    "subjectName": "",
+    "course": "S.Y.B.C.A.",
+    "subCourse": "B.C.A. PART II ENGLISH (SEMESTER III & IV)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8007,
+    "teacherName": "Vaidehi Patil",
+    "subjectCode": 4104,
+    "subjectName": "",
+    "course": "S.Y.B.C.A.",
+    "subCourse": "B.C.A. PART II ENGLISH (SEMESTER III & IV)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8007,
+    "teacherName": "Vaidehi Patil",
+    "subjectCode": 6102,
+    "subjectName": "",
+    "course": "T.Y.B.C.A.",
+    "subCourse": "B.C.A. PART III ENGLISH (SEMESTER V & VI)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8007,
+    "teacherName": "Vaidehi Patil",
+    "subjectCode": 6104,
+    "subjectName": "",
+    "course": "T.Y.B.C.A.",
+    "subCourse": "B.C.A. PART III ENGLISH (SEMESTER V & VI)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8007,
+    "teacherName": "Vaidehi Patil",
+    "subjectCode": 5101,
+    "subjectName": "",
+    "course": "T.Y.B.C.A.",
+    "subCourse": "B.C.A. PART III ENGLISH (SEMESTER V & VI)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8007,
+    "teacherName": "Vaidehi Patil",
+    "subjectCode": 5305,
+    "subjectName": "",
+    "course": "T.Y.B.M.M.",
+    "subCourse": "B.M.M. PART III ENGLISH (SEMESTER V & VI)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12008,
+    "teacherName": "Zarina",
+    "subjectCode": 445701,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1029,
+    "teacherName": "Zankhana Thakkar",
+    "subjectCode": 445405,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "B .COM. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8022,
+    "teacherName": "Shweta Shirode",
+    "subjectCode": 1003,
+    "subjectName": "",
+    "course": "F.Y.B.M.M.",
+    "subCourse": "B.M.M. PART I ENGLISH (SEMESTER I & II)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8022,
+    "teacherName": "Shweta Shirode",
+    "subjectCode": 1004,
+    "subjectName": "",
+    "course": "F.Y.B.M.M.",
+    "subCourse": "B.M.M. PART I ENGLISH (SEMESTER I & II)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8022,
+    "teacherName": "Shweta Shirode",
+    "subjectCode": 2005,
+    "subjectName": "",
+    "course": "F.Y.B.M.M.",
+    "subCourse": "B.M.M. PART I ENGLISH (SEMESTER I & II)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8022,
+    "teacherName": "Shweta Shirode",
+    "subjectCode": 3001,
+    "subjectName": "",
+    "course": "S.Y.B.M.M.",
+    "subCourse": "B.M.M. PART II ENGLISH (SEMESTER III & IV)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8022,
+    "teacherName": "Shweta Shirode",
+    "subjectCode": 3002,
+    "subjectName": "",
+    "course": "S.Y.B.M.M.",
+    "subCourse": "B.M.M. PART II ENGLISH (SEMESTER III & IV)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8022,
+    "teacherName": "Shweta Shirode",
+    "subjectCode": 4001,
+    "subjectName": "",
+    "course": "S.Y.B.M.M.",
+    "subCourse": "B.M.M. PART II ENGLISH (SEMESTER III & IV)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8022,
+    "teacherName": "Shweta Shirode",
+    "subjectCode": 4005,
+    "subjectName": "",
+    "course": "S.Y.B.M.M.",
+    "subCourse": "B.M.M. PART II ENGLISH (SEMESTER III & IV)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8022,
+    "teacherName": "Shweta Shirode",
+    "subjectCode": 5302,
+    "subjectName": "",
+    "course": "T.Y.B.M.M.",
+    "subCourse": "B.M.M. PART III ENGLISH (SEMESTER V & VI)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8023,
+    "teacherName": "Vikas Shirode",
+    "subjectCode": 5304,
+    "subjectName": "",
+    "course": "T.Y.B.M.M.",
+    "subCourse": "B.M.M. PART III ENGLISH (SEMESTER V & VI)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8023,
+    "teacherName": "Vikas Shirode",
+    "subjectCode": 5303,
+    "subjectName": "",
+    "course": "T.Y.B.M.M.",
+    "subCourse": "B.M.M. PART III ENGLISH (SEMESTER V & VI)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8023,
+    "teacherName": "Vikas Shirode",
+    "subjectCode": 5302,
+    "subjectName": "",
+    "course": "T.Y.B.M.M.",
+    "subCourse": "B.M.M. PART III ENGLISH (SEMESTER V & VI)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12009,
+    "teacherName": "Vidhya",
+    "subjectCode": 3102,
+    "subjectName": "",
+    "course": "S.Y.B.C.A.",
+    "subCourse": "B.C.A. PART II ENGLISH (SEMESTER III & IV)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12010,
+    "teacherName": "Sumit Rathod",
+    "subjectCode": 4103,
+    "subjectName": "",
+    "course": "S.Y.B.C.A.",
+    "subCourse": "B.C.A. PART II ENGLISH (SEMESTER III & IV)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12011,
+    "teacherName": "Vanita Shukla",
+    "subjectCode": 465206,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1032,
+    "teacherName": "Sujit Chandak",
+    "subjectCode": 1032,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "B .COM. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1034,
+    "teacherName": "Sudha Prabhu",
+    "subjectCode": 1034,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "B .COM. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1034,
+    "teacherName": "Sudha Prabhu",
+    "subjectCode": 375144,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "B .COM. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1034,
+    "teacherName": "Sudha Prabhu",
+    "subjectCode": 625601,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1034,
+    "teacherName": "Sudha Prabhu",
+    "subjectCode": 245206,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "B .COM. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8018,
+    "teacherName": "Srividya",
+    "subjectCode": 3102,
+    "subjectName": "",
+    "course": "S.Y.B.C.A.",
+    "subCourse": "B.C.A. PART II ENGLISH (SEMESTER III & IV)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1028,
+    "teacherName": "Soniya Rane",
+    "subjectCode": 1028,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I MARATHI (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1028,
+    "teacherName": "Soniya Rane",
+    "subjectCode": 275208,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I MARATHI (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1028,
+    "teacherName": "Soniya Rane",
+    "subjectCode": 230300,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I MARATHI (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1028,
+    "teacherName": "Soniya Rane",
+    "subjectCode": 646308,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III MARATHI (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1028,
+    "teacherName": "Soniya Rane",
+    "subjectCode": 646306,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III MARATHI (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1028,
+    "teacherName": "Soniya Rane",
+    "subjectCode": 230300,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I MARATHI (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1028,
+    "teacherName": "Soniya Rane",
+    "subjectCode": 215208,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I MARATHI (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1028,
+    "teacherName": "Soniya Rane",
+    "subjectCode": 215208,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I MARATHI (SEMESTER I & II)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1038,
+    "teacherName": "Ravindra Kamble",
+    "subjectCode": 435704,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II MARATHI (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1038,
+    "teacherName": "Ravindra Kamble",
+    "subjectCode": 435704,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II MARATHI (SEMESTER III & IV)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1038,
+    "teacherName": "Ravindra Kamble",
+    "subjectCode": 145204,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I MARATHI (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1038,
+    "teacherName": "Ravindra Kamble",
+    "subjectCode": 145204,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I MARATHI (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1038,
+    "teacherName": "Ravindra Kamble",
+    "subjectCode": 465204,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II MARATHI (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1038,
+    "teacherName": "Ravindra Kamble",
+    "subjectCode": 445804,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II MARATHI (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1038,
+    "teacherName": "Ravindra Kamble",
+    "subjectCode": 646404,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III MARATHI (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1038,
+    "teacherName": "Ravindra Kamble",
+    "subjectCode": 646404,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III MARATHI (SEMESTER V & VI)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1038,
+    "teacherName": "Ravindra Kamble",
+    "subjectCode": 646504,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III MARATHI (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1038,
+    "teacherName": "Ravindra Kamble",
+    "subjectCode": 646504,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III MARATHI (SEMESTER V & VI)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1516,
+    "teacherName": "Leandra Demello",
+    "subjectCode": 465201,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12012,
+    "teacherName": "Manoj Nished",
+    "subjectCode": 430600,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1510,
+    "teacherName": "Shital Soa",
+    "subjectCode": 230300,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12013,
+    "teacherName": "Sanjay Deore",
+    "subjectCode": 4101,
+    "subjectName": "",
+    "course": "S.Y.B.C.A.",
+    "subCourse": "B.C.A. PART II ENGLISH (SEMESTER III & IV)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12014,
+    "teacherName": "Pratibha",
+    "subjectCode": 240301,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12014,
+    "teacherName": "Pratibha",
+    "subjectCode": 625601,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12014,
+    "teacherName": "Pratibha",
+    "subjectCode": 655601,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1023,
+    "teacherName": "Prabha Krishnan",
+    "subjectCode": 245403,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1023,
+    "teacherName": "Prabha Krishnan",
+    "subjectCode": 445806,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1023,
+    "teacherName": "Prabha Krishnan",
+    "subjectCode": 445801,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1023,
+    "teacherName": "Prabha Krishnan",
+    "subjectCode": 240401,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3006,
+    "teacherName": "Hemlata Mukane",
+    "subjectCode": 430600,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II MARATHI (SEMESTER III & IV)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3006,
+    "teacherName": "Hemlata Mukane",
+    "subjectCode": 3006,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I MARATHI (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3006,
+    "teacherName": "Hemlata Mukane",
+    "subjectCode": 475408,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II MARATHI (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3006,
+    "teacherName": "Hemlata Mukane",
+    "subjectCode": 645408,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III MARATHI (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3006,
+    "teacherName": "Hemlata Mukane",
+    "subjectCode": 445708,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II MARATHI (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3006,
+    "teacherName": "Hemlata Mukane",
+    "subjectCode": 460208,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II MARATHI (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 4008,
+    "teacherName": "Naziya Sayyed",
+    "subjectCode": 4006,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "B .COM. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 4008,
+    "teacherName": "Naziya Sayyed",
+    "subjectCode": 145105,
+    "subjectName": "",
+    "course": "F.Y.B.COM.",
+    "subCourse": "B.COM. PART I ENGLISH (SEMESTER I & II)-C",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 4008,
+    "teacherName": "Naziya Sayyed",
+    "subjectCode": 240205,
+    "subjectName": "",
+    "course": "F.Y.B.COM.",
+    "subCourse": "B.COM. PART I ENGLISH (SEMESTER I & II)-C",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1010,
+    "teacherName": "Sarat Patra",
+    "subjectCode": 1010,
+    "subjectName": "",
+    "course": "F.Y.B.COM.",
+    "subCourse": "B.COM. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1010,
+    "teacherName": "Sarat Patra",
+    "subjectCode": 1010,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1010,
+    "teacherName": "Sarat Patra",
+    "subjectCode": 245406,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1010,
+    "teacherName": "Sarat Patra",
+    "subjectCode": 646506,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1010,
+    "teacherName": "Sarat Patra",
+    "subjectCode": 245406,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1026,
+    "teacherName": "Parag Thakar",
+    "subjectCode": 445249,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "B .COM. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1026,
+    "teacherName": "Parag Thakar",
+    "subjectCode": 445244,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "B .COM. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12015,
+    "teacherName": "Payal Lakkad",
+    "subjectCode": 245311,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12015,
+    "teacherName": "Payal Lakkad",
+    "subjectCode": 245411,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12015,
+    "teacherName": "Payal Lakkad",
+    "subjectCode": 565311,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12015,
+    "teacherName": "Payal Lakkad",
+    "subjectCode": 646511,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12015,
+    "teacherName": "Payal Lakkad",
+    "subjectCode": 646611,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12015,
+    "teacherName": "Payal Lakkad",
+    "subjectCode": 665411,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8013,
+    "teacherName": "Pooja Agarwal",
+    "subjectCode": 5103,
+    "subjectName": "",
+    "course": "T.Y.B.C.A.",
+    "subCourse": "B.C.A. PART III ENGLISH (SEMESTER V & VI)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8013,
+    "teacherName": "Pooja Agarwal",
+    "subjectCode": 5102,
+    "subjectName": "",
+    "course": "T.Y.B.C.A.",
+    "subCourse": "B.C.A. PART III ENGLISH (SEMESTER V & VI)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8013,
+    "teacherName": "Pooja Agarwal",
+    "subjectCode": 3103,
+    "subjectName": "",
+    "course": "S.Y.B.C.A.",
+    "subCourse": "B.C.A. PART II ENGLISH (SEMESTER III & IV)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12016,
+    "teacherName": "Prasanna Sonawane",
+    "subjectCode": 3003,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12016,
+    "teacherName": "Prasanna Sonawane",
+    "subjectCode": 3003,
+    "subjectName": "",
+    "course": "F.Y.B.M.M.",
+    "subCourse": "B.M.M. PART I ENGLISH (SEMESTER I & II)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12016,
+    "teacherName": "Prasanna Sonawane",
+    "subjectCode": 640606,
+    "subjectName": "",
+    "course": "F.Y.B.A.",
+    "subCourse": "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8005,
+    "teacherName": "Preeti Jain",
+    "subjectCode": 5104,
+    "subjectName": "",
+    "course": "T.Y.B.C.A.",
+    "subCourse": "B.C.A. PART III ENGLISH (SEMESTER V & VI)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8005,
+    "teacherName": "Preeti Jain",
+    "subjectCode": 6103,
+    "subjectName": "",
+    "course": "T.Y.B.C.A.",
+    "subCourse": "B.C.A. PART III ENGLISH (SEMESTER V & VI)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8005,
+    "teacherName": "Preeti Jain",
+    "subjectCode": 6301,
+    "subjectName": "",
+    "course": "T.Y.B.M.M.",
+    "subCourse": "B.M.M. PART III ENGLISH (SEMESTER V & VI)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3010,
+    "teacherName": "Rajesh Cheda",
+    "subjectCode": 3010,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "B .COM. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12017,
+    "teacherName": "Rekha Desai",
+    "subjectCode": 6451308,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III HINDI (SEMESTER V & VI)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 12017,
+    "teacherName": "Rekha Desai",
+    "subjectCode": 6451508,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III HINDI (SEMESTER V & VI)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 4006,
+    "teacherName": "Rekha Samant",
+    "subjectCode": 646308,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III MARATHI (SEMESTER V & VI)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 4006,
+    "teacherName": "Rekha Samant",
+    "subjectCode": 665408,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III HINDI (SEMESTER V & VI)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8016,
+    "teacherName": "Sangeeta Jain",
+    "subjectCode": 2002,
+    "subjectName": "",
+    "course": "F.Y.B.M.M.",
+    "subCourse": "B.M.M. PART I ENGLISH (SEMESTER I & II)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 8016,
+    "teacherName": "Sangeeta Jain",
+    "subjectCode": 6013,
+    "subjectName": "",
+    "course": "T.Y.B.C.A.",
+    "subCourse": "B.C.A. PART III ENGLISH (SEMESTER V & VI)",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3004,
+    "teacherName": "Smita Vora",
+    "subjectCode": 475245,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "B .COM. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3004,
+    "teacherName": "Smita Vora",
+    "subjectCode": 445406,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "B .COM. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3004,
+    "teacherName": "Smita Vora",
+    "subjectCode": 640606,
+    "subjectName": "",
+    "course": "T.Y.B.COM.",
+    "subCourse": "B.COM. PART III ENGLISH (SEMESTER V & VI)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3004,
+    "teacherName": "Smita Vora",
+    "subjectCode": 345306,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "B .COM. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 4007,
+    "teacherName": "Shilpa Gangatirkar",
+    "subjectCode": 680827,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3009,
+    "teacherName": "Sheena Soman",
+    "subjectCode": 3009,
+    "subjectName": "",
+    "course": "F.Y.B.COM.",
+    "subCourse": "B.COM. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3009,
+    "teacherName": "Sheena Soman",
+    "subjectCode": 310301,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "B .COM. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3009,
+    "teacherName": "Sheena Soman",
+    "subjectCode": 410401,
+    "subjectName": "",
+    "course": "S.Y.B.COM.",
+    "subCourse": "B .COM. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1027,
+    "teacherName": "Seema Dalvi",
+    "subjectCode": 1017,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 3003,
+    "teacherName": "P. Sonawane",
+    "subjectCode": 445806,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1013,
+    "teacherName": "Shobha Acharya",
+    "subjectCode": 3007,
+    "subjectName": "",
+    "course": "F.Y.B.COM.",
+    "subCourse": "B.COM. PART I ENGLISH (SEMESTER I & II)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1013,
+    "teacherName": "Shobha Acharya",
+    "subjectCode": 455401,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II GUJARATI (SEMESTER III & IV)-G",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1013,
+    "teacherName": "Shobha Acharya",
+    "subjectCode": 455401,
+    "subjectName": "",
+    "course": "S.Y.B.A.",
+    "subCourse": "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1013,
+    "teacherName": "Shobha Acharya",
+    "subjectCode": 625601,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1013,
+    "teacherName": "Shobha Acharya",
+    "subjectCode": 615601,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1013,
+    "teacherName": "Shobha Acharya",
+    "subjectCode": 655601,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III HINDI (SEMESTER V & VI)-B",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 1013,
+    "teacherName": "Shobha Acharya",
+    "subjectCode": 651601,
+    "subjectName": "",
+    "course": "T.Y.B.A.",
+    "subCourse": "B.A. PART III ENGLISH (SEMESTER V & VI)-A",
+    "semester": "Even"
+  }
+]

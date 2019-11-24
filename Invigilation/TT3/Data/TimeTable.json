@@ -1,0 +1,1257 @@
+[
+  {
+    "ExamName": "School Exam January 2019",
+    "ExamTimeTableData": [
+      {
+        "Date": "2019-01-20T18:30:00Z",
+        "Associated": [
+          [
+            {
+              "Room": "IA",
+              "ProfName": "VARNITA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 10
+            },
+            {
+              "Room": "IB",
+              "ProfName": "APARNA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 20
+            },
+            {
+              "Room": "IIA",
+              "ProfName": "RITU",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 30
+            },
+            {
+              "Room": "IIB",
+              "ProfName": "PRIYANKA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 40
+            },
+            {
+              "Room": "IIIA",
+              "ProfName": "SAGAR",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 50
+            },
+            {
+              "Room": "IIIB",
+              "ProfName": "SABA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 60
+            },
+            {
+              "Room": "IV",
+              "ProfName": "CHHAYA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 70
+            },
+            {
+              "Room": "V",
+              "ProfName": "TAIHREEN",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 80
+            },
+            {
+              "Room": "VI",
+              "ProfName": "KIMBERLY",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 90
+            },
+            {
+              "Room": "VII",
+              "ProfName": "MEERA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 100
+            },
+            {
+              "ProfName": "-",
+              "Room": "ART ROOM",
+              "RoomOrderNo": 110,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "IsOnError": false
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "SUBHRA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 120
+            },
+            {
+              "Room": "StandBy",
+              "ProfName": "RONIEL",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 130
+            }
+          ],
+          [
+            {
+              "Room": "IA",
+              "ProfName": "TANVEER",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 10
+            },
+            {
+              "Room": "IB",
+              "ProfName": "LALITA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 20
+            },
+            {
+              "Room": "IIA",
+              "ProfName": "FALGUNI",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 30
+            },
+            {
+              "ProfName": "-",
+              "Room": "IIB",
+              "RoomOrderNo": 40,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "IsOnError": false
+            },
+            {
+              "ProfName": "-",
+              "Room": "IIIA",
+              "RoomOrderNo": 50,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "IsOnError": false
+            },
+            {
+              "Room": "IIIB",
+              "ProfName": "POOJA.L",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 60
+            },
+            {
+              "Room": "IV",
+              "ProfName": "RUPALI",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 70
+            },
+            {
+              "Room": "V",
+              "ProfName": "DARSHINI",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 80
+            },
+            {
+              "ProfName": "-",
+              "Room": "VI",
+              "RoomOrderNo": 90,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "IsOnError": false
+            },
+            {
+              "Room": "VII",
+              "ProfName": "",
+              "IsOnError": true,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 100
+            },
+            {
+              "ProfName": "-",
+              "Room": "ART ROOM",
+              "RoomOrderNo": 110,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "IsOnError": false
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "",
+              "IsOnError": true,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 120
+            },
+            {
+              "Room": "StandBy",
+              "ProfName": "",
+              "IsOnError": true,
+              "dateAssigned": "2019-01-20T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 130
+            }
+          ]
+        ]
+      },
+      {
+        "Date": "2019-01-21T18:30:00Z",
+        "Associated": [
+          [
+            {
+              "Room": "IA",
+              "ProfName": "VARNITA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 10
+            },
+            {
+              "ProfName": "-",
+              "Room": "IB",
+              "RoomOrderNo": 20,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "IsOnError": false
+            },
+            {
+              "Room": "IIA",
+              "ProfName": "RITU",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 30
+            },
+            {
+              "ProfName": "-",
+              "Room": "IIB",
+              "RoomOrderNo": 40,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "IsOnError": false
+            },
+            {
+              "Room": "IIIA",
+              "ProfName": "YASHASHREE",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 50
+            },
+            {
+              "Room": "IIIB",
+              "ProfName": "SABA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 60
+            },
+            {
+              "Room": "IV",
+              "ProfName": "CHHAYA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 70
+            },
+            {
+              "Room": "V",
+              "ProfName": "TAIHREEN",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 80
+            },
+            {
+              "Room": "VI",
+              "ProfName": "KIMBERLY",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 90
+            },
+            {
+              "Room": "VII",
+              "ProfName": "MEERA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 100
+            },
+            {
+              "ProfName": "-",
+              "Room": "ART ROOM",
+              "RoomOrderNo": 110,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "IsOnError": false
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "POOJA.L",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 120
+            },
+            {
+              "Room": "StandBy",
+              "ProfName": "FALGUNI",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 130
+            }
+          ],
+          [
+            {
+              "Room": "IA",
+              "ProfName": "TANVEER",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 10
+            },
+            {
+              "Room": "IB",
+              "ProfName": "APARNA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 20
+            },
+            {
+              "Room": "IIA",
+              "ProfName": "RONIEL",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 30
+            },
+            {
+              "ProfName": "-",
+              "Room": "IIB",
+              "RoomOrderNo": 40,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "IsOnError": false
+            },
+            {
+              "ProfName": "-",
+              "Room": "IIIA",
+              "RoomOrderNo": 50,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "IsOnError": false
+            },
+            {
+              "Room": "IIIB",
+              "ProfName": "SUBHRA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 60
+            },
+            {
+              "Room": "IV",
+              "ProfName": "RUPALI",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 70
+            },
+            {
+              "Room": "V",
+              "ProfName": "DARSHINI",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 80
+            },
+            {
+              "ProfName": "-",
+              "Room": "VI",
+              "RoomOrderNo": 90,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "IsOnError": false
+            },
+            {
+              "Room": "VII",
+              "ProfName": "",
+              "IsOnError": true,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 100
+            },
+            {
+              "ProfName": "-",
+              "Room": "ART ROOM",
+              "RoomOrderNo": 110,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "IsOnError": false
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "",
+              "IsOnError": true,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 120
+            },
+            {
+              "Room": "StandBy",
+              "ProfName": "",
+              "IsOnError": true,
+              "dateAssigned": "2019-01-21T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 130
+            }
+          ]
+        ]
+      },
+      {
+        "Date": "2019-01-22T18:30:00Z",
+        "Associated": [
+          [
+            {
+              "Room": "IA",
+              "ProfName": "VARNITA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 10
+            },
+            {
+              "Room": "IB",
+              "ProfName": "LALITA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 20
+            },
+            {
+              "ProfName": "-",
+              "Room": "IIA",
+              "RoomOrderNo": 30,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "IsOnError": false
+            },
+            {
+              "Room": "IIB",
+              "ProfName": "SHIKHA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 40
+            },
+            {
+              "ProfName": "-",
+              "Room": "IIIA",
+              "RoomOrderNo": 50,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "IsOnError": false
+            },
+            {
+              "Room": "IIIB",
+              "ProfName": "RITU",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 60
+            },
+            {
+              "Room": "IV",
+              "ProfName": "CHHAYA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 70
+            },
+            {
+              "ProfName": "-",
+              "Room": "V",
+              "RoomOrderNo": 80,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "IsOnError": false
+            },
+            {
+              "ProfName": "-",
+              "Room": "VI",
+              "RoomOrderNo": 90,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "IsOnError": false
+            },
+            {
+              "Room": "VII",
+              "ProfName": "SABA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 100
+            },
+            {
+              "ProfName": "-",
+              "Room": "ART ROOM",
+              "RoomOrderNo": 110,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "IsOnError": false
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "RUPALI",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 120
+            },
+            {
+              "Room": "StandBy",
+              "ProfName": "KIMBERLY",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 130
+            }
+          ],
+          [
+            {
+              "Room": "IA",
+              "ProfName": "TANVEER",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 10
+            },
+            {
+              "Room": "IB",
+              "ProfName": "APARNA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 20
+            },
+            {
+              "Room": "IIA",
+              "ProfName": "MEERA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 30
+            },
+            {
+              "ProfName": "-",
+              "Room": "IIB",
+              "RoomOrderNo": 40,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "IsOnError": false
+            },
+            {
+              "ProfName": "-",
+              "Room": "IIIA",
+              "RoomOrderNo": 50,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "IsOnError": false
+            },
+            {
+              "Room": "IIIB",
+              "ProfName": "RONIEL",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 60
+            },
+            {
+              "Room": "IV",
+              "ProfName": "FALGUNI",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 70
+            },
+            {
+              "Room": "V",
+              "ProfName": "TAIHREEN",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 80
+            },
+            {
+              "ProfName": "-",
+              "Room": "VI",
+              "RoomOrderNo": 90,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "IsOnError": false
+            },
+            {
+              "Room": "VII",
+              "ProfName": "SUBHRA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 100
+            },
+            {
+              "ProfName": "-",
+              "Room": "ART ROOM",
+              "RoomOrderNo": 110,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "IsOnError": false
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "POOJA.L",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 120
+            },
+            {
+              "Room": "StandBy",
+              "ProfName": "",
+              "IsOnError": true,
+              "dateAssigned": "2019-01-22T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 130
+            }
+          ]
+        ]
+      },
+      {
+        "Date": "2019-01-23T18:30:00Z",
+        "Associated": [
+          [
+            {
+              "Room": "IA",
+              "ProfName": "VARNITA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 10
+            },
+            {
+              "Room": "IB",
+              "ProfName": "LALITA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 20
+            },
+            {
+              "Room": "IIA",
+              "ProfName": "RITU",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 30
+            },
+            {
+              "Room": "IIB",
+              "ProfName": "PRIYANKA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 40
+            },
+            {
+              "Room": "IIIA",
+              "ProfName": "SAGAR",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 50
+            },
+            {
+              "Room": "IIIB",
+              "ProfName": "SABA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 60
+            },
+            {
+              "Room": "IV",
+              "ProfName": "CHHAYA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 70
+            },
+            {
+              "Room": "V",
+              "ProfName": "DARSHINI",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 80
+            },
+            {
+              "Room": "VI",
+              "ProfName": "KIMBERLY",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 90
+            },
+            {
+              "Room": "VII",
+              "ProfName": "MEERA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 100
+            },
+            {
+              "ProfName": "-",
+              "Room": "ART ROOM",
+              "RoomOrderNo": 110,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "IsOnError": false
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "SUBHRA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 120
+            },
+            {
+              "Room": "StandBy",
+              "ProfName": "RUPALI",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 130
+            }
+          ],
+          [
+            {
+              "Room": "IA",
+              "ProfName": "TANVEER",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 10
+            },
+            {
+              "Room": "IB",
+              "ProfName": "APARNA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 20
+            },
+            {
+              "Room": "IIA",
+              "ProfName": "RONIEL",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 30
+            },
+            {
+              "ProfName": "-",
+              "Room": "IIB",
+              "RoomOrderNo": 40,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "IsOnError": false
+            },
+            {
+              "ProfName": "-",
+              "Room": "IIIA",
+              "RoomOrderNo": 50,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "IsOnError": false
+            },
+            {
+              "Room": "IIIB",
+              "ProfName": "FALGUNI",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 60
+            },
+            {
+              "Room": "IV",
+              "ProfName": "POOJA.L",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 70
+            },
+            {
+              "Room": "V",
+              "ProfName": "TAIHREEN",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 80
+            },
+            {
+              "ProfName": "-",
+              "Room": "VI",
+              "RoomOrderNo": 90,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "IsOnError": false
+            },
+            {
+              "Room": "VII",
+              "ProfName": "",
+              "IsOnError": true,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 100
+            },
+            {
+              "ProfName": "-",
+              "Room": "ART ROOM",
+              "RoomOrderNo": 110,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "IsOnError": false
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "",
+              "IsOnError": true,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 120
+            },
+            {
+              "Room": "StandBy",
+              "ProfName": "",
+              "IsOnError": true,
+              "dateAssigned": "2019-01-23T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 130
+            }
+          ]
+        ]
+      },
+      {
+        "Date": "2019-01-24T18:30:00Z",
+        "Associated": [
+          [
+            {
+              "Room": "IA",
+              "ProfName": "VARNITA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 10
+            },
+            {
+              "Room": "IB",
+              "ProfName": "LALITA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 20
+            },
+            {
+              "Room": "IIA",
+              "ProfName": "RITU",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 30
+            },
+            {
+              "Room": "IIB",
+              "ProfName": "SHIKHA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 40
+            },
+            {
+              "Room": "IIIA",
+              "ProfName": "YASHASHREE",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 50
+            },
+            {
+              "Room": "IIIB",
+              "ProfName": "SABA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 60
+            },
+            {
+              "Room": "IV",
+              "ProfName": "CHHAYA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 70
+            },
+            {
+              "Room": "V",
+              "ProfName": "DARSHINI",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 80
+            },
+            {
+              "Room": "VI",
+              "ProfName": "KIMBERLY",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 90
+            },
+            {
+              "Room": "VII",
+              "ProfName": "MEERA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 100
+            },
+            {
+              "ProfName": "-",
+              "Room": "ART ROOM",
+              "RoomOrderNo": 110,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "IsOnError": false
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "RUPALI",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 120
+            },
+            {
+              "Room": "StandBy",
+              "ProfName": "POOJA.L",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "01:00 to 12:00",
+              "RoomOrderNo": 130
+            }
+          ],
+          [
+            {
+              "Room": "IA",
+              "ProfName": "TANVEER",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 10
+            },
+            {
+              "Room": "IB",
+              "ProfName": "APARNA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 20
+            },
+            {
+              "Room": "IIA",
+              "ProfName": "RONIEL",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 30
+            },
+            {
+              "Room": "IIB",
+              "ProfName": "PRIYANKA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 40
+            },
+            {
+              "Room": "IIIA",
+              "ProfName": "SAGAR",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 50
+            },
+            {
+              "Room": "IIIB",
+              "ProfName": "FALGUNI",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 60
+            },
+            {
+              "Room": "IV",
+              "ProfName": "SUBHRA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 70
+            },
+            {
+              "Room": "V",
+              "ProfName": "TAIHREEN",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 80
+            },
+            {
+              "Room": "VI",
+              "ProfName": "",
+              "IsOnError": true,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 90
+            },
+            {
+              "Room": "VII",
+              "ProfName": "",
+              "IsOnError": true,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 100
+            },
+            {
+              "ProfName": "-",
+              "Room": "ART ROOM",
+              "RoomOrderNo": 110,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "IsOnError": false
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "",
+              "IsOnError": true,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 120
+            },
+            {
+              "Room": "StandBy",
+              "ProfName": "",
+              "IsOnError": true,
+              "dateAssigned": "2019-01-24T18:30:00Z",
+              "Time": "13:00 to 15:00",
+              "RoomOrderNo": 130
+            }
+          ]
+        ]
+      },
+      {
+        "Date": "2019-01-25T18:30:00Z",
+        "Associated": [
+          [
+            {
+              "ProfName": "-",
+              "Room": "IA",
+              "RoomOrderNo": 10,
+              "dateAssigned": "2019-01-25T18:30:00Z",
+              "Time": "08:15 to 09:15",
+              "IsOnError": false
+            },
+            {
+              "Room": "IB",
+              "ProfName": "LALITA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-25T18:30:00Z",
+              "Time": "08:15 to 09:15",
+              "RoomOrderNo": 20
+            },
+            {
+              "Room": "IIA",
+              "ProfName": "RITU",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-25T18:30:00Z",
+              "Time": "08:15 to 09:15",
+              "RoomOrderNo": 30
+            },
+            {
+              "Room": "IIB",
+              "ProfName": "SHIKHA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-25T18:30:00Z",
+              "Time": "08:15 to 09:15",
+              "RoomOrderNo": 40
+            },
+            {
+              "Room": "IIIA",
+              "ProfName": "YASHASHREE",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-25T18:30:00Z",
+              "Time": "08:15 to 09:15",
+              "RoomOrderNo": 50
+            },
+            {
+              "ProfName": "-",
+              "Room": "IIIB",
+              "RoomOrderNo": 60,
+              "dateAssigned": "2019-01-25T18:30:00Z",
+              "Time": "08:15 to 09:15",
+              "IsOnError": false
+            },
+            {
+              "ProfName": "-",
+              "Room": "IV",
+              "RoomOrderNo": 70,
+              "dateAssigned": "2019-01-25T18:30:00Z",
+              "Time": "08:15 to 09:15",
+              "IsOnError": false
+            },
+            {
+              "Room": "V",
+              "ProfName": "DARSHINI",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-25T18:30:00Z",
+              "Time": "08:15 to 09:15",
+              "RoomOrderNo": 80
+            },
+            {
+              "Room": "VI",
+              "ProfName": "SABA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-25T18:30:00Z",
+              "Time": "08:15 to 09:15",
+              "RoomOrderNo": 90
+            },
+            {
+              "ProfName": "-",
+              "Room": "VII",
+              "RoomOrderNo": 100,
+              "dateAssigned": "2019-01-25T18:30:00Z",
+              "Time": "08:15 to 09:15",
+              "IsOnError": false
+            },
+            {
+              "Room": "ART ROOM",
+              "ProfName": "SAGAR",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-25T18:30:00Z",
+              "Time": "08:15 to 09:15",
+              "RoomOrderNo": 110
+            },
+            {
+              "Room": "Reliver",
+              "ProfName": "VARNITA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-25T18:30:00Z",
+              "Time": "08:15 to 09:15",
+              "RoomOrderNo": 120
+            },
+            {
+              "Room": "StandBy",
+              "ProfName": "PRIYANKA",
+              "IsOnError": false,
+              "dateAssigned": "2019-01-25T18:30:00Z",
+              "Time": "08:15 to 09:15",
+              "RoomOrderNo": 130
+            }
+          ]
+        ]
+      }
+    ],
+    "ExamTimeTableRoomData": [
+      {
+        "RoomName": "IA",
+        "RoomOrderNo": 10
+      },
+      {
+        "RoomName": "IB",
+        "RoomOrderNo": 20
+      },
+      {
+        "RoomName": "IIA",
+        "RoomOrderNo": 30
+      },
+      {
+        "RoomName": "IIB",
+        "RoomOrderNo": 40
+      },
+      {
+        "RoomName": "IIIA",
+        "RoomOrderNo": 50
+      },
+      {
+        "RoomName": "IIIB",
+        "RoomOrderNo": 60
+      },
+      {
+        "RoomName": "IV",
+        "RoomOrderNo": 70
+      },
+      {
+        "RoomName": "V",
+        "RoomOrderNo": 80
+      },
+      {
+        "RoomName": "VI",
+        "RoomOrderNo": 90
+      },
+      {
+        "RoomName": "VII",
+        "RoomOrderNo": 100
+      },
+      {
+        "RoomName": "ART ROOM",
+        "RoomOrderNo": 110
+      },
+      {
+        "RoomName": "Reliver",
+        "RoomOrderNo": 120
+      },
+      {
+        "RoomName": "StandBy",
+        "RoomOrderNo": 130
+      }
+    ]
+  }
+]

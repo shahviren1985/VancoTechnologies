@@ -1,0 +1,184 @@
+﻿[
+	{
+		"id": "a1",
+		"question": "A course syllabus was presented and reflected the course objectives, grading procedures and requirements",
+		"type": "radio",
+		"optionValues": [
+			"Totally Agree",
+			"Agree",
+			"Partly Agree",
+			"Disagree",
+			"Totally Disagree"			
+		]
+	},
+	{
+		"id": "a2",
+		"question": "Course materials and supplies were appropriate",
+		"type": "radio",
+		"optionValues": [
+			"Totally Agree",
+			"Agree",
+			"Partly Agree",
+			"Disagree",
+			"Totally Disagree"			
+		]
+	},
+	{
+		"id": "a3",
+		"question": "The instructions included hands on training where appropriate",
+		"type": "radio",
+		"optionValues": [
+			"Totally Agree",
+			"Agree",
+			"Partly Agree",
+			"Disagree",
+			"Totally Disagree"			
+		]
+	},
+	{
+		"id": "a4",
+		"question": "Tests and assignments related to the objectives of the course",
+		"type": "radio",
+		"optionValues": [
+			"Totally Agree",
+			"Agree",
+			"Partly Agree",
+			"Disagree",
+			"Totally Disagree"			
+		]
+	},
+	{
+		"id": "a5",
+		"question": "Instruction included problem solving",
+		"type": "radio",
+		"optionValues": [
+			"Totally Agree",
+			"Agree",
+			"Partly Agree",
+			"Disagree",
+			"Totally Disagree"			
+		]
+	},
+	{
+		"id": "a6",
+		"question": "The course met your career objectives",
+		"type": "radio",
+		"optionValues": [
+			"Totally Agree",
+			"Agree",
+			"Partly Agree",
+			"Disagree",
+			"Totally Disagree"			
+		]
+	},
+	{
+		"id": "a7",
+		"question": "Instruction included career options in the program area",
+		"type": "radio",
+		"optionValues": [
+			"Totally Agree",
+			"Agree",
+			"Partly Agree",
+			"Disagree",
+			"Totally Disagree"			
+		]
+	},
+	{
+		"id": "a8",
+		"question": "Good work habits ethics and team work are included in the instruction",
+		"type": "radio",
+		"optionValues": [
+			"Totally Agree",
+			"Agree",
+			"Partly Agree",
+			"Disagree",
+			"Totally Disagree"			
+		]
+	},
+	{
+		"id": "a9",
+		"question": "Work based learning opportunities were available",
+		"type": "radio",
+		"optionValues": [
+			"Totally Agree",
+			"Agree",
+			"Partly Agree",
+			"Disagree",
+			"Totally Disagree"			
+		]
+	},
+	{
+		"id": "a10",
+		"question": "Class began and ended promptly",
+		"type": "radio",
+		"optionValues": [
+			"Totally Agree",
+			"Agree",
+			"Partly Agree",
+			"Disagree",
+			"Totally Disagree"			
+		]
+	},
+	{
+		"id": "a11",
+		"question": "The course will assist me in enrolling in employment and /or enrolling in further education",
+		"type": "radio",
+		"optionValues": [
+			"Totally Agree",
+			"Agree",
+			"Partly Agree",
+			"Disagree",
+			"Totally Disagree"			
+		]
+	},
+	{
+		"id": "a12",
+		"question": "Daily instruction is well planned",
+		"type": "radio",
+		"optionValues": [
+			"Totally Agree",
+			"Agree",
+			"Partly Agree",
+			"Disagree",
+			"Totally Disagree"			
+		]
+	},
+	{
+		"id": "a13",
+		"question": "A student organization is an integral part of instruction",
+		"type": "radio",
+		"optionValues": [
+			"Totally Agree",
+			"Agree",
+			"Partly Agree",
+			"Disagree",
+			"Totally Disagree"			
+		]
+	},
+	{
+		"id": "a14",
+		"question": "Student achievement is recognized",
+		"type": "radio",
+		"optionValues": [
+			"Totally Agree",
+			"Agree",
+			"Partly Agree",
+			"Disagree",
+			"Totally Disagree"			
+		]
+	},
+	{
+		"id": "a15",
+		"question": "What aspects of this course were most useful or valuable?",
+        "type": "text",
+		"controlCount": "1",
+        "placeHolder": "Course aspects"	
+    },
+    {
+        "id": "a16",
+        "question": "How would you improve this course?",
+        "type": "text",
+        "controlCount": "1",
+        "placeHolder": "Improve this course"
+    }
+]

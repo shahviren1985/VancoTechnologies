@@ -1,0 +1,474 @@
+﻿<!DOCTYPE html>
+<html ng-app="ExamSystemApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Marksheet | SVT</title>
+    <link href="../../Assets/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css">
+    <style>
+        /*@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);*/
+        @media print {
+            .colorRuleChrome {
+                color: #1F3C67 !important;
+            }
+
+            .ColorRedSetChrome {
+                color: red !important;
+            }
+
+            @media print and (-webkit-min-device-pixel-ratio:0) {
+                .colorRuleChrome {
+                    color: #1F3C67 !important;
+                    -webkit-print-color-adjust: exact !important;
+                }
+
+                .ColorRedSetChrome {
+                    color: red !important;
+                    -webkit-print-color-adjust: exact !important;
+                }
+            }
+        }
+
+        body {
+            font-family: 'Eras ITC';
+            font-weight: 600;
+            color: #1F3C67;
+        }
+
+        table.height26ToAllTd td {
+            height: 26px;
+            padding: 2px;
+        }
+
+        table.leftrightBorder td {
+            border-left: 1px solid #4771c6;
+        }
+
+        table.leftrightBorder tr td:first-child {
+            border-left: 0px solid #4771c6;
+        }
+
+        .ResultText {
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+            .ResultText td {
+                border-top: 2px solid #4771c6;
+            }
+
+        @media print {
+            .DivResult {
+                page-break-after: always;
+            }
+
+            #MarksheetData {
+                display: none;
+            }
+
+            #WidthYear {
+                width: 690px;
+            }
+        }
+
+        .HeadingSVT {
+            font-family: 'Eras ITC';
+            font-weight: 600;
+            color: #1F3C67;
+        }
+
+        .Heading2SmallFont {
+            font-weight: 400;
+            font-size: 19px;
+            color: black;
+            font-family: sans-serif,'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+        }
+
+        .BordredTable {
+            border-collapse: collapse;
+        }
+
+        .ThHeader {
+            font-weight: 600;
+        }
+
+        .BordredTable td, table th {
+            border: 1px solid #4771c6;
+        }
+
+        .BordredTable tr:first-child th {
+            border-top: 0;
+        }
+
+        .BordredTable tr:last-child td {
+            border-bottom: 0;
+        }
+
+        .BordredTable tr td:first-child,
+        .BordredTable tr th:first-child {
+            border-left: 0;
+        }
+
+        .BordredTable tr td:last-child,
+        .BordredTable tr th:last-child {
+            border-right: 0;
+        }
+
+        .tdHeightSet {
+            height: 25px;
+        }
+
+        @page {
+            size: A3;
+        }
+    </style>
+</head>
+<body ng-controller="MarksheetController" class="A3">
+    <div class="row" style="text-align: center" id="div_LoaderMarksheet" ng-show="!IsLoadingCompleted">
+        <img src="../../images/MarksheetLoader.gif" style="width: 10%; height: auto;" /><br />
+        <span id="marksheetStatusText">Marksheet is loading...</span>
+    </div>
+    <div id="DivHidden" class="DivResult" ng-show="IsLoadingCompleted" style="display:none">
+        <section ng-repeat="student in MarksheetData" class="sheet DivResult" style="padding:30px">
+            <article>
+                <table id="OriginalTable" style="text-align: center;width:100%;margin: 0 auto;" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td>
+                            <table id="MasterTable" style="border: 3px solid #4771c6;text-align: center;width:100%;margin: 0 auto;min-height: 1500px;" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td class="tdHeightSet colorRuleChrome" style="font-size:26px;font-weight: 800; padding-top:15px;color: #1F3C67;">SIR VITHALDAS THACKERSEY COLLEGE OF HOME SCIENCE</td>
+                                </tr>
+                                <tr>
+                                    <td class="tdHeightSet Heading2SmallFont" style="font-size:19px; padding:5px;">(AUTONOMOUS)</td>
+                                </tr>
+                                <tr>
+                                    <td class="tdHeightSet colorRuleChrome" style="font-size:26px;font-weight: 800;color: #1F3C67;">S.N.D.T.  WOMEN'S UNIVERSITY</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center;height: 1px;">
+                                        <table style="text-align: center;margin: auto;width:85%">
+                                            <tr>
+                                                <td rospan="2">
+                                                    <img style="height:125%;width:auto" src="../../MarksheetModuleJs/SVTLogo.png" />
+                                                </td>
+                                                <td style="font-size:17px">
+                                                    <table style="width:100%">
+                                                        <tr>
+                                                            <td class="Heading2SmallFont" style="color:black;font-size:18px">JUHU ROAD,  SANTACRUZ (WEST), MUMBAI- 400 049</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="Heading2SmallFont" style="font-weight: 700;padding:5px">STATEMENT  OF  MARKS</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td rospan="2">
+                                                    <img style="height:125%;width:auto" src="../../MarksheetModuleJs/SVTLogo2.png" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="tdHeightSet Heading2SmallFont" style="padding-top: 15px;">
+                                        NAME OF THE STUDENT : <span class="HeadingSVT colorRuleChrome" style="font-family:Perpetua Titling;font-size:22px">Ms.<span class="SpanNameOfStudent colorRuleChrome"> {{student.FullName}} {{student.FirstName}} {{student.FatherName}} {{student.MotherName}}</span></span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="height:99px">
+                                        <table style="font-size:10px">
+                                            <tr class="Heading2SmallFont">
+                                                <td id="WidthYear" style="width:690px"></td>
+                                                <td>
+                                                    <br />
+                                                    <table class="BordredTable" cellspacing="0" style="border: 2px solid #4771c6;text-align: center;font-size:17px">
+                                                        <tr>
+                                                            <td class="ThHeader" style="height:23px; text-align: center;width:135px; padding: 4px; padding-right: 35px; padding-left: 35px; border-right: 1px;border-bottom:1px;color:#073593">Year</td>
+                                                            <td style="text-align: center;width:90px;border-bottom:1px;"><span id="SpanSemesterYear">{{student.MarksheetYear}}</span></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="ThHeader" style="height:23px; text-align: center;border-right: 1px;color:#073593;padding: 4px;">Semester</td>
+															<td ng-if="StudentType == 'elective'" style="text-align: center;padding: 3px;padding-right: 20px;padding-left: 20px;">{{student.semesterInWord}} - Add On Credits</td>
+                                                            <td ng-if="StudentType != 'elective' && ExamType != 'ATKT'" style="text-align: center;padding: 3px;padding-right: 20px;padding-left: 20px;">{{student.semesterInWord}}</td>
+                                                            <td ng-if="StudentType != 'elective' && ExamType == 'ATKT'" style="text-align: center;padding: 3px;padding-right: 20px;padding-left: 20px;">{{student.semesterInWord}} - Repeaters</td>
+                                                        </tr>
+                                                    </table>
+                                                    <br />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <tr style="height:1px">
+                                    <td>
+                                        <table class="Heading2SmallFont BordredTable" style="width:100%;border-bottom:2px solid #4771c6;border-top:2px solid #4771c6; font-size:17px" cellspacing="0" cellpadding="0">
+                                            <tr class="ThHeader" style="color:darkblue">
+                                                <td style="width:20%;padding:2px">University  Permanent<br /> Registration No.</td>
+                                                <td style="width:15%">College Registration No.</td>
+                                                <td style="width:25%">Class</td>
+                                                <td style="width:25%">Program</td>
+                                                <td>Specialization</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-bottom: 5px;padding-top: 5px;border-top:2px solid #4771c6;">{{student.PRN}}</td>
+                                                <td style="border-top:2px solid #4771c6;">{{student.College_Registration_No_}}</td>
+                                                <td style="padding-bottom: 5px;padding-top: 5px;border-top:2px solid #4771c6;">{{student.Course}}<br /><span style="font-size:10px"></span> </td>
+                                                <td style="border-top:2px solid #4771c6;">{{student.Department}}</td>
+                                                <td style="border-top:2px solid #4771c6;">{{student.Specialisation | uppercase}}</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr style="height:25px">
+                                    <td style="height:1px"><div style=""></div></td>
+                                </tr>
+                                <tr>
+                                    <td style="height: 15px;">
+                                        <table class="Heading2SmallFont leftrightBorder height26ToAllTd" style="width:100%;border-left:0px solid #4771c6; font-size:18px;border-bottom:1px solid #4771c6;border-top:2px solid #4771c6;padding-top:2px;padding-bottom:2px" cellspacing="0" cellpadding="0">
+                                            <thead>
+                                                <tr class="ThHeader">
+                                                    <td style="width:25%;border-bottom:2px solid #4771c6;font-size:17px">SUBJECT</td>
+                                                    <td style="width:7%;border-bottom:2px solid #4771c6;font-size:15px">TH/PR</td>
+                                                    <td style="width:7%; border-bottom:2px solid #4771c6;font-size:15px">CREDITS</td>
+                                                    <td style="width:7%; border-bottom:2px solid #4771c6;font-size:15px">INTERNAL MARKS<br />(50)</td>
+                                                    <td style="width:7%; border-bottom:2px solid #4771c6;font-size:15px">FINAL MARKS<br />(50)</td>
+                                                    <td style="width:7%; border-bottom:2px solid #4771c6;font-size:15px">TOTAL MARKS<br />(100)</td>
+                                                    <td style="width:7%; border-bottom:2px solid #4771c6;font-size:15px">GRADE</td>
+                                                    <td style="width:7%; border-bottom:2px solid #4771c6;font-size:15px">WEIGHTED MARKS</td>
+                                                    <td style="width:7%; border-bottom:2px solid #4771c6;font-size:15px">GRADE POINT</td>
+                                                    <td style="width:7%; border-bottom:2px solid #4771c6;font-size:15px">TOTAL GRADE POINT</td>
+                                                    <td style="border-bottom:2px solid #4771c6;font-size:15px">REMARK</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody ng-repeat="mark in student.SubjectDetail">
+                                                <tr ng-if="mark.paperTitle=='Incentive Marks for Sports Activities' || mark.paperTitle == 'Incentive Marks for N.S.S. Activities'">
+                                                    <td style="text-align:left;padding:5px;border-bottom:1px solid #4771c6;">
+                                                        <div style="min-height: 35px;display: table;">
+                                                            <span class="{{mark.PaperCodeFromJson}}"
+                                                                  style="vertical-align: middle;line-height: normal;display: table-cell;">{{mark.paperTitle}}</span>
+                                                        </div>
+                                                    </td>
+                                                    <td style="border-bottom:1px solid #4771c6;">{{mark.paperType=="Theory" ? "TH" : "PR"}}</td>
+                                                    <td style="border-bottom:1px solid #4771c6;" class="Credit{{student.Index}}">-</td>
+                                                    <td style="border-bottom:1px solid #4771c6;">-</td>
+                                                    <td style="border-bottom:1px solid #4771c6;">-</td>
+                                                    <td style="border-bottom:1px solid #4771c6;">{{mark._FinalTotalMarks}} / 10</td>
+                                                    <td style="border-bottom:1px solid #4771c6;">&nbsp;</td>
+                                                    <td style="border-bottom:1px solid #4771c6;">&nbsp;</td>
+                                                    <td style="border-bottom:1px solid #4771c6;">&nbsp;</td>
+                                                    <td style="border-bottom:1px solid #4771c6;">&nbsp;</td>
+                                                    <td class="ColorRedSetChrome" style="border-bottom:1px solid #4771c6;color:red">{{mark._Status}}</td>
+                                                </tr>
+                                                <tr ng-if="mark.paperTitle!='Incentive Marks for Sports Activities' && mark.paperTitle != 'Incentive Marks for N.S.S. Activities'">
+                                                    <td style="text-align:left;padding:5px;border-bottom:1px solid #4771c6;">
+                                                        <div ng-if="StudentType != 'elective'" style="min-height: 35px;display: table;">
+                                                            <span class="{{mark.PaperCodeFromJson}}"
+                                                                  style="vertical-align: middle;line-height: normal;display: table-cell;">{{mark.paperTitle}}</span>
+                                                        </div>
+                                                        <div ng-if="StudentType == 'elective'" style="min-height: 35px;display: table;">
+                                                            <span class="{{mark.PaperCodeFromJson}}"
+                                                                  style="vertical-align: middle;line-height: normal;display: table-cell;">{{mark.paperTitle}}(Additional Credits)</span>
+                                                        </div>
+                                                    </td>
+                                                    <td style="border-bottom:1px solid #4771c6;">{{mark.paperType=="Theory" ? "TH" : "PR"}}</td>
+                                                    <td style="border-bottom:1px solid #4771c6;" class="Credit{{student.Index}}">{{mark.credits}}</td>
+                                                    <td style="border-bottom:1px solid #4771c6;font-size:13px" colspan="2" ng-if="mark.isContinousAssessment">Continuous Assessment</td>
+                                                    <td style="border-bottom:1px solid #4771c6;" ng-if="(mark.theoryInternalMax!=0) && (!mark.isContinousAssessment)"
+                                                        class="InternalMark{{StudentData.indexOf(student)}}">
+                                                        {{mark._FloatInternalMark == 0 ? mark._InternalMark : mark._FloatInternalMark}}
+                                                    </td>
+                                                    <td style="border-bottom:1px solid #4771c6;" ng-if="(mark.theoryInternalMax==0) &&
+                                                        (mark.isContinousAssessment!=1)">
+                                                        -
+                                                    </td>
+                                                    <td style="border-bottom:1px solid #4771c6;" ng-if="(!mark.isContinousAssessment) && (mark.practicalMaxMarks+mark.theoryExternalSection1Max+mark.theoryExternalSection2Max)>0">{{(mark._ExternalTotal + mark._FloatPracticalMark)>0?(mark._ExternalTotal + mark._FloatPracticalMark):(mark._FloatInternalMark>0?'ABS':'NP')}}</td>
+                                                    <td style="border-bottom:1px solid #4771c6;" ng-if="(!mark.isContinousAssessment) && (mark.practicalMaxMarks+mark.theoryExternalSection1Max+mark.theoryExternalSection2Max)==0" class="ExternalMark{{student.Index}}">-</td>
+
+                                                    <td style="border-bottom:1px solid #4771c6;" class="TotalMark{{student.Index}}">{{mark._FinalTotalMarks}}</td>
+                                                    <td style="border-bottom:1px solid #4771c6;">{{mark._Grade}}</td>
+                                                    <td style="border-bottom:1px solid #4771c6;">{{mark._TotalWeightedMarks}}</td>
+                                                    <td style=" border-bottom:1px solid #4771c6;" class="GradePoint{{student.Index}}">
+                                                        {{mark._TotalGrade | number : 2}}
+                                                    </td>
+                                                    <td style="border-bottom:1px solid #4771c6;" class="TotalGradePoint{{student.Index}}">
+                                                        {{mark._TotalGradePoint | number : 2}}
+                                                    </td>
+                                                    <td ng-if="ExamType != 'ATKT' || mark._Status != '*'" class="ColorRedSetChrome" style="border-bottom:1px solid #4771c6;color:red">{{mark._Status}}</td>
+                                                    <td ng-if="ExamType == 'ATKT' && mark._Status == '*'" style="border-bottom:1px solid #4771c6;">{{mark._Status}}</td>
+                                                </tr>
+												
+                                            </tbody>
+                                            <tr>
+                                                <td style="padding: 2px;text-align:left;min-height:15px"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr class="ResultText" style="height:45px">
+                                                <td style="padding: 2px; height:45px;">
+                                                    <b> TOTAL</b>
+                                                </td>
+                                                <td style=""></td>
+                                                <td style=""><b>{{student._FinalTotalCredit}}</b></td>
+                                                <td ng-if="student._FinalTotalInternalMark > 0">
+                                                    <b>{{student._FinalTotalInternalMark}} </b>
+                                                </td>
+                                                <td ng-if="student._FinalTotalInternalMark == 0">
+                                                    <b>-</b>
+                                                </td>
+                                                <td ng-if="student._FinalElectiveExternalTotal > 0">
+                                                    <b>{{student._FinalElectiveExternalTotal}}</b>
+                                                </td>
+                                                <td ng-if="student._FinalElectiveExternalTotal == 0">
+                                                    <b>-</b>
+                                                </td>
+                                                <td style="">
+                                                    <b>
+                                                        {{student.TotalAllSubjectMark}}
+                                                    </b>
+                                                </td>
+                                                <td><b>{{student._FinalPercentageGrade}}</b></td>
+                                                <td><b>{{student._FinalWeightedMarks}}</b></td>
+                                                <td ng-if="ExamType != 'ATKT'"><b>{{student._FinalTotalGrade | number : 2}}</b></td>
+                                                <td ng-if="ExamType != 'ATKT'"><b>{{student._FinalTotalGradePoint | number : 2}}</b></td>
+                                                <td ng-if="ExamType == 'ATKT'"></td>
+                                                <td ng-if="ExamType == 'ATKT'"></td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="Heading2SmallFont" style="text-align:left;padding:5px;border-bottom:2px solid #4771c6;border-top:1px solid #4771c6;height:23px">
+                                        Remarks :
+                                        <span ng-if="student.semester==6">
+                                            <span ng-if="student.FailedCredits==0">PASS</span>
+                                            <span ng-if="student.FailedCredits>0">FAIL</span>
+                                        </span>
+                                        <span ng-if="student.semester!=6">
+                                            <span ng-if="student.FailedCredits==0">PASS</span>
+                                            <span ng-if="student.FailedCredits> 0 && student.FailedCredits < 13 && ExamType != 'ATKT'">PASSES with ATKT</span>
+                                            <span ng-if="student.FailedCredits> 12">FAIL</span>
+                                            <span ng-if="student.FailedCredits < student._FinalTotalCredit && ExamType=='ATKT' && student.FailedCredits > 0">PASSES with ATKT</span>
+                                            <span ng-if="student.FailedCredits> 0 && student.FailedCredits == student._FinalTotalCredit && student.FailedCredits <= 12 && ExamType=='ATKT'">FAIL</span>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="Heading2SmallFont" style="text-align: left;padding: 2px;font-size: 12px;height: 1px;padding-top: 8px;">
+                                        <span><b>TH-Theory / PR-Practical / NP-Not Permitted / ABS-Absent / * - 2nd Attempt / ** - 3rd Attempt / *** - 4th Attempt</b></span><br />
+                                        <span ng-if="StudentType == 'elective'"><b>Additional credits earned during Semester {{student.semesterInRoman}}. Additional credits are earned above regular 120 credits.</b></span>
+                                        <!-- <span ng-if="(student.semester==3) || (student.semester==4)"><b>/ INTERNAL MARKS OUT OF 50, FINAL MARKS OUT OF 50, TOTAL MARKS OUT OF 100</b></span> -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="height:10px"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div style="text-align: left;">
+                                            <div style="display:inline-block;text-align:left;">
+                                                <table class="Heading2SmallFont" style="font-size:17px;text-align:left;">
+                                                    <tr>
+                                                        <td style="padding-left:5px">&nbsp;</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="height:16px; width:675px;"></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="text-align:left;padding:3px;padding-left:5px">&nbsp;</td>
+                                                        <td></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                            <div ng-if="StudentType != 'elective'" style="display:inline-block;text-align:left;">
+                                                <table class="BordredTable Heading2SmallFont" style="border:2px solid #4771c6; font-size:17px">
+                                                    <tr>
+                                                        <td class="ThHeader" style="padding: 3px;">Weighted Percentage</td>
+                                                        <td ng-if="student.FailedCredits> 0 || !FinalResultDisplay || ExamType == 'ATKT'" style="width:85px;padding: 3px; text-align:center"><b>-</b></td>
+                                                        <td ng-if="student.FailedCredits== 0 && FinalResultDisplay && ExamType != 'ATKT'" style="width:85px;padding: 3px; text-align:center"><b>{{student._FinalWeightedPercentage | number : 2}}</b></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="ThHeader" style="padding: 3px;">Average Grade</td>
+                                                        <td ng-if="student.FailedCredits> 0 || !FinalResultDisplay || ExamType == 'ATKT'" style="width:85px;padding: 3px; text-align:center"><b>-</b></td>
+                                                        <td ng-if="student.FailedCredits== 0 && FinalResultDisplay && ExamType != 'ATKT'" style="width:85px;padding: 3px; text-align:center"><b>{{student._FinalPercentageGrade}}</b></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="ThHeader" style="padding: 3px;">Grade Point Average</td>
+                                                        <td ng-if="student.FailedCredits> 0 || !FinalResultDisplay || ExamType == 'ATKT'" style="width:85px;padding: 3px; text-align:center"><b>-</b></td>
+                                                        <td ng-if="student.FailedCredits== 0 && FinalResultDisplay && ExamType != 'ATKT'" style="width:85px;padding: 3px; text-align:center"><b>{{student._FinalPercentageGradePoint | number : 2}}</b></td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table>
+                                            <tr>
+                                                <td style="width:645px"></td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td style="height:20px"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table class="Heading2SmallFont" style="width:100%; font-size:16px">
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <!--<img src="MarksheetModuleJs/ControllerOfExam.png" />-->
+                                                    <img style="width: 200px;" src="../../MarksheetModuleJs/ControllerOfExam.png" />
+                                                </td>
+                                                <td>
+                                                    <img style="padding:5px; width: 200px;" src="../../MarksheetModuleJs/Principal.png" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="width:30%">Date : {{date}}</td>
+                                                <td style=" width:40%">
+                                                    Controller of Examinations
+                                                </td>
+                                                <td style="width:30%">Principal</td>
+                                            </tr>
+
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+            </article>
+        </section>
+    </div>
+
+    <div>
+        <script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <script src="../../CustomJs/urlConfig.js"></script>
+        <script src="../../CustomJs/Angular.js"></script>
+        <script src="../../CustomJs/Index.js"></script>
+        <script type="text/javascript">
+            var Examapp = angular.module("ExamSystemApp", []);
+        </script>
+        <script src="../../CustomJs/AppConfig.js"></script>
+        <script src="Marksheet.controller.js"></script>
+    </div>
+</body>
+</html>

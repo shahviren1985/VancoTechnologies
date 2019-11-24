@@ -1,0 +1,144 @@
+[
+    {
+        "id": "a3",
+        "question": "Syllabus is suitable to the course",
+        "type": "radio",
+        "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+    },
+  {
+    "id": "a4",
+    "question": "Syllabus is need based",
+    "type": "radio",
+    "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a5",
+    "question": "Aims and objectives of the syllabus are well defined and clear to teachers and students",
+    "type": "radio",
+    "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a6",
+    "question": "Course content is followed by corresponding reference materials",
+    "type": "radio",
+    "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a7",
+    "question": "Sufficient number of prescribed books are available in the Library",
+    "type": "radio",
+    "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a8",
+    "question": "The course/syllabus has good balance between theory and application",
+    "type": "radio",
+    "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a9",
+    "question": "The course/syllabus has made me interested in the subject area",
+    "type": "radio",
+    "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },{
+    "id": "a10",
+    "question": "The course/syllabus of this subject increased my knowledge and perspective in the subject",
+    "type": "radio",
+    "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a11",
+    "question": "The course/programme of studies carries sufficient number of optional papers",
+    "type": "radio",
+    "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a12",
+    "question": "The books prescribed/listed as reference materials are relevant, updated and appropriate",
+    "type": "radio",
+    "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a13",
+    "question": "Have you incorporated new topics in the syllabus which you think are missing in the syllabus",
+    "type": "radio",
+    "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  }
+]

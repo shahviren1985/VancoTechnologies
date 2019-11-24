@@ -1,0 +1,143 @@
+﻿#sub
+{
+    width: 100px;
+    display: none;
+}
+
+#sub li
+{
+    margin: 5px 21px 0 -36px;
+}
+#Menus ul li a :hover
+{
+    visibility: inherit;
+}
+#Menus li a:hover
+{
+    background: #aaddaa;
+    visibility: visible;
+}
+
+#Menus, #Menus li ul
+{
+    display: inline;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: Purple;
+    color: white;
+    padding: 5px;
+}
+
+#Menus li ul
+{
+    position: absolute;
+    color: white;
+    padding: 5px;
+    display: none;
+}
+#Menus li, #menu li ul li
+{
+    display: inline;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#Menus li:hover
+{
+    background-color: Silver;
+}
+#Menus li:hover ul
+{
+    display: block;
+}
+.QuickLinksHeader
+{
+    float: left;
+    width: 270px;
+}
+.QuickLinksHeaderText
+{
+    width: 85%;
+    margin: 10px;
+    margin-bottom: 5px;
+    color: #858585 !important;
+}
+.QuickLinksHeaderText:focus
+{
+    color: #000 !important;
+    }
+.SaveButton, .CloseButton
+{
+    float: left;
+    width: 50px;
+    background-color: skyblue;
+    border: 1px solid #CCC;
+    padding: 5px;
+    margin: 10px;
+    margin-right: 0px;
+    cursor: pointer;
+}
+.CloseButton
+{
+    background-color: #DDD;
+    
+}
+#AllPageLinks
+{
+    width: 400px;
+    border: 1px solid #CCC;
+    z-index: 10000;
+    overflow: auto;
+    max-height: 300px;
+}
+.PageTable
+{
+    float: left;
+    width: 100%;
+    padding: 10px;
+}
+.Step
+{
+    display: none;
+}
+#Step1
+{
+    display: block;
+}
+#Wizard
+{
+    margin-bottom: 20px;
+}
+#WizardHeader
+{
+    float: left;
+    width: 1000px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.StepHeader
+{
+    width: 295px;
+    float: left;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #CCC;
+    background-color: #EEE;
+    cursor: pointer;
+}
+.ActiveStepHeader
+{
+    background-color: skyblue;
+    font-weight: bold;
+}
+.FooterButton
+{
+    display: block;
+    float: right;
+    clear: both;
+    margin: 20px;
+    
+}

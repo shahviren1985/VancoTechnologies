@@ -1,0 +1,226 @@
+[
+  {
+    "Specialization": "Hospitality & Tourism Management",
+    "specialisationCode": "HTM",
+    "ElectiveSubject": [
+      {
+        "Title": "TG GE",
+        "Subject": [
+          {
+            "Code": "TG102",
+            "Title": "Fundamentals of Fashion"
+          },
+          {
+            "Code": "TG101",
+            "Title": "Fashion Craft"
+          }
+        ]
+      },
+      {
+        "Title": "FG GE",
+        "Subject": [
+          {
+            "Code": "FG101",
+            "Title": "Nutrition for Health Promotion"
+          },
+          {
+            "Code": "FG102",
+            "Title": "Fundamentals of Baking"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Food Nutrition And Dietetics",
+    "specialisationCode": "FND",
+    "ElectiveSubject": [
+      {
+        "Title": "HD GE",
+        "Subject": [
+          {
+            "Code": "HG101",
+            "Title": "Personal and Professional Relationships in Adulthood"
+          },
+          {
+            "Code": "HG102",
+            "Title": "Marriage and Parenting"
+          }
+        ]
+      },
+      {
+        "Title": "RM GE",
+        "Subject": [
+          {
+            "Code": "RG101",
+            "Title": "Consumer Education and Financial Literacy"
+          },
+          {
+            "Code": "RG102",
+            "Title": "Travel Arrangements and Formalities"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Developmental Counselling",
+    "specialisationCode": "DC",
+    "ElectiveSubject": [
+      {
+        "Title": "TAD GE",
+        "Subject": [
+          {
+            "Code": "TG101",
+            "Title": "Fashion Craft"
+          },
+          {
+            "Code": "TG102",
+            "Title": "Fundamentals of Fashion"
+          }
+        ]
+      },
+      {
+        "Title": "MCE GE",
+        "Subject": [
+          {
+            "Code": "MG101",
+            "Title": "Digital Photography"
+          },
+          {
+            "Code": "MG102",
+            "Title": "Voice Culture and Modulation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Mass Communication And Extension",
+    "specialisationCode": "MCE",
+    "ElectiveSubject": [
+      {
+        "Title": "TAD GE",
+        "Subject": [
+          {
+            "Code": "TG101",
+            "Title": "Fashion Craft"
+          },
+          {
+            "Code": "TG102",
+            "Title": "Fundamentals of Fashion"
+          }
+        ]
+      },
+      {
+        "Title": "FSN GE",
+        "Subject": [
+          {
+            "Code": "FG101",
+            "Title": "Nutrition for Health Promotion"
+          },
+          {
+            "Code": "FG102",
+            "Title": "Fundamentals of Baking"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Textiles And Apparel Designing",
+    "specialisationCode": "TAD",
+    "ElectiveSubject": [
+      {
+        "Title": "HD GE",
+        "Subject": [
+          {
+            "Code": "HG101",
+            "Title": "Personal and Professional Relationships in Adulthood"
+          },
+          {
+            "Code": "HG102",
+            "Title": "Marriage and Parenting"
+          }
+        ]
+      },
+      {
+        "Title": "MCE GE",
+        "Subject": [
+          {
+            "Code": "MG101",
+            "Title": "Digital Photography"
+          },
+          {
+            "Code": "MG102",
+            "Title": "Voice Culture and Modulation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Early Childhood Care And Education",
+    "specialisationCode": "ECCE",
+    "ElectiveSubject": [
+      {
+        "Title": "TAD GE",
+        "Subject": [
+          {
+            "Code": "TG101",
+            "Title": "Fashion Craft"
+          },
+          {
+            "Code": "TG102",
+            "Title": "Fundamentals of Fashion"
+          }
+        ]
+      },
+      {
+        "Title": "MCE GE",
+        "Subject": [
+          {
+            "Code": "MG101",
+            "Title": "Digital Photography"
+          },
+          {
+            "Code": "MG102",
+            "Title": "Voice Culture and Modulation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Interior Design & Resource Management",
+    "specialisationCode": "IDRM",
+    "ElectiveSubject": [
+      {
+        "Title": "TAD GE",
+        "Subject": [
+          {
+            "Code": "TG101",
+            "Title": "Fashion Craft"
+          },
+          {
+            "Code": "TG102",
+            "Title": "Fundamentals of Fashion"
+          }
+        ]
+      },
+      {
+        "Title": "FND GE",
+        "Subject": [
+          {
+            "Code": "FG101",
+            "Title": "Nutrition for Health Promotion"
+          },
+          {
+            "Code": "FG102",
+            "Title": "Fundamentals of Baking"
+          }
+        ]
+      }
+    ]
+  }
+]

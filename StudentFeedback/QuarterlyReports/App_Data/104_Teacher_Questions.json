@@ -1,0 +1,207 @@
+[
+	{
+		"id": "a1",
+		"question": "Department",
+		"type": "radio",
+		"optionValues": [
+			"1 - Food and Nutrition",
+			"2 - Human Development",
+			"3 - Mass Communication and Extension",
+			"4 - Resource Management",
+			"5 - Textiles and Apparel Design",
+			"6 - English/Science"
+		]
+	},
+	{
+		"id": "a2",
+		"question": "Specialization",
+		"type": "radio",
+		"optionValues": [
+			"1 - Developmental Counselling",
+			"2 - Early Childhood Care and Education",
+			"3 - Food, Nutrition and Dietetics",
+			"4 - Hospitality and Tourism Management",
+			"5 - Interior Design and Resource Management",
+			"6 - Mass Communication and Extension",
+			"7 - Textiles and Apparel Design"
+		]
+	},
+	{
+		"id": "a3",
+		"question": "Full Name Of Faculty",
+		"type": "text",
+		"controlCount": "1",
+		"placeHolder": "Faculty Full Name"
+	},
+	{
+		"id": "a4",
+		"question": "Designation",
+		"type": "text",
+		"controlCount": "1",
+		"placeHolder": "Designation"
+	},
+	{
+		"id": "a5",
+		"question": "To what extent have you been involved in the planning of the curriculum for the restructured course?",
+		"type": "radio",
+		"optionValues": [
+			"1 - Not involved",
+			"2 - To a small extent",
+			"3 - To some extent",
+			"4 - To a great extent"
+		]
+	},
+	{
+		"id": "a6",
+		"question": "The restructured syllabus has improved the overall course content of the B.Sc. programme?",
+		"type": "radio",
+		"optionValues": [
+			"1 - Strongly disagree",
+			"2 - Disagree",
+			"3 - Unsure",
+			"4 - Agree",
+			"5 - Strongly agree"
+		]
+	},
+	{
+		"id": "a7",
+		"question": "You have observed that course content has created an interest in the subject for students",
+		"type": "radio",
+		"optionValues": [
+			"1 - Strongly disagree",
+			"2 - Disagree",
+			"3 - Unsure",
+			"4 - Agree",
+			"5 - Strongly agree"
+		]
+	},
+	{
+		"id": "a8",
+		"question": "You have observed that course have become more career oriented",
+		"type": "radio",
+		"optionValues": [
+			"1 - Strongly disagree",
+			"2 - Disagree",
+			"3 - Unsure",
+			"4 - Agree",
+			"5 - Strongly agree"
+		]
+	},
+	{
+		"id": "a9",
+		"question": "You have observed that course content has created focused approach in students towards education",
+		"type": "radio",
+		"optionValues": [
+			"1 - Strongly disagree",
+			"2 - Disagree",
+			"3 - Unsure",
+			"4 - Agree",
+			"5 - Strongly agree"
+		]
+	},
+	{
+		"id": "a10",
+		"question": "You have observed that course content has enhanced abilities through development of vocation skills",
+		"type": "radio",
+		"optionValues": [
+			"1 - Strongly disagree",
+			"2 - Disagree",
+			"3 - Unsure",
+			"4 - Agree",
+			"5 - Strongly agree"
+		]
+	},
+	{
+		"id": "a11",
+		"question": "You have observed that course content has enhanced leadership qualities in students through taking up responsibilities",
+		"type": "radio",
+		"optionValues": [
+			"1 - Strongly disagree",
+			"2 - Disagree",
+			"3 - Unsure",
+			"4 - Agree",
+			"5 - Strongly agree"
+		]
+	},
+	{
+		"id": "a12",
+		"question": "You have observed that course content has improved the decision making qualities in students ",
+		"type": "radio",
+		"optionValues": [
+			"1 - Strongly disagree",
+			"2 - Disagree",
+			"3 - Unsure",
+			"4 - Agree",
+			"5 - Strongly agree"
+		]
+	},
+	{
+		"id": "a13",
+		"question": "You have observed that course content have helped students to widen the knowledge base through generic electives in Home science",
+		"type": "radio",
+		"optionValues": [
+			"1 - Strongly disagree",
+			"2 - Disagree",
+			"3 - Unsure",
+			"4 - Agree",
+			"5 - Strongly agree"
+		]
+	},
+	{
+		"id": "a14",
+		"question": "You have observed that course content have helped students to widen the knowledge base through core courses",
+		"type": "radio",
+		"optionValues": [
+			"1 - Strongly disagree",
+			"2 - Disagree",
+			"3 - Unsure",
+			"4 - Agree",
+			"5 - Strongly agree"
+		]
+	},
+	{
+		"id": "a15",
+		"question": "You have observed that course content have helped students to widen the knowledge base through discipline specific courses",
+		"type": "radio",
+		"optionValues": [
+			"1 - Strongly disagree",
+			"2 - Disagree",
+			"3 - Unsure",
+			"4 - Agree",
+			"5 - Strongly agree"
+		]
+	},
+	{
+		"id": "a16",
+		"question": "Curriculum inputs of B.Sc. programme offered by the institution are up to the mark for a student to be competent in the field of specialization",
+		"type": "radio",
+		"optionValues": [
+			"1 - Strongly disagree",
+			"2 - Disagree",
+			"3 - Unsure",
+			"4 - Agree",
+			"5 - Strongly agree"
+		]
+	},
+	{
+		"id": "a17",
+		"question": "In what ways can the curriculum be made better? Give your suggestions",
+		"type": "text",
+		"controlCount": "1",
+		"placeHolder": "Suggestions"
+	},
+	{
+		"id": "a18",
+		"question": "Give your suggestions",
+		"type": "text",
+		"controlCount": "1",
+		"placeHolder": "Suggestions"
+	},
+	{
+		"id": "a19",
+		"question": "Any other comments",
+		"type": "text",
+		"controlCount": "1",
+		"placeHolder": "Comments"
+	}
+]

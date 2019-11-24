@@ -1,0 +1,301 @@
+[
+    {
+        "id": "a2",
+        "question": "LEADERSHIP SKILLS - ARTICULATES A CLEAR VISION OR DIRECTION FOR THE FUTURE",
+        "type": "radio",
+        "optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+    },
+  {
+    "id": "a3",
+    "question": "LEADERSHIP SKILLS - IS AN EFFECTIVE, PROFESSIONAL ROLE MODEL",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a4",
+    "question": "LEADERSHIP SKILLS - DEMONSTRATES INTEGRITY",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a5",
+    "question": "LEADERSHIP SKILLS - TRUSTWORTHY",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a6",
+    "question": "LEADERSHIP SKILLS - IS ABLE TO MOTIVATE PEOPLE",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a7",
+    "question": "ADMINISTRATION SKILLS - ARTICULATES AND CLARIFIES IMPORTANT POLICIES",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a8",
+    "question": "ADMINISTRATION SKILLS - PLANS AND ORGANIZES EFFECTIVELY",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },{
+    "id": "a9",
+    "question": "ADMINISTRATION SKILLS - GETS THINGS DONE IN A TIMELY MANNER",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a10",
+    "question": "ADMINISTRATION SKILLS - FOCUSES ON OBJECTIVES AND RESULTS",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a11",
+    "question": "ADMINISTRATION SKILLS - INVOLVES AND EMPOWERS OTHERS",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a12",
+    "question": "ADMINISTRATION SKILLS - DELEGATES EFFECTIVELY",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a13",
+    "question": "ADMINISTRATION SKILLS - DEMONSTRATES EFFECTIVE PROBLEM-SOLVING",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a14",
+    "question": "ADMINISTRATION SKILLS - DOES NOT GIVE UP IN DIFFICULT SITUATIONS",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a15",
+    "question": "ADMINISTRATION SKILLS - PLANS EFFECTIVE MEETINGS",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a16",
+    "question": "ADMINISTRATION SKILLS - LEADS AND FACILITATES EFFECTIVE MEETINGS",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a17",
+    "question": "ADMINISTRATION SKILLS - ENCOURAGES AND SUPPORTS INNOVATION AND NEW IDEAS",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a18",
+    "question": "ADMINISTRATION SKILLS - PROMOTES A FAVORABLE ENVIRONMENT FOR PROFESSIONAL DEVELOPMENT",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a19",
+    "question": "COMMUNICATION AND INTERPERSONAL SKILLS - IS AVAILABLE AND ACCESSIBLE",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a20",
+    "question": "COMMUNICATION AND INTERPERSONAL SKILLS - CONSIDERS VIEWS THAT ARE CONTRARY TO HIS/HER OWN VIEWS",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a21",
+    "question": "COMMUNICATION AND INTERPERSONAL SKILLS - CONSIDERS CONSTRUCTIVE CRITICISM",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a22",
+    "question": "COMMUNICATION AND INTERPERSONAL SKILLS - DEVELOPS AND MAINTAINS EFFECTIVE WORKING RELATIONSHIP WITH OTHERS",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a23",
+    "question": "COMMUNICATION AND INTERPERSONAL SKILLS - RECOGNIZES EXPERTISE AND MAKES USE OF THE THOUGHTS, IDEAS, AND INFORMATION OF OTHERS",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a24",
+    "question": "COMMUNICATION AND INTERPERSONAL SKILLS - LISTENS ACTIVELY AND ACKNOWLEDGES COMMUNICATION",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a25",
+    "question": "COMMUNICATION AND INTERPERSONAL SKILLS - PUTS OTHERS AT EASE THROUGH APPROPRIATE HUMOR, EFFECTIVE LISTENING, AND ACCEPTANCE OF DIFFRENCES",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a26",
+    "question": "COMMUNICATION AND INTERPERSONAL SKILLS - MAINTAINS OBJECTIVITY AND DEMONSTRATES EFFECTIVE CONFLICT RESOLUTION SKILLS",
+    "type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  }
+]

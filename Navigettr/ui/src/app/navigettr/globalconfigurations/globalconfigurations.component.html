@@ -1,0 +1,147 @@
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-header">
+        <h4>Global Configurations</h4>
+        <div class="an-desird"></div>
+      </div>
+      <div class="navi-Success">
+        <alert></alert>
+      </div>
+      <ngx-loading
+        [show]="loading"
+        [config]="{ backdropBorderRadius: '3px' }"
+        [template]="customLoadingTemplate"
+      ></ngx-loading>
+      <div class="card-body an-card-body">
+        <div class="form-group">
+          <label for="from" class="col-form-label">Display Offer to user</label>
+          <select (change)="offerSelectionChanged($event)" class="form-control">
+            <!-- <option value="">Offer counter 1 to 10</option> -->
+            <option
+              *ngFor="let data of offerCounters; let i = index"
+              [selected]="data.name === offerValue"
+            >
+              {{ data.name }}
+            </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Activate Redirect Links to Partner Website</p>
+          <input
+            (click)="redirectChanged('true')"
+            type="radio"
+            value="true"
+            [(ngModel)]="redirectValue"
+          />
+          <span>Yes</span>
+          <input
+            (click)="redirectChanged('false')"
+            type="radio"
+            value="false"
+            [(ngModel)]="redirectValue"
+          />
+          <span>No</span>
+        </div>
+
+        <table class="table table-bordered table-striped table-sm">
+          <thead>
+            <tr>
+              <td>
+                <h4></h4>
+              </td>
+              <th>Monthly</th>
+              <th>Quarterly</th>
+              <th>Annually</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let charge of partnerChargeUI; let i = index">
+              <td>{{ charge.category }} Charges</td>
+              <td>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    [(ngModel)]="charge.monthlyCharges"
+                    (change)="
+                      onMonthlyChargeChange(
+                        charge.category,
+                        $event.target.value
+                      )
+                    "
+                    placeholder="Monthly {{ charge.category }} charge"
+                  />
+                  <div
+                    *ngIf="charge.monthlyCharges == ''"
+                    class="alert alert-danger"
+                  >
+                    <div [hidden]="charge.monthlyCharges != ''">
+                      {{ charge.category }} monthly charge is required
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    [(ngModel)]="charge.quaterlyCharges"
+                    (change)="
+                      onQuaterlyChargeChange(
+                        charge.category,
+                        $event.target.value
+                      )
+                    "
+                    placeholder="Quaterly {{ charge.category }} charge"
+                  />
+                  <div
+                    *ngIf="charge.quaterlyCharges == ''"
+                    class="alert alert-danger"
+                  >
+                    <div [hidden]="charge.quaterlyCharges != ''">
+                      {{ charge.category }} quarter charge is required
+                    </div>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    [(ngModel)]="charge.annuallyCharges"
+                    (change)="
+                      onAnnuallyChargeChange(
+                        charge.category,
+                        $event.target.value
+                      )
+                    "
+                    placeholder="Annually {{ charge.category }} charge"
+                  />
+                  <div
+                    *ngIf="charge.annuallyCharges == ''"
+                    class="alert alert-danger"
+                  >
+                    <div [hidden]="charge.annuallyCharges != ''">
+                      {{ charge.category }} annual charge is required
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button
+          type="button"
+          class="btn btn-primary"
+          (click)="onSubmit()"
+          [disabled]="partnerChargeUI.length === '0'"
+        >
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

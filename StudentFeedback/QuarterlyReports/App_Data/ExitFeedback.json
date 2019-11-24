@@ -1,0 +1,402 @@
+{
+  "General": [
+    {
+      "id": "a1",
+      "question": "What do you plan to do after completion of your graduation?",
+      "type": "radio",
+      "optionValues": [
+        "1 - Study further",
+        "2 - Work",
+        "3 - Any other"
+      ]
+    },
+    {
+      "id": "a2",
+      "question": "Most Valuable",
+      "type": "radio",
+      "optionValues": [
+        "1 - Psychology",
+        "2 - Sociology",
+        "3 - C.D.",
+        "4 - F.N.",
+        "5 - History",
+        "6 - Gujarati",
+        "7 - Economics",
+        "8 - Hindi",
+        "9 - English",
+        "10 - Travel & Tourism",
+        "11 - Secretarial Practice",
+        "12 - Commerce",
+        "13 - Advertising"
+      ]
+    },
+    {
+      "id": "a2",
+      "question": "Valuable",
+      "type": "radio",
+      "optionValues": [
+        "1 - Psychology",
+        "2 - Sociology",
+        "3 - C.D.",
+        "4 - F.N.",
+        "5 - History",
+        "6 - Gujarati",
+        "7 - Economics",
+        "8 - Hindi",
+        "9 - English",
+        "10 - Travel & Tourism",
+        "11 - Secretarial Practice",
+        "12 - Commerce",
+        "13 - Advertising"
+      ]
+    },
+    {
+      "id": "a2",
+      "question": "Less Valuable",
+      "type": "radio",
+      "optionValues": [
+        "1 - Psychology",
+        "2 - Sociology",
+        "3 - C.D.",
+        "4 - F.N.",
+        "5 - History",
+        "6 - Gujarati",
+        "7 - Economics",
+        "8 - Hindi",
+        "9 - English",
+        "10 - Travel & Tourism",
+        "11 - Secretarial Practice",
+        "12 - Commerce",
+        "13 - Advertising"
+      ]
+    },
+    {
+      "id": "a4",
+      "question": "Would you like to keep in touch with the institute after you leave it?",
+      "type": "radio",
+      "optionValues": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "id": "a5",
+      "question": "What was your experience with the administration of the institute?",
+      "type": "radio",
+      "optionValues": [
+        "Positive experience (good)",
+        "Negative experience (not good)"
+      ]
+    },
+    {
+      "id": "a7",
+      "question": "Did you participate in extracurricular activities?",
+      "type": "radio",
+      "optionValues": [
+        "Yes",
+        "No",
+        "N.A."
+      ]
+    }
+  ],
+  "Canteen": [
+    {
+      "id": "a1",
+      "question": "Quality of food",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    },
+    {
+      "id": "a2",
+      "question": "Price of food",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    },
+    {
+      "id": "a3",
+      "question": "Variety of food",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    },
+    {
+      "id": "a4",
+      "question": "Service",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    },
+    {
+      "id": "a5",
+      "question": "Hygiene",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    }
+  ],
+  "Library": [
+    {
+      "id": "a1",
+      "question": "Book availability",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    },
+    {
+      "id": "a2",
+      "question": "Staff helpfulness in getting book",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    },
+    {
+      "id": "a3",
+      "question": "Adequate space/seating",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    },
+    {
+      "id": "a4",
+      "question": "Library timing",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    },
+    {
+      "id": "a5",
+      "question": "Frequency of your library visits",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    }
+  ],
+  "Office": [
+    {
+      "id": "a1",
+      "question": "Co-Operation",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    },
+    {
+      "id": "a2",
+      "question": "Information (Adequate Communication)",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    },
+    {
+      "id": "a3",
+      "question": "Timelines",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    },
+    {
+      "id": "a4",
+      "question": "Politeness (Courtesy)",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    }
+  ],
+  "Gym/Fitness Center": [
+    {
+      "id": "a1",
+      "question": "Timing",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    },
+    {
+      "id": "a2",
+      "question": "Environment",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    },
+    {
+      "id": "a3",
+      "question": "Equipment",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    },
+    {
+      "id": "a4",
+      "question": "Training",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    }
+  ],
+  "Sport": [
+    {
+      "id": "a1",
+      "question": "Facilities",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    },
+    {
+      "id": "a2",
+      "question": "Equipment",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    },
+    {
+      "id": "a3",
+      "question": "Training",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    }
+  ],
+  "Health Services": [
+    {
+      "id": "a1",
+      "question": "Regular of health check-up",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    },
+    {
+      "id": "a2",
+      "question": "Availabilities of emergency medical facilities",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    },
+    {
+      "id": "a3",
+      "question": "Quality of Psychological counseling service provided",
+      "type": "radio",
+      "optionValues": [
+        "1 - Excellent",
+        "2 - Good",
+        "3 - Average",
+        "4 - Poor",
+        "5 - Very Poor"
+      ]
+    }
+  ]
+}

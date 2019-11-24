@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    tools:context=".Fragment.HomeFragment">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_tabview"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/color_light_grey"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/tabview_text_icon"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/tabview_text_icon"
+        app:tabTextAppearance="@style/MyCustomTabText" />
+
+    <LinearLayout
+        android:id="@+id/LL_currentLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="7dp"
+        android:weightSum="1"
+        app:layout_constraintTop_toBottomOf="@+id/tl_tabview">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/currentlocation_blue" />
+
+            <TextView
+                android:id="@+id/tv_locationdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/searching_loc"
+                android:maxLines="1"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/font_size_14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.2">
+
+            <ImageView
+                android:id="@+id/ic_changelocation"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_edit_location" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LL_currentLocation" />
+
+</android.support.constraint.ConstraintLayout>

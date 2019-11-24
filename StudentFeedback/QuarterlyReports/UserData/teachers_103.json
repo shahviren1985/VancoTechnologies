@@ -1,0 +1,496 @@
+[{
+	"teacherCode": "FD01",
+	"teacherName": "Mansi Pandya",
+	"subjectCode": "FDI01",
+	"subjectName": "CAD",
+	"course": "Fashion Designing",
+	"subCourse": "Ist Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "FD01",
+	"teacherName": "Mansi Pandya",
+	"subjectCode": "FDI02",
+	"subjectName": "Pattern Making",
+	"course": "Fashion Designing",
+	"subCourse": "Ist Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "FD01",
+	"teacherName": "Mansi Pandya",
+	"subjectCode": "FDI03",
+	"subjectName": "Surface Ornamentation",
+	"course": "Fashion Designing",
+	"subCourse": "Ist Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "FD02",
+	"teacherName": "Ganesh Todankar",
+	"subjectCode": "FDI04",
+	"subjectName": "Illustration",
+	"course": "Fashion Designing",
+	"subCourse": "Ist Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "FD03",
+	"teacherName": "Sajid Momin",
+	"subjectCode": "FDI05",
+	"subjectName": "Garment Constrction",
+	"course": "Fashion Designing",
+	"subCourse": "Ist Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "FD04",
+	"teacherName": "Sanjiv Kulkarni",
+	"subjectCode": "FDI06",
+	"subjectName": "Textiles",
+	"course": "Fashion Designing",
+	"subCourse": "Ist Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "FD05",
+	"teacherName": "Gurleen Kaur",
+	"subjectCode": "FDI07",
+	"subjectName": "Fashion Theory",
+	"course": "Fashion Designing",
+	"subCourse": "Ist Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "FD01",
+	"teacherName": "Mansi Pandya",
+	"subjectCode": "FDIII01",
+	"subjectName": "Pattern Making",
+	"course": "Fashion Designing",
+	"subCourse": "2nd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "FD01",
+	"teacherName": "Mansi Pandya",
+	"subjectCode": "FDIII02",
+	"subjectName": "CAD",
+	"course": "Fashion Designing",
+	"subCourse": "2nd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "FD01",
+	"teacherName": "Mansi Pandya",
+	"subjectCode": "FDIII03",
+	"subjectName": "Indian traditional Fashion",
+	"course": "Fashion Designing",
+	"subCourse": "2nd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "FD01",
+	"teacherName": "Mansi Pandya",
+	"subjectCode": "FDIII04",
+	"subjectName": "Surface Ornamentation",
+	"course": "Fashion Designing",
+	"subCourse": "2nd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "FD02",
+	"teacherName": "Ganesh Todankar",
+	"subjectCode": "FDIII05",
+	"subjectName": "Illustration",
+	"course": "Fashion Designing",
+	"subCourse": "2nd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "FD03",
+	"teacherName": "Sajid Momin",
+	"subjectCode": "FDIII06",
+	"subjectName": "Garment Constrction",
+	"course": "Fashion Designing",
+	"subCourse": "2nd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "FD04",
+	"teacherName": "Sanjiv Kulkarni",
+	"subjectCode": "FDIII07",
+	"subjectName": "Textiles",
+	"course": "Fashion Designing",
+	"subCourse": "2nd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "FD01",
+	"teacherName": "Mansi Pandya",
+	"subjectCode": "FDV01",
+	"subjectName": "CAD",
+	"course": "Fashion Designing",
+	"subCourse": "3rd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "FD01",
+	"teacherName": "Mansi Pandya",
+	"subjectCode": "FDV02",
+	"subjectName": "Surface Ornamentation",
+	"course": "Fashion Designing",
+	"subCourse": "3rd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "FD01",
+	"teacherName": "Mansi Pandya",
+	"subjectCode": "FDV03",
+	"subjectName": "Pattern Making",
+	"course": "Fashion Designing",
+	"subCourse": "3rd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "FD02",
+	"teacherName": "Ganesh Todankar",
+	"subjectCode": "FDV04",
+	"subjectName": "Illustration",
+	"course": "Fashion Designing",
+	"subCourse": "3rd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "FD03",
+	"teacherName": "Sajid Momin",
+	"subjectCode": "FDV05",
+	"subjectName": "Garment Constrction",
+	"course": "Fashion Designing",
+	"subCourse": "3rd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "FD04",
+	"teacherName": "Sanjiv Kulkarni",
+	"subjectCode": "FDV06",
+	"subjectName": "Textiles",
+	"course": "Fashion Designing",
+	"subCourse": "3rd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "FD05",
+	"teacherName": "Gurleen Kaur",
+	"subjectCode": "FDV07",
+	"subjectName": "History of Fashion",
+	"course": "Fashion Designing",
+	"subCourse": "3rd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "FD05",
+	"teacherName": "Gurleen Kaur",
+	"subjectCode": "FDV08",
+	"subjectName": "Branding & marketing",
+	"course": "Fashion Designing",
+	"subCourse": "3rd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "ID01",
+	"teacherName": "Surabhi Samant",
+	"subjectCode": "IDI01",
+	"subjectName": "Basic Design",
+	"course": "Interior Designing",
+	"subCourse": "Ist Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "ID01",
+	"teacherName": "Surabhi Samant",
+	"subjectCode": "IDI02",
+	"subjectName": "Construction",
+	"course": "Interior Designing",
+	"subCourse": "Ist Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "ID01",
+	"teacherName": "Surabhi Samant",
+	"subjectCode": "IDI03",
+	"subjectName": "Graphic Design",
+	"course": "Interior Designing",
+	"subCourse": "Ist Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "ID01",
+	"teacherName": "Surabhi Samant",
+	"subjectCode": "IDI04",
+	"subjectName": "Services",
+	"course": "Interior Designing",
+	"subCourse": "Ist Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "ID01",
+	"teacherName": "Surabhi Samant",
+	"subjectCode": "IDI05",
+	"subjectName": "Materials",
+	"course": "Interior Designing",
+	"subCourse": "Ist Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "ID02",
+	"teacherName": "Xavier Lobo",
+	"subjectCode": "IDI06",
+	"subjectName": "Computers",
+	"course": "Interior Designing",
+	"subCourse": "Ist Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "ID01",
+	"teacherName": "Surabhi Samant",
+	"subjectCode": "IDIII01",
+	"subjectName": "Interior Design",
+	"course": "Interior Designing",
+	"subCourse": "2nd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "ID01",
+	"teacherName": "Surabhi Samant",
+	"subjectCode": "IDIII02",
+	"subjectName": "Construction",
+	"course": "Interior Designing",
+	"subCourse": "2nd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "ID01",
+	"teacherName": "Surabhi Samant",
+	"subjectCode": "IDIII03",
+	"subjectName": "Services",
+	"course": "Interior Designing",
+	"subCourse": "2nd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "ID01",
+	"teacherName": "Surabhi Samant",
+	"subjectCode": "IDIII04",
+	"subjectName": "Materials",
+	"course": "Interior Designing",
+	"subCourse": "2nd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "ID01",
+	"teacherName": "Surabhi Samant",
+	"subjectCode": "IDIII05",
+	"subjectName": "Professional Practice",
+	"course": "Interior Designing",
+	"subCourse": "2nd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "ID02",
+	"teacherName": "Xavier Lobo",
+	"subjectCode": "IDIII06",
+	"subjectName": "Computers",
+	"course": "Interior Designing",
+	"subCourse": "2nd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "ID01",
+	"teacherName": "Surabhi Samant",
+	"subjectCode": "IDV01",
+	"subjectName": "Display Design",
+	"course": "Interior Designing",
+	"subCourse": "3rd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "ID01",
+	"teacherName": "Surabhi Samant",
+	"subjectCode": "IDV02",
+	"subjectName": "Materials",
+	"course": "Interior Designing",
+	"subCourse": "3rd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "ID02",
+	"teacherName": "Xavier Lobo",
+	"subjectCode": "IDV03",
+	"subjectName": "Computers",
+	"course": "Interior Designing",
+	"subCourse": "3rd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "ID03",
+	"teacherName": "Priya Hakim",
+	"subjectCode": "IDV04",
+	"subjectName": "Interior Design",
+	"course": "Interior Designing",
+	"subCourse": "3rd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "ID03",
+	"teacherName": "Priya Hakim",
+	"subjectCode": "IDV05",
+	"subjectName": "Construction",
+	"course": "Interior Designing",
+	"subCourse": "3rd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "ID03",
+	"teacherName": "Priya Hakim",
+	"subjectCode": "IDV06",
+	"subjectName": "Furniture Design",
+	"course": "Interior Designing",
+	"subCourse": "3rd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "EC01",
+	"teacherName": "Devangi Vakharia",
+	"subjectCode": "ECI01",
+	"subjectName": "Child Development",
+	"course": "P.G. ECCE",
+	"subCourse": "Regular",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "EC02",
+	"teacherName": "Purvi Karelia",
+	"subjectCode": "ECI02",
+	"subjectName": "Preschool Organization & management",
+	"course": "P.G. ECCE",
+	"subCourse": "Regular",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "EC02",
+	"teacherName": "Purvi Karelia",
+	"subjectCode": "ECI03",
+	"subjectName": "Curriculum Planning",
+	"course": "P.G. ECCE",
+	"subCourse": "Regular",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "EC03",
+	"teacherName": "Jaya Rajdev",
+	"subjectCode": "ECI04",
+	"subjectName": "Professional Development",
+	"course": "P.G. ECCE",
+	"subCourse": "Regular",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "EC03",
+	"teacherName": "Jaya Rajdev",
+	"subjectCode": "ECI01",
+	"subjectName": "Child Development",
+	"course": "P.G. ECCE",
+	"subCourse": "Regular",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "EC03",
+	"teacherName": "Jaya Rajdev",
+	"subjectCode": "ECI05",
+	"subjectName": "Preschool Organization & management",
+	"course": "P.G. ECCE",
+	"subCourse": "Regular",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "DEC01",
+	"teacherName": "Purvi Karelia",
+	"subjectCode": "DECI01",
+	"subjectName": "ECCE",
+	"course": "Diploma in ECCE",
+	"subCourse": "Regular",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "DEC02",
+	"teacherName": "Jaya Rajdev",
+	"subjectCode": "DECI02",
+	"subjectName": "ECCE",
+	"course": "Diploma in ECCE",
+	"subCourse": "Regular",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BA01",
+	"teacherName": "Viny Shelar",
+	"subjectCode": "BAI01",
+	"subjectName": "Banking",
+	"course": "Banking",
+	"subCourse": "Ist Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BA02",
+	"teacherName": "Zeba Shaikh",
+	"subjectCode": "BAIII02",
+	"subjectName": "Banking",
+	"course": "Banking",
+	"subCourse": "IInd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "CO01",
+	"teacherName": "Kiran Sheth",
+	"subjectCode": "COI01",
+	"subjectName": "Counselling",
+	"course": "Counselling",
+	"subCourse": "Ist Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "CO01",
+	"teacherName": "Kiran Sheth",
+	"subjectCode": "COIII01",
+	"subjectName": "Counselling",
+	"course": "Counselling",
+	"subCourse": "IInd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "NW01",
+	"teacherName": "Heli Jotania",
+	"subjectCode": "NWI01",
+	"subjectName": "Nutrition & Wellness",
+	"course": "Nutrition & Wellness",
+	"subCourse": "Ist Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "NW01",
+	"teacherName": "Heli Jotania",
+	"subjectCode": "NWIII01",
+	"subjectName": "Nutrition & Wellness",
+	"course": "Nutrition & Wellness",
+	"subCourse": "IInd Year",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "HS01",
+	"teacherName": "Aasha Parekh",
+	"subjectCode": "HSI01",
+	"subjectName": "Home Science",
+	"course": "Home Science",
+	"subCourse": "Regular",
+	"semester": "Odd"
+}
+]

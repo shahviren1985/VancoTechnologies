@@ -1,0 +1,122 @@
+[
+	{
+		"course": "F.Y.B.A.",
+		"excel": "K",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "S.Y.B.A.",
+		"excel": "L",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "T.Y.B.A.",
+		"excel": "M",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "F.Y.B.COM.",
+		"excel": "N",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "S.Y.B.COM.",
+		"excel": "O",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "T.Y.B.COM.",
+		"excel": "P",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "F.Y.B.M.S.",
+		"excel": "Q",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "S.Y.B.M.S.",
+		"excel": "R",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "T.Y.B.M.S.",
+		"excel": "S",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "F.Y.B.C.A.",
+		"excel": "T",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "S.Y.B.C.A.",
+		"excel": "U",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "T.Y.B.C.A.",
+		"excel": "V",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "F.Y.B.A.F.I.",
+		"excel": "W",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "S.Y.B.A.F.I.",
+		"excel": "X",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "T.Y.B.A.F.I.",
+		"excel": "Y",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "F.Y.B.M.M.",
+		"excel": "Z",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "S.Y.B.M.M.",
+		"excel": "AA",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "T.Y.B.M.M.",
+		"excel": "AB",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "M.C.O.M.",
+		"excel": "AC",
+		"table": "tbluser",
+		"column": "subcourse"
+	},
+	{
+		"course": "M.A.",
+		"excel": "AD",
+		"table": "tbluser",
+		"column": "subcourse"
+	}
+]

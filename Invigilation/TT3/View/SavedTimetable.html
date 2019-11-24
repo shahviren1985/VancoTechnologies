@@ -1,0 +1,52 @@
+﻿
+<script src="https://rawgit.com/unconditional/jquery-table2excel/master/src/jquery.table2excel.js"></script>
+
+<main class="app-content">
+    <div class="row">
+        <div class="app-title">
+            <div class="row" style="width: 100%;">
+                <div class="col-md-6">
+                    <h1><i class="fa fa-print"></i> Print TimeTable</h1>
+                    <p><!--Modify current professor list--></p>
+                </div>
+                <div class="col-md-4">
+                    <select class="form-control" data-validation="required" id="dd_ExamName"></select>
+                </div>
+                <div class="col-md-2">
+                    <button class="btn btn-primary" ng-click="GetTimeTable()" style="color:white"><i class="fa fa-lg fa-calendar-plus-o" style="margin-top: -3px;"></i> Get TimeTable</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-12" id="TimeTableArea" style="display:none">
+            <div class="tile" style="padding-bottom:65px">
+                <div class="overlay">
+                    <div class="m-loader mr-4">
+                        <svg class="m-circular" viewBox="25 25 50 50">
+                            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="l-text">Loading</h3>
+                </div>
+                <div class="tile-body">
+                    <div style="overflow: auto; overflow-y: hidden;">
+                        <table class="table table-hover table-bordered" id="sampleTable">
+                            <tbody id="tbodyOfExamList" style="text-align: center;"></tbody>
+                        </table>
+                        <table class="table table-hover table-bordered" id="PrintTable" style="display:none">
+                            <tbody id="PrinntBody" style="text-align: center;"></tbody>
+                        </table>
+                    </div>
+                    <div style="float:right; margin-top:15px">
+                        <button class="btn btn-primary" ng-click="PrintTimeTable()" style="color:white"><i class="fa fa-lg fa-print" style="margin-top: -3px;"></i> Print</button>
+                        <!--<a class="btn btn-primary" onclick="tablesToExcel(['PrintTable'], ['TimeTable'], 'TimeTableExported.xls', 'Excel')" style="color:white"><i class="fa fa-lg fa-file-excel-o" style="margin-top: -3px;"></i> Download</a>-->
+                        <a class="btn btn-primary" onclick="tableToExcel()" style="color:white"><i class="fa fa-lg fa-file-excel-o" style="margin-top: -3px;"></i> Download</a>
+                        <a class="btn btn-primary" ng-click="DeleteTimeTableCurrent()" style="color:white"><i class="fa fa-lg fa-trash" style="margin-top: -3px;"></i> Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

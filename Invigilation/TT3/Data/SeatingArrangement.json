@@ -1,0 +1,61 @@
+[
+  {
+    "SeatingArrange": [
+      {
+        "FromRollNumber": 1,
+        "TotalStudent": 70,
+        "ToRollNumber": 15,
+        "ClassRoom": "IA",
+        "StudentOfClass": "IA"
+      },
+      {
+        "FromRollNumber": 1,
+        "TotalStudent": 15,
+        "ToRollNumber": 15,
+        "ClassRoom": "IB",
+        "StudentOfClass": "IA"
+      },
+      {
+        "FromRollNumber": 1,
+        "TotalStudent": 70,
+        "ToRollNumber": 15,
+        "ClassRoom": "IA",
+        "StudentOfClass": "IB"
+      },
+      {
+        "FromRollNumber": 1,
+        "ToRollNumber": 10,
+        "TotalStudent": 70,
+        "ClassRoom": "IA",
+        "StudentOfClass": "IA"
+      }
+    ],
+    "ExamName": "School Exam January 2019"
+  },
+  {
+    "SeatingArrange": [
+      {
+        "FromRollNumber": 1,
+        "TotalStudent": 30,
+        "ToRollNumber": 15,
+        "ClassRoom": "IA",
+        "StudentOfClass": "IA"
+      },
+      {
+        "FromRollNumber": 1,
+        "TotalStudent": 15,
+        "ToRollNumber": 15,
+        "ClassRoom": "IB",
+        "StudentOfClass": "IA"
+      },
+      {
+        "FromRollNumber": 1,
+        "TotalStudent": 30,
+        "ToRollNumber": 15,
+        "ClassRoom": "IA",
+        "StudentOfClass": "IB"
+      }
+    ],
+    "ExamName": "ThirdTest Internal Exam"
+  }
+]

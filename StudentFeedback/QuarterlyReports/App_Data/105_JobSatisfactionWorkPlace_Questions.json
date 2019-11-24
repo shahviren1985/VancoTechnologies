@@ -1,0 +1,186 @@
+[
+    {
+        "id": "a1",
+        "question": "Age Range",
+        "type": "radio",
+        "optionValues": [
+            "51 to 60",
+            "41 to 50",
+			"31 to 40",
+            "21 to 30",
+            ""
+        ]
+    },
+	{
+        "id": "a2",
+        "question": "Gender",
+        "type": "radio",
+        "optionValues": [
+            "Male",
+            "Female",
+			"Good",
+            "Average",
+            "Need to Improve"
+        ]
+    },
+  {
+    "id": "a3",
+    "question": "I have been employed by MDSMC in my permanent position for",
+    "type": "radio",
+		"optionValues": [
+            "30 & Above",
+            "20 to 30",
+			"5 to 10",
+            "10 to 20",
+            "1 to 5"
+        ]
+  },
+  {
+    "id": "a4",
+    "question": "Your Appointment Type",
+    "type": "radio",
+		"optionValues": [
+            "Teaching Staff",
+            "Non-Teaching Staff"
+        ]
+  },
+  {
+    "id": "a5",
+    "question": "How long you’re Residence from the College?",
+    "type": "radio",
+		"optionValues": [
+            "1 to 3 km",
+            "4 to 6 km",
+			"7 to 14 km",
+            "15 to 34 km",
+            "35 to 50 km",
+            "51 to 65 km",
+            "65 and more"
+        ]
+  },
+  {
+    "id": "a6",
+    "question": "How much travelling time you spent from Home to College?",
+    "type": "radio",
+		"optionValues": [
+            "15 to 30 min",
+            "2 to 3 hrs",
+			"30min  to 1 hrs"
+        ]
+  },
+  {
+    "id": "a7",
+    "question": "How long have you been Domicile of the Maharashtra State?",
+    "type": "radio",
+		"optionValues": [
+            "30 & Above",
+            "20 to 30",
+			"10 to 20",
+            "5 to 10",
+            "0 to 5"
+        ]
+  },
+  {
+    "id": "a8",
+    "question": "There are opportunities for me to expand my teaching / administrative skills at MDSMC",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },{
+    "id": "a9",
+    "question": "Campus security measures currently in place are sufficient",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a10",
+    "question": "I am valued as staff member of the college",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a11",
+    "question": "The activities that the college offers such as faculty and classified professional development",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a12",
+    "question": "There are processes in place for me to be involved in decision making and problem solving",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a13",
+    "question": "I am adequately represented in college-wide decision making",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a14",
+    "question": "MDSMC is making a good effort to support practices that move towards sustainability",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a15",
+    "question": "The college is making a good effort to inform me about opportunities to improve my health",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  }
+]

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f55fb37e77644596ba49407b9df31e2a" Name="Diagram1" ZoomLevel="95">
+        <EntityTypeShape EntityType="NavigettrModel.LoginHistory" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="NavigettrModel.PartnerDetail" Width="1.5" PointX="5.25" PointY="8.125" />
+        <EntityTypeShape EntityType="NavigettrModel.PartnerLocationDetail" Width="1.5" PointX="7.5" PointY="6.375" />
+        <EntityTypeShape EntityType="NavigettrModel.PartnerLocationWorkTime" Width="1.5" PointX="9.75" PointY="7.625" />
+        <EntityTypeShape EntityType="NavigettrModel.PartnerOffer" Width="1.5" PointX="7.5" PointY="2" />
+        <EntityTypeShape EntityType="NavigettrModel.PartnerRate" Width="1.5" PointX="7.5" PointY="14.75" />
+        <EntityTypeShape EntityType="NavigettrModel.Role" Width="1.5" PointX="0.75" PointY="12.375" />
+        <EntityTypeShape EntityType="NavigettrModel.SystemParam" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="NavigettrModel.UserDetail" Width="1.5" PointX="3" PointY="11.5" />
+        <EntityTypeShape EntityType="NavigettrModel.UserNotification" Width="1.5" PointX="5.25" PointY="21.75" />
+        <EntityTypeShape EntityType="NavigettrModel.UserReminder" Width="1.5" PointX="5.25" PointY="18.5" />
+        <AssociationConnector Association="NavigettrModel.FK_PartnerDetails_UserDetails" />
+        <AssociationConnector Association="NavigettrModel.FK_PartnerLocationDetails_PartnerDetails" />
+        <AssociationConnector Association="NavigettrModel.FK_PartnerLocationWorkTime_PartnerDetails" />
+        <AssociationConnector Association="NavigettrModel.FK_PartnerOffers_PartnerDetails" />
+        <AssociationConnector Association="NavigettrModel.FK_PartnerRates_PartnerDetails" />
+        <AssociationConnector Association="NavigettrModel.FK_PartnerLocationWorkTime_PartnerLocationDetails" />
+        <AssociationConnector Association="NavigettrModel.FK_UserDetails_Roles" />
+        <AssociationConnector Association="NavigettrModel.FK_UserNotifications_UserDetails" />
+        <AssociationConnector Association="NavigettrModel.FK_UserReminders_UserDetails" />
+        <AssociationConnector Association="NavigettrModel.FK_PartnerLocationWorkTime_PartnerLocationWorkTime" />
+        <EntityTypeShape EntityType="NavigettrModel.PartnerCharge" Width="1.5" PointX="7.5" PointY="18.625" />
+        <AssociationConnector Association="NavigettrModel.FK_PartnerCharges_PartnerDetails" />
+        <EntityTypeShape EntityType="NavigettrModel.UserLocationTracker" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="NavigettrModel.UserRewardPoint" Width="1.5" PointX="4.75" PointY="4.75" />
+        <EntityTypeShape EntityType="NavigettrModel.UserSearchTracker" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="NavigettrModel.UserQRCodeTracker" Width="1.5" PointX="0.75" PointY="7.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,26 @@
+{
+  "sideMenu": [
+    {
+      "title": "About Us",
+      "isActive": true,
+      "link": "https://vancotech.com"
+    },
+    {
+      "title": "Website",
+      "isActive": true,
+      "link": "https://vancotech.com"
+    },
+    {
+      "title": "Contact Us",
+      "isActive": true,
+      "link": "https://vancotech.com"
+    },
+    {
+      "title": "Trending Topics",
+      "isActive": true,
+      "link": "https://google.com"
+    }
+  ],
+  "logo": "http://mnwc-sndt.org/images/logo.png",
+  "collegeName": "Vanco Technologies"
+}

@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html ng-app="HallTicketApp">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="CustomJs/Angular.js"></script>
+    <script src="CustomJs/urlConfig.js"></script>
+    <script src="CustomJs/Index.js"></script>
+    <link href="CustomCss/app.css" rel="stylesheet" />
+    <script type="text/javascript">
+        var Examapp = angular.module("ExamSystemApp", ["ngRoute"]);
+    </script>
+    <script src="CustomJs/PrintHallTicket.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css">
+    <style>
+        .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+            padding: 4px;
+        }
+
+        @media screen {
+            div.divFooter {
+                /*display: none;*/
+            }
+            .table-bordered, .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+                border: 1px solid #808080 !important;
+                -webkit-print-color-adjust: exact; 
+            }
+        }
+
+        @media print {
+            .table-bordered, .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+                border: 1px solid #808080 !important;
+                -webkit-print-color-adjust: exact; 
+            }
+
+        }
+
+        .table {
+            margin-bottom: 15px;
+            font-size: 13px;
+        }
+        /*@page {
+            size: A4 portrait;
+            margin: 10%;
+        }*/
+        @page {
+            size: A5 landscape;
+            margin: 10px;
+        }
+
+        .print-page2 {
+            font-size: 16px;
+            display: inline-block;
+            height: 100vh;
+            width: 100vw;
+            border-bottom: 1px solid #000;
+            padding: 30px;
+        }
+
+        .PageBreakOnlAfter2 {
+            page-break-after: always;
+        }
+
+        li {
+            list-style-type: none;
+        }
+    </style>
+</head>
+<body ng-controller="HallTicketCtrl" class="A5 landscape">
+    <div id="app" class="skin-blue">
+        <div>
+            <div>
+                <div ng-repeat="stu in StudentData2" ng-if="stu.SeatNumber != ''">
+                    <section class="print-page-header PageBreakOnlAfter2 sheet padding-5mm" style="padding:10px">
+                        <article>
+                            <table style="width: 100%;">
+                                <tbody>
+                                    <tr>
+                                        <td><img src="images/shree_logo.png" alt="" ></td>
+                                        <td>
+                                            <div class="text-center">
+                                                <h4 style="margin:5px;">Sir Vithaldas Thackersey College of Home Science (Autonomous)</h4>
+                                                <h4 style="margin:5px">SNDT Women's University, Mumbai</h4>
+                                                <!--<h5>October {{stu.ExamType}} {{UearToShow}} (Hall ticket)</h5>-->
+                                                <h5 style="margin:0px; font-size:15px">Final Exam - Semester {{SemData}} - November {{UearToShow}} {{stu.ExamType}}</h5>
+                                                <span style="font-size:21px">Hall Ticket</span>
+                                            </div>
+                                        </td>
+                                        <td><img src="images/logo.png" alt="" class="pull-right" style="margin-top: 10px;"></td>
+                                        
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="clearfix">
+                            </div>
+                            <hr style="margin-top: 5px; margin-bottom: 10px;">
+
+                            <!--<div class="clearfix">-->
+                            <table style="    margin-left: 20px;margin-bottom: 10px;">
+                                <tr>
+                                    <td><b>Student Name</b></td>
+                                    <td colspan="3">: {{stu.LastName}} {{stu.FirstName}} {{stu.FatherName}} {{stu.MotherName}}</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Seat Number</b></td>
+                                    <td><span style="margin-right:25px">: {{stu.SeatNumber}}</span></td>
+                                    <td style="padding-left: 10px;"><b>Exam Name</b></td>
+                                    <td>: {{stu.ExamType}}</td>
+                                </tr>
+                                <tr>
+                                    <td><b>Course Name</b></td>
+                                    <td>: {{GetClassName(stu.Course,stu.Semester)}}</td>
+                                    <td style="padding-left: 10px;"><b>Specialization</b></td>
+                                    <td>: {{GetSpecializationFullName(stu.Specialisation)}}</td>
+                                </tr>
+                            </table>
+
+                            <div class="pull-right">
+                                <div class="print-photo">
+                                    <!--<img src="images/100x120.png" />-->
+                                    <img style="top: -70px;" src="images/100x120 _StudentCaption.png" />
+                                </div>
+                            </div>
+                            <!--</div>-->
+                            <table class="table table-bordered text-center" style="min-width: 500px; width: auto;">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 50px; vertical-align: middle;">#</th>
+                                        <th style="vertical-align: middle;">Paper Code</th>
+                                        <th style="vertical-align: middle;">Paper Title</th>
+                                        <th>Exam Status</th>
+                                        <th>Supervisor Sign</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr ng-repeat="paper in stu.paperDetails">
+                                        <td>{{$index + 1}}</td>
+                                        <td>{{paper.PaperCode}}</td>
+                                        <td style="padding-left: 10px; padding-right: 10px; text-align: left;">{{paper.PaperName}}</td>
+                                        <td>{{paper.ExamStatus}}</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr ng-if="specializationToShow=='honors'">
+                                        <td>{{stu.paperDetails.length+1}}</td>
+                                        <td>AddOn Subject</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="line divFooter" style="">
+
+                                &emsp;&emsp;&emsp;Student's Sign&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;College Seal
+                            </div>
+                            <div></div>
+                            <!--<div ng-if="(($index+1) % 2) == 0" class="PageBreakOnlAfter2"></div>-->
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,362 @@
+[
+  {
+    "teacherCode": 101,
+    "teacherName": "Ms. Madhuri Nigudkar",
+    "subjectCode": 1101,
+    "subjectName": "Advanced Clinical Biochemistry",
+    "course": "M.Sc.",
+    "subCourse": "Diabetes & Cardiac Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 102,
+    "teacherName": "Dr. Shobha Udipi",
+    "subjectCode": 1102,
+    "subjectName": "Nutritional Care & Assessment",
+    "course": "M.Sc.",
+    "subCourse": "Diabetes & Cardiac Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 103,
+    "teacherName": "Ms. Minal Asurlekar",
+    "subjectCode": 1103,
+    "subjectName": "Enteral &Parenteral Nutrition",
+    "course": "M.Sc.",
+    "subCourse": "Diabetes & Cardiac Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 104,
+    "teacherName": "Ms. Salome Benjamin",
+    "subjectCode": 1103,
+    "subjectName": "Enteral &Parenteral Nutrition",
+    "course": "M.Sc.",
+    "subCourse": "Diabetes & Cardiac Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 105,
+    "teacherName": "Dr. Anushree Mehta",
+    "subjectCode": 1104,
+    "subjectName": "Advanced Physiology in Diabetes",
+    "course": "M.Sc.",
+    "subCourse": "Diabetes & Cardiac Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 106,
+    "teacherName": "Ms. Sheryl Salis",
+    "subjectCode": 1105,
+    "subjectName": "Diabetes  Nutrition",
+    "course": "M.Sc.",
+    "subCourse": "Diabetes & Cardiac Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 102,
+    "teacherName": "Dr. Shobha Udipi",
+    "subjectCode": 1106,
+    "subjectName": "Research Methodology",
+    "course": "M.Sc.",
+    "subCourse": "Diabetes & Cardiac Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 107,
+    "teacherName": "Dr. Bharti",
+    "subjectCode": 1107,
+    "subjectName": "Advanced Communication Skills in Nutritional  Practice",
+    "course": "M.Sc.",
+    "subCourse": "Diabetes & Cardiac Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 108,
+    "teacherName": "Ms. Panchali Moitra",
+    "subjectCode": 1108,
+    "subjectName": "Public Health Nutrition  & Epidemiology",
+    "course": "M.Sc.",
+    "subCourse": "Diabetes & Cardiac Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 108,
+    "teacherName": "Ms. Panchali Moitra",
+    "subjectCode": 1109,
+    "subjectName": "Information Technology in Nutrition & Healthcare",
+    "course": "M.Sc.",
+    "subCourse": "Diabetes & Cardiac Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 108,
+    "teacherName": "Ms. Panchali Moitra",
+    "subjectCode": 1110,
+    "subjectName": "Scientific Writing for Nutrition and Dietetics Professional",
+    "course": "M.Sc.",
+    "subCourse": "Diabetes & Cardiac Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 109,
+    "teacherName": "Dr. Nisha Bellare",
+    "subjectCode": 1111,
+    "subjectName": "Case Study Reviews",
+    "course": "M.Sc.",
+    "subCourse": "Diabetes & Cardiac Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 101,
+    "teacherName": "Ms. Madhuri Nigudkar",
+    "subjectCode": 1101,
+    "subjectName": "Advanced Clinical Biochemistry",
+    "course": "M.Sc.",
+    "subCourse": "Pediatric Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 102,
+    "teacherName": "Dr. Shobha Udipi",
+    "subjectCode": 1102,
+    "subjectName": "Nutritional Care & Assessment",
+    "course": "M.Sc.",
+    "subCourse": "Pediatric Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 103,
+    "teacherName": "Ms. Minal Asurlekar",
+    "subjectCode": 1103,
+    "subjectName": "Enteral & Parenteral Nutrition",
+    "course": "M.Sc.",
+    "subCourse": "Pediatric Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 104,
+    "teacherName": "Ms. Salome Benjamin",
+    "subjectCode": 1103,
+    "subjectName": "Enteral & Parenteral Nutrition",
+    "course": "M.Sc.",
+    "subCourse": "Pediatric Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 102,
+    "teacherName": "Dr. Shobha Udipi",
+    "subjectCode": 1106,
+    "subjectName": "Research Methods",
+    "course": "M.Sc.",
+    "subCourse": "Pediatric Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 107,
+    "teacherName": "Dr. Bharti",
+    "subjectCode": 1107,
+    "subjectName": "Advanced Communication Skills",
+    "course": "M.Sc.",
+    "subCourse": "Pediatric Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 108,
+    "teacherName": "Ms. Panchali Moitra",
+    "subjectCode": 1108,
+    "subjectName": "Public Health Nutrition & Epidemiology",
+    "course": "M.Sc.",
+    "subCourse": "Pediatric Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 112,
+    "teacherName": "Dr. Alka Jadhav",
+    "subjectCode": 1115,
+    "subjectName": "Pediatric Nutrition",
+    "course": "M.Sc.",
+    "subCourse": "Pediatric Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 109,
+    "teacherName": "Dr. Nisha Bellare",
+    "subjectCode": 1116,
+    "subjectName": "Pediatric Nutrition",
+    "course": "M.Sc.",
+    "subCourse": "Pediatric Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 108,
+    "teacherName": "Ms. Panchali Moitra",
+    "subjectCode": 1109,
+    "subjectName": "Information Technology in Nutrition & Healthcare",
+    "course": "M.Sc.",
+    "subCourse": "Pediatric Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 108,
+    "teacherName": "Ms. Panchali Moitra",
+    "subjectCode": 1110,
+    "subjectName": "Scientific Writing for Nutrition and Dietetics Professional",
+    "course": "M.Sc.",
+    "subCourse": "Pediatric Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 109,
+    "teacherName": "Dr. Nisha Bellare",
+    "subjectCode": 1111,
+    "subjectName": "Case Study Reviews",
+    "course": "M.Sc.",
+    "subCourse": "Pediatric Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 101,
+    "teacherName": "Ms. Madhuri Nigudkar",
+    "subjectCode": 1101,
+    "subjectName": "Advanced Clinical Biochemistry",
+    "course": "M.Sc.",
+    "subCourse": "Renal Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 102,
+    "teacherName": "Dr. Shobha Udipi",
+    "subjectCode": 1102,
+    "subjectName": "Nutritional Care & Assessment",
+    "course": "M.Sc.",
+    "subCourse": "Renal Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 103,
+    "teacherName": "Ms. Minal Asurlekar",
+    "subjectCode": 1103,
+    "subjectName": "Enteral & Parenteral Nutrition",
+    "course": "M.Sc.",
+    "subCourse": "Renal Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 104,
+    "teacherName": "Ms. Salome Benjamin",
+    "subjectCode": 1103,
+    "subjectName": "Enteral & Parenteral Nutrition",
+    "course": "M.Sc.",
+    "subCourse": "Renal Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 102,
+    "teacherName": "Dr. Shobha Udipi",
+    "subjectCode": 1106,
+    "subjectName": "Research Methods",
+    "course": "M.Sc.",
+    "subCourse": "Renal Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 107,
+    "teacherName": "Dr. Bharti",
+    "subjectCode": 1107,
+    "subjectName": "Advanced Communication Skills",
+    "course": "M.Sc.",
+    "subCourse": "Renal Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 108,
+    "teacherName": "Ms. Panchali Moitra",
+    "subjectCode": 1108,
+    "subjectName": "Public Health Nutrition  & Epidemiology",
+    "course": "M.Sc.",
+    "subCourse": "Renal Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 108,
+    "teacherName": "Ms. Panchali Moitra",
+    "subjectCode": 1109,
+    "subjectName": "Information Technology in Nutrition & Healthcare",
+    "course": "M.Sc.",
+    "subCourse": "Renal Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 108,
+    "teacherName": "Ms. Panchali Moitra",
+    "subjectCode": 1110,
+    "subjectName": "Scientific Writing for Nutrition and Dietetics Professional",
+    "course": "M.Sc.",
+    "subCourse": "Renal Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 113,
+    "teacherName": "Ms. Zamuruud Patel",
+    "subjectCode": 1117,
+    "subjectName": "Renal Nutrition",
+    "course": "M.Sc.",
+    "subCourse": "Renal Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 109,
+    "teacherName": "Dr. Nisha Bellare",
+    "subjectCode": 1111,
+    "subjectName": "Case Study Reviews",
+    "course": "M.Sc.",
+    "subCourse": "Renal Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 108,
+    "teacherName": "Ms. Panchali Moitra",
+    "subjectCode": 1112,
+    "subjectName": "Diabetes and PCOS",
+    "course": "M.Sc.",
+    "subCourse": "Diabetes & Cardiac Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 110,
+    "teacherName": "Ms. Safala Mahadik",
+    "subjectCode": 1113,
+    "subjectName": "Cardiac Nutrition",
+    "course": "M.Sc.",
+    "subCourse": "Diabetes & Cardiac Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 111,
+    "teacherName": "Mr. Narendra Khare",
+    "subjectCode": 1114,
+    "subjectName": "Statistics",
+    "course": "M.Sc.",
+    "subCourse": "Diabetes & Cardiac Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 111,
+    "teacherName": "Mr. Narendra Khare",
+    "subjectCode": 1114,
+    "subjectName": "Statistics",
+    "course": "M.Sc.",
+    "subCourse": "Pediatric Nutrition",
+    "semester": "Even"
+  },
+  {
+    "teacherCode": 111,
+    "teacherName": "Mr. Narendra Khare",
+    "subjectCode": 1114,
+    "subjectName": "Statistics",
+    "course": "M.Sc.",
+    "subCourse": "Renal Nutrition",
+    "semester": "Even"
+  }
+]

@@ -1,0 +1,591 @@
+[
+  {
+    "Dates": [
+      {
+        "SingleDate": "2018-09-18T18:30:00Z",
+        "Time": [
+          {
+            "Room": [
+              "Reliver",
+              "StandBy",
+              "100",
+              "101",
+              "104",
+              "110",
+              "119",
+              "208",
+              "210"
+            ],
+            "FromTime": "0800",
+            "ToTime": "0100"
+          },
+          {
+            "Room": [
+              "Reliver",
+              "StandBy",
+              "100",
+              "101",
+              "104",
+              "110",
+              "119"
+            ],
+            "FromTime": "1700",
+            "ToTime": "0700"
+          }
+        ]
+      },
+      {
+        "SingleDate": "2018-09-19T18:30:00Z",
+        "Time": [
+          {
+            "Room": [
+              "Reliver",
+              "StandBy",
+              "100",
+              "101",
+              "104",
+              "110",
+              "119",
+              "208",
+              "210"
+            ],
+            "FromTime": "0800",
+            "ToTime": "0100"
+          },
+          {
+            "Room": [
+              "Reliver",
+              "StandBy",
+              "100",
+              "101",
+              "104",
+              "110",
+              "119",
+              "105",
+              "208",
+              "209"
+            ],
+            "FromTime": "1700",
+            "ToTime": "0700"
+          }
+        ]
+      },
+      {
+        "SingleDate": "2018-09-20T18:30:00Z",
+        "Time": [
+          {
+            "Room": [
+              "Reliver",
+              "StandBy",
+              "100",
+              "101",
+              "104",
+              "110",
+              "119",
+              "208",
+              "210"
+            ],
+            "FromTime": "0800",
+            "ToTime": "0100"
+          }
+        ]
+      },
+      {
+        "SingleDate": "2018-09-21T18:30:00Z",
+        "Time": [
+          {
+            "Room": [
+              "208",
+              "211",
+              "TestRoom"
+            ],
+            "FromTime": "0000",
+            "ToTime": "0000"
+          }
+        ]
+      }
+    ],
+    "ExamName": "Internal First Term Exam 2019 2"
+  },
+  {
+    "Dates": [
+      {
+        "SingleDate": "2018-10-16T18:30:00Z",
+        "Time": [
+          {
+            "Room": [
+              "Reliver",
+              "StandBy",
+              "100",
+              "101",
+              "104",
+              "110",
+              "208",
+              "210",
+              "211"
+            ],
+            "FromTime": "0930",
+            "ToTime": "2330"
+          },
+          {
+            "Room": [
+              "Reliver",
+              "StandBy",
+              "100",
+              "101",
+              "104",
+              "119",
+              "209"
+            ],
+            "FromTime": "1400",
+            "ToTime": "1600"
+          }
+        ]
+      },
+      {
+        "SingleDate": "2018-10-17T18:30:00Z",
+        "Time": [
+          {
+            "Room": [
+              "Reliver",
+              "StandBy",
+              "100",
+              "101",
+              "104",
+              "110",
+              "208",
+              "210",
+              "211"
+            ],
+            "FromTime": "0930",
+            "ToTime": "2330"
+          },
+          {
+            "Room": [
+              "Reliver",
+              "StandBy",
+              "100",
+              "101",
+              "104",
+              "119",
+              "209"
+            ],
+            "FromTime": "1400",
+            "ToTime": "1600"
+          }
+        ]
+      },
+      {
+        "SingleDate": "2018-10-18T18:30:00Z",
+        "Time": [
+          {
+            "Room": [
+              "Reliver",
+              "StandBy",
+              "100",
+              "101",
+              "104",
+              "110",
+              "208",
+              "210",
+              "211"
+            ],
+            "FromTime": "0930",
+            "ToTime": "2330"
+          },
+          {
+            "Room": [
+              "Reliver",
+              "StandBy",
+              "100",
+              "101",
+              "104",
+              "119",
+              "209"
+            ],
+            "FromTime": "1400",
+            "ToTime": "1600"
+          }
+        ]
+      },
+      {
+        "SingleDate": "2018-10-21T18:30:00Z",
+        "Time": [
+          {
+            "Room": [
+              "Reliver",
+              "StandBy",
+              "100",
+              "101",
+              "104",
+              "110",
+              "208",
+              "210",
+              "211"
+            ],
+            "FromTime": "0930",
+            "ToTime": "2330"
+          }
+        ]
+      },
+      {
+        "SingleDate": "2018-10-22T18:30:00Z",
+        "Time": [
+          {
+            "Room": [
+              "Reliver",
+              "StandBy",
+              "100",
+              "101",
+              "104",
+              "110",
+              "208",
+              "210",
+              "211"
+            ],
+            "FromTime": "0930",
+            "ToTime": "2330"
+          }
+        ]
+      },
+      {
+        "SingleDate": "2018-10-23T18:30:00Z",
+        "Time": [
+          {
+            "Room": [
+              "Reliver",
+              "StandBy",
+              "100",
+              "101",
+              "104",
+              "110",
+              "208",
+              "210",
+              "211"
+            ],
+            "FromTime": "0930",
+            "ToTime": "2330"
+          }
+        ]
+      },
+      {
+        "SingleDate": "2018-10-24T18:30:00Z",
+        "Time": [
+          {
+            "Room": [
+              "Reliver",
+              "StandBy",
+              "100",
+              "101",
+              "104",
+              "110",
+              "119",
+              "208",
+              "209",
+              "210",
+              "211"
+            ],
+            "FromTime": "0930",
+            "ToTime": "2330"
+          }
+        ]
+      },
+      {
+        "SingleDate": "2018-09-24T18:30:00Z",
+        "Time": [
+          {
+            "Room": [
+              "Reliver",
+              "StandBy",
+              "100",
+              "101",
+              "104",
+              "110",
+              "119",
+              "105",
+              "209",
+              "210",
+              "211"
+            ],
+            "FromTime": "2300",
+            "ToTime": "2400"
+          }
+        ]
+      }
+    ],
+    "ExamName": "External Mid Sem Exam 2018"
+  },
+  {
+    "Dates": [
+      {
+        "SingleDate": "2018-10-07T18:30:00Z",
+        "Time": [
+          {
+            "Room": [
+              "Reliver",
+              "StandBy",
+              "100",
+              "101",
+              "104",
+              "119",
+              "105"
+            ],
+            "FromTime": "0430",
+            "ToTime": "0530"
+          },
+          {
+            "Room": [
+              "Reliver",
+              "StandBy",
+              "100",
+              "101",
+              "104",
+              "119",
+              "105",
+              "208",
+              "209",
+              "210",
+              "TestRoom"
+            ],
+            "FromTime": "0500",
+            "ToTime": "0700"
+          }
+        ]
+      },
+      {
+        "SingleDate": "2018-10-08T18:30:00Z",
+        "Time": [
+          {
+            "Room": [
+              "Reliver",
+              "StandBy",
+              "100",
+              "101",
+              "104",
+              "119",
+              "105",
+              "208",
+              "209",
+              "210"
+            ],
+            "FromTime": "0100",
+            "ToTime": "0400"
+          }
+        ]
+      }
+    ],
+    "ExamName": "ThirdTest Internal Exam"
+  },
+  {
+    "Dates": [
+      {
+        "SingleDate": "2019-01-20T18:30:00Z",
+        "Time": [
+          {
+            "Room": [
+              "IA",
+              "IB",
+              "IIA",
+              "IIB",
+              "IIIA",
+              "IIIB",
+              "IV",
+              "V",
+              "VI",
+              "VII",
+              "Reliver",
+              "StandBy"
+            ],
+            "FromTime": "0100",
+            "ToTime": "1200"
+          },
+          {
+            "Room": [
+              "IA",
+              "IB",
+              "IIA",
+              "IIIB",
+              "IV",
+              "V",
+              "VII",
+              "Reliver",
+              "StandBy"
+            ],
+            "FromTime": "1300",
+            "ToTime": "1500"
+          }
+        ]
+      },
+      {
+        "SingleDate": "2019-01-21T18:30:00Z",
+        "Time": [
+          {
+            "Room": [
+              "IA",
+              "IIA",
+              "IIIA",
+              "IIIB",
+              "IV",
+              "V",
+              "VI",
+              "VII",
+              "Reliver",
+              "StandBy"
+            ],
+            "FromTime": "0100",
+            "ToTime": "1200"
+          },
+          {
+            "Room": [
+              "IA",
+              "IB",
+              "IIA",
+              "IIIB",
+              "IV",
+              "V",
+              "VII",
+              "Reliver",
+              "StandBy"
+            ],
+            "FromTime": "1300",
+            "ToTime": "1500"
+          }
+        ]
+      },
+      {
+        "SingleDate": "2019-01-22T18:30:00Z",
+        "Time": [
+          {
+            "Room": [
+              "IA",
+              "IB",
+              "IIB",
+              "IIIB",
+              "IV",
+              "VII",
+              "Reliver",
+              "StandBy"
+            ],
+            "FromTime": "0100",
+            "ToTime": "1200"
+          },
+          {
+            "Room": [
+              "IA",
+              "IB",
+              "IIA",
+              "IIIB",
+              "IV",
+              "V",
+              "VII",
+              "Reliver",
+              "StandBy"
+            ],
+            "FromTime": "1300",
+            "ToTime": "1500"
+          }
+        ]
+      },
+      {
+        "SingleDate": "2019-01-23T18:30:00Z",
+        "Time": [
+          {
+            "Room": [
+              "IA",
+              "IB",
+              "IIA",
+              "IIB",
+              "IIIA",
+              "IIIB",
+              "IV",
+              "V",
+              "VI",
+              "VII",
+              "Reliver",
+              "StandBy"
+            ],
+            "FromTime": "0100",
+            "ToTime": "1200"
+          },
+          {
+            "Room": [
+              "IA",
+              "IB",
+              "IIA",
+              "IIIB",
+              "IV",
+              "V",
+              "VII",
+              "Reliver",
+              "StandBy"
+            ],
+            "FromTime": "1300",
+            "ToTime": "1500"
+          }
+        ]
+      },
+      {
+        "SingleDate": "2019-01-24T18:30:00Z",
+        "Time": [
+          {
+            "Room": [
+              "IA",
+              "IB",
+              "IIA",
+              "IIB",
+              "IIIA",
+              "IIIB",
+              "IV",
+              "V",
+              "VI",
+              "VII",
+              "Reliver",
+              "StandBy"
+            ],
+            "FromTime": "0100",
+            "ToTime": "1200"
+          },
+          {
+            "Room": [
+              "IA",
+              "IB",
+              "IIA",
+              "IIB",
+              "IIIA",
+              "IIIB",
+              "IV",
+              "V",
+              "VI",
+              "VII",
+              "Reliver",
+              "StandBy"
+            ],
+            "FromTime": "1300",
+            "ToTime": "1500"
+          }
+        ]
+      },
+      {
+        "SingleDate": "2019-01-25T18:30:00Z",
+        "Time": [
+          {
+            "Room": [
+              "IB",
+              "IIA",
+              "IIB",
+              "IIIA",
+              "V",
+              "VI",
+              "ART ROOM",
+              "Reliver",
+              "StandBy"
+            ],
+            "FromTime": "0815",
+            "ToTime": "0915"
+          }
+        ]
+      }
+    ],
+    "ExamName": "School Exam January 2019"
+  }
+]

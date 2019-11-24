@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="ExamSystemApp">
+<head>
+    <title>SVT Transcript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Assets/bootstrap.min.css" rel="stylesheet" />
+    <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="CustomJs/Angular.js"></script>
+    <script src="Assets/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        var Examapp = angular.module("ExamSystemApp", []);
+        Examapp.controller("RequestTranscriptCtrl", function ($scope) {
+            $scope.SubmitMyForm = function () {
+                console.log('as')
+            }
+        });
+        Examapp.filter('range', function () {
+            return function (input, min, max) {
+                min = parseInt(min); //Make string input int
+                max = parseInt(max);
+                for (var i = min; i < max; i++)
+                    input.push(i);
+                return input;
+            };
+        });
+    </script>
+    <style>
+        .card {
+            background: #fff;
+            border-radius: 2px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .card-1 {
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        }
+
+        .HeaderText {
+            color: #1F3C67;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body ng-controller="RequestTranscriptCtrl" style="background: #b6b7bc;">
+    <div class="container card-1" data-text="Custom text" style="margin-top:30px;background:white;padding-top:30px;min-height:500px">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-3" style="text-align:center">
+                <img src="MarksheetModuleJs/SVTLogo.png" />
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6" style="text-align:center">
+                <table style="width:100%">
+                    <tr>
+                        <td class="HeaderText colorRuleChrome" style="color: #1F3C67;">SIR VITHALDAS THACKERSEY COLLEGE OF HOME SCIENCE</td>
+                    </tr>
+                    <tr>
+                        <td class="HeaderText Heading2SmallFont" style="">(AUTONOMOUS)</td>
+                    </tr>
+                    <tr>
+                        <td class="HeaderText colorRuleChrome" style="">S.N.D.T.  WOMEN'S UNIVERSITY</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-3" style="text-align:center">
+                <img src="MarksheetModuleJs/SVTLogo2.png" />
+            </div>
+        </div>
+        <div class="row" style="margin:0 auto;padding:15px">
+            <hr style="margin-top: 0px; margin-bottom: 15px;" />
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <form id="SeatNumberForms" ng-submit="SubmitMyForm()">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>First Name <span style="color:red">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter First Name" required/>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Last Name <span style="color:red">*</span></label>
+                                <input type="text" class="form-control" placeholder="Enter Last Name" required />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Passing Year <span style="color:red">*</span></label>
+                                <select class="form-control" ng-model="a" ng-options="n for n in [] | range:2000:2019" required></select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>College Registration</label>
+                                <input type="text" class="form-control" placeholder="Enter College Registration" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <button id="btn_GetResult" type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row" id="row_error" style="display:none">
+            <div class="col-md-12">
+                <div id="Error_Text" class="alert alert-danger">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    #cssTable td, th {
+        text-align: center;
+        vertical-align: middle;
+    }
+</style>

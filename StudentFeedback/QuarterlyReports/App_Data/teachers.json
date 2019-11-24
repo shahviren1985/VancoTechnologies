@@ -1,0 +1,5922 @@
+[{
+	"teacherCode": "BF2",
+	"teacherName": "MADHURI AYKER",
+	"subjectCode": "240119",
+	"subjectName": "Accountancy",
+	"course": "FYBAFI",
+	"subCourse": "REG",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BFI",
+	"teacherName": "Jyotsna Raut",
+	"subjectCode": "240219",
+	"subjectName": "Management Accounting",
+	"course": "FYBAFI",
+	"subCourse": "REG",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BM3",
+	"teacherName": "Snehal Obhan",
+	"subjectCode": "240419",
+	"subjectName": "Business Correspondence",
+	"course": "FYBAFI",
+	"subCourse": "REG",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BM2",
+	"teacherName": "Madhavi Neman",
+	"subjectCode": "240519",
+	"subjectName": "Recent trends in Management",
+	"course": "FYBAFI",
+	"subCourse": "REG",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BF2",
+	"teacherName": "Madhuri Aykar",
+	"subjectCode": "240319",
+	"subjectName": "Material Management",
+	"course": "FYBAFI",
+	"subCourse": "REG",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr, Rajshree Trivedi",
+	"subjectCode": "615601",
+	"subjectName": "English CC HL",
+	"course": "BA III Eng",
+	"subCourse": "Eng/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S23",
+	"teacherName": "Ms. Annabel Rebello",
+	"subjectCode": "646301",
+	"subjectName": "Contemporary Poetry DC - XIII",
+	"course": "BA III Eng",
+	"subCourse": "Eng/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S24",
+	"teacherName": "Ms. Shifa Shikalgar",
+	"subjectCode": "646401",
+	"subjectName": "Critical Theories DC - XIV",
+	"course": "BA III Eng",
+	"subCourse": "Eng/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S24",
+	"teacherName": "Ms. Shifa Shikalgar",
+	"subjectCode": "646501",
+	"subjectName": "Post Colonial Studies DC - XV",
+	"course": "BA III Eng",
+	"subCourse": "Eng/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S 24",
+	"teacherName": "Ms. Shifa Shikalgar",
+	"subjectCode": "646601",
+	"subjectName": "Diaspora Studies DC - XVI",
+	"course": "BA III Eng",
+	"subCourse": "Eng/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S23",
+	"teacherName": "Ms. Annabel Rebello",
+	"subjectCode": "665401",
+	"subjectName": "APC - IV Life Writing",
+	"course": "BA III Eng",
+	"subCourse": "Eng/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "615601",
+	"subjectName": "English CC HL",
+	"course": "BA III Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S23",
+	"teacherName": "Annabel Rebello",
+	"subjectCode": "646301",
+	"subjectName": "Contemporary Poetry DC - XIII",
+	"course": "BA III Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S24",
+	"teacherName": "Ms. Shifa Shikalgar",
+	"subjectCode": "646104",
+	"subjectName": "Critical Theories DC - XIV",
+	"course": "BA III Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S24",
+	"teacherName": "Ms. Shifa Shikalgar",
+	"subjectCode": "646501",
+	"subjectName": "Post Colonial Studies DC - XV",
+	"course": "BA III Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S24",
+	"teacherName": "Ms. Shifa Shikalgar",
+	"subjectCode": "646601",
+	"subjectName": "Diaspora Studies DC - XVI",
+	"course": "BA III Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "680827",
+	"subjectName": "CAPC Marriage & Family Relationship",
+	"course": "BA III Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr, Rajshree Trivedi",
+	"subjectCode": "615601",
+	"subjectName": "English CC HL",
+	"course": "BA III Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S23",
+	"teacherName": "Ms. Annabel Rebello",
+	"subjectCode": "646301",
+	"subjectName": "Contemporary Poetry DC XIII",
+	"course": "BA III Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S24",
+	"teacherName": "Ms. Shifa Shikalgar",
+	"subjectCode": "646401",
+	"subjectName": "Critical Theories DC - XIV",
+	"course": "BA III Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S24",
+	"teacherName": "Ms. Shifa Shikalgar",
+	"subjectCode": "646501",
+	"subjectName": "Post Colonial Studies DC - XV",
+	"course": "BA III Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S24",
+	"teacherName": "Shifa Shikalgar",
+	"subjectCode": "646601",
+	"subjectName": "Diaspora Studies DC - XVI",
+	"course": "BA III Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "680826",
+	"subjectName": "Food Entreprenuership II",
+	"course": "BA III Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "615601",
+	"subjectName": "English CC (HL)",
+	"course": "BA III Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S1",
+	"teacherName": "Ms. Anuja Deshpande",
+	"subjectCode": "646310",
+	"subjectName": "Cognitive Psychology",
+	"course": "BA III Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S1",
+	"teacherName": "Ms. Anuja Deshpande",
+	"subjectCode": "646410",
+	"subjectName": "Experimental Psychology",
+	"course": "BA III Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S2",
+	"teacherName": "Dr. Cicilia Chettiar",
+	"subjectCode": "646410",
+	"subjectName": "Experimental Psychology",
+	"course": "BA III Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S2",
+	"teacherName": "Dr. Cicilia Chettiar",
+	"subjectCode": "646510",
+	"subjectName": "Abnormal Psychology",
+	"course": "BA III Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S1",
+	"teacherName": "Ms. Anuja Deshpande",
+	"subjectCode": "646610",
+	"subjectName": "Counseling Psychlogy",
+	"course": "BA III Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "680827",
+	"subjectName": "CAPC Marriage & Family Relationship",
+	"course": "BA III Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "615601",
+	"subjectName": "English CC (HL)",
+	"course": "BA III Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S1",
+	"teacherName": "Ms. Anuja Deshpande",
+	"subjectCode": "646310",
+	"subjectName": "Cognitive Psychology",
+	"course": "BA III Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S1",
+	"teacherName": "Ms. Anuja Deshpande",
+	"subjectCode": "646410",
+	"subjectName": "Experimental Psychology",
+	"course": "BA III Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S2",
+	"teacherName": "Dr. Cicilia Chettiar",
+	"subjectCode": "646410",
+	"subjectName": "Experimental Psychology",
+	"course": "BA III Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S2",
+	"teacherName": "Dr. Cicilia Chettiar",
+	"subjectCode": "646510",
+	"subjectName": "Abnormal Psychology",
+	"course": "BA III Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S1",
+	"teacherName": "Ms. Anuja Deshpande",
+	"subjectCode": "646610",
+	"subjectName": "Counseling Psychology",
+	"course": "BA III Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "680826",
+	"subjectName": "Food Entrepreneurship II",
+	"course": "BA III Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "615601",
+	"subjectName": "English CC (HL)",
+	"course": "BA III Eng",
+	"subCourse": "Socio/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S21",
+	"teacherName": "Ms. Twinkle Sanghavi",
+	"subjectCode": "646311",
+	"subjectName": "Contemporary Sociological Theorists",
+	"course": "BA III Eng",
+	"subCourse": "Socio/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S7",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "646411",
+	"subjectName": "Methodology in Social Research",
+	"course": "BA III Eng",
+	"subCourse": "Socio/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S7",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "646511",
+	"subjectName": "Social Movement in India",
+	"course": "BA III Eng",
+	"subCourse": "Socio/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S21",
+	"teacherName": "Ms. Twinkle Sanghavi",
+	"subjectCode": "646611",
+	"subjectName": "Sociology of Marginalized Groups",
+	"course": "BA III Eng",
+	"subCourse": "Socio/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S21",
+	"teacherName": "Ms. Twinkle Sanghavi",
+	"subjectCode": "665411",
+	"subjectName": "APC Sociology - Sociology of Tourism",
+	"course": "BA III Eng",
+	"subCourse": "Socio/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "615601",
+	"subjectName": "English CC (HL)",
+	"course": "BA III Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S 21",
+	"teacherName": "Ms. Twinkle Sanghavi",
+	"subjectCode": "646311",
+	"subjectName": "Contemporary Sociological Theorists",
+	"course": "BA III Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S7",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "646411",
+	"subjectName": "Methodology in Social Research",
+	"course": "BA III Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S7",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "646511",
+	"subjectName": "Social Movement in India",
+	"course": "BA III Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S21",
+	"teacherName": "Ms. Twinkle Sanghavi",
+	"subjectCode": "646611",
+	"subjectName": "Sociology of Marginalized Groups",
+	"course": "BA III Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "680827",
+	"subjectName": "Marriage & Family Relationships",
+	"course": "BA III Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "615601",
+	"subjectName": "English CC (HL)",
+	"course": "BA III Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S21",
+	"teacherName": "Ms. Twinkle Sanghavi",
+	"subjectCode": "646311",
+	"subjectName": "Contemporary Sociological Theorists",
+	"course": "BA III Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S7",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "646411",
+	"subjectName": "Methodology in Social Research",
+	"course": "BA III Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S7",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "646511",
+	"subjectName": "Social Movement in India",
+	"course": "BA III Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "680826",
+	"subjectName": "Food Entrepreneurship II",
+	"course": "BA III Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BF 2",
+	"teacherName": "Ms. Madhuri Ayker",
+	"subjectCode": "440119",
+	"subjectName": "Auditing",
+	"course": "SYBAFI",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BF 1",
+	"teacherName": "Ms. Jyotsna Raut",
+	"subjectCode": "440219",
+	"subjectName": "Corporate Accounting",
+	"course": "SYBAFI",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BM 3",
+	"teacherName": "Ms. Snehal Obhan",
+	"subjectCode": "440319",
+	"subjectName": "Life & Health Insurance",
+	"course": "SYBAFI",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BF 4",
+	"teacherName": "Ms. Zeba Shaikh",
+	"subjectCode": "440419",
+	"subjectName": "Economics II",
+	"course": "SYBAFI",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BF 3",
+	"teacherName": "Dr. Rukmini Rao",
+	"subjectCode": "440519",
+	"subjectName": "Business Finance & Women Empowerment",
+	"course": "SYBAFI",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BF 2",
+	"teacherName": "Ms. Madhuri Ayker",
+	"subjectCode": "640119",
+	"subjectName": "Taxation (Direct Taxes)",
+	"course": "TYBAFI",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BF 1",
+	"teacherName": "Ms. Jyotsna Raut",
+	"subjectCode": "640219",
+	"subjectName": "Insurance Business & Foreign Investment in India",
+	"course": "TYBAFI",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BM 4",
+	"teacherName": "Mr. Mukund Sohani",
+	"subjectCode": "640319",
+	"subjectName": "Quantitative Methods for Business",
+	"course": "TYBAFI",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BF 1",
+	"teacherName": "Ms. Jyotsna Raut",
+	"subjectCode": "640419",
+	"subjectName": "Investment & Portfolio Mgmt",
+	"course": "TYBAFI",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BM 2 ",
+	"teacherName": "Ms. Madhavi Neman",
+	"subjectCode": "2001",
+	"subjectName": "Marketing Mgmt",
+	"course": "FYBMS",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BM 3",
+	"teacherName": "Ms. Snehal Obhan",
+	"subjectCode": "2002",
+	"subjectName": "Organizational Behavior",
+	"course": "FYBMS",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BF 4",
+	"teacherName": "Ms. Zeba Shaikh",
+	"subjectCode": "2003",
+	"subjectName": "Economics II",
+	"course": "FYBMS",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BM 1",
+	"teacherName": "Ms. Pranaya Revandkar",
+	"subjectCode": "2004",
+	"subjectName": "Introduction to ICT",
+	"course": "FYBMS",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BM 4",
+	"teacherName": "Mr. Mukund Sohani",
+	"subjectCode": "2005",
+	"subjectName": "Quantitative Techniques for Business",
+	"course": "FYBMS",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BM 2",
+	"teacherName": "Ms. Madhavi Neman",
+	"subjectCode": "4001",
+	"subjectName": "Strategic Management",
+	"course": "SYBMS",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BM 1",
+	"teacherName": "Ms. Pranaya Revandkar",
+	"subjectCode": "4002",
+	"subjectName": "Financial Management",
+	"course": "SYBMS",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BM 2",
+	"teacherName": "Ms. Madhavi Neman",
+	"subjectCode": "4003",
+	"subjectName": "Consumer & Buyer Behavior",
+	"course": "SYBMS",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BM 3",
+	"teacherName": "Ms. Snehal Obhan",
+	"subjectCode": "4004",
+	"subjectName": "Quality Management",
+	"course": "SYBMS",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BM 3",
+	"teacherName": "Ms. Snehal Obhan",
+	"subjectCode": "4005 (C)",
+	"subjectName": "ED & Digital Marketing",
+	"course": "SYBMS",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BF 1",
+	"teacherName": "Ms. Jyotsna Raut",
+	"subjectCode": "6013",
+	"subjectName": "Security Analysis & Portfolio Mgmt",
+	"course": "TYBMS",
+	"subCourse": "Finance",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BF 2",
+	"teacherName": "Ms. Madhuri Ayker",
+	"subjectCode": "6014",
+	"subjectName": "Advanced Financial Management",
+	"course": "TYBMS",
+	"subCourse": "Finance",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BF 3",
+	"teacherName": "Dr. Rukmini Rao",
+	"subjectCode": "6033",
+	"subjectName": "International HRM",
+	"course": "TYBMS",
+	"subCourse": "Finance",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BM 2",
+	"teacherName": "Ms. Madhavi Neman",
+	"subjectCode": "6034",
+	"subjectName": "Talent Management",
+	"course": "TYBMS",
+	"subCourse": "Finance",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BM 1",
+	"teacherName": "Ms. Pranaya Revandkar",
+	"subjectCode": "6023",
+	"subjectName": "International Business",
+	"course": "TYBMS",
+	"subCourse": "Marketing",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BM 1",
+	"teacherName": "Ms. Pranaya Revandkar",
+	"subjectCode": "6024",
+	"subjectName": "Retail Management",
+	"course": "TYBMS",
+	"subCourse": "Marketing",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BF 3",
+	"teacherName": "Dr. Rukmini Rao",
+	"subjectCode": "6033",
+	"subjectName": "International HRM",
+	"course": "TYBMS",
+	"subCourse": "Marketing",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BM 2",
+	"teacherName": "Ms. Madhavi Neman",
+	"subjectCode": "6034",
+	"subjectName": "Talent Management",
+	"course": "TYBMS",
+	"subCourse": "Marketing",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "230300",
+	"subjectName": "Personality Development",
+	"course": "BA I Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S 12",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "230400",
+	"subjectName": "Environmental Studies",
+	"course": "BA I Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S5",
+	"teacherName": "Dr. Harshada Rathod",
+	"subjectCode": "245306",
+	"subjectName": "Economics Paper III - Macro Level Problem",
+	"course": "BA I Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "245306",
+	"subjectName": "Economics Paper III - Macro Level Problem",
+	"course": "BA I Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rekha Kaklotar",
+	"subjectCode": "245406",
+	"subjectName": "Economics Paper IV - Basic of Money",
+	"course": "BA I Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S 20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "250201",
+	"subjectName": "English CC Paper (LL)",
+	"course": "BA I Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S 14",
+	"teacherName": "Ms. Shama Chavan",
+	"subjectCode": "280226",
+	"subjectName": "Fundamental of Nutrition",
+	"course": "BA I Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "230300",
+	"subjectName": "Personality Development",
+	"course": "BA I Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "230400",
+	"subjectName": "Environmental Studies",
+	"course": "BA I Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S5",
+	"teacherName": "Dr. Harshada Rathod",
+	"subjectCode": "245306",
+	"subjectName": "Economics Paper III Macro Level",
+	"course": "BA I Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S 12",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "245306",
+	"subjectName": "Economics Paper III - Macro Level",
+	"course": "BA I Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S 11",
+	"teacherName": "Dr. Rekha Kaklotar",
+	"subjectCode": "245406",
+	"subjectName": "Economics Paper IV - Basics of Money",
+	"course": "BA I Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S 20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "250201",
+	"subjectName": "English CC Paper LL",
+	"course": "BA I Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S 10",
+	"teacherName": "Dr. Ravindra Katyayan",
+	"subjectCode": "275203",
+	"subjectName": "Hindi Paper II",
+	"course": "BA I Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "230300",
+	"subjectName": "PERSONALITY DEVELOPMENT",
+	"course": "BA I Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S 12",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "230400",
+	"subjectName": "ENVIRONMENTAL STUDIES",
+	"course": "BA I Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S4",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "245302",
+	"subjectName": " GUJARATI PAPER -III PADHYA SWARUP",
+	"course": "BA I Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S 13",
+	"teacherName": "Dr. Sejal Shah",
+	"subjectCode": "245402",
+	"subjectName": "GUJARATI PAPER-IV LOKNATYA BHAVAI",
+	"course": "BA I Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S 20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "250201",
+	"subjectName": "ENGLISH CC PAPER (L.L.) EXPLORING ENGLISH",
+	"course": "BA I Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S 10",
+	"teacherName": "Dr. Ravindra Katyayan",
+	"subjectCode": "275203",
+	"subjectName": "AC HINDI PAPER-II",
+	"course": "BA I Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S 12",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "230300",
+	"subjectName": "PERSONALITY DEVELOPMENT",
+	"course": "BA I Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S 12",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "230400",
+	"subjectName": "ENVIRONMENTAL STUDIES",
+	"course": "BA I Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S4",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "245302",
+	"subjectName": " GUJARATI PAPER -III PADHYA SWARUP",
+	"course": "BA I Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S13",
+	"teacherName": "Dr. Sejal Shah",
+	"subjectCode": "245402",
+	"subjectName": "GUJARATI PAPER-IV LOKNATYA BHAVAI",
+	"course": "BA I Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "250201",
+	"subjectName": "ENGLISH CC PAPER (L.L.) ",
+	"course": "BA I Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S14",
+	"teacherName": "Ms. Shama Chavan",
+	"subjectCode": "280226",
+	"subjectName": "CAPC PAPER - II FUNDAMENTAL OF NUTRITION",
+	"course": "BA I Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "210201",
+	"subjectName": "ENGLISH CC PAPER (H.L.)",
+	"course": "BA I Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S 20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "230300",
+	"subjectName": "Personality Development",
+	"course": "BA I Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S 3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "230400",
+	"subjectName": "ENVIRONMENTAL STUDIES",
+	"course": "BA I Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "230400",
+	"subjectName": "ENVIRONMENTAL STUDIES",
+	"course": "BA I Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S24",
+	"teacherName": "Ms. Shifa Shikalgar",
+	"subjectCode": "240301",
+	"subjectName": "ENGLISH PAPER-III THE NINETEENTH CENTURY NOVEL.",
+	"course": "BA I Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S23",
+	"teacherName": "Ms. Annabel Rebello",
+	"subjectCode": "240401",
+	"subjectName": "ENGLISH PAPER-IV ROMANTIC & VICTORIAN POETRY",
+	"course": "BA I Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "280227",
+	"subjectName": "CAPC PAPER-II - ADOLESCENT DEVELOPMENT",
+	"course": "BA I Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "210201",
+	"subjectName": "ENGLISH CC PAPER (H.L.) EMPOWERING ENGLISH- II",
+	"course": "BA I Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "230300",
+	"subjectName": "PERSONALITY DEVELOPMENT",
+	"course": "BA I Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "230400",
+	"subjectName": "ENVIRONMENTAL STUDIES",
+	"course": "BA I Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "230400",
+	"subjectName": "ENVIRONMENTAL STUDIES",
+	"course": "BA I Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S 24",
+	"teacherName": "Ms. Shifa Shikalgar",
+	"subjectCode": "240301",
+	"subjectName": "ENGLISH PAPER-III THE NINETEENTH CENTURY NOVEL.",
+	"course": "BA I Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S23",
+	"teacherName": "Ms. Annabel Rebello",
+	"subjectCode": "240401",
+	"subjectName": "ENGLISH PAPER-IV ROMANTIC & VICTORIAN POETRY",
+	"course": "BA I Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "280226",
+	"subjectName": "CAPC PAPER-II - FUNDAMENTALS OF NUTRITION",
+	"course": "BA I Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "210201",
+	"subjectName": "ENGLISH CC PAPER (H.L.) ",
+	"course": "BA I Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "230300",
+	"subjectName": "PERSONALITY DEVELOPMENT",
+	"course": "BA I Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "230400",
+	"subjectName": "ENVIRONMENTAL STUDIES",
+	"course": "BA I Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "230400",
+	"subjectName": "ENVIRONMENTAL STUDIES",
+	"course": "BA I Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S24",
+	"teacherName": "Ms. Shifa Shikalgar",
+	"subjectCode": "240301",
+	"subjectName": "ENGLISH PAPER-III THE NINETEENTH CENTURY NOVEL.",
+	"course": "BA I Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S23",
+	"teacherName": "Ms. Annabel Rebello",
+	"subjectCode": "240401",
+	"subjectName": "ENGLISH PAPER-IV ROMANTIC & VICTORIAN POETRY",
+	"course": "BA I Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S10",
+	"teacherName": "Dr. Ravindra Katyayan",
+	"subjectCode": "275203",
+	"subjectName": "AC HINDI PAPER-II,",
+	"course": "BA I Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "210201",
+	"subjectName": "ENGLISH CC PAPER (H.L.) ",
+	"course": "BA I Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "230300",
+	"subjectName": "PERSONALITY DEVELOPMENT",
+	"course": "BA I Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "230400",
+	"subjectName": "ENVIRONMENTAL STUDIES",
+	"course": "BA I Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S230",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "230400",
+	"subjectName": "ENVIRONMENTAL STUDIES",
+	"course": "BA I Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S2",
+	"teacherName": "Dr. Cicilia Chettiar",
+	"subjectCode": "245310",
+	"subjectName": "GENERAL PSYCHOLOGY",
+	"course": "BA I Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S1",
+	"teacherName": "Ms. Anuja Deshpande",
+	"subjectCode": "245410",
+	"subjectName": "DEVELOPMENTAL PSYCHOLOGY ",
+	"course": "BA I Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "280227",
+	"subjectName": "ADOLESCENT DEVELOPMENT",
+	"course": "BA I Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "210201",
+	"subjectName": "ENGLISH CC PAPER (H.L.) ",
+	"course": "BA I Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "230300",
+	"subjectName": "Personality Development",
+	"course": "BA I Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "230400",
+	"subjectName": "ENVIRONMENTAL STUDIES",
+	"course": "BA I Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "230400",
+	"subjectName": "ENVIRONMENTAL STUDIES",
+	"course": "BA I Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S2",
+	"teacherName": "Dr. Cicilia Chettiar",
+	"subjectCode": "245310",
+	"subjectName": "GENERAL PSYCHOLOGY",
+	"course": "BA I Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S1",
+	"teacherName": "Ms. Anuja Deshpande",
+	"subjectCode": "245410",
+	"subjectName": "DEVELOPMENTAL PSYCHOLOGY ",
+	"course": "BA I Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "280226",
+	"subjectName": " FUNDAMENTALS OF NUTRITION",
+	"course": "BA I Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "210201",
+	"subjectName": "ENGLISH CC PAPER (H.L.) ",
+	"course": "BA I Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "230300",
+	"subjectName": "PERSONALITY DEVELOPMENT",
+	"course": "BA I Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "230400",
+	"subjectName": "ENVIRONMENTAL STUDIES",
+	"course": "BA I Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "230400",
+	"subjectName": "ENVIRONMENTAL STUDIES",
+	"course": "BA I Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S7",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "245311",
+	"subjectName": "SOCIAL PROBLEM IN INDIA",
+	"course": "BA I ENG",
+	"subCourse": "Socio/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S21",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "245411",
+	"subjectName": "INTRODUCTION TO SOCIOLOGY",
+	"course": "BA I Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "280227",
+	"subjectName": "ADOLESCENT DEVELOPMENT",
+	"course": "BA I Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "210201",
+	"subjectName": "ENGLISH CC PAPER (H.L.)",
+	"course": "BA I Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "230300",
+	"subjectName": "PERSONALITY DEVELOPMENT",
+	"course": "BA I Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "230400",
+	"subjectName": "ENVIRONMENTAL STUDIES",
+	"course": "BA I Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "230400",
+	"subjectName": "ENVIRONMENTAL STUDIES",
+	"course": "BA I Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S7",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "245311",
+	"subjectName": "SOCIAL PROBLEM IN INDIA",
+	"course": "BA I Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S21",
+	"teacherName": "Ms. Twinkle Sanghavi",
+	"subjectCode": "245411",
+	"subjectName": "INTRODUCTION TO SOCIOLOGY",
+	"course": "BA I Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "280226",
+	"subjectName": "FUNDAMENTALS OF NUTRITION",
+	"course": "BA I Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "210201",
+	"subjectName": "ENGLISH CC PAPER (H.L.) ",
+	"course": "BA I Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "230300",
+	"subjectName": "PERSONALITY DEVELOPMENT",
+	"course": "BA I Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "230400",
+	"subjectName": "ENVIRONMENTAL STUDIES",
+	"course": "BA I Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "230400",
+	"subjectName": "ENVIRONMENTAL STUDIES",
+	"course": "BA I Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S7",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "245311",
+	"subjectName": "SOCIAL PROBLEM IN INDIA",
+	"course": "BA I Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S21",
+	"teacherName": "Ms. Twinkle Sanghavi",
+	"subjectCode": "245411",
+	"subjectName": "INTRODUCTION TO SOCIOLOGY",
+	"course": "BA I Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S10",
+	"teacherName": "Dr. Ravindra Katyayan",
+	"subjectCode": "275203",
+	"subjectName": "AADHUNIK PADHYA HINDI KAVITA",
+	"course": "BA I Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "415401",
+	"subjectName": "PROFESSIONAL ENGLISH ADVANCE-II",
+	"course": "BA II Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "430600",
+	"subjectName": "CURRENT SOCIAL ISSUES & PROBLEMS",
+	"course": "BA II Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S23",
+	"teacherName": "Ms. Annabel Rebello",
+	"subjectCode": "445701",
+	"subjectName": "The Early Modern Novel",
+	"course": "BA II Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S24",
+	"teacherName": "Ms. Shifa Shikalgar",
+	"subjectCode": "445801",
+	"subjectName": "SHAKESPEREAN DRAMA",
+	"course": "BA II Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "480527",
+	"subjectName": "CHILD CARE & GUIDANCE",
+	"course": "BA II Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "480627",
+	"subjectName": "MANAGEMENT OF CHILD & YOUTH CENTRE (PR)",
+	"course": "BA II Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "415401",
+	"subjectName": "PROFESSIONAL ENGLISH ADVANCE-II",
+	"course": "BA II Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "430600",
+	"subjectName": "CURRENT SOCIAL ISSUES & PROBLEMS",
+	"course": "BA II Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S23",
+	"teacherName": "Ms. Annabel Rebello",
+	"subjectCode": "445701",
+	"subjectName": "THE EARLY MODERN NOVEL",
+	"course": "BA II Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S24",
+	"teacherName": "Ms. Shifa Shikalgar",
+	"subjectCode": "445801",
+	"subjectName": "SHAKESPEREAN DRAMA",
+	"course": "BA II Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "480526",
+	"subjectName": "FOOD COMMODITIES -II",
+	"course": "BA II Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "480626",
+	"subjectName": "NUTRITION DURING LIFE CYCLE-II",
+	"course": "BA II Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "415401",
+	"subjectName": "PROFESSIONAL ENGLISH ADVANCE-II",
+	"course": "BA II Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "430600",
+	"subjectName": "CURRENT SOCIAL ISSUES & PROBLEMS",
+	"course": "BA II Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S23",
+	"teacherName": "Ms. Annabel Rebello",
+	"subjectCode": "445701",
+	"subjectName": "THE EARLY MODERN NOVEL",
+	"course": "BA II Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S24",
+	"teacherName": "Ms. Shifa Shikalgar",
+	"subjectCode": "445801",
+	"subjectName": "SHAKESPEREAN DRAMA",
+	"course": "BA II Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S23",
+	"teacherName": "Ms. Annabel Rebello",
+	"subjectCode": "465201",
+	"subjectName": "FATLE & DETECTIVE FICTION IN CHILDRENS LITERATURE",
+	"course": "BA II Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S10",
+	"teacherName": "Dr. Ravindra Katyayan",
+	"subjectCode": "475403",
+	"subjectName": "ADHUNIK PADYA",
+	"course": "BA II Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "415401",
+	"subjectName": "PROFESSIONAL ENGLISH ADVANCE-II",
+	"course": "BA II Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "430600",
+	"subjectName": "CURRENT SOCIAL ISSUES & PROBLEMS",
+	"course": "BA II Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S2",
+	"teacherName": "Dr. Cicilia Chettiar",
+	"subjectCode": "445710",
+	"subjectName": "SOCIAL PSYCHOLOGY ASSESSMENT",
+	"course": "BA II Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S1",
+	"teacherName": "Ms. Anuja Deshpande",
+	"subjectCode": "445810",
+	"subjectName": "PSYCHOLOGICAL TESTING & ASSESSMENT",
+	"course": "BA II Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "480527",
+	"subjectName": "CHILD CARE & GUIDANCE",
+	"course": "BA II Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "480627",
+	"subjectName": "MANAGEMENT OF CHILD & YOUTH CENTRE (PR)",
+	"course": "BA II Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "415401",
+	"subjectName": "PROFESSIONAL ENGLISH ADVANCE-II",
+	"course": "BA II Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "430600",
+	"subjectName": "CURRENT SOCIAL ISSUES & PROBLEMS",
+	"course": "BA II Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S2",
+	"teacherName": "Dr. Cicilia Chettiar",
+	"subjectCode": "445710",
+	"subjectName": "SOCIAL PSYCHOLOGY ASSESSMENT",
+	"course": "BA II Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S1",
+	"teacherName": "Ms. Anuja Deshpande",
+	"subjectCode": "445810",
+	"subjectName": "PSYCHOLOGICAL TESTING & ASSESSMENT",
+	"course": "BA II Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "480526",
+	"subjectName": "FOOD COMMODITIES -II",
+	"course": "BA II Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "480626",
+	"subjectName": "NUTRITION DURING LIFE CYCLE-II",
+	"course": "BA II Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "415401",
+	"subjectName": "PROFESSIONAL ENGLISH ADVANCE-II",
+	"course": "BA II Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "430600",
+	"subjectName": "CURRENT SOCIAL ISSUES & PROBLEMS",
+	"course": "BA II Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S7",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "445711",
+	"subjectName": "WOMEN'S ISSUES IN INDIA",
+	"course": "BA II Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S21",
+	"teacherName": "Ms. Twinkle Sanghavi",
+	"subjectCode": "445811",
+	"subjectName": "URBAN SOCIETY , PROBLEMS & PROSPECTS",
+	"course": "BA II Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "480527",
+	"subjectName": "CHILD CARE & GUIDANCE",
+	"course": "BA II Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "480627",
+	"subjectName": "MANAGEMENT OF CHILD & YOUTH CENTRE (PR)",
+	"course": "BA II Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "415401",
+	"subjectName": "PROFESSIONAL ENGLISH ADVANCE-II",
+	"course": "BA II Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "430600",
+	"subjectName": "CURRENT SOCIAL ISSUES & PROBLEMS",
+	"course": "BA II Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S7",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "445711",
+	"subjectName": "WOMEN'S ISSUES IN INDIA",
+	"course": "BA II Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S21",
+	"teacherName": "Ms. Twinkle Sanghavi",
+	"subjectCode": "445811",
+	"subjectName": "URBAN SOCIETY , PROBLEMS & PROSPECTS",
+	"course": "BA II Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "480526",
+	"subjectName": "FOOD COMMODITIES -II",
+	"course": "BA II Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "480626",
+	"subjectName": "NUTRITION DURING LIFE CYCLE-II",
+	"course": "BA II Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S9",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "415401",
+	"subjectName": "PROFESSIONAL ENGLISH ADVANCE-II",
+	"course": "BA II Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "430600",
+	"subjectName": "CURRENT SOCIAL ISSUES & PROBLEMS",
+	"course": "BA II Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S7",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "445711",
+	"subjectName": "WOMEN'S ISSUES IN INDIA",
+	"course": "BA II Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S21",
+	"teacherName": "Ms. Twinkle Sanghavi",
+	"subjectCode": "445811",
+	"subjectName": "URBAN SOCIETY , PROBLEMS & PROSPECTS",
+	"course": "BA II Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S7",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "465211",
+	"subjectName": "MEDIA, CULTURE & SOCIETY",
+	"course": "BA II Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S10",
+	"teacherName": "Dr. Ravindra Katyayan",
+	"subjectCode": "475403",
+	"subjectName": "ADHUNIK PADYA",
+	"course": "BA II Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "430600",
+	"subjectName": "CURRENT SOCIAL ISSUES & PROBLEMS",
+	"course": "BA II Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rekha Kaklotar",
+	"subjectCode": "445706",
+	"subjectName": "PROBLEM & POLICY IN INDIAN ECONOMY SINCE",
+	"course": "BA II Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "445806",
+	"subjectName": "THEORY OF DISTRIBUTION & WELFARE ECONOMICS",
+	"course": "BA II Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "455401",
+	"subjectName": "ADVANCING WITH ENGLISH",
+	"course": "BA II Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S14",
+	"teacherName": "Ms. Shama Chavan",
+	"subjectCode": "480526",
+	"subjectName": "FOOD COMMODITIES -II",
+	"course": "BA II Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S14",
+	"teacherName": "Ms. Shama Chavan",
+	"subjectCode": "480626",
+	"subjectName": "NUTRITION DURING LIFE CYCLE-II",
+	"course": "BA II Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "430600",
+	"subjectName": "CURRENT SOCIAL ISSUES & PROBLEMS",
+	"course": "BA II Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rekha Kaklotar",
+	"subjectCode": "445706",
+	"subjectName": "PROBLEM & POLICY IN INDIAN ECONOMY SINCE",
+	"course": "BA II Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "445806",
+	"subjectName": "THEORY OF DISTRIBUTION & WELFARE ECONOMICS",
+	"course": "BA II Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "455401",
+	"subjectName": "ADVANCING WITH ENGLISH",
+	"course": "BA II Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rekha Kaklotar",
+	"subjectCode": "465206",
+	"subjectName": "LABOUR ECONOMICS",
+	"course": "BA II Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S10",
+	"teacherName": "Dr. Ravindra Katyayan",
+	"subjectCode": "475403",
+	"subjectName": "ADHUNIK PADYA: CHHAYAVADOTTAR",
+	"course": "BA II Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "430600",
+	"subjectName": "CURRENT SOCIAL ISSUES & PROBLEMS",
+	"course": "BA II Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S13",
+	"teacherName": "Dr. Sejal Shah",
+	"subjectCode": "445702",
+	"subjectName": "ARVACHIN PADYA KRUTI",
+	"course": "BA II Guj",
+	"subCourse": "Guj/HN ",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S4",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "445802",
+	"subjectName": "GUJARATI SAHITYA NO ITIHAS ",
+	"course": "BA II Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "455401",
+	"subjectName": "ADVANCING WITH ENGLISH",
+	"course": "BA II Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S13",
+	"teacherName": "Dr. Sejal Shah",
+	"subjectCode": "465202",
+	"subjectName": "PAPER- II LEKHANKAUSHAL",
+	"course": "BA II Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S4",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "465202",
+	"subjectName": "PAPER- II LEKHANKAUSHAL",
+	"course": "BA II Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S10",
+	"teacherName": "Dr. Ravindra Katyayan",
+	"subjectCode": "475403",
+	"subjectName": "ADHUNIK PADYA: CHHAYAVADOTTAR",
+	"course": "BA II Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "430600",
+	"subjectName": "CURRENT SOCIAL ISSUES & PROBLEMS",
+	"course": "BA II Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S13",
+	"teacherName": "Dr. Sejal Shah",
+	"subjectCode": "445702",
+	"subjectName": "ARVACHIN PADYA KRUTI",
+	"course": "BA II Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S4",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "445802",
+	"subjectName": "GUJARATI SAHITYA NO ITIHAS ",
+	"course": "BA II Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "455401",
+	"subjectName": "ADVANCING WITH ENGLISH",
+	"course": "BA II Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S14",
+	"teacherName": "Ms. Shama Chavan",
+	"subjectCode": "480526",
+	"subjectName": "FOOD COMMODITIES -II",
+	"course": "BA II Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S14",
+	"teacherName": "Ms. Shama Chavan",
+	"subjectCode": "480626",
+	"subjectName": "NUTRITION DURING LIFE CYCLE-II",
+	"course": "BA II Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rekha Kaklotar",
+	"subjectCode": "646306",
+	"subjectName": "BUSINESS CYCLES & STABILIZATION POLICIES",
+	"course": "BA III Guj",
+	"subCourse": "Eco/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "646406",
+	"subjectName": "ECONOMICS OF DEVELOPMENT",
+	"course": "BA III Guj",
+	"subCourse": "Eco/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "646506",
+	"subjectName": "STATISTICAL TECHNIQUE",
+	"course": "BA III Guj",
+	"subCourse": "Eco/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rekha Kaklotar",
+	"subjectCode": "646606",
+	"subjectName": "PUBLIC FINANCE",
+	"course": "BA III Guj",
+	"subCourse": "Eco/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "655601",
+	"subjectName": "ENGLISH (L.L.)",
+	"course": "BA III Guj",
+	"subCourse": "Eco/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S5",
+	"teacherName": "Dr. Harshada Rathod",
+	"subjectCode": "665406",
+	"subjectName": "Industrial Economics",
+	"course": "BA III Guj",
+	"subCourse": "Eco/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rekha Kaklotar",
+	"subjectCode": "646306",
+	"subjectName": "BUSINESS CYCLES & STABILIZATION POLICIES",
+	"course": "BA III Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "646406",
+	"subjectName": "ECONOMICS OF DEVELOPMENT",
+	"course": "BA III Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "646506",
+	"subjectName": "STATISTICAL TECHNIQUE",
+	"course": "BA III Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rekha Kaklotar",
+	"subjectCode": "646606",
+	"subjectName": "PUBLIC FINANCE",
+	"course": "BA III Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "655601",
+	"subjectName": "ENGLISH (L.L.)",
+	"course": "BA III Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S14",
+	"teacherName": "Ms. Shama Chavan",
+	"subjectCode": "680826",
+	"subjectName": "FOOD ENTREPRENEURSHIP-II",
+	"course": "BA III Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S4",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "646302",
+	"subjectName": "PASCHATYA KARYAVICHAR",
+	"course": "BA III Guj",
+	"subCourse": "Guj/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S13",
+	"teacherName": "Dr. Sejal Shah",
+	"subjectCode": "646402",
+	"subjectName": "GUJARATI BHASHANU VYAKRAN",
+	"course": "BA III Guj",
+	"subCourse": "Guj/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S4",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "646502",
+	"subjectName": "GUJARATI SAHITYA NO ITIHAS",
+	"course": "BA III Guj",
+	"subCourse": "Guj/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S13",
+	"teacherName": "Dr. Sejal Shah",
+	"subjectCode": "646602",
+	"subjectName": "SAHITYA ANE SANSHODHAN",
+	"course": "BA III Guj",
+	"subCourse": "Guj/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "655601",
+	"subjectName": "ENGLISH (L.L.)",
+	"course": "BA III Guj",
+	"subCourse": "Guj/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S13",
+	"teacherName": "Dr. Sejal Shah",
+	"subjectCode": "665402",
+	"subjectName": "APATHIT TULNATMAK KAVYA RASDARSHAN",
+	"course": "BA III Guj",
+	"subCourse": "Guj/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S4",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "665402",
+	"subjectName": "APATHIT TULNATMAK KAVYA RASDARSHAN",
+	"course": "BA III Guj",
+	"subCourse": "Guj/APC",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S4",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "646302",
+	"subjectName": "PASCHATYA KARYAVICHAR",
+	"course": "BA III Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S13",
+	"teacherName": "Dr. Sejal Shah",
+	"subjectCode": "646402",
+	"subjectName": "GUJARATI BHASHANU VYAKRAN",
+	"course": "BA III Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S4",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "646502",
+	"subjectName": "GUJARATI SAHITYA NO ITIHAS",
+	"course": "BA III Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S13",
+	"teacherName": "Dr. Sejal Shah",
+	"subjectCode": "646602",
+	"subjectName": "SAHITYA ANE SANSHODHAN",
+	"course": "BA III Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "655601",
+	"subjectName": "ENGLISH (L.L.)",
+	"course": "BA III Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S14",
+	"teacherName": "Ms. Shama Chavan",
+	"subjectCode": "680826",
+	"subjectName": "FOOD ENTREPRENEURSHIP-II",
+	"course": "BA III Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S6",
+	"teacherName": "Dr. Jayashree Palit",
+	"subjectCode": "210201",
+	"subjectName": "ENGLISH CC (H.L.)",
+	"course": "B.Com. I",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "245205",
+	"subjectName": "Economics",
+	"course": "B.Com. I",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "245206",
+	"subjectName": "Human Resource Mgmt",
+	"course": "B.Com. I",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "245207",
+	"subjectName": "Accountancy ",
+	"course": "B.Com. I",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "245208",
+	"subjectName": "Business Statistics",
+	"course": "B.Com. I",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S17",
+	"teacherName": "Ms. Shobha Dighe",
+	"subjectCode": "245209",
+	"subjectName": "Environmental Studies",
+	"course": "B.Com. I",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S16",
+	"teacherName": "Ms. Sharon Samuel",
+	"subjectCode": "205352",
+	"subjectName": "OM",
+	"course": "B.Com. I",
+	"subCourse": "OM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S6",
+	"teacherName": "Dr. Jayashree Palit",
+	"subjectCode": "210201",
+	"subjectName": "English CC",
+	"course": "B.Com. I",
+	"subCourse": "OM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "245205",
+	"subjectName": "Economics",
+	"course": "B.Com. I",
+	"subCourse": "OM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "245206",
+	"subjectName": "Human Resource Mgmt",
+	"course": "B.Com. I",
+	"subCourse": "OM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "245207",
+	"subjectName": "Accountancy",
+	"course": "B.Com. I",
+	"subCourse": "OM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S17",
+	"teacherName": "Ms. Shobha Dighe",
+	"subjectCode": "245209",
+	"subjectName": "Environmental Studies",
+	"course": "B.Com. I",
+	"subCourse": "OM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S22",
+	"teacherName": "Ms. Vaishali Ranadive",
+	"subjectCode": "205324",
+	"subjectName": "TTM",
+	"course": "B.Com. I",
+	"subCourse": "TTM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S6",
+	"teacherName": "Dr. Jayshree Palit",
+	"subjectCode": "210201",
+	"subjectName": "English CC",
+	"course": "B.Com. I",
+	"subCourse": "TTM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "245205",
+	"subjectName": "Economics",
+	"course": "B.Com. I",
+	"subCourse": "TTM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "245206",
+	"subjectName": "Human Resource Mgmt",
+	"course": "B.Com. I",
+	"subCourse": "TTM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "245207",
+	"subjectName": "Accountancy",
+	"course": "B.Com. I",
+	"subCourse": "TTM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S17",
+	"teacherName": "Ms. Shobha Dighe",
+	"subjectCode": "245209",
+	"subjectName": "Environmental Studies",
+	"course": "B.Com. I",
+	"subCourse": "TTM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S6",
+	"teacherName": "Dr. Jayshree Palit",
+	"subjectCode": "410401",
+	"subjectName": "English CC",
+	"course": "B.Com. II",
+	"subCourse": "ADVT",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S17",
+	"teacherName": "Ms. Shobha Dighe",
+	"subjectCode": "440210",
+	"subjectName": "Business Law",
+	"course": "B.Com. II",
+	"subCourse": "ADVT",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "440405",
+	"subjectName": "Economics",
+	"course": "B.Com. II",
+	"subCourse": "ADVT",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "440406",
+	"subjectName": "Banking & Insurance",
+	"course": "B.Com. II",
+	"subCourse": "ADVT",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S8",
+	"teacherName": "Ms. Preeta Joshi",
+	"subjectCode": "440407",
+	"subjectName": "Accountancy",
+	"course": "B.Com. II",
+	"subCourse": "ADVT",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S15",
+	"teacherName": "Ms. Shaheen Khan",
+	"subjectCode": "470244",
+	"subjectName": "Advertising",
+	"course": "B.Com. II",
+	"subCourse": "ADVT",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S6",
+	"teacherName": "Dr. Jayshree Palit",
+	"subjectCode": "410401",
+	"subjectName": "English CC",
+	"course": "B.Com. II",
+	"subCourse": "Hindi",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S17",
+	"teacherName": "Ms. Shobha Dighe",
+	"subjectCode": "440210",
+	"subjectName": "Business Law",
+	"course": "B.Com. II",
+	"subCourse": "Hindi",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "440405",
+	"subjectName": "Economics",
+	"course": "B.Com. II",
+	"subCourse": "Hindi",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "440406",
+	"subjectName": "Banking & Insurance",
+	"course": "B.Com. II",
+	"subCourse": "Hindi",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S8",
+	"teacherName": "Ms. Preeta Joshi",
+	"subjectCode": "440407",
+	"subjectName": "Accountancy",
+	"course": "B.Com. II",
+	"subCourse": "Hindi",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S10",
+	"teacherName": "Dr. Ravindra Katyayan",
+	"subjectCode": "475203",
+	"subjectName": "Hindi Sahitya",
+	"course": "B.Com. II",
+	"subCourse": "Hindi",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S6",
+	"teacherName": "Dr. Jayshree Palit",
+	"subjectCode": "410401",
+	"subjectName": "English CC",
+	"course": "B.Com. II",
+	"subCourse": "IP",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S17",
+	"teacherName": "Ms. Shobha Dighe",
+	"subjectCode": "440210",
+	"subjectName": "Business Law",
+	"course": "B.Com. II",
+	"subCourse": "IP",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "440405",
+	"subjectName": "International Trade",
+	"course": "B.Com. II",
+	"subCourse": "IP",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "440406",
+	"subjectName": "Banking & Insurance",
+	"course": "B.Com. II",
+	"subCourse": "IP",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S8",
+	"teacherName": "Ms. Preeta Joshi",
+	"subjectCode": "440407",
+	"subjectName": "Accountancy",
+	"course": "B.Com. II",
+	"subCourse": "IP",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S16",
+	"teacherName": "Ms. Sharon Samuel",
+	"subjectCode": "400552",
+	"subjectName": "OM",
+	"course": "B.Com. II",
+	"subCourse": "OM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S6",
+	"teacherName": "Dr. Jayshree Palit",
+	"subjectCode": "410401",
+	"subjectName": "English CC",
+	"course": "B.Com. II",
+	"subCourse": "OM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S17",
+	"teacherName": "Ms. Shobha Dighe",
+	"subjectCode": "440210",
+	"subjectName": "Business Law",
+	"course": "B.Com. II",
+	"subCourse": "OM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "440405",
+	"subjectName": "Economics",
+	"course": "B.Com. II",
+	"subCourse": "OM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "440406",
+	"subjectName": "Banking & Insurance",
+	"course": "B.Com. II",
+	"subCourse": "OM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S8",
+	"teacherName": "Ms. Preeta Joshi",
+	"subjectCode": "440407",
+	"subjectName": "Accountancy",
+	"course": "B.Com. II",
+	"subCourse": "OM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S22",
+	"teacherName": "Ms. Vaishali Ranadive",
+	"subjectCode": "400524",
+	"subjectName": "TTM",
+	"course": "B.Com. II",
+	"subCourse": "TTM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S6",
+	"teacherName": "Dr. Jayshree Palit",
+	"subjectCode": "410401",
+	"subjectName": "English CC",
+	"course": "B.Com. II",
+	"subCourse": "TTM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S17",
+	"teacherName": "Ms. Shobha Dighe",
+	"subjectCode": "440210",
+	"subjectName": "Business Law",
+	"course": "B.Com. II",
+	"subCourse": "TTM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "440405",
+	"subjectName": "Economics",
+	"course": "B.Com. II",
+	"subCourse": "TTM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "440406",
+	"subjectName": "Banking & Insurance",
+	"course": "B.Com. II",
+	"subCourse": "TTM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S8",
+	"teacherName": "Ms. Preeta Joshi",
+	"subjectCode": "440407",
+	"subjectName": "Accountancy",
+	"course": "B.Com. II",
+	"subCourse": "TTM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S6",
+	"teacherName": "Dr. Jayshree Palit",
+	"subjectCode": "610601",
+	"subjectName": "English HL",
+	"course": "B.Com. III",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "640605",
+	"subjectName": "Economics",
+	"course": "B.Com. III",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "640606",
+	"subjectName": "Financial Markets",
+	"course": "B.Com. III",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S8",
+	"teacherName": "Ms. Preeta Joshi",
+	"subjectCode": "650415",
+	"subjectName": "Management Corporate Accounting",
+	"course": "B.Com. III",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S8",
+	"teacherName": "Ms. Preeta Joshi",
+	"subjectCode": "650515",
+	"subjectName": "Corporate Auditing",
+	"course": "B.Com. III",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S8",
+	"teacherName": "Ms. Preeta Joshi",
+	"subjectCode": "650615",
+	"subjectName": "Taxation - Income Tax",
+	"course": "B.Com. III",
+	"subCourse": "Reg",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S16",
+	"teacherName": "Ms. Sharon Samuel",
+	"subjectCode": "600952",
+	"subjectName": "OM",
+	"course": "B.Com. III",
+	"subCourse": "OM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S16",
+	"teacherName": "Ms. Sharon Samuel",
+	"subjectCode": "601052",
+	"subjectName": "OM",
+	"course": "B.Com. III",
+	"subCourse": "OM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "601154",
+	"subjectName": "Entrepreneurship Development",
+	"course": "B.Com. III",
+	"subCourse": "OM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S16",
+	"teacherName": "Ms. Sharon Samuel",
+	"subjectCode": "601154",
+	"subjectName": "Entrepreneurship Development",
+	"course": "B.Com. III",
+	"subCourse": "OM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "640605",
+	"subjectName": "Economics",
+	"course": "B.Com. III",
+	"subCourse": "OM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "640606",
+	"subjectName": "Financial Markets",
+	"course": "B.Com. III",
+	"subCourse": "OM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S6",
+	"teacherName": "Dr. Jayshree Palit",
+	"subjectCode": "610601",
+	"subjectName": "English HL",
+	"course": "B.Com. III",
+	"subCourse": "OM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S22",
+	"teacherName": "Ms. Vaishali Ranadive",
+	"subjectCode": "600924",
+	"subjectName": "Tourism Marketing",
+	"course": "B.Com. III",
+	"subCourse": "TTM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S22",
+	"teacherName": "Ms. Vaishali Ranadive",
+	"subjectCode": "601024",
+	"subjectName": "Tourism Promotion",
+	"course": "B.Com. III",
+	"subCourse": "TTM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "601154",
+	"subjectName": "Entrepreneurship Development ",
+	"course": "B.Com. III",
+	"subCourse": "TTM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S16",
+	"teacherName": "Ms. Sharon Samuel",
+	"subjectCode": "601154",
+	"subjectName": "Entrepreneurship Development",
+	"course": "B.Com. III",
+	"subCourse": "TTM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S6",
+	"teacherName": "Dr. Jayshree Palit",
+	"subjectCode": "610601",
+	"subjectName": "English CC",
+	"course": "B.Com. III",
+	"subCourse": "TTM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S3",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "640605",
+	"subjectName": "Economics",
+	"course": "B.Com. III",
+	"subCourse": "TTM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "640606",
+	"subjectName": "Financial Markets",
+	"course": "B.Com. III",
+	"subCourse": "TTM",
+	"semester": "Even"
+},
+{
+	"teacherCode": "BM 1",
+	"teacherName": "Ms. Yuti Chandan",
+	"subjectCode": "1001",
+	"subjectName": "Principles of Management",
+	"course": "FYBMS",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BM 2",
+	"teacherName": "Ms. Saloni Mehta",
+	"subjectCode": "1002",
+	"subjectName": "Business Communication",
+	"course": "FYBMS",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BM 3",
+	"teacherName": "Ms. Pranaya Revandkar",
+	"subjectCode": "1003",
+	"subjectName": "Financial Accounting",
+	"course": "FYBMS",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BM 4",
+	"teacherName": "Ms. Snehal Obhan",
+	"subjectCode": "1004",
+	"subjectName": "Principles of Marketing",
+	"course": "FYBMS",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BM 5",
+	"teacherName": "Ms .Zeba Shaikh",
+	"subjectCode": "1005",
+	"subjectName": "Economics-I",
+	"course": "FYBMS",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BM 1",
+	"teacherName": "Ms. Saloni Mehta",
+	"subjectCode": "3001",
+	"subjectName": "Business Laws",
+	"course": "SYBMS",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BM 2",
+	"teacherName": "Ms. Pranaya Revandkar",
+	"subjectCode": "3002",
+	"subjectName": "Cost & Management Accounting",
+	"course": "SYBMS",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BM 3",
+	"teacherName": "Ms. Madhuri Aykar",
+	"subjectCode": "3003",
+	"subjectName": "Human Resource Management",
+	"course": "SYBMS",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BM 4",
+	"teacherName": "Ms .Saloni Mehta",
+	"subjectCode": "3004",
+	"subjectName": "Fundamentals of Production & Operations Management",
+	"course": "SYBMS",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BM 5",
+	"teacherName": "Mr. Mukund Sohani",
+	"subjectCode": "3005",
+	"subjectName": "Quantitative Techniques for Business",
+	"course": "SYBMS",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BM 1",
+	"teacherName": "Mr. Mukund Sohani",
+	"subjectCode": "5005",
+	"subjectName": "Advanced Quantitative Methods for Business",
+	"course": "TYBMS",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BM 2",
+	"teacherName": "Ms. Yuti Chandan",
+	"subjectCode": "5012",
+	"subjectName": "Banking &Financial Services",
+	"course": "TYBMS",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BM 3",
+	"teacherName": "Ms. Snehal Obhan",
+	"subjectCode": "5021",
+	"subjectName": "Integrated Marketing Communication",
+	"course": "TYBMS",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BM 4",
+	"teacherName": "Ms. Yuti Chandan",
+	"subjectCode": "5011",
+	"subjectName": "Auditing & Taxation ",
+	"course": "TYBMS",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BM 5",
+	"teacherName": "Ms. Pranaya Revandkar",
+	"subjectCode": "5022",
+	"subjectName": "Brand Management",
+	"course": "TYBMS",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BM 6",
+	"teacherName": "Ms. Snehal Obhan",
+	"subjectCode": "5031",
+	"subjectName": "Industrial Relations",
+	"course": "TYBMS",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BM 7",
+	"teacherName": "Ms. Madhuri Aykar",
+	"subjectCode": "5032",
+	"subjectName": "Human Resource Development",
+	"course": "TYBMS",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BF 1",
+	"teacherName": "Ms. Madhuri Aykar",
+	"subjectCode": "140119",
+	"subjectName": "Basics of Accountancy",
+	"course": "FYBAFI",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BF 2",
+	"teacherName": "Ms. Saloni Mehta",
+	"subjectCode": "140219",
+	"subjectName": "Financial Accountancy",
+	"course": "FYBAFI",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BF 3",
+	"teacherName": "Ms. Pranaya Revandkar",
+	"subjectCode": "140319",
+	"subjectName": "Information Technology",
+	"course": "FYBAFI",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BF 4",
+	"teacherName": "Ms. Snehal Obhan",
+	"subjectCode": "140419",
+	"subjectName": "Basics of Business Communication",
+	"course": "FYBAFI",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BF 5",
+	"teacherName": "Ms. Jyotsana Raut",
+	"subjectCode": "140519",
+	"subjectName": "Management Theory & Practice",
+	"course": "FYBAFI",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BF 1",
+	"teacherName": "Ms. Madhuri Aykar",
+	"subjectCode": "340119",
+	"subjectName": "Cost Accountancy",
+	"course": "SYBAFI",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BF 2",
+	"teacherName": "Ms. Saloni Mehta",
+	"subjectCode": "340219",
+	"subjectName": "Advance Accounting",
+	"course": "SYBAFI",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BF 3",
+	"teacherName": "Ms. Jyotsana Raut",
+	"subjectCode": "340319",
+	"subjectName": "Introduction to Insurance",
+	"course": "SYBAFI",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BF 4",
+	"teacherName": "Ms. Jyotsana Raut",
+	"subjectCode": "340419",
+	"subjectName": "Economics- I",
+	"course": "SYBAFI",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BF 5",
+	"teacherName": "Ms. Snehal Obhan",
+	"subjectCode": "340519",
+	"subjectName": "Business Law",
+	"course": "SYBAFI",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BF 1",
+	"teacherName": "Ms. Jyotsana Raut",
+	"subjectCode": "540119",
+	"subjectName": "Financial Management",
+	"course": "TYBAFI",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BF 2",
+	"teacherName": "Ms. Jyotsana Raut",
+	"subjectCode": "540219",
+	"subjectName": "General Insurance",
+	"course": "TYBAFI",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BF 3",
+	"teacherName": "Mr. Mukund Sohani",
+	"subjectCode": "540319",
+	"subjectName": "Statistical Theories & Business Applications",
+	"course": "TYBAFI",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BF 4",
+	"teacherName": "Ms. Madhuri Aykar ",
+	"subjectCode": "540419",
+	"subjectName": "Capital Markets",
+	"course": "TYBAFI",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "BF 5",
+	"teacherName": "Ms. Pranaya Revandkar",
+	"subjectCode": "540519",
+	"subjectName": "Internship -I",
+	"course": "TYBAFI",
+	"subCourse": "REG",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S01",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "130100",
+	"subjectName": "FC PAPER-I HISTORY AS HERITAGE",
+	"course": "BA I Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S06",
+	"teacherName": "Dr. Ravindra Katyan",
+	"subjectCode": "130100",
+	"subjectName": "FC PAPER-I HISTORY AS HERITAGE",
+	"course": "BA I Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S02",
+	"teacherName": "Ms. Shama Chavan",
+	"subjectCode": "130200",
+	"subjectName": "FC PAPER-II WOMEN IN CHANGING INDIA",
+	"course": "BA I Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S06",
+	"teacherName": "Dr. Ravindra Katyan",
+	"subjectCode": "130200",
+	"subjectName": "FC PAPER-II WOMEN IN CHANGING INDIA",
+	"course": "BA I Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S03",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "145106",
+	"subjectName": "DC ECONOMICS PAPER-I ECONOMY OF MAHARASHTRA",
+	"course": "BA I Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S04",
+	"teacherName": "Dr. Rekha Kaklotar",
+	"subjectCode": "145206",
+	"subjectName": "DC ECONOMICS PAPER-II PRINCIPLES OF ECONOMICS",
+	"course": "BA I Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S05",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "150101",
+	"subjectName": "ENGLISH PAPER (L.L.) STARTING WITH ENGLISH",
+	"course": "BA I Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S02",
+	"teacherName": "Ms. Shama Chavan",
+	"subjectCode": "180126",
+	"subjectName": "CAPC PAPER-I FUNDAMENTALS OF FOOD SCIENCE",
+	"course": "BA I Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S01",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "130100",
+	"subjectName": "FC PAPER-I HISTORY AS HERITAGE",
+	"course": "BA I Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S06",
+	"teacherName": "Dr. Ravindra Katyan",
+	"subjectCode": "130100",
+	"subjectName": "FC PAPER-I HISTORY AS HERITAGE",
+	"course": "BA I Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S02",
+	"teacherName": "Ms. Shama Chavan",
+	"subjectCode": "130200",
+	"subjectName": "FC PAPER-II WOMEN IN CHANGING INDIA",
+	"course": "BA I Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S06",
+	"teacherName": "Dr. Ravindra Katyan",
+	"subjectCode": "130200",
+	"subjectName": "FC PAPER-II WOMEN IN CHANGING INDIA",
+	"course": "BA I Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S03",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "145106",
+	"subjectName": "DC ECONOMICS PAPER-I ECONOMY OF MAHARASHTRA",
+	"course": "BA I Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S04",
+	"teacherName": "Dr. Rekha Kaklotar",
+	"subjectCode": "145206",
+	"subjectName": "DC ECONOMICS PAPER-II PRINCIPLES OF ECONOMICS",
+	"course": "BA I Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S05",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "150101",
+	"subjectName": "ENGLISH PAPER (L.L.) STARTING WITH ENGLISH",
+	"course": "BA I Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S06",
+	"teacherName": "Dr. Ravindra Katyan",
+	"subjectCode": "175103",
+	"subjectName": "AC HINDI PAPER-I AADHUNIK GADHYA HINDI KAHANI",
+	"course": "BA I Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S01",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "130100",
+	"subjectName": "FC PAPER-I HISTORY AS HERITAGE",
+	"course": "BA I Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S06",
+	"teacherName": "Dr. Ravindra Katyan",
+	"subjectCode": "130100",
+	"subjectName": "FC PAPER-I HISTORY AS HERITAGE",
+	"course": "BA I Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S02",
+	"teacherName": "Ms. Shama Chavan",
+	"subjectCode": "130200",
+	"subjectName": "FC PAPER-II WOMEN IN CHANGING INDIA",
+	"course": "BA I Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S06",
+	"teacherName": "Dr. Ravindra Katyan",
+	"subjectCode": "130200",
+	"subjectName": "FC PAPER-II WOMEN IN CHANGING INDIA",
+	"course": "BA I Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S07",
+	"teacherName": "Dr. Sejal Shah",
+	"subjectCode": "145102",
+	"subjectName": "DC GUJARATI PAPER-I BHASHA KAUSHAL, GADHYA SWARUP ANE NIYAT KRUTIO NO ABHYAS",
+	"course": "BA I Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S01",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "145202",
+	"subjectName": "DC GUJARATI PAPER-II ANUVADKALA ANE ANUDIT KRUTIO NO ABHYAS",
+	"course": "BA I Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S05",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "150101",
+	"subjectName": "ENGLISH PAPER (L.L.) STARTING WITH ENGLISH",
+	"course": "BA I Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S06",
+	"teacherName": "Dr. Ravindra Katyan",
+	"subjectCode": "175103",
+	"subjectName": "AC HINDI PAPER-I AADHUNIK GADHYA HINDI KAHANI",
+	"course": "BA I Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S01",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "130100",
+	"subjectName": "FC PAPER-I HISTORY AS HERITAGE",
+	"course": "BA I Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S06",
+	"teacherName": "Dr. Ravindra Katyan",
+	"subjectCode": "130100",
+	"subjectName": "FC PAPER-I HISTORY AS HERITAGE",
+	"course": "BA I Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S02",
+	"teacherName": "Ms. Shama Chavan",
+	"subjectCode": "130200",
+	"subjectName": "FC PAPER-II WOMEN IN CHANGING INDIA",
+	"course": "BA I Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S06",
+	"teacherName": "Dr. Ravindra Katyan",
+	"subjectCode": "130200",
+	"subjectName": "FC PAPER-II WOMEN IN CHANGING INDIA",
+	"course": "BA I Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S07",
+	"teacherName": "Dr. Sejal Shah",
+	"subjectCode": "145102",
+	"subjectName": "DC GUJARATI PAPER-I BHASHA KAUSHAL, GADHYA SWARUP ANE NIYAT KRUTIO NO ABHYAS",
+	"course": "BA I Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S01",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "145202",
+	"subjectName": "DC GUJARATI PAPER-II ANUVADKALA ANE ANUDIT KRUTIO NO ABHYAS",
+	"course": "BA I Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S05",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "150101",
+	"subjectName": "ENGLISH PAPER (L.L.) STARTING WITH ENGLISH",
+	"course": "BA I Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S02",
+	"teacherName": "Ms. Shama Chavan",
+	"subjectCode": "180126",
+	"subjectName": "CAPC PAPER-I FUNDAMENTALS OF FOOD SCIENCE",
+	"course": "BA I Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "110101",
+	"subjectName": "ENGLISH CC PAPER (H.L.) EMPOWERING ENGLISH - I",
+	"course": "BA I Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S05",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "130100",
+	"subjectName": "FC PAPER -I HISTORY AS HERITAGE",
+	"course": "BA I Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "130200",
+	"subjectName": "FC PAPER-II WOMEN IN CHANGING INDIA",
+	"course": "BA I Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S13",
+	"teacherName": "Ms. Annabel Rebello",
+	"subjectCode": "140101",
+	"subjectName": "DC PAPER -I BASIC CONCEPTS GENRE OF LITERARY STUDY/ INTRODUCTION TO LITERARY STUDIES CONCEPTS & GENRE",
+	"course": "BA I Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S14",
+	"teacherName": "Ms. Arundhati",
+	"subjectCode": "140201",
+	"subjectName": "DC PAPER-II EXPLORING LITERARY STUDIES LITERARY TERMS & CRITICAL APPROACHES",
+	"course": "BA I Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S15",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "180127",
+	"subjectName": "CAPC PAPER-I CHILD DEVELOPMENT",
+	"course": "BA I Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "110101",
+	"subjectName": "ENGLISH CC PAPER (H.L.) EMPOWERING ENGLISH - I EMPOWERING ENGLISH- II",
+	"course": "BA I Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S05",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "130100",
+	"subjectName": "FC PAPER -I HISTORY AS HERITAGE",
+	"course": "BA I Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "130200",
+	"subjectName": "FC PAPER-II WOMEN IN CHANGING INDIA",
+	"course": "BA I Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S13",
+	"teacherName": "Ms. Annabel Rebello",
+	"subjectCode": "140101",
+	"subjectName": "DC PAPER -I BASIC CONCEPTS GENRE OF LITERARY STUDY/ INTRODUCTION TO LITERARY STUDIES CONCEPTS & GENRE",
+	"course": "BA I Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S14",
+	"teacherName": "Ms. Arundhati",
+	"subjectCode": "140201",
+	"subjectName": "DC PAPER-II EXPLORING LITERARY STUDIES LITERARY TERMS & CRITICAL APPROACHES",
+	"course": "BA I Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S16",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "180126",
+	"subjectName": "CAPC PAPER-I FUNDAMENTALS OF FOOD SCIENCE",
+	"course": "BA I Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "110101",
+	"subjectName": "ENGLISH CC PAPER (H.L.) EMPOWERING ENGLISH - I ",
+	"course": "BA I Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S05",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "130100",
+	"subjectName": "FC PAPER -I HISTORY AS HERITAGE",
+	"course": "BA I Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "130200",
+	"subjectName": "FC PAPER-II WOMEN IN CHANGING INDIA",
+	"course": "BA I Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S13",
+	"teacherName": "Ms. Annabel Rebello",
+	"subjectCode": "140101",
+	"subjectName": "DC PAPER -I BASIC CONCEPTS GENRE OF LITERARY STUDY/ INTRODUCTION TO LITERARY STUDIES CONCEPTS & GENRE",
+	"course": "BA I Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S14",
+	"teacherName": "Ms. Arundhati",
+	"subjectCode": "140201",
+	"subjectName": "DC PAPER-II EXPLORING LITERARY STUDIES LITERARY TERMS & CRITICAL APPROACHES",
+	"course": "BA I Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S06",
+	"teacherName": "Dr. Ravindra Katyayan",
+	"subjectCode": "175103",
+	"subjectName": "AC HINDI PAPER-I AADHUNIK GADHYA HINDI KAHANI",
+	"course": "BA I Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "110101",
+	"subjectName": "ENGLISH CC PAPER (H.L.) EMPOWERING ENGLISH - I ",
+	"course": "BA I Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S05",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "130100",
+	"subjectName": "FC PAPER -I HISTORY AS HERITAGE",
+	"course": "BA I Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "130200",
+	"subjectName": "FC PAPER-II WOMEN IN CHANGING INDIA",
+	"course": "BA I Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Cicilia Chettiar",
+	"subjectCode": "145210",
+	"subjectName": "DC PSYCHOLOGY PAPER-II DEVELOPMENT PSYCHOLOGY",
+	"course": "BA I Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S17",
+	"teacherName": "Ms. Anuja Deshpande",
+	"subjectCode": "145110",
+	"subjectName": "DC PSYCHOLOGY PAPER-I DC PSYCHOLOGY PAPER-II DEVELOPMENT PSYCHOLOGY",
+	"course": "BA I Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S15",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "180127",
+	"subjectName": "CAPC PAPER-I CHILD DEVELOPMENT",
+	"course": "BA I Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "110101",
+	"subjectName": "ENGLISH CC PAPER (H.L.) EMPOWERING ENGLISH - I ",
+	"course": "BA I Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S05",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "130100",
+	"subjectName": "FC PAPER -I HISTORY AS HERITAGE",
+	"course": "BA I Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "130200",
+	"subjectName": "FC PAPER-II WOMEN IN CHANGING INDIA",
+	"course": "BA I Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Cicilia Chettiar",
+	"subjectCode": "145210",
+	"subjectName": "DC PSYCHOLOGY PAPER-II DEVELOPMENT PSYCHOLOGY",
+	"course": "BA I Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S17",
+	"teacherName": "Ms. Anuja Deshpande",
+	"subjectCode": "145110",
+	"subjectName": "DC PSYCHOLOGY PAPER-I DC PSYCHOLOGY PAPER-II DEVELOPMENT PSYCHOLOGY",
+	"course": "BA I Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S16",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "180126",
+	"subjectName": "CAPC PAPER-I FUNDAMENTALS OF FOOD SCIENCE",
+	"course": "BA I Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "110101",
+	"subjectName": "ENGLISH CC PAPER (H.L.) EMPOWERING ENGLISH - I ",
+	"course": "BA I Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S05",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "130100",
+	"subjectName": "FC PAPER -I HISTORY AS HERITAGE",
+	"course": "BA I Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "130200",
+	"subjectName": "FC PAPER-II WOMEN IN CHANGING INDIA",
+	"course": "BA I Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "145111",
+	"subjectName": "SOCIOLOGY PAPER-I SOCIOLOGY OF INDIAN SOCIETY",
+	"course": "BA I ENG",
+	"subCourse": "Socio/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Ms. Twinkle Sanghavi",
+	"subjectCode": "145211",
+	"subjectName": "SOCIOLOGY PAPER-II FOUNDATION TO SOCIOLOGY",
+	"course": "BA I Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S15",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "180127",
+	"subjectName": "CAPC PAPER-I CHILD DEVELOPMENT",
+	"course": "BA I Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "110101",
+	"subjectName": "ENGLISH CC PAPER (H.L.) EMPOWERING ENGLISH - I",
+	"course": "BA I Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S05",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "130100",
+	"subjectName": "FC PAPER -I HISTORY AS HERITAGE",
+	"course": "BA I Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "130200",
+	"subjectName": "FC PAPER-II WOMEN IN CHANGING INDIA",
+	"course": "BA I Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "145111",
+	"subjectName": "SOCIOLOGY PAPER-I SOCIOLOGY OF INDIAN SOCIETY",
+	"course": "BA I Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Ms. Twinkle Sanghavi",
+	"subjectCode": "145211",
+	"subjectName": "SOCIOLOGY PAPER-II FOUNDATION TO SOCIOLOGY",
+	"course": "BA I Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S16",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "180126",
+	"subjectName": "CAPC PAPER-I FUNDAMENTALS OF FOOD SCIENCE",
+	"course": "BA I Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "110101",
+	"subjectName": "ENGLISH CC PAPER (H.L.) EMPOWERING ENGLISH - I ",
+	"course": "BA I Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S05",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "130100",
+	"subjectName": "FC PAPER -I HISTORY AS HERITAGE",
+	"course": "BA I Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "130200",
+	"subjectName": "FC PAPER-II WOMEN IN CHANGING INDIA",
+	"course": "BA I Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "145111",
+	"subjectName": "SOCIOLOGY PAPER-I SOCIOLOGY OF INDIAN SOCIETY",
+	"course": "BA I Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Ms. Twinkle Sanghavi",
+	"subjectCode": "145211",
+	"subjectName": "SOCIOLOGY PAPER-II FOUNDATION TO SOCIOLOGY",
+	"course": "BA I Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S06",
+	"teacherName": "Dr. Ravindra Katyayan",
+	"subjectCode": "175103",
+	"subjectName": "AC HINDI PAPER-I AADHUNIK GADHYA HINDI KAHANI",
+	"course": "BA I Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Jayashree Palit",
+	"subjectCode": "110101",
+	"subjectName": "CC ENGLISH PAPER-I",
+	"course": "B.Com. I",
+	"subCourse": "Reg",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "145105",
+	"subjectName": "BUSINESS ECONOMICS PAPER I THEORY OF CONSUMER BEHAVIOUR AND DEMAND",
+	"course": "B.Com. I",
+	"subCourse": "Reg",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "145106",
+	"subjectName": "PRINCIPLES OF MANAGEMENT",
+	"course": "B.Com. I",
+	"subCourse": "Reg",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Ms. Shobha Dighe",
+	"subjectCode": "145106",
+	"subjectName": "PRINCIPLES OF MANAGEMENT",
+	"course": "B.Com. I",
+	"subCourse": "Reg",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "145107",
+	"subjectName": "ACCOUNTANCY PAPER-I FINANCIAL ACCOUNTING",
+	"course": "B.Com. I",
+	"subCourse": "Reg",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "145108",
+	"subjectName": "BUSINESS MATHEMATICS PAPER- I",
+	"course": "B.Com. I",
+	"subCourse": "Reg",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Ms. Shobha Dighe",
+	"subjectCode": "145109",
+	"subjectName": "BUSINESS ENVIRONMENT",
+	"course": "B.Com. I",
+	"subCourse": "Reg",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Sharon Samuel",
+	"subjectCode": "105152",
+	"subjectName": "OFFICE MANAGEMENT & SECRETARIAL PRACTICE - PAPER I TYPING -I",
+	"course": "B.Com. I",
+	"subCourse": "OM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Sharon Samuel",
+	"subjectCode": "105252",
+	"subjectName": "OFFICE MANAGEMENT & SECRETARIAL PRACTICE - PAPER II THEORY -I",
+	"course": "B.Com. I",
+	"subCourse": "OM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Jayashree Palit",
+	"subjectCode": "110101",
+	"subjectName": "English CC",
+	"course": "B.Com. I",
+	"subCourse": "OM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "145105",
+	"subjectName": "BUSINESS ECONOMICS PAPER I THEORY OF CONSUMER BEHAVIOUR AND DEMAND",
+	"course": "B.Com. I",
+	"subCourse": "OM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "145106",
+	"subjectName": "PRINCIPLES OF MANAGEMENT",
+	"course": "B.Com. I",
+	"subCourse": "OM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Ms. Shobha Dighe",
+	"subjectCode": "145106",
+	"subjectName": "PRINCIPLES OF MANAGEMENT",
+	"course": "B.Com. I",
+	"subCourse": "OM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "145107",
+	"subjectName": "ACCOUNTANCY PAPER-I FINANCIAL ACCOUNTING",
+	"course": "B.Com. I",
+	"subCourse": "OM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S21",
+	"teacherName": "Ms. Vaishali Ranadive",
+	"subjectCode": "105124",
+	"subjectName": "TOURISM & TRAVEL MANAGEMENT TOURISM BUSINESS (PAPER- I)",
+	"course": "B.Com. I",
+	"subCourse": "TTM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S21",
+	"teacherName": "Ms. Vaishali Ranadive",
+	"subjectCode": "105224",
+	"subjectName": "TOURISM & TRAVEL MANAGEMENT TOURISM ORGANISATIONS (PAPER II)",
+	"course": "B.Com. I",
+	"subCourse": "TTM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Jayshree Palit",
+	"subjectCode": "110101",
+	"subjectName": "English CC",
+	"course": "B.Com. I",
+	"subCourse": "TTM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "145105",
+	"subjectName": "BUSINESS ECONOMICS PAPER I THEORY OF CONSUMER BEHAVIOUR AND DEMAND",
+	"course": "B.Com. I",
+	"subCourse": "TTM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "145106",
+	"subjectName": "PRINCIPLES OF MANAGEMENT",
+	"course": "B.Com. I",
+	"subCourse": "TTM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Ms. Shobha Dighe",
+	"subjectCode": "145106",
+	"subjectName": "PRINCIPLES OF MANAGEMENT",
+	"course": "B.Com. I",
+	"subCourse": "TTM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "145107",
+	"subjectName": "ACCOUNTANCY PAPER-I FINANCIAL ACCOUNTING",
+	"course": "B.Com. I",
+	"subCourse": "TTM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Jayshree Palit",
+	"subjectCode": "310301",
+	"subjectName": "ENGLISH CC (H.L.)",
+	"course": "B.Com. II",
+	"subCourse": "ADVT",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Ms. Shobha Dighe",
+	"subjectCode": "345110",
+	"subjectName": "BUSINESS LAW PAPER-I",
+	"course": "B.Com. II",
+	"subCourse": "ADVT",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "345305",
+	"subjectName": "ECONOMICS PAPER-III -  ASPECTS OF MACRO ECONOMICS",
+	"course": "B.Com. II",
+	"subCourse": "ADVT",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "345306",
+	"subjectName": "COMMERCE PAPER-III PRINCIPAL OF MARKETING AND CUSTOMER RELATIONSHIP MANAGEMENT",
+	"course": "B.Com. II",
+	"subCourse": "ADVT",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S22",
+	"teacherName": "Ms. Preeta Joshi",
+	"subjectCode": "345307",
+	"subjectName": "ACCOUNTANCY PAPER-III FINANCIAL ACCOUNTING",
+	"course": "B.Com. II",
+	"subCourse": "ADVT",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S23",
+	"teacherName": "Ms. Shaheen Khan",
+	"subjectCode": "375144",
+	"subjectName": "ADVERTISING PAPER-I INTRODUCTION TO ADVERTISING",
+	"course": "B.Com. II",
+	"subCourse": "ADVT",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Jayshree Palit",
+	"subjectCode": "310301",
+	"subjectName": "ENGLISH CC (H.L.)",
+	"course": "B.Com. II",
+	"subCourse": "Hindi",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Ms. Shobha Dighe",
+	"subjectCode": "345110",
+	"subjectName": "BUSINESS LAW PAPER-I",
+	"course": "B.Com. II",
+	"subCourse": "Hindi",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "345305",
+	"subjectName": "ECONOMICS PAPER-III -  ASPECTS OF MACRO ECONOMICS",
+	"course": "B.Com. II",
+	"subCourse": "Hindi",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "345306",
+	"subjectName": "COMMERCE PAPER-III PRINCIPAL OF MARKETING AND CUSTOMER RELATIONSHIP MANAGEMENT",
+	"course": "B.Com. II",
+	"subCourse": "Hindi",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S22",
+	"teacherName": "Ms. Preeta Joshi",
+	"subjectCode": "345307",
+	"subjectName": "ACCOUNTANCY PAPER-III FINANCIAL ACCOUNTING",
+	"course": "B.Com. II",
+	"subCourse": "Hindi",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S06",
+	"teacherName": "Dr. Ravindra Katyan",
+	"subjectCode": "375103",
+	"subjectName": "VYAVAHARIK HINDI",
+	"course": "B.Com. II",
+	"subCourse": "Hindi",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Cicilia Chettiar",
+	"subjectCode": "375121",
+	"subjectName": "INDUSTRIAL PSYCHOLOGY PAPER-I AN ORGANIZATION PERSPECTIVE",
+	"course": "B.Com. II",
+	"subCourse": "IP",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Jayshree Palit",
+	"subjectCode": "310301",
+	"subjectName": "ENGLISH CC (H.L.)",
+	"course": "B.Com. II",
+	"subCourse": "IP",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Ms. Shobha Dighe",
+	"subjectCode": "345110",
+	"subjectName": "BUSINESS LAW PAPER-I",
+	"course": "B.Com. II",
+	"subCourse": "IP",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "345305",
+	"subjectName": "ECONOMICS PAPER-III -  ASPECTS OF MACRO ECONOMICS",
+	"course": "B.Com. II",
+	"subCourse": "IP",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "345306",
+	"subjectName": "COMMERCE PAPER-III PRINCIPAL OF MARKETING AND CUSTOMER RELATIONSHIP MANAGEMENT",
+	"course": "B.Com. II",
+	"subCourse": "IP",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S22",
+	"teacherName": "Ms. Preeta Joshi",
+	"subjectCode": "345307",
+	"subjectName": "ACCOUNTANCY PAPER-III FINANCIAL ACCOUNTING",
+	"course": "B.Com. II",
+	"subCourse": "IP",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Sharon Samuel",
+	"subjectCode": "305452",
+	"subjectName": "OFFICE MANAGEMENT & SECRETARIAL PRACTICES- SHORTHAND & TYPING",
+	"course": "B.Com. II",
+	"subCourse": "OM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Jayshree Palit",
+	"subjectCode": "310301",
+	"subjectName": "ENGLISH CC (H.L.)",
+	"course": "B.Com. II",
+	"subCourse": "OM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Ms. Shobha Dighe",
+	"subjectCode": "345110",
+	"subjectName": "BUSINESS LAW PAPER-I",
+	"course": "B.Com. II",
+	"subCourse": "OM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "345305",
+	"subjectName": "ECONOMICS PAPER-III -  ASPECTS OF MACRO ECONOMICS",
+	"course": "B.Com. II",
+	"subCourse": "OM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "345306",
+	"subjectName": "COMMERCE PAPER-III PRINCIPAL OF MARKETING AND CUSTOMER RELATIONSHIP MANAGEMENT",
+	"course": "B.Com. II",
+	"subCourse": "OM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S22",
+	"teacherName": "Ms. Preeta Joshi",
+	"subjectCode": "345307",
+	"subjectName": "ACCOUNTANCY PAPER-III FINANCIAL ACCOUNTING",
+	"course": "B.Com. II",
+	"subCourse": "OM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S21",
+	"teacherName": "Ms. Vaishali Ranadive",
+	"subjectCode": "305424",
+	"subjectName": "TOURISM & TRAVEL MANAGEMENT- TOURISM OPERATIONS",
+	"course": "B.Com. II",
+	"subCourse": "TTM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Jayshree Palit",
+	"subjectCode": "310301",
+	"subjectName": "ENGLISH CC (H.L.)",
+	"course": "B.Com. II",
+	"subCourse": "TTM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Ms. Shobha Dighe",
+	"subjectCode": "345110",
+	"subjectName": "BUSINESS LAW PAPER-I",
+	"course": "B.Com. II",
+	"subCourse": "TTM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "345305",
+	"subjectName": "ECONOMICS PAPER-III -  ASPECTS OF MACRO ECONOMICS",
+	"course": "B.Com. II",
+	"subCourse": "TTM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "345306",
+	"subjectName": "COMMERCE PAPER-III PRINCIPAL OF MARKETING AND CUSTOMER RELATIONSHIP MANAGEMENT",
+	"course": "B.Com. II",
+	"subCourse": "TTM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S22",
+	"teacherName": "Ms. Preeta Joshi",
+	"subjectCode": "345307",
+	"subjectName": "ACCOUNTANCY PAPER-III FINANCIAL ACCOUNTING",
+	"course": "B.Com. II",
+	"subCourse": "TTM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Jayshree Palit",
+	"subjectCode": "510501",
+	"subjectName": "ENGLISH (H.L.)",
+	"course": "B.Com. III",
+	"subCourse": "Reg",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "540505",
+	"subjectName": "ECONOMICS PAPER-V PUBLIC FINANCE",
+	"course": "B.Com. III",
+	"subCourse": "Reg",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "540506",
+	"subjectName": "COMMERCE PAPER-V MODERN FINANCE",
+	"course": "B.Com. III",
+	"subCourse": "Reg",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S22",
+	"teacherName": "Ms. Preeta Joshi",
+	"subjectCode": "555115",
+	"subjectName": "FIN.ACC.& AUDITING PAPER-I - MANAGEMENT ACCOUNTANCY",
+	"course": "B.Com. III",
+	"subCourse": "Reg",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S22",
+	"teacherName": "Ms. Preeta Joshi",
+	"subjectCode": "555215",
+	"subjectName": "FIN.ACC.& AUDITING PAPER-II CORPORATE AUDITING",
+	"course": "B.Com. III",
+	"subCourse": "Reg",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S22",
+	"teacherName": "Ms. Preeta Joshi",
+	"subjectCode": "555315",
+	"subjectName": "FIN.ACC.& AUDITING PAPER-III COST ACCOUNTANCY",
+	"course": "B.Com. III",
+	"subCourse": "Reg",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Sharon Samuel",
+	"subjectCode": "500652",
+	"subjectName": "OMSP PAPER-VI - SHORTHAND ",
+	"course": "B.Com. III",
+	"subCourse": "OM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Sharon Samuel",
+	"subjectCode": "500752",
+	"subjectName": "OMSP-  PAPER -VII- TYPING ",
+	"course": "B.Com. III",
+	"subCourse": "OM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S20",
+	"teacherName": "Ms. Sharon Samuel",
+	"subjectCode": "500852",
+	"subjectName": "OMSP- PAPER-VIII OFFICE MANAGEMENT THEORY",
+	"course": "B.Com. III",
+	"subCourse": "OM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "540505",
+	"subjectName": "ECONOMICS PAPER-V PUBLIC FINANCE",
+	"course": "B.Com. III",
+	"subCourse": "OM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "540506",
+	"subjectName": "COMMERCE PAPER-V MODERN FINANCE",
+	"course": "B.Com. III",
+	"subCourse": "OM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Jayshree Palit",
+	"subjectCode": "510501",
+	"subjectName": "ENGLISH (H.L.)",
+	"course": "B.Com. III",
+	"subCourse": "OM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S22",
+	"teacherName": "Ms. Vaishali Ranadive",
+	"subjectCode": "500624",
+	"subjectName": "TTM - TRAVEL AGENCY MANAGEMENT",
+	"course": "B.Com. III",
+	"subCourse": "TTM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S22",
+	"teacherName": "Ms. Vaishali Ranadive",
+	"subjectCode": "500724",
+	"subjectName": "TTM- GLIMPSES OF INDIAN CULTURE ",
+	"course": "B.Com. III",
+	"subCourse": "TTM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Ms. Vaishali Ranadive",
+	"subjectCode": "500824",
+	"subjectName": "TTM- COMMUNICATION & AUTOMATION",
+	"course": "B.Com. III",
+	"subCourse": "TTM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Jayshree Palit",
+	"subjectCode": "510501",
+	"subjectName": "ENGLISH (H.L.)",
+	"course": "B.Com. III",
+	"subCourse": "TTM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "540505",
+	"subjectName": "ECONOMICS PAPER-V PUBLIC FINANCE",
+	"course": "B.Com. III",
+	"subCourse": "TTM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Sunita Sharma",
+	"subjectCode": "540506",
+	"subjectName": "COMMERCE PAPER-V MODERN FINANCE",
+	"course": "B.Com. III",
+	"subCourse": "TTM",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S03",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "330500",
+	"subjectName": "FC PAPER-V -CURRENT CONCERNS",
+	"course": "BA II Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S07",
+	"teacherName": "Dr. Sejal Shah",
+	"subjectCode": "330500",
+	"subjectName": "FC PAPER-V -CURRENT CONCERNS",
+	"course": "BA II Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S04",
+	"teacherName": "Dr. Rekha Kaklotar",
+	"subjectCode": "345506",
+	"subjectName": "ECONOMICS PAPER-V- SECTOR WISE FEATURES OF INDIAN ECONOMY SINCE 1991",
+	"course": "BA II Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S03",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "345606",
+	"subjectName": "ECONOMICS PAPER-VI- THEORY OF VALUE",
+	"course": "BA II Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S05",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "355301",
+	"subjectName": "USING ENGLISH EFFECTIVE",
+	"course": "BA II Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S02",
+	"teacherName": "Ms. Shama Chavan",
+	"subjectCode": "380326",
+	"subjectName": "CAPC PAPER-III FOOD COMMODITIES -I",
+	"course": "BA II Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S02",
+	"teacherName": "Ms. Shama Chavan",
+	"subjectCode": "380426",
+	"subjectName": "CAPC PAPER-IV NUTRITION DURING LIFE CYCLE-I",
+	"course": "BA II Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S03",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "330500",
+	"subjectName": "FC PAPER-V -CURRENT CONCERNS",
+	"course": "BA II Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S07",
+	"teacherName": "Dr. Sejal Shah",
+	"subjectCode": "330500",
+	"subjectName": "FC PAPER-V -CURRENT CONCERNS",
+	"course": "BA II Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S04",
+	"teacherName": "Dr. Rekha Kaklotar",
+	"subjectCode": "345506",
+	"subjectName": "ECONOMICS PAPER-V- SECTOR WISE FEATURES OF INDIAN ECONOMY SINCE 1991",
+	"course": "BA II Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S03",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "345606",
+	"subjectName": "ECONOMICS PAPER-VI- THEORY OF VALUE",
+	"course": "BA II Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S05",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "355301",
+	"subjectName": "USING ENGLISH EFFECTIVE",
+	"course": "BA II Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S04",
+	"teacherName": "Dr. Rekha Kaklotar",
+	"subjectCode": "365106",
+	"subjectName": "APC ECONOMICS PAPER-I- ENTREPRENEURSHIP DEVELOPMENT",
+	"course": "BA II Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S06",
+	"teacherName": "Dr. Ravindra Katyayan",
+	"subjectCode": "375303",
+	"subjectName": "AC HINDI PAPER-III  ADHUNIK GADYA: REKHACHITRA EVM SANSMARAN",
+	"course": "BA II Guj",
+	"subCourse": "Eco/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S03",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "330500",
+	"subjectName": "FC PAPER-V -CURRENT CONCERNS",
+	"course": "BA II Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S07",
+	"teacherName": "Dr. Sejal Shah",
+	"subjectCode": "330500",
+	"subjectName": "FC PAPER-V -CURRENT CONCERNS",
+	"course": "BA II Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S07",
+	"teacherName": "Dr. Sejal Shah",
+	"subjectCode": "345502",
+	"subjectName": "GUJARATI PAPER-V-ARVACHIN GHDHYAKRUTIO (NATAK)",
+	"course": "BA II Guj",
+	"subCourse": "Guj/HN ",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S01",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "345602",
+	"subjectName": "GUJARATI PAPER-VI GUJARATI SAHITYA NO ITIHAS ",
+	"course": "BA II Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S05",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "355301",
+	"subjectName": "USING ENGLISH EFFECTIVE",
+	"course": "BA II Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S07",
+	"teacherName": "Dr. Sejal Shah",
+	"subjectCode": "365102",
+	"subjectName": "APC GUJARATI PAPER- I VANIJYA PATRAVYAVHAR ANE PRAYOJANMULAK LEKHAN",
+	"course": "BA II Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S01",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "365102",
+	"subjectName": "APC GUJARATI PAPER- I VANIJYA PATRAVYAVHAR ANE PRAYOJANMULAK LEKHAN",
+	"course": "BA II Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S06",
+	"teacherName": "Dr. Ravindra Katyayan",
+	"subjectCode": "375303",
+	"subjectName": "AC HINDI PAPER-III  ADHUNIK GADYA: REKHACHITRA EVM SANSMARAN",
+	"course": "BA II Guj",
+	"subCourse": "Guj/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S03",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "330500",
+	"subjectName": "FC PAPER-V -CURRENT CONCERNS",
+	"course": "BA II Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S07",
+	"teacherName": "Dr. Sejal Shah",
+	"subjectCode": "330500",
+	"subjectName": "FC PAPER-V -CURRENT CONCERNS",
+	"course": "BA II Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S07",
+	"teacherName": "Dr. Sejal Shah",
+	"subjectCode": "345502",
+	"subjectName": "GUJARATI PAPER-V-ARVACHIN GHDHYAKRUTIO (NATAK)",
+	"course": "BA II Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S01",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "345602",
+	"subjectName": "GUJARATI PAPER-VI GUJARATI SAHITYA NO ITIHAS ",
+	"course": "BA II Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S05",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "355301",
+	"subjectName": "USING ENGLISH EFFECTIVE",
+	"course": "BA II Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S02",
+	"teacherName": "Ms. Shama Chavan",
+	"subjectCode": "380326",
+	"subjectName": "CAPC PAPER-III FOOD COMMODITIES -I",
+	"course": "BA II Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S02",
+	"teacherName": "Ms. Shama Chavan",
+	"subjectCode": "380426",
+	"subjectName": "CAPC PAPER-IV NUTRITION DURING LIFE CYCLE-I",
+	"course": "BA II Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S04",
+	"teacherName": "Dr. Rekha Kaklotar",
+	"subjectCode": "545906",
+	"subjectName": "THEORY OF EMPLOYMENT",
+	"course": "BA III Guj",
+	"subCourse": "Eco/APC",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S03",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "546006",
+	"subjectName": "INTERNATIONAL ECONOMICS",
+	"course": "BA III Guj",
+	"subCourse": "Eco/APC",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S03",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "546106",
+	"subjectName": "RESEARCH METHODOLOGY IN ECONOMICS",
+	"course": "BA III Guj",
+	"subCourse": "Eco/APC",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S04",
+	"teacherName": "Dr. Rekha Kaklotar",
+	"subjectCode": "546206",
+	"subjectName": "BANKING & FINANCIAL INSTITUTIONS",
+	"course": "BA III Guj",
+	"subCourse": "Eco/APC",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S05",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "555501",
+	"subjectName": "ENGLISH CC PAPER-V (L.L.) ENGLISH FOR EMPOWERMENT",
+	"course": "BA III Guj",
+	"subCourse": "Eco/APC",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S03",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "565306",
+	"subjectName": "AGRICULTURAL ECONOMICS",
+	"course": "BA III Guj",
+	"subCourse": "Eco/APC",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S04",
+	"teacherName": "Dr. Rekha Kaklotar",
+	"subjectCode": "545906",
+	"subjectName": "THEORY OF EMPLOYMENT",
+	"course": "BA III Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S03",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "546006",
+	"subjectName": "INTERNATIONAL ECONOMICS",
+	"course": "BA III Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S03",
+	"teacherName": "Ms. Rita Chandarana",
+	"subjectCode": "546106",
+	"subjectName": "RESEARCH METHODOLOGY IN ECONOMICS",
+	"course": "BA III Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S04",
+	"teacherName": "Dr. Rekha Kaklotar",
+	"subjectCode": "546206",
+	"subjectName": "BANKING & FINANCIAL INSTITUTIONS",
+	"course": "BA III Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S05",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "555501",
+	"subjectName": "ENGLISH CC PAPER-V (L.L.) ENGLISH FOR EMPOWERMENT",
+	"course": "BA III Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S02",
+	"teacherName": "Ms. Shama Chavan",
+	"subjectCode": "580726",
+	"subjectName": "CAPC PAPER-VII FOOD ENTREPRENEURSHIP-I",
+	"course": "BA III Guj",
+	"subCourse": "Eco/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S01",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "545902",
+	"subjectName": "BHARTIYA KAVYASHASTRA",
+	"course": "BA III Guj",
+	"subCourse": "Guj/APC",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S07",
+	"teacherName": "Dr. Sejal Shah",
+	"subjectCode": "565302",
+	"subjectName": "GUJARATI BHASHA ANE COMPUTER SHIKSHAN",
+	"course": "BA III Guj",
+	"subCourse": "Guj/APC",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S01",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "565302",
+	"subjectName": "GUJARATI BHASHA ANE COMPUTER SHIKSHAN",
+	"course": "BA III Guj",
+	"subCourse": "Guj/APC",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S05",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "555501",
+	"subjectName": "ENGLISH CC PAPER-V (L.L.) ENGLISH FOR EMPOWERMENT",
+	"course": "BA III Guj",
+	"subCourse": "Guj/APC",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S07",
+	"teacherName": "Dr. Sejal Shah",
+	"subjectCode": "546002",
+	"subjectName": "GUJARATI BHASHANO ITIHAS",
+	"course": "BA III Guj",
+	"subCourse": "Guj/APC",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S01",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "545902",
+	"subjectName": "BHARTIYA KAVYASHASTRA",
+	"course": "BA III Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S07",
+	"teacherName": "Dr. Sejal Shah",
+	"subjectCode": "565302",
+	"subjectName": "GUJARATI BHASHA ANE COMPUTER SHIKSHAN",
+	"course": "BA III Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S01",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "565302",
+	"subjectName": "GUJARATI BHASHA ANE COMPUTER SHIKSHAN",
+	"course": "BA III Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S01",
+	"teacherName": "Ms. Geeta Varun",
+	"subjectCode": "546102",
+	"subjectName": "GUJARATI SAHITYA NO ITIHAS GANDHI",
+	"course": "BA III Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S07",
+	"teacherName": "Dr. Sejal Shah",
+	"subjectCode": "546202",
+	"subjectName": "SAMPRAT SAHITYA NA PRAVACHO",
+	"course": "BA III Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S05",
+	"teacherName": "Ms. Trupti Sabharanjak",
+	"subjectCode": "555501",
+	"subjectName": "ENGLISH CC PAPER-V (L.L.) ENGLISH FOR EMPOWERMENT",
+	"course": "BA III Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S02",
+	"teacherName": "Ms. Shama Chavan",
+	"subjectCode": "580726",
+	"subjectName": "CAPC PAPER-VII FOOD ENTREPRENEURSHIP-I",
+	"course": "BA III Guj",
+	"subCourse": "Guj/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "515501",
+	"subjectName": "BASICS OF ACADEMIC ENGLISH  CC PAPER-V (H.L.)",
+	"course": "BA III Eng",
+	"subCourse": "Eng/APC",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S23",
+	"teacherName": "Ms. Annabel Rebello",
+	"subjectCode": "545901",
+	"subjectName": "ENGLISH PAPER-IX CONTEMPORARY NOVEL",
+	"course": "BA III Eng",
+	"subCourse": "Eng/APC",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S23",
+	"teacherName": "Ms. Annabel Rebello",
+	"subjectCode": "546001",
+	"subjectName": "ENGLISH PAPER-X CONTEMPORARY DRAMA",
+	"course": "BA III Eng",
+	"subCourse": "Eng/APC",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S14",
+	"teacherName": "Ms. Arundhati",
+	"subjectCode": "546101",
+	"subjectName": "ENGLISH PAPER-XI INTRODUCING CRITICAL WRITING",
+	"course": "BA III Eng",
+	"subCourse": "Eng/APC",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S14",
+	"teacherName": "Ms. Arundhati",
+	"subjectCode": "546201",
+	"subjectName": "ENGLISH PAPER-XIIA INDIAN LITERATURE IN ENGLISH TRANSLATION",
+	"course": "BA III Eng",
+	"subCourse": "Eng/APC",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S13",
+	"teacherName": "Ms. Annabel Rebello",
+	"subjectCode": "565301",
+	"subjectName": "PAPER APC ENGLISH PAPER-III WOMEN'S WRITING IN THE TWENTIETH CENTURY",
+	"course": "BA III Eng",
+	"subCourse": "Eng/APC",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "515501",
+	"subjectName": "BASICS OF ACADEMIC ENGLISH  CC PAPER-V (H.L.)",
+	"course": "BA III Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S23",
+	"teacherName": "Annabel Rebello",
+	"subjectCode": "545901",
+	"subjectName": "ENGLISH PAPER-IX CONTEMPORARY NOVEL",
+	"course": "BA III Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S14",
+	"teacherName": "Ms. Arundhati",
+	"subjectCode": "546001",
+	"subjectName": "ENGLISH PAPER-X CONTEMPORARY DRAMA",
+	"course": "BA III Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S14",
+	"teacherName": "Ms. Arundhati",
+	"subjectCode": "546101",
+	"subjectName": "ENGLISH PAPER-XI INTRODUCING CRITICAL WRITING",
+	"course": "BA III Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S14",
+	"teacherName": "Ms. Arundhati",
+	"subjectCode": "546201",
+	"subjectName": "ENGLISH PAPER-XIIA INDIAN LITERATURE IN ENGLISH TRANSLATION",
+	"course": "BA III Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S15",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "580727",
+	"subjectName": "CAPC PAPER-VII ORIENTATION TO CHILDREN WITH SPECIAL NEEDS (TH)",
+	"course": "BA III Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "515501",
+	"subjectName": "BASICS OF ACADEMIC ENGLISH  CC PAPER-V (H.L.)",
+	"course": "BA III Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S23",
+	"teacherName": "Ms. Annabel Rebello",
+	"subjectCode": "545901",
+	"subjectName": "Contemporary Poetry DC XIII",
+	"course": "BA III Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S23",
+	"teacherName": "Ms. Annabel Rebello",
+	"subjectCode": "546001",
+	"subjectName": "ENGLISH PAPER-X CONTEMPORARY DRAMA",
+	"course": "BA III Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S14",
+	"teacherName": "Ms. Arundhati",
+	"subjectCode": "546101",
+	"subjectName": "ENGLISH PAPER-XI INTRODUCING CRITICAL WRITING",
+	"course": "BA III Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S14",
+	"teacherName": "Ms. Arundhati",
+	"subjectCode": "546201",
+	"subjectName": "ENGLISH PAPER-XIIA INDIAN LITERATURE IN ENGLISH TRANSLATION",
+	"course": "BA III Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S16",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "580726",
+	"subjectName": "CAPC PAPER-VII FOOD ENTREPRENEURSHIP-I",
+	"course": "BA III Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "515501",
+	"subjectName": "BASICS OF ACADEMIC ENGLISH  CC PAPER-V (H.L.)",
+	"course": "BA III Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S17",
+	"teacherName": "Ms. Anuja Deshpande",
+	"subjectCode": "545910",
+	"subjectName": "PSYCHOLOGY PAPER-IX EXPERIMENTAL PSYCHOLOGY THEORY",
+	"course": "BA III Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S17",
+	"teacherName": "Ms. Anuja Deshpande",
+	"subjectCode": "546010",
+	"subjectName": "PSYCHOLOGY PAPER-X EXPERIMENTAL PSYCHOLOGY PRACTICAL-I",
+	"course": "BA III Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Cicilia Chettiar",
+	"subjectCode": "546010",
+	"subjectName": "PSYCHOLOGY PAPER-X EXPERIMENTAL PSYCHOLOGY PRACTICAL-I",
+	"course": "BA III Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Cicilia Chettiar",
+	"subjectCode": "546110",
+	"subjectName": "PSYCHOLOGY PAPER-XI FUNDAMENTALS OF ABNORMAL PSYCHOLOGY",
+	"course": "BA III Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S17",
+	"teacherName": "Ms. Anuja Deshpande",
+	"subjectCode": "546210",
+	"subjectName": "PSYCHOLOGY PAPER-XII APPLIED STATISTICS & RESEARCH METHODOLOGY",
+	"course": "BA III Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S15",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "580727",
+	"subjectName": "CAPC PAPER-VII ORIENTATION TO CHILDREN WITH SPECIAL NEEDS (TH)",
+	"course": "BA III Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "515501",
+	"subjectName": "BASICS OF ACADEMIC ENGLISH  CC PAPER-V (H.L.)",
+	"course": "BA III Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S17",
+	"teacherName": "Ms. Anuja Deshpande",
+	"subjectCode": "545910",
+	"subjectName": "PSYCHOLOGY PAPER-IX EXPERIMENTAL PSYCHOLOGY THEORY",
+	"course": "BA III Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S17",
+	"teacherName": "Ms. Anuja Deshpande",
+	"subjectCode": "546010",
+	"subjectName": "PSYCHOLOGY PAPER-X EXPERIMENTAL PSYCHOLOGY PRACTICAL-I",
+	"course": "BA III Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Cicilia Chettiar",
+	"subjectCode": "546010",
+	"subjectName": "PSYCHOLOGY PAPER-X EXPERIMENTAL PSYCHOLOGY PRACTICAL-I",
+	"course": "BA III Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Cicilia Chettiar",
+	"subjectCode": "546110",
+	"subjectName": "PSYCHOLOGY PAPER-XI FUNDAMENTALS OF ABNORMAL PSYCHOLOGY",
+	"course": "BA III Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S17",
+	"teacherName": "Ms. Anuja Deshpande",
+	"subjectCode": "546210",
+	"subjectName": "PSYCHOLOGY PAPER-XII APPLIED STATISTICS & RESEARCH METHODOLOGY",
+	"course": "BA III Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S16",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "580726",
+	"subjectName": "CAPC PAPER-VII FOOD ENTREPRENEURSHIP-I",
+	"course": "BA III Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "515501",
+	"subjectName": "BASICS OF ACADEMIC ENGLISH  CC PAPER-V (H.L.)",
+	"course": "BA III Eng",
+	"subCourse": "Socio/APC",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Ms. Twinkle Sanghavi",
+	"subjectCode": "545911",
+	"subjectName": "SOCIOLOGY PAPER-IX CLASSICAL SOCIOLOGIST THEORISTS",
+	"course": "BA III Eng",
+	"subCourse": "Socio/APC",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "546011",
+	"subjectName": "SOCIOLOGY PAPER-X SOCIAL ANTHROPOLOGY",
+	"course": "BA III Eng",
+	"subCourse": "Socio/APC",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "546111",
+	"subjectName": "SOCIOLOGY PAPER-XI CRIME AND DEVIANCE",
+	"course": "BA III Eng",
+	"subCourse": "Socio/APC",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Ms. Twinkle Sanghavi",
+	"subjectCode": "546211",
+	"subjectName": "SOCIOLOGY PAPER-XII INDUSTRIAL SOCIOLOGY",
+	"course": "BA III Eng",
+	"subCourse": "Socio/APC",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Ms. Twinkle Sanghavi",
+	"subjectCode": "565311",
+	"subjectName": "APC SOCIOLOGY PAPER-III",
+	"course": "BA III Eng",
+	"subCourse": "Socio/APC",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "515501",
+	"subjectName": "BASICS OF ACADEMIC ENGLISH  CC PAPER-V (H.L.)",
+	"course": "BA III Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Ms. Twinkle Sanghavi",
+	"subjectCode": "545911",
+	"subjectName": "SOCIOLOGY PAPER-IX CLASSICAL SOCIOLOGIST THEORISTS",
+	"course": "BA III Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "546011",
+	"subjectName": "SOCIOLOGY PAPER-X SOCIAL ANTHROPOLOGY",
+	"course": "BA III Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "546111",
+	"subjectName": "SOCIOLOGY PAPER-XI CRIME AND DEVIANCE",
+	"course": "BA III Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Ms. Twinkle Sanghavi",
+	"subjectCode": "546211",
+	"subjectName": "SOCIOLOGY PAPER-XII INDUSTRIAL SOCIOLOGY",
+	"course": "BA III Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S15",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "580727",
+	"subjectName": "CAPC PAPER-VII ORIENTATION TO CHILDREN WITH SPECIAL NEEDS (TH)",
+	"course": "BA III Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "515501",
+	"subjectName": "BASICS OF ACADEMIC ENGLISH  CC PAPER-V (H.L.)",
+	"course": "BA III Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Ms. Twinkle Sanghavi",
+	"subjectCode": "545911",
+	"subjectName": "SOCIOLOGY PAPER-IX CLASSICAL SOCIOLOGIST THEORISTS",
+	"course": "BA III Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "546011",
+	"subjectName": "SOCIOLOGY PAPER-X SOCIAL ANTHROPOLOGY",
+	"course": "BA III Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "546111",
+	"subjectName": "SOCIOLOGY PAPER-XI CRIME AND DEVIANCE",
+	"course": "BA III Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S16",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "580726",
+	"subjectName": "CAPC PAPER-VII FOOD ENTREPRENEURSHIP-I",
+	"course": "BA III Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "315301",
+	"subjectName": "PROFESSIONAL ENGLISH -I",
+	"course": "BA II Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "330500",
+	"subjectName": "FC PAPER-V- CURRENT CONCERNS",
+	"course": "BA II Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S13",
+	"teacherName": "Ms. Annabel Rebello",
+	"subjectCode": "345501",
+	"subjectName": "REALISM IN DRAMA ",
+	"course": "BA II Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S14",
+	"teacherName": "Ms. Arundhati",
+	"subjectCode": "345601",
+	"subjectName": "20th CENTURY POETRY (1900-1970)",
+	"course": "BA II Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S15",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "380327",
+	"subjectName": "CAPC PAPER-III INTRODUCTION TO EARLY CHILDHOOD EDUCATION (TH)",
+	"course": "BA II Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S15",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "380427",
+	"subjectName": "CAPC PAPER-IV INTRODUCTION TO EARLY CHILHOOD EDUCATION (PR)",
+	"course": "BA II Eng",
+	"subCourse": "Eng/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "315301",
+	"subjectName": "PROFESSIONAL ENGLISH -I",
+	"course": "BA II Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "330500",
+	"subjectName": "FC PAPER-V- CURRENT CONCERNS",
+	"course": "BA II Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S13",
+	"teacherName": "Ms. Annabel Rebello",
+	"subjectCode": "345501",
+	"subjectName": "REALISM IN DRAMA ",
+	"course": "BA II Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S14",
+	"teacherName": "Ms. Arundhati",
+	"subjectCode": "345601",
+	"subjectName": "20th CENTURY POETRY (1900-1970)",
+	"course": "BA II Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S16",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "380326",
+	"subjectName": "CAPC PAER-III FOOD COMMODITIES",
+	"course": "BA II Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S16",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "380426",
+	"subjectName": "CAPC PAPER-IV NUTRITION DURING LIFE CYCLE-I",
+	"course": "BA II Eng",
+	"subCourse": "Eng/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "315301",
+	"subjectName": "PROFESSIONAL ENGLISH -I",
+	"course": "BA II Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "330500",
+	"subjectName": "FC PAPER-V- CURRENT CONCERNS",
+	"course": "BA II Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S13",
+	"teacherName": "Ms. Annabel Rebello",
+	"subjectCode": "345501",
+	"subjectName": "REALISM IN DRAMA ",
+	"course": "BA II Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S14",
+	"teacherName": "Ms. Arundhati",
+	"subjectCode": "345601",
+	"subjectName": "20th CENTURY POETRY (1900-1970)",
+	"course": "BA II Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S13",
+	"teacherName": "Ms. Annabel Rebello",
+	"subjectCode": "365101",
+	"subjectName": "INTRODUCTION TO CHILDRENS LITERATURE",
+	"course": "BA II Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S06",
+	"teacherName": "Dr. Ravindra Katyayan",
+	"subjectCode": "375303",
+	"subjectName": "AC HINDI PAPER-III ADHUNIK GADYA: REKHACHITRA EVM SANSMARAN",
+	"course": "BA II Eng",
+	"subCourse": "Eng/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "315301",
+	"subjectName": "PROFESSIONAL ENGLISH -I",
+	"course": "BA II Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "330500",
+	"subjectName": "FC PAPER-V- CURRENT CONCERNS",
+	"course": "BA II Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S17",
+	"teacherName": "Ms. Anuja Deshpande",
+	"subjectCode": "345510",
+	"subjectName": "PSYCHOLOGY PAPER-V FUNDAMENTALS OF SOCIAL PSYCHOLOGY",
+	"course": "BA II Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Cicilia Chettiar",
+	"subjectCode": "345610",
+	"subjectName": "PERSONALITY THEORIES",
+	"course": "BA II Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S15",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "380327",
+	"subjectName": "CAPC PAPER-III INTRODUCTION TO EARLY CHILDHOOD EDUCATION (TH)",
+	"course": "BA II Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S15",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "380427",
+	"subjectName": "CAPC PAPER-IV INTRODUCTION TO EARLY CHILHOOD EDUCATION (PR)",
+	"course": "BA II Eng",
+	"subCourse": "Psy/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "315301",
+	"subjectName": "PROFESSIONAL ENGLISH -I",
+	"course": "BA II Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "330500",
+	"subjectName": "FC PAPER-V- CURRENT CONCERNS",
+	"course": "BA II Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S17",
+	"teacherName": "Ms. Anuja Deshpande",
+	"subjectCode": "345510",
+	"subjectName": "PSYCHOLOGY PAPER-V FUNDAMENTALS OF SOCIAL PSYCHOLOGY",
+	"course": "BA II Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Dr. Cicilia Chettiar",
+	"subjectCode": "345610",
+	"subjectName": "PERSONALITY THEORIES",
+	"course": "BA II Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S16",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "380326",
+	"subjectName": "CAPC PAER-III FOOD COMMODITIES",
+	"course": "BA II Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S16",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "380426",
+	"subjectName": "CAPC PAPER-IV NUTRITION DURING LIFE CYCLE-I",
+	"course": "BA II Eng",
+	"subCourse": "Psy/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "315301",
+	"subjectName": "PROFESSIONAL ENGLISH -I",
+	"course": "BA II Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "330500",
+	"subjectName": "FC PAPER-V- CURRENT CONCERNS",
+	"course": "BA II Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "345511",
+	"subjectName": "SOCIAL CHANGE & DEVELOPMENT IN INDIA",
+	"course": "BA II Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Ms. Twinkle Sanghavi",
+	"subjectCode": "345611",
+	"subjectName": "RURAL SOCIETY IN INDIA",
+	"course": "BA II Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S15",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "380327",
+	"subjectName": "CAPC PAPER-III INTRODUCTION TO EARLY CHILDHOOD EDUCATION (TH)",
+	"course": "BA II Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S15",
+	"teacherName": "Dr. Swati Partani",
+	"subjectCode": "380427",
+	"subjectName": "CAPC PAPER-IV INTRODUCTION TO EARLY CHILHOOD EDUCATION (PR)",
+	"course": "BA II Eng",
+	"subCourse": "Socio/CD",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "315301",
+	"subjectName": "PROFESSIONAL ENGLISH -I",
+	"course": "BA II Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "330500",
+	"subjectName": "FC PAPER-V- CURRENT CONCERNS",
+	"course": "BA II Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "345511",
+	"subjectName": "SOCIAL CHANGE & DEVELOPMENT IN INDIA",
+	"course": "BA II Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Ms. Twinkle Sanghavi",
+	"subjectCode": "345611",
+	"subjectName": "RURAL SOCIETY IN INDIA",
+	"course": "BA II Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S16",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "380326",
+	"subjectName": "CAPC PAER-III FOOD COMMODITIES",
+	"course": "BA II Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S16",
+	"teacherName": "Dr. Rita Patil",
+	"subjectCode": "380426",
+	"subjectName": "CAPC PAPER-IV NUTRITION DURING LIFE CYCLE-I",
+	"course": "BA II Eng",
+	"subCourse": "Socio/FN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S11",
+	"teacherName": "Dr. Rajshree Trivedi",
+	"subjectCode": "315301",
+	"subjectName": "PROFESSIONAL ENGLISH -I",
+	"course": "BA II Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S12",
+	"teacherName": "Dr. Falguni Desai",
+	"subjectCode": "330500",
+	"subjectName": "FC PAPER-V- CURRENT CONCERNS",
+	"course": "BA II Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "345511",
+	"subjectName": "SOCIAL CHANGE & DEVELOPMENT IN INDIA",
+	"course": "BA II Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S19",
+	"teacherName": "Ms. Twinkle Sanghavi",
+	"subjectCode": "345611",
+	"subjectName": "RURAL SOCIETY IN INDIA",
+	"course": "BA II Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Odd"
+},
+{
+	"teacherCode": "S18",
+	"teacherName": "Ms. Prerna Ramteke",
+	"subjectCode": "365111",
+	"subjectName": "POPULATION & SOCIETY",
+	"course": "BA II Eng",
+	"subCourse": "Socio/HN",
+	"semester": "Odd"
+}]

@@ -1,0 +1,59 @@
+﻿[
+  {
+    "Specialization": "Food Nutrition & Dietetics",
+    "specialisationCode": "FND",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "LG201",
+            "Title": "Foreign Language (French)"
+          },
+          {
+            "Code": "MG201",
+            "Title": "Media & Information Literacy"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Hospitality And Tourism Management",
+    "specialisationCode": "HTM",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "LG201",
+            "Title": "Foreign Language (French)"
+          },
+          {
+            "Code": "MG201",
+            "Title": "Media & Information Literacy"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Interior Design And Resource Management",
+    "specialisationCode": "IDRM",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "LG201",
+            "Title": "Foreign Language (French)"
+          },
+          {
+            "Code": "MG201",
+            "Title": "Media & Information Literacy"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,87 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Feedback - Manage User</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/adminStyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="jquery/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/manageuser.js"></script>
+    <script src="js/Global.js"></script>
+</head>
+<body>
+    <div class="loader-img"><img src="images/preloader.gif" /></div>
+    <header>
+        <div class="row">
+            <div class="col-xs-12 col-md-9 text-left">
+                <div class="row">
+                    <a class="page-ttl col-xs-9 col-md-4" href="Dashboard.html">Feedback System</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 text-right">
+                <span id="userName"> </span> &nbsp;
+                <button class="btn btn-default" id="logout">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="col-xs-12 col-md-3">
+        <div class="panel-body left-nav">
+            <ul class="plan plan2">
+                <li>
+                    <a href="GraphDashboard.html"><div><input type='radio' /><label for='Dashboard'><span> Dashboard </span> <span> </span> </label></div></a>
+                </li>
+                <li>
+                    <a href="Dashboard.html"><div><input type='radio' /><label for='Reports'><span> Reports </span> <span> </span> </label></div></a>
+                </li>
+                <li>
+                    <a href="ManageTeacher.html"><div><input type='radio' /><label for='Reports'><span> Manage Teachers </span> <span> </span> </label></div></a>
+                </li>
+                <li>
+                    <a href="ManageUser.html"><div><input checked type='radio' /><label for='Reports'><span> Manage Users </span> <span> </span> </label></div></a>
+                </li>
+                <li>
+                    <a href="Summary.html"><div><input type='radio' /><label for='Reports'><span> Summary Report</span> <span> </span> </label></div></a>
+                </li>
+                <li>
+                    <a href="Analysis.html"><div><input type='radio' /><label for='Reports'><span> Analysis Report</span> <span> </span> </label></div></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-md-9 right-block">
+        <h4 class="panel-title">Manage Users </h4>
+
+
+
+        <div class="white-space">
+
+            <form id="fileform" enctype="multipart/form-data" method="POST" action="https://vancotech.com/StudentFeedback/prod/api/Feedback/UploadUsers">
+                <input type="file" name="data" id="file" accept=".csv">
+                <div class="pull-right">
+                    <input class="btn btn-primary" id="btnSubmit" value="Submit" type="button" />
+                    <a class="btn btn-primary" id="btnTemplate" target="_blank" href="Users.csv"> Download Template </a>
+                    <a class="btn btn-primary" id="btnTemplate2" target="_blank" href="https://vancotech.com/StudentFeedback/prod/api/Feedback/DownloadUsers?collageCode=101"> Download Current Users </a>
+                </div>
+            </form>
+
+            <div class="col-xs-12 col-md-12 text-left successmsg" id="successmsg">
+                <span> Record inserted successfully.</span>
+            </div>
+            <div class="col-xs-12 col-md-12 text-left validationerrormsg" id="validationerrormsg">
+                <span>Please select csv the file</span>
+            </div>
+
+            <div class="col-xs-12 col-md-12 text-center errormsg" id="errormsg">
+                <span>An error has occurred while uploading your csv file.</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

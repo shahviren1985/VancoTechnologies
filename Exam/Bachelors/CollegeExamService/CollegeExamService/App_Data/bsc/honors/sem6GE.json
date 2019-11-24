@@ -1,0 +1,198 @@
+﻿[
+  {
+    "Specialization": "Mass Communication And Extension",
+    "specialisationCode": "MDVI05",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "MDVI05",
+            "Title": "Dubbing and Voice Over"
+          },
+          {
+            "Code": "MDVI07",
+            "Title": "Photojournalism"
+          },
+          {
+            "Code": "MDVI08",
+            "Title": "Editing"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Textiles And Apparel Designing",
+    "specialisationCode": "TAD",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "TDVI07",
+            "Title": "Global Supply Chain Management"
+          },
+          {
+            "Code": "TDVI09",
+            "Title": "Research Methods in Textile and Apparel Designing"
+          },
+          {
+            "Code": "TDVI05",
+            "Title": "Design Process and Product Development"
+          },
+          {
+            "Code": "TDVI06",
+            "Title": "Draping and Grading"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Food Nutrition & Dietetics",
+    "specialisationCode": "FND",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "FCVI08",
+            "Title": "Maternal and Child Nutrition (Theory)"
+          },
+          {
+            "Code": "FCVI09",
+            "Title": "Maternal and Child Nutrition (Practical)"
+          },
+          {
+            "Code": "FCVI10",
+            "Title": "Food Preservation, Safety and Quality Control (Theory)"
+          },
+          {
+            "Code": "FCVI11",
+            "Title": "Food Preservation, Safety and Quality Control (Practical)"
+          },
+          {
+            "Code": "FCVI12",
+            "Title": "Bariatric Nutrition"
+          },
+          {
+            "Code": "FCVI13",
+            "Title": "Sports Nutrition and Fitness Management"
+          },
+          {
+            "Code": "FCVI15",
+            "Title": "Global Cuisine and Nutrition"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Hospitality And Tourism Management",
+    "specialisationCode": "HTM",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "RCVI10",
+            "Title": "Office Administration"
+          },
+          {
+            "Code": "RCVI11",
+            "Title": "Itinerary Planning"
+          },
+          {
+            "Code": "RCVI08",
+            "Title": "Soft Skills and Image Management"
+          },
+          {
+            "Code": "FCVI17",
+            "Title": "Food Production"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Interior Design And Resource Management",
+    "specialisationCode": "IDRM",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "RCVI45",
+            "Title": "Global Interior Architecture"
+          },
+          {
+            "Code": "RDVI08",
+            "Title": "Soft Skills and Image Management"
+          },
+          {
+            "Code": "RDVI13",
+            "Title": "Set Design"
+          },
+          {
+            "Code": "RDV12",
+            "Title": "Furniture Workshop"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Developmental Counselling",
+    "specialisationCode": "DC",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "HDVI11",
+            "Title": "Gerontology"
+          },
+          {
+            "Code": "HCVI25",
+            "Title": "Life Skill Training for Children and Adolescent"
+          },
+          {
+            "Code": "HCVI34",
+            "Title": "Management of Special Events for Children"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Early Childhood Care And Education",
+    "specialisationCode": "ECCE",
+
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "HDVI11",
+            "Title": "Gerontology"
+          },
+          {
+            "Code": "HCVI25",
+            "Title": "Life Skill Training for Children and Adolescent"
+          },
+          {
+            "Code": "HCIV31",
+            "Title": "Training in Preschool Setting"
+          },
+          {
+            "Code": "HDVI10",
+            "Title": "Development of Early Childhood Education Curriculum and Standards"
+          }
+
+        ]
+      }
+    ]
+  }
+
+]

@@ -1,0 +1,98 @@
+﻿<main class="app-content">
+    <div class="row">
+        <div class="app-title">
+            <div>
+                <h1><i class="fa fa-university"></i> Room</h1>
+                <p><!--Modify current professor list--></p>
+            </div>
+            <ul class="app-breadcrumb breadcrumb">
+                <a class="btn btn-primary" ng-click="CreateOrUpdate(-1)" style="color:white"><i class="fa fa-lg fa-plus" style="margin-top: -3px;"></i> Add Room</a>
+            </ul>
+        </div>
+        <div class="col-md-12">
+            <div class="tile">
+                <div class="overlay">
+                    <div class="m-loader mr-4">
+                        <svg class="m-circular" viewBox="25 25 50 50">
+                            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="l-text">Loading</h3>
+                </div>
+                <div class="tile-body">
+                    <table class="table table-hover table-bordered" id="sampleTable">
+                        <thead>
+                            <tr role="row">
+                                <th>Sr No</th>
+                                <!--<th>User Id</th>-->
+                                <th style="">Room Name</th>
+                                <th style="">Room Type</th>
+                                <th style="">Order No</th>
+                                <th style="">Option</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="au in AllRooms">
+                                <td>{{$index+1}}</td>
+                                <td style="text-align: left !important;">{{au.RoomName}}</td>
+                                <td style="text-align: left !important;">{{au.IsTypeRelOrStandBy | CapitalFirstWord}}</td>
+                                <td>{{au.OrderNo}}</td>
+                                <td style="min-width: 180px">
+                                    <a class="btn btn-primary" ng-click="CreateOrUpdate($index)" style="color:white"><i class="fa fa-lg fa-edit" style="margin-top: -3px;"></i> Edit</a>
+                                    <a class="btn btn-primary" ng-click="RemoveClassFromArray($index)" style="color:white"><i class="fa fa-lg fa-trash" style="margin-top: -3px;"></i> Delete</a>
+                                    <!--<button class="btn btn-secondary" type="button" >Delete</button>-->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+<div class="modal fade" id="RoomAddModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel-2">
+                    {{NewRoom}}
+                </h4>
+            </div>
+            <form class="form-horizontal" id="RoomCreateUpdateForm">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="email">Room:</label>
+                        <div class="col-sm-12">
+                            <input type="text" data-validation="required" class="form-control" ng-model="NewRoom" id="txt_Room" placeholder="Enter Room">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-12" for="RoomType">Type:</label>
+                        <div class="col-sm-12">
+                            <select name="RoomType" id="RoomType" class="form-control">
+                                <option value="room">Room</option>
+                                <option value="reliver">Reliver</option>
+                                <option value="stand by">Stand By</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-5" for="email">Order No:</label>
+                        <div class="col-sm-12">
+                            <input type="number" data-validation="required" class="form-control" ng-model="NewOrderNo" id="txt_OrderNo" placeholder="Enter Order No">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" style="color:white"><i class="fa fa-lg fa-check" style="margin-top: -3px;"></i>  Save</button>
+                    <!--<a class="btn btn-primary" ng-click="create()" style="color:white"><i class="fa fa-lg fa-check" style="margin-top: -3px;"></i> Save</a>-->
+                    <a class="btn btn-primary" style="color:white" data-dismiss="modal"><i class="fa fa-lg fa-times" style="margin-top: -3px;"></i> Cancel</a>
+                </div>
+            </form>
+        </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+</div>

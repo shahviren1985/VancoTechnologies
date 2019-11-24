@@ -1,0 +1,106 @@
+<div
+  bsModal
+  #addItemModal="bs-modal"
+  class="modal fade"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="dialog-child-name"
+>
+  <form [formGroup]="partnerRatesPopUpForm" (ngSubmit)="onAddSubmit()">
+    <div class="modal-dialog ">
+      <ngx-loading
+        [show]="loading"
+        [config]="{ backdropBorderRadius: '3px' }"
+        [template]="customLoadingTemplate"
+      ></ngx-loading>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 id="dialog-child-name" class="modal-title pull-left">
+            {{ modelTitle }}
+          </h4>
+          <button
+            type="button"
+            class="close pull-right"
+            aria-label="Close"
+            (click)="hideModal()"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="from" class="col-form-label">From:</label>
+            <select
+              class="form-control"
+              formControlName="from"
+              (change)="setDisabled($event)"
+            >
+              <option
+                [disabled]="currency.disabled"
+                *ngFor="let currency of currencies"
+                [ngValue]="currency.code"
+              >
+                {{ currency.code }}
+              </option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="to" class="col-form-label">To:</label>
+            <select
+              class="form-control"
+              formControlName="to"
+              (change)="setDisabled($event)"
+            >
+              <option
+                [disabled]="currency.disabled"
+                *ngFor="let currency of currencies"
+                [ngValue]="currency.code"
+              >
+                {{ currency.code }}
+              </option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="guaranteed" class="col-form-label">Guaranteed:</label>
+            <input
+              type="text"
+              formControlName="guaranteed"
+              class="form-control"
+              placeholder="Guarantee"
+              DecimalValidator
+            />
+          </div>
+          <div class="form-group">
+            <label for="indicative" class="col-form-label">Indicative:</label>
+            <input
+              type="text"
+              formControlName="indicative"
+              class="form-control"
+              placeholder="Indicative"
+              DecimalValidator
+            />
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-default"
+            data-dismiss="modal"
+            (click)="hideModal()"
+          >
+            Close
+          </button>
+          <button
+            type="submit"
+            class="btn btn-primary"
+            [disabled]="!partnerRatesPopUpForm.valid"
+          >
+            Save Partner Rate
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,39 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Parent Feedback Form</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="jquery/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/ParentFeedback.js"></script>
+    <script src="js/Global.js"></script>
+</head>
+<body>
+    <div class="loader-img"><img src="images/preloader.gif" /></div>
+    <div class="col-xs-12 col-md-9 text-left successmsg" id="successmsg">
+        <span>Feedback successfully saved.</span>
+    </div>
+    <div class="col-xs-12 col-md-9 text-left validationerrormsg" id="validationerrormsg">
+        <span>All questions are mandatory</span>
+    </div>
+    <div class="col-xs-12 col-md-9 feedback-form" id="commonfeedbackForm">
+        <div class="form-data">
+            <div>
+                <h4 class="panel-title">Employer Feedback Form</h4>
+            </div>
+            <div class="right-panel" id="feedbackQuestion">
+
+            </div>
+            <div class="text-left errormsg" id="errormsg">
+                <span>An error has occurred while saving your feedback.</span>
+            </div>
+            <div class="text-right">
+                <button type="button" id="btnSubmitAns" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

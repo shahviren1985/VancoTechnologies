@@ -1,0 +1,361 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="AggregateStudentForm">
+<head>
+    <title>ATKT Form Submission</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="../../plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="../../CustomJs/urlConfig.js"></script>
+    <script src="../../CustomJs/Angular.js"></script>
+    <script src="../../Assets/bootstrap.min.js"></script>
+    <style>
+        .card {
+            background: #fff;
+            border-radius: 2px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .card-1 {
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        }
+
+        .HeaderText {
+            color: #1F3C67;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        table td {
+            padding: 5px;
+        }
+
+        .paper:hover {
+            background-color: #DDD;
+        }
+
+        #PaperTable tr {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body style="background: #b6b7bc;" ng-controller="AggregateStudentForm">
+    <div class="container card-1" data-text="Custom text" style="margin-top:30px;background:white;padding:30px;min-height:500px">
+        <div class="row text-center">
+            <h3 style="margin-top:0px">ATKT Form</h3>
+            <br />
+        </div>
+        <div class="row">
+            <div class="container">
+                <form ng-submit="SubmitMyForm()">
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12"></div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="form-group">
+                                <label for="txtCollegeRegistration">College Registration Number:</label>
+                                <input type="text" required class="form-control" id="txtCollegeRegistration" />
+                                <button type="button" class="btn btn-success" onclick="SearchStudent()">Search</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12"></div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="form-group">
+                                <label for="txtLastName">Last Name:</label>
+                                <input type="text" required class="form-control" id="txtLastName">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12"></div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="form-group">
+                                <label for="txtFirstName">First Name:</label>
+                                <input type="text" required class="form-control" id="txtFirstName">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12"></div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="form-group">
+                                <label for="txtFatherName">Father Name:</label>
+                                <input type="text" required class="form-control" id="txtFatherName">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12"></div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="form-group">
+                                <label for="txtMotherName">Mother Name:</label>
+                                <input type="text" required class="form-control" id="txtMotherName">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12"></div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="form-group">
+                                <label for="txtPrn">PRN:</label>
+                                <input type="text" required class="form-control" id="txtPrn">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12"></div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="form-group">
+                                <label for="txtAddress">Address:</label>
+                                <textarea required class="form-control" id="txtAddress" placeholder="Current Address"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12"></div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="form-group">
+                                <label for="txtMobileNumber">Mobile Number:</label>
+                                <input type="text" required class="form-control" id="txtMobileNumber" placeholder="Mobile Number" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12"></div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="form-group">
+                                <label for="txtEmailAddress">Email Address:</label>
+                                <input type="text" required class="form-control" id="txtEmailAddress" placeholder="Email Address" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12"></div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="form-group">
+                                <label for="course">Appearing for Paper in which year:</label>
+                                <select id="courseYear" class="form-control">
+                                    <option value="-1" selected="selected">Select Year</option>
+                                    <option value="fy">F.Y. B.Sc. (Home Sc)</option>
+                                    <option value="sy">S.Y. B.Sc. (Home Sc)</option>
+                                    <option value="ty">T.Y. B.Sc. (Home Sc)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12"></div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="form-group">
+                                <label for="course">Course:</label>
+                                <select id="course" class="form-control">
+                                    <option value="-1" selected="selected">Select Course</option>
+                                    <option value="Regular">Regular</option>
+                                    <option value="Honors">Honors</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12"></div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="form-group">
+                                <label for="specialisation">Specialisation:</label>
+                                <select id="specialisation" class="form-control">
+                                    <option value="-1" selected="selected">Select Specialisation</option>
+                                    <option value="DC">Developmental Counselling</option>
+                                    <option value="ECCE">Early Childhood Care And Education</option>
+                                    <option value="FND">Food Nutrition And Dietetics</option>
+                                    <option value="HTM">Hospitality & Tourism Management</option>
+                                    <option value="IDRM">Interior Design And Resource Management</option>
+                                    <option value="MCE">Mass Communication And Extension</option>
+                                    <option value="TAD">Textiles And Apparel Designing</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12"></div>
+                        <div class="col-md-4 col-xs-12">
+                            <div class="form-group">
+                                <label for="semester">Apply for Semester:</label>
+                                <select id="semester" onchange="GetPapers();" class="form-control">
+                                    <option value="-1" selected="selected">Select Semester</option>
+                                    <option value="1">Semester 1</option>
+                                    <option value="2">Semester 2</option>
+                                    <option value="3">Semester 3</option>
+                                    <option value="4">Semester 4</option>
+                                    <option value="5">Semester 5</option>
+                                    <option value="6">Semester 6</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-xs-12"></div>
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-primary" onclick="AddRow()">Add Paper for ATKT</button>
+                        </div>
+                    </div>
+                    <div class="row" id="PaperList">
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="SaveATKTForm()">Save ATKT Form</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        var app = angular.module("StudentForm", []);
+        var studentId = 0;
+        var papers = [];
+        var headerAdded = false;
+        var totalPapers = 0;
+        function GetPapers() {
+            var course = $("#course").find(":selected").val();
+            var semester = $("#semester").find(":selected").val();
+            var specialisation = $("#specialisation").find(":selected").val();
+
+            if (course == -1 || semester == -1 || specialisation == -1) {
+                alert("Please select correct option for semester/course/specialisation");
+                return;
+            }
+
+            $.ajax({
+                type: "GET",
+                url: _CommonUr + "/User/GetPaperList?course=BSc&specialization=" + course + "&sem=" + semester,
+                contentType: "application/json;",
+                dataType: "json",
+                success: function (data) {
+                    papers = data;
+                }
+            });
+        }
+
+        function AddRow() {
+            totalPapers++;
+
+            if (!headerAdded)
+                AddHeader();
+
+            var paperCode;
+            var paperType;
+            var specialisation = $("#specialisation").find(":selected").val();
+            var paperList = $("<select/>").attr("class", "form-control").attr("id", studentId + "_" + totalPapers).change(function () {
+                var paperCode = $(this).find(":selected").val();
+                var paperType = $(this).find(":selected").attr("paperType");
+                $(this).parent().parent().find("#paperCode").html(paperCode);
+                $(this).parent().next().html(paperType);
+            });
+
+            for (i = 0; i < papers.length; i++) {
+                if (papers[i].specialisationCode == specialisation) {
+                    for (j = 0; j < papers[i].paperDetails.length; j++) {
+                        var option = $("<option/>").attr("value", papers[i].paperDetails[j].paperCode).html(papers[i].paperDetails[j].paperTitle).attr("paperType", papers[i].paperDetails[j].paperType);
+                        paperCode = papers[i].paperDetails[j].paperCode;
+                        paperType = papers[i].paperDetails[j].paperType;
+                        paperList.append(option);
+                    }
+                }
+            }
+
+            var row = $("<tr><td id='paperCode' style='width: 100px'>" + paperCode + "</td><td id='paperTitle'  style='width: 300px'></td><td>" + paperType+"</td><td ><input type='text' style='width: 30px;' /></td><td><button class='btn btn-danger' onclick='RemovePaper(this)'>Remove</button></td></tr>");
+            $(row).find("#paperTitle").append(paperList);
+            $("#PaperTable").append(row);
+        }
+
+        function RemovePaper(element) {
+            $(element).parent().parent().remove();
+        }
+
+        function AddHeader() {
+            headerAdded = true;
+            var header = $("<table id='PaperTable' border='1' style='margin: 10px;'><tr><td>Paper Code</td><td>Paper Title</td><td>Paper Type</td><td>Internal Marks Obtained</td><td>Action</td></tr></table>");
+            $("#PaperList").append(header);
+        }
+
+        function SearchStudent() {
+            $.ajax({
+                type: "GET",
+                url: _CommonUr + "/Data/GetAggregateMarksheetStudentDetails?collegeRegistrationNumber=" + $('#txtCollegeRegistration').val(),
+                contentType: "application/json;", // this
+                dataType: "json", // and this
+                success: function (data) {
+                    $('#txtLastName').val(data.LastName);
+                    $('#txtFirstName').val(data.FirstName);
+                    $('#txtFatherName').val(data.FatherName);
+                    $('#txtMotherName').val(data.MotherName);
+                    $('#txtPrn').val(data.PRN);
+                    studentId = data.Id;
+                    //GetPapers();
+                },
+                error: function (errormessage) {
+                    $('#div_Error').css('display', '')
+                    if (errormessage == undefined || errormessage == '') {
+                        $('#div_Error').html('Invalid request');
+                    } else {
+                        $('#div_Error').html(errormessage);
+                    }
+                }
+            });
+        }
+
+        function SaveATKTForm() {
+            var paperList = [];
+
+            for (i = 1; i < $("#PaperList").find("table tr").length; i++) {
+                var row = $("#PaperList").find("table tr")[i];
+                var p = {
+                    "paperCode": $(row).find("select").find(":selected").val(),
+                    "paperTitle": $(row).find("select").find(":selected").text(),
+                    "paperType":  $(row).find("select").find(":selected").attr("paperType"),
+                    "internalmarksobtained": $(row).find("input").val(),
+                }
+
+                paperList.push(p);
+            }
+            
+            var obj = {
+                "semester": $("#semester").find(":selected").val(),
+                "year": CURRENT_YEAR,
+                "studentDetails": {
+                    "collegeRegistrationNumber": $("#txtCollegeRegistration").val(),
+                    "prn": $("#txtPrn").val(),
+                    "lastName": $("#txtLastName").val(),
+                    "firstName": $("#txtFirstName").val(),
+                    "fatherName": $("#txtFatherName").val(),
+                    "motherName": $("#txtMotherName").val(),
+                    "stream": $("#course").find(":selected").val(),
+                    "course": $("#courseYear").find(":selected").text(), 
+                    "specialisation": $("#specialisation").find(":selected").val(),
+                    "mobileNumber": $("#txtMobileNumber").val(),
+                    "emailAddress": $("#txtEmailAddress").val(),
+                    "currentAddress": $("#txtAddress").val()
+                },
+                "atktMarksDetailList": paperList
+            }
+            // Call API to save the data
+            $.ajax({
+                type: "POST",
+                url: _CommonUr + "/Data/SaveATKTStudent",
+                contentType: "application/json",
+                dataType: "json",
+                data: JSON.stringify(obj),
+                success: function (data) {
+                    // Show alert to print the PDF form
+                    alert("Your ATKT form submitted successfull.");
+                    window.location.href = window.location.href;
+                },
+                error: function (errormessage) {
+                    // Show error message about the failure
+                    alert("An error occurred while saving ATKT form");
+                }
+            });
+        }
+    </script>
+</body>
+</html>

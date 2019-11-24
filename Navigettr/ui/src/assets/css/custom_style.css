@@ -1,0 +1,146 @@
+body a:hover {
+  text-decoration: none;
+}
+
+.add-inner-format .form-group {
+  width: 50%;
+  float: left;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.add-inner-format .form-group:nth-child(odd) {
+  padding-right: 10px;
+  clear: left;
+}
+
+.add-inner-format .form-group:nth-child(even) {
+  padding-left: 10px;
+}
+
+/* .add-inner-format .form-group .alert-danger {
+  position: absolute;
+  padding: 0 11px;
+  border-radius: 10px;
+  margin-top: 2px;
+  right: 10px;
+  font-size: 10px;
+} */
+
+.add-inner-format .form-group.form-group-full {
+  width: 100%;
+  padding: 0;
+}
+
+.an-card-body .table-sm th,
+.an-card-body .table-sm td {
+  padding: 8px;
+}
+
+.an-card-body .table-sm td {
+  text-align: center;
+}
+
+.add-inner-format .form-group.form-group-full .col-form-label {
+  display: block;
+}
+
+/* .an-card-header input {
+  padding: 4px 10px;
+} */
+
+.an-card-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  align-items: flex-end;
+}
+
+.an-log-tute {
+  display: inline-block;
+  width: 100%;
+}
+
+.an-log-tute a {
+  float: left;
+  padding: 23px 20px 0;
+}
+
+.add-inner-format .an-log-tute .form-group {
+  width: 40%;
+  margin-bottom: 0;
+}
+
+.add-inner-format .active i {
+  color: #20a8d8;
+}
+
+.outer-sign {
+  display: inline-block;
+  width: 100%;
+}
+
+.an-model-foot {
+  justify-content: center;
+}
+
+.outer-sign .checksign {
+  display: inline-block;
+  padding-right: 25px;
+}
+
+/* .add-inner-format .form-control {
+  padding: 3px 5px;
+} */
+
+.checksign input {
+  float: left;
+  margin-top: 4px;
+  margin-right: 7px;
+}
+
+.an-modal-full .modal-header,
+.an-modal-full .modal-body,
+.an-modal-full .modal-footer {
+  padding: 10px;
+}
+
+.add-inner-format .form-group .col-form-label {
+  padding: 0;
+}
+
+.an-modal-full {
+  border-radius: 5px;
+}
+.an-desird input {
+  padding: 5px;
+  margin-right: 10px;
+}
+.an-desird {
+  display: inline-block;
+  width: 100%;
+}
+.an-desird button.btn {
+  margin-top: 0;
+}
+.header-fixed .app-header.navbar {
+  padding: 0 20px;
+}
+.an-card-header input {
+  padding: 0 6px;
+}
+.center-align {
+  text-align: center;
+}
+
+.bulk_upper .modal,
+.location_bottom .modal {
+  visibility: hidden;
+}
+.bulk_upper .modal.show,
+.location_bottom .modal.show {
+  visibility: visible;
+}
+a:hover {
+  cursor: pointer;
+}

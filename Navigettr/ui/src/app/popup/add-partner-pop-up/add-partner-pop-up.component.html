@@ -1,0 +1,52 @@
+<div bsModal #addItemModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dialog-child-name">
+    <div class="navi-Success">
+        <alert></alert>
+    </div>
+  <form [formGroup]="partnerForm" (ngSubmit)="onAddSubmit()">
+    <div class="modal-dialog ">
+        <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '3px' }" [template]="customLoadingTemplate"></ngx-loading>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 id="dialog-child-name" class="modal-title pull-left">Add Partner</h4>
+          <button type="button" class="close pull-right" aria-label="Close" (click)="hideModal()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">          
+          <div class="form-group">
+            <label for="name" class="col-form-label">Partner Name</label>
+            <input type="text" formControlName="name" class="form-control">
+            <div *ngIf="f.name.invalid && (f.name.dirty || f.name.touched)" class="alert alert-danger">
+              <div [hidden]="this.partnerForm.controls['name'].valid">
+                Name is required
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="userName" class="col-form-label">User Name</label>
+            <input type="text" formControlName="userName" class="form-control">
+            <div *ngIf="f.userName.invalid && (f.userName.dirty || f.userName.touched)" class="alert alert-danger">
+              <div [hidden]="this.partnerForm.controls['userName'].valid ">
+                User Name is required
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email" class="col-form-label">Email</label>
+            <input type="text" formControlName="email" class="form-control">
+            <div *ngIf="f.email.invalid && (f.email.dirty || f.email.touched)" class="alert alert-danger">
+              <div [hidden]="this.partnerForm.controls['email'].valid ">
+                Please enter a valid email
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" (click)="hideModal()">Close</button>
+          <button type="submit" class="btn btn-primary" [disabled]="!partnerForm.valid">Add Partner</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

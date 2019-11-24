@@ -1,0 +1,138 @@
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-header an-card-header">
+        <h4>Partner Details ({{ partnerName }}) – Locations</h4>
+        <button
+          *ngIf="!isAdmin"
+          type="button"
+          class="btn btn-primary pull-right"
+          (click)="addItem()"
+        >
+          <span class="glyphicon glyphicon-plus icon-plus"></span> Add New
+          Location
+        </button>
+        <!-- 
+        <button *ngIf="!isAdmin" type="button" class="btn btn-primary pull-right" (click)="addItem()">
+          <span class="glyphicon glyphicon-plus icon-plus"></span> Add New
+          Location
+        </button> -->
+
+        <div class="navi-Success">
+          <alert></alert>
+        </div>
+        <button
+          *ngIf="!isAdmin"
+          type="button"
+          class="btn btn-primary pull-right"
+          (click)="openBulkImport()"
+        >
+          <span class="glyphicon glyphicon-plus icon-plus"></span> Bulk Import
+          Locations
+        </button>
+        <a *ngIf="!isAdmin" href="#" class="pull-right">
+          <span class="glyphicon glyphicon-plus"></span> Download Template
+        </a>
+        <input type="text" [(ngModel)]="email" placeholder="Search here" />
+      </div>
+      <div class="card-body an-card-body">
+        <ngx-loading
+          [show]="loading"
+          [config]="{ backdropBorderRadius: '3px' }"
+          [template]="customLoadingTemplate"
+        ></ngx-loading>
+        <table class="table table-bordered table-striped table-sm">
+          <thead>
+            <tr>
+              <th>Address</th>
+              <th>Mobile Number</th>
+              <!-- <th>Working Days</th>
+              <th>Working Hours</th> -->
+              <!-- <th>Status</th> -->
+              <th>Date Activated</th>
+              <th>Date Expired</th>
+              <th>Navigate</th>
+              <th *ngIf="!isAdmin">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              *ngFor="
+                let item of (pagedItems | customerEmailFilter: email);
+                let i = index
+              "
+            >
+              <td>{{ item.addressLine1 }}</td>
+              <td>{{ item.mobileNumber }}</td>
+              <!-- <td>{{ item.working_days }}</td>
+              <td>{{ item.working_hours }}</td> -->
+              <!-- <td>{{ item.status }}</td> -->
+              <td>{{ item.activatedDate }}</td>
+              <td>{{ item.expiryDate }}</td>
+              <td>
+                <a style="cursor:pointer;"
+                  ><i class="fa fa-map fa-10x" aria-hidden="true"></i
+                ></a>
+              </td>
+
+              <td *ngIf="!isAdmin" class="text-center">
+                <a (click)="updateLocationItem(item)" style="cursor:pointer;"
+                  ><i class="fa fa-edit fa-10x" aria-hidden="true"></i
+                ></a>
+              </td>
+
+              <!-- <td class="text-center"><button type="button" class="btn btn-primary icon-pencil" (click)="addItem(item.id)"></button>
+                <button type="button" class="btn btn-danger icon-trash" (click)="removeItem(item.id)"></button>
+              </td> -->
+            </tr>
+            <tr *ngIf="showNoRecord">
+              <td class="center-align" colspan="10">{{ notFoundMessage }}</td>
+            </tr>
+          </tbody>
+        </table>
+        <nav>
+          <!-- <ul class="pagination">
+            <li [ngClass]="{'disabled': (currentIndex == 1 || pageNumber == 0)}"><a (click)="prevPage()" href="#">Prev</a></li>
+            <li *ngFor="let page of pagesIndex" [ngClass]="{'active': (currentIndex == page)}">
+              <a (click)="setPage(page)" href="#">{{page}}</a>
+            </li>
+            <li [ngClass]="{'disabled': (currentIndex == pageNumber || pageNumber == 0)}"><a (click)="nextPage()" href="#">Next</a></li>
+          </ul> -->
+
+          <ul *ngIf="pager.pages && pager.pages.length" class="pagination">
+            <li [ngClass]="{ disabled: pager.currentPage === 1 }">
+              <a (click)="setPage(1)">First</a>
+            </li>
+            <li [ngClass]="{ disabled: pager.currentPage === 1 }">
+              <a (click)="setPage(pager.currentPage - 1)">Previous</a>
+            </li>
+            <li
+              *ngFor="let page of pager.pages"
+              [ngClass]="{ active: pager.currentPage === page }"
+            >
+              <a (click)="setPage(page)">{{ page }}</a>
+            </li>
+            <li
+              [ngClass]="{ disabled: pager.currentPage === pager.totalPages }"
+            >
+              <a (click)="setPage(pager.currentPage + 1)">Next</a>
+            </li>
+            <li
+              [ngClass]="{ disabled: pager.currentPage === pager.totalPages }"
+            >
+              <a (click)="setPage(pager.totalPages)">Last</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bulk_upper">
+  <app-bulk-import-location #bulkImportLocation></app-bulk-import-location>
+</div>
+<div class="location_bottom">
+  <app-add-partnerLocation-pop-up
+    #addPartnerLocationModal
+  ></app-add-partnerLocation-pop-up>
+</div>

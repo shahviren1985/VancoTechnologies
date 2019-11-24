@@ -1,0 +1,359 @@
+[
+  {
+    "courseName": "Bachelor in Science Home Science",
+    "courseShortName": "BSc - Regular",
+    "marksheetName": "",
+    "specialisation": "Developmental Counselling",
+    "specialisationCode": "DC",
+    "paperDetails": [
+      {
+        "paperTitle": "Communicative English",
+        "code": "LA101",
+        "isElective": "No",
+        "order": "1"
+      },
+      {
+        "paperTitle": "Environmental Studies",
+        "code": "SA101",
+        "isElective": "No",
+        "order": "2"
+      },
+      {
+        "paperTitle": "Digital Photography",
+        "code": "MG101",
+        "isElective": "Yes",
+        "order": "3"
+      },
+      {
+        "paperTitle": "Voice Culture and Modulation",
+        "code": "MG102",
+        "isElective": "Yes",
+        "order": "4"
+      },
+      {
+        "paperTitle": "Fashion Craft",
+        "code": "TG101",
+        "isElective": "Yes",
+        "order": "5"
+      },
+      {
+        "paperTitle": "Fundamentals of Fashion",
+        "code": "TG102",
+        "isElective": "Yes",
+        "order": "6"
+      },
+      {
+        "paperTitle": "Development and Guidance During Early Years",
+        "code": "HCI03",
+        "isElective": "No",
+        "order": "7"
+      }
+    ]
+  },
+  {
+    "courseName": "Bachelor in Science Home Science",
+    "courseShortName": "BSc - Regular",
+    "marksheetName": "",
+    "specialisation": "Early Childhood Care And Education",
+    "specialisationCode": "ECCE",
+    "paperDetails": [
+      {
+        "paperTitle": "Communicative English",
+        "code": "LA101",
+        "isElective": "No",
+        "order": "1"
+      },
+      {
+        "paperTitle": "Environmental Studies",
+        "code": "SA101",
+        "isElective": "No",
+        "order": "2"
+      },
+      {
+        "paperTitle": "Digital Photography",
+        "code": "MG101",
+        "isElective": "Yes",
+        "order": "3"
+      },
+      {
+        "paperTitle": "Voice Culture and Modulation",
+        "code": "MG102",
+        "isElective": "Yes",
+        "order": "4"
+      },
+      {
+        "paperTitle": "Fashion Craft",
+        "code": "TG101",
+        "isElective": "Yes",
+        "order": "5"
+      },
+      {
+        "paperTitle": "Fundamentals of Fashion",
+        "code": "TG102",
+        "isElective": "Yes",
+        "order": "6"
+      },
+      {
+        "paperTitle": "Development and Guidance During Early Years",
+        "code": "HCI03",
+        "isElective": "No",
+        "order": "7"
+      }
+    ]
+  },
+  {
+    "courseName": "Bachelor in Science Home Science",
+    "courseShortName": "BSc - Regular",
+    "marksheetName": "",
+    "specialisation": "Food Nutrition And Dietetics",
+    "specialisationCode": "FND",
+    "paperDetails": [
+      {
+        "paperTitle": "Communicative English",
+        "code": "LA101",
+        "isElective": "No",
+        "order": "1"
+      },
+      {
+        "paperTitle": "Environmental Studies",
+        "code": "SA101",
+        "isElective": "No",
+        "order": "2"
+      },
+      {
+        "paperTitle": "Consumer Education and Financial Literacy",
+        "code": "RG101",
+        "isElective": "Yes",
+        "order": "3"
+      },
+      {
+        "paperTitle": "Travel Arrangements and Formalities",
+        "code": "RG102",
+        "isElective": "Yes",
+        "order": "4"
+      },
+      {
+        "paperTitle": "Personal and Professional Relationships in Adulthood",
+        "code": "HG101",
+        "isElective": "Yes",
+        "order": "5"
+      },
+      {
+        "paperTitle": "Marriage and Parenting",
+        "code": "HG102",
+        "isElective": "Yes",
+        "order": "6"
+      },
+      {
+        "paperTitle": "Fundamentals of Nutrition",
+        "code": "FCI03",
+        "isElective": "No",
+        "order": "5"
+      }
+    ]
+  },
+  {
+    "courseName": "Bachelor in Science Home Science",
+    "courseShortName": "BSc - Regular",
+    "marksheetName": "",
+    "specialisation": "Hospitality And Tourism Management",
+    "specialisationCode": "HTM",
+    "paperDetails": [
+      {
+        "paperTitle": "Communicative English",
+        "code": "LA101",
+        "isElective": "No",
+        "order": "1"
+      },
+      {
+        "paperTitle": "Environmental Studies",
+        "code": "SA101",
+        "isElective": "No",
+        "order": "2"
+      },
+      {
+        "paperTitle": "Nutrition for Health Promotion",
+        "code": "FG101",
+        "isElective": "Yes",
+        "order": "3"
+      },
+      {
+        "paperTitle": "Fundamentals of Baking",
+        "code": "FG102",
+        "isElective": "Yes",
+        "order": "4"
+      },
+      {
+        "paperTitle": "Fashion Craft",
+        "code": "TG101",
+        "isElective": "Yes",
+        "order": "5"
+      },
+      {
+        "paperTitle": "Fundamentals of Fashion",
+        "code": "TG102",
+        "isElective": "Yes",
+        "order": "6"
+      },
+      {
+        "paperTitle": "Personal Finance and Consumer Studies",
+        "code": "RCI03",
+        "isElective": "No",
+        "order": "7"
+      }
+    ]
+  },
+  {
+    "courseName": "Bachelor in Science Home Science",
+    "courseShortName": "BSc - Regular",
+    "marksheetName": "",
+    "specialisation": "Interior Design And Resource Management",
+    "specialisationCode": "IDRM",
+    "paperDetails": [
+      {
+        "paperTitle": "Communicative English",
+        "code": "LA101",
+        "isElective": "No",
+        "order": "1"
+      },
+      {
+        "paperTitle": "Environmental Studies",
+        "code": "SA101",
+        "isElective": "No",
+        "order": "2"
+      },
+      {
+        "paperTitle": "Nutrition for Health Promotion",
+        "code": "FG101",
+        "isElective": "Yes",
+        "order": "3"
+      },
+      {
+        "paperTitle": "Fundamentals of Baking",
+        "code": "FG102",
+        "isElective": "Yes",
+        "order": "4"
+      },
+      {
+        "paperTitle": "Fashion Craft",
+        "code": "TG101",
+        "isElective": "Yes",
+        "order": "5"
+      },
+      {
+        "paperTitle": "Fundamentals of Fashion",
+        "code": "TG102",
+        "isElective": "Yes",
+        "order": "6"
+      },
+      {
+        "paperTitle": "Personal Finance and Consumer Studies",
+        "code": "RCI03",
+        "isElective": "No",
+        "order": "7"
+      }
+    ]
+  },
+  {
+    "courseName": "Bachelor in Science Home Science",
+    "courseShortName": "BSc - Regular",
+    "marksheetName": "",
+    "specialisation": "Mass Communication And Extension",
+    "specialisationCode": "MCE",
+    "paperDetails": [
+      {
+        "paperTitle": "Communicative English",
+        "code": "LA101",
+        "isElective": "No",
+        "order": "1"
+      },
+      {
+        "paperTitle": "Environmental Studies",
+        "code": "SA101",
+        "isElective": "No",
+        "order": "2"
+      },
+      {
+        "paperTitle": "Nutrition for Health Promotion",
+        "code": "FG101",
+        "isElective": "Yes",
+        "order": "3"
+      },
+      {
+        "paperTitle": "Fundamentals of Baking",
+        "code": "FG102",
+        "isElective": "Yes",
+        "order": "4"
+      },
+      {
+        "paperTitle": "Fashion Craft",
+        "code": "TG101",
+        "isElective": "Yes",
+        "order": "5"
+      },
+      {
+        "paperTitle": "Fundamentals of Fashion",
+        "code": "TG102",
+        "isElective": "Yes",
+        "order": "6"
+      },
+      {
+        "paperTitle": "Fundamentals of Communication",
+        "code": "MCI03",
+        "isElective": "No",
+        "order": "7"
+      }
+    ]
+  },
+  {
+    "courseName": "Bachelor in Science Home Science",
+    "courseShortName": "BSc - Regular",
+    "marksheetName": "",
+    "specialisation": "Textiles And Apparel Designing",
+    "specialisationCode": "TAD",
+    "paperDetails": [
+      {
+        "paperTitle": "Communicative English",
+        "code": "LA101",
+        "isElective": "No",
+        "order": "1"
+      },
+      {
+        "paperTitle": "Environmental Studies",
+        "code": "SA101",
+        "isElective": "No",
+        "order": "2"
+      },
+      {
+        "paperTitle": "Digital Photography",
+        "code": "MG101",
+        "isElective": "Yes",
+        "order": "3"
+      },
+      {
+        "paperTitle": "Voice Culture and Modulation",
+        "code": "MG102",
+        "isElective": "Yes",
+        "order": "4"
+      },
+      {
+        "paperTitle": "Personal and Professional Relationships in Adulthood",
+        "code": "HG101",
+        "isElective": "Yes",
+        "order": "5"
+      },
+      {
+        "paperTitle": "Marriage and Parenting",
+        "code": "HG102",
+        "isElective": "Yes",
+        "order": "6"
+      },
+      {
+        "paperTitle": "Fundamentals of Textile and Clothing",
+        "code": "TCI03",
+        "isElective": "No",
+        "order": "7"
+      }
+    ]
+  }
+]

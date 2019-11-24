@@ -1,0 +1,42 @@
+<div bsModal #bulkUploadModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="dialog-child-name">
+  <form [formGroup]="bulkLocationForm" (ngSubmit)="onAddSubmit()">
+    <div class="modal-dialog ">
+      <div class="modal-content an-modal-full">
+        <div class="modal-header">
+          <h4 id="dialog-child-name" class="modal-title pull-left">
+            Bulk Import Locations
+          </h4>
+          <button type="button" class="close pull-right" aria-label="Close" (click)="hideModal()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body add-inner-format">
+          <div class="form-group">
+            <!-- <label for="addressline1" class="col-form-label">HUrray!!!</label> -->
+            <input type="file" formControlName="bulkLocationCSV" class="form-control" />
+            <div *ngIf="
+                f.bulkLocationCSV.invalid &&
+                (f.bulkLocationCSV.dirty || f.bulkLocationCSV.touched)
+              "
+              class="alert alert-danger">
+              <div [hidden]="
+                  this.bulkLocationForm.controls['bulkLocationCSV'].valid
+                ">
+                Please select CSV file
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer an-model-foot">
+          <button type="button" class="btn btn-default" data-dismiss="modal" (click)="hideModal()">
+            Close
+          </button>
+          <button type="submit" class="btn btn-primary" [disabled]="!bulkLocationForm.valid">
+            Upload File
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

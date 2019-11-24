@@ -1,0 +1,46 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feedback System - Login</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/style.css" />
+	<script type = "text/javascript" src="jquery/jquery-1.11.3.min.js"></script>
+	<script type = "text/javascript" src="js/Login.js"></script>
+    <script src="js/Global.js"></script>
+    <script>
+        if (location.protocol != 'https:' && location.href.indexOf("localhost") == - 1) {
+            location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+        }
+    </script>
+</head>
+
+<body style="background:#fff">
+<div class="loader-img"><img src="images/preloader.gif"/></div>
+	<header>
+        <div class="row">
+            <div class="page-ttl col-xs-12 col-sm-6 text-left">
+                Feedback System
+            </div>
+        </div>
+    </header>
+    <div class="login-page col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
+        <div class="login-form">
+		<div id="info" style="color:red" class="text-center"> </div>
+            <h2>Login</h2>
+            <form id="login_form">
+                <div class="form-group">
+                  <label>Username</label>
+                  <input id="mobileNo" type="text" class="form-control" placeholder="Enter your mobile no.">
+                </div>
+                <div class="form-group">
+                  <label>Password</label>
+                  <input id="lastName" type="password" class="form-control" placeholder="Enter password">
+                </div>
+                <button type="button" name="btnLogin" class="btn btn-primary btnLogin">Submit</button>
+            </form>
+        </div>
+	</div>
+</body>
+</html>

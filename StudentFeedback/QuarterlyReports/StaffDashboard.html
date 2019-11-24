@@ -1,0 +1,492 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Feedback System - Dashboard</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/adminStyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script type="text/javascript" src="jquery/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="js/GraphDashboard.js"></script>
+    <!--<script type="text/javascript" src="js/MDSMC-Dashboard.js"></script>-->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+        @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+        .white-space_Chart {
+            background: #fff;
+            -webkit-box-shadow: 0 0 6px #b1aaaa;
+            -moz-box-shadow: 0 0 6px #b1aaaa;
+            box-shadow: 0 0 1px #b1aaaa;
+            margin: 0 0 20px;
+            display: inline-block;
+            width: 100%;
+            padding: 15px;
+        }
+
+        .QuestionDivClass {
+            text-align: center;
+            padding-bottom: 10px;
+            font-weight: 600;
+        }
+
+        p:not(:last-child) {
+            margin: 0 0 20px;
+        }
+
+        main {
+            max-width: 100%;
+            padding: 10px;
+        }
+
+        section {
+            display: none;
+            padding: 20px 0 0;
+            border-top: 1px solid #abc;
+        }
+
+        input {
+            display: none;
+        }
+
+        .tab-content {
+            padding-top: 15px;
+        }
+
+        label {
+            display: inline-block;
+            margin-left: 30px;
+            padding: 15px;
+            font-weight: 600;
+            border: 1px solid transparent;
+        }
+
+            label:before {
+                font-family: fontawesome;
+                font-weight: normal;
+                margin-right: 10px;
+            }
+
+            label:hover {
+                color: #789;
+                cursor: pointer;
+            }
+
+        input:checked + label {
+            color: #0af;
+            border: 1px solid #abc;
+            border-top: 2px solid #0af;
+            border-bottom: 1px solid #fff;
+        }
+
+        #tab1:checked ~ #content1,
+        #tab2:checked ~ #content2,
+        #tab3:checked ~ #content3,
+        #tab4:checked ~ #content4 {
+            display: block;
+        }
+        #tabPeerReview table, #tabPeerReview table td {
+            border: 1px solid black;
+        }
+        #tabPeerReview table{
+            border-collapse: collapse;
+        }
+
+        @media screen and (max-width: 800px) {
+            label {
+                font-size: 0;
+            }
+
+                label:before {
+                    margin: 0;
+                    font-size: 18px;
+                }
+        }
+
+        @media screen and (max-width: 500px) {
+            label {
+                padding: 15px;
+            }
+        }
+    </style>
+    <script>
+        var departments = [];
+        var admins = [];
+        var peerReviewQuestions;
+        var classes = [
+            "B.COM. PART III ENGLISH (SEMESTER V & VI)-B",
+            "B.A. PART I ENGLISH (SEMESTER I & II)-A",
+            "B.A. PART II GUJARATI (SEMESTER III & IV)-G",
+            "B.A. PART III MARATHI (SEMESTER V & VI)-A",
+            "B.A. PART II MARATHI (SEMESTER III & IV)-A",
+            "B.A. PART III HINDI (SEMESTER V & VI)-B",
+            "B.A. PART III HINDI (SEMESTER V & VI)-A",
+            "B.A. PART II HINDI (SEMESTER III & IV)-A",
+            "B.A. PART I HINDI (SEMESTER I & II)-B",
+            "B.A. PART I HINDI (SEMESTER I & II)-A",
+            "B.COM. PART III ENGLISH (SEMESTER V & VI)-C",
+            "B.COM. PART III ENGLISH (SEMESTER V & VI)-A",
+            "B.COM. PART II ENGLISH (SEMESTER III & IV)-C",
+            "B.COM. PART II ENGLISH (SEMESTER III & IV)-B",
+            "B .COM. PART II ENGLISH (SEMESTER III & IV)-A",
+            "B.COM. PART I ENGLISH (SEMESTER I & II)-B",
+            "B.COM. PART I ENGLISH (SEMESTER I & II)-A",
+            "B.A. PART I GUJARATI (SEMESTER I & II)-G",
+            "B.A. PART III GUJARATI (SEMESTER V & VI)-G",
+            "B.A. PART II ENGLISH (SEMESTER III & IV)-A",
+            "B.A. PART III ENGLISH (SEMESTER V & VI)-A"
+        ];
+
+        function PrepareClassesDropdown() {
+            var ddAcademicYearCurriculam = $("<select id='ddAcademicYearCurriculam'/>").attr("class", "form-control").attr("style", "width: 30%; float: left; margin-right: 10px; margin-left: 30px; margin-bottom: 30px;");
+            var ddClass = $("<select id='ddClass'/>").attr("class", "form-control").attr("style", "width: 30%; float: left; margin-right: 10px; margin-left: 30px; margin-bottom: 30px;").attr("onchange", "PrepareSubjectDropdown()");
+            var ddSubject = $("<select id='ddSubject'/>").attr("class", "form-control").attr("style", "width: 30%; float: left; margin-right: 10px; margin-left: 30px; margin-bottom: 30px;");
+            var button = $("<button/>").attr("class", "btn btn-success").html("Get Report").attr("style", "float: left;margin: 20px;").attr("onclick", "GetGraph('CurriculumEvaluation')");
+            
+            for (i = 0; i < classes.length; i++) {
+                var option = $("<option/>").attr("value", classes[i]).html(classes[i]);
+                $(ddClass).append(option);
+            }
+            $("#GraphAppendGrid_CurriculumEvaluation").append($("<span style='float: left;margin-left: 20px;width: 100%;'>Academic Year:</span>"));
+            $("#GraphAppendGrid_CurriculumEvaluation").append(ddAcademicYearCurriculam);
+            $("#GraphAppendGrid_CurriculumEvaluation").append($("<span style='float: left;margin-left: 20px;width: 100%;'>Stream/Class:</span>"));
+            $("#GraphAppendGrid_CurriculumEvaluation").append(ddClass);
+            $("#GraphAppendGrid_CurriculumEvaluation").append($("<span style='float: left;margin-left: 20px;width: 100%;'>Subject:</span>"));
+            $("#GraphAppendGrid_CurriculumEvaluation").append(ddSubject);
+            $("#GraphAppendGrid_CurriculumEvaluation").append($("<span style='float: left;width: 100%;'>&nbsp;</span>"));
+            $("#GraphAppendGrid_CurriculumEvaluation").append(button);
+        }
+
+        function PrepareSubjectDropdown() {
+            $("#ddSubject").find("option").remove();
+            $("#GraphAppendGrid_CurriculumEvaluation").append($("<div id='Loading'>Loading...</div>"));
+            $.ajax({
+                url: GloableWebsite + 'api/CommonFeedback/GetSubjectList?collegeCode=' + localStorage.getItem('collegeCode') + '&department=' + $("#ddClass").find(":selected").text(),
+                contentType: "application/json",
+                success: function (data, status, jqXHR) {
+                    for (i = 0; i < data.length; i++) {
+                        var option = $("<option/>").attr("value", data[i]).html(data[i]);
+                        $("#ddSubject").append(option);
+                    }
+
+                    $("#GraphAppendGrid_CurriculumEvaluation").find("#Loading").remove();
+                },
+                error: function (jqXHR, status) {
+                    console.log(jqXHR);
+                },
+                type: 'GET'
+            });
+        }
+
+        function GetPeerReviewData(userType) {
+            var dept = null;
+            switch (userType) {
+                case "PeerOwnDepartment":
+                    dept = $("#ddOwnDept").find(":selected").text();
+                    break;
+                case "PeerOtherDepartment":
+                    dept = $("#ddOtherDept").find(":selected").text();
+                    break;
+                case "PeerAnyDepartment":
+                    dept = $("#ddAnyDept").find(":selected").text();
+                    break;
+            }
+
+            if (dept == "All Departments" || dept == undefined)
+                dept = "";
+
+            GetEmployerGraph(userType, dept);
+        }
+
+        function GetGraph(reportType) {
+            var dept = null;
+            dept = $("#ddClass").find(":selected").text();
+            if (dept == "All Classes" || dept == undefined)
+                dept = "";
+
+            var subject = $("#ddSubject").find(":selected").text();
+
+            GetEmployerGraph(reportType, dept, subject);
+        }
+
+        function GetPeerReport() {
+            var peerName = $("#dd_Peer").find(":selected").text();
+            GetPeerReportDetails(peerName);
+        }
+
+        function GetAdmins(userType) {
+            //AcademicAdministrator
+            var ad = $("#ddAdmin").find(":selected").text();
+            if (ad == "All Administrators" || ad == undefined) {
+                ad = "";
+                $("#btnDownloadAllAcadPDF").show();
+                $("#btnDownloadAllAcadExcel").show();
+                $("#btnDownloadAllAcadPDF2").show();
+                $("#btnDownloadAllAcadExcel2").show();
+                $("#btnDownloadStudent").hide();
+                $("#btnDownloadAcadReport1").hide();
+                $("#btnDownloadAcadReport2").hide();
+            }
+            else
+            {
+                $("#btnDownloadAllAcadPDF").hide();
+                $("#btnDownloadAllAcadExcel").hide();
+                $("#btnDownloadAllAcadPDF2").hide();
+                $("#btnDownloadAllAcadExcel2").hide();
+                $("#btnDownloadStudent").show();
+                $("#btnDownloadAcadReport1").show();
+                $("#btnDownloadAcadReport2").show();
+            }
+            
+
+            GetAcedemicAdminGraph(userType, 'academicfeedback', ad);
+        }
+
+        DownloadAdminReportsInPDF = function () {
+            var adminNames = ""; 
+            $("#ddAdmin > option").each(function () {
+                var val = $(this).val();
+
+                if (val != "") {
+                    if (val != "All Administrators")
+                        adminNames += val + ",";
+                }
+            });
+
+            window.open(GloableWebsite + '/api/CommonFeedback/DownloadAllAdminReportCard1PDF?adminName=' + adminNames + '&collageCode=105&academicYear=' + $("#ddAcadYear").find(":selected").text(), '_blank');
+        }
+
+        DownloadAdminReports2InPDF = function () {
+            var adminNames = "";
+            $("#ddAdmin > option").each(function () {
+                var val = $(this).val();
+
+                if (val != "") {
+                    if (val != "All Administrators")
+                        adminNames += val + ",";
+                }
+            });
+
+            window.open(GloableWebsite + '/api/CommonFeedback/DownloadAllAdminReportCard2PDF?adminName=' + adminNames + '&collageCode=105&academicYear=' + $("#ddAcadYear").find(":selected").text(), '_blank');
+        }
+
+        DownloadAdminReports1InExcel = function () {
+            var adminNames = "";
+            $("#ddAdmin > option").each(function () {
+                var val = $(this).val();
+
+                if (val != "") {
+                    if (val != "All Administrators")
+                        adminNames += val + ",";
+                }
+            });
+
+            window.open(GloableWebsite + '/api/CommonFeedback/DownloadAllAdminReportCard1?adminName=' + adminNames + '&collageCode=105&academicYear=' + $("#ddAcadYear").find(":selected").text(), '_blank');
+        }
+
+        DownloadAdminReports2InExcel = function () {
+            var adminNames = "";
+            $("#ddAdmin > option").each(function () {
+                var val = $(this).val();
+
+                if (val != "") {
+                    if (val != "All Administrators")
+                        adminNames += val + ",";
+                }
+            });
+
+            window.open(GloableWebsite + '/api/CommonFeedback/DownloadAllAdminReportCard2?adminName=' + adminNames + '&collageCode=105&academicYear=' + $("#ddAcadYear").find(":selected").text(), '_blank');
+        }
+    </script>
+</head>
+<body>
+    <div class="loader-img"><img src="images/preloader.gif" /></div>
+    <header>
+        <div class="row">
+            <div class="col-xs-12 col-md-9 text-left">
+                <div class="row">
+                    <a class="page-ttl col-xs-9 col-md-4" href="Dashboard.html">Feedback System</a>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3 text-right">
+                <span id="userName"> </span> &nbsp;
+                <button class="btn btn-default" id="logout">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="col-xs-12 col-md-3">
+        <div class="panel-body left-nav">
+            <ul class="plan plan2">
+                <li>
+                    <a href="StudentDashboard.html"><div><input type='radio' /><label for='Dashboard'><span>Student Feedback Dashboard </span> <span> </span> </label></div></a>
+                </li>
+                <li>
+                    <a href="StaffDashboard.html"><div><input checked type='radio' /><label for='Dashboard'><span>Staff Feedback Dashboard</span> <span> </span> </label></div></a>
+                </li>
+                <li>
+                    <a href="UploadFeedback.html"><div><input type='radio' /><label for='Reports'><span> Upload Feedbacks </span> <span> </span> </label></div></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-md-9 right-block">
+        <h4 class="panel-title">Dashboard</h4>
+        <div class="col-xs-12 white-space" id="myList">
+            <ul class="nav nav-tabs testClass">
+                <li id="AcadList" class="active">
+                    <a href="#tabAcademicAdministration">Academic Administration</a>
+                </li>
+                <li onclick="GetEmployerGraph('Library')">
+                    <a href="#tabLibrary">Library</a>
+                </li>
+                <li onclick="GetEmployerGraph('JobSatisfactionWorkPlace')">
+                    <a href="#tabJobSatisfaction">Job Satisfaction</a>
+                </li>
+                <li onclick="GetEmployerGraph('PeerOwnDepartment')">
+                    <a href="#tabPeerReview">Peer Review</a>
+                </li>
+                <li>
+                    <a href="#tabCurriculumEvaluation">Curriculum Evaluation</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade active in" id="tabAcademicAdministration">
+                    <div class="row" id="GraphAppendGrid_AcademicAdministrator">
+                        <button type="button" style="margin-left: 10px;" onclick="GetAcedemicAdminGraph('AcademicAdministrator', 'academicfeedback','')" class="btn btn-success">Get Report</button>
+                    </div>
+                    <div class="row" id="AcademicAdministrator_DownloadButton" style="display:none;">
+                        <div class="col-md-12">
+                            <button type="button" id="btnDownloadAllAcadPDF" style="margin-left: 10px;" onclick="DownloadAdminReportsInPDF();" class="btn btn-primary">Download All PDF Reports (1)</button>
+                            <button type="button" id="btnDownloadAllAcadPDF2" style="margin-left: 10px;" onclick="DownloadAdminReports2InPDF();" class="btn btn-primary">Download All PDF Reports (2)</button>
+                            <button type="button" id="btnDownloadAllAcadExcel" style="margin-left: 10px;" onclick="DownloadAdminReports1InExcel();" class="btn btn-primary">Download All Excel Reports (1)</button>
+                            <button type="button" id="btnDownloadAllAcadExcel2" style="margin-left: 10px;" onclick="DownloadAdminReports2InExcel();" class="btn btn-primary">Download All Excel Reports (2)</button>
+                            <button type="button" id="btnDownloadStudent" onclick="ExportCommonBarGraphUsingSpreadSheet('AcademicAdministrator', 'academicfeedback')" class="btn btn-primary">Download Graphical Report</button>
+                            <button type="button" style="margin-left: 10px;" id="btnDownloadAcadReport1" onclick="GetAdminReportCard1()" class="btn btn-primary">Download Report Card 1</button>
+                            <button type="button" style="margin-left: 10px;" id="btnDownloadAcadReport2" onclick="GetAdminReportCard2()" class="btn btn-primary">Download Report Card 2</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade in" id="tabLibrary">
+                    <div class="row" id="GraphAppendGrid_Library"></div>
+                    <div class="row" id="Library_DownloadButton" style="display:none">
+                        <div class="col-md-12">
+                            <button type="button" style="float:right" id="btnDownloadStudent" onclick="DownloadExcelCommonFeedbackTab('Library')" class="btn btn-primary">Download</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade in" id="tabJobSatisfaction">
+                    <ul class="nav nav-tabs">
+                        <li onclick="GetEmployerGraph('JobSatisfactionWorkPlace')" class="active">
+                            <a href="#WorkPlacetab">Work Place</a>
+                        </li>
+                        <li onclick="GetEmployerGraph('JobSatisfactionEmployeeRelation')">
+                            <a href="#EmployeeRelationtab">Employee Relation</a>
+                        </li>
+                        <li onclick="GetEmployerGraph('JobSatisfactionTechnologyResource')">
+                            <a href="#TechnologyResourcetab">Technology Resource</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="WorkPlacetab">
+                            <div class="row" id="GraphAppendGrid_JobSatisfactionWorkPlace">
+                            </div>
+                            <div class="row" id="JobSatisfactionWorkPlace_DownloadButton" style="display:none">
+                                <div class="col-md-12">
+                                    <button type="button" style="float:right" id="btnDownloadStudent" onclick="DownloadExcelCommonFeedbackTab('JobSatisfactionWorkPlace')" class="btn btn-primary">Download</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="EmployeeRelationtab">
+                            <div class="row" id="GraphAppendGrid_JobSatisfactionEmployeeRelation"></div>
+                            <div class="row" id="JobSatisfactionEmployeeRelation_DownloadButton" style="display:none">
+                                <div class="col-md-12">
+                                    <button type="button" style="float:right" id="btnDownloadStudent" onclick="DownloadExcelCommonFeedbackTab('JobSatisfactionEmployeeRelation')" class="btn btn-primary">Download</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="TechnologyResourcetab">
+                            <div class="row" id="GraphAppendGrid_JobSatisfactionTechnologyResource"></div>
+                            <div class="row" id="JobSatisfactionTechnologyResource_DownloadButton" style="display:none">
+                                <div class="col-md-12">
+                                    <button type="button" style="float:right" id="btnDownloadStudent" onclick="DownloadExcelCommonFeedbackTab('JobSatisfactionTechnologyResource')" class="btn btn-primary">Download</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade in" id="tabPeerReview">
+                    <div style="width: 100%;">
+                        <div class="form-group">
+                            <div class="reviewAnalysis">
+                                <b style="float: left; margin-right: 10px">Peer Name</b>
+                                <select class="form-control" id="dd_Peer" style="width: 250px; float: left">
+                                    <option value="" selected="">Select Peer</option>
+                                </select>
+                                <div style="float: left; margin-left: 10px">
+                                    <button type="button" style="float:right" id="btnGetPeerReport" onclick="GetPeerReport()" class="btn btn-primary">Get Report</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade in" id="tabCurriculumEvaluation">
+                    <div class="row" id="GraphAppendGrid_CurriculumEvaluation">
+
+
+                    </div>
+                    <div class="row" id="CurriculumEvaluation_DownloadButton" style="display:none">
+                        <div class="col-md-12">
+                            <button type="button" style="float:right" id="btnDownloadLibrary" class="btn btn-primary">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/Global.js"></script>
+</body>
+</html>
+<script>
+    PrepareClassesDropdown();
+    function DownloadPeerReviewExcelReport() {
+        var tab_text = "<table border='2px'><tr bgcolor='#87AFC6'>";
+        var textRange; var j = 0;
+        tab = document.getElementById('PeerReviewAnalysis'); // id of table
+
+        for (j = 0 ; j < tab.rows.length ; j++) {
+            tab_text = tab_text + tab.rows[j].innerHTML + "</tr>";
+            //tab_text=tab_text+"</tr>";
+        }
+
+        tab_text = tab_text + "</table>";
+        tab_text = tab_text.replace(/<A[^>]*>|<\/A>/g, "");//remove if u want links in your table
+        tab_text = tab_text.replace(/<img[^>]*>/gi, ""); // remove if u want images in your table
+        tab_text = tab_text.replace(/<input[^>]*>|<\/input>/gi, ""); // reomves input params
+
+        var ua = window.navigator.userAgent;
+        var msie = ua.indexOf("MSIE ");
+
+        if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))      // If Internet Explorer
+        {
+            txtArea1.document.open("txt/html", "replace");
+            txtArea1.document.write(tab_text);
+            txtArea1.document.close();
+            txtArea1.focus();
+            sa = txtArea1.document.execCommand("SaveAs", true, "Report.xls");
+        }
+        else                 //other browser not tested on IE 11
+            sa = window.open('data:application/vnd.ms-excel,' + encodeURIComponent(tab_text));
+
+        return (sa);
+    }
+</script>

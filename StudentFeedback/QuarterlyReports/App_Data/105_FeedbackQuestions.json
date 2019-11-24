@@ -1,0 +1,194 @@
+
+[{
+		"id": "a1",
+		"question": "Punctuality in class",
+		"type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+	},
+	{
+		"id": "a2",
+		"question": "Regularity in taking class",
+		"type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+	},
+	{
+		"id": "a3",
+		"question": "Completion of syllabus in time",
+		"type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+	},
+	{
+		"id": "a4",
+		"question": "Teaching of the subject in an interesting manner",
+		"type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+	},
+	{
+		"id": "a5",
+		"question": "Skill of linking subject to life",
+		"type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+	},
+	{
+		"id": "a6",
+		"question": "Delivers a structured lecture",
+		"type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+	},
+	{
+		"id": "a7",
+		"question": "Use of teaching aids (OHP, LCD, Blackboard, PPT)",
+		"type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+	},
+	{
+		"id": "a8",
+		"question": "Use of innovative teaching methods",
+		"type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+	},
+	{
+		"id": "a9",
+		"question": "Shows evaluated answer sheets of class test to students",
+		"type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+	},
+	{
+		"id": "a10",
+		"question": "Helping students improve in studies",
+		"type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+	},
+	{
+		"id": "a11",
+		"question": "Helps students realize career goals",
+		"type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+	},
+	{
+		"id": "a12",
+		"question": "Helps students deal with emotional challenges",
+		"type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+	},
+	{
+		"id": "a13",
+		"question": "Effectively controls classroom",
+		"type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+	},
+	{
+		"id": "a14",
+		"question": "Encourages student participation in class",
+		"type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+	},
+	{
+		"id": "a15",
+		"question": "Evaluates student's understanding of the subject by asking relevant question",
+		"type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+	},
+	{
+		"id": "a16",
+		"question": "Overall impression",
+		"type": "radio",
+		"optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+	}
+]

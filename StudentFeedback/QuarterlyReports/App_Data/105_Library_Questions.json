@@ -1,0 +1,169 @@
+[
+  {
+    "id": "a1",
+    "question": "USEFULNESS OF LIBRARY'S RESOURCES BOOK",
+    "type": "radio",
+    "optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a2",
+    "question": "USEFULNESS OF LIBRARY'S RESOURCES JOURNALS",
+    "type": "radio",
+    "optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a3",
+    "question": "USEFULNESS OF LIBRARY'S RESOURCES MEDIA AND OTHER",
+    "type": "radio",
+    "optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a4",
+    "question": "QUALITY OF ORIENTATION PROGRAMES/WORKSHOPS, AND BOOK DISPLAYS OFFERED BY THE LIBRARY ON LO",
+    "type": "radio",
+    "optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a5",
+    "question": "SERVICES PROVIDED BY THE LIBRARY TO OBTAIN BOOKS AND ARTICLES FROM OFF CAMPUS SOURCES",
+    "type": "radio",
+    "optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a6",
+    "question": "ACCESS TO THE LIBRARY (WORKING DAYS)",
+    "type": "radio",
+    "optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a7",
+    "question": "ACCESS TO THE LIBRARY (HOLIDAYS)",
+    "type": "radio",
+    "optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a8",
+    "question": "USE OF IT RESOURCE IN LIBRARY OPERATIONS",
+    "type": "radio",
+    "optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },{
+    "id": "a9",
+    "question": "HELPFULNESS OF LIBRARY STAFF",
+    "type": "radio",
+    "optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a10",
+    "question": "CLEANLINESS",
+    "type": "radio",
+    "optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a11",
+    "question": "CONTROL ON NOISE LEVEL",
+    "type": "radio",
+    "optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a12",
+    "question": "DISCIPLINE",
+    "type": "radio",
+    "optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a13",
+    "question": "SAFETY",
+    "type": "radio",
+    "optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  },
+  {
+    "id": "a14",
+    "question": "OVERALL SERVICES OF THE LIBRARY",
+    "type": "radio",
+    "optionValues": [
+            "Excellent",
+            "Very Good",
+			"Good",
+            "Average",
+            "Needs to Improve"
+        ]
+  }
+]

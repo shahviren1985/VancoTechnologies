@@ -1,0 +1,16 @@
+{
+  "currency": [
+    {"AED": "AED"},
+    {"AUD": "AUD"},
+    {"CAD": "CAD"},
+    {"CHF": "CHF"},
+    {"DKK": "DKK"},
+    {"EUR": "EUR"},
+    {"GBP": "GBP"},
+    {"INR": "INR"},
+    {"SEK": "SEK"},
+    {"SGD": "SGD"},
+    {"USD": "USD"},
+    {"YEN": "YEN"}
+  ]
+}

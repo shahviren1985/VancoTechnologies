@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<html ng-app="EnteredSheet">
+<head>
+    <title>Other Reports</title>
+    <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="CustomJs/Angular.js"></script>
+    <script src="CustomJs/urlConfig.js"></script>
+    <script src="CustomJs/Index.js"></script>
+
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css">
+    <style>
+        body.A4 .sheet {
+            height: 100%;
+        }
+
+        @page {
+            margin-top: 5mm;
+        }
+
+        body.A4.portrait .sheet {
+            height: 100%;
+        }
+
+        table {
+            page-break-inside: auto;
+        }
+
+        tr {
+            page-break-inside: avoid;
+            page-break-after: auto;
+        }
+
+        thead {
+            display: table-header-group;
+        }
+
+        tfoot {
+            display: table-footer-group;
+        }
+
+        @page {
+            size: A4 portrait;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+
+        .print-page2 {
+            font-size: 16px;
+            display: inline-block;
+            height: 100vh;
+            width: 100vw;
+            border-bottom: 1px solid #000;
+            padding: 30px;
+        }
+
+        .PageBreakOnlAfter2 {
+            page-break-after: always;
+        }
+
+        #HeaderTableInfo > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+            border-top: none;
+        }
+
+        .CustomConfig > thead > tr > th, .table > tbody > tr > th, .CustomConfig > tfoot > tr > th, .CustomConfig > thead > tr > td, .CustomConfig > tbody > tr > td, .CustomConfig > tfoot > tr > td {
+            padding: 0px;
+        }
+
+        #StudemtEmtryTable, #sampleTable {
+            border-collapse: collapse;
+        }
+
+        #StudemtEmtryTable, #sampleTable {
+            width: 100%;
+        }
+
+            #StudemtEmtryTable, #sampleTable, #StudemtEmtryTable th, #StudemtEmtryTable td, #sampleTable th, #sampleTable td {
+                border: 1px solid black;
+                padding: 5px;
+            }
+        /*@media screen {
+            div.divFooter {
+                display: none;
+            }
+        }*/
+
+        @media print {
+            .SetMarginToPrint {
+                margin-right: 25px;
+                margin-left: 25px;
+            }
+        }
+
+        body.A4.landscape .sheet {
+            height: 100%;
+        }
+    </style>
+    <script type="text/javascript">
+        var ExamSystem = angular.module("EnteredSheet", []);
+        ExamSystem.controller("MarkEntryCtrl", function ($scope) {
+            $scope.stream = getUrlVars()["stream"];
+            $scope.Course = getUrlVars()["course"];
+            $scope.specialization = getUrlVars()["Specialization"];
+            $scope.sem = getUrlVars()["sem"];
+            $scope.examType = getUrlVars()["examType"];
+            $scope.year = getUrlVars()["year"];
+            $scope.UearToShow = getUrlVars()["year"];
+            $scope.ReportType = unescape(getUrlVars()["ReportType"]);
+            $scope.IsTypeOfOnlySeatNumber = getUrlVars()["OnlySeatNumber"];
+
+            if ($scope.IsTypeOfOnlySeatNumber != undefined && $scope.IsTypeOfOnlySeatNumber != '' && $scope.IsTypeOfOnlySeatNumber != null && $scope.IsTypeOfOnlySeatNumber == '1') {
+                $scope.IsTypeOfOnlySeatNumber = true;
+            } else {
+                $scope.IsTypeOfOnlySeatNumber = false;
+            }
+            $scope.StudentData = [];
+
+            function findWithAttr(array, attr, value) {
+                for (var i = 0; i < array.length; i += 1) {
+                    if (array[i][attr] === value) {
+                        return i;
+                    }
+                }
+                return -1;
+            }
+            function getKeyByValue(object, value) {
+                return Object.keys(object).find(key => object[key] === value);
+            }
+            $scope.MarkEntryArray = [];
+
+            GetCsvToJsonData('File/Download/Data/SVT?fileName=' + $scope.stream + '-' + $scope.Course + '_sem' + $scope.sem
+                + '_' + $scope.year + '_' + $scope.examType + '.csv').done(function (dataresponse) {
+                    $scope.StudentData = csvJSON(dataresponse);
+                    console.log($scope.StudentData)
+
+                    for (var i = 0; i < $scope.StudentData.length; i++) {
+                        if ($scope.IsTypeOfOnlySeatNumber || ($scope.StudentData[i].Specialisation != undefined && $scope.StudentData[i].Specialisation != '' && $scope.StudentData[i].Specialisation.toLowerCase() == $scope.specialization.toLowerCase())) {
+                            $scope.CurrentStudent = {};
+                            $scope.Spec = $scope.StudentData[i].Specialisation;
+                            $scope.CurrentStudent.FullNameOfStudent = $scope.StudentData[i].LastName + ' ' + $scope.StudentData[i].FirstName + ' ' + $scope.StudentData[i].FatherName + ' ' + $scope.StudentData[i].MotherName;
+                            $scope.CurrentStudent.SeatNumber = $scope.StudentData[i].SeatNumber;
+                            $scope.CurrentStudent.RollNumber = $scope.StudentData[i].RollNumber;
+                            $scope.CurrentStudent.LogicalSeatNumberKe = $scope.StudentData[i].SeatNumber.substring(4, $scope.StudentData[i].SeatNumber.length);
+                            console.log($scope.CurrentStudent.LogicalSeatNumberKe)
+                            $scope.MarkEntryArray.push($scope.CurrentStudent);
+                        }
+
+                    }
+                    $scope.MarkEntryArray.sort(function (a, b) {
+                        return a.LogicalSeatNumberKe - b.LogicalSeatNumberKe;
+                    });
+                    $scope.$apply();
+
+                });
+        });
+
+    </script>
+</head>
+<body ng-controller="MarkEntryCtrl" class="A4 portrait">
+    <div id="app" class="skin-blue">
+        <div>
+            <div>
+                <div>
+                    <!--ng-repeat="stu in StudentData"-->
+                    <section class="print-page-header sheet padding-5mm" style="padding:10px">
+                        <article>
+                            <div class="row divFooter">
+                                <div class="col-md-12">
+                                    <div class="print-page-header">
+                                        <table style="width: 100%; font-size: 13px;">
+                                            <tbody>
+                                                <tr>
+                                                    <td><img src="images/logo.png" alt="" style="margin-top: 10px;"></td>
+                                                    <td>
+                                                        <div class="text-center">
+                                                            <h4>Sir Vithaldas Thackersey College of Home Science (Autonomous)</h4>
+                                                            <h5>SNDT Women's University, Mumbai</h5>
+                                                            <h5>{{ReportType}} Report</h5>
+                                                        </div>
+                                                    </td>
+                                                    <td><img src="images/shree_logo.png" alt="" class="pull-right"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="clearfix">
+                                        </div>
+                                        <hr>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 SetMarginToPrint" style="margin-left:30px;margin-right:30px">
+                                    <table id="HeaderTableInfo" class="table CustomConfig" style="border:none">
+                                        <tr>
+                                            <td style="width: 40px;">Course</td>
+                                            <td style="padding-left: 3px">: {{stream}} - {{Course}}</td>
+
+                                            <td style="float:right">Month</td>
+                                            <td style="padding-left: 3px">: October </td>
+                                            <td style="float:right">Exam name</td>
+                                            <td style="padding-left: 3px">: {{examType}} {{year}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td ng-if="!IsTypeOfOnlySeatNumber" style="float:right">Specialization</td>
+                                            <td ng-if="!IsTypeOfOnlySeatNumber" style="padding-left: 3px">:  {{Spec}}</td>
+                                            <td style="float:right">Semester</td>
+                                            <td style="padding-left: 3px">:  {{sem}}</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="row" style="">
+                                <div class="col-md-12 SetMarginToPrint">
+                                    <table id="StudemtEmtryTable" ng-if="!IsTypeOfOnlySeatNumber" class="table CustomConfig" style="border: 1px solid; text-align:center">
+                                        <thead>
+                                            <tr>
+                                                <td style="min-width: 40px;">Sr No</td>
+                                                <td style="min-width: 70px;">Seat Number</td>
+                                                <!--<td style="min-width: 65px;">Roll Number</td>-->
+                                                <td>Student</td>
+                                                <td ng-if="ReportType=='Attendance Sheet'" style="min-width: 65px;">Internal Mark</td>
+                                                <td ng-if="ReportType=='Attendance Sheet'" style="min-width: 100px;">Signature</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="mk in MarkEntryArray">
+                                                <td>{{$index+1}}</td>
+                                                <td>{{mk.SeatNumber}}</td>
+                                                <!--<td>{{mk.RollNumber}}</td>-->
+                                                <td style="text-align:left">{{mk.FullNameOfStudent}}</td>
+                                                <td ng-if="ReportType=='Attendance Sheet'"><span ng-if="mk.InternalMark==''"></span>{{mk.InternalMark}}</td>
+                                                <td ng-if="ReportType=='Attendance Sheet'"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table id="sampleTable" ng-if="IsTypeOfOnlySeatNumber" class="table CustomConfig" style="border: 1px solid; text-align:center">
+                                        <thead>
+                                            <tr>
+                                                <td style="min-width: 40px;">Sr No</td>
+                                                <td style="min-width: 70px;">Seat Number</td>
+                                                <td style="min-width: 40px;">Sr No</td>
+                                                <td style="min-width: 70px;">Seat Number</td>
+                                                <td style="min-width: 40px;">Sr No</td>
+                                                <td style="min-width: 70px;">Seat Number</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="mk in MarkEntryArray" ng-switch on="$index % 3">
+                                                <td ng-switch-when="0">{{$index+1}}</td>
+                                                <td ng-switch-when="0">{{MarkEntryArray[$index].SeatNumber}}</td>
+                                                <td ng-switch-when="0">{{$index+2}}</td>
+                                                <td ng-switch-when="0">{{MarkEntryArray[$index+1].SeatNumber}}</td>
+                                                <td ng-switch-when="0">{{$index+3}}</td>
+                                                <td ng-switch-when="0">{{MarkEntryArray[$index+2].SeatNumber}}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                                <div class="col-md-12 SetMarginToPrint" style="padding-top:50px">
+                                    <div class="pull-left" ng-if="IsTypeOfOnlySeatNumber">
+                                        <button type="button" class="btn btn-primary pull-left" onclick="tableToExcel()">Download Excel</button>
+                                    </div>
+                                    <div class="pull-right">
+                                        Supervisor's Sign
+                                    </div>
+
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

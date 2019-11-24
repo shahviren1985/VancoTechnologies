@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2241b6a4-d53f-45c9-b147-332c78d9adc8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://techdev1.westus.cloudapp.azure.com/Api/SurveyUserManagmentApi.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SurveyUserManagmentApi.disco" MetadataType="Disco" ID="190d0bd8-fd1d-42b5-8376-94f8907e5df8" SourceId="1" SourceUrl="http://techdev1.westus.cloudapp.azure.com/Api/SurveyUserManagmentApi.svc?disco" />
+    <MetadataFile FileName="SurveyUserManagmentApi.xsd" MetadataType="Schema" ID="47342d37-121e-4d0a-a956-bfd96941a227" SourceId="1" SourceUrl="http://techdev1.westus.cloudapp.azure.com/Api/SurveyUserManagmentApi.svc?xsd=xsd0" />
+    <MetadataFile FileName="SurveyUserManagmentApi1.xsd" MetadataType="Schema" ID="29d507b5-01ee-4067-aa3b-38384f0ae5b3" SourceId="1" SourceUrl="http://techdev1.westus.cloudapp.azure.com/Api/SurveyUserManagmentApi.svc?xsd=xsd1" />
+    <MetadataFile FileName="SurveyUserManagmentApi.wsdl" MetadataType="Wsdl" ID="e9b08fa6-9439-4c23-8a98-0aa6e01db4e9" SourceId="1" SourceUrl="http://techdev1.westus.cloudapp.azure.com/Api/SurveyUserManagmentApi.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

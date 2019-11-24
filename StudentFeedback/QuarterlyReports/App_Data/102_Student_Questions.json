@@ -1,0 +1,215 @@
+﻿[
+	{
+		"id": "a1",
+		"question": "Name of Student",
+		"type": "text",
+		"controlCount": "1",
+		"placeHolder": "Full Name of Student"
+	},
+    {
+        "id": "a2",
+        "question": "Specialisation",
+        "type": "radio",
+        "optionValues": [
+            "1 - Developmental Counselling",
+            "2 - Early Childhood Care and Education",
+            "3 - Food, Nutrition and Dietetics",
+            "4 - Hospitality and Tourism Management",
+            "5 - Interior Design and Resource Management",
+            "6 - Mass Communication and Extension",
+            "7 - Textiles and Apparel Design"
+        ]
+    },
+    {
+		"id": "a20",
+		"question": "Academic Year",
+		"type": "dropdown",
+		"controlCount": "1",
+        "optionValues": [
+			"2019-20",
+			"2018-19",
+            "2017-18",
+            "2016-17",
+            "2015-16",
+            "2014-15",
+            "2013-14",
+            "2012-13",
+            "2011-12",
+            "2010-11"
+		]
+	},
+	{
+		"id": "a3",
+		"question": "Level of Course",
+		"type": "radio",
+		"optionValues": [
+			"1 - F.Y.",
+			"2 - S.Y.",
+            "3 - T.Y.",
+            "4 - PG"			
+		]
+	},
+	{
+		"id": "a4",
+		"question": "Please rate the curriculum based on the parameters:",
+		"type": "header",
+		"controlCount": "1",
+		"placeHolder": ""
+	},
+	{
+		"id": "a5",
+		"question": "Standardized procedures are followed in admission process ",
+		"type": "radio",
+		"optionValues": [
+			"Strongly Agree",
+			"Agree",
+			"Neutral",
+			"Disagree",			
+			"Strongly Disagree"
+		]
+	},
+	{
+		"id": "a6",
+		"question": "The college facilitates choice of specialization on the basis of merit",
+		"type": "radio",
+		"optionValues": [
+			"Strongly Agree",
+			"Agree",
+			"Neutral",
+			"Disagree",			
+			"Strongly Disagree"
+		]
+	},
+	{
+		"id": "a7",
+		"question": "The program and course outcomes are clearly understood by you",
+		"type": "radio",
+		"optionValues": [
+			"Strongly Agree",
+			"Agree",
+			"Neutral",
+			"Disagree",			
+			"Strongly Disagree"
+		]
+	},
+	{
+		"id": "a8",
+		"question": "You are benefited by the use of innovative teaching-learning methodologies",
+		"type": "radio",
+		"optionValues": [
+			"Strongly Agree",
+			"Agree",
+			"Neutral",
+			"Disagree",			
+			"Strongly Disagree"
+		]
+	},
+	{
+		"id": "a9",
+		"question": "Assessment and Examination schedules are shared with you ahead of time",
+		"type": "radio",
+		"optionValues": [
+			"Strongly Agree",
+			"Agree",
+			"Neutral",
+			"Disagree",			
+			"Strongly Disagree"
+		]
+	},
+	{
+		"id": "a10",
+		"question": "A variety of assessment and evaluation methods are used",
+		"type": "radio",
+		"optionValues": [
+			"Strongly Agree",
+			"Agree",
+			"Neutral",
+			"Disagree",			
+			"Strongly Disagree"
+		]
+	},
+	{
+		"id": "a11",
+		"question": "Co-curricular activities are organized by the College and students are encouraged to participate in intercollegiate activities",
+		"type": "radio",
+		"optionValues": [
+			"Strongly Agree",
+			"Agree",
+			"Neutral",
+			"Disagree",			
+			"Strongly Disagree"
+		]
+	},
+	{
+		"id": "a12",
+		"question": "You are encouraged to participate in intercollegiate activities",
+		"type": "radio",
+		"optionValues": [
+			"Strongly Agree",
+			"Agree",
+			"Neutral",
+			"Disagree",			
+			"Strongly Disagree"
+		]
+	},
+	{
+		"id": "a13",
+		"question": "Infrastructure of the college is very good",
+		"type": "radio",
+		"optionValues": [
+			"Strongly Agree",
+			"Agree",
+			"Neutral",
+			"Disagree",			
+			"Strongly Disagree"
+		]
+	},
+	{
+		"id": "a14",
+		"question": "Computer use with internet and wifi facilities are available free of cost in the College",
+		"type": "radio",
+		"optionValues": [
+			"Strongly Agree",
+			"Agree",
+			"Neutral",
+			"Disagree",			
+			"Strongly Disagree"
+		]
+	},
+	{
+		"id": "a15",
+		"question": "Teachers are available on premise to address any of your concerns",
+		"type": "radio",
+		"optionValues": [
+			"Strongly Agree",
+			"Agree",
+			"Neutral",
+			"Disagree",			
+			"Strongly Disagree"
+		]
+	},
+	{
+		"id": "a16",
+		"question": "Non teaching staff is approachable",
+		"type": "radio",
+		"optionValues": [
+			"Strongly Agree",
+			"Agree",
+			"Neutral",
+			"Disagree",			
+			"Strongly Disagree"
+		]
+	},
+	{
+		"id": "a17",
+		"question": "Equal weightage is given to theory and practical",
+		"type": "radio",
+		"optionValues": [
+			"Strongly Agree",
+			"Agree",
+			"Neutral",
+			"Disagree",			
+			"Strongly Disagree"
+		]
+	}
+]

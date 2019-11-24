@@ -1,0 +1,51 @@
+[
+  {
+    "Username": "Gautam",
+    "Password": "123456",
+    "Role": "Operator",
+    "UserGroup": "Gautam",
+	"HeaderTemplate": "View/PrintHeaders/SVTHeader.html"
+  },
+  {
+    "Username": "viren",
+    "Password": "123456",
+    "Role": "Adminstrator",
+    "UserGroup": "viren",
+	"HeaderTemplate": "View/PrintHeaders/SVTHeader.html"
+  },
+  {
+    "Username": "svtgrad",
+    "Password": "123456",
+    "Role": "Adminstrator",
+    "UserGroup": "svtgrad",
+	"HeaderTemplate": "View/PrintHeaders/SVTHeader.html"
+  },
+  {
+    "Username": "svtpg",
+    "Password": "123456",
+    "Role": "Adminstrator",
+    "UserGroup": "svtpg",
+	"HeaderTemplate": "View/PrintHeaders/SVTHeader.html"
+  },
+  {
+    "Username": "mnwcgrad",
+    "Password": "123456",
+    "Role": "Adminstrator",
+      "UserGroup": "mnwcgrad",
+	  "HeaderTemplate": "View/PrintHeaders/SVTHeader.html"
+  },
+  {
+    "Username": "anil",
+    "Password": "123456",
+    "Role": "Adminstrator",
+    "UserGroup": "anil",
+	"HeaderTemplate": "View/PrintHeaders/SVTHeader.html"
+  },
+  {
+    "Username": "Varsha",
+    "Password": "123456",
+    "Role": "Adminstrator",
+	"UserGroup": "School1",
+	"HeaderTemplate": "View/PrintHeaders/smvmicseHeader.html"
+  }
+]

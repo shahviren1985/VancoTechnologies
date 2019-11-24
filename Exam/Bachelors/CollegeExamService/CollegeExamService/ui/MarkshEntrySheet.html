@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html ng-app="EnteredSheet">
+<head>
+    <title></title>
+    <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="CustomJs/Angular.js"></script>
+    <script src="CustomJs/urlConfig.js"></script>
+    <script src="CustomJs/Index.js"></script>
+    <script src="CustomJs/MarkEntrySheet.js"></script>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paper-css/0.3.0/paper.css">
+    <style>
+        @page {
+            size: A4 landscape;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+
+        .print-page2 {
+            font-size: 16px;
+            display: inline-block;
+            height: 100vh;
+            width: 100vw;
+            border-bottom: 1px solid #000;
+            padding: 30px;
+        }
+
+        .PageBreakOnlAfter2 {
+            page-break-after: always;
+        }
+
+        #HeaderTableInfo > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+            border-top: none;
+        }
+
+        .CustomConfig > thead > tr > th, .table > tbody > tr > th, .CustomConfig > tfoot > tr > th, .CustomConfig > thead > tr > td, .CustomConfig > tbody > tr > td, .CustomConfig > tfoot > tr > td {
+            padding: 0px;
+        }
+
+        #StudemtEmtryTable {
+            border-collapse: collapse;
+        }
+
+        #StudemtEmtryTable {
+            width: 100%;
+        }
+
+            #StudemtEmtryTable, #StudemtEmtryTable th, #StudemtEmtryTable td {
+                border: 1px solid black;
+                padding: 5px;
+            }
+        /*@media screen {
+            div.divFooter {
+                display: none;
+            }
+        }*/
+
+        @media print {
+            .SetMarginToPrint {
+                margin-right: 25px;
+                margin-left: 25px;
+            }
+        }
+
+        body.A4.landscape .sheet {
+            height: 100%;
+        }
+    </style>
+</head>
+<body ng-controller="MarkEntryCtrl" class="A4 landscape">
+    <div id="app" class="skin-blue">
+        <div>
+            <div>
+                <div>
+                    <!--ng-repeat="stu in StudentData"-->
+                    <section class="print-page-header sheet padding-5mm" style="padding:10px">
+                        <article>
+                            <div class="row divFooter">
+                                <div class="col-md-12">
+                                    <div class="print-page-header">
+                                        <table style="width: 100%; font-size: 13px;">
+                                            <tbody>
+                                                <tr>
+                                                    <td><img src="images/logo.png" alt="" style="margin-top: 10px;"></td>
+                                                    <td>
+                                                        <div class="text-center">
+                                                            <h4>Sir Vithaldas Thackersey College of Home Science (Autonomous)</h4>
+                                                            <h5>SNDT Women's University, Mumbai</h5>
+                                                            <h5>Student Marks Entry Sheet</h5>
+                                                        </div>
+                                                    </td>
+                                                    <td><img src="images/shree_logo.png" alt="" class="pull-right"></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="clearfix">
+                                        </div>
+                                        <hr>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 SetMarginToPrint" style="margin-left:30px;margin-right:30px">
+                                    <table id="HeaderTableInfo" class="table CustomConfig" style="border:none">
+                                        <tr>
+                                            <td style="">Course</td>
+                                            <td style="padding-left: 3px">: {{stream}} - {{Course}}</td>
+                                            <td style="float:right">Month</td>
+                                            <td style="padding-left: 3px">: October </td>
+                                            <td style="float:right">Exam name</td>
+                                            <td style="padding-left: 3px">: {{examType}} {{year}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="">Paper Code</td>
+                                            <td style="padding-left:3px">: {{paper}}</td>
+                                            <td style="float:right">Paper Name</td>
+                                            <td style="padding-left: 3px">: {{PaperName}}</td>
+                                            <td style="float:right">Year</td>
+                                            <td style="padding-left: 3px">: {{year}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="" colspan="3">Supervisor Name</td>
+                                            <td style=""></td>
+                                            <td style="float:right">Date</td>
+                                            <td style="padding-left: 3px"> : </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="row" style="">
+                                <div class="col-md-12 SetMarginToPrint">
+                                    <table id="StudemtEmtryTable" class="table CustomConfig" style="border: 1px solid; text-align:center">
+                                        <thead>
+                                            <tr>
+                                                <td style="min-width: 40px;">Sr No</td>
+                                                <td style="min-width: 70px;">Seat Number</td>
+                                                <td style="min-width: 65px;">Roll Number</td>
+                                                <td>Student</td>
+                                                <td style="min-width: 65px;">Internal Mark</td>
+                                                <td style="min-width: 65px;"><span ng-if="IsInternal=='0'">External Mark</span> <span ng-if="IsInternal=='1'">Practical Mark</span></td>
+                                                <td style="min-width: 100px;">Signature</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="mk in MarkEntryArray">
+                                                <td>{{$index+1}}</td>
+                                                <td>{{mk.SeatNumber}}</td>
+                                                <td>{{mk.RollNumber}}</td>
+                                                <td style="text-align:left">{{mk.FullNameOfStudent}}</td>
+                                                <td><span ng-if="mk.InternalMark==''"></span>{{mk.InternalMark}}</td>
+                                                <td><span ng-if="mk.TotalMark==0 || mk.ExternalMark1==''"></span><span ng-if="mk.TotalMark!=0 && mk.TotalMark!=''">{{mk.TotalMark}}</span> <span ng-if="mk.GraceMark!='' && mk.GraceMark!=0">+ {{mk.GraceMark}}</span></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                                <div class="col-md-12 SetMarginToPrint" style="padding-top:50px">
+                                    <div class="pull-right">
+                                        Supervisor's Sign
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

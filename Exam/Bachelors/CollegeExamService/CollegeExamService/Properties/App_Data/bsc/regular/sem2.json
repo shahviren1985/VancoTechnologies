@@ -1,0 +1,461 @@
+[
+  {
+    "courseName": "Bachelor in Science Home Science",
+    "courseShortName": "BSc - Regular",
+    "marksheetName": "",
+    "specialisation": "Developmental Counselling",
+    "specialisationCode": "DC",
+    "paperDetails": [
+      {
+        "paperTitle": "Consumer Education and Financial Literacy",
+        "code": "RG101",
+        "isElective": "Yes",
+        "order": "1"
+      },
+      {
+        "paperTitle": "Travel Arrangements and Formalities",
+        "code": "RG102",
+        "isElective": "Yes",
+        "order": "2"
+      },
+      {
+        "paperTitle": "Nutrition for Health Promotion",
+        "code": "FG101",
+        "isElective": "Yes",
+        "order": "3"
+      },
+      {
+        "paperTitle": "Fundamentals of Baking",
+        "code": "FG102",
+        "isElective": "Yes",
+        "order": "4"
+      },
+      {
+        "paperTitle": "Functional English",
+        "code": "LG101",
+        "isElective": "Yes",
+        "order": "5"
+      },
+      {
+        "paperTitle": "Advanced English",
+        "code": "LG102",
+        "isElective": "Yes",
+        "order": "6"
+      },
+      {
+        "paperTitle": "Science for Life",
+        "code": "SG101",
+        "isElective": "Yes",
+        "order": "7"
+      },
+      {
+        "paperTitle": "Development and Guidance During School Years",
+        "code": "HCII04",
+        "isElective": "No",
+        "order": "8"
+      },
+      {
+        "paperTitle": "Parenting During Childhood Years",
+        "code": "HCII05",
+        "isElective": "No",
+        "order": "9"
+      },
+      {
+        "paperTitle": "Methods and Materials for Teaching Children",
+        "code": "HCII06",
+        "isElective": "No",
+        "order": "10"
+      }
+    ]
+  },
+  {
+    "courseName": "Bachelor in Science Home Science",
+    "courseShortName": "BSc - Regular",
+    "marksheetName": "",
+    "specialisation": "Early Childhood Care And Education",
+    "specialisationCode": "ECCE",
+    "paperDetails": [
+      {
+        "paperTitle": "Consumer Education and Financial Literacy",
+        "code": "RG101",
+        "isElective": "Yes",
+        "order": "1"
+      },
+      {
+        "paperTitle": "Travel Arrangements and Formalities",
+        "code": "RG102",
+        "isElective": "Yes",
+        "order": "2"
+      },
+      {
+        "paperTitle": "Nutrition for Health Promotion",
+        "code": "FG101",
+        "isElective": "Yes",
+        "order": "3"
+      },
+      {
+        "paperTitle": "Fundamentals of Baking",
+        "code": "FG102",
+        "isElective": "Yes",
+        "order": "4"
+      },
+      {
+        "paperTitle": "Functional English",
+        "code": "LG101",
+        "isElective": "Yes",
+        "order": "5"
+      },
+      {
+        "paperTitle": "Advanced English",
+        "code": "LG102",
+        "isElective": "Yes",
+        "order": "6"
+      },
+      {
+        "paperTitle": "Science for Life",
+        "code": "SG101",
+        "isElective": "Yes",
+        "order": "7"
+      },
+      {
+        "paperTitle": "Development and Guidance During School Years",
+        "code": "HCII04",
+        "isElective": "No",
+        "order": "8"
+      },
+      {
+        "paperTitle": "Parenting During Childhood Years",
+        "code": "HCII05",
+        "isElective": "No",
+        "order": "9"
+      },
+      {
+        "paperTitle": "Methods and Materials for Teaching Children",
+        "code": "HCII06",
+        "isElective": "No",
+        "order": "10"
+      }
+    ]
+  },
+  {
+    "courseName": "Bachelor in Science Home Science",
+    "courseShortName": "BSc - Regular",
+    "marksheetName": "",
+    "specialisation": "Food Nutrition And Dietetics",
+    "specialisationCode": "FND",
+    "paperDetails": [
+      {
+        "paperTitle": "Digital Photography",
+        "code": "MG101",
+        "isElective": "Yes",
+        "order": "1"
+      },
+      {
+        "paperTitle": "Voice Culture and Modulation",
+        "code": "MG102",
+        "isElective": "Yes",
+        "order": "2"
+      },
+      {
+        "paperTitle": "Fashion Craft",
+        "code": "TG101",
+        "isElective": "Yes",
+        "order": "3"
+      },
+      {
+        "paperTitle": "Fundamentals of Fashion",
+        "code": "TG102",
+        "isElective": "Yes",
+        "order": "4"
+      },
+      {
+        "paperTitle": "Functional English",
+        "code": "LG101",
+        "isElective": "Yes",
+        "order": "5"
+      },
+      {
+        "paperTitle": "Advanced English",
+        "code": "LG102",
+        "isElective": "Yes",
+        "order": "6"
+      },
+      {
+        "paperTitle": "Science for Life",
+        "code": "SG101",
+        "isElective": "Yes",
+        "order": "7"
+      },
+      {
+        "paperTitle": "Nutrition across the Life Cycle",
+        "code": "FCII05",
+        "isElective": "No",
+        "order": "8"
+      },
+      {
+        "paperTitle": "Human Anatomy and Physiology",
+        "code": "FCII06",
+        "isElective": "No",
+        "order": "9"
+      }
+    ]
+  },
+  {
+    "courseName": "Bachelor in Science Home Science",
+    "courseShortName": "BSc - Regular",
+    "marksheetName": "",
+    "specialisation": "Hospitality And Tourism Management",
+    "specialisationCode": "HTM",
+    "paperDetails": [
+      {
+        "paperTitle": "Personal and Professional Relationships in Adulthood",
+        "code": "HG101",
+        "isElective": "Yes",
+        "order": "1"
+      },
+      {
+        "paperTitle": "Marriage and Parenting",
+        "code": "HG102",
+        "isElective": "Yes",
+        "order": "2"
+      },
+      {
+        "paperTitle": "Digital Photography",
+        "code": "MG101",
+        "isElective": "Yes",
+        "order": "3"
+      },
+      {
+        "paperTitle": "Voice Culture and Modulation",
+        "code": "MG102",
+        "isElective": "Yes",
+        "order": "4"
+      },
+      {
+        "paperTitle": "Functional English",
+        "code": "LG101",
+        "isElective": "Yes",
+        "order": "5"
+      },
+      {
+        "paperTitle": "Advanced English",
+        "code": "LG102",
+        "isElective": "Yes",
+        "order": "6"
+      },
+      {
+        "paperTitle": "Science for Life",
+        "code": "SG101",
+        "isElective": "Yes",
+        "order": "7"
+      },
+      {
+        "paperTitle": "Art, Design and Aesthetics",
+        "code": "RCII04",
+        "isElective": "No",
+        "order": "8"
+      },
+      {
+        "paperTitle": "Travel Management",
+        "code": "RCII05",
+        "isElective": "No",
+        "order": "9"
+      }
+    ]
+  },
+  {
+    "courseName": "Bachelor in Science Home Science",
+    "courseShortName": "BSc - Regular",
+    "marksheetName": "",
+    "specialisation": "Interior Design And Resource Management",
+    "specialisationCode": "IDRM",
+    "paperDetails": [
+      {
+        "paperTitle": "Personal and Professional Relationships in Adulthood",
+        "code": "HG101",
+        "isElective": "Yes",
+        "order": "1"
+      },
+      {
+        "paperTitle": "Marriage and Parenting",
+        "code": "HG102",
+        "isElective": "Yes",
+        "order": "2"
+      },
+      {
+        "paperTitle": "Digital Photography",
+        "code": "MG101",
+        "isElective": "Yes",
+        "order": "3"
+      },
+      {
+        "paperTitle": "Voice Culture and Modulation",
+        "code": "MG102",
+        "isElective": "Yes",
+        "order": "4"
+      },
+      {
+        "paperTitle": "Functional English",
+        "code": "LG101",
+        "isElective": "Yes",
+        "order": "5"
+      },
+      {
+        "paperTitle": "Advanced English",
+        "code": "LG102",
+        "isElective": "Yes",
+        "order": "6"
+      },
+      {
+        "paperTitle": "Science for Life",
+        "code": "SG101",
+        "isElective": "Yes",
+        "order": "7"
+      },
+      {
+        "paperTitle": "Art, Design and Aesthetics",
+        "code": "RCII04",
+        "isElective": "No",
+        "order": "8"
+      },
+      {
+        "paperTitle": "Drawing and Designing Techniques",
+        "code": "RCII24",
+        "isElective": "No",
+        "order": "9"
+      }
+    ]
+  },
+  {
+    "courseName": "Bachelor in Science Home Science",
+    "courseShortName": "BSc - Regular",
+    "marksheetName": "",
+    "specialisation": "Mass Communication And Extension",
+    "specialisationCode": "MCE",
+    "paperDetails": [
+      {
+        "paperTitle": "Consumer Education and Financial Literacy",
+        "code": "RG101",
+        "isElective": "Yes",
+        "order": "1"
+      },
+      {
+        "paperTitle": "Travel Arrangements and Formalities",
+        "code": "RG102",
+        "isElective": "Yes",
+        "order": "2"
+      },
+      {
+        "paperTitle": "Personal and Professional Relationships in Adulthood",
+        "code": "HG101",
+        "isElective": "Yes",
+        "order": "3"
+      },
+      {
+        "paperTitle": "Marriage and Parenting",
+        "code": "HG102",
+        "isElective": "Yes",
+        "order": "4"
+      },
+      {
+        "paperTitle": "Functional English",
+        "code": "LG101",
+        "isElective": "Yes",
+        "order": "5"
+      },
+      {
+        "paperTitle": "Advanced English",
+        "code": "LG102",
+        "isElective": "Yes",
+        "order": "6"
+      },
+      {
+        "paperTitle": "Science for Life",
+        "code": "SG101",
+        "isElective": "Yes",
+        "order": "7"
+      },
+      {
+        "paperTitle": "Contemporary Social Issues",
+        "code": "MCII04",
+        "isElective": "No",
+        "order": "8"
+      },
+      {
+        "paperTitle": "Fundamentals of Photography",
+        "code": "MCII05",
+        "isElective": "No",
+        "order": "9"
+      }
+    ]
+  },
+  {
+    "courseName": "Bachelor in Science Home Science",
+    "courseShortName": "BSc - Regular",
+    "marksheetName": "",
+    "specialisation": "Textiles And Apparel Designing",
+    "specialisationCode": "TAD",
+    "paperDetails": [
+      {
+        "paperTitle": "Consumer Education and Financial Literacy",
+        "code": "RG101",
+        "isElective": "Yes",
+        "order": "1"
+      },
+      {
+        "paperTitle": "Travel Arrangements and Formalities",
+        "code": "RG102",
+        "isElective": "Yes",
+        "order": "2"
+      },
+      {
+        "paperTitle": "Nutrition for Health Promotion",
+        "code": "FG101",
+        "isElective": "Yes",
+        "order": "3"
+      },
+      {
+        "paperTitle": "Fundamentals of Baking",
+        "code": "FG102",
+        "isElective": "Yes",
+        "order": "4"
+      },
+      {
+        "paperTitle": "Functional English",
+        "code": "LG101",
+        "isElective": "Yes",
+        "order": "5"
+      },
+      {
+        "paperTitle": "Advanced English",
+        "code": "LG102",
+        "isElective": "Yes",
+        "order": "6"
+      },
+      {
+        "paperTitle": "Science for Life",
+        "code": "SG101",
+        "isElective": "Yes",
+        "order": "7"
+      },
+      {
+        "paperTitle": "Fundamentals of Fashion and Retail",
+        "code": "TCII04",
+        "isElective": "No",
+        "order": "8"
+      },
+      {
+        "paperTitle": "Fundamentals of Clothing",
+        "code": "TCII05",
+        "isElective": "No",
+        "order": "9"
+      },
+      {
+        "paperTitle": "Fundamentals of Fashion Illustration",
+        "code": "TCII06",
+        "isElective": "No",
+        "order": "10"
+      }
+    ]
+  }
+]

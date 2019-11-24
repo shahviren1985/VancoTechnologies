@@ -1,0 +1,180 @@
+[
+    {
+        "id": "a1",
+        "question": "The availability of computers, software, multimedia, and other technologies is sufficient",
+        "type": "radio",
+        "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+    },
+	{
+        "id": "a2",
+        "question": "The college provides adequate training to faculty and staff in the application of information",
+        "type": "radio",
+        "optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+    },
+  {
+    "id": "a3",
+    "question": "Safety hazards are addressed promptly",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a4",
+    "question": "The grounds are pleasing and adequately maintained",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a5",
+    "question": "The exterior of the campus buildings are adequately maintained",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a6",
+    "question": "The interior of the classrooms, offices, and restrooms are adequately maintained",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a7",
+    "question": "The exterior lighting of the college is adequate",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a8",
+    "question": "The environment in the department is conducive to teaching and research",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },{
+    "id": "a9",
+    "question": "The College provides adequate and smooth support for projects and research facilities",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a10",
+    "question": "The College provides adequate support to faculty members for upgrading their skills and quality",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a11",
+    "question": "Provisions for professional development are non-discriminatory and fair",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a12",
+    "question": "Infrastructural facilities, such as teacher’s rooms, class rooms, reading rooms and toilets",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a13",
+    "question": "Separate Staff canteen is available in the college",
+    "type": "radio",
+		"optionValues": [
+            "Strongly Disagree",
+            "Disagree",
+            "Neither Agree nor Disagree",
+            "Agree",
+            "Strongly Agree"
+            
+        ]
+  },
+  {
+    "id": "a15",
+    "question": "If you had to do it all over again, would you choose to work for MDSMC?",
+    "type": "radio",
+		"optionValues": [
+            "YES",
+            "NO",
+            "UNDECIDED"
+        ]
+  }
+]

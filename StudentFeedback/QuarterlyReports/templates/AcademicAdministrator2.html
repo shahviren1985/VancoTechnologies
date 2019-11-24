@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Academic Administrator - {0}</title>
+    <style>
+        .center {
+            text-align: center;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+            table td, table th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+        tr.header {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        td {
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center"><h2>YEAR:<b>{1}</b></h2></div>
+    <div class="center">PERFORMANCE APPRAISAL REPORT FOR <b>{2}</b></div>
+    <div style="font-size: 12px">The information in the following table has been graphically represented below.</div>
+    <table style="width: 80%; margin-top: 20px;">
+        <tr class="header">
+            <td style="width: 35%">Parameters</td>
+            <td style="width: 15%">Leadership Style</td>
+            <td style="width: 15%">Administration</td>
+            <td style="width: 15%">Communication</td>
+        </tr>
+        <tr>
+            <td>Max. Score</td>
+            <td>{3}</td>
+            <td>{4}</td>
+            <td>{5}</td>
+        </tr>
+        <tr>
+            <td>Score Obtained</td>
+            <td>{6}</td>
+            <td>{7}</td>
+            <td>{8}</td>
+        </tr>
+        <tr>
+            <td>Performance %</td>
+            <td>{9}</td>
+            <td>{10}</td>
+            <td>{11}</td>
+        </tr>
+    </table>
+    <div style="font-size: 12px;">
+        <b>Graph 1:</b> This graph is a comparison of the teachers ideal performance versus the actual performance on Leadership Style, Administration & Communication.
+    </div>
+    <div style="padding: 10px">
+        <img src="{13}" width="400" height="300" />
+    </div>
+    <div style="font-size: 12px">
+        <b>Graph 2:</b> This graph points towards the parameters the administrator needs to work on.
+    </div>
+    <div style="padding: 10px">
+        <img src="{14}" width="400" height="300" />
+    </div>
+    <div style="font-size: 12px">The following table is a measure of the ideal SATISFACTION INDEX and the score obtained by the administrator.</div>
+    <table style="width: 60%; margin-top: 20px;">
+        <tr>
+            <td>MAX. SATISFACTION INDEX</td>
+            <td>{15}</td>
+        </tr>
+        <tr>
+            <td>SCORE OBTAINED</td>
+            <td>{16}</td>
+        </tr>
+        <tr>
+            <td>STUDENT SATISFACTION %</td>
+            <td>{17}</td>
+        </tr>
+    </table>
+</body>
+</html>

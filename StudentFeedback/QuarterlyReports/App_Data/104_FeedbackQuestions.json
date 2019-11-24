@@ -1,0 +1,296 @@
+
+[{
+		"id": "a1",
+		"question": "The teacher is punctual",
+		"type": "radio",
+		"optionValues": [
+			"1 - if you very strongly disagree with the statement",
+			"2 - if you strongly disagree with the statement",
+			"3 - if you disagree with the statement",
+			"4 - if you neither agree nor disagree with the statement",
+			"5 - if you agree with the statement",
+			"6 - if you strongly agree with the statement",
+			"7 - if you very strongly agree with the statement"
+		]
+	},
+	{
+		"id": "a2",
+		"question": "The teacher gives clear explanations while teaching",
+		"type": "radio",
+		"optionValues": [
+			"1 - if you very strongly disagree with the statement",
+			"2 - if you strongly disagree with the statement",
+			"3 - if you disagree with the statement",
+			"4 - if you neither agree nor disagree with the statement",
+			"5 - if you agree with the statement",
+			"6 - if you strongly agree with the statement",
+			"7 - if you very strongly agree with the statement"
+		]
+	},
+	{
+		"id": "a3",
+		"question": "The teacher provides more matter than in syllabus",
+		"type": "radio",
+		"optionValues": [
+			"1 - if you very strongly disagree with the statement",
+			"2 - if you strongly disagree with the statement",
+			"3 - if you disagree with the statement",
+			"4 - if you neither agree nor disagree with the statement",
+			"5 - if you agree with the statement",
+			"6 - if you strongly agree with the statement",
+			"7 - if you very strongly agree with the statement"
+		]
+	},
+	{
+		"id": "a4",
+		"question": "The teacher has a clear & audible voice",
+		"type": "radio",
+		"optionValues": [
+			"1 - if you very strongly disagree with the statement",
+			"2 - if you strongly disagree with the statement",
+			"3 - if you disagree with the statement",
+			"4 - if you neither agree nor disagree with the statement",
+			"5 - if you agree with the statement",
+			"6 - if you strongly agree with the statement",
+			"7 - if you very strongly agree with the statement"
+		]
+	},
+	{
+		"id": "a5",
+		"question": "The teacher clears the doubts of the students",
+		"type": "radio",
+		"optionValues": [
+			"1 - if you very strongly disagree with the statement",
+			"2 - if you strongly disagree with the statement",
+			"3 - if you disagree with the statement",
+			"4 - if you neither agree nor disagree with the statement",
+			"5 - if you agree with the statement",
+			"6 - if you strongly agree with the statement",
+			"7 - if you very strongly agree with the statement"
+		]
+	},
+	{
+		"id": "a6",
+		"question": "The teacher comes well prepared for the lecture",
+		"type": "radio",
+		"optionValues": [
+			"1 - if you very strongly disagree with the statement",
+			"2 - if you strongly disagree with the statement",
+			"3 - if you disagree with the statement",
+			"4 - if you neither agree nor disagree with the statement",
+			"5 - if you agree with the statement",
+			"6 - if you strongly agree with the statement",
+			"7 - if you very strongly agree with the statement"
+		]
+	},
+	{
+		"id": "a7",
+		"question": "The teacher does not go away from the topic very often",
+		"type": "radio",
+		"optionValues": [
+			"1 - if you very strongly disagree with the statement",
+			"2 - if you strongly disagree with the statement",
+			"3 - if you disagree with the statement",
+			"4 - if you neither agree nor disagree with the statement",
+			"5 - if you agree with the statement",
+			"6 - if you strongly agree with the statement",
+			"7 - if you very strongly agree with the statement"
+		]
+	},
+	{
+		"id": "a8",
+		"question": "The teacher is patient in understanding the difficulties of the students",
+		"type": "radio",
+		"optionValues": [
+			"1 - if you very strongly disagree with the statement",
+			"2 - if you strongly disagree with the statement",
+			"3 - if you disagree with the statement",
+			"4 - if you neither agree nor disagree with the statement",
+			"5 - if you agree with the statement",
+			"6 - if you strongly agree with the statement",
+			"7 - if you very strongly agree with the statement"
+		]
+	},
+	{
+		"id": "a9",
+		"question": "The teacher encourages students consistently in their studies",
+		"type": "radio",
+		"optionValues": [
+			"1 - if you very strongly disagree with the statement",
+			"2 - if you strongly disagree with the statement",
+			"3 - if you disagree with the statement",
+			"4 - if you neither agree nor disagree with the statement",
+			"5 - if you agree with the statement",
+			"6 - if you strongly agree with the statement",
+			"7 - if you very strongly agree with the statement"
+		]
+	},
+	{
+		"id": "a10",
+		"question": "The teacher holds the attention of the students through out the lecture",
+		"type": "radio",
+		"optionValues": [
+			"1 - if you very strongly disagree with the statement",
+			"2 - if you strongly disagree with the statement",
+			"3 - if you disagree with the statement",
+			"4 - if you neither agree nor disagree with the statement",
+			"5 - if you agree with the statement",
+			"6 - if you strongly agree with the statement",
+			"7 - if you very strongly agree with the statement"
+		]
+	},
+	{
+		"id": "a11",
+		"question": "The teacher gives useful tips while returning the answer papers and assignments",
+		"type": "radio",
+		"optionValues": [
+			"1 - if you very strongly disagree with the statement",
+			"2 - if you strongly disagree with the statement",
+			"3 - if you disagree with the statement",
+			"4 - if you neither agree nor disagree with the statement",
+			"5 - if you agree with the statement",
+			"6 - if you strongly agree with the statement",
+			"7 - if you very strongly agree with the statement"
+		]
+	},
+	{
+		"id": "a12",
+		"question": "The teacher is willing to help the students even out of the class",
+		"type": "radio",
+		"optionValues": [
+			"1 - if you very strongly disagree with the statement",
+			"2 - if you strongly disagree with the statement",
+			"3 - if you disagree with the statement",
+			"4 - if you neither agree nor disagree with the statement",
+			"5 - if you agree with the statement",
+			"6 - if you strongly agree with the statement",
+			"7 - if you very strongly agree with the statement"
+		]
+	},
+	{
+		"id": "a13",
+		"question": "The teacher encourages discussions in the class",
+		"type": "radio",
+		"optionValues": [
+			"1 - if you very strongly disagree with the statement",
+			"2 - if you strongly disagree with the statement",
+			"3 - if you disagree with the statement",
+			"4 - if you neither agree nor disagree with the statement",
+			"5 - if you agree with the statement",
+			"6 - if you strongly agree with the statement",
+			"7 - if you very strongly agree with the statement"
+		]
+	},
+	{
+		"id": "a14",
+		"question": "The teacher appreciates & respects students as and when they deserve",
+		"type": "radio",
+		"optionValues": [
+			"1 - if you very strongly disagree with the statement",
+			"2 - if you strongly disagree with the statement",
+			"3 - if you disagree with the statement",
+			"4 - if you neither agree nor disagree with the statement",
+			"5 - if you agree with the statement",
+			"6 - if you strongly agree with the statement",
+			"7 - if you very strongly agree with the statement"
+		]
+	},
+	{
+		"id": "a15",
+		"question": "The teacher behaves impartially with the students",
+		"type": "radio",
+		"optionValues": [
+			"1 - if you very strongly disagree with the statement",
+			"2 - if you strongly disagree with the statement",
+			"3 - if you disagree with the statement",
+			"4 - if you neither agree nor disagree with the statement",
+			"5 - if you agree with the statement",
+			"6 - if you strongly agree with the statement",
+			"7 - if you very strongly agree with the statement"
+		]
+	},
+	{
+		"id": "a16",
+		"question": "The teacher completes syllabus in time",
+		"type": "radio",
+		"optionValues": [
+			"1 - if you very strongly disagree with the statement",
+			"2 - if you strongly disagree with the statement",
+			"3 - if you disagree with the statement",
+			"4 - if you neither agree nor disagree with the statement",
+			"5 - if you agree with the statement",
+			"6 - if you strongly agree with the statement",
+			"7 - if you very strongly agree with the statement"
+		]
+	},
+	{
+		"id": "a17",
+		"question": "The teacher gives importance to the overall personality development of the students",
+		"type": "radio",
+		"optionValues": [
+			"1 - if you very strongly disagree with the statement",
+			"2 - if you strongly disagree with the statement",
+			"3 - if you disagree with the statement",
+			"4 - if you neither agree nor disagree with the statement",
+			"5 - if you agree with the statement",
+			"6 - if you strongly agree with the statement",
+			"7 - if you very strongly agree with the statement"
+		]
+	},
+	{
+		"id": "a18",
+		"question": "The teacher discusses issues and events happening around to create awareness and understanding about life",
+		"type": "radio",
+		"optionValues": [
+			"1 - if you very strongly disagree with the statement",
+			"2 - if you strongly disagree with the statement",
+			"3 - if you disagree with the statement",
+			"4 - if you neither agree nor disagree with the statement",
+			"5 - if you agree with the statement",
+			"6 - if you strongly agree with the statement",
+			"7 - if you very strongly agree with the statement"
+		]
+	},
+	{
+		"id": "a19",
+		"question": "The teacher encourages students to think for themselves",
+		"type": "radio",
+		"optionValues": [
+			"1 - if you very strongly disagree with the statement",
+			"2 - if you strongly disagree with the statement",
+			"3 - if you disagree with the statement",
+			"4 - if you neither agree nor disagree with the statement",
+			"5 - if you agree with the statement",
+			"6 - if you strongly agree with the statement",
+			"7 - if you very strongly agree with the statement"
+		]
+	},
+	{
+		"id": "a20",
+		"question": "The teacher tries to develop ideas, attitudes and values in the students",
+		"type": "radio",
+		"optionValues": [
+			"1 - if you very strongly disagree with the statement",
+			"2 - if you strongly disagree with the statement",
+			"3 - if you disagree with the statement",
+			"4 - if you neither agree nor disagree with the statement",
+			"5 - if you agree with the statement",
+			"6 - if you strongly agree with the statement",
+			"7 - if you very strongly agree with the statement"
+		]
+	},
+	{
+		"id": "a21",
+		"question": "Mention two qualities you like in this teacher",
+		"type": "text",
+		"controlCount": "2",
+		"placeHolder": "Quality"
+	},
+	{
+		"id": "a22",
+		"question": "Mention two things you would like to change in this teacher",
+		"type": "text",
+		"controlCount": "2",
+		"placeHolder": "Change"
+	}
+]

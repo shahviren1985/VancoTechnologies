@@ -1,0 +1,165 @@
+[
+  {
+    "id": "a1",
+    "question": "Full Name Of Student",
+    "type": "text",
+    "controlCount": "1",
+    "placeHolder": "Student Full Name"
+  },
+  {
+    "id": "a2",
+    "question": "Full Name of Parent",
+    "type": "text",
+    "controlCount": "1",
+    "placeHolder": "Parent Full Name"
+  },
+  {
+    "id": "a3",
+    "question": "Student studying in which class/Department?",
+    "type": "radio",
+    "optionValues": [
+      "1 - Developmental Counselling",
+      "2 - Early Childhood Care and Education",
+      "3 - Food, Nutrition and Dietetics",
+      "4 - Hospitality and Tourism Management",
+      "5 - Interior Design and Resource Management",
+      "6 - Mass Communication and Extension",
+      "7 - Textiles and Apparel Design"
+    ]
+  },
+  {
+    "id": "a4",
+    "question": "Is your child happy with the college",
+    "type": "radio",
+    "optionValues": [
+      "1 - Strongly disagree",
+      "2 - Disagree",
+      "3 - Unsure",
+      "4 - Agree",
+      "5 - Strongly agree"
+    ]
+  },
+  {
+    "id": "a5",
+    "question": "In what ways has your child changed after joining Sir Vithaldas Thackersey College of Home Science?",
+    "type": "text",
+    "controlCount": "1",
+    "placeHolder": "Child changed after joining SVT"
+  },
+  {
+    "id": "a6",
+    "question": "In what ways has your child changed after joining Sir Vithaldas Thackersey College of Home Science?",
+    "type": "text",
+    "controlCount": "1",
+    "placeHolder": "Child changed after joining SVT"
+  },
+  {
+    "id": "a7",
+    "question": "You have observed Regularity in your daughter",
+    "type": "radio",
+    "optionValues": [
+      "1 - Strongly disagree",
+      "2 - Disagree",
+      "3 - Unsure",
+      "4 - Agree",
+      "5 - Strongly agree"
+    ]
+  },
+  {
+    "id": "a8",
+    "question": "You have observed your daughter taking up responsibilities",
+    "type": "radio",
+    "optionValues": [
+      "1 - Strongly disagree",
+      "2 - Disagree",
+      "3 - Unsure",
+      "4 - Agree",
+      "5 - Strongly agree"
+    ]
+  },
+  {
+    "id": "a9",
+    "question": "You have observed decision making abilities has improved in your daughter",
+    "type": "radio",
+    "optionValues": [
+      "1 - Strongly disagree",
+      "2 - Disagree",
+      "3 - Unsure",
+      "4 - Agree",
+      "5 - Strongly agree"
+    ]
+  },{
+    "id": "a10",
+    "question": "You have observed maturity in your daughter's behaviour",
+    "type": "radio",
+    "optionValues": [
+      "1 - Strongly disagree",
+      "2 - Disagree",
+      "3 - Unsure",
+      "4 - Agree",
+      "5 - Strongly agree"
+    ]
+  },
+  {
+    "id": "a11",
+    "question": "You have observed your daughter is having focused approach to education",
+    "type": "radio",
+    "optionValues": [
+      "1 - Strongly disagree",
+      "2 - Disagree",
+      "3 - Unsure",
+      "4 - Agree",
+      "5 - Strongly agree"
+    ]
+  },
+  {
+    "id": "a12",
+    "question": "Vocational skills have improved in your daughter",
+    "type": "radio",
+    "optionValues": [
+      "1 - Strongly disagree",
+      "2 - Disagree",
+      "3 - Unsure",
+      "4 - Agree",
+      "5 - Strongly agree"
+    ]
+  },
+  {
+    "id": "a13",
+    "question": "Your daughter has started taking interest in career",
+    "type": "radio",
+    "optionValues": [
+      "1 - Strongly disagree",
+      "2 - Disagree",
+      "3 - Unsure",
+      "4 - Agree",
+      "5 - Strongly agree"
+    ]
+  },
+  {
+    "id": "a14",
+    "question": "Curriculum inputs of B.Sc. programme offered by the institution are up to the mark for a student to be competent in the field of specialization",
+    "type": "radio",
+    "optionValues": [
+      "1 - Strongly disagree",
+      "2 - Disagree",
+      "3 - Unsure",
+      "4 - Agree",
+      "5 - Strongly agree"
+    ]
+  },
+  {
+    "id": "a15",
+    "question": "Any other suggestions",
+    "type": "text",
+    "controlCount": "1",
+    "placeHolder": "Suggestions"
+  },
+  {
+    "id": "a16",
+    "question": "Any other comments",
+    "type": "text",
+    "controlCount": "1",
+    "placeHolder": "Comments"
+  }
+]

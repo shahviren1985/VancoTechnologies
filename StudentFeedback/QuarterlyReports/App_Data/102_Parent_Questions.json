@@ -1,0 +1,205 @@
+[
+    {
+        "id": "a1",
+        "question": "Full Name Of Ward",
+        "type": "text",
+        "controlCount": "1",
+        "placeHolder": "Full Name Of Ward"
+    },
+    {
+        "id": "a2",
+        "question": "Department",
+        "type": "radio",
+        "optionValues": [
+            "Developmental Counselling",
+            "Early Childhood Care and Education",
+            "Food, Nutrition and Dietetics",
+            "Hospitality and Tourism Management",
+            "Interior Design and Resource Management",
+            "Mass Communication and Extension",
+            "Textiles and Apparel Design"
+        ]
+    },
+    {
+        "id": "a3",
+        "question": "Year of passing",
+        "type": "dropdown",
+        "optionValues": [
+			"2020-21",
+			"2019-20",
+			"2018-19",
+            "2017-18",
+            "2016-17",
+            "2015-16",
+            "2014-15",
+            "2013-14",
+            "2012-13",
+            "2011-12",
+            "2010-11",
+            "2009-10",
+            "2008-09",
+            "2007-08",
+            "2006-07",
+            "2005-06",
+            "2004-05",
+            "2003-04",
+            "2002-03",
+            "2001-02",
+            "2000-01",
+            "Prior to 2000"
+		]
+    },
+    {
+        "id": "a0",
+        "question": "Please rate the curriculum",
+        "type": "header",
+        "controlCount": "1",
+        "placeHolder": ""
+    },
+    {
+        "id": "a4",
+        "question": "Suitable design of curriculum to generate interest",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a5",
+        "question": "Curriculum promotes learning experience of the students",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a6",
+        "question": "Curriculum has relevance to course outcomes/ learning values (in terms of concepts, practical skills, analytical abilities, focussed approach and broadening perspectives)",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a7",
+        "question": "Weightage given to practical, projects and field work component",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a8",
+        "question": "Curriculum includes latest advancements in the subject",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a9",
+        "question": "Importance given to employability, entrepreneurship and skill development",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a10",
+        "question": "Promotion of an attitude for research",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a11",
+        "question": "Weightage given to skill/ vocational development",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a12",
+        "question": "Applicability/ Relevance to real life situations and needs",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a13",
+        "question": "Inculcation of moral values",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a14",
+        "question": "Incorporation of components for development (of leadership qualities, ability to manage, take up responsibility, decision making etc.)",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a15",
+        "question": "Overall rating of the curriculum",
+        "type": "radio",
+        "optionValues": [
+            "1 - Excellent",
+            "2 - Good",
+            "3 - Average",
+            "4 - Below Average"
+        ]
+    },
+    {
+        "id": "a16",
+        "question": "Mobile Number",
+        "type": "text",
+        "controlCount": "1",
+        "placeHolder": "Mobile Number"
+    },
+    {
+        "id": "a17",
+        "question": "Email Address",
+        "type": "text",
+        "controlCount": "1",
+        "placeHolder": "Email Address"
+    }
+]

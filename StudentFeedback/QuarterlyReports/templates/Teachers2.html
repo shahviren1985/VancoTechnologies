@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Teacher Feedback - {0}</title>
+    <style>
+        .center {
+            text-align: center;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+            table td, table th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+        tr.header {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        td {
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div class="center"><h2>YEAR:<b>{1}</b></h2></div>
+    <div class="center">PERFORMANCE APPRAISAL REPORT FOR <b>{2}</b></div>
+    <div style="font-size: 12px">The information in the following table has been graphically represented below.</div>
+    <table style="width: 80%; margin-top: 20px;">
+        <tr class="header">
+            <td style="width: 35%">Parameters</td>
+            <td style="width: 15%">Teachers Ethics</td>
+            <td style="width: 15%">Teaching Style</td>
+            <td style="width: 15%">Student - Oriented approach</td>
+            <td style="width: 15%">Overall Impression</td>
+        </tr>
+        <tr>
+            <td>Max. Score</td>
+            <td>{3}</td>
+            <td>{4}</td>
+            <td>{5}</td>
+            <td>{6}</td>
+        </tr>
+        <tr>
+            <td>Score Obtained</td>
+            <td>{7}</td>
+            <td>{8}</td>
+            <td>{9}</td>
+            <td>{10}</td>
+        </tr>
+        <tr>
+            <td>Performance %</td>
+            <td>{11}%</td>
+            <td>{12}%</td>
+            <td>{13}%</td>
+            <td>{14}%</td>
+        </tr>
+    </table>
+    <div style="font-size: 12px;">
+        <b>Graph 1:</b> This graph is a comparison of the teachers ideal performance versus the actual performance on Teachers Ethics, Teaching Style, Student - Oriented approach & Overall Impression.
+    </div>
+    <div style="padding: 10px">
+        <img src="{15}" width="350" height="250" />
+    </div>
+    <div style="font-size: 12px">
+        <b>Graph 2:</b> This graph points towards the parameters the teacher needs to work on.
+    </div>
+    <div style="padding: 10px">
+        <img src="{16}" width="350" height="250" />
+    </div>
+    <div style="font-size: 12px">The following table is a measure of the ideal SATISFACTION INDEX and the score obtained by the teacher.</div>
+    <table style="width: 60%; margin-top: 20px;">
+        <tr>
+            <td>MAX. SATISFACTION INDEX</td>
+            <td>{17}</td>
+        </tr>
+        <tr>
+            <td>SCORE OBTAINED</td>
+            <td>{18}</td>
+        </tr>
+        <tr>
+            <td>STUDENT SATISFACTION %</td>
+            <td>{19}</td>
+        </tr>
+    </table>
+</body>
+</html>

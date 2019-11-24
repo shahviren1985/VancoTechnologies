@@ -1,0 +1,120 @@
+﻿<main class="app-content">
+    <div class="row">
+        <div class="app-title">
+            <div>
+                <h1><i class="app-menu__icon fas fa-book-reader"></i> Seating Arrangement</h1>
+                <p><!--Modify current professor list--></p>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="tile">
+                <div class="overlay">
+                    <div class="m-loader mr-4">
+                        <svg class="m-circular" viewBox="25 25 50 50">
+                            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="l-text">Loading</h3>
+                </div>
+                <div class="tile-body">
+                    <table class="table table-hover table-bordered" id="sampleTable">
+                        <thead>
+                            <tr role="row">
+                                <th style="max-width:50px">Sr No</th>
+                                <th style="">Exam Name</th>
+                                <th style="">Option</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbodyOfExamList">
+                            <tr ng-repeat="au in AllExamArray">
+                                <td style="max-width:50px">{{$index + 1}}</td>
+                                <td style="text-align: left !important;">{{au.ExamName}}</td>
+                                <td>
+                                    <a class="btn btn-primary" ng-click="ArrangeExam($index)" style="color:white"><i class="fas fa-cog" style="margin-top: -3px;"></i> Arrange</a>
+                                    <a class="btn btn-primary" ng-click="PrintSeatingArrangement($index)" style="color:white"><i class="fa fa-print" style="margin-top: -3px;"></i> Print</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<div class="modal fade" id="StudentArrangeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-2">
+    <div class="modal-dialog" role="document" style="max-width: 800px;overflow-y: initial !important">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel-2">
+                    {{CurrentExamUpdate.ExamName}}
+                </h4>
+            </div>
+            <div class="modal-body" style="min-height: 300px; height:350px;overflow-y: auto;">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form class="form-horizontal" id="ExamNameCreateForm">
+                            <table class="table">
+                                <tr>
+                                    <td style="border-top: none; min-width: 200px; ">
+                                        <select data-validation="required" name="ClassRoom" class="form-control" id="ClassRoom">
+                                            <option value="" selected="selected">Select Class</option>
+                                        </select>
+                                    </td>
+                                    <td style="border-top: none; min-width: 200px; ">
+                                        <select data-validation="required" name="StudentOfClass" class="form-control" id="StudentOfClass">
+                                            <option value="" selected="selected">Select Class</option>
+                                        </select>
+                                    </td>
+                                    <td style="border-top: none; min-width: 45px;">
+                                        <input type="number" class="form-control" ng-change="GetTotalCalculation()" id="FromRollNumber" name="FromRollNumber" ng-model="AddNewConfig.FromRollNumber" />
+                                    </td>
+                                    <td style="border-top: none; min-width: 45px;">
+                                        <input type="number" class="form-control" id="ToRollNumber" ng-change="GetTotalCalculation()" name="ToRollNumber" ng-model="AddNewConfig.ToRollNumber" />
+                                    </td>
+                                    <td style="border-top: none; min-width: 45px;">
+                                        <input type="number" class="form-control" id="TotalStudent" name="TotalStudent" value="50" ng-model="AddNewConfig.TotalStudent" />
+                                    </td>
+                                    <td style="border-top: none;min-width: 45px;">
+                                        <button type="submit" ng-click="AddSeatingArrengement()" class="btn btn-primary" style="color:white">
+                                            <i class="fa fa-lg fa-save" style="margin-top: -3px;"></i> Add
+                                        </button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <div class="col-md-12">
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    #
+                                </td>
+                                <td>Class Room</td>
+                                <td>Student Of Class</td>
+                                <td>Roll No</td>
+                                <td>Total</td>
+                                <td>Total Student In Class</td>
+                            </tr>
+                            <tr ng-repeat="detail in TotalStudentSeatingArrangementCurrent.SeatingArrange | orderBy : 'ClassRoom' track by $index">
+                                <td>{{$index+1}}</td>
+                                <td>{{detail.ClassRoom}}</td>
+                                <td>{{detail.StudentOfClass}}</td>
+                                <td>{{detail.FromRollNumber}}</td>
+                                <td>{{detail.ToRollNumber}}</td>
+                                <td>{{detail.TotalStudent}}</td>
+                                <td><a class="btn btn-primary" ng-click="DeleteStudentArrangement($index)" style="color:white"><i class="fa fa-lg fa-trash" style="margin-top: -3px;"></i> Delete</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-primary" ng-click="SaveStudentArranagement()" style="color:white"><i class="fa fa-lg fa-check" style="margin-top: -3px;"></i>  Save</button>
+                <a class="btn btn-primary" style="color:white" data-dismiss="modal"><i class="fa fa-lg fa-times" style="margin-top: -3px;"></i> Cancel</a>
+            </div>
+
+        </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+</div>

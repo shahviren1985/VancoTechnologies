@@ -1,0 +1,218 @@
+[
+    {
+        "id": "a1",
+        "question": "Teacher is prepared for class",
+        "type": "radio",
+        "optionValues": [
+            "Almost always",
+            "Most of the time",
+            "Sometimes",
+            "Once in a while",
+            "Rarely"
+        ]
+    },
+	{
+        "id": "a2",
+        "question": "Teacher knows her subject",
+        "type": "radio",
+        "optionValues": [
+            "Almost always",
+            "Most of the time",
+            "Sometimes",
+            "Once in a while",
+            "Rarely"
+        ]
+    },
+    {
+        "id": "a3",
+        "question": "Teacher is organized and neat",
+        "type": "radio",
+        "optionValues": [
+            "Almost always",
+            "Most of the time",
+            "Sometimes",
+            "Once in a while",
+            "Rarely"
+        ]
+    },
+    {
+        "id": "a4",
+        "question": "Classtime is well planned",
+        "type": "radio",
+        "optionValues": [
+            "Almost always",
+            "Most of the time",
+            "Sometimes",
+            "Once in a while",
+            "Rarely"
+        ]
+    },
+    {
+        "id": "a5",
+        "question": "Assignments given to students help in problem solving and critical thinking",
+        "type": "radio",
+        "optionValues": [
+            "Almost always",
+            "Most of the time",
+            "Sometimes",
+            "Once in a while",
+            "Rarely"
+        ]
+    },
+    {
+        "id": "a6",
+        "question": "Teacher is flexible in understanding individual learners needs",
+        "type": "radio",
+        "optionValues": [
+            "Almost always",
+            "Most of the time",
+            "Sometimes",
+            "Once in a while",
+            "Rarely"
+        ]
+    },
+    {
+        "id": "a7",
+        "question": "Teacher is clear in giving instructions and directions for assignments and tests",
+        "type": "radio",
+        "optionValues": [
+            "Almost always",
+            "Most of the time",
+            "Sometimes",
+            "Once in a while",
+            "Rarely"
+        ]
+    },
+    {
+        "id": "a8",
+        "question": "Teacher returns evaluation of assignments in timely manner",
+        "type": "radio",
+        "optionValues": [
+            "Almost always",
+            "Most of the time",
+            "Sometimes",
+            "Once in a while",
+            "Rarely"
+        ]
+    },
+    {
+        "id": "a9",
+        "question": "Students are allowed to active participation in the classroom learning environment",
+        "type": "radio",
+        "optionValues": [
+            "Almost always",
+            "Most of the time",
+            "Sometimes",
+            "Once in a while",
+            "Rarely"
+        ]
+    },
+    {
+        "id": "a10",
+        "question": "Evaluation is done fairly",
+        "type": "radio",
+        "optionValues": [
+            "Almost always",
+            "Most of the time",
+            "Sometimes",
+            "Once in a while",
+            "Rarely"
+        ]
+    },
+    {
+        "id": "a11",
+        "question": "Feedback is provided on assignment and projects",
+        "type": "radio",
+        "optionValues": [
+            "Almost always",
+            "Most of the time",
+            "Sometimes",
+            "Once in a while",
+            "Rarely"
+        ]
+    },
+    {
+        "id": "a12",
+        "question": "Teacher is creative in developing activities and lesson",
+        "type": "radio",
+        "optionValues": [
+            "Almost always",
+            "Most of the time",
+            "Sometimes",
+            "Once in a while",
+            "Rarely"
+        ]
+    },
+    {
+        "id": "a13",
+        "question": "Teacher listens and understands students point of view which may not be agreed upon, but students feel understood",
+        "type": "radio",
+        "optionValues": [
+            "Almost always",
+            "Most of the time",
+            "Sometimes",
+            "Once in a while",
+            "Rarely"
+        ]
+    },
+    {
+        "id": "a14",
+        "question": "Opinions and decisions of students are respected by teacher",
+        "type": "radio",
+        "optionValues": [
+            "Almost always",
+            "Most of the time",
+            "Sometimes",
+            "Once in a while",
+            "Rarely"
+        ]
+    },
+    {
+        "id": "a15",
+        "question": "Teacher is sensitive to the needs of students",
+        "type": "radio",
+        "optionValues": [
+            "Almost always",
+            "Most of the time",
+            "Sometimes",
+            "Once in a while",
+            "Rarely"
+        ]
+    },
+    {
+        "id": "a16",
+        "question": "Teacher helps you when you ask for help",
+        "type": "radio",
+        "optionValues": [
+            "Almost always",
+            "Most of the time",
+            "Sometimes",
+            "Once in a while",
+            "Rarely"
+        ]
+    },
+    {
+        "id": "a17",
+        "question": "Teacher is fair and firm in discipline",
+        "type": "radio",
+        "optionValues": [
+            "Almost always",
+            "Most of the time",
+            "Sometimes",
+            "Once in a while",
+            "Rarely"
+        ]
+    },
+	{
+        "id": "a18",
+        "question": "Teacher is willing to accept responsibility for their own mistakes",
+        "type": "radio",
+        "optionValues": [
+            "Almost always",
+            "Most of the time",
+            "Sometimes",
+            "Once in a while",
+            "Rarely"
+        ]
+    }
+]

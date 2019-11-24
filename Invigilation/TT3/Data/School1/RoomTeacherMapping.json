@@ -1,0 +1,67 @@
+[
+  {
+    "RoomName": "Reliver",
+    "AssignedRoom": []
+  },
+  {
+    "RoomName": "IA",
+    "AssignedRoom": [
+      "VARNITA",
+      "TANVEER"
+    ]
+  },
+  {
+    "RoomName": "IIA",
+    "AssignedRoom": []
+  },
+  {
+    "RoomName": "IV",
+    "AssignedRoom": [
+      "CHHAYA"
+    ]
+  },
+  {
+    "RoomName": "StandBy",
+    "AssignedRoom": []
+  },
+  {
+    "RoomName": "IB",
+    "AssignedRoom": [
+      "APARNA",
+      "LALITA"
+    ]
+  },
+  {
+    "RoomName": "IIB",
+    "AssignedRoom": [
+      "SHIKHA",
+      "PRIYANKA"
+    ]
+  },
+  {
+    "RoomName": "IIIA",
+    "AssignedRoom": [
+      "YASHASHREE",
+      "SAGAR"
+    ]
+  },
+  {
+    "RoomName": "IIIB",
+    "AssignedRoom": []
+  },
+  {
+    "RoomName": "V",
+    "AssignedRoom": [
+      "DARSHINI",
+      "TAIHREEN"
+    ]
+  },
+  {
+    "RoomName": "VI",
+    "AssignedRoom": []
+  },
+  {
+    "RoomName": "VII",
+    "AssignedRoom": []
+  }
+]

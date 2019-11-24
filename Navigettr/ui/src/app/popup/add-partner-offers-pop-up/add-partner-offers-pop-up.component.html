@@ -1,0 +1,204 @@
+<div
+  bsModal
+  #addItemModal="bs-modal"
+  class="modal fade"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="dialog-child-name"
+>
+  <form [formGroup]="partnerOffersForm" (ngSubmit)="onAddSubmit()">
+    <div class="modal-dialog ">
+      <ngx-loading
+        [show]="loading"
+        [config]="{ backdropBorderRadius: '3px' }"
+        [template]="customLoadingTemplate"
+      ></ngx-loading>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 id="dialog-child-name" class="modal-title pull-left">
+            Add Offer
+          </h4>
+          <button
+            type="button"
+            class="close pull-right"
+            aria-label="Close"
+            (click)="hideModal()"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="offer_name" class="col-form-label">Offer Name:</label>
+            <input
+              type="text"
+              placeholder="Offer Name"
+              formControlName="offer_name"
+              class="form-control"
+            />
+            <div
+              *ngIf="
+                f.offer_name.invalid &&
+                (f.offer_name.dirty || f.offer_name.touched)
+              "
+              class="alert alert-danger"
+            >
+              <div
+                [hidden]="this.partnerOffersForm.controls['offer_name'].valid"
+              >
+                Offer Name is required
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="radio" value="offer_text" formControlName="offer" />
+            <span>Offer Text</span>
+            <input type="radio" value="offer_img" formControlName="offer" />
+            <span>Offer Image</span>
+          </div>
+          <div class="form-group">
+            <label for="offer_text" class="col-form-label">Offer Text:</label>
+            <input
+              type="text"
+              placeholder="Offer Text"
+              formControlName="offer_text"
+              class="form-control"
+            />
+            <div
+              *ngIf="
+                f.offer_text.invalid &&
+                (f.offer_text.dirty || f.offer_text.touched)
+              "
+              class="alert alert-danger"
+            >
+              <div
+                [hidden]="this.partnerOffersForm.controls['offer_text'].valid"
+              >
+                Offer Text is required
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="offer_start_date" class="col-form-label"
+              >Offer Start Date</label
+            >
+            <input
+              type="date"
+              formControlName="offer_start_date"
+              class="form-control"
+            />
+            <div
+              *ngIf="
+                f.offer_start_date.invalid &&
+                (f.offer_start_date.dirty || f.offer_start_date.touched)
+              "
+              class="alert alert-danger"
+            >
+              <div
+                [hidden]="
+                  this.partnerOffersForm.controls['offer_start_date'].valid
+                "
+              >
+                Offer Start Date is required
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="offer_end_date" class="col-form-label"
+              >Offer End Date</label
+            >
+            <input
+              type="date"
+              formControlName="offer_end_date"
+              class="form-control"
+            />
+            <div
+              *ngIf="
+                f.offer_end_date.invalid &&
+                (f.offer_end_date.dirty || f.offer_end_date.touched)
+              "
+              class="alert alert-danger"
+            >
+              <div
+                [hidden]="
+                  this.partnerOffersForm.controls['offer_end_date'].valid
+                "
+              >
+                Offer End Date is required
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="offer_start_date" class="col-form-label"
+              >Offer Activation Date</label
+            >
+            <input
+              type="date"
+              formControlName="offer_activation_date"
+              class="form-control"
+            />
+            <div
+              *ngIf="
+                f.offer_activation_date.invalid &&
+                (f.offer_activation_date.dirty ||
+                  f.offer_activation_date.touched)
+              "
+              class="alert alert-danger"
+            >
+              <div
+                [hidden]="
+                  this.partnerOffersForm.controls['offer_activation_date'].valid
+                "
+              >
+                Offer Activation Date is required
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="offer_end_date" class="col-form-label"
+              >Offer Expiry Date</label
+            >
+            <input
+              type="date"
+              formControlName="offer_expiry_date"
+              class="form-control"
+            />
+            <div
+              *ngIf="
+                f.offer_expiry_date.invalid &&
+                (f.offer_expiry_date.dirty || f.offer_expiry_date.touched)
+              "
+              class="alert alert-danger"
+            >
+              <div
+                [hidden]="
+                  this.partnerOffersForm.controls['offer_expiry_date'].valid
+                "
+              >
+                Offer Expiry Date is required
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-default"
+            data-dismiss="modal"
+            (click)="hideModal()"
+          >
+            Close
+          </button>
+          <button
+            type="submit"
+            class="btn btn-primary"
+            [disabled]="!partnerOffersForm.valid"
+          >
+            Save Offer
+          </button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

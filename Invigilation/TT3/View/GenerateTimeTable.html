@@ -1,0 +1,117 @@
+﻿
+<main class="app-content">
+    <div class="row">
+        <div class="app-title">
+            <div class="row" style="width: 100%;">
+                <div class="col-md-5">
+                    <h1><i class="far fa-calendar-alt"></i> Generate Time Table</h1>
+                    <p><!--Modify current professor list--></p>
+                </div>
+                <div class="col-md-4">
+                    <select class="form-control" data-validation="required" id="dd_ExamName"></select>
+                </div>
+                
+                <div class="col-md-2">
+                    <button class="btn btn-primary" ng-click="GenerateTimeTable()" style="color:white"><i class="fa fa-lg fa-calendar-plus-o" style="margin-top: -3px;"></i> Generate TimeTable</button>
+                </div>
+                <div class="col-md-1" style="">
+                    <input type="checkbox" id="chkMapping" style="display:none" />
+                    <button class="btn btn-primary" ng-click="ConfigExamMaster()" style="color:white"><i class="fa fa-sliders" aria-hidden="true" style="margin-top: -3px;"></i>Setting</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12" id="TimeTableArea" style="display:none">
+            <div class="tile" style="padding-bottom:55px">
+                <div class="overlay">
+                    <div class="m-loader mr-4">
+                        <svg class="m-circular" viewBox="25 25 50 50">
+                            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="4" stroke-miterlimit="10"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="l-text">Loading</h3>
+                </div>
+                <div class="tile-body">
+                    <div style="overflow: auto; overflow-y: hidden;">
+                        <table class="table table-hover table-bordered" id="sampleTable">
+                            <tbody id="tbodyOfExamList" style="text-align: center;"></tbody>
+                        </table>
+                    </div>
+                    <div style="float:right">
+                        <button class="btn btn-primary" ng-click="SaveTimeTable()" style="color: white; margin-top: 10px;"><i class="fa fa-lg fa-bookmark" style="margin-top: -3px;"></i> Save TimeTable</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="modal fade" id="ConfigurationModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="padding: 7px;">
+                <h4 class="modal-title" style="padding-left: 7px;" id="myModalLabel-2">
+                    Setting
+                </h4>
+            </div>
+            <form class="form-horizontal" id="ExamConfigForm">
+                <div class="modal-body">
+                    <div class="form-group">
+                        <div class="row">
+                            <label class="col-sm-4" for="email" style="padding-top: 5px;">Use Configuration:</label>
+                            <div class="col-sm-7">
+                                <input type="checkbox" ng-model="ExamConfig.Chk_Config" id="chkMapping">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <label class="col-sm-4" for="email" style="padding-top: 5px;">Reliver Priority:</label>
+                            <div class="col-sm-7">
+                                <select class="form-control" id="dd_AllowedStandBy" ng-model="ExamConfig.ReliverDepartment">
+                                    <!--<option value="" selected="selected">Select Department</option>-->
+                                    <option ng-selected="true" value="">Select Department</option>
+                                    <option ng-repeat="x in AllDepartment">{{x}}</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <label class="col-sm-4" for="email" style="padding-top: 5px;">Max {{ExamConfig.ReliverDepartment ? ExamConfig.ReliverDepartment : "Teacher"}} Per Slot:</label>
+                            <div class="col-sm-7">
+                                <input class="form-control" type="text" ng-disabled="ExamConfig.ReliverDepartment==''" ng-model="ExamConfig.Max_ReliverUser" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <label class="col-sm-4" for="email" style="padding-top: 5px;">Stand By Priority:</label>
+                            <div class="col-sm-7">
+                                <select class="form-control" id="dd_AllowedStandBy" ng-model="ExamConfig.StandByDepartment">
+                                    <!--<option value="" selected="selected">Select Department</option>-->
+                                    <option ng-selected="true" value="">Select Department</option>
+                                    <option ng-repeat="x in AllDepartment">{{x}}</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <label class="col-sm-4" for="email" style="padding-top: 5px;">Max {{ExamConfig.StandByDepartment ? ExamConfig.StandByDepartment : "Teacher"}} Per Slot:</label>
+                            <div class="col-sm-7">
+                                <input class="form-control" ng-disabled="ExamConfig.StandByDepartment==''" type="text" ng-model="ExamConfig.Max_StandByUser" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" style="color:white"><i class="fa fa-lg fa-check" style="margin-top: -3px;"></i>  Save</button>
+                    <!--<a class="btn btn-primary" ng-click="create()" style="color:white"><i class="fa fa-lg fa-check" style="margin-top: -3px;"></i> Save</a>-->
+                    <a class="btn btn-primary" style="color:white" data-dismiss="modal"><i class="fa fa-lg fa-times" style="margin-top: -3px;"></i> Cancel</a>
+                </div>
+            </form>
+        </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+</div>

@@ -1,0 +1,94 @@
+﻿<div class="row">
+    <div class="col col-md-12">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">{{PageTitle}}</h3>
+            </div>
+            <form id="PageViewForm">
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col col-lg-12 form-group">
+                            <label for="course">Course</label>
+                            <select id="course" name="course" ng-model="PageView.course" data-validation="required"
+                                    data-validation-error-msg="The course field is required" class="Drp_Cnrtl form-control">
+                                <option value="" selected="selected" disabled="disabled">--- Select ---</option>
+                                <option value="Regular">Regular</option>
+                                <option value="Honors">Honors</option>
+                            </select>
+                        </div>
+                        <div class="col col-lg-12 form-group">
+                            <label for="Specialization">Specialization</label>
+                            <select name="Specialization"  id="Specialization" class="form-control ng-valid ng-empty ng-dirty ng-valid-parse ng-touched valid" data-validation="required" data-validation-error-msg="The Exam Type field is required">
+
+                                <option disabled="disabled" selected="selected" value="">---Select----</option>
+                                <option value="DC" data-specialisationcode="DC">Developmental Counselling</option>
+                                <option value="ECCE" data-specialisationcode="ECCE">Early Childhood Care And Education</option>
+                                <option value="FND" data-specialisationcode="FND">Food Nutrition And Dietetics</option>
+                                <option value="HTM" data-specialisationcode="HTM">Hospitality & Tourism Management</option>
+                                <option value="IDRM" data-specialisationcode="IDRM">Interior Design And Resource Management</option>
+                                <option value="MCE" data-specialisationcode="MCE">Mass Communication And Extension</option>
+                                <option value="TAD" data-specialisationcode="TAD">Textiles And Apparel Designing</option>
+                            </select>
+                        </div>
+                        <div class="col col-md-12 form-group">
+                            <button type="submit" class="btn btn-primary pull-right">Get Convocation Student Report</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <style>
+            div.form-error {
+                background-color: #f2dede !important;
+                margin: 15px !important;
+            }
+        </style>
+        <div class="box box-primary" id="AddExtraSubjectForm2">
+            <form id="AddExtraSubjectForm2">
+                <div class="box-header with-border">
+                    <h3 id="TitleForSubject1" class="box-title">Convocation List</h3> <!---->
+                </div>
+                <div class="box-body">
+                    <table class="table table-hover" id="sampleTable">
+                        <thead>
+                            <tr>
+                                <th>Serial Number</th>
+                                <th>College Registration No</th>
+                                <th>Specialisation</th>
+                                <th>Student Name</th>
+                                <th>Weighted Percentage</th>
+                                <th>Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody style="max-height: 500px; overflow: auto;">
+                        </tbody>
+                    </table>
+                </div> <!---->
+                <div class="box-footer">
+                    <!--<button type="button" class="btn btn-primary pull-left" ng-click="PrintConvocationReport()">Print Convocation Report</button>-->
+                    <button type="button" class="btn btn-primary pull-right" onclick="tableToExcel()">Download Excel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var Examapp = angular.module("ExamSystemApp", ["ngRoute"]);
+    Examapp.controller('ConvocationReportCtrl', function ($scope) {
+        $(document).prop('title', 'Convocation Report');
+        function getUrlVars() {
+            var vars = [], hash;
+            var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+            for (var i = 0; i < hashes.length; i++) {
+                hash = hashes[i].split('=');
+                vars.push(hash[0]);
+                vars[hash[0]] = hash[1];
+            }
+            return vars;
+        }
+
+        
+    })
+</script>

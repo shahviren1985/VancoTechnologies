@@ -1,0 +1,15 @@
+D:\SVN\EmptyProject\Util\bin\Debug\Util.dll
+D:\SVN\EmptyProject\Util\bin\Debug\Util.pdb
+D:\SVN\EmptyProject\Util\bin\Debug\MySql.Data.dll
+D:\SVN\EmptyProject\Util\obj\Debug\Util.dll
+D:\SVN\EmptyProject\Util\obj\Debug\Util.pdb
+D:\SVN\Mis_PaperManagment\Util\bin\Debug\Util.dll
+D:\SVN\Mis_PaperManagment\Util\bin\Debug\Util.pdb
+D:\SVN\Mis_PaperManagment\Util\bin\Debug\MySql.Data.dll
+D:\SVN\Mis_PaperManagment\Util\obj\Debug\Util.dll
+D:\SVN\Mis_PaperManagment\Util\obj\Debug\Util.pdb
+D:\VancoTechnologies\Code\QPM\Util\bin\Debug\Util.dll
+D:\VancoTechnologies\Code\QPM\Util\bin\Debug\Util.pdb
+D:\VancoTechnologies\Code\QPM\Util\obj\Debug\Util.csprojResolveAssemblyReference.cache
+D:\VancoTechnologies\Code\QPM\Util\obj\Debug\Util.dll
+D:\VancoTechnologies\Code\QPM\Util\obj\Debug\Util.pdb

@@ -1,0 +1,193 @@
+[
+	{
+		"id": "a1",
+		"question": "Student Full Name",
+		"type": "text",
+		"controlCount": "1",
+		"placeHolder": "Full Name of Intern/Employee"
+	},
+	{
+		"id": "a2",
+		"question": "Intern/Employee is Regular",
+		"type": "radio",
+		"optionValues": [
+			"1 - Poor",
+			"2 - Fair",
+			"3 - Average",
+			"4 - Good",
+			"5 - Very Good"
+		]
+	},
+	{
+		"id": "a3",
+		"question": "Intern/Employee is Punctual",
+		"type": "radio",
+		"optionValues": [
+			"1 - Poor",
+			"2 - Fair",
+			"3 - Average",
+			"4 - Good",
+			"5 - Very Good"
+		]
+	},
+	{
+		"id": "a4",
+		"question": "Intern/Employee is Hard working",
+		"type": "radio",
+		"optionValues": [
+			"1 - Poor",
+			"2 - Fair",
+			"3 - Average",
+			"4 - Good",
+			"5 - Very Good"
+		]
+	},
+	{
+		"id": "a5",
+		"question": "Intern/Employee is able to work with colleagues",
+		"type": "radio",
+		"optionValues": [
+			"1 - Poor",
+			"2 - Fair",
+			"3 - Average",
+			"4 - Good",
+			"5 - Very Good"
+		]
+	},
+	{
+		"id": "a6",
+		"question": "Intern/Employee have knowledge of current trends/Market fluctuations/Policies",
+		"type": "radio",
+		"optionValues": [
+			"1 - Poor",
+			"2 - Fair",
+			"3 - Average",
+			"4 - Good",
+			"5 - Very Good"
+		]
+	},
+	{
+		"id": "a7",
+		"question": "Intern/Employee posses Self motivation/Enthusiasm",
+		"type": "radio",
+		"optionValues": [
+			"1 - Poor",
+			"2 - Fair",
+			"3 - Average",
+			"4 - Good",
+			"5 - Very Good"
+		]
+	},
+	{
+		"id": "a8",
+		"question": "Intern/Employee have decision making ability",
+		"type": "radio",
+		"optionValues": [
+			"1 - Poor",
+			"2 - Fair",
+			"3 - Average",
+			"4 - Good",
+			"5 - Very Good"
+		]
+	},
+	{
+		"id": "a9",
+		"question": "Intern/Employee have maturity in behavior",
+		"type": "radio",
+		"optionValues": [
+			"1 - Poor",
+			"2 - Fair",
+			"3 - Average",
+			"4 - Good",
+			"5 - Very Good"
+		]
+	},
+	{
+		"id": "a10",
+		"question": "Intern/Employee have focused approach to the needs of the organization",
+		"type": "radio",
+		"optionValues": [
+			"1 - Poor",
+			"2 - Fair",
+			"3 - Average",
+			"4 - Good",
+			"5 - Very Good"
+		]
+	},
+	{
+		"id": "a11",
+		"question": "Intern/Employee have professional abilities/skills",
+		"type": "radio",
+		"optionValues": [
+			"1 - Poor",
+			"2 - Fair",
+			"3 - Average",
+			"4 - Good",
+			"5 - Very Good"
+		]
+	},
+	{
+		"id": "a12",
+		"question": "Intern/Employee takes initiative",
+		"type": "radio",
+		"optionValues": [
+			"1 - Poor",
+			"2 - Fair",
+			"3 - Average",
+			"4 - Good",
+			"5 - Very Good"
+		]
+	},
+	{
+		"id": "a13",
+		"question": "Intern/Employee is responsible and dependable",
+		"type": "radio",
+		"optionValues": [
+			"1 - Poor",
+			"2 - Fair",
+			"3 - Average",
+			"4 - Good",
+			"5 - Very Good"
+		]
+	},
+	{
+		"id": "a14",
+		"question": "Intern/Employee shows commitment",
+		"type": "radio",
+		"optionValues": [
+			"1 - Poor",
+			"2 - Fair",
+			"3 - Average",
+			"4 - Good",
+			"5 - Very Good"
+		]
+	},
+	{
+		"id": "a15",
+		"question": "Curriculum inputs of programme offered by the college are upto the mark for a student to be competent in this field",
+		"type": "radio",
+		"optionValues": [
+			"1 - Strongly disagree",
+			"2 - Disagree",
+			"3 - Unsure",
+			"4 - Agree",
+			"5 - Strongly Agree"
+		]
+	},
+	{
+		"id": "a16",
+		"question": "Would you want to employ other students from our college?",
+		"type": "radio",
+		"optionValues": [
+			"Yes",
+			"No"
+		]
+	},
+	{
+		"id": "a17",
+		"question": "If No, why?",
+		"type": "text",
+		"controlCount": "1",
+		"placeHolder": "Reason for not preferring more students"
+	}
+]
