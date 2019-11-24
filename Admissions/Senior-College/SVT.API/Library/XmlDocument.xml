@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SVT.API</name>
+    </assembly>
+    <members>
+        <member name="M:SVT.API.Classes.ImageCompress.#ctor">
+            <summary>
+            It is used to restrict to create the instance of the      ImageCompress
+            </summary>
+        </member>
+        <member name="M:SVT.API.Classes.ImageCompress.Save(System.String,System.String)">
+            <summary>
+            This function is used to save the image
+            </summary>
+            <param name="fileName"></param>
+            <param name="path"></param>
+        </member>
+        <member name="M:SVT.API.Classes.ImageCompress.CompressImage">
+            <summary>
+            This function is use to compress the image to
+            predefine size
+            </summary>
+            <returns>return bitmap in compress size</returns>
+        </member>
+        <member name="M:SVT.API.Classes.ImageCompress.ISValidFileType(System.String)">
+            <summary>
+            This function is used to check the file Type
+            </summary>
+            <param name="fileName">String data type:contain the file name</param>
+            <returns>true or false on the file extention</returns>
+        </member>
+        <member name="M:SVT.API.Classes.ImageCompress.GetImageCoeInfo(System.String)">
+            <summary>
+            This function is used to get the imageCode info
+            on the basis of mimeType
+            </summary>
+            <param name="mimeType">string data type</param>
+            <returns>ImageCodecInfo data type</returns>
+        </member>
+        <member name="M:SVT.API.Classes.ImageCompress.save(System.String,System.Int32)">
+            <summary>
+            this function is used to save the image into a
+            given path
+            </summary>
+            <param name="path">string data type</param>
+            <param name="quality">int data type</param>
+        </member>
+        <member name="P:SVT.API.Classes.ImageCompress.GetImageCompressObject">
+            <summary>
+            Gets ImageCompress object
+            </summary>
+        </member>
+        <member name="P:SVT.API.Classes.ImageCompress.Height">
+            <summary>
+            Gets or sets Width
+            </summary>
+        </member>
+        <member name="P:SVT.API.Classes.ImageCompress.Width">
+            <summary>
+            Gets or sets Width
+            </summary>
+        </member>
+        <member name="P:SVT.API.Classes.ImageCompress.GetImage">
+            <summary>
+            Gets or sets Image
+            </summary>
+        </member>
+        <member name="M:SVT.API.Controllers.FileController.Upload">
+            <summary>
+            File Upload api
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SVT.API.Controllers.FileController.Download(System.String)">
+            <summary>
+            file download api
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SVT.API.Controllers.FileController.GetJsonData(System.String)">
+            <summary>
+            GET JSON data of file name
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SVT.API.Helpers.xmlHeaderHelper.createFont(DocumentFormat.OpenXml.Spreadsheet.Stylesheet,System.String,System.Nullable{System.Double},System.Boolean,System.Drawing.Color)">
+            <summary>
+            Creates a new font and appends it to the workbook's stylesheet
+            </summary>
+            <param name="styleSheet">The stylesheet for the current WorkBook</param>
+            <param name="fontName">The font name.</param>
+            <param name="fontSize">The font size.</param>
+            <param name="isBold">Set to true for bold font.</param>
+            <param name="foreColor">The font color.</param>
+            <returns>The index of the font.</returns>
+        </member>
+        <member name="M:SVT.API.Helpers.xmlHeaderHelper.createFill(DocumentFormat.OpenXml.Spreadsheet.Stylesheet,System.Drawing.Color)">
+            <summary>
+            Creates a new Fill object and appends it to the WorkBook's stylesheet.
+            </summary>
+            <param name="styleSheet">The stylesheet for the current WorkBook.</param>
+            <param name="fillColor">The background color for the fill.</param>
+            <returns></returns>
+        </member>
+        <member name="M:SVT.API.Helpers.xmlHeaderHelper.getColumnName(System.Int32)">
+            <summary>
+            Gets the Excel column name based on a supplied index number.
+            </summary>
+            <returns>1 = A, 2 = B... 27 = AA, etc.</returns>
+        </member>
+        <member name="M:SVT.API.Helpers.xmlHeaderHelper.createTextCell(System.Int32,System.Int32,System.Object,System.Nullable{System.UInt32})">
+            <summary>
+            Creates a new Cell object with the InlineString data type.
+            </summary>
+        </member>
+        <member name="M:SVT.API.Helpers.xmlHeaderHelper.createValueCell(System.Int32,System.Int32,System.Object,System.Nullable{System.UInt32})">
+            <summary>
+            Creates a new Cell object.
+            </summary>
+        </member>
+    </members>
+</doc>

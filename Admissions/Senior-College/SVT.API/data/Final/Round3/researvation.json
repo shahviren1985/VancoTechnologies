@@ -1,0 +1,191 @@
+[
+  {
+    "specialisation": "Developmental Counselling",
+    "internalCategory": {
+      "sc": 1,
+      "st": 0,
+      "vj": 0,
+      "nt1": 0,
+      "nt2": 0,
+      "nt3": 0,
+      "obc": 0,
+      "sebc": 0,
+      "ebc": 0,
+      "sbc": 0
+    },
+    "externalCategory": {
+      "sc": 1,
+      "st": 1,
+      "vj": 1,
+      "nt1": 1,
+      "nt2": 1,
+      "nt3": 1,
+      "obc": 1,
+      "sebc": 0,
+      "ebc": 0,
+      "sbc": 0
+    }
+  },
+  {
+    "specialisation": "Hospitality & Tourism Management",
+    "internalCategory": {
+      "sc": 0,
+      "st": 0,
+      "vj": 0,
+      "nt1": 0,
+      "nt2": 0,
+      "nt3": 0,
+      "obc": 0,
+      "sebc": 0,
+      "ebc": 0,
+	  "sbc": 0
+    },
+    "externalCategory": {
+      "sc": 0,
+      "st": 1,
+      "vj": 0,
+      "nt1": 1,
+      "nt2": 1,
+      "nt3": 1,
+      "obc": 1,
+      "sebc": 0,
+      "ebc": 0,
+	  "sbc": 1
+    }
+  },
+  {
+    "specialisation": "Early Childhood care & Education",
+    "internalCategory": {
+      "sc": 2,
+      "st": 1,
+      "vj": 0,
+      "nt1": 0,
+      "nt2": 0,
+      "nt3": 0, 
+      "obc": 2,
+      "sebc": 1,
+      "ebc": 0,
+      "sbc": 0
+    },
+    "externalCategory": {
+      "sc": 2,
+      "st": 1,
+      "vj": 1,
+      "nt1": 1,
+      "nt2": 1,
+      "nt3": 1,
+      "obc": 2,
+      "sebc": 2,
+      "ebc": 0,
+      "sbc": 1
+    }
+  },
+  {
+    "specialisation": "Mass Communication & Extension",
+    "internalCategory": {
+      "sc": 1,
+      "st": 2,
+      "vj": 1,
+      "nt1": 1,
+      "nt2": 1,
+      "nt3": 1,
+      "obc": 2,
+      "sebc": 2,
+      "ebc": 2,
+      "sbc": 1
+    },
+    "externalCategory": {
+      "sc": 2,
+      "st": 2,
+      "vj": 1,
+      "nt1": 0,
+      "nt2": 1,
+      "nt3": 0,
+      "obc": 3,
+      "sebc": 3,
+      "ebc": 3,
+      "sbc": 1
+    }
+  },
+  {
+    "specialisation": "Food, Nutrition and Dietetics",
+    "internalCategory": {
+      "sc": 0,
+      "st": 0,
+      "vj": 0,
+      "nt1": 0,
+      "nt2": 0,
+      "nt3": 0,
+      "obc": 0,
+      "sebc": 0,
+      "ebc": 0,
+      "sbc": 0
+    },
+    "externalCategory": {
+      "sc": 0,
+      "st": 0,
+      "vj": 0,
+      "nt1": 0,
+      "nt2": 0,
+      "nt3": 0,
+      "obc": 3,
+      "sebc": 0,
+      "ebc": 0,
+      "sbc": 1
+    }
+  },
+  {
+    "specialisation": "Interior Design & Resource Management",
+    "internalCategory": {
+      "sc": 2,
+      "st": 1,
+      "vj": 1,
+      "nt1": 0,
+      "nt2": 1,
+      "nt3": 0,
+      "obc": 2,
+      "sebc": 3,
+      "ebc": 1,
+      "sbc": 0
+    },
+    "externalCategory": {
+      "sc": 2,
+      "st": 2,
+      "vj": 1,
+      "nt1": 0,
+      "nt2": 1,
+      "nt3": 1,
+      "obc": 2,
+      "sebc": 3,
+      "ebc": 2,
+      "sbc": 0
+    }
+  },
+  {
+    "specialisation": "Textiles & Apparel Designing",
+    "internalCategory": {
+      "sc": 3,
+      "st": 3,
+      "vj": 1,
+      "nt1": 1,
+      "nt2": 1,
+      "nt3": 1,
+      "obc": 6,
+      "sebc": 1,
+      "ebc": 2,
+      "sbc": 1
+    },
+    "externalCategory": {
+      "sc": 4,
+      "st": 3,
+      "vj": 2,
+      "nt1": 1,
+      "nt2": 2,
+      "nt3": 1,
+      "obc": 7,
+      "sebc": 2,
+      "ebc": 2,
+      "sbc": 1
+    }
+  }
+]

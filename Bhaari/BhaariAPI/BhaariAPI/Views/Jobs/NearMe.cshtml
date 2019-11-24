@@ -1,0 +1,983 @@
+﻿<link rel="stylesheet" href="~/static/css/b.header.css" />
+<link rel="stylesheet" href="~/static/css/b.map.css" />
+<link rel="stylesheet" href="~/static/css/b.jobdetails.css" />
+<link rel="stylesheet" href="~/static/css/b.search.css" />
+<link rel="stylesheet" href="~/static/css/b.leftnav.css" />
+<link rel="stylesheet" href="~/static/css/b.support.css" />
+<!--[if !IE]><!-->
+<link rel="stylesheet" href="~/static/css/b.not.ie.css" />
+<!--<![endif]-->
+@*<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOgpcjQu4kRkC4ZqE0YAXIvgDEi2P2HFE"></script>*@
+@*AIzaSyBg0hiR9OLs3IzGO9cwAvEBXoHOap1g1jM*@
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdtzsR9COkbXaY49oFTS4lziV_VhH40Y8"></script>
+
+<script type="text/javascript" src="~/static/js/mwl.js"></script>
+
+@*<script type="text/javascript" src="static/js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="static/js/b.map.js"></script>*@
+<script type="text/javascript" src="~/static/js/JobDetails.js"></script>
+<script type="text/javascript" src="~/static/js/b.listview.js"></script>
+<script type="text/javascript" src="~/static/js/b.gridview.js"></script>
+<script type="text/javascript" src="~/static/js/b.colorjobs.js"></script>
+<script type="text/javascript" src="~/static/js/b.feedback.js"></script>
+<script type="text/javascript" src="~/static/js/b.contact.js"></script>
+<script>
+    var getLocation = JSON.parse(localStorage.getItem('Location'));
+    var isMapView = false;
+
+    var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+
+    function GetIPAddress() {
+        $.ajax({
+            url: BASE_URL + "/getIPAddress",
+            success: function (result) {
+                var url = "http://ip-api.com/json/" + result;
+                $.ajax({
+                    url: url,
+                    async: false,
+                    success: function (userLocationDetails) {
+                        localStorage.setItem('Location', JSON.stringify(userLocationDetails));
+                        getLocation = JSON.parse(localStorage.getItem('Location'));
+                        var l = JSON.parse(localStorage.getItem('Location'));
+                        $("#hfLat").val(l.lat);
+                        $("#hfLong").val(l.lon);
+                        google.maps.event.addDomListener(window, 'load', init);
+                    }
+                });
+
+            }
+        });
+    }
+
+    if (getLocation == null || getLocation == "undefined")
+        GetIPAddress();
+</script>
+<style type="text/css">
+    .modal {
+        display: none;
+    }
+
+    .mobile-view {
+        display: none;
+    }
+
+    .navbar {
+        height: 45px;
+    }
+
+    .desktop-view {
+        display: block;
+    }
+
+    .Loading-map, .Loading {
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 60%;
+        background-color: #FFCC00;
+        padding: 5px;
+        z-index: 11;
+    }
+
+    .Loading {
+        top: -5px;
+        left: 35%;
+    }
+
+    #slider {
+        float: left;
+        margin-top: 10px;
+        width: 10%;
+        height: 20px;
+        background-image: url('../../static/img/color.png');
+        background-size: 100% 100%;
+        border: 0px !important;
+        border-radius: 0px !important;
+    }
+
+    .icon-chevron-left {
+        float: left;
+        height: 20px;
+        margin-top: 14px;
+        margin-left: 10px;
+    }
+
+    .icon-chevron-right {
+        float: left;
+        height: 20px;
+        margin-top: 14px;
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+
+    #slider .ui-widget-header {
+        background: none;
+    }
+
+    #slider .ui-slider-handle {
+        width: 3px;
+        background: none;
+        height: 30px;
+        background-color: #666;
+        border: none;
+        border-radius: 0px;
+        color: #666;
+        margin-left: 0px !important;
+    }
+
+    .slider-label {
+        float: left;
+        font-size: 11px;
+        margin-top: 10px;
+    }
+
+    .twitter {
+        float: right;
+        width: 30px;
+        height: 30px;
+    }
+
+    #job-details {
+        float: left;
+        overflow-y: auto;
+        max-height: 430px;
+    }
+    .form-control:focus {
+        border-color: initial;
+        box-shadow: 0px;
+    }
+    @@media only screen and (max-device-width: 768px) {
+        .twitter {
+            float: right;
+            width: 32px;
+            height: 32px;
+        }
+
+        .left-nav {
+            width: 100%;
+            top: 130px;
+        }
+
+        .search-bar {
+            margin: 0;
+            margin-left: 10%;
+            float: left;
+            width: 75%;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+            .search-bar input {
+                height: 50px;
+            }
+
+        .logo {
+            width: 200px;
+            margin: 0;
+            margin-top: 2px;
+        }
+
+            .logo img {
+                width: 150px;
+                margin: 5px;
+                margin-bottom: 0px;
+            }
+
+        #map {
+            display: none;
+        }
+
+        .desktop-view {
+            display: none;
+        }
+
+        .mobile-view {
+            display: block;
+        }
+
+        .filter {
+            top: 45px !important;
+            z-index: 111;
+        }
+
+        .Loading-map {
+            display: none !important;
+        }
+
+        .filter .text {
+            margin: 3px;
+        }
+
+        .view {
+            margin-right: 0px;
+        }
+
+        input[type="text"] {
+            margin-bottom: 3px;
+        }
+
+        .nav-option-list {
+            position: fixed;
+            z-index: 111;
+            top: 90px;
+        }
+
+        .copy {
+            width: 100%;
+        }
+
+        #map {
+            margin: 0;
+            width: 100%;
+        }
+
+        #grid-view {
+            display: none;
+        }
+    }
+</style>
+
+<form id="form1">
+    <div>
+        <div id="information_div" style="display: none; top: 25%; position: absolute; z-index: 1; right: 20px; border: 1px solid #AAA; border-radius: 2px; padding: 10px 0px 0px 7px; background-color: #ffffff; width: 400px; min-height: 430px; max-height: 430px; overflow-y: auto;">
+        </div>
+        <div id="multi-companies" style="display: none; top: 20%; position: absolute; z-index: 1; right: 20px; border: 1px solid #AAA; border-radius: 2px; background-color: #ffffff; width: 220px; min-height: 40px; max-height: 500px; overflow-y: auto;"></div>
+        <div class="container">
+            <div class="navbar mobile-view">
+                <div class="logo">
+                    <a href="/" title="Bhaari" style="text-decoration: none;">
+                        <img src="~/static/img/Logo.png" alt="Bhaari" />
+                    </a>
+                </div>
+                <ul>
+                    <li>
+                        <div class="twitter">
+                            <a href="https://twitter.com/BhaariJobs" target="_blank">
+                                <img src="~/static/img/twitter.png" />
+                            </a>
+                        </div>
+                    </li>
+                    <li><a id="Login" style="color: white" href="#" onclick="return UpdateLoginStatus()">Login</a></li>
+                </ul>
+            </div>
+            <div class="navbar desktop-view">
+                <div class="logo">
+                    <a href="/" title="Bhaari - Jobs Near You" style="text-decoration: none;">
+                        <img src="~/static/img/Logo.png" alt="Bhaari - Jobs Near You" />
+                    </a>
+                </div>
+
+                <div class="search-bar form-group">
+                    <div class="search-container">
+                        <input type="text" id="txtSearchTerm" class="form-control search-term" placeholder="Search Job Title / Technology ..." />
+                        <i class="icon-search"></i>
+                    </div>
+                    <div id="search-results">
+                    </div>
+                </div>
+                <ul>
+                    <li onclick="trackContactUs();$('.invitation-container').hide();$('.contact-list').show();">Contact us</li>
+                    <li onclick="trackFeedbackOpen();$('.invitation-container').hide();$('.contact-list').hide();$('#user-pref').modal('show');">Feedback</li>
+                    <li><a id="Login" style="color: white" href="#" onclick="return UpdateLoginStatus()">Login</a></li>
+                </ul>
+                <div class="invitation-container"></div>
+            </div>
+            <div class="filter desktop-view">
+                <div class="text">Filter Jobs</div>
+                <div class="text">
+                    <input type="text" style="width: 100px" placeholder="Postal Code" id="txtPostalCode" />
+                </div>
+                <div style="margin: 7px; float: left;"><input type="button" class="btn-success" onclick="return FilterResults()" value="Filter" /></div>
+                <span class="slider-label">30 days old jobs</span><span class="icon-chevron-left"></span><div id="slider"></div>
+                <span class="icon-chevron-right"></span><span class="slider-label">Most recent jobs</span>
+                <div class="twitter">
+                    <a href="http://bit.ly/BhaariJobs" target="_blank">
+                        <img src="~/static/img/twitter.png" />
+                    </a>
+                </div>
+            </div>
+            @if (!Request.Browser.IsMobileDevice)
+            {
+                <div class="left-nav desktop-view">
+                    <ul class="nav-option-list">
+                        <li class="active-tab"><img src="~/static/img/jobs-icon.png" width="16" height="16" style="margin-right: 10px;" />Jobs</li>
+                        <li><img src="~/static/img/fav-icon.png" width="16" height="16" style="margin-right: 10px" />Favorite</li>
+
+                    </ul>
+                    <ul class="job-list">
+
+                        @foreach (var job in ViewBag.Jobs)
+                        {
+                            if (ViewBag.FirstJobUrl == job.SourceUrl)
+                            {
+                                <li cid="@job.CompanyId" jid="@job.Id" onclick="LoadJobDetailsPopup(this,'@job.Id','@job.CompanyName','@job.SourceUrl')" style="@ViewBag.FirstJobCssClass">
+                                    <a href="/jobs/job-details/government-jobs-in-@ViewBag.City/@job.JobTitle-quertyuiop-@job.SourceUrl">
+                                        <div class="job-title">@job.JobTitle</div>
+                                        <div class="company-name">@job.CompanyName  </div>
+                                        <span class="mark-fav" onclick="return SaveFav(event,'@job.JobTitle','@job.CompanyName','@job.SourceUrl',@job.Id,null,'@job.DatePosted')">
+                                            <img src="~/static/img/empty-heart.png" />
+                                        </span>
+                                    </a>
+                                </li>
+                            }
+                            else
+                            {
+                                <li cid="@job.CompanyId" jid="@job.Id" onclick="LoadJobDetailsPopup(this,'@job.Id','@job.CompanyName','@job.SourceUrl')">
+                                    <a href="/jobs/job-details/government-jobs-in-@ViewBag.City/@job.JobTitle-quertyuiop-@job.SourceUrl">
+                                        <div class="job-title">@job.JobTitle</div>
+                                        <div class="company-name">@job.CompanyName  </div>
+                                        <span class="mark-fav" onclick="return SaveFav(event,'@job.JobTitle','@job.CompanyName','@job.SourceUrl',@job.Id,null,'@job.DatePosted')">
+                                            <img src="~/static/img/empty-heart.png" />
+                                        </span>
+                                    </a>
+                                </li>
+                            }
+                        }
+                    </ul>
+                    <div class="copy">
+                        &copy; 2019. Bhaari.com
+                    </div>
+                    <span class="fav-message">Launching soon. You will be able to save your favorite jobs.</span>
+                </div>
+                <div id="JobDetails">
+                    @Html.Raw(ViewBag.JobDetails)
+                </div>
+                <div class="Loading-map desktop-view">Loading Map...</div>
+                <div id="map">
+                </div>
+                <div id="grid"></div>
+            }
+
+            @if (Request.Browser.IsMobileDevice)
+            {
+                <div class="filter mobile-view">
+                    <div class="text">
+                        <input type="text" style="width: 100px" id="txtSearchTermMobile" class="form-control search-term" placeholder="Search..." />
+                        <input type="text" style="width: 100px" placeholder="Postal Code" id="txtPostalCodeMobile" />
+                    </div>
+                    <div style="margin: 3px; float: left;"><input type="button" class="btn-success" onclick="return FilterResults()" value="Filter" /></div>
+                    <div class="view">
+                        <div id="map-view" onclick="GetMapView();"><img src="~/static/img/map-view.png" /></div>
+                        <div id="grid-view" onclick="GetJobGrid();"><img src="~/static/img/list-view.png" /></div>
+                    </div>
+                    <div class="Note"><span class="green"></span><span>Most Recent Jobs</span><span class="red"></span><span>30 days old jobs</span></div>
+                </div>
+                <div class="left-nav mobile-view">
+                    <ul class="nav-option-list">
+                        <li class="active-tab"><img src="~/static/img/jobs-icon.png" width="16" height="16" style="margin-right: 10px;" />Jobs</li>
+                        <li><img src="~/static/img/fav-icon.png" width="16" height="16" style="margin-right: 10px" />Favorite</li>
+
+                    </ul>
+                    <ul class="job-list">
+                        @foreach (var job in ViewBag.Jobs)
+                        {
+                            <li cid="@job.CompanyId" jid="@job.Id" onclick="LoadJobDetailsPopup(this,'@job.Id','@job.CompanyName','@job.SourceUrl')">
+                                <div class="job-title">@job.JobTitle</div>
+                                <div class="company-name">@job.CompanyName  </div>
+                                <span class="mark-fav" onclick="return SaveFav(event,'@job.JobTitle','@job.CompanyName','@job.SourceUrl',@job.Id,null,'@job.DatePosted')">
+                                    <img src="~/static/img/empty-heart.png" />
+                                </span>
+                            </li>
+                        }
+                    </ul>
+                    <div class="copy">
+                        &copy; 2019. Bhaari.com
+                    </div>
+                    <span class="fav-message">Launching soon. You will be able to save your favorite jobs.</span>
+                </div>
+                <div class="Loading-map mobile-view">Loading Map...</div>
+                <div id="map"></div>
+                <div id="grid"></div>
+            }
+        </div>
+        <input type="hidden" id="hfLat" value="" />
+        <input type="hidden" id="hfLong" value="" />
+        <input type="hidden" id="hfJobs" value='@Html.Raw(ViewBag.JsonJobs)' />
+    </div>
+</form>
+<script type="text/javascript">
+    if (getLocation != null && getLocation != "undefined") {
+        $("#hfLat").val(getLocation.lat);
+        $("#hfLong").val(getLocation.lon);
+    }
+
+    if (localStorage.getItem("token") == null || localStorage.getItem("token") == "") {
+        $(".desktop-view").find("#Login").each(function () { $(this).html("Login"); });
+        $(".mobile-view").find("#Login").each(function () { $(this).html("Login"); });
+    }
+    else {
+        $(".desktop-view").find("#Login").each(function () { $(this).html("Logout").attr("href", "#"); });
+        $(".mobile-view").find("#Login").each(function () { $(this).html("Logout").attr("href", "#"); });
+    }
+
+    function UpdateLoginStatus() {
+        if (localStorage.getItem("token") != "" && localStorage.getItem("token") != null) {
+            $(".desktop-view").find("#Login").each(function () { $(this).html("Login"); });
+            $(".mobile-view").find("#Login").each(function () { $(this).html("Login"); });
+            localStorage.setItem("token", "");
+            return;
+        }
+        else {
+            var url = BASE + "Home/Login?t=login"
+            window.open(url, "_blank");
+            var timer = setInterval(function () {
+                if (localStorage.getItem("token") != null && localStorage.getItem("token") != "") {
+                    $("#desktop-view").find("#Login").each(function () { $(this).html("Logout"); });
+                    $("#mobile-view").find("#Login").each(function () { $(this).html("Logout"); });
+                    clearInterval(timer);
+                }
+            }, 1000);
+        }
+    }
+
+    function getQueryStringValue(key) {
+        return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+    }
+
+    function FilterResults() {
+
+        var postalCode = $("#txtPostalCode").val();
+
+        if (isMobile) {
+            postalCode = $("#txtPostalCodeMobile").val();
+        }
+
+        if (postalCode == "") {
+            alert("Please enter postal code");
+            return;
+        }
+
+        $(".Loading,.Loading-map").show();
+        geocoder.geocode({ 'address': 'postalcode ' + postalCode }, function (results, status) {
+            if (status == 'OK') {
+                map.setCenter(results[0].geometry.location);
+                $("#hfLat").val(results[0].geometry.location.lat);
+                $("#hfLong").val(results[0].geometry.location.lng);
+
+                localStorage.setItem('Latitude', results[0].geometry.location.lat);
+                localStorage.setItem('Longitude', results[0].geometry.location.lng);
+
+                getLocation.lat = $("#hfLat").val();
+                getLocation.lon = $("#hfLong").val();
+
+                for (j = 0; j < results[0].address_components.length; j++) {
+                    if (results[0].address_components[j].types[0] == "country")
+                        getLocation.country = results[0].address_components[j].long_name;
+                    if (results[0].address_components[j].types[0] == "locality")
+                        getLocation.city = results[0].address_components[1].long_name;
+                }
+
+                $(".nav-option-list,.slimScrollDiv").remove();
+                $(".job-list").remove();
+                $("#JobDetails").html("");
+                //init();
+                RefreshMap();
+            } else {
+                alert('Geocode was not successful for the following reason: ' + status);
+            }
+        });
+
+        return false;
+    }
+
+    var part = document.location.href.split('/');
+    var searchTerm = part[part.length - 1];
+
+    $(".search-term").val(decodeURIComponent(searchTerm.replace(/-/g, " ")));
+    $("#txtSearchTermMobile").val(decodeURIComponent(searchTerm.replace(/-/g, " ")));
+
+    $(".search-term").keypress(function (e) {
+        if (e.which == 13) {
+            trackSearchEnter('default', $(".search-term").val());
+            document.location.href = BASE + "jobs/near-me/" + $(".search-term").val().replace(/ /g, "-");
+        }
+    });
+
+    google.maps.event.addDomListener(window, 'load', init);
+
+    var map, geocoder, bounds;
+    var markerList = [];
+    var dynamicId = 1;
+
+    function init() {
+        bounds = new google.maps.LatLngBounds();
+        geocoder = new google.maps.Geocoder();
+        var mapDiv = document.getElementById('map');
+        var latlng = new google.maps.LatLng($("#hfLat").val(), $("#hfLong").val());
+
+        var options = {
+            center: latlng,
+            zoom: 10,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            mapTypeControlOptions: { mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style'] },
+            disableDefaultUI: true,
+            scaleControl: true
+        };
+
+        var a = [{ featureType: "all", elementType: "all", stylers: [{ saturation: -80 }] }, { featureType: "water", elementType: "all", stylers: [{ lightness: -25 }] }, { featureType: "transit.line", stylers: [{ visibility: "off" }] }, { featureType: "administrative", stylers: [{ visibility: "simplified" }] }, { featureType: "poi", stylers: [{ visibility: "off" }] }];
+
+        var styledMap = new google.maps.StyledMapType(a, { name: "Styled Map" });
+        map = new google.maps.Map(mapDiv, options);
+
+        map.mapTypes.set('map_style', styledMap);
+        map.setMapTypeId('map_style');
+        setMarkersOnMap();
+        //GetJobs();
+    }
+
+    function parseDate(input) {
+        var parts = input.split('/');
+        return new Date(parts[0], parts[1] - 1, parts[2]);
+    }
+
+    function GetJobs() {
+        $(".Loading,.Loading-map").show();
+        var query = $(".search-term").val();
+
+        if (query == "") {
+            var part = document.location.href.split('/');
+            query = part[part.length - 1];
+        }
+
+        if (isMobile)
+            query = $("#txtSearchTermMobile").val();
+
+        query = query.substring(query.lastIndexOf(" in "));
+
+        var jobQuery = {
+            "Query": encodeURIComponent(query),
+            "City": getLocation.city,
+            "Country": getLocation.country,
+            "Latitude": "" + getLocation.lat,
+            "Longitude": "" + getLocation.lon
+        };
+        $.ajax({
+            url: BASE_URL + "search/jobs/" + query.replace(/ /g, "-"),
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(jobQuery),
+            success: function (result) {
+                $("#hfJobs").val(JSON.stringify(result));
+                $(".Loading,.Loading-map").hide();
+                setMarkersOnMap();
+                JobList();
+            }
+        });
+    }
+
+    function GetMarkerColorCode(datePosted) {
+
+        if (datePosted == undefined)
+            return ["bubble-0", "green"];
+
+        var one_day = 1000 * 60 * 60 * 24;
+        var posted;
+        if (datePosted.indexOf("Date") > -1) {
+            posted = eval(datePosted.replace(/\/Date\((\d+)\)\//gi, "new Date($1)"));
+        }
+        else {
+            posted = parseDate(datePosted).getTime();
+        }
+
+        var currentDate = new Date().getTime();
+        var difference_ms = currentDate - posted;
+        var diff = Math.round(Math.round(difference_ms / one_day) / 8);
+
+        colorCode = "bubble-" + diff;
+        var bgColor;
+        switch (diff) {
+            case 0:
+                bgColor = 'green';
+                break;
+            case 1:
+                bgColor = 'rgb(0,220,0)';
+                break;
+            case 2:
+                bgColor = 'rgb(55,215,0)';
+                break;
+            case 3:
+                bgColor = 'rgb(155,255,0)';
+                break;
+            case 4:
+                bgColor = 'rgb(255,255,0)';
+                break;
+            case 5:
+                bgColor = 'rgb(255,200,0)';
+                break;
+            case 6:
+                bgColor = 'rgb(255,100,0)';
+                break;
+            case 7:
+                bgColor = 'rgb(255,10,0)';
+                break;
+            default:
+                bgColor = 'rgb(255,10,0)';
+                break;
+        }
+
+        colorCode = [colorCode, bgColor];
+        return colorCode;
+    }
+
+    function setMarkersOnMap() {
+        var jobjson = JSON.parse($("#hfJobs").val());
+
+        /*for (var i = 0; i < jobjson.length; i++) {
+            BuildCompanyIndex(jobjson[i]);
+        }*/
+
+        for (var i = 0; i < jobjson.length; i++) {
+            GetCoordinates(jobjson[i]);
+        }
+
+        //var jList = new JobList();
+    }
+
+    function BuildCompanyIndex(details) {
+        try {
+            var loc = JSON.parse(details.location);
+
+            var isCoordFound = false;
+            var tLat, tLong;
+            for (i = 0; i < loc.length; i++) {
+                if (loc[i].Latitude != null && loc[i].Longitude != null) {
+                    locCo = new google.maps.LatLng(loc[i].Latitude, loc[i].Longitude);
+                    tLat = loc[i].Latitude;
+                    tLong = loc[i].Longitude;
+                    isCoordFound = true;
+                    break;
+                }
+            }
+
+            if (isCoordFound) {
+                var companyFound = false;
+                companyLoc.forEach(function (loc) {
+                    if (loc.Lat == tLat && loc.Long == tLong) {
+                        companyFound = true;
+                        var isCompanyAdded = false;
+                        loc.Companies.forEach(function (com) {
+                            if (com.Name == details.CompanyName && com.CompanyId == details.CompanyId) {
+                                isCompanyAdded = true;
+                            }
+                        });
+
+                        if (!isCompanyAdded) {
+                            loc.Companies.push({ "Name": details.CompanyName, "CompanyId": details.CompanyId, "CompanyLogo": details.CompanyLogo });
+                            loc.TotalCompanies += 1;
+                        }
+
+                    }
+                });
+
+                if (!companyFound)
+                    companyLoc.push({ "Companies": [{ "Name": details.CompanyName, "CompanyId": details.CompanyId, "CompanyLogo": details.CompanyLogo }], "Lat": tLat, "Long": tLong, "TotalCompanies": 1 });
+
+
+                var jobFound = false;
+                jobCount.forEach(function (job) {
+                    if (job.CompanyId == details.CompanyId && job.Name == details.CompanyName) {
+                        job.JobCount += 1;
+                        jobFound = true;
+                    }
+                });
+
+                if (!jobFound)
+                    jobCount.push({ "Name": details.CompanyName, "CompanyId": details.CompanyId, "JobCount": 1 });
+
+            }
+        } catch (e) {
+            //console.log(e);
+        }
+    }
+
+    var previous_val = '';
+    var companyLoc = [];
+    var jobCount = [];
+    var markerAddedOnLoc = [];
+    function GetCoordinates(details) {
+        try {
+            var loc = JSON.parse(details.Location);
+
+            var isCoordFound = false;
+            var locCo = null;
+            var tLat, tLong;
+
+            for (i = 0; i < loc.length; i++) {
+                if (loc[i].Latitude != null && loc[i].Longitude != null) {
+                    locCo = new google.maps.LatLng(loc[i].Latitude, loc[i].Longitude);
+                    tLat = loc[i].Latitude;
+                    tLong = loc[i].Longitude;
+                    isCoordFound = true;
+                    break;
+                }
+            }
+
+            markerAddedOnLoc.forEach(function (l) {
+                if (l.Lat == tLat && l.Long == tLong) {
+                    isCoordFound = false;
+                }
+            });
+
+            if (isCoordFound) {
+                markerAddedOnLoc.push({ "Lat": tLat, "Long": tLong });
+                GeocodeReceived(details, locCo, google.maps.GeocoderStatus.OK, false, { "Lat": tLat, "Long": tLong });
+            }
+        } catch (e) {
+            console.log(e);
+        }
+    }
+
+    function GetCompanyCount(details) {
+        var location = JSON.parse(details.Location);
+        var to = 1;
+        companyLoc.forEach(function (loc) {
+            for (i = 0; i < location.length; i++) {
+                if (loc.Lat == location[i].Latitude && loc.Long == location[i].Longitude) {
+                    to = loc.TotalCompanies;
+                }
+            }
+        });
+
+        return to;
+    }
+
+    function GetCompanyJobCount(details) {
+        var c = 1;
+        jobCount.forEach(function (job) {
+            if (job.companyId == details.CompanyId && job.name == details.CompanyName) {
+                c = job.JobCount;
+            }
+        });
+
+        return c;
+    }
+
+    var TEMP_Z = 1;
+    function GeocodeReceived(details, results, status, isCalled, location) {
+        if (status == google.maps.GeocoderStatus.OK) {
+            var loc;
+            if (isCalled)
+                loc = results[0].geometry.location;
+            else
+                loc = results;
+
+            var colorCode = GetMarkerColorCode(details.DatePosted);
+            var bubble = {
+                path: 'M 5,12 12,28 28,5 z',
+                fillColor: colorCode[1],
+                fillOpacity: 1,
+                scale: 1,
+                strokeColor: colorCode[1],
+                strokeWeight: 2,
+                optimized: false
+            };
+
+            var companyLabel = GetCompanyCount(details);
+            var jobLabel = GetCompanyJobCount(details);
+            jobLabel = jobLabel == 1 ? $.trim(details.JobTitle) : jobLabel + " Jobs";
+            companyLabel = companyLabel == 1 ? $.trim(details.CompanyName) : companyLabel + " Companies";
+
+            var marker = new MarkerWithLabel({
+                position: loc,
+                map: map,
+                icon: bubble,
+                draggable: false,
+                raiseOnDrag: false,
+                labelContent: companyLabel,
+                labelClass: "bubble " + colorCode[0], // the CSS class for the label
+                labelInBackground: true,
+                name: details.CompanyName,
+                url: details.SourceUrl,
+                address: details.Location,
+                datePosted: details.DatePosted,
+                jobId: details.Id,
+                jobTitle: jobLabel,
+                companyId: details.CompanyId,
+                optimized: false,
+                location: location
+            });
+
+            dynamicId++;
+
+            marker.setVisible(true);
+
+            markerList.push(marker);
+
+            bounds.extend(loc);
+
+            google.maps.event.addListener(marker, 'click', function (e) {
+                var isMultipleCompanies = false;
+                var term = $(".search-term").val();
+
+                if (isMobile)
+                    term = $("#txtSearchTermMobile").val();
+                $("#JobDetails").html("<div class='Loading-Job-Details'>Loading</div>");
+                companyLoc.forEach(function (loc) {
+                    if (loc.Lat == marker.location.Lat && loc.Long == marker.location.Long) {
+                        if (loc.TotalCompanies > 1) {
+
+                            trackMapMarker(loc.TotalCompanies + " Companies", term);
+                            PrepareCompanyPopup(loc.Companies);
+                            isMultipleCompanies = true;
+                        }
+                    }
+                });
+
+                if (!isMultipleCompanies) {
+                    map.panTo(marker.getPosition());
+                    var getMarkerName = this.name;
+                    var getMarkerLabelContent = this.labelContent;
+
+                    if (previous_val == '' || $(previous_val).text() != getMarkerName) {
+                        trackMapMarker(this.companyId, term);
+                        $('#information_div').html("");
+                        $("ul.job-list li").css({ "background-color": "#fff", "color": "black" });
+                        $("ul.job-list li[jid=\"" + this.jobId + "\"]").css({ "background-color": "#f0f3f7" });
+                        isMapView = true;
+                        GetJobDetails(this.jobId, this.url, this.name);
+                        trackJobDetails(this.url);
+
+                        $('div.bubble').each(function () {
+                            var getText = $(this).text();
+                            if (getText == getMarkerName || getText == getMarkerLabelContent) {
+                                previous_val = $(this);
+                                return false;
+                            }
+                        });
+                        return false;
+                    }
+
+                    $('div.bubble').each(function () {
+                        var getText = $(this).text();
+                        if (getText == getMarkerName || getText == getMarkerLabelContent) {
+                            previous_val = $(this);
+                            $(this).effect('transfer', { to: $('#information_div') }, 200, hide_info_div);
+                        }
+                    });
+                }
+            });
+
+            google.maps.event.addListener(marker, "mouseover", function (e) {
+                var label;
+                if (companyLabel.indexOf(" Companies") == -1) {
+                    label = marker.jobTitle + " at " + marker.name;
+                }
+                else {
+                    label = "Click here to view jobs at " + marker.name;
+                }
+
+                var getContent = marker.name;
+                TEMP_Z = marker.getZIndex();
+                marker.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
+                marker.setOptions({ labelContent: label });
+            });
+
+            google.maps.event.addListener(marker, "mouseout", function (e) {
+                var getContent = marker.name;
+                marker.setOptions({ labelContent: getContent });
+                marker.setZIndex(TEMP_Z);
+            });
+        }
+    }
+
+    function hide_info_div() {
+        $('#information_div').hide().html('');
+        $("ul.job-list li").css({ "background-color": "", "color": "" });
+    }
+
+    function chkPointsWithinCircle(isFirstTimeLoad) {
+        for (var i = 0; i < markerList.length; i++) {
+            markerList[i].setVisible(IsJobQualify(markerList[i]));
+        }
+    }
+
+    function wordwrap(str) {
+        var m = ((arguments.length >= 2) ? arguments[1] : 75);
+        var b = ((arguments.length >= 3) ? arguments[2] : "\n"); var c = ((arguments.length >= 4) ? arguments[3] : false);
+
+        var i, j, l, s, r;
+
+        str += '';
+        if (m < 1) {
+            return str;
+        }
+        for (i = -1, l = (r = str.split(/\r\n|\n|\r/)).length; ++i < l; r[i] += s) {
+            for (s = r[i], r[i] = ""; s.length > m; r[i] += s.slice(0, j) + ((s = s.slice(j)).length ? b : "")) {
+                j = c == 2 || (j = s.slice(0, m + 1).match(/\S*(\s)?$/))[1] ? m : j.input.length - j[0].length || c == 1 && m || j.input.length + (j = s.slice(m).match(/^\S*/)).input.length;
+            }
+        }
+        return r.join("\n");
+    }
+
+    function PrepareGetInvitationList() {
+        var container = $("<div/>").addClass("invite-list");
+        var invite = "<div><h3>Try our platform early.</h3></div>" +
+            "<div class=\"user-name\"><input type=\"text\" id=\"txtUserName\" placeholder=\"First Name\" autocomplete=\"off\" /></div>" +
+            "<div class=\"email-address\"><input type=\"text\" id=\"txtEmail\" placeholder=\"Email Address\" autocomplete=\"off\" /></div>" +
+            "<div class=\"btn btn-primary\" style=\"float: left;\" onclick=\"GetInvitation();\">Get Invitation</div><div class=\"btn\" style=\"margin-left: 10px; width: 50px !important\" onclick=\"$('.invitation-container').hide();\">Close</div><div id=\"invite-error\"></div><div id=\"invite-success\">You have successfully applied to get an invitation. We will get back to you soon.</div>";
+
+        $(".invitation-container").append($(container).append(invite));
+    }
+
+    function PrepareCreditsList() {
+        var container = $("<div/>").addClass("credit-list");
+        var credits = "<div><h6>Credits:</h6></div>" +
+            "<div class=\"user-name\"><a href=\"\">Kunal Cholera</a>, <a href=\"\">Matthew Shoup</a>, <a href=\"\">Ashish Bhangale</a> & <a href=\"\">Gaurav Shah</a> for their valuable advice while building Bhaari.com<br/></div>" +
+            "<div class=\"email-address\"><br/>We are also thankful to: <a href=\"\">Google Maps</a>, <a href=\"\">Indeed</a>, <a href=\"\">AngelList</a>, <a href=\"\">LinkedIn</a> & <a href=\"\">Glassdoor</a> for providing an access to their APIs.</div>" +
+            "<div class=\"btn\" style=\"width: 50px !important\" onclick=\"$('.credit-container').hide();\">Close</div>";
+
+        $(".credit-container").append($(container).append(credits));
+    }
+
+    function PrepareAboutus() {
+        var container = $("<div/>").addClass("about-list");
+        var credits = "<div><h6>About us:</h6></div>" +
+            "<div class=\"user-name\">We (<a href=\"\">Viren</a> & <a href=\"\">Hrishikesh</a>) were running a small web development company. Our teammates were spending 3 hours daily in traveling. Hence we decided to recruit people who stays near our office. <br/><br/>Now how could we know - who stays near our office and looking for a job?<br/>" +
+            "<div class=\"btn\" style=\"width: 50px !important\" onclick=\"$('.about-container').hide();\">Close</div>";
+
+        $(".about-container").append($(container).append(credits));
+    }
+
+    new UserPreferences();
+    new Contact();
+    PrepareGetInvitationList();
+
+    $("#slider").slider({
+        range: true,
+        values: [0, 100],
+        change: function (event, ui) {
+
+        },
+        stop: function (event, ui) {
+            var values = $(this).slider("option", "values");
+            var l = Math.round(values[0] * 0.60);
+            var h = Math.round(values[1] * 0.60);
+
+            var count = 0;
+            $("#slider .ui-slider-handle").each(function () {
+
+                if (count % 2 == 0)
+                    $(this).attr("title", 60 - l + " days old jobs");
+                else {
+                    var msg = h == 60 ? "Most recent jobs" : 60 - h + " days old jobs";
+                    $(this).attr("title", msg);
+                }
+                count++;
+            });
+
+            chkPointsWithinCircle();
+        }
+    });
+
+    var counter = 0;
+    $(".ui-slider-handle").each(function () {
+        if (counter % 2 == 0) {
+            $(this).attr("title", "30 days old jobs").addClass("icon-arrow-left");
+        }
+        else {
+            $(this).attr("title", "Most recent jobs").addClass("icon-arrow-right");
+        }
+        counter++;
+    });
+</script>

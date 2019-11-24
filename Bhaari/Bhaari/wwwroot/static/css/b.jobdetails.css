@@ -1,0 +1,121 @@
+﻿/* Job Details Popup */
+#header-container {
+    float: left;
+    width: 98%;
+    border-bottom: 1px solid #CCC;
+}
+
+.company-logo {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    max-height: 50px;
+}
+
+.company-name {
+    float: left;
+    margin-right: 1%;
+    font-size: 18px;
+    font-family: Segoe UI Light;
+    width: 75%;
+}
+
+.company-address {
+    float: left;
+    font-size: 9px;
+    margin-right: 1%;
+    width: 65%;
+}
+
+.job-title, .job-category {
+    float: left;
+    width: 70%;
+    font-size: 13px;
+    font-family: Segoe UI;
+    font-weight: bold;
+}
+#job-container{
+    float: left;
+}
+#job-container .job-title {
+    color: white;
+    background-color: rgb(50, 153, 187);
+    width: 96%;
+    padding: 5px;
+}
+.close-job-details{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    position: fixed;
+    z-index: 111;
+    top: 50px;
+    right: 5px;
+    padding: 10px;
+}
+.job-desc {
+    float: left;
+    width: 100%;
+    overflow-y: scroll;
+    font-family: Segoe UI;
+    font-size: 12px;
+}
+
+    .job-desc h2,.job-desc h3 {
+        font-size: 12px !important;
+    }
+
+.job-category {
+    padding-bottom: 10px;
+    border-top: 1px solid #CCC;
+    width: 97%;
+}
+
+.job-source {
+    float: left;
+    width: 100%;
+    margin-bottom: 2%;
+    font-size: 11px;
+    position: absolute;
+    bottom: 0px;
+    
+}
+
+.job-source-url {
+    cursor: pointer;
+}
+
+.job-apply {
+    float: right;
+    margin-right: 15px;
+    cursor: pointer;
+    color: White;
+    width: 100px;
+    font-size: 14px;
+    padding: 5px;
+    text-align: center;
+}
+
+.job-container {
+    float: left;
+    padding-top: 10px;
+}
+
+.slimScrollBar {
+    border-radius: 0px !important;
+    background-color: rgb(50, 153, 187) !important;
+}
+
+.load-jobs {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+.Loading-Job-Details {
+    position: absolute;
+    top: 40px;
+    left: 30%;
+    background-color: #FFCC00;
+    padding: 5px;
+    z-index: 11;
+}

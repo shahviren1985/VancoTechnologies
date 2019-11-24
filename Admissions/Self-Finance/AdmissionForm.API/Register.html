@@ -1,0 +1,1367 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SVT- SELF FINANCED PROGRAMS ADMISSION FORM</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/svt-icon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/svt-icon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/svt-icon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/svt-icon-57.png">
+
+    <style>
+        .ui-datepicker {
+            width: 20em;
+            padding: .2em .2em 0;
+            display: none;
+        }
+
+        td {
+            text-align: left;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">SVT- SELF FINANCED PROGRAMS ADMISSION FORM</a>
+            </div>
+            <div class="collapse navbar-collapse" id="top-navbar-1">
+                <h1>  <strong>SVT</strong> - SELF FINANCED PROGRAMS ADMISSION FORM</h1>
+            </div>
+        </div>
+    </nav>
+
+    <div class="top-content">
+        <div class="container">
+
+            <div class="dialog-background" style="display:none;">
+                <div class="dialog-loading-wrapper">
+                    <img src="assets/ico/ajax-loading.gif" title='Loading.....' />
+                </div>
+            </div>
+
+            <div class="row" id="divMain">
+                <div class="col-sm-12 col-sm-offset-0 col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0 form-box">
+                    <form role="form" action="api/form" method="post" enctype="multipart/form-data" class="f1" id="admissionFormData" name="admissionFormData">
+
+                        <div id="divMenu">
+                            <ul class="remove-ul-bullet-icon">
+                                <li class="li-font-set">
+                                    <a href="index.html" style="color: #000000">Home</a> > <span style="color:red"> New Admission Form</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="f1-steps">
+                            <div class="f1-progress">
+                                <div class="f1-progress-line" data-now-value="0" data-number-of-steps="5" style="width: 0%;"></div>
+                            </div>
+                            <div class="f1-step" id="divStep1">
+                                <div class="f1-step-icon">
+                                    <i class="fa fa-user"></i>
+                                </div>
+                                <p>Personal Details</p>
+                            </div>
+
+                            <div class="f1-step" id="divStep2">
+                                <div class="f1-step-icon"><i class="fa fa-bank"></i></div>
+                                <p>Bank Details</p>
+                            </div>
+
+                            <div class="f1-step" id="divStep3">
+                                <div class="f1-step-icon"><i class="fa fa-upload"></i></div>
+                                <p>Documents Upload</p>
+                            </div>
+                            <div class="f1-step" id="divStep4">
+                                <div class="f1-step-icon"><i class="fa fa-graduation-cap"></i></div>
+                                <p>Education Details </p>
+                            </div>
+                            <div class="f1-step" id="divStep5">
+                                <div class="f1-step-icon"><i class="fa fa-info"></i></div>
+                                <p>Other Details </p>
+                            </div>
+
+                        </div>
+
+                        <div id="form-detail">
+                            <input id="id" name="id" type="hidden" />
+
+                            <fieldset id="fieldset_1">
+                                <h4>Personal Details</h4>
+
+                                <div class="form-detail">
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label for="CourseName" class="control-label">Course</label>
+                                                <select name="CourseName" id="CourseName" class="form-control input-group-lg validate-input mandatory">
+                                                    <option value="">Select Course</option>
+                                                    <option value="MASTERS IN SPECIALIZED DEITETICS">Masters in Specialized Deitetics</option>
+                                                    <option value="MASTERS IN FASHION DESIGN">Masters in Fashion Design</option>
+                                                    <option value="DIPLOMA IN FASHION DESIGN">Diploma in Fashion Design</option>
+                                                    <option value="CERTIFICATE AND DIPLOMA IN COMPUTER AIDED INTERIOR DESIGN MANAGEMENT">Certificate and Diploma in Computer Aided Interior Design Management</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <br />
+                                        <h3 class="add-info">Personal Information</h3>
+                                        <label class="control-label">Name of the Student</label>
+                                        <div class="form-group">
+                                            <div class="col-sm-4">
+                                                <label for="LastName" class="sr-only">Last Name</label>
+                                                <input id="LastName" class="form-control input-group-lg validate-input mandatory" type="text" name="LastName" title="Last Name" placeholder="Last Name" maxlength="100">
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label for="FirstName" class="sr-only">First Name</label>
+                                                <input id="FirstName" class="form-control input-group-lg validate-input mandatory" type="text" name="FirstName" title="First Name" placeholder="First Name" maxlength="100">
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label for="FatherhusbandsName" class="sr-only">Father / husbands Name</label>
+                                                <input id="FatherName" class="form-control input-group-lg validate-input mandatory" type="text" name="FatherName" title="Father / husband Name" placeholder="Father / husband Name" maxlength="100">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label class="control-label">Father / husband Full Name</label>
+                                        <div class="form-group">
+                                            <div class="col-sm-4">
+                                                <label for="FatherLastName" class="sr-only">Father / husband Last Name</label>
+                                                <input id="FatherLastName" class="form-control input-group-lg validate-input" type="text" name="FatherLastName" title="Father / husband Last Name" placeholder="Father / husband Last Name" maxlength="100">
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label for="FatherFirstName" class="sr-only">Father / husband First Name</label>
+                                                <input id="FatherFirstName" class="form-control input-group-lg validate-input" type="text" name="FatherFirstName" title="Father / husband First Name" placeholder="Father / husband First Name" maxlength="100">
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label for="FatherMiddleName" class="sr-only">Father / husband Middle Name</label>
+                                                <input id="FatherMiddleName" class="form-control input-group-lg validate-input" type="text" name="FatherMiddleName" title="Father / husband Middle Name" placeholder="Father / husband Middle Name" maxlength="100">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label class="control-label">Mother Full Name</label>
+                                        <div class="form-group">
+                                            <div class="col-sm-4">
+                                                <label for="MotherLastName" class="sr-only">Mother Last Name</label>
+                                                <input id="MotherLastName" class="form-control input-group-lg validate-input" type="text" name="MotherLastName" title="Mother Last Name" placeholder="Mother Last Name" maxlength="100">
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label for="MotherFirstName" class="sr-only">Mother First Name</label>
+                                                <input id="MotherFirstName" class="form-control input-group-lg validate-input" type="text" name="MotherFirstName" title="Mother First Name" placeholder="Mother First Name" maxlength="100">
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label for="MotherMiddleName" class="sr-only">Mother Middle Name</label>
+                                                <input id="MotherMiddleName" class="form-control input-group-lg validate-input" type="text" name="MotherMiddleName" title="Mother Middle Name" placeholder="Mother Middle Name" maxlength="100">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <br />
+                                            <h3 class="add-info">Identity Details</h3>
+                                            <div class="col-md-6">
+                                                <label for="Aadhar Card Number" class="control-label">Aadhar Card Number</label>
+                                                <input id="AadharNumber" class="form-control input-group-lg validate-input mandatory" type="text" name="AadharNumber" title="Aadhar Card Number" placeholder="Aadhar Card Number" maxlength="12" minlength="12"
+                                                       onblur="return CheckExistorNotAddharNumberNo(this);" onkeypress="    return BlockNonNumbers(this, event, true, false);">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label for="PAN Card Number" class="control-label">PAN Card Number</label>
+                                                <input id="PANNumber" class="form-control input-group-lg  " type="text" name="PANNumber" title="PAN Card Number" placeholder="PAN Card Number" maxlength="10">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Date of birth</label>
+                                                <div class="form-group internal input-group">
+                                                    <input name="txtBirthDate" type="text" id="txtBirthDate" readonly="readonly" class="form-control input-group-lg validate-input" style="background-color: white; ">
+                                                    <span class='input-group-addon' id="btnBirthDate">
+                                                        <i class='glyphicon glyphicon-calendar'></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Age (as on 1st June 2018)</label>
+                                                <input name="CalculatedAge" type="text" id="CalculatedAge" placeholder="Calculated Age" class="form-control input-group-lg" maxlength="2" readonly
+                                                       onblur="return ExtractNumber(this,0,false);" onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Nationality</label>
+                                                <input name="Nationality" type="text" id="Nationality" placeholder="Nationality" class="form-control input-group-lg validate-input" maxlength="100">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Mother Tongue</label>
+                                                <input name="MotherTongue" type="text" id="MotherTongue" placeholder="Mother Tongue" class="form-control input-group-lg validate-input" maxlength="100">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <br />
+                                            <h3 class="add-info">Religion/Caste Details</h3>
+                                            <div class="col-md-6">
+                                                <label class="control-label">Religion </label>
+                                                <select name="Religion" id="Religion" class="form-control input-group-lg validate-input">
+                                                    <option value="">Select</option>
+                                                    <option value="BUDDHIST">Buddhist</option>
+                                                    <option value="CHRISTIAN">Christian</option>
+                                                    <option value="HINDU">Hindu</option>
+                                                    <option value="JAIN">Jain</option>
+                                                    <option value="MUSLIM">Muslim</option>
+                                                    <option value="OTHER">Other</option>
+                                                    <option value="PARSI">Parsi</option>
+                                                    <option value="SIKH">Sikh</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Category </label>
+                                                <div style="height:40px;">
+                                                    <input type="radio" id="category1" name="Category" value="OPEN">
+                                                    <label for="Open" class="control-label">Open</label>&nbsp;&nbsp;
+                                                    <input type="radio" id="category2" name="Category" value="RESERVED">
+                                                    <label for="Reserved" class="control-label">Reserved</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12" id="divReservedCategory" style="display:none;">
+                                        <div class="form-group">
+                                            <h5 class="control-label add-info">Additional Documentation Required</h5>
+                                            <div class="col-md-6">
+                                                <label class="control-label">Reservation Category </label>
+                                                <select class="form-control" name="Caste" id="Caste">
+                                                    <option value="">Select</option>
+                                                    <option value="BC">BC</option>
+                                                    <option value="OBC">OBC</option>
+                                                    <option value="SC">SC</option>
+                                                    <option value="ST">ST</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="control-label">Sub-Caste </label>
+                                                <input id="SubCaste" class="form-control input-group-lg " type="text" name="SubCaste" title="Sub Caste" placeholder="Sub Caste" maxlength="50">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <br />
+                                            <h3 class="add-info">Contact Details</h3>
+                                            <div class="col-md-6">
+                                                <label class="control-label">Correspondence Address / Temporary Address</label>
+                                                <textarea rows="4" name="CurrentAddress" maxlength="500" id="CurrentAddress" placeholder="Correspondence Address / Temporary Address" class="form-control input-group-lg validate-input"></textarea>
+                                                <input type="checkbox" id="chkSamepermanentaddress" name="Samepermanentaddress">
+                                                <label for="Samepermanentaddress">Same permanent address</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Permanent Address</label>
+                                                <textarea rows="4" name="PermanentAddress" placeholder="Permanent Address" id="PermanentAddress" maxlength="500" class="form-control input-group-lg validate-input"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Contact No.(Residential)</label>
+                                                <input type="text" placeholder="Contact No.(Residential)" id="ResContactNo" name="ResContactNo" class="form-control input-group-lg validate-input" maxlength="15" minlength="10"
+                                                       onblur="return ExtractNumber(this,0,false);" onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Mobile</label>
+                                                <input type="text" placeholder="Mobile" id="MobileNumber" name="MobileNumber" class="form-control input-group-lg validate-input" maxlength="11" minlength="10"
+                                                       onblur="return ExtractNumber(this,0,false);" onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Email Address</label>
+                                                <input type="text" placeholder="Email Address" id="Email" name="Email" class="form-control input-group-lg validate-input" maxlength="100">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <br />
+                                            <h3 class="add-info">Guardian Details</h3>
+                                            <div class="col-md-6">
+                                                <label class="control-label">Mother's Name</label>
+                                                <input name="GuardianMotherName" placeholder="Mother's Name" type="text" id="GuardianMotherName" class="form-control input-group-lg guardian" maxlength="100">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="control-label">Father's Name</label>
+                                                <input name="GuardianFatherName" placeholder="Father's Name" type="text" id="GuardianFatherName" class="form-control input-group-lg guardian" maxlength="100">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Occupation of Mother</label>
+                                                <input name="OccupationofMother" placeholder="Occupation of Mother" type="text" id="OccupationofMother" class="form-control input-group-lg" maxlength="100">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="control-label">Occupation of Father</label>
+                                                <input name="OccupationofFather" placeholder="Occupation of Father" type="text" id="OccupationofFather" class="form-control input-group-lg" maxlength="100">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Education of Mother</label>
+                                                <input name="EducationofMother" placeholder="Education of Mother" type="text" id="EducationofMother" class="form-control input-group-lg" maxlength="100">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="control-label">Education of Father</label>
+                                                <input name="EducationofFather" placeholder="Education of Father" type="text" id="EducationofFather" class="form-control input-group-lg" maxlength="100">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label class="control-label">Guardian Address</label>
+                                                <textarea rows="4" name="GuardianAddress" placeholder="Guardian Address" id="GuardianAddress" maxlength="500" class="form-control input-group-lg  guardian"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label class="control-label">Annual Income</label>
+                                                <input name="AnnualIncome" placeholder="Annual Income" type="text" id="AnnualIncome" class="form-control input-group-lg guardian" maxlength="20"
+                                                       onblur="return ExtractNumber(this,0,false);" onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-4">
+                                                <label class="control-label">Tel. No.(Res)</label>
+                                                <input name="GuardianTelephoneNo" placeholder="Tel. No.(Res)" type="text" id="GuardianTelephoneNo" class="form-control input-group-lg " maxlength="12" onblur="return ExtractNumber(this,0,false);" onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="control-label">(Off)</label>
+                                                <input name="GuardianOffice" placeholder="office" type="text" id="GuardianOffice" class="form-control input-group-lg" maxlength="20" minlength="10" onblur="return ExtractNumber(this,0,false);" onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="control-label">Mobile</label>
+                                                <input name="GuardianMobile" placeholder="Mobile" type="text" id="GuardianMobile" class="form-control input-group-lg" maxlength="20" minlength="10" onblur="return ExtractNumber(this,0,false);" onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label class="control-label">Emergency Conact No</label>
+                                                <input name="GuardianEmergencyConactNo" placeholder="Emergency Conact No" type="text" id="GuardianEmergencyConactNo" class="form-control input-group-lg guardian" maxlength="20" minlength="10" onblur="return ExtractNumber(this,0,false);" onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label class="control-label">Email</label>
+                                                <input name="GuardianEmail" placeholder="Guardian Email" type="text" id="GuardianEmail" class="form-control input-group-lg" maxlength="100">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label class="control-label">Native Place Address(For availing travel concession)</label>
+                                                <input name="NativePlaceAddress" placeholder="Native Place Address" type="text" id="NativePlaceAddress" class="form-control input-group-lg" maxlength="100">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <br />
+                                            <h3 class="add-info">Work Experience</h3>
+                                            <div class="col-md-6">
+                                                <label class="control-label">Name of Organisation</label>
+                                                <input name="OrganisationName" placeholder="Organisation Name" type="text" id="OrganisationName" class="form-control input-group-lg" maxlength="100">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="control-label">Designation</label>
+                                                <input name="Designation" placeholder="Designation" type="text" id="Designation" class="form-control input-group-lg" maxlength="100">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label class="control-label">Experience(Y/M)</label>
+                                        <div class="form-group">
+                                            <div class="col-sm-6">
+                                                <label for="FatherLastName" class="sr-only">Year</label>
+                                                <input name="TotalExperienceInYear" placeholder="Year" type="text" id="TotalExperienceInYear" class="form-control input-group-lg " maxlength="4"
+                                                       onblur="return ExtractNumber(this,0,false);" onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label for="FatherFirstName" class="sr-only">Month</label>
+                                                <input name="TotalExperienceInMonth" placeholder="Month" type="text" id="TotalExperienceInMonth" class="form-control input-group-lg" maxlength="2"
+                                                       onblur="return ExtractNumber(this,0,false);" onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_2">
+                                <h4>Bank Details</h4>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="col-md-6">
+                                            <label class="control-label">Bank Name</label>
+                                            <input name="BankName" placeholder="Bank Name" type="text" id="BankName" class="form-control input-group-lg validate-input" maxlength="100">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="control-label">Bank Address</label>
+                                            <input name="BankAddress" placeholder="Bank Address" type="text" id="BankAddress" class="form-control input-group-lg validate-input" maxlength="100">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="col-md-6">
+                                            <label class="control-label">Bank Account Number</label>
+                                            <input name="BankAccountNumber" placeholder="Bank Account Number" type="text" id="BankAccountNumber" class="form-control input-group-lg validate-input" maxlength="18"
+                                                   onblur="return ExtractNumber(this,0,false);" onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="control-label">Account Type</label>
+                                            <input name="AccountType" placeholder="Account Type" type="text" id="AccountType" class="form-control input-group-lg validate-input" maxlength="20">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="col-md-6">
+                                            <label class="control-label">IFSC Code</label>
+                                            <input name="IFSCCode" placeholder="IFSC Code" type="text" id="IFSCCode" class="form-control input-group-lg validate-input" maxlength="11">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="control-label">MICR Number</label>
+                                            <input name="MICRNumber" placeholder="MICR Number" type="text" id="MICRNumber" class="form-control input-group-lg " maxlength="14">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </fieldset>
+
+                            <fieldset id="fieldset_3">
+                                <h4>Documents Upload</h4>
+                                <div class="form-detail">
+                                    <div class="col-md-12">
+                                        <div class="col-md-6">
+                                            <label>Photograph</label>
+                                            <div><input type="file" name="fileDp" id="fileDp" class="input-group-lg validate-input"></div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <img id="photo" src="#" style="display:none; width:100px" alt="Photograph">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 padding-top-10px">
+                                        <p><i>Please upload your passport size photograph. Photo should be of size 15 cm * 15 cm. Make sure your photograph size does not exceed 500KB.</i></p>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="col-md-6">
+                                            <label>Signature</label>
+                                            <div>
+                                                <input type="file" name="filesignature" id="filesignature" class="input-group-lg validate-input">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <img id="photoSignature" src="#" alt="Signature" style=" display: none; width: 100px">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="col-md-6">
+                                            <label>Parent Signature</label>
+                                            <div>
+                                                <input type="file" name="filesignatureparent" id="filesignatureparent" class="input-group-lg validate-input">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <img id="photoSignatureParent" src="#" alt="Parent Signature" style=" display: none; width: 100px">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12 padding-top-10px">
+                                        <p><i>Please upload your signature. Signature image should be of size 15 cm * 15 cm. Make sure your signature image size does not exceed 500KB.</i></p>
+                                    </div>
+
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <div id="fileDpError" style="display:none;" class="alert alert-danger"><strong>Please!</strong> select valid photo file as per the description.</div>
+                                <div id="filesignatureError" style="display:none;" class="alert alert-danger"><strong>Please!</strong> select valid signature file as per the description.</div>
+                            </fieldset>
+
+                            <fieldset id="fieldset_4">
+                                <h4>Education Details</h4>
+                                <div class="form-detail">
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label class="control-label">where  are you student of SVT Jr. College / Senior College (BSc.Home Science)</label>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" id="YES" name="isSvt" value="YES">
+                                                <label for="YES" class="control-label">YES</label>&nbsp;&nbsp;
+                                                <input type="radio" id="No" name="isSvt" value="No">
+                                                <label for="No" class="control-label">NO</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12" id="DivIsSvtSpecification" style="display:none">
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <input type="radio" id="JuniorCollege" name="IsSvtKnowRefrence" value="Junior College">
+                                                <label for="JuniorCollege" class="control-label">Junior College</label>&nbsp;&nbsp;
+                                                <input type="radio" id="SeniorCollege" name="IsSvtKnowRefrence" value="Senior College">
+                                                <label for="SeniorCollege" class="control-label">Senior College</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+
+                                            <div class="col-md-6">
+                                                <label class="control-label">How did you get to know about the Master/Diploma/Certificate Courses</label>
+                                                <select class="form-control input-group-lg validate-input" name="KnowAboutCourse" id="KnowAboutCourse">
+                                                    <option value="">Select</option>
+                                                    <option value="ACADEMIC EXHIBITION">Academic Exhibition</option>
+                                                    <option value="VISIT TO COLLEGE">Visit to College</option>
+                                                    <option value="COLLEGE WEBSITE">College Website</option>
+                                                    <option value="TELEPHONE">TelePhone</option>
+                                                    <option value="NEWS PAPER">News Paper</option>
+                                                    <option value="ANY OTHER">Any Other</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-md-6" id="pleaseSpecify" style="display:none">
+                                                <label class="control-label">Please Specify</label>
+                                                <input id="OtherSpecifyHowYouknowCourses" class="form-control input-group-lg validate-input" type="text" name="OtherSpecifyHowYouknowCourses" title="How did you get to know about that?" placeholder="How did you get to know about the Master/Diploma/Certificate Courses" maxlength="150">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <br />
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <table class="table">
+                                                    <thead class="thead-dark" style="background-color:#9d9d9d;color:#ffffff">
+                                                        <tr>
+                                                            <th scope="col">Examination</th>
+                                                            <th scope="col">Year of Passing</th>
+                                                            <th scope="col">Name of the School/College</th>
+                                                            <th scope="col">Medium of Instruction English/Hindi</th>
+                                                            <th scope="col">Name of Board</th>
+                                                            <th scope="col">Total %</th>
+                                                            <th scope="col">Grade</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody class="validatemaontwo">
+                                                        <tr class="pg">
+                                                            <th scope="row">PG DIPLOMA</th>
+                                                            <td><input id="PGYearofPassing" name="PGYearofPassing" class="form-control input-group-lg pgerr" type="text" maxlength="4" onblur="return ExtractNumber(this,0,false);" onkeypress="return BlockNonNumbers(this, event, true, false);"></td>
+                                                            <td><input id="PGSchoolName" name="PGSchoolName" class="form-control input-group-lg pgerr" type="text" maxlength="50"></td>
+                                                            <td><input id="PGMedium" name="PGMedium" class="form-control input-group-lg pgerr" type="text" maxlength="50"></td>
+                                                            <td><input id="PGBoardName" name="PGBoardName" class="form-control input-group-lg pgerr" type="text" maxlength="50"></td>
+                                                            <td><input id="PGTotalPercent" name="PGTotalPercent" class="form-control input-group-lg pgerr" type="text" maxlength="3" onblur="return ValidatePer(this);" onkeypress="return BlockNonNumbers(this, event, true, false);"></td>
+                                                            <td><input id="PGGrade" name="PGGrade" class="form-control input-group-lg" type="text" maxlength="10"></td>
+                                                        </tr>
+                                                        <tr class="bachelor">
+                                                            <th scope="row">
+                                                                <select class="form-control input-group-lg" name="ExaminationType" id="ExaminationType">
+                                                                    <option value="">Select Bachelors</option>
+                                                                    <!--<option value="TY B.Sc">TY B.Sc</option>-->
+                                                                    <option value="FOOD NUTRITION AND DIETETICS">Food Nutrition and Dietetics</option>
+                                                                    <option value="APPLIED NUTRITION">Applied Nutrition</option>
+                                                                    <option value="OTHER">Other</option>
+                                                                </select>
+                                                                <br />
+                                                                <input id="OtherExaminationType" name="OtherExaminationType" class="form-control input-group-lg" style="display:none" type="text" maxlength="50">
+                                                            </th>
+                                                            <td><input id="BachelorYearofPassing" name="BachelorYearofPassing" class="form-control input-group-lg err1" type="text" maxlength="4" onblur="return ExtractNumber(this,0,false);" onkeypress="return BlockNonNumbers(this, event, true, false);"></td>
+                                                            <td><input id="BachelorSchoolName" name="BachelorSchoolName" class="form-control input-group-lg err1" type="text" maxlength="50"></td>
+                                                            <td><input id="BachelorMedium" name="BachelorMedium" class="form-control input-group-lg err1" type="text" maxlength="50"></td>
+                                                            <td><input id="BachelorBoardName" name="BachelorBoardName" class="form-control input-group-lg err1" type="text" maxlength="50"></td>
+                                                            <td><input id="BachelorTotalPercent" name="BachelorTotalPercent" class="form-control input-group-lg err1" type="text" maxlength="3" onblur="return ValidatePer(this);" onkeypress="return BlockNonNumbers(this, event, true, false);"></td>
+                                                            <td><input id="BachelorGrade" name="BachelorGrade" class="form-control input-group-lg" type="text" maxlength="10"></td>
+                                                        </tr>
+                                                        <tr class="hsc">
+                                                            <th scope="row">H.S.C.</th>
+                                                            <td><input id="HscYearofPassing" name="HscYearofPassing" class="form-control input-group-lg err1 err2" type="text" maxlength="4" onblur="return ExtractNumber(this, 0, false);" onkeypress="return BlockNonNumbers(this, event, true, false);"></td>
+                                                            <td><input id="HscSchoolName" name="HscSchoolName" class="form-control input-group-lg err1 err2" type="text" maxlength="50"></td>
+                                                            <td><input id="HscMedium" name="HscMedium" class="form-control input-group-lg err1 err2" type="text" maxlength="50"></td>
+                                                            <td><input id="HscBoardName" name="HscBoardName" class="form-control input-group-lg err1 err2" type="text" maxlength="50"></td>
+                                                            <td><input id="HscTotalPercent" name="HscTotalPercent" class="form-control input-group-lg err1 err2" type="text" maxlength="3" onblur="return ValidatePer(this);" onkeypress="return BlockNonNumbers(this, event, true, false);"></td>
+                                                            <td><input id="HscGrade" name="HscGrade" class="form-control input-group-lg" type="text" maxlength="10"></td>
+                                                        </tr>
+                                                        <tr class="ssc">
+                                                            <th scope="row">S.S.C.</th>
+                                                            <td><input id="SscYearofPassing" name="SscYearofPassing" class="form-control input-group-lg err1 err2 err3" type="text" maxlength="4" onblur="return ExtractNumber(this,0,false);" onkeypress="return BlockNonNumbers(this, event, true, false);"></td>
+                                                            <td><input id="SscSchoolName" name="SscSchoolName" class="form-control input-group-lg err1 err2 err3" type="text" maxlength="50"></td>
+                                                            <td><input id="SscMedium" name="SscMedium" class="form-control input-group-lg err1 err2 err3" type="text" maxlength="50"></td>
+                                                            <td><input id="SscBoardName" name="SscBoardName" class="form-control input-group-lg err1 err2 err3" type="text" maxlength="50"></td>
+                                                            <td><input id="SscTotalPercent" name="SscTotalPercent" class="form-control input-group-lg err1 err2 err3" type="text" maxlength="3" onblur="return ValidatePer(this);" onkeypress="return BlockNonNumbers(this, event, true, false);"></td>
+                                                            <td><input id="SscGrade" name="SscGrade" class="form-control input-group-lg" type="text" maxlength="10"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </fieldset>
+
+                            <fieldset id="fieldset_5">
+                                <h4>Other Details</h4>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label class="control-label">Hobbies or special interests</label>
+                                            <input name="HobbiesOrSpecailInterest" placeholder="Hobbies or special interests" type="text" id="HobbiesOrSpecailInterest" class="form-control input-group-lg validate-input" maxlength="200">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label class="control-label">Honor /Prizes won at School / College (Submit Copie of Certificate) </label>
+                                            <input name="HonorPrizeName" placeholder="Honor /Prizes won at School / College" type="text" id="HonorPrizeName" class="form-control input-group-lg" maxlength="200">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label class="control-label">Note</label>
+                                            <textarea rows="4" name="Note" placeholder="Note" id="Note" class="form-control input-group-lg "></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--<div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <label class="control-label">Declaration</label>
+                                            <p>I certify thati wil be abide by the rules and regulation of the college.</p>
+                                        </div>
+                                    </div>
+                                </div>-->
+
+                            </fieldset>
+
+                            <fieldset>
+                                <br />
+                                <div class="col-md-8">
+                                    <div id="ErrorMessage" class="hidden alert alert-danger"></div>
+                                    <div id="SuccessMessage" class="hidden alert alert-success"></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group f1-buttons">
+                                        <button type="button" id="btnSave" onclick="return SaveData(this, 0)" data-post="api/form/PostFormData" class="btn btn-info">Save</button>
+                                        <button type="button" name="button" id="submitBtn" data-toggle="modal" data-target="#confirm-submit" class="btn btn-next">Save & Submit</button>
+
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <input type="hidden" id="isSubmit" name="isSubmit" />
+                        <input type="hidden" id="hdnPhoto" name="hdnPhoto" />
+                        <input type="hidden" id="hdnSignature" name="hdnSignature" />
+                        <input type="hidden" id="hdnParentSignature" name="hdnParentSignature" />
+                        <button type="button" style="display:none" name="button" id="btnSubmitconfirm" data-toggle="modal" data-target="#confirm-submit-message" class="btn btn-next">Confirm Popup</button>
+                        <button type="button" style="display:none" name="button" id="btnSaveAndSubmitconfirm" data-toggle="modal" data-target="#confirm-save-submit-message" class="btn btn-next">Submit Confirm Popup</button>
+                        <button type="button" style="display:none" name="button" id="btnAadharCardconfirm" data-toggle="modal" data-target="#confirm-aadharcard-message" class="btn btn-next">Confirm Aadhar Popup</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row" id="divViewPdf">
+                <div class="col-sm-12 col-sm-offset-0 col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0 form-box">
+                    <form role="form" action="" method="post" class="f1" name="studentDetail">
+                        <div>
+                            <ul class="remove-ul-bullet-icon">
+                                <li class="li-font-set">
+                                    <a href="index.html" style="color: #000000">Home</a> > <span style="color:red"> New Admission Form</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="form-detail">
+                            <fieldset>
+                                <div class="form-detail">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-sm-12" style="padding-top: 34px;">
+                                                <div class='embed-responsive' style='padding-bottom:150%;'>
+                                                    <object id="viewPdf" type='application/pdf' width='100%' height='100%'></object>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="confirm-submit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="width:1000px">
+            <div class="modal-content">
+                <div class="modal-header" style="text-align:left;font-weight:500">
+                    Confirm Submit
+                </div>
+                <div class="modal-body" style="text-align:left">
+                    <p>When you click submit you application you can not modify the appliction.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-next" data-dismiss="modal">Cancel</button>
+                    <button id="submitFromPopup" type="button" onclick="return SubmitButton(this,1)" data-post="api/form/PostFormData" class="btn btn-info">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="confirm-submit-message" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" id="divMsg" style="text-align:left">
+                </div>
+                <input type="hidden" id="modelUrlValue" name="modelUrlValue">
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" id="btnClose">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="confirm-save-submit-message" tabindex=" -1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="width:500px">
+            <div class="modal-content">
+                <div class="modal-body" style="font-size: 14px; font-weight: 500;">
+                    <div class="modal-body" id="divSuccessMsg" style="text-align:left">
+                    </div>
+                </div>
+                <input type="hidden" id="PdfmodelUrlValue" name="PdfmodelUrlValue">
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" id="btnSubmitClose">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="confirm-aadharcard-message" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" style="text-align:left">
+                    <p>You have already submitted one form with same Aadhar card number.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/retina-1.1.0.min.js"></script>
+    <script src="assets/js/scripts.js?v=1.4"></script>
+    <script src="assets/js/common.js?v=1.4"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+
+        $('#submitBtn').click(function () {
+            if (CheckValidation($('select#CourseName option:selected').val())) {
+                return false;
+            }
+            else { }
+        });
+
+        $(document).ready(function () {
+            $("#divMenu").show();
+            $("#divViewPdf").hide();
+            var id = GetQueryStringParams('id');
+            if (id != "" && id != undefined) {
+                EditStudentDetailLoad(id);
+            }
+        });
+
+        function GetQueryStringParams(sParam) {
+            var sPageURL = window.location.search.substring(1);
+            var sURLVariables = sPageURL.split('&');
+            for (var i = 0; i < sURLVariables.length; i++) {
+                var sParameterName = sURLVariables[i].split('id=');
+                return sParameterName[1];
+            }
+        }
+
+        $(function () {
+            $("#category1").on("click", function () {
+                $("#divReservedCategory").hide();
+            });
+            $("#chkSamepermanentaddress").click(function () {
+                if ($(this).is(":checked")) {
+                    $("#PermanentAddress").val($("#CurrentAddress").val());
+                    $('#PermanentAddress').attr('readonly', 'readonly');
+                } else {
+                    $("#PermanentAddress").val(null);
+                    $('#PermanentAddress').attr('readonly', '');
+                }
+            });
+            $("#category2").on("click", function () {
+                $("#divReservedCategory").show();
+            });
+
+            $("#fileDp").change(function () {
+                if (checkfile("fileDp", 500)) {
+                    var fileDp = $("#fileDp")[0];
+                    if (fileDp.files && fileDp.files[0]) {
+                        var reader = new FileReader();
+                        reader.onload = function (e) {
+                            $('#photo').attr('src', e.target.result);
+                            $('#photo').show();
+                        }
+                        reader.readAsDataURL(fileDp.files[0]);
+                    }
+                } else {
+                    $('#photo').hide();
+                }
+            });
+
+            $("#filesignature").change(function () {
+                if (checkfile("filesignature", 500)) {
+                    var filesignature = $("#filesignature")[0];
+                    if (filesignature.files && filesignature.files[0]) {
+                        var reader = new FileReader();
+                        reader.onload = function (e) {
+                            $('#photoSignature').attr('src', e.target.result);
+                            $('#photoSignature').show();
+                        }
+                        reader.readAsDataURL(filesignature.files[0]);
+                    }
+                }
+                else {
+                    $('#photoSignature').hide();
+                }
+            });
+
+            $("#filesignatureparent").change(function () {
+                if (checkfile("filesignatureparent", 500)) {
+                    var filesignatureparent = $("#filesignatureparent")[0];
+                    if (filesignatureparent.files && filesignatureparent.files[0]) {
+                        var reader = new FileReader();
+                        reader.onload = function (e) {
+                            $('#photoSignatureParent').attr('src', e.target.result);
+                            $('#photoSignatureParent').show();
+                        }
+                        reader.readAsDataURL(filesignatureparent.files[0]);
+                    }
+                }
+                else {
+                    $('#photoSignature').hide();
+                }
+            });
+
+            $("#KnowAboutCourse").change(function () {
+                if (this.value == 'ANY OTHER') {
+                    $('#pleaseSpecify').show();
+                } else {
+                    $('#pleaseSpecify').hide();
+                }
+            });
+
+            $("#ExaminationType").change(function () {
+                if (this.value == 'OTHER') {
+                    $('#OtherExaminationType').show();
+                    $('#OtherExaminationType').addClass('input-error');
+                } else {
+                    $('#OtherExaminationType').hide();
+                    $('#OtherExaminationType').removeClass('input-error');
+                }
+            });
+
+            $("input[name='isSvt']").click(function () {
+                if ($("#YES").is(":checked")) {
+                    $("#DivIsSvtSpecification").show();
+                } else {
+                    $("#DivIsSvtSpecification").hide();
+                }
+            });
+        });
+
+        $("#txtBirthDate").datepicker({
+            changeMonth: true,
+            changeYear: true,
+            yearRange: '1960:2001',
+            dateFormat: 'dd-MM-yy',
+            defaultDate: new Date(2001, 0, 1),
+            onSelect: function (date) {
+                var dob = new Date(date);
+                var today = new Date("06/01/2018");
+                var age = Math.floor((today - dob) / (365.25 * 24 * 60 * 60 * 1000));
+                $('#CalculatedAge').val(age);
+            }
+        });
+
+        $("#btnBirthDate").click(function () {
+            $("#txtBirthDate").focus();
+        });
+
+        function onErrorMessage(message) {
+            $("#ErrorMessage").html(message);
+            $("#ErrorMessage").removeClass("hidden");
+        }
+
+        //Save Record
+        function SubmitButton(obj, isSubmit) {
+            $('#confirm-submit').modal('hide');
+            if (CheckValidation($('select#CourseName option:selected').val())) {
+                $("#ErrorMessage").html('Please enter valid details in form.');
+                $("#ErrorMessage").removeClass("hidden");
+                return false;
+            }
+            else {
+                $("#ErrorMessage").addClass("hidden");
+                $("#ErrorMessage").html('');
+                if (checkfile("fileDp", 500) && checkfile("filesignature", 500)) {
+                    if ($('#Email').val() != "") {
+                        if (!isEmail($('#Email').val())) {
+                            alert('please enter the valid email.')
+                            return false;
+                        }
+                    }
+                    $('#isSubmit').val(isSubmit);
+                    var fd = new FormData($("#admissionFormData")[0]);
+                    savePageDataPostImageAjax(obj, 'ManageStudent', SaveSuccess, onErrorMessage, fd);
+                }
+                else {
+                    $("#ErrorMessage").html('Please upload less than 500KB image file.');
+                    $("#ErrorMessage").removeClass("hidden");
+                }
+            }
+        }
+
+        function SaveData(obj, isSubmit) {
+            //$('#confirm-submit').modal('hide');
+            if (CheckWithoutSubmitValidation($('select#CourseName option:selected').val())) {
+                $("#ErrorMessage").html('Please enter valid details in form.');
+                $("#ErrorMessage").removeClass("hidden");
+                return false;
+            }
+            else {
+                $("#ErrorMessage").addClass("hidden");
+                $("#ErrorMessage").html('');
+                if (checkfile("fileDp", 500) && (checkfile("filesignature", 500) || checkfile("filesignature", 500))) {
+                    if ($('#Email').val() != "") {
+                        if (!isEmail($('#Email').val())) {
+                            alert('please enter the valid email.')
+                            return false;
+                        }
+                    }
+                    $('#isSubmit').val(isSubmit);
+                    var fd = new FormData($("#admissionFormData")[0]);
+                    savePageDataPostImageAjax(obj, 'ManageStudent', SaveSuccess, onErrorMessage, fd);
+                }
+                else {
+                    $("#ErrorMessage").html('Please upload less than 500KB image file.');
+                    $("#ErrorMessage").removeClass("hidden");
+                }
+            }
+        }
+
+        function SaveSuccess(data) {
+            var fields = data.split(':~');
+            if ($('#isSubmit').val() == 0) {
+                $('#modelUrlValue').val("register.html?id=" + fields[0] + "");
+                $('#divMsg').html("Application form number " + fields[1] + " saved successfully.");
+                $("#btnSubmitconfirm").click();
+            }
+            else {
+                $('#divSuccessMsg').html("Application form number " + fields[1] + " submitted successfully.");
+                $('#PdfmodelUrlValue').val(fields[0]);
+                $("#btnSaveAndSubmitconfirm").click();
+            }
+        }
+
+        $('#btnClose').click(function () {
+            window.location.href = $('#modelUrlValue').val();
+        });
+
+        $('#btnSubmitClose').click(function () {
+            removeURLParameter(window.location.href, 'id');
+            $('#confirm-save-submit-message').modal('hide');
+            var url = $('#PdfmodelUrlValue').val();
+            $('#divMain').hide();
+
+            $('#viewPdf').attr('data', url);
+            $("#divViewPdf").show();
+
+        });
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= $('.f1-steps').height() + 20) {
+                $('.f1-steps').addClass('fixedElement').css('width', $('.f1').width() + 2);
+                var h = $('.workOptions').height() + 20;
+                $('#form-detail').attr("style", "padding-top:" + h + "px;");
+            }
+            else {
+                $('.f1-steps').removeClass("fixedElement");
+                $('#form-detail').removeAttr("style");
+            }
+        });
+
+        function EditStudentDetailLoad(id) {
+            if (id != "") {
+                $.ajax({
+                    url: 'api/Form/GetEditDetail',
+                    data: { id: id },
+                    type: 'get',
+                    dataType: 'json',
+                    success: function (data) {
+                        if (data != null) {
+
+                            $('#isSubmit').val(data.IsSubmitted);
+                            if (data.IsSubmitted == 1) {
+                                removeURLParameter(window.location.href, 'id');
+                                $('#confirm-submit-message').modal('hide');
+                                var url = $('#modelUrlValue').val();
+                                $('#divMain').hide();
+                                $('#viewPdf').attr('data', data.StudentPdfURL);
+                                $("#divViewPdf").show();
+                            }
+                            else {
+                                $('#id').val(data.Id);
+                                $('#CourseName').val(data.CourseName);
+                                $('#LastName').val(data.LastName);
+                                $('#MKCLFormNumber').val(data.MKCLFormNumber);
+                                $('#LastName').val(data.LastName);
+                                $('#FirstName').val(data.FirstName);
+                                $('#FatherName').val(data.FatherName);
+                                $('#MotherName').val(data.MotherName);
+                                $('#FatherLastName').val(data.FatherLastName);
+                                $('#FatherFirstName').val(data.FatherFirstName);
+                                $('#FatherMiddleName').val(data.FatherMiddleName);
+                                $('#FatherLastName').val(data.FatherLastName);
+                                $('#FatherFirstName').val(data.FatherFirstName);
+                                $('#FatherMiddleName').val(data.FatherMiddleName);
+                                $('#MotherFirstName').val(data.MotherFirstName);
+                                $('#MotherLastName').val(data.MotherLastName);
+                                $('#MotherMiddleName').val(data.MotherMiddleName);
+                                $('#AadharNumber').val(data.AadharNumber);
+                                $('#PANNumber').val(data.PanNumber);
+                                //$('#txtBirthDate').datepicker('setDate', data.Dob);
+
+                                if (data.Dob != "" && data.Dob != undefined) {
+                                    $("#txtBirthDate").datepicker("setDate", new Date(data.Dob));
+                                }
+
+                                $('#CalculatedAge').val(data.CalculatedAge);
+                                $('#Nationality').val(data.Nationality);
+                                $('#MotherTongue').val(data.MotherTongue);
+                                $('#Religion').val(data.Religion);
+                                $('input[name="Category"][value="' + data.Category + '"]').prop('checked', true);
+
+                                if (data.Category == 'RESERVED') {
+                                    $("#divReservedCategory").show();
+                                    $('#Caste').val(data.Caste);
+                                    $('#SubCaste').val(data.SubCaste);
+                                }
+                                $('#CurrentAddress').val(data.CurrentAddress);
+                                $('#PermanentAddress').val(data.PermanentAddress);
+                                $('#ResContactNo').val(data.ResContactNo);
+                                $('#MobileNumber').val(data.MobileNumber);
+                                $('#Email').val(data.Email);
+
+                                $('#GuardianMotherName').val(data.GuardianMotherName);
+                                $('#GuardianFatherName').val(data.GuardianFatherName);
+                                $('#OccupationofMother').val(data.OccupationofMother);
+                                $('#OccupationofFather').val(data.OccupationofFather);
+                                $('#EducationofMother').val(data.EducationofMother);
+                                $('#EducationofFather').val(data.EducationofFather);
+                                $('#GuardianAddress').val(data.GuardianAddress);
+                                $('#AnnualIncome').val(data.AnnualIncome);
+                                $('#GuardianTelephoneNo').val(data.GuardianTelephoneNo);
+                                $('#GuardianOffice').val(data.GuardianOffice);
+                                $('#GuardianMobile').val(data.GuardianMobile);
+                                $('#GuardianEmergencyConactNo').val(data.GuardianEmergencyConactNo);
+                                $('#GuardianEmail').val(data.GuardianEmail);
+                                $('#NativePlaceAddress').val(data.NativePlaceAddress);
+                                $('#OrganisationName').val(data.OrganisationName);
+                                $('#Designation').val(data.Designation);
+                                $('#TotalExperienceInYear').val(data.TotalExperienceInYear);
+                                $('#TotalExperienceInMonth').val(data.TotalExperienceInMonth);
+                                $('#BankName').val(data.BankName);
+                                $('#BankAddress').val(data.BankAddress);
+                                $('#BankAccountNumber').val(data.BankAccountNumber);
+                                $('#AccountType').val(data.AccountType);
+                                $('#IFSCCode').val(data.IFSCCode);
+                                $('#MICRNumber').val(data.MICRNumber);
+
+                                $('#photo').attr('src', 'data/Photos/' + data.Photo);
+                                $('#photoSignature').attr('src', 'data/Signature/' + data.SignaturePath);
+                                $('#photoSignatureParent').attr('src', 'data/ParentSignature/' + data.ParentSignaturePath);
+
+                                if (data.Photo != "") {
+                                    $('#photo').css("display", "")
+                                }
+                                if (data.SignaturePath != "") {
+                                    $('#photoSignature').css("display", "")
+                                }
+                                if (data.ParentSignaturePath != "") {
+                                    $('#photoSignatureParent').css("display", "")
+                                }
+
+                                $('#hdnPhoto').val(data.Photo);
+                                $('#hdnSignature').val(data.SignaturePath);
+                                $('#hdnParentSignature').val(data.ParentSignaturePath);
+
+                                if (data.IsSvtStudentFrom == true) {
+                                    $('input[name="isSvt"][value="YES"]').prop('checked', true);
+                                    $("#DivIsSvtSpecification").show();
+                                    if (data.IsSvtKnowRefrence == 'Junior College') {
+                                        $('input[name="IsSvtKnowRefrence"][value="Junior College"]').prop('checked', true);
+                                    } else {
+                                        $('input[name="IsSvtKnowRefrence"][value="Senior College"]').prop('checked', true);
+                                    }
+                                }
+                                else {
+                                    $('input[name="isSvt"][value="No"]').prop('checked', true);
+                                    $("#DivIsSvtSpecification").hide();
+                                }
+
+                                $('#KnowAboutCourse').val(data.KnowAboutCourse);
+                                //Education Detail
+                                $('#PGYearofPassing').val(data.PGYearofPassing);
+                                $('#PGSchoolName').val(data.PGSchoolName);
+                                $('#PGMedium').val(data.PGMedium);
+                                $('#PGBoardName').val(data.PGBoardName);
+                                $('#PGTotalPercent').val(data.PGTotalPercent);
+                                $('#PGGrade').val(data.PGGrade);
+
+                                $('#BachelorYearofPassing').val(data.BachelorYearofPassing);
+                                $('#BachelorSchoolName').val(data.BachelorSchoolName);
+                                $('#BachelorMedium').val(data.BachelorMedium);
+                                $('#BachelorBoardName').val(data.BachelorBoardName);
+                                $('#BachelorTotalPercent').val(data.BachelorTotalPercent);
+                                $('#BachelorGrade').val(data.BachelorGrade);
+
+                                $('#ExaminationType').val(data.ExaminationType);
+
+                                if (data.ExaminationType == "OTHER") {
+                                    $('#OtherExaminationType').show();
+                                    $('#OtherExaminationType').val(data.OtherExaminationType);
+                                }
+
+                                $('#HscYearofPassing').val(data.HscYearofPassing);
+                                $('#HscSchoolName').val(data.HscSchoolName);
+                                $('#HscMedium').val(data.HscMedium);
+                                $('#HscBoardName').val(data.HscBoardName);
+                                $('#HscTotalPercent').val(data.HscTotalPercent);
+                                $('#HscGrade').val(data.HscGrade);
+
+                                $('#SscYearofPassing').val(data.SscYearofPassing);
+                                $('#SscSchoolName').val(data.SscSchoolName);
+                                $('#SscMedium').val(data.SscMedium);
+                                $('#SscBoardName').val(data.SscBoardName);
+                                $('#SscTotalPercent').val(data.SscTotalPercent);
+                                $('#SscGrade').val(data.SscGrade);
+
+                                //Other Details
+                                $('#HobbiesOrSpecailInterest').val(data.HobbiesOrSpecailInterest);
+                                $('#HonorPrizeName').val(data.HonorPrizeName);
+                                $('#Note').val(data.Note);
+                                CheckStepsData(); 
+                                if ((data.Photo != '') &&
+                                    (
+                                        (data.SignaturePath != '') ||
+                                        (data.ParentSignaturePath != '')
+                                    )
+                                   ) {
+                                    $('#divStep3').addClass('active');
+                               } else {
+                                    $('#divStep3').removeClass('active');
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+        }
+
+        function removeURLParameter(url, parameter) {
+            var urlparts = url.split('?');
+            if (urlparts.length >= 2) {
+                var prefix = encodeURIComponent(parameter) + '=';
+                var pars = urlparts[1].split(/[&;]/g);
+                for (var i = pars.length; i-- > 0;) {
+                    if (pars[i].lastIndexOf(prefix, 0) !== -1) {
+                        pars.splice(i, 1);
+                    }
+                }
+                history.pushState({}, null, urlparts[0]);
+                return urlparts[0];
+            }
+            else {
+                return url;
+            }
+        }
+
+        function CheckExistorNotAddharNumberNo(obj) {
+            var properData = ExtractNumber(obj, 0, false);;
+            if (properData == true) {
+                $.ajax({
+                    url: 'api/Form/ValidateAlreadyExistAadharCard',
+                    data: { aadharno: obj.value, id: $('#id').val() },
+                    type: 'get',
+                    dataType: 'json',
+                    success: function (data) {
+                        if (data) {
+                            $("#btnAadharCardconfirm").click();
+                        }
+                    }
+                });
+            }
+            else {
+                return false;
+            }
+        }
+
+        function ValidatePer(obj) {
+            var check = ExtractNumber(obj, 0, false);
+            if (check == true) {
+                if (parseInt(obj.value) > 100) {
+                    obj.value = '';
+                    $('#' + obj.id).addClass('input-error');
+                }
+                else {
+                    $('#' + obj.id).removeClass('input-error');
+                    return true;
+                }
+            } else {
+                return false;
+            }
+        }
+
+    </script>
+
+    <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 100%; width: 100%; z-index: -999999; position: fixed;">
+        <img style="position: absolute; margin: 0px; padding: 0px; border: medium none; width: 100%; height: 100%; max-height: none; max-width: none; z-index: -999999; left: 0px; top: 0px;" src="assets/ico/bg_1.jpg">
+    </div>
+
+</body>
+</html>

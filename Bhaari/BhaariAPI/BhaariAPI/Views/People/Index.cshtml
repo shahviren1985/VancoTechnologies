@@ -1,0 +1,287 @@
+﻿
+@{
+    ViewBag.Title = "People";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    h1 {
+        margin: 0;
+    }
+    h2{
+        float: left;
+        font-size: 16px;
+        margin: 0;
+        margin-left: 10px;
+        text-align: center;
+        width: 100%;
+    }
+    .content{
+        float: left;
+        width: 300px;
+        margin-right: 20px;
+    }
+    .columns {
+        float: left;
+        width: 100%;
+    }
+
+    .QuickLinks ul {
+        margin: 10px;
+        width: 100%;
+        max-width: 280px;
+    }
+
+        .QuickLinks ul li {
+            border-bottom: 1px solid #DDD;
+            padding: 5px;
+            font-size: 12px;
+        }
+
+    .QuickLinks p {
+        padding: 10px;
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    .QuickLinks h2 {
+        line-height: 10px;
+        margin: 5px;
+        margin-top: 20px;
+    }
+
+    .search-bar {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        width: 42%;
+        z-index: 111;
+    }
+
+        .search-bar input {
+            border-radius: 5px;
+            border: 1px solid #DDD;
+            padding: 5px;
+            font-size: 20px;
+            height: 30px;
+            width: 100%;
+            float: left;
+        }
+
+    .QuickLinks {
+        float: left;
+        margin: 10px;
+        width: 300px;
+        border: 1px solid #CCC;
+        box-shadow: 2px 2px #DDD;
+        border-radius: 5px;
+        height: 350px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+        .QuickLinks h2 {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .QuickLinks ul {
+            float: left;
+            list-style: none;
+        }
+
+    .copy {
+        float: left;
+        color: white;
+        width: 99%;
+        height: 20px;
+        padding: 5px;
+        background-color: #181f25;
+    }
+
+    .navbar {
+        position: fixed;
+    }
+
+    .container {
+        margin-top: 5%;
+        float: left;
+        width: 100%;
+    }
+
+    .search-bar {
+        position: fixed;
+    }
+
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #313a49;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    .form-control:focus {
+        border-color: initial;
+        box-shadow: 0px;
+    }
+
+    @@media only screen and (max-device-width: 768px) {
+        .navbar {
+            position: initial;
+        }
+
+        .container {
+            margin-top: 0;
+        }
+
+        .search-bar {
+            margin: 0;
+            margin-left: 5%;
+            float: left;
+            width: 88%;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+            .search-bar input {
+                height: 50px;
+            }
+
+        .QuickLinks {
+            float: left;
+            margin: 5%;
+            margin-bottom: 0;
+            width: 90%;
+            border: 1px solid #DDD;
+            border-radius: 5px;
+            height: auto;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #313a49;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+    }
+</style>
+<div class="navbar">
+    <div class="logo">
+        <h1>
+            <a href="/" title="Bhaari" style="text-decoration: none;">
+                <img src="~/static/img/Logo.png" alt="Bhaari" />
+            </a>
+        </h1>
+    </div>
+    <ul>
+        <li>
+            <div class="twitter">
+                <a href="https://twitter.com/BhaariJobs" target="_blank">
+                    <img src="~/static/img/twitter.png" />
+                </a>
+            </div>
+        </li>
+        <li>
+            <a id="Login" style="color: white" href="#" onclick="return UpdateLoginStatus()">Login</a>
+        </li>
+    </ul>
+</div>
+<div class="search-bar form-group">
+    <input type="text" id="search-term" class="form-control" placeholder="Search Job Title / Technology ..." style="float: left;" />
+</div>
+<div class="container">
+    <div class="content hiring">
+        <h2>Companies/People hiring in Mumbai</h2>
+        <div class="QuickLinks" style="height: auto;">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/pronoy-adhikary-89350059/" target="_blank">@@Pronoy Adhikari</a> is Hiring #Automation Engineer, ReactJS Developer, Python Engineer, Java Backend Engineer at GreyAtom School of Data Science
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/palakvarma/" target="_blank">@@Palak Varma</a> is looking for Senior Backend engineer at Ithaka Travel
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/himani-bhardwaj-0b2aa2108/" target="_blank">@@Himani Bhardwaj</a> is looking for #CA with insurance background.
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/anjali-yadav-361165141/" target="_blank">@@Anjali Yadav</a> is looking for Female #HR manager from #Logistic background.
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/nidhi-%F0%9F%87%AE%F0%9F%87%B3-b680476a/" target="_blank">@@Nidhi</a> is looking for 2 #hybrid mobile application developers.
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/sivakumarbabuji/" target="_blank">@@Sivakumar</a> is looking for business development manager in #Logistic background
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/aajoshi/" target="_blank">@@Adwait Joshi</a> is #hiring for #NodeJS and #ReactJS developers.
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/anchal-rajput-koul-98802a5/" target="_blank">@@Anchal Rajput Koul</a> is hiring #3D Generalist #modeling
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/cyrilsthomas/" target="_blank">@@Cyril S Thomas</a> is hiring Regional Sales Manager
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/nishant-ashar-b4b23818" target="_blank">@@Nishant Ashar</a> is looking for Social Media Analyst.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content looking-opportunity">
+        <h2>People Looking for a Job in Mumbai</h2>
+        <div class="QuickLinks" style="height: auto;">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/kalyani-deshpande-59b403105/" target="_blank">@@Kalyani Deshpande</a> is looking for a job in Finance domain
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/supriya-barai-93a9b311b/" target="_blank">@@Supriya Barai</a> is looking for a job in clinical research / pharma vigilance
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/poonam-bisht-2b8b36177/" target="_blank">@@Poonam Bisht</a> is looking for a job in Accounts Receivable / Payable
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/archit-malpani-030a24156/" target="_blank">@@Archit Malpani</a> is looking for Entry level position.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="QuickLinks">
+        <h2>Trending Topics</h2>
+        <ul>
+            <li><a target="_blank" href="https://medium.com/conquering-corporate-america/10-tricks-to-appear-smart-during-meetings-27b489a39d1a">10 Tricks to Appear Smart During Meetings</a></li>
+            <li><a target="_blank" href="https://www.entrepreneur.com/article/334060">5 Reasons How Professional Experience Can Help You Become A Better Entrepreneur</a></li>
+            <li><a target="_blank" href="https://qz.com/work/1685009/the-us-industries-where-female-representation-is-rising-fastest/">The US industries where female representation is rising fastest</a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/feed/news/the-tech-jobs-that-pay-best-4428227/">The tech jobs that pay best</a></li>
+            <li><a target="_blank" href="https://hbr.org/cover-story/2017/07/the-business-of-artificial-intelligence">The business of artificial intelligence</a></li>
+        </ul>
+    </div>
+</div>
+<div class="copy">&copy; 2019. <a href="http://bhaari.com">Bhaari.com</a></div>
+<script type="text/javascript">
+    $("#search-term").keypress(function (e) {
+        if (e.which == 13) {
+            trackSearchEnter('home', $("#search-term").val());
+            var lo = localStorage.getItem('Location');
+
+            if (lo != null && lo != undefined && lo.length > 10) {
+                lo = JSON.parse(lo);
+                document.location.href = "/jobs/near-me/" + $("#search-term").val().replace(/ /g, "-") + "-in-" + lo.city;
+            }
+            else {
+                document.location.href = "/jobs/near-me/" + $("#search-term").val().replace(/ /g, "-");
+            }
+        }
+    });
+</script>

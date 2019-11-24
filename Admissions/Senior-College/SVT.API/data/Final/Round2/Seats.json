@@ -1,0 +1,58 @@
+[
+  {
+    "specialisation": "Developmental Counselling",
+    "SVTOpenInternal": 0,
+    "SVTReservedInternal": 11,
+    "ExternalOpen": 2,
+    "ExternalReserved": 8,
+    "Total": 21
+  },
+  {
+    "specialisation": "Early Childhood care & Education",
+    "SVTOpenInternal": 1,
+    "SVTReservedInternal": 19,
+    "ExternalOpen": 2,
+    "ExternalReserved": 17,
+    "Total": 39
+  },
+  {
+    "specialisation": "Food, Nutrition and Dietetics",
+    "SVTOpenInternal": 1,
+    "SVTReservedInternal": 32,
+    "ExternalOpen": 3,
+    "ExternalReserved": 32,
+    "Total": 68
+  },
+  {
+    "specialisation": "Hospitality & Tourism Management",
+    "SVTOpenInternal": 0,
+    "SVTReservedInternal": 10,
+    "ExternalOpen": 0,
+    "ExternalReserved": 9,
+    "Total": 19
+  },
+  {
+    "specialisation": "Interior Design & Resource Management",
+    "SVTOpenInternal": 0, 
+    "SVTReservedInternal": 15,
+    "ExternalOpen": 2,
+    "ExternalReserved": 18,
+    "Total": 35
+  },
+  {
+    "specialisation": "Mass Communication & Extension",
+    "SVTOpenInternal": 1,
+    "SVTReservedInternal": 16,
+    "ExternalOpen": 1,
+    "ExternalReserved": 14,
+    "Total": 32
+  },
+  {
+    "specialisation": "Textiles & Apparel Designing",
+    "SVTOpenInternal": 0,
+    "SVTReservedInternal": 28,
+    "ExternalOpen": 1,
+    "ExternalReserved": 33,
+    "Total": 62
+  }
+]

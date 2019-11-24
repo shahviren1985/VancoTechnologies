@@ -1,0 +1,58 @@
+﻿@model BhaariAPI.Controllers.LinkedINResVM
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>LinkedINResVM</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.firstName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.firstName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.headline)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.headline)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.lastName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.lastName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.siteStandardProfileRequest)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.siteStandardProfileRequest)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

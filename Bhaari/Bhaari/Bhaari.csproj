@@ -1,0 +1,85 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\index.html" />
+    <None Include="wwwroot\search.html" />
+    <None Include="wwwroot\static\css\b.feedback.css" />
+    <None Include="wwwroot\static\css\b.header.css" />
+    <None Include="wwwroot\static\css\b.jobdetails.css" />
+    <None Include="wwwroot\static\css\b.leftnav.css" />
+    <None Include="wwwroot\static\css\b.map.css" />
+    <None Include="wwwroot\static\css\b.not.ie.css" />
+    <None Include="wwwroot\static\css\b.search.css" />
+    <None Include="wwwroot\static\css\b.support.css" />
+    <None Include="wwwroot\static\css\bootstrap-responsive.css" />
+    <None Include="wwwroot\static\css\bootstrap-responsive.min.css" />
+    <None Include="wwwroot\static\css\bootstrap.css" />
+    <None Include="wwwroot\static\css\bootstrap.min.css" />
+    <None Include="wwwroot\static\css\jquery-ui.css" />
+    <None Include="wwwroot\static\css\jquery.jscrollpane.css" />
+    <None Include="wwwroot\static\css\style.css" />
+    <None Include="wwwroot\static\img\1413544965_move_horizontal_alt2-128.png" />
+    <None Include="wwwroot\static\img\1413544967_move_alt2-128.png" />
+    <None Include="wwwroot\static\img\close.png" />
+    <None Include="wwwroot\static\img\color.png" />
+    <None Include="wwwroot\static\img\drag.png" />
+    <None Include="wwwroot\static\img\drag2.png" />
+    <None Include="wwwroot\static\img\drags.png" />
+    <None Include="wwwroot\static\img\fancy_deboss.png" />
+    <None Include="wwwroot\static\img\fav-icon.png" />
+    <None Include="wwwroot\static\img\favicon.png" />
+    <None Include="wwwroot\static\img\glyphicons-halflings-white.png" />
+    <None Include="wwwroot\static\img\glyphicons-halflings.png" />
+    <None Include="wwwroot\static\img\jobs-icon.png" />
+    <None Include="wwwroot\static\img\load.gif" />
+    <None Include="wwwroot\static\img\Logo.png" />
+    <None Include="wwwroot\static\img\Logo.psd" />
+    <None Include="wwwroot\static\img\move.png" />
+    <None Include="wwwroot\static\img\nav.png" />
+    <None Include="wwwroot\static\img\next.png" />
+    <None Include="wwwroot\static\img\options.png" />
+    <None Include="wwwroot\static\img\prev.png" />
+    <None Include="wwwroot\static\img\resize.png" />
+    <None Include="wwwroot\static\img\resize2.png" />
+    <None Include="wwwroot\static\img\resize3.png" />
+    <None Include="wwwroot\static\img\sfo.jpg" />
+    <None Include="wwwroot\static\img\smily-sprite.png" />
+    <None Include="wwwroot\static\img\smily-start.png" />
+    <None Include="wwwroot\static\img\star.gif" />
+    <None Include="wwwroot\static\img\twitter.png" />
+    <None Include="wwwroot\static\js\b.colorjobs.js" />
+    <None Include="wwwroot\static\js\b.comm.js" />
+    <None Include="wwwroot\static\js\b.contact.js" />
+    <None Include="wwwroot\static\js\b.core.js" />
+    <None Include="wwwroot\static\js\b.feedback.js" />
+    <None Include="wwwroot\static\js\b.ga.js" />
+    <None Include="wwwroot\static\js\b.gridview.js" />
+    <None Include="wwwroot\static\js\b.listview.js" />
+    <None Include="wwwroot\static\js\b.map.js" />
+    <None Include="wwwroot\static\js\bootstrap.js" />
+    <None Include="wwwroot\static\js\bootstrap.min.js" />
+    <None Include="wwwroot\static\js\JobDetails.js" />
+    <None Include="wwwroot\static\js\JobSummary.js" />
+    <None Include="wwwroot\static\js\jquery-1.8.3.min.js" />
+    <None Include="wwwroot\static\js\jquery-ui.js" />
+    <None Include="wwwroot\static\js\jquery.jscrollpane.min.js" />
+    <None Include="wwwroot\static\js\jquery.mousewheel.js" />
+    <None Include="wwwroot\static\js\jquery.slimscroll.min.js" />
+    <None Include="wwwroot\static\js\Map.js" />
+    <None Include="wwwroot\static\js\modernizr.js" />
+    <None Include="wwwroot\static\js\mwl.js" />
+    <None Include="wwwroot\static\js\Search.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.10" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="RestSharp" Version="106.6.10" />
+  </ItemGroup>
+
+</Project>

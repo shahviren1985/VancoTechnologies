@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="http://bhaari.com" title="Bhaari - Jobs, Human Resource, Recruitment &amp; Learning"  description="Bhaari is about People, Offices, Jobs, Human Resources, Recruitment, Benefits, Insurance, Office Technology, Outsourcing and Finance. Search jobs near your location. Search for internships in your domain.">
+    <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/all" title="Government Jobs, Sarkari Naukri 2019"  description="Government Jobs, Sarkari Naukri in 2019">
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/mumbai" title="Government Jobs, Sarkari Naukri in Mumbai, Maharashtra, India"  description="Government Jobs, Sarkari Naukri in Mumbai, India" />
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/navi-mumbai" title="Government Jobs, Sarkari Naukri in Navi Mumbai, Maharashtra, India"  description="Government Jobs, Sarkari Naukri in Navi Mumbai, Maharashtra, India" />
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/pune" title="Government Jobs, Sarkari Naukri in Pune, Maharashtra, India"  description="Government Jobs, Sarkari Naukri in Pune, Maharashtra, India" />
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/nagpur" title="Government Jobs, Sarkari Naukri in Nagpur, Maharashtra, India"  description="Government Jobs, Sarkari Naukri in Nagpur, Maharashtra, India" />
+
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/mumbai" title="Government Jobs, Sarkari Naukri in Delhi, New Delhi, India"  description="Government Jobs, Sarkari Naukri in Delhi, India" />
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/navi-mumbai" title="Government Jobs, Sarkari Naukri in Chennai, Tamilnadu, India"  description="Government Jobs, Sarkari Naukri in Chennai, Tamilnadu, India" />
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/pune" title="Government Jobs, Sarkari Naukri in Bengaluru, Karnataka, India"  description="Government Jobs, Sarkari Naukri in Bengaluru, Karnataka, India" />
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/nagpur" title="Government Jobs, Sarkari Naukri in Kolkata, West Bengal, India"  description="Government Jobs, Sarkari Naukri in Kolkata, West Bengal, India" />
+
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/mumbai" title="Government Jobs, Sarkari Naukri in Jaipur, Rajasthan, India"  description="Government Jobs, Sarkari Naukri in Jaipur, Rajasthan, India" />
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/navi-mumbai" title="Government Jobs, Sarkari Naukri in Indore, Madhya Pradesh, India"  description="Government Jobs, Sarkari Naukri in Indore, Madhya Pradesh, India" />
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/pune" title="Government Jobs, Sarkari Naukri in Hyderabad, Telangana, India"  description="Government Jobs, Sarkari Naukri in Hyderabad, Telangana, India" />
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/nagpur" title="Government Jobs, Sarkari Naukri in Bhopal, Madhya Pradesh, India"  description="Government Jobs, Sarkari Naukri in Bhopal, Madhya Pradesh, India" />
+
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/mumbai" title="Government Jobs, Sarkari Naukri in Ahmedabad, Gujarat, India"  description="Government Jobs, Sarkari Naukri in Ahmedabad, Gujarat, India" />
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/navi-mumbai" title="Government Jobs, Sarkari Naukri in Kochi, Kerala, India"  description="Government Jobs, Sarkari Naukri in Navi Mumbai, Maharashtra, India" />
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/pune" title="Government Jobs, Sarkari Naukri in Puducherry, India"  description="Government Jobs, Sarkari Naukri in Puducherry, India" />
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/nagpur" title="Government Jobs, Sarkari Naukri in Patna, Bihar, India"  description="Government Jobs, Sarkari Naukri in Patna, Bihar, India" />
+
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/andhra-pradesh" title="Government Jobs, Sarkari Naukri in Andhra Pradesh, India"  description="Government Jobs, Sarkari Naukri in Andhra Pradesh, India"/>
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/arunachal-pradesh" title="Government Jobs, Sarkari Naukri in Maharashtra, India"  description="Government Jobs, Sarkari Naukri in Arunachal Pradesh, India"/>
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/assam" title="Government Jobs, Sarkari Naukri in Assam, India"  description="Government Jobs, Sarkari Naukri in Assam, India"/>
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/bihar" title="Government Jobs, Sarkari Naukri in Bihar, India"  description="Government Jobs, Sarkari Naukri in Bihar, India"/>
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/chandigarh" title="Government Jobs, Sarkari Naukri in Chandigarh, India"  description="Government Jobs, Sarkari Naukri in Chandigarh, India"/>
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/chhattisgarh" title="Government Jobs, Sarkari Naukri in Chhattisgarh, India"  description="Government Jobs, Sarkari Naukri in Chhattisgarh, India"/>
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/goa" title="Government Jobs, Sarkari Naukri in Goa, India"  description="Government Jobs, Sarkari Naukri in Goa, India"/>
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/gujarat" title="Government Jobs, Sarkari Naukri in Gujarat, India"  description="Government Jobs, Sarkari Naukri in Gujarat, India"/>
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/haryana" title="Government Jobs, Sarkari Naukri in Haryana, India"  description="Government Jobs, Sarkari Naukri in Haryana, India"/>
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/jharkhand" title="Government Jobs, Sarkari Naukri in Jharkhand, India"  description="Government Jobs, Sarkari Naukri in Jharkhand, India"/>
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/karnataka" title="Government Jobs, Sarkari Naukri in Karnataka, India"  description="Government Jobs, Sarkari Naukri in Karnataka, India"/>
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/kerala" title="Government Jobs, Sarkari Naukri in Kerala, India"  description="Government Jobs, Sarkari Naukri in Kerala, India"/>
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/lakshadweep" title="Government Jobs, Sarkari Naukri in Lakshadweep, India"  description="Government Jobs, Sarkari Naukri in Lakshadweep, India"/>
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/madhya-pradesh" title="Government Jobs, Sarkari Naukri in Madhya Pradesh, India"  description="Government Jobs, Sarkari Naukri in Madhya Pradesh, India"/>
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/maharashtra" title="Government Jobs, Sarkari Naukri in Maharashtra, India"  description="Government Jobs, Sarkari Naukri in Maharashtra, India"/>
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/manipur" title="Government Jobs, Sarkari Naukri in Manipur, India"  description="Government Jobs, Sarkari Naukri in Manipur, India"/>
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/mizoram" title="Government Jobs, Sarkari Naukri in Mizoram, India"  description="Government Jobs, Sarkari Naukri in Mizoram, India"/>
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/nagaland" title="Government Jobs, Sarkari Naukri in Nagaland, India"  description="Government Jobs, Sarkari Naukri in Nagaland, India"/>
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/orissa" title="Government Jobs, Sarkari Naukri in Orissa, India"  description="Government Jobs, Sarkari Naukri in Orissa, India"/>
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/punjab" title="Government Jobs, Sarkari Naukri in Punjab, India"  description="Government Jobs, Sarkari Naukri in Punjab, India"/>
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/sikkim" title="Government Jobs, Sarkari Naukri in Sikkim, India"  description="Government Jobs, Sarkari Naukri in Sikkim, India"/>
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/tamilnadu" title="Government Jobs, Sarkari Naukri in Tamilnadu, India"  description="Government Jobs, Sarkari Naukri in Tamilnadu, India"/>
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/telangana" title="Government Jobs, Sarkari Naukri in Telangana, India"  description="Government Jobs, Sarkari Naukri in Telangana, India"/>
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/tripura" title="Government Jobs, Sarkari Naukri in Tripura, India"  description="Government Jobs, Sarkari Naukri in Tripura, India" />
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/uttarakhand" title="Government Jobs, Sarkari Naukri in Uttarakhand, India"  description="Government Jobs, Sarkari Naukri in Uttarakhand, India" />
+      <siteMapNode url="http://bhaari.com/jobs/government-jobs/india/west-bengal" title="Government Jobs, Sarkari Naukri in West Bengal, India"  description="Government Jobs, Sarkari Naukri in West Bengal, India" />
+    </siteMapNode>
+    <siteMapNode url="http://bhaari.com/jobs/near-me/software-testing-jobs-in-mumbai" title="Software Testing Jobs in Mumbai" description="Software Testing Jobs in Mumbai"/>
+    <siteMapNode url="http://bhaari.com/jobs/near-me/sap-abap-jobs-in-mumbai" title="SAP/ABAP Jobs  in Mumbai" description="SAP/ABAP Jobs  in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/oracle-jobs-in-mumbai" title="Oracle Jobs in Mumbai" description="Oracle Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/web-development-jobs-in-mumbai" title="Web Development Jobs in Mumbai" description="Web Development Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/business-analysis-jobs-in-mumbai" title="Business Analysis Jobs in Mumbai" description="Business Analysis Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/mobile-appsiteMapNodecation-development-jobs-in-mumbai" title="Mobile AppsiteMapNodecation Development Jobs in Mumbai" description="Mobile AppsiteMapNodecation Development Jobs in Mumbai"/>
+    <siteMapNode url="http://bhaari.com/jobs/near-me/data-analysis-jobs-in-mumbai" title="Data Analysis Jobs in Mumbai" description="Data Analysis Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/data-science-jobs-in-mumbai" title="Data Science Jobs in Mumbai" description="Data Science Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/artificial-intelsiteMapNodegence-jobs-in-mumbai" title="Artificial IntelsiteMapNodegence Jobs in Mumbai" description="Artificial IntelsiteMapNodegence Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/machine-learning-jobs-in-mumbai" title="Machine Learning Jobs in Mumbai" description="Machine Learning Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/rpa-jobs-in-mumbai" title="Robotic Process Automation Jobs in Mumbai"  description="Process Automation Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/remote-jobs-in-mumbai" title="Remote Jobs in Mumbai"  description="Remote Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/project-manager-jobs-in-mumbai" title="Project Manager Jobs in Mumbai"  description="Project Manager Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/product-manager-jobs-in-mumbai" title="Product Manager Jobs in Mumbai"  description="Product Manager Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/engineering-manager-jobs-in-mumbai" title="Engineering Manager Jobs in Mumbai" description="Engineering Manager Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/software-development-manager-jobs-in-mumbai" title="Software Development Manager Jobs in Mumbai" description="Software Development Manager Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/software-quasiteMapNodety-manager-jobs-in-mumbai" title="Software QuasiteMapNodety Manager Jobs in Mumbai" description="Software QuasiteMapNodety Manager Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/test-manager-jobs-in-mumbai" title="Test Manager Jobs in Mumbai" description="Test Manager Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/virtual-reasiteMapNodety-jobs-in-mumbai" title="Virtual ReasiteMapNodety Jobs in Mumbai" description="Virtual ReasiteMapNodety Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/augmented-reasiteMapNodety-jobs-in-mumbai" title="Augmented ReasiteMapNodety Jobs in Mumbai" description="Augmented ReasiteMapNodety Jobs in Mumbai" />
+
+    <siteMapNode url="http://bhaari.com/jobs/near-me/accounting-jobs-in-mumbai" title="Accounting Jobs in Mumbai" description="Accounting Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/corporate-planning-jobs-in-mumbai" title="Corporate Planning Jobs in Mumbai" description="Corporate Planning Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/interior-design-jobs-in-mumbai" title="Interior Design Jobs in Mumbai" description="Interior Design Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/bank-jobs-in-mumbai" title="Bank Jobs in Mumbai" description="Bank Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/ecommerce-jobs-in-mumbai" title="Ecommerce Jobs in Mumbai" description="Ecommerce Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/telecom-jobs-in-mumbai" title="Telecom Jobs in Mumbai" description="Telecom Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/film-jobs-in-mumbai" title="Film Jobs in Mumbai" description="Film Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/content-writing-jobs-in-mumbai" title="Content Writing Jobs in Mumbai" description="Content Writing Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/teacher-jobs-in-mumbai" title="Teacher Jobs in Mumbai" description="Teacher Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/consultant-jobs-in-mumbai" title="Consultant Jobs in Mumbai" description="Consultant Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/legal-jobs-in-mumbai" title="Legal Jobs in Mumbai" description="Legal Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/airsiteMapNodene-jobs-in-mumbai" title="AirsiteMapNodene Jobs in Mumbai" description="AirsiteMapNodene Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/engineering-jobs-in-mumbai" title="Engineering Jobs in Mumbai" description="Engineering Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/marketing-jobs-in-mumbai" title="Marketing Jobs in Mumbai" description="Marketing Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/packaging-jobs-in-mumbai" title="Packaging Jobs in Mumbai" description="Packaging Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/shipping-jobs-in-mumbai" title="Shipping Jobs in Mumbai" description="Shipping Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/security-jobs-in-mumbai" title="Security Jobs in Mumbai" description="Security Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/pharma-jobs-in-mumbai" title="Pharma Jobs in Mumbai" description="Pharma Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/analytics-jobs-in-mumbai" title="Analytics Jobs in Mumbai" description="Analytics Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/business-intelsiteMapNodegence-jobs-in-mumbai" title="Business IntelsiteMapNodegence Jobs" description="Business IntelsiteMapNodegence Jobs" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/maintenance-jobs-in-mumbai" title="Maintenance Jobs in Mumbai" description="Maintenance Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/hr-jobs-in-mumbai" title="HR Jobs in Mumbai" description="HR Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/hotel-jobs-in-mumbai" title="Hotel Jobs in Mumbai" description="Hotel Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/sales-jobs-in-mumbai" title="Sales Jobs in Mumbai" description="Sales Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/secretary-jobs-in-mumbai" title="Secretary Jobs in Mumbai" description="Secretary Jobs in Mumbai" />
+    <siteMapNode url="http://bhaari.com/jobs/near-me/office-admin-jobs-in-mumbai" title="Office Administration Jobs in Mumbai" description="Office Administration Jobs in Mumbai" />
+  </siteMapNode>
+
+</siteMap>

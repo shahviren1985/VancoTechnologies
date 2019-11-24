@@ -1,0 +1,268 @@
+﻿.view {
+    margin-right: 50px;
+    margin-top: 5px;
+    float: right;
+}
+
+    .view div {
+        float: left;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+    }
+
+#map {
+    position: absolute;
+    top: 0px;
+    left: 64%;
+    width: 36%;
+    height: 100%;
+}
+
+.Note {
+    position: absolute;
+    top: 40px;
+    background-color: #FFF;
+    width: 100%;
+    padding: 5px;
+    z-index: 2221111;
+    border-bottom: 1px solid #CCC;
+    display: none;
+}
+
+    .Note span {
+        float: left;
+    }
+
+        .Note span.red {
+            background-color: red;
+            width: 15px;
+            height: 15px;
+            margin: 3px;
+        }
+
+        .Note span.green {
+            background-color: darkgreen;
+            width: 15px;
+            height: 15px;
+            margin: 3px;
+        }
+
+#grid {
+    display: none;
+    padding: 10px;
+    margin: 25px;
+    margin-left: 0;
+    padding-right: 0;
+    width: 98%;
+    z-index: 1111;
+    position: absolute;
+    background-color: white;
+    height: auto;
+    min-height: 500px;
+}
+/*Tile*/
+.job-tile {
+    float: left;
+    width: 22%;
+    height: 300px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px #eee;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.tile-header-container {
+    float: left;
+    width: 100%;
+}
+
+    .tile-header-container .company-name {
+        width: auto;
+        font-size: 16px;
+        font-weight: normal;
+    }
+
+.job-tile-container {
+    float: left;
+    width: 100%;
+    min-height: 215px;
+    overflow-y: auto;
+}
+
+    .job-tile-container .job-desc {
+        overflow-y: auto;
+        max-height: 175px;
+        overflow-x: hidden;
+    }
+
+.tile-job-source {
+    float: left;
+    width: 100%;
+}
+
+    .tile-job-source .btn {
+        margin: 0px !important;
+    }
+
+    .tile-job-source .job-apply {
+        margin-right: 0px;
+    }
+
+        .tile-job-source .job-apply a {
+            color: #333 !important;
+        }
+/*End Tile*/
+.bubble {
+    background-color: red;
+    padding: 1px;
+    text-align: center;
+    position: relative;
+    vertical-align: top;
+    height: 18px;
+    color: #333;
+    padding: 2px 6px;
+    font-weight: bold;
+}
+
+.bubble-red, .pt-red {
+    background-color: Red;
+}
+
+.bubble-yellow, .pt-yellow {
+    background-color: #E8A317;
+}
+
+.bubble-green, .pt-green {
+    background-color: Green;
+}
+
+.bubble-0, .pt-0 {
+    background-color: green;
+}
+
+.bubble-1, .pt-1 {
+    background-color: rgb(0,220,0);
+}
+
+.bubble-2, .pt-2 {
+    background-color: rgb(55,215,0);
+}
+
+.bubble-3, .pt-3 {
+    background-color: rgb(155,255,0);
+}
+
+.bubble-4, .pt-4 {
+    background-color: rgb(255,255,0);
+}
+
+.bubble-5, .pt-5 {
+    background-color: rgb(255,200,0);
+}
+
+.bubble-6, .pt-6 {
+    background-color: rgb(255,100,0);
+}
+
+.bubble-7, .pt-7 {
+    background-color: rgb(255,10,0);
+    color: white !important;
+}
+
+.bubble-8, .pt-8 {
+    background-color: rgb(255,10,0);
+    color: white !important;
+}
+
+.ui-effects-transfer {
+    border: 2px dotted gray;
+}
+
+table tr:nth-child(odd) {
+    background-color: #dcdcdc;
+}
+/**Selected Job*/
+.bubble-blue {
+    background-color: rgb(50, 153, 187) !important;
+    z-index: 11111 !important;
+}
+
+.job-item-selected {
+    background: rgb(73,155,234); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ5OWJlYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyMDdjZTUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(73,155,234,1)), color-stop(100%,rgba(32,124,229,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(73,155,234,1) 0%,rgba(32,124,229,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=0 ); /* IE6-8 */
+}
+
+.multi-companies span.title {
+    padding: 10px;
+    float: left;
+    text-align: left;
+    width: 90%;
+    background-color: rgb(50, 153, 187);
+    font-size: 13px;
+    color: white;
+}
+
+.multi-companies span.title-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.multi-companies ul {
+    list-style: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+    .multi-companies ul li {
+        float: left;
+        width: 96%;
+        padding: 2%;
+        text-align: left;
+        background-color: #FFF;
+        cursor: pointer;
+    }
+
+        .multi-companies ul li:hover {
+            background-color: #eee;
+        }
+
+@media only screen and (max-device-width: 768px) {
+    #map {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 100%;
+        height: 90%;
+    }
+    .view {
+        margin-top: 0;
+    }
+
+        .view div {
+            float: left;
+            cursor: pointer;
+            border: 0;
+            margin-right: 0;
+            padding: 0;
+        }
+
+        .view img {
+            width: 32px;
+            height: 32px;
+        }
+}

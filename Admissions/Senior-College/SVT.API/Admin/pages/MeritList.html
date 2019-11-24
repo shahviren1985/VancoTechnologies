@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SVT - Admissions System - MeritList Management</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="../dist/css/custom.css" />
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+
+        <header class="main-header">
+
+            <!-- go -->
+            <a href="index2.html" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <span class="logo-mini">
+                    <b>A</b>LT</span>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg">
+                    <b>SVT</b>Admissions</span>
+            </a>
+
+            <!-- Header Navbar -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <!-- Navbar Right Menu -->
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <li>
+
+                            <a onclick="logout();" class="btn btn-flat">
+                                <i class="fa fa-gears"></i> Sign out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- =============================================== -->
+
+        <!-- Left side column. contains the sidebar -->
+        <aside class="main-sidebar">
+        </aside>
+
+        <!-- =============================================== -->
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1>
+                    Merit List Management
+                </h1>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="../starter.html">
+                            <i class="fa fa-dashboard"></i> Home</a>
+                    </li>
+                    <li class="active">Seat Management</li>
+                </ol>
+            </section>
+
+            <!-- Main content -->
+            <section class="content">
+
+                <!-- Default box -->
+                <div class="box">
+                    <div class="box-header with-border">
+                        <h3 class="box-title"></h3>
+                        <div class="pull-right">
+                            <button class="btn btn-info" id="prvMeritListBtn">Preview Merit List</button>
+                            <button class="btn btn-info" id="genMeritListBtn">Generate Merit List</button>
+                        </div>
+                    </div>
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <label>
+                                    Category
+                                </label>
+                                <select id="drpDwnCategory" name="category" class="form-control getCutOff ">
+                                    <option value="0"> Select Category </option>
+                                    <option value="open">Open</option>
+                                    <option value="reserved">Reserved</option>
+                                </select>
+
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <label>
+                                    Student
+                                </label>
+                                <select id="drpDwnSVTStudent" name="student" class="form-control getCutOff">
+                                    <option value="0"> Select Student </option>
+                                    <option value="internal">Internal</option>
+                                    <option value="external">External</option>
+                                </select>
+
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <label>Merit List Round </label>
+                                <select id="drpDwnRound" name="round" class="form-control">
+                                    <option value="0"> Select Round </option>
+                                    <option value="Round1" selected>Round 1</option>
+                                    <option value="Round2">Round 2</option>
+                                    <option value="Round3">Round 3</option>
+                                </select>
+
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <label>Course</label>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="btn-group" data-toggle="buttons">
+                                    <label class="">
+                                        <input type="radio" name="specialisation" class="getCutOff" value="Developmental Counselling">
+                                    </label>
+                                    Developmental Counselling &nbsp;&nbsp;
+                                    <label class="">
+                                        <input type="radio" name="specialisation" class="getCutOff" value="Early Childhood care & Education">
+                                    </label>
+                                    Early Childhood care & Education &nbsp;&nbsp;
+                                    <label class="">
+                                        <input type="radio" name="specialisation" class="getCutOff" value="Food, Nutrition and Dietetics">
+                                    </label>
+                                    Food, Nutrition and Dietetics &nbsp;&nbsp;
+                                    <label class="">
+                                        <input type="radio" name="specialisation" class="getCutOff" value="Hospitality & Tourism Management">
+                                    </label>
+                                    Hospitality & Tourism Management &nbsp;&nbsp;
+                                    <label class="">
+                                        <input type="radio" name="specialisation" class="getCutOff" value="Interior Design & Resource Management">
+                                    </label>
+                                    Interior Design & Resource Management &nbsp;&nbsp;
+                                    <label class="">
+                                        <input type="radio" name="specialisation" class="getCutOff" value="Mass Communication & Extension">
+                                    </label>
+                                    Mass Communication & Extension &nbsp;&nbsp;
+                                    <label class="">
+                                        <input type="radio" name="specialisation" class="getCutOff" value="Textiles & Apparel Designing">
+                                    </label>
+                                    Textiles & Apparel Designing &nbsp;&nbsp;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <label>Cut off percentage</label>
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" id="txtCutOff" onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;"
+                                />
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="panel hide" id="meritListGrid">
+                            <div class="box-header with-border well">
+
+                                <div class="row">
+                                    <div class="pull-left col-lg-6">
+                                        <h3 class="box-title"> Merit List </h3>
+                                    </div>
+
+
+
+                                    <div class="pull-right col-lg-6">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label>
+                                                    Total Students in Merit List :
+                                                </label>
+                                                <span id="lblTotalMeritListStudents"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <button class="btn" onclick="downloadPreviewMeritList();">Download</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix" />
+                                </div>
+                                <div class="row">
+                                    <div id="meritListFilter" class="form-inline col-lg-6">
+                                        <div class="form-group">
+                                            <label> Specialisation : </label>
+                                            <select id="drpDwnSpecialisationFilter" class="form-control">
+                                                <option value="">Please Select Specialisation</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>&nbsp;</label>
+                                            <button id="btnFltMeritList" class="btn btn-warning"> Reset </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="courseInfoDiv hide col-lg-6">
+                                        <div class="form-group">
+                                            <label>
+                                                Course Seats In Merit List:
+                                            </label>
+                                            <span id="lblCourseSeatsOccupied"></span>
+                                            <label style="margin-left: 15px">
+                                                Total Course Seats :
+                                            </label>
+                                            <span id="lblTotalCourseSeats"></span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="clearfix" />
+                                </div>
+
+
+
+                            </div>
+                            <table id="tbMeritListGrid" class="table table-stripped">
+                                <thead>
+                                    <tr>
+
+                                        <th> Serial Number </th>
+                                        <th> Full Name </th>
+                                        <th> Percentage </th>
+                                        <th> Category </th>
+                                        <th> Caste </th>
+                                        <th> Course </th>
+                                        <th> Internal/External </th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /.box -->
+
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+
+            </div>
+            <strong>Copyright &copy; 2018
+            </strong> All rights reserved.
+        </footer>
+    </div>
+    <!-- ./wrapper -->
+
+    <div class="loader hide"></div>
+    <!-- Loader -->
+
+    <!-- jQuery 3 -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.3.7 -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- SlimScroll -->
+    <script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- FastClick -->
+    <script src="../bower_components/fastclick/lib/fastclick.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../dist/js/demo.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js"></script>
+
+    <script>
+        var _u = _.noConflict(); // lets call ourselves _u
+    </script>
+
+    <script type="text/javascript" src="../dist/js/common.js"></script>
+    <script src="../dist/js/pages/meritList.js"></script>
+</body>
+
+</html>

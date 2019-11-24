@@ -1,0 +1,49 @@
+[{
+	"specialisation": "Developmental Counselling",
+	"SVTOpenInternal": "64.46",
+	"SVTReservedInternal": "58.46",
+	"ExternalOpen": "74.31",
+	"ExternalReserved": "59.38"
+},
+{
+	"specialisation": "Early Childhood care & Education",
+	"SVTOpenInternal": "61.69",
+	"SVTReservedInternal": "60.15",
+	"ExternalOpen": "74.46",
+	"ExternalReserved": "63.23"
+},
+{
+	"specialisation": "Food, Nutrition and Dietetics",
+	"SVTOpenInternal": "68.15",
+	"SVTReservedInternal": "65.85",
+	"ExternalOpen": "79.67",
+	"ExternalReserved": "69.54"
+},
+{
+	"specialisation": "Hospitality & Tourism Management",
+	"SVTOpenInternal": "61.23",
+	"SVTReservedInternal": "58.92",
+	"ExternalOpen": "62.00",
+	"ExternalReserved": "62.92"
+},
+{
+	"specialisation": "Interior Design & Resource Management",
+	"SVTOpenInternal": "61.69",
+	"SVTReservedInternal": "58.00",
+	"ExternalOpen": "76.46",
+	"ExternalReserved": "60.00"
+},
+{
+	"specialisation": "Mass Communication & Extension",
+	"SVTOpenInternal": "59.08",
+	"SVTReservedInternal": "54.77",
+	"ExternalOpen": "74.92",
+	"ExternalReserved": "56.00"
+},
+{
+	"specialisation": "Textiles & Apparel Designing",
+	"SVTOpenInternal": "59.08",
+	"SVTReservedInternal": "56.92",
+	"ExternalOpen": "75.08",
+	"ExternalReserved": "58.31"
+}]

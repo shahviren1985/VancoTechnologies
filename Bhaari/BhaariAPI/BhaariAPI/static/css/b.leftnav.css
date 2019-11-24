@@ -1,0 +1,257 @@
+﻿.left-nav {
+    position: absolute;
+    z-index: 3;
+    width: 27%;
+    background-color: White;
+    top: 98px;
+    height: 80%;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #313a49;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+.left-nav .fav-message {
+    float: left;
+    padding: 10px;
+    font-size: 12px;
+    display: none;
+}
+
+.copy, .footer-link, .footer-link-2 {
+    position: fixed;
+    bottom: 0%;
+    font-size: 11px;
+    color: #FFF;
+    z-index: 1111;
+    width: 27%;
+    background-color: #333;
+}
+
+.footer-link {
+    left: 120px;
+    color: rgb(50, 153, 187);
+    cursor: pointer;
+}
+
+    .footer-link:hover {
+        text-decoration: underline;
+    }
+
+.footer-link-2 {
+    left: 180px;
+    color: rgb(50, 153, 187);
+    cursor: pointer;
+}
+
+    .footer-link-2:hover {
+        text-decoration: underline;
+    }
+
+ul.job-list {
+    float: left;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    margin-left: 0px;
+}
+
+    ul.job-list li {
+        float: left;
+        width: 97%;
+        border-bottom: 1px solid #AAA;
+        padding: 5px;
+        cursor: pointer;
+        min-height: 40px;
+    }
+
+.slimScrollBar {
+    display: block !important;
+}
+
+/*ul.job-list li:hover {
+            border-bottom: 2px solid rgb(50, 153, 187);
+        }*/
+
+.job-list li .company-logo {
+    float: left;
+    height: 70px;
+    width: 70px;
+}
+
+.job-list li .company-logo-img {
+    float: left;
+    width: 70px;
+    max-height: 70px;
+}
+
+.mark-fav img {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    float: right;
+    top: -10px;
+    right: 10px;
+}
+
+.job-list li .company-name {
+    font-size: 12px;
+    float: left;
+    /*width: 98%;*/
+    text-align: left;
+    font-family: 'Segoe UI';
+}
+
+.job-list li .job-source {
+    font-size: 11px;
+    float: left;
+    width: 70%;
+}
+
+.job-list li .job-arrow {
+    display: none;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid rgb(50, 153, 187);
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.job-stats {
+    float: left;
+    width: 100%;
+    font-size: 12px;
+}
+
+.icon-search, .icon-eye-open {
+    margin-right: 5px;
+    margin-left: 10px;
+}
+/*TABS with in left nav*/
+.nav-option-list {
+    float: left;
+    list-style: none;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(50, 153, 187);
+    margin-top: -2px;
+    box-shadow: 1px 1px #aaa;
+    margin-bottom: 1px;
+}
+
+    .nav-option-list li {
+        text-align: center;
+        font-size: 12px;
+        color: #FFF;
+        width: 47%;
+        float: left;
+        cursor: pointer;
+        height: 30px;
+        border-left: 1px solid #FFF;
+        font-size: 14px;
+        padding-top: 10px;
+        font-weight: bold;
+    }
+
+        .nav-option-list li.active-tab {
+            background-color: #fff;
+            color: #181f25;
+        }
+
+        .nav-option-list li span {
+            color: #fff;
+        }
+
+.filter-list, .invite-list, .contact-list {
+    padding: 10px;
+    font-size: 12px;
+}
+
+    .filter-list h3, .invite-list h3, .contact-list h3 {
+        font-size: 13px;
+    }
+
+    .invite-list input, .contact-list input {
+        border-radius: 0px;
+        border: 1px solid #DDD;
+    }
+
+h3 {
+    line-height: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    border-radius: 0px;
+    width: 90px !important;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.filter-list div {
+    float: left;
+    width: 100%;
+}
+
+.filter-list span {
+    margin-bottom: 5px;
+    float: left;
+}
+
+span.flag-recent {
+    background-color: green;
+    min-width: 15px;
+    min-height: 15px;
+    margin-right: 10px;
+}
+
+span.flag-old {
+    background-color: red;
+    min-width: 15px;
+    min-height: 15px;
+    margin-right: 10px;
+}
+
+span.flag-moderate {
+    background-color: #E8A317;
+    min-width: 15px;
+    min-height: 15px;
+    margin-right: 10px;
+}
+
+.filter-list input[type="radio"] {
+    margin: 0px;
+    margin-right: 5px;
+}
+
+#invite-error, #contact-error, #invite-pref-error {
+    color: red;
+}
+
+#invite-success, #contact-success, #invite-pref-success {
+    color: green;
+    display: none;
+}
+
+.soon {
+    color: red;
+}

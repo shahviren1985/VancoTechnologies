@@ -1,0 +1,2413 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SVT Admission Form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/svt-icon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/svt-icon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/svt-icon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/svt-icon-57.png">
+
+    <style>
+        .ui-datepicker {
+            width: 20em;
+            padding: .2em .2em 0;
+            display: none;
+        }
+
+        td {
+            text-align: left;
+        }
+
+        #ge-desc-modal .modal-body .row {
+            text-align: left;
+            padding: 5px 25px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">SVT Admission Form</a>
+            </div>
+            <div class="collapse navbar-collapse" id="top-navbar-1">
+                <h1>
+                    <strong>SVT</strong> Admission Form
+                </h1>
+            </div>
+        </div>
+    </nav>
+
+    <div class="top-content">
+        <div class="container">
+
+            <div class="dialog-background" style="display:none;">
+                <div class="dialog-loading-wrapper">
+                    <img src="assets/ico/ajax-loading.gif" title='Loading.....' />
+                </div>
+            </div>
+
+            <div class="row" id="divMain">
+                <div class="col-sm-12 col-sm-offset-0 col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0 form-box">
+                    <form role="form" action="api/form" method="post" enctype="multipart/form-data" class="f1" id="studentData" name="studentData">
+
+                        <div id="divMenu">
+                            <ul class="remove-ul-bullet-icon">
+                                <li class="li-font-set">
+                                    <a href="index.html" style="color: #000000">Home</a> >
+                                    <span style="color:red"> New Admission Form</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="f1-steps">
+                            <div class="f1-progress">
+                                <div class="f1-progress-line" data-now-value="0" data-number-of-steps="5" style="width: 0%;"></div>
+                            </div>
+                            <div class="f1-step" id="divStep1">
+                                <div class="f1-step-icon">
+                                    <i class="fa fa-user"></i>
+                                </div>
+                                <p>Personal Details</p>
+                            </div>
+                            <div class="f1-step" id="divStep2">
+                                <div class="f1-step-icon">
+                                    <i class="fa fa-upload"></i>
+                                </div>
+                                <p>Documents Upload</p>
+                            </div>
+                            <div class="f1-step" id="divStep3">
+                                <div class="f1-step-icon">
+                                    <i class="fa fa-file-o"></i>
+                                </div>
+                                <p>Specialisation </p>
+                            </div>
+                            <div class="f1-step" id="divStep4">
+                                <div class="f1-step-icon">
+                                    <i class="fa fa fa-university"></i>
+                                </div>
+                                <p>Previous Education Details</p>
+                            </div>
+                            <div class="f1-step" id="divStep5">
+                                <div class="f1-step-icon">
+                                    <i class="fa fa-info-circle"></i>
+                                </div>
+                                <p>HSC Marks</p>
+                            </div>
+                        </div>
+
+                        <div id="form-detail">
+                            <input id="id" name="id" type="hidden" />
+
+                            <fieldset id="fieldset_1">
+                                <h4>Personal Details</h4>
+                                <div class="form-detail">
+
+                                    <div class="col-md-12">
+                                        <label class="control-label float-left">MKCL form number</label>
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <label for="MKCLFormNumber" class="sr-only">MKCL form number</label>
+                                                <input id="MKCLFormNumber" class="form-control input-group-lg" type="text" maxlength="20" name="MKCLFormNumber"
+                                                       title="MKCL form number" placeholder="MKCL form number">
+                                            </div>
+                                        </div>
+                                        <p>
+                                            For MKCL Form No. Register at:
+                                            <a href="http://sndt.digitaluniversity.ac" target="_blank">http://sndt.digitaluniversity.ac</a>
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <h3 class="add-info">Personal Information</h3>
+                                        <label class="control-label">Name of the Student</label>
+                                        <div class="form-group">
+                                            <div class="col-sm-3">
+                                                <label for="LastName" class="sr-only">Last Name</label>
+                                                <input id="LastName" class="form-control input-group-lg validate-input" type="text" name="LastName" title="Last Name" placeholder="Last Name"
+                                                       maxlength="100">
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <label for="FirstName" class="sr-only">First Name</label>
+                                                <input id="FirstName" class="form-control input-group-lg validate-input" type="text" name="FirstName" title="First Name"
+                                                       placeholder="First Name" maxlength="100">
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <label for="FatherhusbandsName" class="sr-only">Father / husbands Name</label>
+                                                <input id="FatherName" class="form-control input-group-lg validate-input" type="text" name="FatherName" title="Father / husband Name"
+                                                       placeholder="Father / husband Name" maxlength="100">
+                                            </div>
+                                            <div class="col-sm-3">
+                                                <label for="MotherName" class="sr-only">Mother Name</label>
+                                                <input id="MotherName" class="form-control input-group-lg validate-input" type="text" name="MotherName" title="Mother Name"
+                                                       placeholder="Mother Name" maxlength="100">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label class="control-label">Father Full Name</label>
+                                        <div class="form-group">
+                                            <div class="col-sm-4">
+                                                <label for="FatherLastName" class="sr-only">Father Last Name</label>
+                                                <input id="FatherLastName" class="form-control input-group-lg validate-input" type="text" name="FatherLastName" title="Father Last Name"
+                                                       placeholder="Father Last Name" maxlength="100">
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label for="FatherFirstName" class="sr-only">Father First Name</label>
+                                                <input id="FatherFirstName" class="form-control input-group-lg validate-input" type="text" name="FatherFirstName" title="Father First Name"
+                                                       placeholder="Father First Name" maxlength="100">
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label for="FatherMiddleName" class="sr-only">Father Middle Name</label>
+                                                <input id="FatherMiddleName" class="form-control input-group-lg validate-input" type="text" name="FatherMiddleName" title="Father Middle Name"
+                                                       placeholder="Father Middle Name" maxlength="100">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <label class="control-label">Mother Full Name</label>
+                                        <div class="form-group">
+                                            <div class="col-sm-4">
+                                                <label for="MotherLastName" class="sr-only">Mother Last Name</label>
+                                                <input id="MotherLastName" class="form-control input-group-lg validate-input" type="text" name="MotherLastName" title="Mother Last Name"
+                                                       placeholder="Mother Last Name" maxlength="100">
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label for="MotherFirstName" class="sr-only">Mother First Name</label>
+                                                <input id="MotherFirstName" class="form-control input-group-lg validate-input" type="text" name="MotherFirstName" title="Mother First Name"
+                                                       placeholder="Mother First Name" maxlength="100">
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <label for="MotherMiddleName" class="sr-only">Mother Middle Name</label>
+                                                <input id="MotherMiddleName" class="form-control input-group-lg validate-input" type="text" name="MotherMiddleName" title="Mother Middle Name"
+                                                       placeholder="Mother Middle Name" maxlength="100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Identity details -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <br />
+                                            <h3 class="add-info">Identity Details</h3>
+                                            <div class="col-md-6">
+                                                <label for="Aadhar Card Number" class="control-label">Aadhar Card Number (Please enter 12 digit aadhar number.)</label>
+                                                <input id="AadharNumber" class="form-control input-group-lg validate-input" type="text" name="AadharNumber" title="Aadhar Card Number"
+                                                       placeholder="12 digit Aadhar Card Number" maxlength="12" onblur="return ExtractNumber(this,0,false);"
+                                                       onkeypress="return BlockNonNumbers(this, event, true, false);" onkeyup="validateInputAndDuplicate(this);">
+                                                <!--<input id="AadharNumber" class="form-control input-group-lg validate-input" type="text" name="AadharNumber" title="Aadhar Card Number"
+                                                placeholder="12 digit Aadhar Card Number" maxlength="12" onblur="return ExtractNumber(this,0,false);"
+                                                onkeypress="return BlockNonNumbers(this, event, true, false);" onkeyup="validateInputAndDuplicate(this);">-->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+
+                                            <div class="col-md-6">
+                                                <label for="Pan Card Number" class="control-label">PAN Card Number</label>
+                                                <input id="PanNumber" class="form-control input-group-lg " type="text" name="PanNumber" title="PAN Card Number" placeholder="Pan Card Number"
+                                                       maxlength="12" onkeypress="return BlockNonAlphaNumerics(this, event, true, false);">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Do you have Voter Identity Card?</label>
+                                                <input name="VoterId" type="checkbox" id="VoterId">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12" style="display: none" id="divVoterNumber">
+                                        <div class="form-group">
+                                            <div class="col-md-4">
+                                                <label for="Voter Card Number" class="control-label">Voter Card Number</label>
+                                                <input id="VoterNumber" class="form-control input-group-lg " type="text" name="VoterNumber" title="Voter Card Number" placeholder="Voter Card Number"
+                                                       maxlength="20">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Date of birth</label>
+                                                <div class="form-group internal input-group">
+                                                    <input name="txtBirthDate" type="text" id="txtBirthDate" readonly="readonly" class="form-control input-group-lg validate-input"
+                                                           style="background-color: white; ">
+                                                    <span class='input-group-addon' id="btnBirthDate">
+                                                        <i class='glyphicon glyphicon-calendar'></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Blood Group (with Rh)</label>
+                                                <input name="BloodGroup" type="text" id="BloodGroup" class="form-control " maxlength="20">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Place of Birth</label>
+                                                <input name="PlaceofBirth" type="text" id="PlaceofBirth" class="form-control validate-input" maxlength="100">
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Nationality </label>
+                                                <input name="Nationality" type="text" id="Nationality" class="form-control validate-input" maxlength="100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Are you NRI? </label>
+                                                <input type="checkbox" id="IsNRI" name="IsNRI" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Marital Status</label>
+                                                <select name="MaritalStatus" id="MaritalStatus" class="form-control input-group-lg validate-input">
+                                                    <option value="">Select </option>
+                                                    <option value="Unmarried">Unmarried </option>
+                                                    <option value="Married">Married</option>
+                                                    <option value="Divorced">Divorced</option>
+                                                    <option value="Widowed">Widowed</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Mother Tongue</label>
+                                                <input name="MotherTongue" type="text" id="MotherTongue" class="form-control input-group-lg validate-input" maxlength="100">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Religion Caste details -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <br />
+                                            <h3 class="add-info">Relegion/Caste Details</h3>
+                                            <div class="col-md-6">
+                                                <label class="control-label">Religion </label>
+                                                <select name="Religion" id="Religion" class="form-control input-group-lg validate-input">
+                                                    <option value="">Select</option>
+                                                    <option value="Buddhist">Buddhist</option>
+                                                    <option value="Christian">Christian</option>
+                                                    <option value="Hindu">Hindu</option>
+                                                    <option value="Jain">Jain</option>
+                                                    <option value="Muslim">Muslim</option>
+                                                    <option value="Other">Other</option>
+                                                    <option value="Parsi">Parsi</option>
+                                                    <option value="Sikh">Sikh</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6 hide" id="divOtherRelegion">
+                                                <label class="control-label">Mention Relegion Name </label>
+                                                <input type="text" class="form-control" name="otherRelegion" id="txtOtherRelegion" />
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Category </label>
+                                                <div style="height:40px;">
+                                                    <input type="radio" id="category1" name="Category" value="Open">
+                                                    <label for="Open" class="control-label">Open</label>&nbsp;&nbsp;
+                                                    <input type="radio" id="category2" name="Category" value="Reserved">
+                                                    <label for="Reserved" class="control-label">Reserved</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12" id="divReservedCategory" style="display:none;">
+
+                                        <div class="form-group">
+                                            <h5 class="control-label add-info">Additional Documentation Required</h5>
+                                            <div class="col-md-6">
+                                                <label class="control-label">Reservation Category </label>
+                                                <select class="form-control" name="Caste" id="Caste">
+                                                    <option value="">Select</option>
+                                                    <option value="EWS">EWS (Economically Weaker Section)</option>
+                                                    <option value="NT (1)">NT (1)</option>
+                                                    <option value="NT (2)">NT (2)</option>
+                                                    <option value="NT (3)">NT (3)</option>
+                                                    <option value="OBC">OBC</option>
+                                                    <option value="SBC">SBC</option>
+                                                    <option value="SC">SC</option>
+                                                    <option value="SEBC">SEBC (Socially & Educationally Backward Class)</option>
+                                                    <option value="ST">ST</option>
+                                                    <option value="VJ">VJ</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="control-label">Sub-Caste </label>
+                                                <input id="SubCaste" class="form-control input-group-lg " type="text" name="SubCaste" title="Sub Caste" placeholder="Sub Caste"
+                                                       maxlength="50">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Contact Details -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <br />
+                                            <h3 class="add-info">Contact Details</h3>
+                                            <div class="col-md-6">
+                                                <label class="control-label">Correspondence Address / Temporary Address</label>
+                                                <textarea rows="4" name="CurrentAddress" maxlength="500" id="CurrentAddress" placeholder="Correspondence Address / Temporary Address"
+                                                          class="form-control input-group-lg validate-input"></textarea>
+                                                <input type="checkbox" id="chkSamepermanentaddress" name="Samepermanentaddress">
+                                                <label for="Samepermanentaddress">Same permanent address</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Permanent Address</label>
+                                                <textarea rows="4" name="PermanentAddress" placeholder="Permanent Address" id="PermanentAddress" maxlength="500" class="form-control input-group-lg validate-input"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">State Of Residence</label>
+                                                <select id="drpDwnState" name="drpDwnState" class="form-control input-group-lg validate-input">
+                                                    <option> Please Select State</option>
+                                                    <option value="Andra Pradesh">Andra Pradesh</option>
+                                                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                                    <option value="Assam">Assam</option>
+                                                    <option value="Bihar">Bihar</option>
+                                                    <option value="Chhattisgarh">Chhattisgarh</option>
+                                                    <option value="Goa">Goa</option>
+                                                    <option value="Gujarat">Gujarat</option>
+                                                    <option value="Haryana">Haryana</option>
+                                                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                                    <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                                    <option value="Jharkhand">Jharkhand</option>
+                                                    <option value="Karnataka">Karnataka</option>
+                                                    <option value="Kerala">Kerala</option>
+                                                    <option value="Madya Pradesh">Madya Pradesh</option>
+                                                    <option value="Maharashtra">Maharashtra</option>
+                                                    <option value="Manipur">Manipur</option>
+                                                    <option value="Meghalaya">Meghalaya</option>
+                                                    <option value="Mizoram">Mizoram</option>
+                                                    <option value="Nagaland">Nagaland</option>
+                                                    <option value="Orissa">Orissa</option>
+                                                    <option value="Punjab">Punjab</option>
+                                                    <option value="Rajasthan">Rajasthan</option>
+                                                    <option value="Sikkim">Sikkim</option>
+                                                    <option value="Tamil Nadu">Tamil Nadu</option>
+                                                    <option value="Telagana">Telagana</option>
+                                                    <option value="Tripura">Tripura</option>
+                                                    <option value="Uttaranchal">Uttaranchal</option>
+                                                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                                    <option value="West Bengal">West Bengal</option>
+                                                    <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                                    <option value="Chandigarh">Chandigarh</option>
+                                                    <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                                    <option value="Daman and Diu">Daman and Diu</option>
+                                                    <option value="Delhi">Delhi</option>
+                                                    <option value="Lakshadeep">Lakshadeep</option>
+                                                    <option value="Pondicherry">Pondicherry</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Pincode</label>
+                                                <input name="PinCode" type="text" id="PinCode" placeholder="Pincode" class="form-control input-group-lg validate-input" maxlength="10">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Emergency Telephone Number [Father / Mother / Gurdian's]</label>
+                                                <input type="text" placeholder="Emergency Telephone Number" id="EmergencyTel" name="EmergencyTel" class="form-control input-group-lg validate-input"
+                                                       maxlength="11" minlength="11" onblur="return ExtractNumber(this,0,false);"
+                                                       onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Mobile Number</label>
+                                                <input type="text" placeholder="Mobile Number" id="MobileNumber" name="MobileNumber" class="form-control input-group-lg validate-input"
+                                                       maxlength="11" minlength="11" onblur="return ExtractNumber(this,0,false);"
+                                                       onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Email Address</label>
+                                                <input type="text" placeholder="Email Address" id="Email" name="Email" class="form-control input-group-lg validate-input"
+                                                       maxlength="100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Do you want to avail Hostel facility?</label>
+                                                <input type="checkbox" id="IsHostelRequired" name="IsHostelRequired">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12" id="divHostelReason" style="display: none">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Reason for availing Hostel facility</label>
+                                                <textarea rows="4" name="HostelReason" maxlength="500" id="HostelReason" placeholder="Reason for availing Hostel facility"
+                                                          class="form-control input-group-lg validate-input"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Guardian Details -->
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <br />
+                                            <h3 class="add-info">Guardian Details</h3>
+                                            <div class="col-md-6">
+                                                <label class="control-label">Occupation of the Guardian</label>
+                                                <input name="GuardianOccupation" type="text" id="GuardianOccupation" class="form-control input-group-lg" maxlength="100">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Annual Income of the Guardian</label>
+                                                <input name="GuardianSalary" type="text" id="GuardianSalary" class="form-control input-group-lg" maxlength="20" onblur="return ExtractNumber(this,0,false);"
+                                                       onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Relation with the Guardian</label>
+                                                <input name="RelwithGurdian" type="text" id="RelwithGurdian" class="form-control input-group-lg" maxlength="50">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-4">
+                                                <label class="control-label">Employment Status</label>
+                                                <div>
+                                                    <input type="radio" id="Unemployed" name="EmploymentStatus" value="0">
+                                                    <label for="Unemployed" class="control-label">Unemployed</label>&nbsp;&nbsp;
+                                                    <input type="radio" id="Employed" name="EmploymentStatus" value="1">
+                                                    <label for="Employed" class="control-label">Employed</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-4">
+                                                <label class="control-label">Disability</label>
+                                                <input type="checkbox" id="chkLearningDisability" name="chkLearningDisability">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12" style="display: none" id="divDisabilityCardNumber">
+                                        <div class="form-group">
+                                            <div class="col-md-4">
+                                                <label class="control-label">Disability Type</label>
+                                                <select id="DisabilityType" name="DisabilityType" class="form-control input-group-lg validate-input">
+                                                    <option> Please Select Disability Type</option>
+                                                    <option value="Visually Impaired">Visually Impaired</option>
+                                                    <option value="Speech and Hearing Impaired">Speech and/or Hearing Impaired</option>
+                                                    <option value="Orthopedic Disorder or Mentally Retarded">Orthopedic Disorder or Mentally Retarded</option>
+                                                    <option value="Learning Disability">Learning Disability</option>
+                                                    <option value="Dyslexia">Dyslexia</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="control-label">Disability Percentage</label>
+                                                <input type="text" id="DisabilityPercentage" name="DisabilityPercentage" class="form-control input-group-lg" maxlength="3">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label class="control-label">Enter your Disability Card Number</label>
+                                                <input type="text" id="DisabilityCardNumber" name="DisabilityCardNumber" class="form-control input-group-lg" maxlength="20">
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <!-- Bank Details -->
+                                    <!-- Enter your/guardians bank account details
+                                    Fields: Bank name, Account number, Branch, IFSC Code, Account Holder Name -->
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <br />
+                                            <h3 class="add-info">Enter your/guardians bank account details</h3>
+                                            <div class="col-md-6">
+                                                <label class="control-label">Bank name</label>
+                                                <input name="BankName" type="text" id="BankName" class="form-control input-group-lg validate-input" maxlength="100">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Account number</label>
+                                                <input name="AccountNumber" type="text" id="AccountNumber" class="form-control input-group-lg validate-input" maxlength="20"
+                                                       onblur="return ExtractNumber(this,0,false);" onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">Branch name</label>
+                                                <input name="BranchName" type="text" id="BranchName" class="form-control input-group-lg validate-input" maxlength="200">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-4">
+                                                <label class="control-label">IFSC Code</label>
+                                                <input name="IFSCCode" type="text" id="IFSCCode" class="form-control input-group-lg validate-input" maxlength="15">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-4">
+                                                <label class="control-label">Account Holder Name</label>
+                                                <input name="AccountHolderName" type="text" id="AccountHolderName" class="form-control input-group-lg validate-input" maxlength="150">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </fieldset>
+
+                            <fieldset id="fieldset_2">
+                                <h4>Documents Upload</h4>
+                                <div class="form-detail">
+                                    <div class="col-md-12">
+                                        <div class="col-md-6">
+                                            <label>Photograph</label>
+                                            <div>
+                                                <input type="file" name="fileDp" id="fileDp" class="input-group-lg validate-input">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <img id="photo" src="#" style="display:none; width:100px" alt="Photograph">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 padding-top-10px">
+                                        <p>
+                                            <i>
+                                                Please upload your <b>Recent</b> passport size photograph. Photo should be of size 15 cm *
+                                                15 cm. Make sure your photograph size does not exceed 500KB.
+                                            </i>
+                                            <b style="color: red">Photograph should be recent & good quality, it will be used for all official purpose.</b>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="col-md-6">
+                                            <label>Signature</label>
+                                            <div>
+                                                <input type="file" name="filesignature" id="filesignature" class="input-group-lg validate-input">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <img id="photoSignature" src="#" alt="Signature" style=" display: none; width: 100px">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 padding-top-10px">
+                                        <p>
+                                            <i>
+                                                Please upload your signature. Signature image should be of size 15 cm * 15 cm.
+                                                Make sure your signature image size does not exceed 500KB.
+                                            </i>
+                                        </p>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <div id="fileDpError" style="display:none;" class="alert alert-danger">
+                                    <strong>Please!</strong> select valid photo file as per the description.
+                                </div>
+                                <div id="filesignatureError" style="display:none;" class="alert alert-danger">
+                                    <strong>Please!</strong> select valid signature file as per the description.
+                                </div>
+                            </fieldset>
+
+                            <fieldset id="fieldset_3">
+                                <h4>Specialisation</h4>
+                                <div class="form-detail">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-6">
+                                                <label class="control-label">HSC Stream </label>
+                                                <select name="HscStream" id="HscStream" onchange="setprefernce();" class="form-control input-group-lg validate-input">
+                                                    <option selected="selected" value="">Select</option>
+                                                    <option value="Arts">Arts</option>
+                                                    <option value="Science">Science</option>
+                                                    <option value="Commmerce">Commerce</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 padding-top-10px">
+                                        <label class="control-label">
+                                            Specialization Preferences
+                                            <sub>
+                                                <b>
+                                                    <i class="text-danger"> ( Preferences can't be changed after form submission ) </i>
+                                                </b>
+                                            </sub>
+                                        </label>
+                                        <div class="form-group">
+                                            <table class="table table-hover">
+                                                <tr>
+                                                    <th class="th-color">Specialization </th>
+                                                    <th class="th-color"> Pref.1 </th>
+                                                    <th class="th-color"> Pref.2 </th>
+                                                    <th class="th-color"> Pref.3 </th>
+                                                    <th class="th-color"> Pref.4 </th>
+                                                    <th class="th-color"> Pref.5 </th>
+                                                    <th class="th-color"> Pref.6 </th>
+                                                    <th class="th-color tdpref7"> Pref.7 </th>
+                                                    <th class="th-color"> Elective 1 </th>
+                                                    <th class="th-color"> Elective 2</th>
+                                                    <th class="th-color"> Information </th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Developmental Counselling</td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_1_1" class="chkRow1 chkCol1">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_1_2" class="chkRow1 chkCol2">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_1_3" class="chkRow1 chkCol3">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_1_4" class="chkRow1 chkCol4">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_1_5" class="chkRow1 chkCol5">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_1_6" class="chkRow1 chkCol6">
+                                                        </div>
+                                                    </td>
+                                                    <td class="tdpref7">
+                                                        <div>
+                                                            <input type="checkbox" id="check_1_7" class="chkRow1 chkCol7">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <select name="DCElectives1" id="DCElectives1" class="form-control validate-input elective1">
+                                                            <option value="">Select Elective</option>
+                                                            <option value="Digital Photography">Digital Photography</option>
+                                                            <option value="Voice Culture and Modulation">Voice Culture and Modulation</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="DCElectives2" id="DCElectives2" class="form-control validate-input elective2">
+                                                            <option value="">Select Elective</option>
+                                                            <option value="Fashion Craft">Fashion Craft</option>
+                                                            <option value="Fundamentals of Fashion">Fundamentals of Fashion</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <div class="divInfoClick" data-toggle="modal" data-specialisation="Developmental Counselling" data-target="#ge-desc-modal">
+                                                            <i class="fa fa-info-circle fa-2x text-danger" data-specialisation="Developmental Counselling"></i>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> Early Childhood care & Education</td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_2_1" class="chkRow2 chkCol1">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_2_2" class="chkRow2 chkCol2">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_2_3" class="chkRow2 chkCol3">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_2_4" class="chkRow2 chkCol4">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_2_5" class="chkRow2 chkCol5">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_2_6" class="chkRow2 chkCol6">
+                                                        </div>
+                                                    </td>
+                                                    <td class="tdpref7">
+                                                        <div>
+                                                            <input type="checkbox" id="check_2_7" class="chkRow2 chkCol7">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <select name="ECElectives1" id="ECElectives1" class="form-control validate-input elective1">
+                                                            <option value="">Select Elective</option>
+                                                            <option value="Digital Photography">Digital Photography</option>
+                                                            <option value="Voice Culture and Modulation">Voice Culture and Modulation</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="ECElectives2" id="ECElectives2" class="form-control validate-input elective2">
+                                                            <option value="">Select Elective</option>
+                                                            <option value="Fashion Craft">Fashion Craft</option>
+                                                            <option value="Fundamentals of Fashion">Fundamentals of Fashion</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <div class="divInfoClick" data-toggle="modal" data-specialisation="Early Childhood care & Education" data-target="#ge-desc-modal">
+                                                            <i class="fa fa-info-circle fa-2x text-danger" data-specialisation="Early Childhood care & Education"></i>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr id="trFoodNutritionDietetics">
+                                                    <td>Food, Nutrition and Dietetics</td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_3_1" class="chkRow3 chkCol1">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_3_2" class="chkRow3 chkCol2">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_3_3" class="chkRow3 chkCol3">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_3_4" class="chkRow3 chkCol4">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_3_5" class="chkRow3 chkCol5">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_3_6" class="chkRow3 chkCol6">
+                                                        </div>
+                                                    </td>
+                                                    <td class="tdpref7">
+                                                        <div>
+                                                            <input type="checkbox" id="check_3_7" class="chkRow3 chkCol7">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <select name="FDElectives1" id="FDElectives1" class="form-control validate-input elective1">
+                                                            <option value="">Select Elective</option>
+                                                            <option value="Consumer Education and Financial Literacy">Consumer Education and Financial Literacy</option>
+                                                            <option value="Travel Arrangements and Formalities"> Travel Arrangements and Formalities</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="FDElectives2" id="FDElectives2" class="form-control validate-input elective2">
+                                                            <option value="">Select Elective</option>
+                                                            <option value="Personal and Professional Relationships in Adulthood">Personal and Professional Relationships in Adulthood</option>
+                                                            <option value="Marriage and Parenting">Marriage and Parenting</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+
+                                                        <div class="divInfoClick" data-toggle="modal" data-specialisation="Food, Nutrition and Dietetics" data-target="#ge-desc-modal">
+                                                            <i class="fa fa-info-circle fa-2x text-danger" data-specialisation="Food, Nutrition and Dietetics"></i>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Hospitality & Tourism Management </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_4_1" class="chkRow4 chkCol1">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_4_2" class="chkRow4 chkCol2">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_4_3" class="chkRow4 chkCol3">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_4_4" class="chkRow4 chkCol4">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_4_5" class="chkRow4 chkCol5">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_4_6" class="chkRow4 chkCol6">
+                                                        </div>
+                                                    </td>
+                                                    <td class="tdpref7">
+                                                        <div>
+                                                            <input type="checkbox" id="check_4_7" class="chkRow4 chkCol7">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <select name="HTElectives1" id="HTElectives1" class="form-control validate-input elective1">
+                                                            <option value="">Select Elective</option>
+                                                            <option value="Nutrition for Health Promotion">Nutrition for Health Promotion</option>
+                                                            <option value="Fundamentals of Baking">Fundamentals of Baking</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="HTElectives2" id="HTElectives2" class="form-control validate-input elective2">
+                                                            <option value="">Select Elective</option>
+                                                            <option value="Fashion Craft">Fashion Craft</option>
+                                                            <option value="Fundamentals of Fashion">Fundamentals of Fashion</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+
+                                                        <div class="divInfoClick" data-toggle="modal" data-specialisation="Hospitality & Tourism Management" data-target="#ge-desc-modal">
+                                                            <i class="fa fa-info-circle fa-2x text-danger" data-specialisation="Hospitality & Tourism Management"></i>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td> Interior Design & Resource Management </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_5_1" class="chkRow5 chkCol1">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_5_2" class="chkRow5 chkCol2">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_5_3" class="chkRow5 chkCol3">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_5_4" class="chkRow5 chkCol4">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_5_5" class="chkRow5 chkCol5">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_5_6" class="chkRow5 chkCol6">
+                                                        </div>
+                                                    </td>
+                                                    <td class="tdpref7">
+                                                        <div>
+                                                            <input type="checkbox" id="check_5_7" class="chkRow5 chkCol7">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <select name="IDElectives1" id="IDElectives1" class="form-control validate-input elective1">
+                                                            <option value="">Select Elective</option>
+                                                            <option value="Nutrition for Health Promotion">Nutrition for Health Promotion</option>
+                                                            <option value="Fundamentals of Baking">Fundamentals of Baking</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="IDElectives2" id="IDElectives2" class="form-control validate-input elective2">
+                                                            <option value="">Select Elective</option>
+                                                            <option value="Fashion Craft">Fashion Craft</option>
+                                                            <option value="Fundamentals of Fashion">Fundamentals of Fashion</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+
+                                                        <div class="divInfoClick" data-toggle="modal" data-specialisation="Interior Design & Resource Management" data-target="#ge-desc-modal">
+                                                            <i class="fa fa-info-circle fa-2x text-danger" data-specialisation="Interior Design & Resource Management"></i>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mass Communication & Extension</td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_6_1" class="chkRow6 chkCol1">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_6_2" class="chkRow6 chkCol2">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_6_3" class="chkRow6 chkCol3">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_6_4" class="chkRow6 chkCol4">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_6_5" class="chkRow6 chkCol5">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_6_6" class="chkRow6 chkCol6">
+                                                        </div>
+                                                    </td>
+                                                    <td class="tdpref7">
+                                                        <div>
+                                                            <input type="checkbox" id="check_6_7" class="chkRow6 chkCol7">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <select name="MCEElectives1" id="MCEElectives1" class="form-control validate-input elective1">
+                                                            <option value="">Select Elective</option>
+                                                            <option value="Nutrition for Health Promotion">Nutrition for Health Promotion</option>
+                                                            <option value="Fundamentals of Baking">Fundamentals of Baking</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="MCEElectives2" id="MCEElectives2" class="form-control validate-input elective2">
+                                                            <option value="">Select Elective</option>
+                                                            <option value="Fashion Craft">Fashion Craft</option>
+                                                            <option value="Fundamentals of Fashion">Fundamentals of Fashion</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+
+                                                        <div class="divInfoClick" data-toggle="modal" data-specialisation="Mass Communication & Extension" data-target="#ge-desc-modal">
+                                                            <i class="fa fa-info-circle fa-2x text-danger" data-specialisation="Mass Communication & Extension"></i>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Textiles & Apparel Designing</td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_7_1" class="chkRow7 chkCol1">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_7_2" class="chkRow7 chkCol2">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_7_3" class="chkRow7 chkCol3">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_7_4" class="chkRow7 chkCol4">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_7_5" class="chkRow7 chkCol5">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <input type="checkbox" id="check_7_6" class="chkRow7 chkCol6">
+                                                        </div>
+                                                    </td>
+                                                    <td class="tdpref7">
+                                                        <div>
+                                                            <input type="checkbox" id="check_7_7" class="chkRow7 chkCol7">
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <select name="TAElectives1" id="TAElectives1" class="form-control validate-input elective1">
+                                                            <option value="">Select Elective</option>
+                                                            <option value="Digital Photography">Digital Photography</option>
+                                                            <option value="Voice Culture and Modulation">Voice Culture and Modulation</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <select name="TAElectives2" id="TAElectives2" class="form-control validate-input elective2">
+                                                            <option value="">Select Elective</option>
+                                                            <option value="Personal and Professional Relationships in Adulthood">Personal and Professional Relationships in Adulthood</option>
+                                                            <option value="Marriage and Parenting">Marriage and Parenting</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+
+                                                        <div class="divInfoClick" data-toggle="modal" data-specialisation="Textiles & Apparel Designing" data-target="#ge-desc-modal">
+                                                            <i class="fa fa-info-circle fa-2x text-danger" data-specialisation="Textiles & Apparel Designing"></i>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset id="fieldset_4">
+                                <h4>Previous Education Details</h4>
+                                <div class="form-detail">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label class="control-label">Previous College Name [Junior College]</label>
+                                                <input id="LastSchoolAttend" class="form-control input-group-lg validate-input" type="text" name="LastSchoolAttend" title="College Name with University Name "
+                                                       placeholder="College Name with University Name " maxlength="200">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label class="control-label">Last Examination Board</label>
+                                                <input id="NameofExaminationBoard" class="form-control input-group-lg validate-input" type="text" name="NameofExaminationBoard"
+                                                       title="Last Examination Board" placeholder="Last Examination Board" maxlength="200">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-12">
+                                                <label class="control-label">Year & Month of passing (Year should be current year)</label>
+                                                <div class="form-group">
+                                                    <div class="col-md-6">
+                                                        <select name="MonthLastExamPassed" id="MonthLastExamPassed" class="form-control input-group-lg validate-input">
+                                                            <option value="">Select Month </option>
+                                                            <option value="1">January </option>
+                                                            <option value="2">February</option>
+                                                            <option value="3">March</option>
+                                                            <option value="4">April</option>
+                                                            <option value="5">May</option>
+                                                            <option value="6">June</option>
+                                                            <option value="7">July</option>
+                                                            <option value="8">August</option>
+                                                            <option value="9">September</option>
+                                                            <option value="10">October</option>
+                                                            <option value="11">November</option>
+                                                            <option value="12">December</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <select name="YearLastExamPassed" id="YearLastExamPassed" class="form-control input-group-lg validate-input"></select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 text-danger hide" id="gapCertificateMsgDiv">
+                                                <strong>
+                                                    * Gap certificate is required if passing year is not current year.
+                                                </strong>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-sm-6">
+                                                <label class="control-label">Attempt of HSC</label>
+                                                <select name="AttemptofHSC" id="AttemptofHSC" class="form-control input-group-lg validate-input">
+                                                    <option value="">Select</option>
+                                                    <option value="first">First attempt</option>
+                                                    <option value="second">Second attempt</option>
+                                                    <option value="third">Third attempt</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-5">
+                                                <label class="control-label">Choose</label>
+                                                <div>
+                                                    <input type="radio" id="Choose1" class="validate-input" name="Choose" value="1">
+                                                    <label for="Choose1" class="control-label">In House Student [SVT Students only]</label>&nbsp;&nbsp;
+                                                    <input type="radio" id="Choose2" name="Choose" value="0" class="validate-input">
+                                                    <label for="Choose2" class="control-label">Other College</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-md-3">
+                                                <label class="control-label">Wish to Join NSS</label>
+                                                <div>
+                                                    <input type="radio" id="No" name="JoinNSS" value="0">
+                                                    <label for="no" class="control-label validate-input">No</label>&nbsp;&nbsp;
+                                                    <input type="radio" id="Yes" name="JoinNSS" value="1">
+                                                    <label for="yes" class="control-label validate-input">Yes</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset id="fieldset_5">
+                                <h4 class="fieldsetheader">HSC Marks</h4>
+                                <div class="form-detail">
+                                    <div class="col-md-12 padding-top-10px">
+                                        <div class="form-group">
+                                            <label>Your HSC marks are based on : </label>&nbsp;
+                                            <input type="radio" class="hscmarkType" name="hscMarkType" value="marks" checked />Marks Only &nbsp;&nbsp;&nbsp;
+                                            <input type="radio" class="hscmarkType" name="hscMarkType" value="grade" />Grade Only
+                                        </div>
+                                        <label id="gradeOnlyLabel" class="hide text-danger">
+                                            Please get the grades converted into corresponding marks from your college/university.
+                                            You need to get eligibility certificate from SNDT university. Please click
+                                            <a href="https://sndt.ac.in/downloads/eligibility_form.pdf" target="_blank">
+                                                <b>here</b>
+                                            </a>
+                                            for more information
+                                        </label>
+                                        <div class="form-group">
+                                            <table class="table table-hover">
+                                                <tr>
+                                                    <td>Subject </td>
+                                                    <td class="tdmark">Marks </td>
+                                                    <td class="tdtotalmark">Total Marks </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input name="Subject1Name" type="text" id="Subject1Name" class="form-control input-group-lg validate-input" maxlength="50"
+                                                               placeholder="Subject Name 1">
+                                                    </td>
+                                                    <td>
+                                                        <input name="Subject1MarksObtained" type="text" id="Subject1MarksObtained" class="form-control input-group-lg marksobtained validate-input"
+                                                               placeholder="Marks obtained in subject 1" maxlength="3" onblur="javascript:dosum();"
+                                                               onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                                    </td>
+                                                    <td>
+                                                        <input name="Subject1Total" type="text" id="Subject1Total" class="form-control input-group-lg markstotal validate-input"
+                                                               placeholder="Total marks of subject 1" maxlength="3" onblur="javascript:dosum();"
+                                                               onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input name="Subject2Name" type="text" id="Subject2Name" class="form-control input-group-lg validate-input" maxlength="50"
+                                                               placeholder="Subject Name 2">
+                                                    </td>
+                                                    <td>
+                                                        <input name="Subject2MarksObtained" type="text" id="Subject2MarksObtained" class="form-control input-group-lg marksobtained validate-input"
+                                                               placeholder="Marks obtained in subject 2" maxlength="3" onblur="javascript:dosum();"
+                                                               onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                                    </td>
+                                                    <td>
+                                                        <input name="Subject2Total" type="text" id="Subject2Total" class="form-control input-group-lg markstotal validate-input"
+                                                               placeholder="Total marks of subject 2" maxlength="3" onblur="javascript:dosum();"
+                                                               onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input name="Subject3Name" type="text" id="Subject3Name" class="form-control input-group-lg validate-input" maxlength="50"
+                                                               placeholder="Subject Name 3">
+                                                    </td>
+                                                    <td>
+                                                        <input name="Subject3MarksObtained" type="text" maxlength="3" id="Subject3MarksObtained" class="form-control input-group-lg marksobtained validate-input"
+                                                               placeholder="Marks obtained in subject 3" onblur="javascript:dosum();"
+                                                               onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                                    </td>
+                                                    <td>
+                                                        <input name="Subject3Total" type="text" maxlength="3" id="Subject3Total" class="form-control input-group-lg markstotal validate-input"
+                                                               placeholder="Total marks of subject 3" onblur="javascript:dosum();"
+                                                               onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input name="Subject4Name" type="text" id="Subject4Name" class="form-control input-group-lg validate-input" maxlength="50"
+                                                               placeholder="Subject Name 4">
+                                                    </td>
+                                                    <td>
+                                                        <input name="Subject4MarksObtained" type="text" maxlength="3" id="Subject4MarksObtained" class="form-control input-group-lg marksobtained validate-input"
+                                                               placeholder="Marks obtained in subject 4" onblur="javascript:dosum();"
+                                                               onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                                    </td>
+                                                    <td>
+                                                        <input name="Subject4Total" type="text" maxlength="3" id="Subject4Total" class="form-control input-group-lg markstotal validate-input"
+                                                               placeholder="Total marks of subject 4" onblur="javascript:dosum();"
+                                                               onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input name="Subject5Name" type="text" id="Subject5Name" class="form-control input-group-lg validate-input" maxlength="50"
+                                                               placeholder="Subject Name 5">
+                                                    </td>
+                                                    <td>
+                                                        <input name="Subject5MarksObtained" type="text" maxlength="3" id="Subject5MarksObtained" class="form-control input-group-lg marksobtained validate-input"
+                                                               placeholder="Marks obtained in subject 5" onblur="javascript:dosum();"
+                                                               onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                                    </td>
+                                                    <td>
+                                                        <input name="Subject5Total" type="text" maxlength="3" id="Subject5Total" class="form-control input-group-lg markstotal validate-input"
+                                                               placeholder="Total marks of subject 5" onblur="javascript:dosum();"
+                                                               onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input name="Subject6Name" type="text" id="Subject6Name" class="form-control input-group-lg" maxlength="50"
+                                                               placeholder="Subject Name 6">
+                                                    </td>
+                                                    <td>
+                                                        <input name="Subject6MarksObtained" type="text" maxlength="3" id="Subject6MarksObtained" class="form-control input-group-lg marksobtained"
+                                                               placeholder="Marks obtained in subject 6" onblur="javascript:dosum();"
+                                                               onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                                    </td>
+                                                    <td>
+                                                        <input name="Subject6Total" type="text" maxlength="3" id="Subject6Total" class="form-control input-group-lg markstotal"
+                                                               placeholder="Total marks of subject 6" onblur="javascript:dosum();"
+                                                               onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input name="Subject7Name" type="text" id="Subject7Name" class="form-control input-group-lg" maxlength="50" placeholder="Subject Name 7">
+                                                    </td>
+                                                    <td>
+                                                        <input name="Subject7MarksObtained" type="text" maxlength="3" id="Subject7MarksObtained" class="form-control input-group-lg marksobtained"
+                                                               placeholder="Marks obtained in subject 7" onblur="javascript:dosum();"
+                                                               onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                                    </td>
+                                                    <td>
+                                                        <input name="Subject7Total" type="text" maxlength="3" id="Subject7Total" class="form-control input-group-lg markstotal" placeholder="Total marks of subject 7"
+                                                               onblur="javascript:dosum();" onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Total Marks</td>
+                                                    <td>
+                                                        <input name="TotalMarks" type="text" maxlength="3" id="TotalMarks" class="form-control input-group-lg" readonly="readonly"
+                                                               placeholder="Total Marks" onblur="javascript:dosum();" onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Percentage</td>
+                                                    <td>
+                                                        <input name="Percentage" type="text" maxlength="3" id="Percentage" class="form-control input-group-lg" readonly="readonly"
+                                                               placeholder="Percentage" onblur="javascript:dosum();" onkeypress="return BlockNonNumbers(this, event, true, false);">
+                                                    </td>
+                                                    <td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="col-md-3">
+                                            <label class="control-label">How did you hear about us?</label>
+                                            <div>
+                                                <select name="AboutCollege" id="AboutCollege" class="form-control input-group-lg validate-input">
+                                                    <option value="">Select </option>
+                                                    <option value="Alumni">Alumni</option>
+                                                    <option value="Event">Event</option>
+                                                    <option value="Family">Family</option>
+                                                    <option value="Friends">Friends</option>
+                                                    <option value="News Advertisement">Local News Paper Advertisement</option>
+                                                    <option value="Social Media">Social Media</option>
+                                                    <option value="Other Website">Other Website</option>
+                                                    <option value="Other">Other</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <div class="col-md-8">
+                                    <div id="ErrorMessage" class="hidden alert alert-danger"></div>
+                                    <div id="SuccessMessage" class="hidden alert alert-success"></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group f1-buttons">
+                                        <button type="button" id="btnSave" onclick="return SubmitButton(this,0)" data-post="api/form/PostFormData" class="btn btn-info">Save</button>
+                                        <!--<button id="submitforSave" type="submit" class="btn btn-info" onclick="return SubmitButton(this)" data-post="api\form">Save</button>-->
+                                        <button type="button" name="button" id="submitBtn" data-toggle="modal" data-target="#confirm-submit" class="btn btn-next">Save & Submit</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <!--Preferences Check box Values-->
+                        <input type="hidden" id="Pre1" name="Pre1" />
+                        <input type="hidden" id="Pre2" name="Pre2" />
+                        <input type="hidden" id="Pre3" name="Pre3" />
+                        <input type="hidden" id="Pre4" name="Pre4" />
+                        <input type="hidden" id="Pre5" name="Pre5" />
+                        <input type="hidden" id="Pre6" name="Pre6" />
+                        <input type="hidden" id="Pre7" name="Pre7" />
+
+                        <!--Elective Value-->
+                        <input type="hidden" id="Pre1Elective1" name="Pre1Elective1" />
+                        <input type="hidden" id="Pre1Elective2" name="Pre1Elective2" />
+
+                        <input type="hidden" id="Pre2Elective1" name="Pre2Elective1" />
+                        <input type="hidden" id="Pre2Elective2" name="Pre2Elective2" />
+
+                        <input type="hidden" id="Pre3Elective1" name="Pre3Elective1" />
+                        <input type="hidden" id="Pre3Elective2" name="Pre3Elective2" />
+
+                        <input type="hidden" id="Pre4Elective1" name="Pre4Elective1" />
+                        <input type="hidden" id="Pre4Elective2" name="Pre4Elective2" />
+
+                        <input type="hidden" id="Pre5Elective1" name="Pre5Elective1" />
+                        <input type="hidden" id="Pre5Elective2" name="Pre5Elective2" />
+
+                        <input type="hidden" id="Pre6Elective1" name="Pre6Elective1" />
+                        <input type="hidden" id="Pre6Elective2" name="Pre6Elective2" />
+
+                        <input type="hidden" id="Pre7Elective1" name="Pre7Elective1" />
+                        <input type="hidden" id="Pre7Elective2" name="Pre7Elective2" />
+
+                        <input type="hidden" id="isSubmit" name="isSubmit" />
+
+                        <input type="hidden" id="hdnPhoto" name="hdnPhoto" />
+                        <input type="hidden" id="hdnSignature" name="hdnSignature" />
+
+                        <button type="button" style="display:none" name="button" id="btnSubmitconfirm" data-toggle="modal" data-target="#confirm-submit-message"
+                                class="btn btn-next">
+                            Confirm Popup
+                        </button>
+                        <button type="button" style="display:none" name="button" id="btnSaveAndSubmitconfirm" data-toggle="modal" data-target="#confirm-save-submit-message"
+                                class="btn btn-next">
+                            Submit Confirm Popup
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="row" id="divViewPdf">
+                <div class="col-sm-12 col-sm-offset-0 col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0 form-box">
+                    <form role="form" action="" method="post" class="f1" name="studentDetail">
+                        <div>
+                            <ul class="remove-ul-bullet-icon">
+                                <li class="li-font-set">
+                                    <a href="index.html" style="color: #000000">Home</a> >
+                                    <span style="color:red"> New Admission Form</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="form-detail">
+                            <fieldset>
+                                <div class="form-detail">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-sm-12" style="padding-top: 34px;">
+                                                <div class='embed-responsive' style='padding-bottom:150%;'>
+                                                    <object id="viewPdf" type='application/pdf' width='100%' height='100%'></object>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="ge-desc-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="width:1000px">
+            <div class="modal-content">
+                <div class="modal-header" id="courseModalHeader" style="text-align:left;font-weight:500">
+                    Specialisation Description
+                </div>
+                <div class="modal-body" style="font-size: 14px; font-weight: 500;">
+
+                    Course Information
+                </div>
+
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-next" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="confirm-submit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="width:1000px">
+            <div class="modal-content">
+
+                <div class="modal-header" style="text-align:left;font-weight:500">
+                    Confirm Submit
+                </div>
+                <div class="modal-body" style="font-size: 14px; font-weight: 500;">
+                    <p>
+                        SIR VITHALDAS THACKERSEY COLLEGE OF HOME SCIENCE
+                        <br> (AUTONOMOUS )
+                        <br> MUMBAI - 400 049.
+                        <br> ADMISSION TO F.Y.B.Sc (2019-2020)
+                    </p>
+
+                    <p>
+                        IMPORTANT NOTICE
+                        <br> STUDENT’S WHOSE NAME ARE DISPLAYED IN FIRST MERIT LIST SHOULD SECURE ADMISSION TO THAT PARTICULAR
+                        SPECIALISATION AND PAY THE FEES. IF THEY DON’T PAY FEES &amp; SECURE ADMISSION AS PER FIRST MERIT
+                        LIST THEY WILL NOT BE CONSIDERED FOR SECOND MERIT LIST.
+                        <br> IF THERE IS SEAT VACANT FOR THEIR FIRST PREFERENCE THEY WILL BE AUTOMATICALLY TRANSEFERRED TO THAT
+                        PARTICULAR SPECIALISATION IN THE SECOND LIST.
+                        <br>
+                    </p>
+
+                    <p style="text-align: left;">
+                        Dr.Jagmeet Madan
+                        <br> Principal
+                        <br>
+                    </p>
+
+                    <p style="text-align: left; font-weight: 500; font-size: 21px;"> Specialisation </p>
+                    <hr />
+                    <table style="width:100%; padding: 10px;" class="borderTable">
+                        <tr>
+                            <th class="borderTable">Course</th>
+                            <th class="borderTable">Elective 1</th>
+                            <th class="borderTable">Elective 2</th>
+                        </tr>
+                        <tr>
+                            <td class="borderTable" id="CoursePreference1"></td>
+                            <td class="borderTable" id="Elective1"></td>
+                            <td class="borderTable" id="Elective2_1"></td>
+                        </tr>
+                        <tr>
+                            <td class="borderTable" id="CoursePreference2"></td>
+                            <td class="borderTable" id="Elective2"></td>
+                            <td class="borderTable" id="Elective2_2"></td>
+                        </tr>
+                        <tr>
+                            <td class="borderTable" id="CoursePreference3"></td>
+                            <td class="borderTable" id="Elective3"></td>
+                            <td class="borderTable" id="Elective2_3"></td>
+                        </tr>
+                        <tr>
+                            <td class="borderTable" id="CoursePreference4"></td>
+                            <td class="borderTable" id="Elective4"></td>
+                            <td class="borderTable" id="Elective2_4"></td>
+                        </tr>
+                        <tr>
+                            <td class="borderTable" id="CoursePreference5"></td>
+                            <td class="borderTable" id="Elective5"></td>
+                            <td class="borderTable" id="Elective2_5"></td>
+                        </tr>
+                        <tr>
+                            <td class="borderTable" id="CoursePreference6"></td>
+                            <td class="borderTable" id="Elective6"></td>
+                            <td class="borderTable" id="Elective2_6"></td>
+                        </tr>
+                        <tr>
+                            <td class="borderTable" id="CoursePreference7"></td>
+                            <td class="borderTable" id="Elective7"></td>
+                            <td class="borderTable" id="Elective2_7"></td>
+                        </tr>
+                    </table>
+                    <p style="text-align:left;"> Are you sure you want to submit the application form?</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-next" data-dismiss="modal">Cancel</button>
+                    <button id="submitFromPopup" type="button" onclick="return SubmitButton(this,1)" data-post="api/form/PostFormData" class="btn btn-info">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="confirm-submit-message" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" id="divMsg" style="text-align:left">
+                </div>
+                <input type="hidden" id="modelUrlValue" name="modelUrlValue">
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" id="btnClose">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="confirm-save-submit-message" tabindex=" -1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="width:500px">
+            <div class="modal-content">
+                <div class="modal-body" style="font-size: 14px; font-weight: 500;">
+                    <div class="modal-body" id="divSuccessMsg" style="text-align:left">
+                    </div>
+                </div>
+                <input type="hidden" id="PdfmodelUrlValue" name="PdfmodelUrlValue">
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" id="btnSubmitClose">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/retina-1.1.0.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js"></script>
+
+    <script>
+        var _u = _.noConflict(); // lets call ourselves _u
+    </script>
+
+    <script type="text/javascript">
+        $('.hscmarkType').on('change', (e) => {
+            if ($('input[name = hscMarkType]:checked').val() == "grade") {
+                $('#gradeOnlyLabel').removeClass('hide')
+                $('#btnSave').attr('disabled', 'disabled');
+
+                $('#submitBtn').attr('disabled', 'disabled');
+            } else {
+                $('#gradeOnlyLabel').addClass('hide');
+                $('#btnSave').removeAttr('disabled');
+                $('#submitBtn').removeAttr('disabled');
+            }
+
+        })
+
+        $('#submitBtn').click(function () {
+            if (CheckValidation()) {
+                $("#ErrorMessage").html('Please enter valid details in form. Missing fields are highlighted with red color.');
+                $("#ErrorMessage").removeClass("hidden");
+                return false;
+            } else {
+                $("#ErrorMessage").addClass("hidden");
+                $("#ErrorMessage").html('');
+
+                SetPreferencesValue();
+                $('#CoursePreference1').html($('#Pre1').val());
+                $('#Elective1').html($('#Pre1Elective1').val());
+                $('#Elective2_1').html($('#Pre1Elective2').val());
+
+                $('#CoursePreference2').html($('#Pre2').val());
+                $('#Elective2').html($('#Pre2Elective1').val());
+                $('#Elective2_2').html($('#Pre2Elective2').val());
+
+                $('#CoursePreference3').html($('#Pre3').val());
+                $('#Elective3').html($('#Pre3Elective1').val());
+                $('#Elective2_3').html($('#Pre3Elective2').val());
+
+                $('#CoursePreference4').html($('#Pre4').val());
+                $('#Elective4').html(($('#Pre4Elective1').val()));
+                $('#Elective2_4').html($('#Pre4Elective2').val());
+
+                $('#CoursePreference5').html($('#Pre5').val());
+                $('#Elective5').html(($('#Pre5Elective1').val()));
+                $('#Elective2_5').html($('#Pre5Elective2').val());
+
+                $('#CoursePreference6').html($('#Pre6').val());
+                $('#Elective6').html($('#Pre6Elective1').val());
+                $('#Elective2_6').html($('#Pre6Elective2').val());
+
+                $('#CoursePreference7').html($('#Pre7').val());
+                $('#Elective7').html($('#Pre7Elective1').val());
+                $('#Elective2_7').html($('#Pre7Elective2').val());
+            }
+        });
+
+        function ActiveClassForFieldSet() {
+            for (var i = 1; i < 6; i++) {
+                $('#divStep' + i).addClass('active');
+            }
+        }
+
+        $('#YearLastExamPassed').on('change', (eve) => {
+            let currentYear = new Date().getFullYear();
+            let selectedYear = eve.target.value;
+            if (selectedYear < currentYear) {
+                $('#gapCertificateMsgDiv').removeClass('hide');
+            } else {
+                $('#gapCertificateMsgDiv').addClass('hide');
+            }
+
+        })
+
+        $(document).ready(function () {
+            $("#divMenu").show();
+            $('#trFoodNutritionDietetics').hide();
+            setprefernce();
+            var id = GetQueryStringParams('id');
+            if (id != "" && id != undefined) {
+                ActiveClassForFieldSet();
+                EditStudentDetailLoad(id);
+            }
+            $("#divViewPdf").hide();
+            $("#divReservedCategory").hide();
+            $("#divDisabilityCardNumber").hide();
+
+            var highestYear = new Date().getFullYear();
+            $('#YearLastExamPassed').append('<option value="">Select Year</option>');
+            for (var i = 0; i <= 38; i++) {
+                $('#YearLastExamPassed').append('<option value=' + (highestYear - i) + '>' + (highestYear - i) +
+                    '</option>');
+            }
+        });
+
+        function GetQueryStringParams(sParam) {
+            var sPageURL = window.location.search.substring(1);
+            var sURLVariables = sPageURL.split('&');
+            for (var i = 0; i < sURLVariables.length; i++) {
+                var sParameterName = sURLVariables[i].split('id=');
+                return sParameterName[1];
+            }
+        }
+
+        $(function () {
+            $("#category1").on("click", function () {
+                $("#divReservedCategory").hide();
+            });
+
+            $("#chkSamepermanentaddress").click(function () {
+                if ($(this).is(":checked")) {
+                    $("#PermanentAddress").val($("#CurrentAddress").val());
+                    $('#PermanentAddress').attr('readonly', 'readonly');
+                } else {
+                    $("#PermanentAddress").val(null);
+                }
+            });
+
+            $("#category2").on("click", function () {
+                $("#divReservedCategory").show();
+            });
+
+            $("#chkLearningDisability").on("click", function () {
+                if ($(this).is(":checked")) {
+                    $("#divDisabilityCardNumber").show();
+                }
+                else {
+                    $("#divDisabilityCardNumber").hide();
+                }
+            });
+
+            $("#VoterId").on("click", function () {
+                if ($(this).is(":checked")) {
+                    $("#divVoterNumber").show();
+                }
+                else {
+                    $("#divVoterNumber").hide();
+                }
+            });
+
+
+            $("#IsHostelRequired").on("click", function () {
+                if ($(this).is(":checked")) {
+                    $("#divHostelReason").show();
+                }
+                else {
+                    $("#divHostelReason").hide();
+                }
+            });
+
+            $('.markstotal').bind('keypress', function (e) {
+                var charCode = (e.which) ? e.which : event.keyCode
+                if (
+                    (charCode != 45 || $(element).val().indexOf('-') != -1) && // “-” CHECK MINUS, AND ONLY ONE.
+                    (charCode != 46 || $(element).val().indexOf('.') != -1) && // “.” CHECK DOT, AND ONLY ONE.
+                    (charCode < 48 || charCode > 57)) {
+                    dosum();
+                    e.preventDefault();
+                }
+            });
+
+            $('.marksobtained').bind('keypress', function (e) {
+                var charCode = (e.which) ? e.which : event.keyCode
+                if (
+                    (charCode != 45 || $(element).val().indexOf('-') != -1) && // “-” CHECK MINUS, AND ONLY ONE.
+                    (charCode != 46 || $(element).val().indexOf('.') != -1) && // “.” CHECK DOT, AND ONLY ONE.
+                    (charCode < 48 || charCode > 57)) {
+                    dosum();
+                    e.preventDefault();
+                }
+            });
+
+            $("#fileDp").change(function () {
+                if (checkfile("fileDp", 500)) {
+                    var fileDp = $("#fileDp")[0];
+                    if (fileDp.files && fileDp.files[0]) {
+                        var reader = new FileReader();
+
+                        reader.onload = function (e) {
+                            $('#photo').attr('src', e.target.result);
+                            $('#photo').show();
+                        }
+                        reader.readAsDataURL(fileDp.files[0]);
+                    }
+                } else {
+                    $('#photo').hide();
+                }
+            });
+
+            $("#filesignature").change(function () {
+                if (checkfile("filesignature", 500)) {
+                    var filesignature = $("#filesignature")[0];
+                    if (filesignature.files && filesignature.files[0]) {
+                        var reader = new FileReader();
+
+                        reader.onload = function (e) {
+                            $('#photoSignature').attr('src', e.target.result);
+                            $('#photoSignature').show();
+                        }
+                        reader.readAsDataURL(filesignature.files[0]);
+                    }
+                } else {
+                    $('#photoSignature').hide();
+                }
+
+            });
+
+            /*STATES = _u.sortBy(STATES,(s) => {
+                return s.label;
+            })
+
+            STATES.map((s) => {
+                $('#drpDwnState').append(`<option value="${s.label}">${s.label}</option>`)
+            })*/
+
+
+        });
+
+        $("#txtBirthDate").datepicker({
+            changeMonth: true,
+            changeYear: true,
+            yearRange: '1960:2005',
+            dateFormat: 'dd-MM-yy',
+            defaultDate: new Date(2002, 0, 1)
+        });
+
+        $("#btnBirthDate").click(function () {
+            $("#txtBirthDate").focus();
+        });
+
+        function setprefernce() {
+            var stream = $('#HscStream').val();
+            if (stream == "Science") {
+                $('#trFoodNutritionDietetics').show();
+                $(".tdpref7").show();
+            } else {
+                SetCheckboxSelection();
+                $("#trFoodNutritionDietetics").hide();
+                $(".tdpref7").hide();
+            }
+        }
+
+        function SetCheckboxSelection() {
+            $('.chkCol7:checkbox:checked').each(function (i) {
+                $(this).trigger("click");
+            });
+            $('.chkRow3:checkbox:checked').each(function (i) {
+                $(this).trigger("click");
+            });
+        }
+
+        function onErrorMessage(message) {
+            $("#ErrorMessage").html(message);
+            $("#ErrorMessage").removeClass("hidden");
+        }
+
+        //Save Record
+        function SubmitButton(obj, isSubmit) {
+            //if(AADHAR_EXIST){
+            //    alert("You have already submitted one form with Aadhar # "+ $('#AadharNumber').val() + ". You can't submit more than one form with same aadhar #. Please contact College office administration team for assistance.");
+            //    return;
+            //}
+
+            $('#confirm-submit').modal('hide');
+
+            if (CheckValidation()) {
+                $("#ErrorMessage").html('Please enter valid details in form. Missing fields are highlighted with red color.');
+                $("#ErrorMessage").removeClass("hidden");
+                return false;
+            } else {
+                $("#ErrorMessage").addClass("hidden");
+                $("#ErrorMessage").html('');
+
+                if (checkfile("fileDp", 500) && checkfile("filesignature", 500)) {
+                    if ($('#Email').val() != "") {
+                        if (!isEmail($('#Email').val())) {
+                            alert('please enter the valid email.')
+                            return false;
+                        }
+                    }
+                    SetPreferencesValue();
+                    $('#isSubmit').val(isSubmit);
+                    var fd = new FormData($("#studentData")[0]);
+                    savePageDataPostImageAjax(obj, 'ManageStudent', SaveSuccess, onErrorMessage, fd);
+                } else {
+                    $("#ErrorMessage").html('Please upload less than 500KB image file.');
+                    $("#ErrorMessage").removeClass("hidden");
+                }
+            }
+        }
+
+        function SetPreferencesValue() {
+
+            $(".chkRow1:checked").each(function () {
+                var valNew = $(this).context.id.split('_');
+                $('#Pre' + valNew[2]).val("Developmental Counselling");
+                $('#Pre' + +valNew[2] + 'Elective1').val($("#DCElectives1").val());
+                $('#Pre' + +valNew[2] + 'Elective2').val($("#DCElectives2").val());
+            });
+
+            $(".chkRow2:checked").each(function () {
+                var valNew = $(this).context.id.split('_');
+                $('#Pre' + valNew[2]).val("Early Childhood care & Education");
+                $('#Pre' + +valNew[2] + 'Elective1').val($("#ECElectives1").val());
+                $('#Pre' + +valNew[2] + 'Elective2').val($("#ECElectives2").val());
+            });
+
+            $(".chkRow3:checked").each(function () {
+                var valNew = $(this).context.id.split('_');
+                $('#Pre' + valNew[2]).val("Food, Nutrition and Dietetics");
+                $('#Pre' + +valNew[2] + 'Elective1').val($("#FDElectives1").val());
+                $('#Pre' + +valNew[2] + 'Elective2').val($("#FDElectives2").val());
+
+            });
+
+            $(".chkRow4:checked").each(function () {
+                var valNew = $(this).context.id.split('_');
+                $('#Pre' + valNew[2]).val("Hospitality & Tourism Management");
+                $('#Pre' + +valNew[2] + 'Elective1').val($("#HTElectives1").val());
+                $('#Pre' + +valNew[2] + 'Elective2').val($("#HTElectives2").val());
+            });
+
+            $(".chkRow5:checked").each(function () {
+                var valNew = $(this).context.id.split('_');
+                $('#Pre' + valNew[2]).val("Interior Design & Resource Management");
+                $('#Pre' + +valNew[2] + 'Elective1').val($("#IDElectives1").val());
+                $('#Pre' + +valNew[2] + 'Elective2').val($("#IDElectives2").val());
+            });
+
+            $(".chkRow6:checked").each(function () {
+                var valNew = $(this).context.id.split('_');
+                $('#Pre' + valNew[2]).val("Mass Communication & Extension");
+                $('#Pre' + +valNew[2] + 'Elective1').val($("#MCEElectives1").val());
+                $('#Pre' + +valNew[2] + 'Elective2').val($("#MCEElectives2").val());
+            });
+
+            $(".chkRow7:checked").each(function () {
+                var valNew = $(this).context.id.split('_');
+                $('#Pre' + valNew[2]).val("Textiles & Apparel Designing");
+                $('#Pre' + +valNew[2] + 'Elective1').val($("#TAElectives1").val());
+                $('#Pre' + +valNew[2] + 'Elective2').val($("#TAElectives2").val());
+            });
+        }
+
+        function SaveSuccess(data) {
+            //debugger;
+            var fields = data.split(':~');
+            if ($('#isSubmit').val() == 0) {
+                $('#modelUrlValue').val("register.html?id=" + fields[0] + "");
+                $('#divMsg').html("Application form number " + fields[1] + " saved successfully.");
+                $("#btnSubmitconfirm").click();
+            } else {
+                $('#divSuccessMsg').html("Application form number " + fields[1] + " submitted successfully.");
+                $('#PdfmodelUrlValue').val(fields[0]);
+
+                $('#CoursePreference1').html($('#Pre1').val());
+                $('#Elective1').html($('#Pre1Elective1').val());
+                $('#Elective2_1').html($('#Pre1Elective2').val());
+
+                $('#CoursePreference2').html($('#Pre2').val());
+                $('#Elective2').html($('#Pre2Elective1').val());
+                $('#Elective2_2').html($('#Pre2Elective2').val());
+
+                $('#CoursePreference3').html($('#Pre3').val());
+                $('#Elective3').html($('#Pre3Elective1').val());
+                $('#Elective2_3').html($('#Pre3Elective2').val());
+
+                $('#CoursePreference4').html($('#Pre4').val());
+                $('#Elective4').html(($('#Pre4Elective1').val()));
+                $('#Elective2_4').html($('#Pre4Elective2').val());
+
+                $('#CoursePreference5').html($('#Pre5').val());
+                $('#Elective5').html(($('#Pre5Elective1').val()));
+                $('#Elective2_5').html($('#Pre5Elective2').val());
+
+                $('#CoursePreference6').html($('#Pre6').val());
+                $('#Elective6').html($('#Pre6Elective1').val());
+                $('#Elective2_6').html($('#Pre6Elective2').val());
+
+                $('#CoursePreference7').html($('#Pre7').val());
+                $('#Elective7').html($('#Pre7Elective1').val());
+                $('#Elective2_7').html($('#Pre7Elective2').val());
+
+                $("#btnSaveAndSubmitconfirm").click();
+            }
+        }
+
+        $('#btnClose').click(function () {
+            window.location.href = $('#modelUrlValue').val();
+        });
+
+        $('#btnSubmitClose').click(function () {
+            removeURLParameter(window.location.href, 'id');
+            $('#confirm-save-submit-message').modal('hide');
+            var url = $('#PdfmodelUrlValue').val();
+            $('#divMain').hide();
+
+            $('#viewPdf').attr('data', url);
+            $("#divViewPdf").show();
+
+        });
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= $('.f1-steps').height() + 20) {
+                $('.f1-steps').addClass('fixedElement').css('width', $('.f1').width() + 2);
+                var h = $('.workOptions').height() + 20;
+                $('#form-detail').attr("style", "padding-top:" + h + "px;");
+            } else {
+                $('.f1-steps').removeClass("fixedElement");
+                $('#form-detail').removeAttr("style");
+            }
+        });
+
+        function EditStudentDetailLoad(id) {
+            if (id != "") {
+                $.ajax({
+                    url: 'api/Form/GetEditDetail',
+                    data: {
+                        id: id
+                    },
+                    type: 'get',
+                    dataType: 'json',
+                    success: function (data) {
+                        if (data != null) {
+                            $('#isSubmit').val(data.IsSubmitted);
+                            if (data.IsSubmitted == 1) {
+                                removeURLParameter(window.location.href, 'id');
+                                $('#confirm-submit-message').modal('hide');
+                                var url = $('#modelUrlValue').val();
+                                $('#divMain').hide();
+                                $('#viewPdf').attr('data', data.StudentPdfURL);
+                                $("#divViewPdf").show();
+                            } else {
+                                $('#LastName').val(data.LastName);
+                                $('#id').val(data.Id);
+                                $('#MKCLFormNumber').val(data.MKCLFormNumber);
+                                $('#LastName').val(data.LastName);
+                                $('#FirstName').val(data.FirstName);
+                                $('#FatherName').val(data.FatherName);
+                                $('#MotherName').val(data.MotherName);
+
+                                $('#FatherLastName').val(data.FatherLastName);
+                                $('#FatherFirstName').val(data.FatherFirstName);
+                                $('#FatherMiddleName').val(data.FatherMiddleName);
+
+                                $('#FatherLastName').val(data.FatherLastName);
+                                $('#FatherFirstName').val(data.FatherFirstName);
+                                $('#FatherMiddleName').val(data.FatherMiddleName);
+
+                                $('#MotherFirstName').val(data.MotherFirstName);
+                                $('#MotherLastName').val(data.MotherLastName);
+                                $('#MotherMiddleName').val(data.MotherMiddleName);
+
+                                $('#AadharNumber').val(data.AadharNumber);
+
+                                if (data.VoterId == 1) {
+                                    $('#VoterId').prop('checked', true);
+                                    $('#divVoterNumber').show();
+                                    $('#VoterNumber').val(data.VoterNumber);
+                                } else {
+                                    $('#VoterId').prop('checked', false);
+                                    $('#divVoterNumber').hide();
+                                }
+
+                                if (data.IsNRI == 1) {
+                                    $('#IsNRI').prop('checked', true);
+                                } else {
+                                    $('#IsNRI').prop('checked', false);
+                                }
+
+                                if (data.IsHostelRequired == 1) {
+                                    $('#IsHostelRequired').prop('checked', true);
+                                    $('#divHostelReason').show();
+                                    $('#HostelReason').val(data.HostelReason);
+                                } else {
+                                    $('#divHostelReason').hide();
+                                    $('#IsHostelRequired').prop('checked', false);
+                                }
+
+                                $('#AboutCollege').val(data.AboutCollege.trim());
+
+                                $('#DisabilityCardNumber').val(data.DisabilityNumber);
+                                $('#DisabilityType').val(data.DisabilityType.trim());
+                                $('#DisabilityPercentage').val(data.DisabilityPercentage);
+                                $('#txtBirthDate').datepicker('setDate', data.Dob);
+
+                                $("#txtBirthDate").datepicker("setDate", new Date(data.Dob));
+
+                                $('#BloodGroup').val(data.BloodGroup);
+
+                                $('#PlaceofBirth').val(data.PlaceofBirth);
+
+                                $('#Nationality').val(data.Nationality);
+
+                                $('#MaritalStatus').val(data.MaritalStatus);
+
+                                $('#Religion').val(data.Religion);
+
+
+                                $('input[name="Category"][value="' + data.Category + '"]').prop('checked',
+                                    true);
+
+                                if (data.Category == 'Reserved') {
+                                    $("#divReservedCategory").show();
+                                    $('#Caste').val(data.Caste);
+                                    $('#SubCaste').val(data.SubCaste);
+                                }
+
+                                $('#MotherTongue').val(data.MotherTongue);
+
+                                $('#CurrentAddress').val(data.CurrentAddress);
+
+                                $('#PermanentAddress').val(data.PermanentAddress);
+
+                                $('#EmergencyTel').val(data.EmergencyTel);
+
+                                $('#MobileNumber').val(data.MobileNumber);
+
+                                $('#Email').val(data.Email);
+
+                                $('#GuardianOccupation').val(data.GuardianOccupation);
+
+                                $('#GuardianSalary').val(data.GuardianSalary);
+
+                                $('#RelwithGurdian').val(data.RelwithGurdian);
+
+
+
+                                $('input[name="EmploymentStatus"][value="' + data.EmploymentStatus + '"]').prop(
+                                    'checked', true);
+
+                                $('#photo').attr('src', 'data/Photos/' + data.Photo)
+                                $('#photoSignature').attr('src', 'data/Signature/' + data.SignaturePath)
+                                $('#hdnPhoto').val(data.Photo);
+                                $('#hdnSignature').val(data.SignaturePath);
+
+                                $('#drpDwnState').val(data.StudentState);
+                                $('#PinCode').val(data.PinCode);
+
+                                if (data.Photo != "") {
+                                    $('#photo').css("display", "")
+                                }
+
+                                if (data.Photo != "") {
+                                    $('#photoSignature').css("display", "")
+                                }
+
+                                $('#LastSchoolAttend').val(data.LastSchoolAttend);
+
+                                $('#NameofExaminationBoard').val(data.NameofExaminationBoard);
+
+                                $('#MonthLastExamPassed').val(data.MonthLastExamPassed);
+
+                                $('#YearLastExamPassed').val(data.YearLastExamPassed);
+
+                                $('#AttemptofHSC').val(data.AttemptofHSC);
+
+                                //IsSVTStudent
+                                if (data.IsSVTStudent == true) {
+                                    $('input[name="Choose"][value="1"]').prop('checked', true);
+                                } else {
+                                    $('input[name="Choose"][value="0"]').prop('checked', true);
+                                }
+
+                                //WishtojoinNCC
+                                if (data.WishtojoinNCC == true) {
+                                    $('input[name="JoinNSS"][value="1"]').prop('checked', true);
+                                } else {
+                                    $('input[name="JoinNSS"][value="0"]').prop('checked', true);
+                                }
+
+                                if (data.IsLearningDisability == 1) {
+                                    $('#chkLearningDisability').prop('checked', true);
+
+                                    $('#divDisabilityCardNumber').show();
+                                } else {
+                                    $('#chkLearningDisability').prop('checked', false);
+                                    $('#divDisabilityCardNumber').hide();
+                                }
+
+                                $('#Subject1Name').val(data.Subject1Name);
+                                $('#Subject2Name').val(data.Subject2Name);
+                                $('#Subject3Name').val(data.Subject3Name);
+                                $('#Subject4Name').val(data.Subject4Name);
+                                $('#Subject5Name').val(data.Subject5Name);
+                                $('#Subject6Name').val(data.Subject6Name);
+                                $('#Subject7Name').val(data.Subject7Name);
+
+                                $('#Subject1MarksObtained').val(data.Subject1MarksObtained);
+                                $('#Subject2MarksObtained').val(data.Subject2MarksObtained);
+                                $('#Subject3MarksObtained').val(data.Subject3MarksObtained);
+                                $('#Subject4MarksObtained').val(data.Subject4MarksObtained);
+                                $('#Subject5MarksObtained').val(data.Subject5MarksObtained);
+                                $('#Subject6MarksObtained').val(data.Subject6MarksObtained);
+                                $('#Subject7MarksObtained').val(data.Subject7MarksObtained);
+
+                                $('#Subject1Total').val(data.Subject1Total);
+                                $('#Subject2Total').val(data.Subject2Total);
+                                $('#Subject3Total').val(data.Subject3Total);
+                                $('#Subject4Total').val(data.Subject4Total);
+                                $('#Subject5Total').val(data.Subject5Total);
+                                $('#Subject6Total').val(data.Subject6Total);
+                                $('#Subject7Total').val(data.Subject7Total);
+
+                                var tm = parseFloat(data.Subject1MarksObtained) + parseFloat(data.Subject2MarksObtained) + parseFloat(data.Subject3MarksObtained) + parseFloat(data.Subject4MarksObtained) + parseFloat(data.Subject5MarksObtained) + parseFloat(data.Subject6MarksObtained) + parseFloat(data.Subject7MarksObtained);
+
+                                if (tm == data.TotalMarks)
+                                    $('#TotalMarks').val(data.TotalMarks);
+                                else
+                                    $('#TotalMarks').val(tm);
+
+                                $('#Percentage').val(data.Percentage);
+                                $('#HscStream').val(data.HscStream);
+
+                                setprefernce();
+
+                                //Set Preference Value in Hidden Field
+                                $('#Pre1').val(data.CoursePreference1);
+                                $('#Pre2').val(data.CoursePreference2);
+                                $('#Pre3').val(data.CoursePreference3);
+                                $('#Pre4').val(data.CoursePreference4);
+                                $('#Pre5').val(data.CoursePreference5);
+                                $('#Pre6').val(data.CoursePreference6);
+                                $('#Pre7').val(data.CoursePreference7);
+
+                                SetPreferences(data.CoursePreference1, 1, data.Preference1GE1, data.Preference1GE2);
+                                SetPreferences(data.CoursePreference2, 2, data.Preference2GE1, data.Preference2GE2);
+                                SetPreferences(data.CoursePreference3, 3, data.Preference3GE1, data.Preference3GE2);
+                                SetPreferences(data.CoursePreference4, 4, data.Preference4GE1, data.Preference4GE2);
+                                SetPreferences(data.CoursePreference5, 5, data.Preference5GE1, data.Preference5GE2);
+                                SetPreferences(data.CoursePreference6, 6, data.Preference6GE1, data.Preference6GE2);
+                                SetPreferences(data.CoursePreference7, 7, data.Preference7GE1, data.Preference7GE2);
+
+                                //Show bank Details
+                                $('#BankName').val(data.BankName);
+                                $('#AccountNumber').val(data.AccountNumber);
+                                $('#BranchName').val(data.Branch);
+                                $('#AccountHolderName').val(data.AccountHolderName);
+                                $('#IFSCCode').val(data.IFSCCode);
+
+                                $('#PanNumber').val(data.PanNumber);
+
+
+                                $('.table').find("input[type=checkbox]").filter(':visible').each(function (
+                                    x, ed) {
+                                    if (ed.checked == false) {
+                                        $(ed).prop('disabled', true);
+                                    }
+                                });
+                            }
+                        }
+                    }
+                });
+            }
+        }
+
+        function SetPreferences(courseName, prefrence, elective1value, elactive2value) {
+            if (courseName == "Developmental Counselling") {
+                $("#check_1_" + prefrence).prop("checked", true);
+                $('#DCElectives1').val(elective1value);
+                $('#DCElectives2').val(elactive2value);
+            } else if (courseName == "Early Childhood care & Education") {
+                $("#check_2_" + prefrence).prop("checked", true);
+                $('#ECElectives1').val(elective1value);
+                $('#ECElectives2').val(elactive2value);
+            } else if (courseName == "Food, Nutrition and Dietetics") {
+                $("#check_3_" + prefrence).prop("checked", true);
+                $('#FDElectives1').val(elective1value);
+                $('#FDElectives2').val(elactive2value);
+            } else if (courseName == "Hospitality & Tourism Management") {
+                $("#check_4_" + prefrence).prop("checked", true);
+                $('#HTElectives1').val(elective1value);
+                $('#HTElectives2').val(elactive2value);
+            } else if (courseName == "Interior Design & Resource Management") {
+                $("#check_5_" + prefrence).prop("checked", true);
+                $('#IDElectives1').val(elective1value);
+                $('#IDElectives2').val(elactive2value);
+            } else if (courseName == "Mass Communication & Extension") {
+                $("#check_6_" + prefrence).prop("checked", true);
+                $('#MCEElectives1').val(elective1value);
+                $('#MCEElectives2').val(elactive2value);
+            } else if (courseName == "Textiles & Apparel Designing") {
+                $("#check_7_" + prefrence).prop("checked", true);
+                $('#TAElectives1').val(elective1value);
+                $('#TAElectives2').val(elactive2value);
+            }
+        }
+
+        function removeURLParameter(url, parameter) {
+            var urlparts = url.split('?');
+            if (urlparts.length >= 2) {
+                var prefix = encodeURIComponent(parameter) + '=';
+                var pars = urlparts[1].split(/[&;]/g);
+                for (var i = pars.length; i-- > 0;) {
+                    if (pars[i].lastIndexOf(prefix, 0) !== -1) {
+                        pars.splice(i, 1);
+                    }
+                }
+                history.pushState({}, null, urlparts[0]);
+                return urlparts[0];
+            } else {
+                return url;
+            }
+        }
+
+        $('#MKCLFormNumber').keyup(function () {
+            if (this.value.match(/[^a-zA-Z0-9]/g)) {
+                this.value = this.value.replace(/[^a-zA-Z0-9]/g, '');
+            }
+        });
+
+        /* Rushi Changes */
+        $('#Religion').on('change', (e) => {
+            if (e.target.value == "Other") {
+                $('#divOtherRelegion').removeClass('hide')
+                $('#txtOtherRelegion').addClass('validate-input')
+            } else {
+                $('#divOtherRelegion').addClass('hide')
+                $('#txtOtherRelegion').removeClass('validate-input')
+            }
+        })
+    </script>
+
+    <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 100%; width: 100%; z-index: -999999; position: fixed;">
+        <img style="position: absolute; margin: 0px; padding: 0px; border: medium none; width: 100%; height: 100%; max-height: none; max-width: none; z-index: -999999; left: 0px; top: 0px;"
+             src="assets/ico/bg_1.jpg">
+    </div>
+
+</body>
+
+</html>

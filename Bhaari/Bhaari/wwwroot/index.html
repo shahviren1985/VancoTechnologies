@@ -1,0 +1,382 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bhaari - About People, Office, Jobs, Human Resources, Recruitment, Learning, Benefits, Insurance, Office Technology, Outsourcing and Finance</title>
+    <meta name="description" content="Bhaari is about People, Offices, Jobs, Human Resources, Recruitment, Benefits, Insurance, Office Technology, Outsourcing and Finance. Search jobs near your location. Search for internships in your domain." />
+    <meta name="keywords" content="Jobs,Human Resources,Benefits,Recruitment,Insurance,Office Technology,Outsourcing,Technology,internships,HR Technology,Recruitment Technology" />
+    <meta name="author" content="Bhaari.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#181f25" />
+
+    <link href="static/css/bootstrap.css" rel="stylesheet" />
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="static/css/jquery-ui.css" />
+    <link rel="stylesheet" href="static/css/b.feedback.css" />
+    <link rel="icon" type="image/png" href="static/img/favicon.png" />
+    <script type="text/javascript" src="static/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="static/js/b.feedback.js"></script>
+    <script type="text/javascript" src="static/js/b.contact.js"></script>
+    <script type="text/javascript" src="static/js/b.ga.js"></script>
+    <style>
+        body {
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+        }
+
+        .search-bar {
+            position: absolute;
+            top: 10px;
+            left: 25%;
+            width: 42%;
+            z-index: 111;
+        }
+            /*.search-bar {
+            float: left;
+            position: absolute;
+            top: 2%;
+            left: 30%;
+            width: 42%;
+            z-index: 111;
+        }*/
+            .search-bar input {
+                border-radius: 5px;
+                border: 1px solid #181f25;
+                padding: 5px;
+                font-size: 20px;
+                height: 30px;
+                width: 100%;
+                float: left;
+            }
+
+        /*.search-bar input:focus {
+                    border: 3px solid #181f25;
+                }
+
+            .search-bar input, #search-results {
+                width: 92%;
+            }*/
+
+        .search-tag-line {
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            background-color: #181f25;
+            color: white;
+            text-align: left;
+        }
+
+        #search-results {
+            float: left;
+            display: none;
+            border: 1px solid #DDD;
+            position: absolute;
+            top: 35%;
+            left: 30%;
+            width: 41%;
+            margin-top: 55px;
+            background-color: #fff;
+            font-size: 20px;
+        }
+
+        .search-record {
+            float: left;
+            width: 100%;
+            padding: 10px;
+            padding-top: 15px;
+            height: 25px;
+            text-align: left;
+            font-size: smaller;
+            font-size: 14px;
+        }
+
+        .search-record-highlight {
+            background-color: #3299BB;
+            color: White;
+            cursor: pointer;
+            width: 96%;
+        }
+
+        .search-tag-line {
+            font-size: 11px;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: left;
+        }
+
+        .navbar {
+            background-color: #181f25;
+            width: 100%;
+            height: 60px;
+        }
+        /*.navbar {
+            position: absolute;
+            top: 0px;
+            z-index: 111;
+            background-color: #181f25;
+            width: 100%;
+            height: 60px;
+            margin-bottom: 0px !important;
+        }*/
+        .logo {
+            float: left;
+            cursor: pointer;
+            width: 15%;
+            margin: 10px;
+        }
+
+            .logo div {
+                font-size: 33px;
+                line-height: 20px;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+
+            .logo span {
+                letter-spacing: 4px;
+                font-weight: bold;
+                font-size: 11px;
+            }
+
+        .navbar ul {
+            list-style: none;
+            margin-top: 10px;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-size: 11px;
+        }
+
+            .navbar ul li {
+                float: left;
+                margin-left: 20px;
+                min-width: 50px;
+                color: white;
+            }
+
+        .icon-search {
+            position: absolute;
+            top: 30%;
+            left: 92%;
+        }
+
+        .navbar ul li {
+            cursor: pointer;
+        }
+
+        .user-input {
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .twitter {
+            float: right;
+            width: 30px;
+            height: 30px;
+        }
+
+        @media only screen and (max-device-width: 768px) {
+            .navbar {
+                min-height: 70px;
+            }
+
+            .twitter {
+                float: right;
+                width: 32px;
+                height: 32px;
+            }
+
+            .search-bar {
+                margin: 0;
+                margin-left: 10%;
+                float: left;
+                width: 75%;
+                position: relative;
+                top: 0;
+                left: 0;
+            }
+
+                .search-bar input {
+                    height: 50px;
+                }
+
+            .logo {
+                width: 300px;
+                margin: 0;
+                margin-left: 10px;
+            }
+
+                .logo img {
+                    width: 70%;
+                    margin: 10px;
+                }
+
+            .navbar ul {
+                font-size: 14px;
+            }
+
+            .search-tag-line {
+                padding: 10px;
+                font-size: 30px;
+            }
+
+            .icon-search {
+                top: 20%;
+            }
+
+            .user-input {
+                padding: 20px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        function GetIPAddress() {
+            $.ajax({
+                url: BASE_URL + "/getIPAddress",
+                success: function (result) {
+                    if (result == "::1" || result == "127.0.0.1")
+                        result = "115.96.242.171";
+
+                    var url = "http://ip-api.com/json/" + result;
+                    $.ajax({
+                        url: url,
+                        success: function (userLocationDetails) {
+                            localStorage.setItem('Location', JSON.stringify(userLocationDetails));
+                        }
+                    });
+
+                }
+            });
+        }
+
+        GetIPAddress();
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="/" title="Bhaari" style="text-decoration: none;">
+                <img src="static/img/Logo.png" alt="Bhaari" />
+            </a>
+        </div>
+        <ul>
+            <li>
+                <div class="twitter">
+                    <a href="https://twitter.com/BhaariJobs" target="_blank">
+                        <img src="static/img/twitter.png" />
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a id="Login" style="color: white" href="#" onclick="return UpdateLoginStatus()">Login</a>
+            </li>
+        </ul>
+    </div>
+    <div class="search-bar form-group">
+        <input type="text" id="search-term" class="form-control" placeholder="Search Job Title / Technology ..." style="float: left;" />
+    </div>
+    <div id="search-results">
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+    var lastKeyword;
+    function BuildSearchResult(json, type) {
+        $("#search-results").html("");
+        var arr = [];
+        for (i = 0; i < json.length && arr.length < 5; i++) {
+            if (arr.indexOf(json[i]) > -1) {
+                continue;
+            }
+
+            var searchRecord = $("<span/>").attr("class", "search-record").html(json[i]);
+
+            $(searchRecord).hover(function () { $(this).addClass("search-record-highlight"); }, function () { $(this).removeClass("search-record-highlight"); });
+            $(searchRecord).click(function () {
+                $("#search-term").val($(this).text());
+                $("#search-term").attr("areacode", $(this).attr("areacode"));
+                $("#search-results").hide();
+                trackHomePageSearch($(this).text());
+                document.location = "Default.aspx?q=" + $(this).text();
+            });
+
+            $("#search-results").append(searchRecord);
+            arr.push(json[i]);
+        }
+
+        if (json.length == 0) {
+            searchRecord = $("<span/>").attr("class", "search-record").html("Sorry, no search results found.");
+            $("#search-results").append(searchRecord);
+        }
+
+        $("#search-results").show();
+    }
+
+    function ProcessSearchQuery() {
+        document.location = "Default.aspx?q=" + escape($("#search-term").val());
+    }
+
+    function Search() {
+        if ($("#search-term").val().length > 2) {
+            if (!$.isNumeric($("#search-term").val())) {
+
+                $.ajax({
+                    url: "search.html?q=" + escape($("#search-term").val()),
+                    success: function (result) {
+                        BuildSearchResult(result, "area");
+                    }
+                });
+            }
+        }
+        else {
+            $("#search-results").hide();
+        }
+    }
+
+    if (localStorage.getItem("token") == null || localStorage.getItem("token") == "") {
+        $("#Login").html("Login");
+    }
+    else {
+        $("#Login").attr("href", "#");
+        $("#Login").html("Logout");
+    }
+
+    function UpdateLoginStatus() {
+        if (localStorage.getItem("token") != "" && localStorage.getItem("token") != null) {
+            $("#Login").html("Login");
+            localStorage.setItem("token", "");
+            return;
+        }
+        else {
+            var url = "login.html?t=login"
+            window.open(url, "_blank");
+            var timer = setInterval(function () {
+                if (localStorage.getItem("token") != null && localStorage.getItem("token") != "") {
+                    $("#Login").html("Logout");
+                    clearInterval(timer);
+                }
+            }, 1000);
+        }
+    }
+
+    $("#search-term").keypress(function (e) {
+        if (e.which == 13) {
+            trackSearchEnter('home', $("#search-term").val());
+            document.location.href = "search.html?q=" + encodeURIComponent($("#search-term").val());
+        }
+    });
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144243443-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-144243443-1');
+</script>

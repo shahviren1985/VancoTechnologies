@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    @*<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>@ViewBag.Title</title>
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+    <title>@ViewBag.PageTitle</title>
+    <meta name="description" content="Bhaari is about People, Offices, Jobs, Human Resources, Recruitment, Benefits, Insurance, Office Technology, Outsourcing and Finance. Search jobs near your location. Search for internships in your domain." />
+    <meta name="keywords" content="@ViewBag.PageKeywords" />
+    <meta name="author" content="Bhaari.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#181f25" />
+    @*<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">*@
+    
+    <link href="~/static/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/static/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/static/css/jquery-ui.css" />
+    <link rel="stylesheet" href="~/static/css/b.feedback.css" />
+    <link rel="icon" type="image/png" href="~/static/img/favicon.png" />
+
+    <script type="text/javascript" src="~/static/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="~/static/js/bootstrap.min.js"></script>
+    <script src="~/static/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="~/static/js/b.feedback.js"></script>
+    <script type="text/javascript" src="~/static/js/b.contact.js"></script>
+    <script type="text/javascript" src="~/static/js/b.ga.js"></script>
+    <style>
+        body {
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+        }
+
+        .search-tag-line {
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            background-color: #181f25;
+            color: white;
+            text-align: left;
+        }
+
+        #search-results {
+            float: left;
+            display: none;
+            border: 1px solid #DDD;
+            position: absolute;
+            top: 35%;
+            left: 30%;
+            width: 41%;
+            margin-top: 55px;
+            background-color: #fff;
+            font-size: 20px;
+        }
+
+        .search-record {
+            float: left;
+            width: 100%;
+            padding: 10px;
+            padding-top: 15px;
+            height: 25px;
+            text-align: left;
+            font-size: smaller;
+            font-size: 14px;
+        }
+
+        .search-record-highlight {
+            background-color: #3299BB;
+            color: White;
+            cursor: pointer;
+            width: 96%;
+        }
+
+        .search-tag-line {
+            font-size: 11px;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: left;
+        }
+
+        .navbar {
+            background-color: #181f25;
+            width: 100%;
+            height: 60px;
+        }
+
+        .logo {
+            float: left;
+            cursor: pointer;
+            width: 15%;
+            margin: 10px;
+        }
+
+            .logo div {
+                font-size: 33px;
+                line-height: 20px;
+                margin-top: 10px;
+                font-weight: bold;
+            }
+
+            .logo span {
+                letter-spacing: 4px;
+                font-weight: bold;
+                font-size: 11px;
+            }
+
+        .navbar ul {
+            list-style: none;
+            margin-top: 10px;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            font-size: 11px;
+        }
+
+            .navbar ul li {
+                float: left;
+                margin-left: 20px;
+                min-width: 50px;
+                color: white;
+            }
+
+        .icon-search {
+            position: absolute;
+            top: 30%;
+            left: 92%;
+        }
+
+        .navbar ul li {
+            cursor: pointer;
+        }
+
+        .user-input {
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .twitter {
+            float: right;
+            width: 30px;
+            height: 30px;
+        }
+        .left-nav ul.job-list li a {
+            color: initial !important;
+            text-decoration: initial !important;
+        }
+        .Loading-Job-Details{
+            float: left;
+            background-color: yellow;
+            position: absolute;
+            top: 1%;
+            left: 20%;
+        }
+
+        input[type="text"]:focus {
+            border-color: initial;
+            box-shadow: none;
+        }
+        @@media only screen and (max-device-width: 768px) {
+            .navbar {
+                min-height: 70px;
+            }
+
+            .twitter {
+                float: right;
+                width: 32px;
+                height: 32px;
+            }
+
+            .search-bar {
+                margin: 0;
+                margin-left: 10%;
+                float: left;
+                width: 75%;
+                position: relative;
+                top: 0;
+                left: 0;
+            }
+
+                .search-bar input {
+                    height: 50px;
+                }
+
+            .logo {
+                width: 300px;
+                margin: 0;
+                margin-left: 10px;
+            }
+
+                .logo img {
+                    width: 70%;
+                    margin: 10px;
+                }
+
+            .navbar ul {
+                font-size: 16px;
+            }
+
+            .search-tag-line {
+                padding: 10px;
+                font-size: 30px;
+            }
+
+            .icon-search {
+                top: 20%;
+            }
+
+            .user-input {
+                padding: 20px;
+                text-align: center;
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        var BASE_URL = "http://bhaari.com/api/";
+        var BASE = "http://bhaari.com/";
+
+        if (window.location.href.indexOf("localhost") > 1) {
+            BASE = "http://localhost:62652/";
+            BASE_URL = "http://localhost:62652/api/";
+        }
+
+        $(document).ready(function () {
+            if (localStorage.getItem("token") == "" || localStorage.getItem("token") == null) {
+                $("#Login").html("Login");
+            }
+            else {
+                $("#Login").attr("href", "#");
+                $("#Login").html("Logout");
+            }
+
+            $(".left-nav ul.job-list li").mouseover(function () {
+                $(this).find(".job-arrow").show();
+            });
+
+            $(".left-nav ul.job-list li").mouseout(function () {
+                $(this).find(".job-arrow").hide();
+            });
+
+            $(".left-nav ul.job-list li a").click(function (event) {
+                event.preventDefault();
+            });
+
+            $("ul.nav-option-list li").click(function () {
+
+                var ca = $(this).html().indexOf("Jobs") > -1 ? "Jobs" : "Favorite";
+
+                if (isMobile) {
+                    $("ul.nav-option-list li").removeAttr("class");
+                    $(".job-list").hide();
+                    $(".filter-list").hide();
+                    $(this).addClass("active-tab");
+
+                    switch (ca) {
+                        case "Jobs":
+                            $(".job-list").show();
+                            $(".fav-message").hide();
+                            break;
+                        case "Favorite":
+                            $(".job-list").hide();
+                            $(".fav-message").show();
+                            break;
+                    }
+                }
+                else {
+                    $("ul.nav-option-list li").removeAttr("class");
+                    $(".job-list").hide();
+                    $(".filter-list").hide();
+                    $(this).addClass("active-tab");
+
+                    switch (ca) {
+                        case "Jobs":
+                            $(".job-list").show();
+                            $(".fav-message").hide();
+                            break;
+                        case "Favorite":
+                            $(".job-list").hide();
+                            $(".fav-message").show();
+                            break;
+                    }
+                }
+
+            });
+        });
+
+        function UpdateLoginStatus() {
+            if (localStorage.getItem("token") != "") {
+                $("#Login").html("Login");
+                localStorage.setItem("token", "");
+                return;
+            }
+            else {
+                //var url = "https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=81zttxaft7bl0e&redirect_uri=https://bhaari.com/prod/api/login/check&state=987654321&scope=r_liteprofile+r_emailaddress";
+                var url = BASE + "/Home/Login?t=login"
+                window.open(url, "_blank");
+                var timer = setInterval(function () {
+                    if (localStorage.getItem("token") != null && localStorage.getItem("token") != "") {
+                        $("#Login").html("Logout");
+                        clearInterval(timer);
+                    }
+                }, 1000);
+            }
+        }
+
+        function GetIPAddress() {
+            $.ajax({
+                url: BASE_URL + "Search/Get",
+                success: function (result) {
+                    if (result == "::1" || result == "127.0.0.1")
+                        result = "115.96.242.171";
+
+                    var url = "http://ip-api.com/json/" + result;
+                    $.ajax({
+                        url: url,
+                        success: function (userLocationDetails) {
+                            localStorage.setItem('Location', JSON.stringify(userLocationDetails));
+                        }
+                    });
+
+                }
+            });
+        }
+
+        function RefreshMap() {
+            bounds = new google.maps.LatLngBounds();
+            geocoder = new google.maps.Geocoder();
+            var mapDiv = document.getElementById('map');
+            var latlng = new google.maps.LatLng($("#hfLat").val(), $("#hfLong").val());
+
+            var options = {
+                center: latlng,
+                zoom: 10,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                mapTypeControlOptions: { mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style'] },
+                disableDefaultUI: true,
+                scaleControl: true
+            };
+
+            var a = [{ featureType: "all", elementType: "all", stylers: [{ saturation: -80 }] }, { featureType: "water", elementType: "all", stylers: [{ lightness: -25 }] }, { featureType: "transit.line", stylers: [{ visibility: "off" }] }, { featureType: "administrative", stylers: [{ visibility: "simplified" }] }, { featureType: "poi", stylers: [{ visibility: "off" }] }];
+
+            var styledMap = new google.maps.StyledMapType(a, { name: "Styled Map" });
+            map = new google.maps.Map(mapDiv, options);
+
+            map.mapTypes.set('map_style', styledMap);
+            map.setMapTypeId('map_style');
+            GetJobs();
+        }
+
+        GetIPAddress();
+    </script>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144243443-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-144243443-1');
+</script>

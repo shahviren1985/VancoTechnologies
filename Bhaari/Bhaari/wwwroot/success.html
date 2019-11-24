@@ -1,0 +1,130 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bhaari - About People, Office, Jobs, Human Resources, Recruitment, Learning, Benefits, Insurance, Office Technology, Outsourcing and Finance</title>
+    <meta name="description" content="Bhaari is about People, Offices, Jobs, Human Resources, Recruitment, Benefits, Insurance, Office Technology, Outsourcing and Finance. Search jobs near your location. Search for internships in your domain." />
+    <meta name="keywords" content="Jobs,Human Resources,Benefits,Recruitment,Insurance,Office Technology,Outsourcing,Technology,internships,HR Technology,Recruitment Technology" />
+    <meta name="author" content="Bhaari.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#181f25" />
+    <script>
+        function getQueryStringValue(key) {
+            return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144243443-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-144243443-1');
+    </script>
+    <script>
+        localStorage.setItem("token", getQueryStringValue("t"));
+        localStorage.setItem("firstName", getQueryStringValue("f"));
+        localStorage.setItem("lastName", getQueryStringValue("l"));
+        localStorage.setItem("emailAddress", getQueryStringValue("e"));
+        window.close();
+    </script>
+</head>
+</html>
+
+    var lastKeyword;
+    function BuildSearchResult(json, type) {
+        $("#search-results").html("");
+        var arr = [];
+        for (i = 0; i < json.length && arr.length < 5; i++) {
+            if (arr.indexOf(json[i]) > -1) {
+                continue;
+            }
+
+            var searchRecord = $("<span/>").attr("class", "search-record").html(json[i]);
+
+            $(searchRecord).hover(function () { $(this).addClass("search-record-highlight"); }, function () { $(this).removeClass("search-record-highlight"); });
+            $(searchRecord).click(function () {
+                $("#search-term").val($(this).text());
+                $("#search-term").attr("areacode", $(this).attr("areacode"));
+                $("#search-results").hide();
+                trackHomePageSearch($(this).text());
+                document.location = "Default.aspx?q=" + $(this).text();
+            });
+
+            $("#search-results").append(searchRecord);
+            arr.push(json[i]);
+        }
+
+        if (json.length == 0) {
+            searchRecord = $("<span/>").attr("class", "search-record").html("Sorry, no search results found.");
+            $("#search-results").append(searchRecord);
+        }
+
+        $("#search-results").show();
+    }
+
+    function ProcessSearchQuery() {
+        document.location = "Default.aspx?q=" + escape($("#search-term").val());
+    }
+
+    function Search() {
+        if ($("#search-term").val().length > 2) {
+            if (!$.isNumeric($("#search-term").val())) {
+
+                $.ajax({
+                    url: "search.html?q=" + escape($("#search-term").val()),
+                    success: function (result) {
+                        BuildSearchResult(result, "area");
+                    }
+                });
+            }
+        }
+        else {
+            $("#search-results").hide();
+        }
+    }
+
+    function AddToken(element) {
+        if ($(element).html() == "Logout") {
+            localStorage.setItem("token", "");
+            return false;
+        }
+
+        return true;
+    }
+
+    if (localStorage && (localStorage.length == 0 || localStorage.getItem("token") == null)) {
+        $("#Login").html("Login");
+    }
+    else {
+        $("#Login").attr("href", "#");
+        $("#Login").html("Logout");
+    }
+
+    window.addEventListener('message', function (ev) {
+        if (ev.origin !== 'https://localhost:44307')
+            return;
+        try {
+            var obj = JSON.parse(ev);
+            $("#Login").html("Logout");
+        } catch (ex) { };
+    });
+
+    function UpdateLoginStatus(element) {
+            var url = "https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=81zttxaft7bl0e&redirect_uri=https://localhost:44307/Login/Index&state=987654321&scope=r_liteprofile+r_emailaddress";
+        window.open(url, "_blank");
+        var timer = setInterval(function () {
+            if (localStorage.getItem("token") != null) {
+                $("#Login").html("Logout");
+                clearInterval(timer);
+            }
+        }, 1000);
+    }
+
+    $("#search-term").keypress(function (e) {
+        if (e.which == 13) {
+            trackSearchEnter('home', $("#search-term").val());
+            document.location.href = "search.html?q=" + encodeURIComponent($("#search-term").val());
+        }
+    });
+</script>

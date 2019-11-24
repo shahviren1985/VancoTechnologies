@@ -1,0 +1,1181 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bhaari - Search Results for Jobs</title>
+
+    <meta name="description" content="Bhaari - Job Search Results. Search for jobs, internships." />
+    <meta name="keywords" content="Jobs,Internships,Data Science Jobs,Artificial Inteligence, Machine Learning,B.Sc. IT Jobs,BMS Internships,Human Resources,Benefits,Recruitment,Insurance,Office Technology,Outsourcing,Technology,internships,HR Technology,Recruitment Technology" />
+    <meta name="author" content="Bhaari.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#181f25" />
+
+    <link href="static/css/bootstrap.css" rel="stylesheet" />
+    <link href="static/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="static/css/jquery-ui.css" />
+    <link rel="stylesheet" href="static/css/b.feedback.css" />
+    <link rel="stylesheet" href="static/css/b.header.css" />
+    <link rel="stylesheet" href="static/css/b.map.css" />
+    <link rel="stylesheet" href="static/css/b.jobdetails.css" />
+    <link rel="stylesheet" href="static/css/b.search.css" />
+    <link rel="stylesheet" href="static/css/b.leftnav.css" />
+    <link rel="stylesheet" href="static/css/b.support.css" />
+    <link rel="icon" type="image/png" href="static/img/favicon.png" />
+
+    <!--[if !IE]><!-->
+    <link rel="stylesheet" href="static/css/b.not.ie.css" />
+    <!--<![endif]-->
+
+    <script type="text/javascript" src="static/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOgpcjQu4kRkC4ZqE0YAXIvgDEi2P2HFE"></script>
+    <script type="text/javascript" src="static/js/mwl.js"></script>
+    <script type="text/javascript" src="static/js/Search.js"></script>
+    <script type="text/javascript" src="static/js/mwl.js"></script>
+    <script type="text/javascript" src="static/js/jquery.mousewheel.js"></script>
+    <!--<script type="text/javascript" src="static/js/jquery.slimscroll.min.js"></script>-->
+    <script type="text/javascript" src="static/js/b.map.js"></script>
+    <script type="text/javascript" src="static/js/JobDetails.js"></script>
+    <script type="text/javascript" src="static/js/b.listview.js"></script>
+    <script type="text/javascript" src="static/js/b.gridview.js"></script>
+    <script type="text/javascript" src="static/js/b.colorjobs.js"></script>
+    <script type="text/javascript" src="static/js/b.feedback.js"></script>
+    <script type="text/javascript" src="static/js/b.contact.js"></script>
+    <script type="text/javascript" src="static/js/b.ga.js"></script>
+    <script>
+        var getLocation = JSON.parse(localStorage.getItem('Location'));
+        var isMapView = false;
+
+        //var countries = ["Bangladesh", "Belgium", "Burkina Faso", "Bulgaria", "Bosnia and Herzegovina", "Barbados", "Wallis and Futuna", "Saint Barthelemy", "Bermuda", "Brunei", "Bolivia", "Bahrain", "Burundi", "Benin", "Bhutan", "Jamaica", "Bouvet Island", "Botswana", "Samoa", "Bonaire, Saint Eustatius and Saba ", "Brazil", "Bahamas", "Jersey", "Belarus", "Belize", "Russia", "Rwanda", "Serbia", "East Timor", "Reunion", "Turkmenistan", "Tajikistan", "Romania", "Tokelau", "Guinea-Bissau", "Guam", "Guatemala", "South Georgia and the South Sandwich Islands", "Greece", "Equatorial Guinea", "Guadeloupe", "Japan", "Guyana", "Guernsey", "French Guiana", "Georgia", "Grenada", "United Kingdom", "Gabon", "El Salvador", "Guinea", "Gambia", "Greenland", "Gibraltar", "Ghana", "Oman", "Tunisia", "Jordan", "Croatia", "Haiti", "Hungary", "Hong Kong", "Honduras", "Heard Island and McDonald Islands", "Venezuela", "Puerto Rico", "Palestinian Territory", "Palau", "Portugal", "Svalbard and Jan Mayen", "Paraguay", "Iraq", "Panama", "French Polynesia", "Papua New Guinea", "Peru", "Pakistan", "Philippines", "Pitcairn", "Poland", "Saint Pierre and Miquelon", "Zambia", "Western Sahara", "Estonia", "Egypt", "South Africa", "Ecuador", "Italy", "Vietnam", "Solomon Islands", "Ethiopia", "Somalia", "Zimbabwe", "Saudi Arabia", "Spain", "Eritrea", "Montenegro", "Moldova", "Madagascar", "Saint Martin", "Morocco", "Monaco", "Uzbekistan", "Myanmar", "Mali", "Macao", "Mongolia", "Marshall Islands", "Macedonia", "Mauritius", "Malta", "Malawi", "Maldives", "Martinique", "Northern Mariana Islands", "Montserrat", "Mauritania", "Isle of Man", "Uganda", "Tanzania", "Malaysia", "Mexico", "Israel", "France", "British Indian Ocean Territory", "Saint Helena", "Finland", "Fiji", "Falkland Islands", "Micronesia", "Faroe Islands", "Nicaragua", "Netherlands", "Norway", "Namibia", "Vanuatu", "New Caledonia", "Niger", "Norfolk Island", "Nigeria", "New Zealand", "Nepal", "Nauru", "Niue", "Cook Islands", "Kosovo", "Ivory Coast", "Switzerland", "Colombia", "China", "Cameroon", "Chile", "Cocos Islands", "Canada", "Republic of the Congo", "Central African Republic", "Democratic Republic of the Congo", "Czech Republic", "Cyprus", "Christmas Island", "Costa Rica", "Curacao", "Cape Verde", "Cuba", "Swaziland", "Syria", "Sint Maarten", "Kyrgyzstan", "Kenya", "South Sudan", "Suriname", "Kiribati", "Cambodia", "Saint Kitts and Nevis", "Comoros", "Sao Tome and Principe", "Slovakia", "South Korea", "Slovenia", "North Korea", "Kuwait", "Senegal", "San Marino", "Sierra Leone", "Seychelles", "Kazakhstan", "Cayman Islands", "Singapore", "Sweden", "Sudan", "Dominican Republic", "Dominica", "Djibouti", "Denmark", "British Virgin Islands", "Germany", "Yemen", "Algeria", "United States", "Uruguay", "Mayotte", "United States Minor Outlying Islands", "Lebanon", "Saint Lucia", "Laos", "Tuvalu", "Taiwan", "Trinidad and Tobago", "Turkey", "Sri Lanka", "Liechtenstein", "Latvia", "Tonga", "Lithuania", "Luxembourg", "Liberia", "Lesotho", "Thailand", "French Southern Territories", "Togo", "Chad", "Turks and Caicos Islands", "Libya", "Vatican", "Saint Vincent and the Grenadines", "United Arab Emirates", "Andorra", "Antigua and Barbuda", "Afghanistan", "Anguilla", "U.S. Virgin Islands", "Iceland", "Iran", "Armenia", "Albania", "Angola", "Antarctica", "American Samoa", "Argentina", "Australia", "Austria", "Aruba", "India", "Aland Islands", "Azerbaijan", "Ireland", "Indonesia", "Ukraine", "Qatar", "Mozambique"];
+        var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+        /*function storePosition(position) {
+            localStorage.setItem('Latitude', position.coords.latitude);
+            localStorage.setItem('Longitude', position.coords.longitude);
+
+            $("#hfLat").val(localStorage.getItem('Latitude'));
+            $("#hfLong").val(localStorage.getItem('Longitude'));
+        }*/
+
+
+        function GetIPAddress() {
+            $.ajax({
+                url: BASE_URL + "/getIPAddress",
+                success: function (result) {
+                    if (result == "::1" || result == "127.0.0.1")
+                        result = "115.96.242.171";
+
+                    var url = "http://ip-api.com/json/" + result;
+                    $.ajax({
+                        url: url,
+                        success: function (userLocationDetails) {
+                            localStorage.setItem('Location', JSON.stringify(userLocationDetails));
+                            getLocation = JSON.parse(localStorage.getItem('Location'));
+                            var l = JSON.parse(localStorage.getItem('Location'));
+                            $("#hfLat").val(l.lat);
+                            $("#hfLong").val(l.lon);
+                            google.maps.event.addDomListener(window, 'load', init);
+                        }
+                    });
+
+                }
+            });
+        }
+
+        if (getLocation == null || getLocation == "undefined")
+            GetIPAddress();
+
+
+    </script>
+    <style type="text/css">
+        .modal {
+            display: none;
+        }
+
+        .mobile-view {
+            display: none;
+        }
+
+        .desktop-view {
+            display: block;
+        }
+
+        .Loading-map, .Loading {
+            display: none;
+            position: absolute;
+            top: 100px;
+            left: 60%;
+            background-color: #FFCC00;
+            padding: 5px;
+            z-index: 11;
+        }
+
+        .Loading {
+            top: -5px;
+            left: 35%;
+        }
+
+        #slider {
+            float: left;
+            margin-top: 10px;
+            width: 10%;
+            height: 20px;
+            background-image: url('static/img/color.png');
+            background-size: 100% 100%;
+            border: 0px !important;
+            border-radius: 0px !important;
+        }
+
+        .icon-chevron-left {
+            float: left;
+            height: 20px;
+            margin-top: 14px;
+            margin-left: 10px;
+        }
+
+        .icon-chevron-right {
+            float: left;
+            height: 20px;
+            margin-top: 14px;
+            margin-left: 0px;
+            margin-right: 10px;
+        }
+
+        #slider .ui-widget-header {
+            background: none;
+        }
+
+        #slider .ui-slider-handle {
+            width: 3px;
+            background: none;
+            height: 30px;
+            background-color: #666;
+            border: none;
+            border-radius: 0px;
+            color: #666;
+            margin-left: 0px !important;
+        }
+
+        .slider-label {
+            float: left;
+            font-size: 11px;
+            margin-top: 10px;
+        }
+
+        .twitter {
+            float: right;
+            width: 30px;
+            height: 30px;
+        }
+
+        #job-details {
+            float: left;
+            overflow-y: auto;
+            max-height: 430px;
+        }
+
+        @media only screen and (max-device-width: 768px) {
+            .twitter {
+                float: right;
+                width: 32px;
+                height: 32px;
+            }
+
+            .left-nav {
+                width: 100%;
+                top: 130px;
+            }
+
+            .navbar ul {
+                font-size: 14px;
+            }
+
+            .search-bar {
+                margin: 0;
+                margin-left: 10%;
+                float: left;
+                width: 75%;
+                position: relative;
+                top: 0;
+                left: 0;
+            }
+
+                .search-bar input {
+                    height: 50px;
+                }
+
+            .logo {
+                width: 200px;
+                margin: 0;
+                margin-top: 2px;
+            }
+
+                .logo img {
+                    width: 150px;
+                    margin: 5px;
+                    margin-bottom: 0px;
+                }
+
+            #map {
+                display: none;
+            }
+
+            .desktop-view {
+                display: none;
+            }
+
+            .mobile-view {
+                display: block;
+            }
+
+            .filter {
+                top: 45px !important;
+                z-index: 111;
+            }
+
+            .Loading-map {
+                display: none !important;
+            }
+
+            .filter .text {
+                margin: 3px;
+            }
+
+            .view {
+                margin-right: 0px;
+            }
+
+            input[type="text"] {
+                margin-bottom: 3px;
+            }
+
+            .nav-option-list {
+                position: fixed;
+                z-index: 111;
+                top: 90px;
+            }
+
+            .copy {
+                width: 100%;
+            }
+
+            #map {
+                margin: 0;
+                width: 100%;
+            }
+
+            #grid-view {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form id="form1">
+        <div>
+            <div id="information_div" style="display: none; top: 25%; position: absolute; z-index: 1; right: 20px; border: 1px solid #AAA; border-radius: 2px; padding: 10px 0px 0px 7px; background-color: #ffffff; width: 400px; min-height: 430px; max-height: 430px; overflow-y: auto;">
+            </div>
+            <div id="multi-companies" style="display: none; top: 20%; position: absolute; z-index: 1; right: 20px; border: 1px solid #AAA; border-radius: 2px; background-color: #ffffff; width: 220px; min-height: 40px; max-height: 500px; overflow-y: auto;"></div>
+            <div class="container">
+                <div class="navbar mobile-view">
+                    <div class="logo">
+                        <a href="/" title="Bhaari" style="text-decoration: none;">
+                            <img src="static/img/Logo.png" alt="Bhaari" />
+                        </a>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="twitter">
+                                <a href="https://twitter.com/BhaariJobs" target="_blank">
+                                    <img src="static/img/twitter.png" />
+                                </a>
+                            </div>
+                        </li>
+                        <li><a id="Login" style="color: white" href="#" onclick="return UpdateLoginStatus()">Login</a></li></li>
+                    </ul>
+                </div>
+                <div class="navbar desktop-view">
+                    <div class="logo">
+                        <a href="/" title="Bhaari - Jobs Near You" style="text-decoration: none;">
+                            <img src="static/img/Logo.png" alt="Bhaari - Jobs Near You" />
+                        </a>
+                    </div>
+
+                    <div class="search-bar form-group">
+                        <div class="search-container">
+                            <input type="text" id="txtSearchTerm" class="form-control search-term" placeholder="Search Job Title / Technology ..." />
+                            <i class="icon-search"></i>
+                        </div>
+                        <div id="search-results">
+                        </div>
+                    </div>
+                    <ul>
+
+                        <li onclick="trackContactUs();$('.invitation-container').hide();$('.contact-list').show();">Contact us</li>
+                        <li onclick="trackFeedbackOpen();$('.invitation-container').hide();$('.contact-list').hide();$('#user-pref').modal('show');">Feedback</li>
+                        <li><a id="Login" style="color: white" href="#" onclick="return UpdateLoginStatus()">Login</a></li>
+                    </ul>
+                    <div class="invitation-container"></div>
+                </div>
+                <div class="filter desktop-view">
+                    <div class="text">Filter Jobs</div>
+                    <!--<div class="text">
+                        <select class="ddCountry">
+                            <option selected="selected">--Country--</option>
+                        </select>
+                    </div>-->
+                    <div class="text">
+                        <input type="text" style="width: 100px" placeholder="Postal Code" id="txtPostalCode" />
+                    </div>
+                    <div style="margin: 7px; float: left;"><input type="button" class="btn-success" onclick="return FilterResults()" value="Filter" /></div>
+                    <span class="slider-label">30 days old jobs</span><span class="icon-chevron-left"></span><div id="slider"></div>
+                    <span class="icon-chevron-right"></span><span class="slider-label">Most recent jobs</span>
+                    <!--<span style="margin: 10px; font-weight: bold; font-size: 11px; float: left">Jobs with in 100 miles/K.M.</span>
+                    <div class="view">
+                        <div id="map-view" onclick="GetMapView();">Map View</div>
+                        <div id="grid-view" class="active-view" onclick="GetJobGrid();">List View</div>
+                    </div>-->
+                    <div class="twitter">
+                        <a href="http://bit.ly/BhaariJobs" target="_blank">
+                            <img src="static/img/twitter.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="left-nav desktop-view">
+                    <div class="Loading">Loading Jobs...</div>
+                </div>
+                <div class="Loading-map desktop-view">Loading Map...</div>
+                <div id="map">
+                </div>
+                <div id="grid"></div>
+                <div class="filter mobile-view">
+                    <div class="text">
+                        <input type="text" style="width: 100px" id="txtSearchTermMobile" class="form-control search-term" placeholder="Search..." />
+                        <input type="text" style="width: 100px" placeholder="Postal Code" id="txtPostalCodeMobile" />
+                    </div>
+                    <div style="margin: 3px; float: left;"><input type="button" class="btn-success" onclick="return FilterResults()" value="Filter" /></div>
+                    <div class="view">
+                        <div id="map-view" onclick="GetMapView();"><img src="static/img/map-view.png" /></div>
+                        <div id="grid-view" onclick="GetJobGrid();"><img src="static/img/list-view.png" /></div>
+                    </div>
+                    <div class="Note"><span class="green"></span><span>Most Recent Jobs</span><span class="red"></span><span>30 days old jobs</span></div>
+                </div>
+                <div class="left-nav mobile-view">
+                    <div class="Loading">Loading Jobs...</div>
+                </div>
+            </div>
+            <input type="hidden" id="hfLat" value="" />
+            <input type="hidden" id="hfLong" value="" />
+            <input type="hidden" id="hfJobs" />
+        </div>
+    </form>
+
+</body>
+</html>
+<script type="text/javascript">
+    if (getLocation != null && getLocation != "undefined") {
+        $("#hfLat").val(getLocation.lat);
+        $("#hfLong").val(getLocation.lon);
+    }
+
+    if (localStorage.getItem("token") == null || localStorage.getItem("token") == "") {
+        $(".desktop-view").find("#Login").each(function () { $(this).html("Login"); });
+        $(".mobile-view").find("#Login").each(function () { $(this).html("Login"); });
+    }
+    else {
+        $(".desktop-view").find("#Login").each(function () { $(this).html("Logout").attr("href", "#"); });
+        $(".mobile-view").find("#Login").each(function () { $(this).html("Logout").attr("href", "#"); });
+    }
+
+    function UpdateLoginStatus() {
+        if (localStorage.getItem("token") != "" && localStorage.getItem("token") != null) {
+            $(".desktop-view").find("#Login").each(function () { $(this).html("Login"); });
+            $(".mobile-view").find("#Login").each(function () { $(this).html("Login"); });
+            localStorage.setItem("token", "");
+            return;
+        }
+        else {
+            var url = "login.html?t=login"
+            window.open(url, "_blank");
+            var timer = setInterval(function () {
+                if (localStorage.getItem("token") != null && localStorage.getItem("token") != "") {
+                    $("#desktop-view").find("#Login").each(function () { $(this).html("Logout"); });
+                    $("#mobile-view").find("#Login").each(function () { $(this).html("Logout"); });
+                    clearInterval(timer);
+                }
+            }, 1000);
+        }
+    }
+
+
+    function getQueryStringValue(key) {
+        return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+    }
+
+    function FilterResults() {
+
+        var postalCode = $("#txtPostalCode").val();
+
+        if (isMobile) {
+            postalCode = $("#txtPostalCodeMobile").val();
+        }
+
+        if (postalCode == "") {
+            alert("Please enter postal code");
+            return;
+        }
+
+        geocoder.geocode({ 'address': 'postalcode ' + postalCode }, function (results, status) {
+            if (status == 'OK') {
+                map.setCenter(results[0].geometry.location);
+                $("#hfLat").val(results[0].geometry.location.lat);
+                $("#hfLong").val(results[0].geometry.location.lng);
+
+                localStorage.setItem('Latitude', results[0].geometry.location.lat);
+                localStorage.setItem('Longitude', results[0].geometry.location.lng);
+
+                getLocation.lat = $("#hfLat").val();
+                getLocation.lon = $("#hfLong").val();
+
+                for (j = 0; j < results[0].address_components.length; j++) {
+                    if (results[0].address_components[j].types[0] == "country")
+                        getLocation.country = results[0].address_components[j].long_name;
+                    if (results[0].address_components[j].types[0] == "locality")
+                        getLocation.city = results[0].address_components[1].long_name;
+                }
+
+                $(".nav-option-list,.slimScrollDiv").remove();
+                $(".job-list").remove();
+                init();
+            } else {
+                alert('Geocode was not successful for the following reason: ' + status);
+            }
+        });
+
+        return false;
+    }
+
+    $(".search-term").val(getQueryStringValue("q"));
+    $("#txtSearchTermMobile").val(getQueryStringValue("q"));
+
+    $(".search-term").keypress(function (e) {
+        if (e.which == 13) {
+            trackSearchEnter('default', $(".search-term").val());
+            document.location.href = "search.html?q=" + encodeURIComponent($(".search-term").val());
+        }
+    });
+
+    //DistanceWidget.prototype = new google.maps.MVCObject();
+
+    /**
+    * Update the radius when the distance has changed.
+    */
+    google.maps.event.addDomListener(window, 'load', init);
+
+    /*RadiusWidget.prototype = new google.maps.MVCObject();
+    RadiusWidget.prototype.distance_changed = function () {
+        this.set('radius', this.get('distance') * 2200);
+        this.center_changed();
+    };
+
+    RadiusWidget.prototype.addSizer_ = function () {
+        var sizer = new google.maps.Marker({
+            draggable: true,
+            raiseOnDrag: false,
+            icon: 'static/img/resize.png',
+            zIndex: google.maps.Marker.MAX_ZINDEX + 1
+        });
+
+        sizer.bindTo('map', this);
+        sizer.bindTo('position', this, 'sizer_position');
+
+        var me = this;
+
+        google.maps.event.addListener(sizer, 'drag', function () {
+            var min = 0.5;
+            var max = 15;
+            var pos = me.get('sizer_position');
+            var center = me.get('center');
+            var distance = google.maps.geometry.spherical.computeDistanceBetween(center, pos) / 2200;
+            if (distance < min) {
+                me.set('sizer_position', google.maps.geometry.spherical.computeOffset(center, min * 2200, google.maps.geometry.spherical.computeHeading(center, pos)));
+            } else if (distance > max) {
+                me.set('sizer_position', google.maps.geometry.spherical.computeOffset(center, max * 2200, google.maps.geometry.spherical.computeHeading(center, pos)));
+            }
+            // Set the circle distance (radius)
+            me.setDistance();
+        });
+
+        google.maps.event.addListener(sizer, 'dragend', function () {
+            chkPointsWithinCircle();
+        });
+    };
+
+    RadiusWidget.prototype.center_changed = function () {
+        var bounds = this.get('bounds');
+
+        // Bounds might not always be set so check that it exists first.
+        if (bounds) {
+            var lng = bounds.getNorthEast().lng();
+
+            // Put the sizer at center, right on the circle.
+            var position = new google.maps.LatLng(this.get('center').lat(), lng);
+            this.set('sizer_position', position);
+        }
+    };
+
+    RadiusWidget.prototype.distanceBetweenPoints_ = function (p1, p2) {
+        if (!p1 || !p2) {
+            return 0;
+        }
+
+        var R = 6371; // Radius of the Earth in km
+        var dLat = (p2.lat() - p1.lat()) * Math.PI / 180;
+        var dLon = (p2.lng() - p1.lng()) * Math.PI / 180;
+        var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+            Math.cos(p1.lat() * Math.PI / 180) * Math.cos(p2.lat() * Math.PI / 180) *
+            Math.sin(dLon / 2) * Math.sin(dLon / 2);
+        var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        var d = R * c;
+        return d;
+    };
+
+    RadiusWidget.prototype.setDistance = function () {
+        // As the sizer is being dragged, its position changes.  Because the
+        // RadiusWidget's sizer_position is bound to the sizer's position, it will
+        // change as well.
+        var pos = this.get('sizer_position');
+        var center = this.get('center');
+        var distance = this.distanceBetweenPoints_(center, pos);
+
+        // Set the distance property for any objects that are bound to it
+        this.set('distance', distance);
+    };
+    */
+
+    var map, geocoder, bounds;
+    var markerList = [];
+    var dynamicId = 1;
+    //var setDistanceWidget;
+
+    function init() {
+        bounds = new google.maps.LatLngBounds();
+        geocoder = new google.maps.Geocoder();
+        var mapDiv = document.getElementById('map');
+        //var latlng = new google.maps.LatLng(37.09, -95.71);
+        var latlng = new google.maps.LatLng($("#hfLat").val(), $("#hfLong").val());
+
+        var options = {
+            center: latlng,
+            zoom: 10,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            mapTypeControlOptions: { mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style'] },
+            disableDefaultUI: true,
+            scaleControl: true
+        };
+
+        var a = [{ featureType: "all", elementType: "all", stylers: [{ saturation: -80 }] }, { featureType: "water", elementType: "all", stylers: [{ lightness: -25 }] }, { featureType: "transit.line", stylers: [{ visibility: "off" }] }, { featureType: "administrative", stylers: [{ visibility: "simplified" }] }, { featureType: "poi", stylers: [{ visibility: "off" }] }];
+
+        var styledMap = new google.maps.StyledMapType(a, { name: "Styled Map" });
+        map = new google.maps.Map(mapDiv, options);
+
+        map.mapTypes.set('map_style', styledMap);
+        map.setMapTypeId('map_style');
+
+        //distanceWidget = new DistanceWidget(map);
+
+        //google.maps.event.addListener(distanceWidget, 'distance_changed', function () {
+        //    setDistanceWidget = distanceWidget;
+        //});
+
+        //google.maps.event.addListener(distanceWidget, 'position_changed', function () {
+        //    setDistanceWidget = distanceWidget;
+        //});
+
+        //google.maps.event.addListenerOnce(map, 'tilesloaded', function () {
+        //    google.maps.event.trigger(distanceWidget, 'distance_changed');
+        //    //setTimeout(function () { chkPointsWithinCircle(); }, 100);
+        //});
+        //map.fitBounds(bounds);
+        GetJobs();
+    }
+
+    function parseDate(input) {
+        var parts = input.split('/');
+        return new Date(parts[0], parts[1] - 1, parts[2]);
+    }
+
+    function GetJobs() {
+        $(".Loading,.Loading-map").show();
+        var query = $(".search-term").val();
+
+        if (isMobile)
+            query = $("#txtSearchTermMobile").val();
+
+        var jobQuery = {
+            "Query": encodeURIComponent(query),
+            "City": getLocation.city,
+            "Country": getLocation.country,
+            "Latitude": "" + getLocation.lat,
+            "Longitude": "" + getLocation.lon
+        };
+        $.ajax({
+            url: BASE_URL + "/search/jobs",
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(jobQuery),
+            success: function (result) {
+                $("#hfJobs").val(JSON.stringify(result));
+                //google.maps.event.trigger(distanceWidget, 'distance_changed');
+                $(".Loading,.Loading-map").hide();
+                setMarkersOnMap();
+                //setTimeout(function () { $(".job-list li").show(); }, 1000);
+            }
+        });
+    }
+
+    function GetMarkerColorCode(datePosted) {
+
+        if (datePosted == undefined)
+            return ["bubble-0", "green"];
+
+        var one_day = 1000 * 60 * 60 * 24;
+        var posted;
+        if (datePosted.indexOf("Date") > -1) {
+            posted = eval(datePosted.replace(/\/Date\((\d+)\)\//gi, "new Date($1)"));
+        }
+        else {
+            posted = parseDate(datePosted).getTime();
+        }
+
+        var currentDate = new Date().getTime();
+
+        var difference_ms = currentDate - posted;
+
+        var diff = Math.round(Math.round(difference_ms / one_day) / 8);
+
+        //rgb(255,10,0),rgb(255,100,0),rgb(255,200,0),rgb(255,255,0),rgb(155,255,0),rgb(55,215,0),rgb(0,220,0),green
+        colorCode = "bubble-" + diff;
+        var bgColor;
+        switch (diff) {
+            case 0:
+                bgColor = 'green';
+                break;
+            case 1:
+                bgColor = 'rgb(0,220,0)';
+                break;
+            case 2:
+                bgColor = 'rgb(55,215,0)';
+                break;
+            case 3:
+                bgColor = 'rgb(155,255,0)';
+                break;
+            case 4:
+                bgColor = 'rgb(255,255,0)';
+                break;
+            case 5:
+                bgColor = 'rgb(255,200,0)';
+                break;
+            case 6:
+                bgColor = 'rgb(255,100,0)';
+                break;
+            case 7:
+                bgColor = 'rgb(255,10,0)';
+                break;
+            default:
+                bgColor = 'rgb(255,10,0)';
+                break;
+        }
+
+        colorCode = [colorCode, bgColor];
+        return colorCode;
+    }
+
+    function setMarkersOnMap() {
+        var jobjson = JSON.parse($("#hfJobs").val());
+        var set = false;
+
+        // Build index for companies & jobs which are either at same location or with in same company
+        for (var i = 0; i < jobjson.length; i++) {
+            BuildCompanyIndex(jobjson[i]);
+        }
+
+        for (var i = 0; i < jobjson.length; i++) {
+            GetCoordinates(jobjson[i]);
+            //break;
+        }
+
+        var jList = new JobList();
+        //google.maps.event.trigger(distanceWidget, 'distance_changed');
+        //setTimeout(function () {
+        //    chkPointsWithinCircle();
+        //}, 100);
+    }
+
+    function BuildCompanyIndex(details) {
+        try {
+            var loc = JSON.parse(details.location);
+            var isSFOPresent = false;
+            /*if (loc != null && loc != undefined) {
+                for (i = 0; i < loc.length; i++) {
+                    if (loc[i].City == "San Francisco") {
+                        isSFOPresent = true;
+                        break;
+                    } else if (loc[i].Latitude != null && loc[i].Longitude != null) {
+                        isSFOPresent = true;
+                        break;
+                    }
+                }
+            }
+
+            if (!isSFOPresent) {
+                return;
+            }*/
+
+            var finalLoc = "";
+            var isCoordFound = false;
+            var locCo = null;
+            var tLat, tLong;
+            for (i = 0; i < loc.length; i++) {
+                if (loc[i].Latitude != null && loc[i].Longitude != null) {
+                    locCo = new google.maps.LatLng(loc[i].Latitude, loc[i].Longitude);
+                    tLat = loc[i].Latitude;
+                    tLong = loc[i].Longitude;
+                    isCoordFound = true;
+                    break;
+                }
+            }
+
+            if (isCoordFound) {
+                // Company Name, Job Count
+                // Lat, Long, Company Count
+
+                // Check if same company already exist in an array - If so - increment the count
+                // If company is not present, push new entry
+                var companyFound = false;
+                companyLoc.forEach(function (loc) {
+                    if (loc.Lat == tLat && loc.Long == tLong) {
+                        // Some company already present at this location - hence just increment the company count value
+                        // Set some flag so that new entry shall not be added
+                        companyFound = true;
+                        var isCompanyAdded = false;
+                        loc.Companies.forEach(function (com) {
+                            if (com.Name == details.CompanyName && com.CompanyId == details.CompanyId) {
+                                isCompanyAdded = true;
+                            }
+                        });
+
+                        if (!isCompanyAdded) {
+                            loc.Companies.push({ "Name": details.CompanyName, "CompanyId": details.CompanyId, "CompanyLogo": details.CompanyLogo });
+                            loc.TotalCompanies += 1;
+                        }
+
+                    }
+                });
+
+                if (!companyFound)
+                    companyLoc.push({ "Companies": [{ "Name": details.CompanyName, "CompanyId": details.CompanyId, "CompanyLogo": details.CompanyLogo }], "Lat": tLat, "Long": tLong, "TotalCompanies": 1 });
+
+
+                var jobFound = false;
+                jobCount.forEach(function (job) {
+                    if (job.CompanyId == details.CompanyId && job.Name == details.CompanyName) {
+                        job.JobCount += 1;
+                        jobFound = true;
+                    }
+                });
+
+                if (!jobFound)
+                    jobCount.push({ "Name": details.CompanyName, "CompanyId": details.CompanyId, "JobCount": 1 });
+
+            }
+        } catch (e) {
+            //console.log(e);
+        }
+    }
+
+    var previous_val = '';
+    var companyLoc = [];
+    var jobCount = [];
+    var markerAddedOnLoc = [];
+    function GetCoordinates(details) {
+        //var l = details.Location.replace("&", "&amp;").replace("'", "");
+        try {
+            var loc = JSON.parse(details.Location);
+            /*var isSFOPresent = false;
+            if (loc != null && loc != undefined) {
+                for (i = 0; i < loc.length; i++) {
+                    if (loc[i].City == "San Francisco") {
+                        isSFOPresent = true;
+                        break;
+                    } else if (loc[i].Latitude != null && loc[i].Longitude != null) {
+                        isSFOPresent = true;
+                        break;
+                    }
+                }
+            }
+            if (!isSFOPresent) {
+                return;
+            }*/
+
+            var finalLoc = "";
+            var isCoordFound = false;
+            var locCo = null;
+            var tLat, tLong;
+
+            for (i = 0; i < loc.length; i++) {
+                if (loc[i].Latitude != null && loc[i].Longitude != null) {
+                    locCo = new google.maps.LatLng(loc[i].Latitude, loc[i].Longitude);
+                    tLat = loc[i].Latitude;
+                    tLong = loc[i].Longitude;
+                    isCoordFound = true;
+                    break;
+                }
+            }
+
+            markerAddedOnLoc.forEach(function (l) {
+                if (l.Lat == tLat && l.Long == tLong) {
+                    // We dont want to add another marker at same location. Hence set the flag to false.
+                    isCoordFound = false;
+                }
+            });
+
+            if (isCoordFound) {
+                markerAddedOnLoc.push({ "Lat": tLat, "Long": tLong });
+                GeocodeReceived(details, locCo, google.maps.GeocoderStatus.OK, false, { "Lat": tLat, "Long": tLong });
+            }
+        } catch (e) {
+            console.log(e);
+        }
+    }
+
+    function GetCompanyCount(details) {
+        var location = JSON.parse(details.Location);
+        var to = 1;
+        companyLoc.forEach(function (loc) {
+            for (i = 0; i < location.length; i++) {
+                if (loc.Lat == location[i].Latitude && loc.Long == location[i].Longitude) {
+                    to = loc.TotalCompanies;
+                }
+            }
+        });
+
+        return to;
+    }
+
+    function GetCompanyJobCount(details) {
+        var c = 1;
+        jobCount.forEach(function (job) {
+            if (job.companyId == details.CompanyId && job.name == details.CompanyName) {
+                c = job.JobCount;
+            }
+        });
+
+        return c;
+    }
+
+    var TEMP_Z = 1;
+    function GeocodeReceived(details, results, status, isCalled, location) {
+        if (status == google.maps.GeocoderStatus.OK) {
+            // Do something with the response
+            var loc;
+            if (isCalled)
+                loc = results[0].geometry.location;
+            else
+                loc = results;
+
+            var colorCode = GetMarkerColorCode(details.DatePosted);
+            var bubble = {
+                path: 'M 5,12 12,28 28,5 z',
+                fillColor: colorCode[1],
+                fillOpacity: 1,
+                scale: 1,
+                strokeColor: colorCode[1],
+                strokeWeight: 2,
+                optimized: false
+            };
+
+            var companyLabel = GetCompanyCount(details);
+            var jobLabel = GetCompanyJobCount(details);
+
+            // write a code which will detect if marker at given location is already added. If already added, dont add new marker
+
+            jobLabel = jobLabel == 1 ? $.trim(details.JobTitle) : jobLabel + " Jobs";
+            companyLabel = companyLabel == 1 ? $.trim(details.CompanyName) : companyLabel + " Companies";
+
+            // Check to see if we've already got a Marker object
+            var marker = new MarkerWithLabel({
+                position: loc,
+                map: map,
+                icon: bubble,
+                draggable: false,
+                raiseOnDrag: false,
+                labelContent: companyLabel,
+                labelClass: "bubble " + colorCode[0], // the CSS class for the label
+                labelInBackground: true,
+                name: details.CompanyName,
+                url: details.SourceUrl,
+                address: details.Location,
+                datePosted: details.DatePosted,
+                jobId: details.Id,
+                jobTitle: jobLabel,
+                companyId: details.CompanyId,
+                optimized: false,
+                location: location
+            });
+
+            dynamicId++;
+
+            marker.setVisible(true);
+
+            markerList.push(marker);
+
+            bounds.extend(loc);
+
+            var maximumZoomLevel = 14;
+            var minimumZoomLevel = 11;
+            var ourZoom = 9; // default zoom level
+
+            google.maps.event.addListener(marker, 'click', function (e) {
+                // Check if there are more than 1 companies
+                // If yes then show the company popup
+                // Check if there are more than 1 job for single company
+                // If yes then create functionality of next/previous button
+                // current flow in else case
+                var isMultipleCompanies = false;
+                var term = $(".search-term").val();
+
+                if (isMobile)
+                    term = $("#txtSearchTermMobile").val();
+
+                companyLoc.forEach(function (loc) {
+                    if (loc.Lat == marker.location.Lat && loc.Long == marker.location.Long) {
+                        if (loc.TotalCompanies > 1) {
+
+                            trackMapMarker(loc.TotalCompanies + " Companies", term);
+                            PrepareCompanyPopup(loc.Companies);
+                            isMultipleCompanies = true;
+                        }
+                    }
+                });
+
+                if (!isMultipleCompanies) {
+                    map.panTo(marker.getPosition());
+                    var getMarkerName = this.name;
+                    var getMarkerLabelContent = this.labelContent;
+
+                    if (previous_val == '' || $(previous_val).text() != getMarkerName) {
+                        trackMapMarker(this.companyId, term);
+                        $('#information_div').html("");
+                        $("ul.job-list li").css({ "background-color": "#fff", "color": "black" });
+                        $("ul.job-list li[jid=\"" + this.jobId + "\"]").css({ "background-color": "#f0f3f7" });
+                        isMapView = true;
+                        GetJobDetails(this.jobId, this.url, this.name);
+                        //trackJobDetails(this.jobId);
+
+                        $('div.bubble').each(function () {
+                            var getText = $(this).text();
+                            if (getText == getMarkerName || getText == getMarkerLabelContent) {
+                                previous_val = $(this);
+                                return false;
+                            }
+                        });
+                        return false;
+                    }
+
+                    $('div.bubble').each(function () {
+                        var getText = $(this).text();
+                        if (getText == getMarkerName || getText == getMarkerLabelContent) {
+                            previous_val = $(this);
+                            $(this).effect('transfer', { to: $('#information_div') }, 200, hide_info_div);
+                        }
+                    });
+                }
+            });
+
+            google.maps.event.addListener(marker, "mouseover", function (e) {
+                var label;
+                if (companyLabel.indexOf(" Companies") == -1) {
+                    label = marker.jobTitle + " at " + marker.name;
+                }
+                else {
+                    label = "Click here to view jobs at " + marker.name;
+                }
+
+                var getContent = marker.name;
+                TEMP_Z = marker.getZIndex();
+                marker.setZIndex(google.maps.Marker.MAX_ZINDEX + 1);
+                marker.setOptions({ labelContent: label });
+            });
+
+            google.maps.event.addListener(marker, "mouseout", function (e) {
+                var getContent = marker.name;
+                marker.setOptions({ labelContent: getContent });
+                marker.setZIndex(TEMP_Z);
+            });
+        }
+    }
+
+    function PrepareCompanyPopup(companies) {
+        var companyList = $("<div/>").addClass("multi-companies").html("<span class=\"title\">Click on company name to<br/>view jobs.</span><span class=\"title-close\" title=\"Close\" onclick=\"CloseCompanyPopup();\">X</span>");
+        var list = $("<ul/>");
+        for (i = 0; i < companies.length; i++) {
+
+            //var img = $("<img/>").attr("src", "logo/" + companies[i].companyLogo).css("width", "16px").css("margin-right", "10px");
+            var span = $("<span/>").html(companies[i].Name);
+            var item = $("<li/>").append(span).attr("cid", companies[i].companyId).click(function () {
+
+                var JOB_LIST = JSON.parse($("#hfJobs").val());
+
+                var cid = $(this).attr("cid");
+                for (i = 0; i < JOB_LIST.length; i++) {
+                    if (JOB_LIST[i].companyId == cid) {
+                        GetJobDetails(JOB_LIST[i].Id, JOB_LIST[i].SourceUrl, JOB_LIST[i].CompanyName);
+                        CloseCompanyPopup();
+                        break;
+                    }
+                }
+
+            });
+
+            $(list).append(item);
+        }
+
+        $(companyList).append(list);
+        $("#multi-companies").html("");
+        $("#multi-companies").append(companyList).show();
+        //return companyList;
+    }
+
+    function CloseCompanyPopup() {
+        $('#multi-companies').hide();
+        $('.multi-companies').remove();
+    }
+
+    function hide_info_div() {
+        $('#information_div').hide().html('');
+        $("ul.job-list li").css({ "background-color": "", "color": "" });
+    }
+
+    function chkPointsWithinCircle(isFirstTimeLoad) {
+        //var getCircleCenter = setDistanceWidget.get('position');
+        //var getCircleRadius = setDistanceWidget.get('distance');
+
+        /*if (!isFirstTimeLoad || isFirstTimeLoad == "undefined")
+            $("ul.job-list li").hide();
+            */
+        for (var i = 0; i < markerList.length; i++) {
+            //var markerLoc = markerList[i].getPosition();
+            //$("ul.job-list li[cid=\"" + markerList[i].companyId + "\"]").show();
+
+            //var distance = google.maps.geometry.spherical.computeDistanceBetween(getCircleCenter, markerLoc) / 2200;
+            //var jq = new JobQualifier();
+            markerList[i].setVisible(IsJobQualify(markerList[i]));
+
+            //if () && parseFloat(distance) < parseFloat(getCircleRadius) - 0.15) {
+
+
+            //} else {
+            //markerList[i].setVisible(false);
+            //}
+        }
+    }
+
+    function wordwrap(str, int_width, str_break, cut) {
+        var m = ((arguments.length >= 2) ? arguments[1] : 75);
+        var b = ((arguments.length >= 3) ? arguments[2] : "\n"); var c = ((arguments.length >= 4) ? arguments[3] : false);
+
+        var i, j, l, s, r;
+
+        str += '';
+        if (m < 1) {
+            return str;
+        }
+        for (i = -1, l = (r = str.split(/\r\n|\n|\r/)).length; ++i < l; r[i] += s) {
+            for (s = r[i], r[i] = ""; s.length > m; r[i] += s.slice(0, j) + ((s = s.slice(j)).length ? b : "")) {
+                j = c == 2 || (j = s.slice(0, m + 1).match(/\S*(\s)?$/))[1] ? m : j.input.length - j[0].length || c == 1 && m || j.input.length + (j = s.slice(m).match(/^\S*/)).input.length;
+            }
+        }
+        return r.join("\n");
+    }
+
+    //google.maps.event.addDomListener(window, 'load', init);
+
+    function PrepareGetInvitationList() {
+        var container = $("<div/>").addClass("invite-list");
+        var invite = "<div><h3>Try our platform early.</h3></div>" +
+            "<div class=\"user-name\"><input type=\"text\" id=\"txtUserName\" placeholder=\"First Name\" autocomplete=\"off\" /></div>" +
+            "<div class=\"email-address\"><input type=\"text\" id=\"txtEmail\" placeholder=\"Email Address\" autocomplete=\"off\" /></div>" +
+            "<div class=\"btn btn-primary\" style=\"float: left;\" onclick=\"GetInvitation();\">Get Invitation</div><div class=\"btn\" style=\"margin-left: 10px; width: 50px !important\" onclick=\"$('.invitation-container').hide();\">Close</div><div id=\"invite-error\"></div><div id=\"invite-success\">You have successfully applied to get an invitation. We will get back to you soon.</div>";
+
+        $(".invitation-container").append($(container).append(invite));
+    }
+
+    function PrepareCreditsList() {
+        var container = $("<div/>").addClass("credit-list");
+        var credits = "<div><h6>Credits:</h6></div>" +
+            "<div class=\"user-name\"><a href=\"\">Kunal Cholera</a>, <a href=\"\">Matthew Shoup</a>, <a href=\"\">Ashish Bhangale</a> & <a href=\"\">Gaurav Shah</a> for their valuable advice while building Bhaari.com<br/></div>" +
+            "<div class=\"email-address\"><br/>We are also thankful to: <a href=\"\">Google Maps</a>, <a href=\"\">Indeed</a>, <a href=\"\">AngelList</a>, <a href=\"\">LinkedIn</a> & <a href=\"\">Glassdoor</a> for providing an access to their APIs.</div>" +
+            "<div class=\"btn\" style=\"width: 50px !important\" onclick=\"$('.credit-container').hide();\">Close</div>";
+
+        $(".credit-container").append($(container).append(credits));
+    }
+
+    function PrepareAboutus() {
+        var container = $("<div/>").addClass("about-list");
+        var credits = "<div><h6>About us:</h6></div>" +
+            "<div class=\"user-name\">We (<a href=\"\">Viren</a> & <a href=\"\">Hrishikesh</a>) were running a small web development company. Our teammates were spending 3 hours daily in traveling. Hence we decided to recruit people who stays near our office. <br/><br/>Now how could we know - who stays near our office and looking for a job?<br/>" +
+            "<div class=\"btn\" style=\"width: 50px !important\" onclick=\"$('.about-container').hide();\">Close</div>";
+
+        $(".about-container").append($(container).append(credits));
+    }
+
+    new UserPreferences();
+    new Contact();
+    PrepareGetInvitationList();
+
+    $("#slider").slider({
+        range: true,
+        values: [0, 100],
+        change: function (event, ui) {
+
+        },
+        stop: function (event, ui) {
+            var values = $(this).slider("option", "values");
+            var l = Math.round(values[0] * 0.60);
+            var h = Math.round(values[1] * 0.60);
+
+            var count = 0;
+            $("#slider .ui-slider-handle").each(function () {
+
+                if (count % 2 == 0)
+                    $(this).attr("title", 60 - l + " days old jobs");
+                else {
+                    var msg = h == 60 ? "Most recent jobs" : 60 - h + " days old jobs";
+                    $(this).attr("title", msg);
+                }
+                count++;
+            });
+
+            chkPointsWithinCircle();
+        }
+    });
+
+    var counter = 0;
+    $(".ui-slider-handle").each(function () {
+        if (counter % 2 == 0) {
+            $(this).attr("title", "30 days old jobs").addClass("icon-arrow-left");
+        }
+        else {
+            $(this).attr("title", "Most recent jobs").addClass("icon-arrow-right");
+        }
+        counter++;
+    });
+</script>
+<script async=async src="https://www.googletagmanager.com/gtag/js?id=UA-144243443-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-144243443-1');
+</script>

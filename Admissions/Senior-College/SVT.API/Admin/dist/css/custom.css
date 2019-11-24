@@ -1,0 +1,56 @@
+#seatGrid tr td{
+    background-color: #eeeeff;
+}
+#seatGrid tr td.selected{ background-color: #fff; }
+#seatGrid tr td.errInput{ border:2px solid red; }
+#seatGrid tr td:last-child { background-color: black; color:#fff}
+
+tr:hover{ background-color: #fff; }
+
+
+#cutoffGrid tr > td{
+    background-color: #eeeeff;
+}
+#cutoffGrid tr > td.selected{ background-color: #fff; }
+#cutoffGrid tr > td.errInput{ border:2px solid red; }
+
+#cutoffGrid tr.moreInfo td{
+    background-color: #fff!important;
+}
+.specialisationSummaryTable th{
+    border:1px solid #3498db!important;
+}
+.specialisationSummaryTable td{
+    border:1px solid #3498db!important;
+}
+
+
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    top:40%;
+    left: 50%
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#studentListBody .messageDiv{
+    bottom: 10px;
+    right: 20px;
+    position: fixed
+}
+
+#rollCallReportBody .messageDiv{
+    top: 45%;
+    left: 45%;
+    position: fixed
+}
+

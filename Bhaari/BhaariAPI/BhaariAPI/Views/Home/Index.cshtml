@@ -1,0 +1,362 @@
+﻿<style>
+    h1 {
+        margin: 0;
+    }
+
+    .columns {
+        float: left;
+        width: 100%;
+    }
+
+    .QuickLinks ul {
+        margin: 10px;
+        width: 100%;
+        max-width: 280px;
+    }
+
+        .QuickLinks ul li {
+            border-bottom: 1px solid #DDD;
+            padding: 5px;
+            font-size: 12px;
+        }
+
+    .QuickLinks p {
+        padding: 10px;
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    .QuickLinks h2 {
+        line-height: 10px;
+        margin: 5px;
+        margin-top: 20px;
+    }
+
+    .search-bar {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        width: 42%;
+        z-index: 111;
+    }
+
+        .search-bar input {
+            border-radius: 5px;
+            border: 1px solid #DDD;
+            padding: 5px;
+            font-size: 20px;
+            height: 30px;
+            width: 100%;
+            float: left;
+        }
+
+    .QuickLinks {
+        float: left;
+        margin: 10px;
+        width: 300px;
+        border: 1px solid #CCC;
+        box-shadow: 2px 2px #DDD;
+        border-radius: 5px;
+        height: 350px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+        .QuickLinks h2 {
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .QuickLinks ul {
+            float: left;
+            list-style: none;
+        }
+
+    .copy {
+        float: left;
+        color: white;
+        width: 99%;
+        height: 20px;
+        padding: 5px;
+        background-color: #181f25;
+    }
+
+    .navbar {
+        position: fixed;
+    }
+
+    .container {
+        margin-top: 5%;
+        float: left;
+        width: 100%;
+    }
+
+    .search-bar {
+        position: fixed;
+    }
+
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #313a49;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    .form-control:focus {
+        border-color: initial;
+        box-shadow: 0px;
+    }
+
+    @@media only screen and (max-device-width: 768px) {
+        .navbar {
+            position: initial;
+        }
+
+        .container {
+            margin-top: 0;
+        }
+
+        .search-bar {
+            margin: 0;
+            margin-left: 5%;
+            float: left;
+            width: 88%;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+            .search-bar input {
+                height: 50px;
+            }
+
+        .QuickLinks {
+            float: left;
+            margin: 5%;
+            margin-bottom: 0;
+            width: 90%;
+            border: 1px solid #DDD;
+            border-radius: 5px;
+            height: auto;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #313a49;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+    }
+</style>
+<div class="navbar">
+    <div class="logo">
+        <h1>
+            <a href="/" title="Bhaari" style="text-decoration: none;">
+                <img src="~/static/img/Logo.png" alt="Bhaari" />
+            </a>
+        </h1>
+    </div>
+    <ul>
+        <li>
+            <div class="twitter">
+                <a href="https://twitter.com/BhaariJobs" target="_blank">
+                    <img src="~/static/img/twitter.png" />
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="twitter">
+                <a style="color: white" href="/People">People</a>
+            </div>
+        </li>
+        <li>
+            <a id="Login" style="color: white" href="#" onclick="return UpdateLoginStatus()">Login</a>
+        </li>
+    </ul>
+</div>
+<div class="search-bar form-group">
+    <input type="text" id="search-term" class="form-control" placeholder="Search Job Title / Technology ..." style="float: left;" />
+</div>
+<div class="container">
+    <div class="columns">
+        <div class="QuickLinks">
+            <h2>Functional Area Jobs in Mumbai</h2>
+            <ul>
+                <li><a href="/jobs/near-me/accounting-jobs-in-mumbai">Accounting Jobs</a></li>
+                <li><a href="/jobs/near-me/corporate-planning-jobs-in-mumbai">Corporate Planning Jobs</a></li>
+                <li><a href="/jobs/near-me/interior-design-jobs-in-mumbai">Interior Design Jobs</a></li>
+                <li><a href="/jobs/near-me/bank-jobs-in-mumbai">Bank Jobs</a></li>
+                <li><a href="/jobs/near-me/ecommerce-jobs-in-mumbai">Ecommerce Jobs</a></li>
+                <li><a href="/jobs/near-me/telecom-jobs-in-mumbai">Telecom Jobs</a></li>
+                <li><a href="/jobs/near-me/film-jobs-in-mumbai">Film Jobs</a></li>
+                <li><a href="/jobs/near-me/content-writing-jobs-in-mumbai">Content Writing Jobs</a></li>
+                <li><a href="/jobs/near-me/teacher-jobs-in-mumbai">Teacher Jobs</a></li>
+                <li><a href="/jobs/near-me/consultant-jobs-in-mumbai">Consultant Jobs</a></li>
+                <li><a href="/jobs/near-me/legal-jobs-in-mumbai">Legal Jobs</a></li>
+                <li><a href="/jobs/near-me/airline-jobs-in-mumbai">Airline Jobs</a></li>
+                <li><a href="/jobs/near-me/engineering-jobs-in-mumbai">Engineering Jobs</a></li>
+                <li><a href="/jobs/near-me/marketing-jobs-in-mumbai">Marketing Jobs</a></li>
+                <li><a href="/jobs/near-me/packaging-jobs-in-mumbai">Packaging Jobs</a></li>
+                <li><a href="/jobs/near-me/shipping-jobs-in-mumbai">Shipping Jobs</a></li>
+                <li><a href="/jobs/near-me/security-jobs-in-mumbai">Security Jobs</a></li>
+                <li><a href="/jobs/near-me/pharma-jobs-in-mumbai">Pharma Jobs</a></li>
+                <li><a href="/jobs/near-me/analytics-jobs-in-mumbai">Analytics Jobs</a></li>
+                <li><a href="/jobs/near-me/business-intelligence-jobs-in-mumbai">Business Intelligence Jobs</a></li>
+                <li><a href="/jobs/near-me/maintenance-jobs-in-mumbai">Maintenance Jobs</a></li>
+                <li><a href="/jobs/near-me/hr-jobs-in-mumbai">HR Jobs</a></li>
+                <li><a href="/jobs/near-me/hotel-jobs-in-mumbai">Hotel Jobs</a></li>
+                <li><a href="/jobs/near-me/sales-jobs-in-mumbai">Sales Jobs</a></li>
+                <li><a href="/jobs/near-me/secretary-jobs-in-mumbai">Secretary Jobs</a></li>
+                <li><a href="/jobs/near-me/office-admin-jobs-in-mumbai">Office Administration Jobs</a></li>
+            </ul>
+        </div>
+        <div class="QuickLinks">
+            <h2>Internships</h2>
+            <p>Are you looking for an internship to gain experience or to explore your career options? Internship will also help you with learning industry-relevant skills and land your dream job. Check out some of the internships here:</p>
+            <ul>
+                <li><a href="/jobs/near-me/software-engineer-internships-in-san-francisco">Software Engineer Internships in San Francisco</a></li>
+                <li><a href="/jobs/near-me/software-engineer-internships-in-san-jose">Software Engineer Internships in San Jose</a></li>
+                <li><a href="/jobs/near-me/software-engineer-internships-in-new-york">Software Engineer Internships in New York</a></li>
+                <li><a href="/jobs/near-me/software-engineer-internships-in-chicago">Software Engineer Internships in Chicago</a></li>
+                <li><a href="/jobs/near-me/management-internships-in-mumbai">Management Internships in Mumbai</a></li>
+                <li><a href="/jobs/near-me/engineering-internships-in-mumbai">Engineering Internships in Mumbai</a></li>
+                <li><a href="/jobs/near-me/diploma-internships-in-mumbai">Diploma Internships in Mumbai</a></li>
+                <li><a href="/jobs/near-me/media-internships-in-mumbai">Media Internships in Mumbai</a></li>
+                <li><a href="/jobs/near-me/engineering-internships-in-mumbai">Engineering Internships in Mumbai</a></li>
+            </ul>
+        </div>
+
+        <div class="QuickLinks">
+            <h2>Jobs Near Me</h2>
+            <p>
+                Before opting your dream job away from your current location, as a job seeker you need to decide whether you want to stay in your current city/country or go for other city/country. How close you want to be with your family? Have you researched on traffic, pollution, green space, other job opportunities, number of cultural activities?
+                How good is the work environment? You want to interact with lot of surrounded people? After evaluating all these factors if you have decided to look <a href="/jobs/near-me/jobs" title="Jobs Near Me">jobs near you</a> then <a href="/jobs/near-me/entry-level-positions">click here</a> to start your job search.
+            </p>
+        </div>
+        <div class="QuickLinks">
+            <h2>Trending Topics</h2>
+            <ul>
+                <li><a target="_blank" href="https://medium.com/conquering-corporate-america/10-tricks-to-appear-smart-during-meetings-27b489a39d1a">10 Tricks to Appear Smart During Meetings</a></li>
+                <li><a target="_blank" href="https://www.entrepreneur.com/article/334060">5 Reasons How Professional Experience Can Help You Become A Better Entrepreneur</a></li>
+                <li><a target="_blank" href="https://qz.com/work/1685009/the-us-industries-where-female-representation-is-rising-fastest/">The US industries where female representation is rising fastest</a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/feed/news/the-tech-jobs-that-pay-best-4428227/">The tech jobs that pay best</a></li>
+                <li><a target="_blank" href="https://hbr.org/cover-story/2017/07/the-business-of-artificial-intelligence">The business of artificial intelligence</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="QuickLinks">
+            <h2>IT Software Skill Jobs in Mumbai</h2>
+            <ul>
+                <li><a href="/jobs/near-me/software-testing-jobs-in-mumbai">Software Testing Jobs</a></li>
+                <li><a href="/jobs/near-me/sap-abap-jobs-in-mumbai">SAP/ABAP Jobs</a></li>
+                <li><a href="/jobs/near-me/oracle-jobs-in-mumbai">Oracle Jobs</a></li>
+                <li><a href="/jobs/near-me/web-development-jobs-in-mumbai">Web Development Jobs</a></li>
+                <li><a href="/jobs/near-me/business-analysis-jobs-in-mumbai">Business Analysis Jobs</a></li>
+                <li><a href="/jobs/near-me/mobile-application-development-jobs-in-mumbai">Mobile Application Development Jobs</a></li>
+                <li><a href="/jobs/near-me/data-analysis-jobs-in-mumbai">Data Analysis Jobs</a></li>
+                <li><a href="/jobs/near-me/data-science-jobs-in-mumbai">Data Science Jobs</a></li>
+                <li><a href="/jobs/near-me/artificial-intelligence-jobs-in-mumbai">Artificial Intelligence Jobs</a></li>
+                <li><a href="/jobs/near-me/machine-learning-jobs-in-mumbai">Machine Learning Jobs</a></li>
+                <li><a href="/jobs/near-me/rpa-jobs-in-mumbai">Robotic Process Automation Jobs</a></li>
+                <li><a href="/jobs/near-me/remote-jobs-in-mumbai">Remote Jobs</a></li>
+                <li><a href="/jobs/near-me/project-manager-jobs-in-mumbai">Project Manager Jobs</a></li>
+                <li><a href="/jobs/near-me/product-manager-jobs-in-mumbai">Product Manager Jobs</a></li>
+                <li><a href="/jobs/near-me/engineering-manager-jobs-in-mumbai">Engineering Manager Jobs</a></li>
+                <li><a href="/jobs/near-me/software-development-manager-jobs-in-mumbai">Software Development Manager Jobs</a></li>
+                <li><a href="/jobs/near-me/software-quality-manager-jobs-in-mumbai">Software Quality Manager Jobs</a></li>
+                <li><a href="/jobs/near-me/test-manager-jobs-in-mumbai">Test Manager Jobs</a></li>
+                <li><a href="/jobs/near-me/virtual-reality-jobs-in-mumbai">Virtual Reality Jobs</a></li>
+                <li><a href="/jobs/near-me/augmented-reality-jobs-in-mumbai">Augmented Reality Jobs</a></li>
+            </ul>
+        </div>
+        <div class="QuickLinks">
+            <h2>Government Jobs</h2>
+            <p>
+                Find latest Indian Government Jobs Vacancies, Public Sector Jobs, Jobs in India on Bhaari.com. Search for the Government Jobs / Sarkari Naukri for Freshers and Experienced.
+            </p>
+        </div>
+        <div class="QuickLinks">
+            <h2>Government Jobs 2019</h2>
+            <ul>
+                <li><a href="/jobs/government-jobs/india/all">Government Jobs 2019</a></li>
+                <li><a href="/jobs/government-jobs/india/mumbai">Government Jobs in Mumbai</a></li>
+                <li><a href="/jobs/government-jobs/india/chennai">Government Jobs in Chennai</a></li>
+                <li><a href="/jobs/government-jobs/india/kolkata">Government Jobs in Kolkata</a></li>
+                <li><a href="/jobs/government-jobs/india/delhi">Government Jobs in Delhi</a></li>
+                <li><a href="/jobs/government-jobs/india/navi-mumbai">Government Jobs in Navi Mumbai</a></li>
+                <li><a href="/jobs/government-jobs/india/pune">Government Jobs in Pune</a></li>
+                <li><a href="/jobs/government-jobs/india/nagpur">Government Jobs in Nagpur</a></li>
+                <li><a href="/jobs/government-jobs/india/bengaluru">Government Jobs in Bengaluru</a></li>
+                <li><a href="/jobs/government-jobs/india/jaipur">Government Jobs in Jaipur</a></li>
+                <li><a href="/jobs/government-jobs/india/indore">Government Jobs in Indore</a></li>
+                <li><a href="/jobs/government-jobs/india/hyderabad">Government Jobs in Hyderabad</a></li>
+                <li><a href="/jobs/government-jobs/india/bhopal">Government Jobs in Bhopal</a></li>
+                <li><a href="/jobs/government-jobs/india/ahmedabad">Government Jobs in Ahmedabad</a></li>
+                <li><a href="/jobs/government-jobs/india/kochi">Government Jobs in Kochi</a></li>
+                <li><a href="/jobs/government-jobs/india/puducherry">Government Jobs in Puducherry</a></li>
+                <li><a href="/jobs/government-jobs/india/patna">Government Jobs in Patna</a></li>
+            </ul>
+        </div>
+        <div class="QuickLinks">
+            <h2>Government Jobs in States, India</h2>
+            <ul>
+                <li><a href="/jobs/government-jobs/india/andhra-pradesh">Government Jobs in Andhra Pradesh</a></li>
+                <li><a href="/jobs/government-jobs/india/arunachal-pradesh">Government Jobs in Arunachal Pradesh</a></li>
+                <li><a href="/jobs/government-jobs/india/assam">Government Jobs in Assam</a></li>
+                <li><a href="/jobs/government-jobs/india/bihar">Government Jobs in Bihar</a></li>
+                <li><a href="/jobs/government-jobs/india/chandigarh">Government Jobs in Chandigarh</a></li>
+                <li><a href="/jobs/government-jobs/india/chhattisgarh">Government Jobs in Chhattisgarh</a></li>
+                <li><a href="/jobs/government-jobs/india/goa">Government Jobs in Goa</a></li>
+                <li><a href="/jobs/government-jobs/india/gujarat">Government Jobs in Gujarat</a></li>
+                <li><a href="/jobs/government-jobs/india/haryana">Government Jobs in Haryana</a></li>
+                <li><a href="/jobs/government-jobs/india/jharkhand">Government Jobs in Jharkhand</a></li>
+                <li><a href="/jobs/government-jobs/india/karnataka">Government Jobs in Karnataka</a></li>
+                <li><a href="/jobs/government-jobs/india/kerala">Government Jobs in Kerala</a></li>
+                <li><a href="/jobs/government-jobs/india/lakshadweep">Government Jobs in Lakshadweep</a></li>
+                <li><a href="/jobs/government-jobs/india/madhya-pradesh">Government Jobs in Madhya Pradesh</a></li>
+                <li><a href="/jobs/government-jobs/india/maharashtra">Government Jobs in Maharashtra</a></li>
+                <li><a href="/jobs/government-jobs/india/manipur">Government Jobs in Manipur</a></li>
+                <li><a href="/jobs/government-jobs/india/mizoram">Government Jobs in Mizoram</a></li>
+                <li><a href="/jobs/government-jobs/india/nagaland">Government Jobs in Nagaland</a></li>
+                <li><a href="/jobs/government-jobs/india/orissa">Government Jobs in Orissa</a></li>
+                <li><a href="/jobs/government-jobs/india/punjab">Government Jobs in Punjab</a></li>
+                <li><a href="/jobs/government-jobs/india/sikkim">Government Jobs in Sikkim</a></li>
+                <li><a href="/jobs/government-jobs/india/tamilnadu">Government Jobs in Tamilnadu</a></li>
+                <li><a href="/jobs/government-jobs/india/telangana">Government Jobs in Telangana</a></li>
+                <li><a href="/jobs/government-jobs/india/tripura">Government Jobs in Tripura</a></li>
+                <li><a href="/jobs/government-jobs/india/uttarakhand">Government Jobs in Uttarakhand</a></li>
+                <li><a href="/jobs/government-jobs/india/west-bengal">Government Jobs in West Bengal</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+</div>
+<div class="copy">&copy; 2019. <a href="http://bhaari.com">Bhaari.com</a></div>
+<script type="text/javascript">
+    $("#search-term").keypress(function (e) {
+        if (e.which == 13) {
+            trackSearchEnter('home', $("#search-term").val());
+            var lo = localStorage.getItem('Location');
+
+            if (lo != null && lo != undefined && lo.length > 10) {
+                lo = JSON.parse(lo);
+                document.location.href = "/jobs/near-me/" + $("#search-term").val().replace(/ /g, "-") + "-in-" + lo.city;
+            }
+            else {
+                document.location.href = "/jobs/near-me/" + $("#search-term").val().replace(/ /g, "-");
+            }
+        }
+    });
+</script>

@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SVT- SELF FINANCED PROGRAMS ADMISSION FORM</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/svt-icon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/svt-icon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/svt-icon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/svt-icon-57.png">
+    <style>
+        .ui-datepicker {
+            width: 20em;
+            padding: .2em .2em 0;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top menu -->
+    <nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">SVT- SELF FINANCED PROGRAMS ADMISSION FORM</a>
+            </div>
+            <div class="collapse navbar-collapse" id="top-navbar-1">
+                <h1>  <strong>SVT</strong> - SELF FINANCED PROGRAMS ADMISSION FORM</h1>
+            </div>
+        </div>
+    </nav>
+
+    <div class="top-content">
+        <div class="container">
+
+            <div class="dialog-background" style="display:none;">
+                <div class="dialog-loading-wrapper">
+                    <img src="assets/ico/ajax-loading.gif" title='Loading.....' />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 col-sm-offset-0 col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0 form-box">
+                    <form role="form" action="" method="post" class="f1" name="studentDetail">
+
+                        <div id="divMenu" style="display:none;">
+                            <ul class="remove-ul-bullet-icon">
+                                <li class="li-font-set">
+                                    <a href="index.html" style="color: #000000">Home</a> > <span style="color:red">Search</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="form-detail">
+
+                            <fieldset id="divMain">
+                                <div class="row">
+                                    <div class="col-md-6" id="divAdmissionBtn">
+                                        <a href="register.html" class="btn btn-info btn-lg btn-block btn-huge" id="btnNewAdmissionForm">New Admission Form</a>
+                                    </div>
+                                    <div class="col-md-6" id="divEdit">
+                                        <a href="#" class="btn btn-primary btn-lg btn-block btn-huge" id="btnEdit">Edit Admission Form</a>
+                                    </div>
+                                </div>
+                                <div class="row" style="padding-top:10px;display:none">
+                                    <div class="col-md-6" id="divApplicationStatus">
+                                        <a href="#" class="btn btn-success btn-lg btn-block btn-huge" id="btnApplicationStatus">Application Status</a>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset id="Search" style="display:none">
+                                <h4>Search</h4>
+                                <div class="form-detail">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-sm-6">
+                                                <label for="LastName">Form Number</label>
+                                                <input id="txtFormNumber" class="form-control input-group-lg" type="text" name="txtFormNumber" title="Form Number" placeholder="Form Number" maxlength="8">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-sm-6">
+                                                <label>Aadhar number</label>
+                                                <input id="aadharNumber" class="form-control input-group-lg" type="text" maxlength="100" name="aadharNumber" title="Aadhar number" placeholder="Aadhar number" >
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-sm-6">
+                                                <label for="LastName">Last Name</label>
+                                                <input id="txtStdLastName" class="form-control input-group-lg" type="text" name="txtStdLastName" title="Last Name" placeholder="Last Name" maxlength="100">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-sm-6">
+                                                <label>Date of birth</label>
+                                                <div class="form-group internal input-group">
+                                                    <input name="txtBirthDate" type="text" id="txtBirthDate" readonly="readonly" class="form-control input-group-lg" style="background-color: white; " placeholder="Date of birth">
+                                                    <span class='input-group-addon' id="btnBirthDate">
+                                                        <i class='glyphicon glyphicon-calendar'></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-sm-6 f1-buttons">
+                                                <button type="button" id="btnSearch" class="btn btn-next">Search</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <div id="divSearchErrorMessage" style="display:none">
+                                    <div class="col-md-12 padding-top-10px">
+                                        <div class="alert alert-danger">
+                                            <strong>Please!</strong> enter either DOB with last name, OR Aadhar form # or form number & DOB.
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <div id="form-detail">
+                                    <div class="col-md-12 padding-top-10px">
+                                        <div id="ErrorMessage" class="hidden alert alert-danger">No record found for this search criteria.</div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset id="ViewDetail" style="display:none">
+                                <h4>Details</h4>
+                                <div class="form-detail">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-sm-2">
+                                                <img id="imgPhoto" alt="Smiley face" height="130px">
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <b>Name : <label id="lblName" style="font-weight:400"></label></b>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <a href="#" id="btnView" class="btn btn-info">View Application</a>
+                                                    <button type="button" id="btnPDF" class="btn btn-success">View PDF</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <div class="form-detail">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <div class="col-sm-12" style="padding-top: 34px;">
+                                                <div class='embed-responsive' style='padding-bottom:150%;'>
+                                                    <!--<iframe id="viewPdf" scrolling="no" height="900px"></iframe>-->
+                                                    <object id="viewPdf" type='application/pdf' width='100%' height='100%'></object>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/retina-1.1.0.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $('#divAdmissionBtn').show();
+            $('#divEdit').show();
+            $("#Search").hide();
+            $('#divMenu').hide();
+             $("#viewPdf").hide();
+            $("#ErrorMessage").addClass("hidden");            
+            GetFormValidDate(); 
+        });
+
+        $("#btnEdit").on("click", function () {
+            $('#divMain').hide();
+            $('#divMenu').show();
+            $("#Search").show();
+        });
+
+        $("#btnSearch").on("click", function () {
+            $("#ErrorMessage").addClass("hidden");
+            var formnumber = $('#txtFormNumber').val();
+            var aadhaNumber = $('#aadharNumber').val();
+            var lastName = $('#txtStdLastName').val();
+            var dateofBirth = $('#txtBirthDate').val();
+            var chekValidation = false;
+
+            if ((aadhaNumber != "") || (lastName != "" && dateofBirth != "") || (dateofBirth != "" && formnumber != "")) {
+                $("#divSearchErrorMessage").hide();
+                chekValidation = true;
+            } else {
+                $("#divSearchErrorMessage").show();
+                chekValidation = false;
+            }
+
+            if (chekValidation) {
+                $.ajax({
+                    url: 'api/Form/GetStudentDetail',
+                    data: { formNumber: formnumber, aadharNumber: aadhaNumber, lastName: lastName, dateofBirth: dateofBirth },
+                    type: 'get',
+                    dataType: 'json',
+                    success: function (data) {
+                        if (data != null) {
+                            $('#lblName').html(data.FirstName + ' ' + data.LastName);
+                            $('#imgPhoto').attr('src', data.Photo);
+                            $('#studentId').attr('src', data.EncryptedId);
+                            $('#ViewDetail').show();
+                            if (data.IsSubmitted) {
+                                $('#viewPdf').attr('data', data.StudentPdfURL);
+                                $('#btnView').hide();
+                                $('#btnPDF').show();
+                            } else {
+                                $('#btnView').show();
+                                $('#btnView').attr('href', 'register.html?id=' + data.EncryptedId);
+                                $('#btnPDF').hide();
+                            }
+
+                            // $('#divMain').hide();
+                            //  $('#divMenu').show();
+
+                            $('#btnView').attr('href', 'register.html?id=' + data.EncryptedId);
+                        } else {
+                            //$('#divMenu').hide();
+                            //$('#divMain').show();
+                            $('#viewPdf').attr('data', null);
+                            $('#btnView').attr('href', null);
+                            $('#ViewDetail').hide();
+                            $('#viewPdf').hide();
+                            $("#ErrorMessage").removeClass("hidden");
+                        }
+                    }
+                });
+            }
+        });
+
+        $("#btnPDF").on("click", function () {
+            $("#viewPdf").show();
+        });
+
+        $("#txtBirthDate").datepicker({
+            changeMonth: true,
+            changeYear: true,
+            yearRange: '1960:2001',
+            dateFormat: 'dd-MM-yy',
+            defaultDate: new Date(2001, 0, 1)
+        });
+
+        $("#btnBirthDate").click(function () {
+            $("#txtBirthDate").focus();
+        });
+
+        function GetFormValidDate() {
+            $.ajax({
+                url: 'api/Form/GetFormExpireDate',
+                data: null,
+                type: 'get',
+                dataType: 'json',
+                success: function (data) {
+                    if (data == true) {
+                        $('#divEdit').hide();
+                        $('#divAdmissionBtn').hide();
+                    }
+                }
+            });
+        }
+         
+         $('#aadharNumber').keyup(function () {
+            if (this.value.match(/[^a-zA-Z0-9]/g)) {
+                this.value = this.value.replace(/[^a-zA-Z0-9]/g, '');
+            }
+         });
+
+    </script>
+    <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 100%; width: 100%; z-index: -999999; position: fixed;">
+        <img style="position: absolute; margin: 0px; padding: 0px; border: medium none; width: 100%; height: 100%; max-height: none; max-width: none; z-index: -999999; left: 0px; top: 0px;" src="assets/ico/bg_1.jpg">
+    </div>
+</body>
+</html>

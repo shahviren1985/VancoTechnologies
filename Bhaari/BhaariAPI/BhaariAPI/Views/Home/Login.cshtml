@@ -1,0 +1,25 @@
+﻿<script>
+    function getQueryStringValue(key) {
+        return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+    }
+
+    if (getQueryStringValue('t') == "login") {
+        document.location.href = "https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=81zttxaft7bl0e&redirect_uri=" + BASE_URL + "login/check&state=987654321&scope=r_liteprofile+r_emailaddress";
+    }
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144243443-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-144243443-1');
+</script>
+<script>
+    localStorage.setItem("token", getQueryStringValue("t"));
+    localStorage.setItem("firstName", getQueryStringValue("f"));
+    localStorage.setItem("lastName", getQueryStringValue("l"));
+    localStorage.setItem("emailAddress", getQueryStringValue("e"));
+    window.close();
+</script>
