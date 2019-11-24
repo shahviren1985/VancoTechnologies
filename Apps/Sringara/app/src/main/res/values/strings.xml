@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Sringara</string>
+    <string name="earring">Earring</string>
+    <string name="pendant">Pendant</string>
+    <string name="necklace">Necklace</string>
+    <string name="categories">Categories</string>
+    <string name="earrings">Earrings</string>
+    <string name="pendants">Pendants</string>
+    <string name="necklaces">Necklaces</string>
+    <string name="try_now">Try now</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="pin_code">Pin Code</string>
+    <string name="address">Address</string>
+    <string name="country">Country</string>
+    <string name="country_india">India</string>
+    <string name="country_other">Other</string>
+    <string name="state">State</string>
+    <string name="buy_text">Buy</string>
+    <string name="please_enter_name_text">Please enter name</string>
+    <string name="please_enter_phone">Please enter phone</string>
+    <string name="please_enter_email">Please enter email</string>
+    <string name="please_enter_pin_code">Please enter pin code</string>
+    <string name="please_enter_address">Please enter address</string>
+    <string name="please_enter_state">Please select state</string>
+    <string name="please_enter_valid_email_address">Please enter valid email address</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="please_wait_sync_data">Syncing data...</string>
+    <string name="internet_msg">Internet Unavailable. Try again later</string>
+    <string name="rupee_currency_symbol">₹</string>
+    <string name="internet_msg_not_sync_data">Internet not available.</string>
+    <string name="inquiry_number">+91-9920748255</string>
+    <string name="product_inquiry">Product Inquiry</string>
+    <string name="thank_you_for_your_inquiry">Thank you for your inquiry, One of our executives will reach out to you.</string>
+    <string name="some_thing_went_wrong_please_try_again">Some thing went wrong, please try again later.</string>
+</resources>

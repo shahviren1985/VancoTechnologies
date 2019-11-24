@@ -1,0 +1,19 @@
+# ninja log v5
+60	2676	1558174966	CMakeFiles/detection_based_tracker.dir/DetectionBasedTracker_jni.cpp.o	1027652309842323
+2676	3062	1558174967	/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/build/intermediates/cmake/debug/obj/arm64-v8a/libdetection_based_tracker.so	25d879f717e5b17c
+2	1599	1558178500	CMakeFiles/detection_based_tracker.dir/DetectionBasedTracker_jni.cpp.o	1027652309842323
+1599	1829	1558178500	/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/build/intermediates/cmake/debug/obj/arm64-v8a/libdetection_based_tracker.so	25d879f717e5b17c
+0	1102	1558433668	CMakeFiles/detection_based_tracker.dir/DetectionBasedTracker_jni.cpp.o	1027652309842323
+1102	1244	1558433668	/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/build/intermediates/cmake/debug/obj/arm64-v8a/libdetection_based_tracker.so	25d879f717e5b17c
+41	3637	1560577195	CMakeFiles/detection_based_tracker.dir/DetectionBasedTracker_jni.cpp.o	1027652309842323
+3637	4209	1560577195	/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/build/intermediates/cmake/debug/obj/arm64-v8a/libdetection_based_tracker.so	25d879f717e5b17c
+1	4507	1560745427	CMakeFiles/detection_based_tracker.dir/DetectionBasedTracker_jni.cpp.o	1027652309842323
+4507	5657	1560745429	/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/build/intermediates/cmake/debug/obj/arm64-v8a/libdetection_based_tracker.so	25d879f717e5b17c
+2	2116	1561110617	CMakeFiles/detection_based_tracker.dir/DetectionBasedTracker_jni.cpp.o	1027652309842323
+2116	2449	1561110618	/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/build/intermediates/cmake/debug/obj/arm64-v8a/libdetection_based_tracker.so	25d879f717e5b17c
+32	3073	1561206207	CMakeFiles/detection_based_tracker.dir/DetectionBasedTracker_jni.cpp.o	1027652309842323
+3073	3686	1561206208	/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/build/intermediates/cmake/debug/obj/arm64-v8a/libdetection_based_tracker.so	25d879f717e5b17c
+122	2417	1561364719	CMakeFiles/detection_based_tracker.dir/DetectionBasedTracker_jni.cpp.o	1027652309842323
+2417	2590	1561364719	/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/build/intermediates/cmake/debug/obj/arm64-v8a/libdetection_based_tracker.so	25d879f717e5b17c
+2635	12957	1562326802	CMakeFiles/detection_based_tracker.dir/DetectionBasedTracker_jni.cpp.o	1027652309842323
+12957	15170	1562326804	/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/build/intermediates/cmake/debug/obj/arm64-v8a/libdetection_based_tracker.so	25d879f717e5b17c

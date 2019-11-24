@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    tools:context=".ProductListActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivMenu"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/header_logo" />
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/app_name"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/purple_default_app_color"
+                    android:textSize="21sp" />
+
+                <ImageView
+                    android:id="@+id/ivDial"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="5dp"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/baseline_call_white"
+                    android:tint="@color/purple_default_app_color" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/dark_header_gray"
+                android:text="@string/categories"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+                <com.sringara.sringara.views.SquareLinearLayout
+                    android:id="@+id/llNecklace"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_unselected_ornament_category"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <com.sringara.sringara.views.SquareImageView
+                         android:id="@+id/ivImageNecklace"
+                         android:layout_width="32dp"
+                         android:layout_height="32dp"
+                         android:scaleType="fitXY"
+                        android:layout_marginBottom="10dp"
+                         android:src="@drawable/ic_necklace_inactive" />
+
+                    <TextView android:id="@+id/tvNeckLace"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:scaleType="fitCenter"
+                        android:textColor="@color/purple_default_app_color"
+                        android:textSize="12sp"
+                        android:text="@string/necklaces" />
+
+                </com.sringara.sringara.views.SquareLinearLayout>
+
+
+
+                <com.sringara.sringara.views.SquareLinearLayout
+                    android:id="@+id/llEarring"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_unselected_ornament_category"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <com.sringara.sringara.views.SquareImageView
+                        android:id="@+id/ivImageEaring"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:scaleType="fitXY"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/ic_earring_inactive" />
+
+                    <TextView android:id="@+id/tvEarrings"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:scaleType="fitCenter"
+                        android:textColor="@color/purple_default_app_color"
+                        android:textSize="12sp"
+                        android:text="@string/earrings" />
+
+                </com.sringara.sringara.views.SquareLinearLayout>
+
+
+
+
+                <com.sringara.sringara.views.SquareLinearLayout
+                    android:id="@+id/llPendant"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_unselected_ornament_category"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <com.sringara.sringara.views.SquareImageView
+                        android:id="@+id/ivImagePendant"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:scaleType="fitXY"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/ic_pendent_inactive" />
+
+                    <TextView android:id="@+id/tvPendant"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:scaleType="fitCenter"
+                        android:textColor="@color/purple_default_app_color"
+                        android:textSize="12sp"
+                        android:text="@string/pendants" />
+
+                </com.sringara.sringara.views.SquareLinearLayout>
+
+            </LinearLayout>
+
+            <TextView android:id="@+id/tvType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textColor="@color/dark_header_gray"
+                android:text=""/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvListItems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:paddingBottom="10dp"
+                android:layout_marginRight="10dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout android:id="@+id/llSyncTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/outline_sync_white"
+            android:tint="@color/gray"/>
+
+        <TextView android:id="@+id/tvSyncMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:textColor="@color/gray"
+            android:text="@string/please_wait_sync_data"/>
+
+    </LinearLayout>
+
+</LinearLayout>

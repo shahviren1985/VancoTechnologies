@@ -1,0 +1,5 @@
+# ninja log v5
+0	2843	1558178496	CMakeFiles/detection_based_tracker.dir/DetectionBasedTracker_jni.cpp.o	b98519fb1b91278a
+2843	3136	1558178497	/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/build/intermediates/cmake/debug/obj/x86_64/libdetection_based_tracker.so	9be50c47aaa68aad
+1	1191	1558433665	CMakeFiles/detection_based_tracker.dir/DetectionBasedTracker_jni.cpp.o	b98519fb1b91278a
+1191	1714	1558433665	/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/build/intermediates/cmake/debug/obj/x86_64/libdetection_based_tracker.so	9be50c47aaa68aad

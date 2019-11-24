@@ -1,0 +1,49 @@
+{
+  "stringTable": {
+    "0": "/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/.externalNativeBuild/cmake/debug/x86_64",
+    "1": "--target=x86_64-none-linux-android21 --gcc-toolchain=/home/swayam-android-04/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/swayam-android-04/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Ddetection_based_tracker_EXPORTS -I/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/jni -isystem /home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/sdk/native/jni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -stdlib=libc++ -O0 -fno-limit-debug-info -fPIC -std=gnu++11"
+  },
+  "buildFiles": [
+    "/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/jni/../../../sdk/native/jni/abi-x86_64/OpenCVModules-release.cmake",
+    "/home/swayam-android-04/Android/Sdk/ndk-bundle/build/cmake/android.toolchain.cmake",
+    "/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/jni/../../../sdk/native/jni/abi-x86_64/OpenCVConfig.cmake",
+    "/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/jni/../../../sdk/native/jni/abi-x86_64/OpenCVModules.cmake",
+    "/home/swayam-android-04/Android/Sdk/ndk-bundle/build/cmake/platforms.cmake",
+    "/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/jni/../../../sdk/native/jni/OpenCVConfig.cmake",
+    "/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/jni/CMakeLists.txt",
+    "/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/jni/../../../sdk/native/jni/OpenCVConfig-version.cmake"
+  ],
+  "cleanCommands": [
+    "/home/swayam-android-04/Android/Sdk/cmake/3.10.2.4988404/bin/cmake --build /home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/.externalNativeBuild/cmake/debug/x86_64 --target clean"
+  ],
+  "libraries": {
+    "detection_based_tracker-Debug-x86_64": {
+      "buildCommand": "/home/swayam-android-04/Android/Sdk/cmake/3.10.2.4988404/bin/cmake --build /home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/.externalNativeBuild/cmake/debug/x86_64 --target detection_based_tracker",
+      "buildType": "debug",
+      "toolchain": "2891111772",
+      "abi": "x86_64",
+      "artifactName": "detection_based_tracker",
+      "files": [
+        {
+          "src": "/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/jni/DetectionBasedTracker_jni.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/jni/DetectionBasedTracker_jni.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "output": "/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/build/intermediates/cmake/debug/obj/x86_64/libdetection_based_tracker.so"
+    }
+  },
+  "toolchains": {
+    "2891111772": {
+      "cppCompilerExecutable": "/home/swayam-android-04/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

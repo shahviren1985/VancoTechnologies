@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/.externalNativeBuild/cmake/debug/x86_64",
+  "command": "/home/swayam-android-04/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=x86_64-none-linux-android21 --gcc-toolchain=/home/swayam-android-04/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/swayam-android-04/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Ddetection_based_tracker_EXPORTS -I/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/jni -isystem /home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/sdk/native/jni/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -stdlib=libc++  -O0 -fno-limit-debug-info  -fPIC   -std=gnu++11 -o CMakeFiles/detection_based_tracker.dir/DetectionBasedTracker_jni.cpp.o -c /home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/jni/DetectionBasedTracker_jni.cpp",
+  "file": "/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/jni/DetectionBasedTracker_jni.cpp"
+}
+]

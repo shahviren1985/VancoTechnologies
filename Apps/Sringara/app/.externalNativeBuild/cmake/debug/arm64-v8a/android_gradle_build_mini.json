@@ -1,0 +1,23 @@
+{
+  "buildFiles": [
+    "/home/swayam-android-04/Android/Sdk/ndk-bundle/build/cmake/android.toolchain.cmake",
+    "/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/jni/../../../sdk/native/jni/abi-arm64-v8a/OpenCVModules.cmake",
+    "/home/swayam-android-04/Android/Sdk/ndk-bundle/build/cmake/platforms.cmake",
+    "/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/jni/../../../sdk/native/jni/abi-arm64-v8a/OpenCVModules-release.cmake",
+    "/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/jni/../../../sdk/native/jni/OpenCVConfig.cmake",
+    "/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/jni/CMakeLists.txt",
+    "/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/jni/../../../sdk/native/jni/OpenCVConfig-version.cmake",
+    "/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/jni/../../../sdk/native/jni/abi-arm64-v8a/OpenCVConfig.cmake"
+  ],
+  "cleanCommands": [
+    "/home/swayam-android-04/Android/Sdk/cmake/3.10.2.4988404/bin/cmake --build /home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/.externalNativeBuild/cmake/debug/arm64-v8a --target clean"
+  ],
+  "libraries": {
+    "detection_based_tracker-Debug-arm64-v8a": {
+      "artifactName": "detection_based_tracker",
+      "buildCommand": "/home/swayam-android-04/Android/Sdk/cmake/3.10.2.4988404/bin/cmake --build /home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/.externalNativeBuild/cmake/debug/arm64-v8a --target detection_based_tracker",
+      "abi": "arm64-v8a",
+      "output": "/home/swayam-android-04/AndroidStudioProjects/Opencv/Code/2019/May/09/Sringara_New/app/build/intermediates/cmake/debug/obj/arm64-v8a/libdetection_based_tracker.so"
+    }
+  }
+}
