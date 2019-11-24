@@ -1,0 +1,206 @@
+<resources>
+    <string name="app_name">Merlin</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="label_ok">Ok</string>
+    <string name="title_activity_main">Login</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+
+
+    <string name="html_text"><html>
+<head>
+<title>       </title>
+<style type="text/css">
+<!--
+h1	{text-align:left;
+	font-family:Arial, Helvetica, Sans-Serif;
+	}
+
+p	{text-indent:20px;
+	}
+-->
+</style>
+</head>
+<body bgcolor="#ffffcc" text="#000000">
+<h1>Hello, World!</h1>
+
+<p>You can modify the text in the box to the left any way you like, and
+then click the "Show Page" button below the box to display the
+result here. Go ahead and do this as often and as long as you like.</p>
+
+<p>You can also use this page to test your Javascript functions and local
+style declarations. Everything you do will be handled entirely by your own
+browser; nothing you type into the text box will be sent back to the
+server.</p>
+
+<p>When you are satisfied with your page, you can select all text in the
+textarea and copy it to a new text file, with an extension of
+either <b>.htm</b> or <b>.html</b>, depending on your Operating System.
+This file can then be moved to your Web server.</p>
+
+    <p>You can modify the text in the box to the left any way you like, and
+then click the "Show Page" button below the box to display the
+result here. Go ahead and do this as often and as long as you like.</p>
+
+<p>You can also use this page to test your Javascript functions and local
+style declarations. Everything you do will be handled entirely by your own
+browser; nothing you type into the text box will be sent back to the
+server.</p>
+
+<p>When you are satisfied with your page, you can select all text in the
+textarea and copy it to a new text file, with an extension of
+either <b>.htm</b> or <b>.html</b>, depending on your Operating System.
+This file can then be moved to your Web server.</p>
+
+    <p>You can modify the text in the box to the left any way you like, and
+then click the "Show Page" button below the box to display the
+result here. Go ahead and do this as often and as long as you like.</p>
+
+<p>You can also use this page to test your Javascript functions and local
+style declarations. Everything you do will be handled entirely by your own
+browser; nothing you type into the text box will be sent back to the
+server.</p>
+
+<p>When you are satisfied with your page, you can select all text in the
+textarea and copy it to a new text file, with an extension of
+either <b>.htm</b> or <b>.html</b>, depending on your Operating System.
+This file can then be moved to your Web server.</p>
+
+</body>
+</html>
+	</string>
+    <string name="about_us">About Us</string>
+    <string name="web_site">Web Site</string>
+    <string name="trending_topic">Trending topic</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="title_activity_navigation_drawer">NavigationDrawerActivity</string>
+    <string name="notification">Notification</string>
+    <string name="teacher_feedback">Teacher Feedback</string>
+    <string name="exit_form">Exit Form</string>
+    <string name="msg_enter_user_name">* Please enter username</string>
+    <string name="msg_enter_password">* Please enter password</string>
+    <string name="teacher_list">Teachers</string>
+    <string name="logout">Logout</string>
+    <string name="msg_logut">Do you want to logout from Merlin?</string>
+    <string name="label_yes">YES</string>
+    <string name="label_yes_small">Yes</string>
+    <string name="label_no">NO</string>
+    <string name="label_no_small">No</string>
+    <string name="msg_response_error">Something went wrong!!!</string>
+    <string name="msg_internet_not_available">Internet connection is not available.</string>
+    <string name="msg_valid_user_detail">Please enter valid user detail.</string>
+    <string name="msg_logging">Please wait,Logging in...</string>
+    <string name="msg_login_successfully">Login successfully</string>
+    <string name="merlin">Merlin</string>
+    <string name="semester">Semester:</string>
+    <string name="subject">Subject:</string>
+    <string name="msg_no_data_found">No data found</string>
+    <string name="msg_fetch_teacher">Fetching teachers list, Please wait...</string>
+    <string name="label_teacher_feed_back">Teacher Feedback Form</string>
+    <string name="feed_back_form">Feed back form</string>
+    <string name="msg_feedback_form">Fetching feedback form, Please wait...</string>
+    <string name="course">Course:</string>
+    <string name="save">SAVE</string>
+    <string name="msg_feedback_validation">Please provide your feedback for all red mark questions.</string>
+    <string name="submit">SUBMIT</string>
+    <string name="cancel">CANCEL</string>
+    <string name="msg_submit_feedback">After submitting feedback you can not revert it back, Press submit for sending feedback.</string>
+    <string name="msg_submitted_succesfully">Feedback submitted successfully.</string>
+    <string name="msg_exit_form_submitted_succesfully">Exit form submitted successfully.</string>
+    <string name="study_further">Study further</string>
+    <string name="work">Work</string>
+    <string name="any_other">Any other</string>
+    <string name="what_do_you_plan_to_do_after_completion_of_your_graduation">What do you plan to do after completion of your graduation?</string>
+    <string name="your_top_3_from_the_following">Your top 3 from the following :</string>
+    <string name="most_valuable">1. Most Valuable</string>
+    <string name="select">--Select--</string>
+    <string name="valuable">2. Valuable</string>
+    <string name="less_valuable">3. Less Valuable</string>
+    <string name="question_3">In what ways has your personality changed as a result of being enrolled in the college.</string>
+    <string name="positive_effect">1. Positive Effect</string>
+    <string name="negative_effect">2. Negative Effect</string>
+    <string name="would_you_like_to_keep_in_touch_with_the_institute_after_you_leave_it">Would you like to keep in touch with the institute after you leave it?</string>
+    <string name="admin_experince">What was your experience with the administration of the institute?</string>
+    <string name="positive_exp">Positive experience (good)</string>
+    <string name="negative_exp">Negative experience (not good)</string>
+    <string name="question_6">What are your comments on the social interaction in the departments(any two) ?</string>
+    <string name="name_of_the_department_1">1. Name of the Department</string>
+    <string name="name_of_the_department_2">2. Name of the Department</string>
+    <string name="type_name_of_department">Type name of Department</string>
+    <string name="possitive_comment">Positive comment</string>
+    <string name="negative_comment">Negative comment</string>
+    <string name="type_negative_effect">Type negative effect</string>
+    <string name="type_negative_comment">Type negative comment</string>
+    <string name="question_7">What extracurricular activities did you participate in?</string>
+    <string name="not_applicable">N.A.</string>
+    <string name="in_what_way_you_can_contribute_to_this_college">In what way you can contribute to this college?</string>
+    <string name="type_the_way_you_can_contribute_to_the_collage">Type the way you can contribute to the collage</string>
+    <string name="question_9">Evaluate the following department according to a 5 pt. rating scale by putting a tickmark at a Number where.</string>
+    <string name="quality_of_food">Quality of food</string>
+    <string name="price_of_food">Price of food</string>
+    <string name="variety_of_food">Variety of food</string>
+    <string name="hygiene">Hygiene</string>
+    <string name="book_availablity">Book availability</string>
+    <string name="staff_helping">Staff helpfulness in getting book</string>
+    <string name="adequte_space_sitting">Adequate space/seating</string>
+    <string name="library_timming">Library timing</string>
+    <string name="frequence_of_library_visit">Frequency of your library visits</string>
+    <string name="co_operation">Co-Operation</string>
+    <string name="office_information">Information (Adequate Communication)</string>
+    <string name="timelines">Timelines</string>
+    <string name="timing">Timing</string>
+    <string name="enviroment">Environment</string>
+    <string name="equipment">Equipment</string>
+    <string name="trainning">Training</string>
+    <string name="facalities">Facilities</string>
+    <string name="regular_health_checkup">Regular of health check-up</string>
+    <string name="emergency_medical">Availabilities of emergency medical facilities</string>
+    <string name="physcholiygaly_servic">Quality of Psychological counseling service provided</string>
+    <string name="track_teacher_list">Fragment~ Teacher List Fragment</string>
+    <string name="form_already_submited">Exit feedback form is already submitted.</string>
+
+    <string-array name="array_valuable">
+        <item>Psychology</item>
+        <item>Sociology</item>
+        <item>C.D.</item>
+        <item>F.N.</item>
+        <item>History</item>
+        <item>Gujarati</item>
+        <item>Economics</item>
+        <item>Hindi</item>
+        <item>English</item>
+        <item>Travel &amp; Tourism</item>
+        <item>Secretarial Practice</item>
+        <item>Commerce</item>
+        <item>Advertising</item>
+    </string-array>
+
+    <string-array name="array_measure">
+        <item>Excellent</item>
+        <item>Good</item>
+        <item>Average</item>
+        <item>Poor</item>
+        <item>Very Poor</item>
+    </string-array>
+
+
+</resources>

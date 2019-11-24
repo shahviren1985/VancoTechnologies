@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="O2CardsApp.Views.ScanCard">
+    <NavigationPage.TitleView>
+        <Label Text="Scan Business Card" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout Spacing="10" Padding="10">
+            <Button x:Name="takePhoto" Text="Take Photo"/>
+            <Button x:Name="pickPhoto" Text="Pick Photo"/>
+            <Label Text="Save to Gallery"/>
+            <Switch x:Name="saveToGallery" IsToggled="false" HorizontalOptions="Center"/>
+            <Label Text="Image will show here"/>
+            <Image x:Name="image"/>
+            <Label Text=""/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

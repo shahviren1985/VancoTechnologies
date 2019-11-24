@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/txtTeacherName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Pranav Shashtri"
+        android:textColor="@color/font_color_dark_gray"
+        android:textSize="@dimen/font_14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imgStatus"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginTop="8dp"
+        android:text="Subject: English"
+        android:textSize="@dimen/font_12sp"
+        app:layout_constraintStart_toEndOf="@+id/imgStatus"
+        app:layout_constraintTop_toBottomOf="@+id/txtTeacherName" />
+
+    <ImageView
+        android:id="@+id/imgStatus"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTeacherName"
+        app:srcCompat="@drawable/circle_green" />
+
+    <TextView
+        android:id="@+id/txtCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="(Code: ENG1002)"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/txtTeacherName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSemster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Semter : 6"
+        android:paddingBottom="@dimen/margin_8dp"
+        android:textSize="@dimen/font_12sp"
+        app:layout_constraintStart_toEndOf="@+id/imgStatus"
+        app:layout_constraintTop_toBottomOf="@+id/txtSubject" />
+
+    <ImageView
+        android:id="@+id/imgArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTeacherName"
+        app:srcCompat="@drawable/ic_right_arraow" />
+</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

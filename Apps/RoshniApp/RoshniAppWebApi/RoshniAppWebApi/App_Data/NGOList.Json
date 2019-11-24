@@ -1,0 +1,201 @@
+[{
+	"Name": "Sneha",
+	"Address": "Society for Nutrition, Education & Health Action (SNEHA), Behind Building no. 11, BMC Colony, Shastri Nagar, Santa Cruz West, Mumbai 400 054",
+	"Latitude": "19.082020",
+	"Longitude": "72.837750",
+	"Contact": "9833052493",
+	"Email": "crisis@snehamumbai.org",
+	"Website": "webaddress@org",
+	"TimingFrom": "10:00",
+	"TimingTo": "17:00",
+	"DaysFrom": "Monday",
+	"DaysTo": "Saturday",
+	"CounselorList": [{
+			"Name": "Sneha",
+			"Email": "crisis@snehamumbai.org",
+			"Phone": "9833052493"
+		}
+	]
+},
+{
+	"Name": "Arpan",
+	"Address": "Delta Chemicals Pvt Ltd., J/1, Cama Industrial Zone, Off. Valbhatt Road, Goregaon East, Mumbai 400063, India",
+	"Latitude": "19.168192",
+	"Longitude": "72.856277",
+	"Contact": "02226862444",
+	"Website": "info@arpan.org.in",
+	"TimingFrom": "09:00",
+	"TimingTo": "18:00",
+	"DaysFrom": "Monday",
+	"DaysTo": "Saturday",
+	"CounselorList": [{
+			"Name": "Counselling",
+			"Email": "Info@arpan.org.in",
+			"Phone": "9819086444"
+		}
+	]
+},
+{
+	"Name": "Aarambh",
+	"Address": "401, 4th Floor AC Market, Tardeo, Mumbai 400034, India",
+	"Latitude": "18.980880",
+	"Longitude": "72.815120",
+	"Contact": "9892210066",
+	"Website": "info@aarambhindia.org",
+	"TimingFrom": "",
+	"TimingTo": "",
+	"DaysFrom": "",
+	"DaysTo": "",
+	"CounselorList": [{
+			"Name": "Counselling",
+			"Email": "info@aarambhindia.org",
+			"Phone": "9892210066"
+		}
+	]
+},
+{
+	"Name": "Aangan",
+	"Address": "101, Arun chambers. Tardeo Road, Tardeo, Mumbai 400034",
+	"Latitude": "18.969120",
+	"Longitude": "72.815610",
+	"Contact": "2223525832",
+	"Website": "contact@aanganindia.org",
+	"TimingFrom": "09:00",
+	"TimingTo": "18:00",
+	"DaysFrom": "Monday",
+	"DaysTo": "Saturday",
+	"CounselorList": [{
+			"Name": "Counselling",
+			"Email": "contact@aanganindia.org",
+			"Phone": "2223525832"
+		}
+	]
+},
+{
+	"Name": "Balprafulta",
+	"Address": "DON BOSCO YOUTH SERVICES BUILDING, 203 / 204, 2ND FLOOR, DON BOSCO SCHOOL CAMPUS, OPP. KHALSA COLLEGE, MATUNGA (EAST), MUMBAI 400019",
+	"Latitude": "19.026076",
+	"Longitude": "72.857992",
+	"Contact": "9619730382",
+	"Website": "Write2vidhayakbharti@gmail.com",
+	"TimingFrom": "09:00",
+	"TimingTo": "17:00",
+	"DaysFrom": "Monday",
+	"DaysTo": "Saturday",
+	"CounselorList": [{
+			"Name": "Counselling",
+			"Email": "Write2vidhayakbharti@gmail.com",
+			"Phone": "9619730382"
+		}
+	]
+},
+{
+	"Name": "CEHAT",
+	"Address": "Survey No.2804 & 2805, Aaram Society Road, Vakola, Santacruz East, Mumbai - 400055",
+	"Latitude": "19.076460",
+	"Longitude": "72.860880",
+	"Contact": "2226673571",
+	"Website": "Cehat@vsnl.com",
+	"TimingFrom": "",
+	"TimingTo": "",
+	"DaysFrom": "",
+	"DaysTo": "",
+	"CounselorList": [{
+			"Name": "Counselling",
+			"Email": "dilaasa@vsnl.com",
+			"Phone": "2226400229"
+		}
+	]
+},
+{
+	"Name": "FACSE - Forum Against Child Sexual Exploitation",
+	"Address": "54, Gilden Lane Municipal School, Off Belasis Bridge, Mumbai Central, Mumbai - 400008",
+	"Latitude": "18.969030",
+	"Longitude": "72.819080",
+	"Contact": "9869989841",
+	"Website": "Facse95@gmail.com",
+	"TimingFrom": "",
+	"TimingTo": "",
+	"DaysFrom": "",
+	"DaysTo": "",
+	"CounselorList": [{
+			"Name": "Counselling",
+			"Email": "Facse95@gmail.com",
+			"Phone": "9869989841"
+		}
+	]
+},
+{
+	"Name": "Jeevan Aadhar Tranformative Aftercare Services Private Limited",
+	"Address": "Delta Chemicals Pvt Ltd., J/1, Cama Industrial Zone, Off. Valbhatt Road, Goregaon East, Mumbai 400063, India",
+	"Latitude": "19.168191",
+	"Longitude": "72.856274",
+	"Contact": "2226662394",
+	"Website": "vf@vsnl.com",
+	"TimingFrom": "09:30",
+	"TimingTo": "18:00",
+	"DaysFrom": "Tuesday",
+	"DaysTo": "Saturday",
+	"CounselorList": [{
+			"Name": "Counselling",
+			"Email": "majlislaw@gmail.com",
+			"Phone": "2226662394"
+		}
+	]
+},
+{
+	"Name": "Rubaroo",
+	"Address": "218, Sir Bhalchandra Rd, Matunga, Mumbai, Maharashtra - 400019",
+	"Latitude": "19.020920",
+	"Longitude": "72.848780",
+	"Contact": "9619061805",
+	"Website": "rubarooindia@gmail.com",
+	"TimingFrom": "09:00",
+	"TimingTo": "17:00",
+	"DaysFrom": "Monday",
+	"DaysTo": "Friday",
+	"CounselorList": [{
+			"Name": "Counselling",
+			"Email": "rubarooindia@gmail.com",
+			"Phone": "9619061805"
+		}
+	]
+},
+{
+	"Name": "The Foundation",
+	"Address": "B-402, New Sagar Darshan, Dr E Hatiskar Marg, Prabhadevi, Mumbai - 400025",
+	"Latitude": "19.009200",
+	"Longitude": "72.830750",
+	"Contact": "2223521641",
+	"Website": "Suchismita.thefoundation@gmail.com",
+	"TimingFrom": "10:00",
+	"TimingTo": "18:00",
+	"DaysFrom": "Monday",
+	"DaysTo": "Friday",
+	"CounselorList": [{
+			"Name": "Counselling",
+			"Email": "Suchismita.thefoundation@gmail.com",
+			"Phone": "2223521641"
+		}
+	]
+},
+{
+	"Name": "Azad Foundation",
+	"Address": "W-114, First Floor,Greater Kailash-II, New Delhi - 110048",
+	"Latitude": "28.548940",
+	"Longitude": "77.242130",
+	"Contact": "1140601878",
+	"Website": "azadfounation@gmail.com",
+	"TimingFrom": "10:00",
+	"TimingTo": "18:00",
+	"DaysFrom": "Monday",
+	"DaysTo": "Sunday",
+	"CounselorList": [{
+			"Name": "Counselling",
+			"Email": "azadfounation@gmail.com",
+			"Phone": "1140601878"
+		}
+	]
+}
+
+]

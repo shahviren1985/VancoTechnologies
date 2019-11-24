@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "792096513870",
+    "firebase_url": "https://merlin-b01b3.firebaseio.com",
+    "project_id": "merlin-b01b3",
+    "storage_bucket": "merlin-b01b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792096513870:android:37249a8f7b794f99",
+        "android_client_info": {
+          "package_name": "com.vanco.merlinapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792096513870-fktsl27scqv8tasd9himkj4kl2ilsbgg.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "792096513870-fktsl27scqv8tasd9himkj4kl2ilsbgg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdc49zTbp2fxEf1rsTmslGuPsSiiVQivE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
