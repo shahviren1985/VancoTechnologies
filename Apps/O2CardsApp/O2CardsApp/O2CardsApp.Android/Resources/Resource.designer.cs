@@ -127,7 +127,1998 @@ namespace O2CardsApp.Droid
 			global::Plugin.Media.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::O2CardsApp.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
 			global::Plugin.Media.Resource.Styleable.FontFamily_fontProviderPackage = global::O2CardsApp.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
 			global::Plugin.Media.Resource.Styleable.FontFamily_fontProviderQuery = global::O2CardsApp.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_in = global::O2CardsApp.Droid.Resource.Animation.abc_fade_in;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_fade_out = global::O2CardsApp.Droid.Resource.Animation.abc_fade_out;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::O2CardsApp.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_popup_enter = global::O2CardsApp.Droid.Resource.Animation.abc_popup_enter;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_popup_exit = global::O2CardsApp.Droid.Resource.Animation.abc_popup_exit;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_shrink_fade_out_from_bottom = global::O2CardsApp.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_slide_in_bottom = global::O2CardsApp.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_slide_in_top = global::O2CardsApp.Droid.Resource.Animation.abc_slide_in_top;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_slide_out_bottom = global::O2CardsApp.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.abc_slide_out_top = global::O2CardsApp.Droid.Resource.Animation.abc_slide_out_top;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_bottom_sheet_slide_in = global::O2CardsApp.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_bottom_sheet_slide_out = global::O2CardsApp.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_snackbar_in = global::O2CardsApp.Droid.Resource.Animation.design_snackbar_in;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.design_snackbar_out = global::O2CardsApp.Droid.Resource.Animation.design_snackbar_out;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.EnterFromLeft = global::O2CardsApp.Droid.Resource.Animation.EnterFromLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.EnterFromRight = global::O2CardsApp.Droid.Resource.Animation.EnterFromRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.ExitToLeft = global::O2CardsApp.Droid.Resource.Animation.ExitToLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.ExitToRight = global::O2CardsApp.Droid.Resource.Animation.ExitToRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.tooltip_enter = global::O2CardsApp.Droid.Resource.Animation.tooltip_enter;
+			global::Xamarin.Forms.Platform.Android.Resource.Animation.tooltip_exit = global::O2CardsApp.Droid.Resource.Animation.tooltip_exit;
+			global::Xamarin.Forms.Platform.Android.Resource.Animator.design_appbar_state_list_animator = global::O2CardsApp.Droid.Resource.Animator.design_appbar_state_list_animator;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarDivider = global::O2CardsApp.Droid.Resource.Attribute.actionBarDivider;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarItemBackground = global::O2CardsApp.Droid.Resource.Attribute.actionBarItemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarPopupTheme = global::O2CardsApp.Droid.Resource.Attribute.actionBarPopupTheme;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::O2CardsApp.Droid.Resource.Attribute.actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSplitStyle = global::O2CardsApp.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarStyle = global::O2CardsApp.Droid.Resource.Attribute.actionBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarTabBarStyle = global::O2CardsApp.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarTabStyle = global::O2CardsApp.Droid.Resource.Attribute.actionBarTabStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarTabTextStyle = global::O2CardsApp.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarTheme = global::O2CardsApp.Droid.Resource.Attribute.actionBarTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarWidgetTheme = global::O2CardsApp.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionButtonStyle = global::O2CardsApp.Droid.Resource.Attribute.actionButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionDropDownStyle = global::O2CardsApp.Droid.Resource.Attribute.actionDropDownStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionLayout = global::O2CardsApp.Droid.Resource.Attribute.actionLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionMenuTextAppearance = global::O2CardsApp.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionMenuTextColor = global::O2CardsApp.Droid.Resource.Attribute.actionMenuTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeBackground = global::O2CardsApp.Droid.Resource.Attribute.actionModeBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeCloseButtonStyle = global::O2CardsApp.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeCloseDrawable = global::O2CardsApp.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeCopyDrawable = global::O2CardsApp.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeCutDrawable = global::O2CardsApp.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeFindDrawable = global::O2CardsApp.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModePasteDrawable = global::O2CardsApp.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModePopupWindowStyle = global::O2CardsApp.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeSelectAllDrawable = global::O2CardsApp.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeShareDrawable = global::O2CardsApp.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeSplitBackground = global::O2CardsApp.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeStyle = global::O2CardsApp.Droid.Resource.Attribute.actionModeStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionModeWebSearchDrawable = global::O2CardsApp.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionOverflowButtonStyle = global::O2CardsApp.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionOverflowMenuStyle = global::O2CardsApp.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionProviderClass = global::O2CardsApp.Droid.Resource.Attribute.actionProviderClass;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionViewClass = global::O2CardsApp.Droid.Resource.Attribute.actionViewClass;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.activityChooserViewStyle = global::O2CardsApp.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alertDialogButtonGroupStyle = global::O2CardsApp.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alertDialogCenterButtons = global::O2CardsApp.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alertDialogStyle = global::O2CardsApp.Droid.Resource.Attribute.alertDialogStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alertDialogTheme = global::O2CardsApp.Droid.Resource.Attribute.alertDialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.allowStacking = global::O2CardsApp.Droid.Resource.Attribute.allowStacking;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alpha = global::O2CardsApp.Droid.Resource.Attribute.alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.alphabeticModifiers = global::O2CardsApp.Droid.Resource.Attribute.alphabeticModifiers;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.arrowHeadLength = global::O2CardsApp.Droid.Resource.Attribute.arrowHeadLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.arrowShaftLength = global::O2CardsApp.Droid.Resource.Attribute.arrowShaftLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoCompleteTextViewStyle = global::O2CardsApp.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoSizeMaxTextSize = global::O2CardsApp.Droid.Resource.Attribute.autoSizeMaxTextSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoSizeMinTextSize = global::O2CardsApp.Droid.Resource.Attribute.autoSizeMinTextSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoSizePresetSizes = global::O2CardsApp.Droid.Resource.Attribute.autoSizePresetSizes;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoSizeStepGranularity = global::O2CardsApp.Droid.Resource.Attribute.autoSizeStepGranularity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.autoSizeTextType = global::O2CardsApp.Droid.Resource.Attribute.autoSizeTextType;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.background = global::O2CardsApp.Droid.Resource.Attribute.background;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.backgroundSplit = global::O2CardsApp.Droid.Resource.Attribute.backgroundSplit;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.backgroundStacked = global::O2CardsApp.Droid.Resource.Attribute.backgroundStacked;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.backgroundTint = global::O2CardsApp.Droid.Resource.Attribute.backgroundTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.backgroundTintMode = global::O2CardsApp.Droid.Resource.Attribute.backgroundTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.barLength = global::O2CardsApp.Droid.Resource.Attribute.barLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.behavior_autoHide = global::O2CardsApp.Droid.Resource.Attribute.behavior_autoHide;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.behavior_hideable = global::O2CardsApp.Droid.Resource.Attribute.behavior_hideable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.behavior_overlapTop = global::O2CardsApp.Droid.Resource.Attribute.behavior_overlapTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.behavior_peekHeight = global::O2CardsApp.Droid.Resource.Attribute.behavior_peekHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.behavior_skipCollapsed = global::O2CardsApp.Droid.Resource.Attribute.behavior_skipCollapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.borderWidth = global::O2CardsApp.Droid.Resource.Attribute.borderWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.borderlessButtonStyle = global::O2CardsApp.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.bottomSheetDialogTheme = global::O2CardsApp.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.bottomSheetStyle = global::O2CardsApp.Droid.Resource.Attribute.bottomSheetStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarButtonStyle = global::O2CardsApp.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarNegativeButtonStyle = global::O2CardsApp.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarNeutralButtonStyle = global::O2CardsApp.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarPositiveButtonStyle = global::O2CardsApp.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonBarStyle = global::O2CardsApp.Droid.Resource.Attribute.buttonBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonGravity = global::O2CardsApp.Droid.Resource.Attribute.buttonGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonPanelSideLayout = global::O2CardsApp.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonStyle = global::O2CardsApp.Droid.Resource.Attribute.buttonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonStyleSmall = global::O2CardsApp.Droid.Resource.Attribute.buttonStyleSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonTint = global::O2CardsApp.Droid.Resource.Attribute.buttonTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.buttonTintMode = global::O2CardsApp.Droid.Resource.Attribute.buttonTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardBackgroundColor = global::O2CardsApp.Droid.Resource.Attribute.cardBackgroundColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardCornerRadius = global::O2CardsApp.Droid.Resource.Attribute.cardCornerRadius;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardElevation = global::O2CardsApp.Droid.Resource.Attribute.cardElevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardMaxElevation = global::O2CardsApp.Droid.Resource.Attribute.cardMaxElevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardPreventCornerOverlap = global::O2CardsApp.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.cardUseCompatPadding = global::O2CardsApp.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.checkboxStyle = global::O2CardsApp.Droid.Resource.Attribute.checkboxStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.checkedTextViewStyle = global::O2CardsApp.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.closeIcon = global::O2CardsApp.Droid.Resource.Attribute.closeIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.closeItemLayout = global::O2CardsApp.Droid.Resource.Attribute.closeItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapseContentDescription = global::O2CardsApp.Droid.Resource.Attribute.collapseContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapseIcon = global::O2CardsApp.Droid.Resource.Attribute.collapseIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapsedTitleGravity = global::O2CardsApp.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.collapsedTitleTextAppearance = global::O2CardsApp.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.color = global::O2CardsApp.Droid.Resource.Attribute.color;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorAccent = global::O2CardsApp.Droid.Resource.Attribute.colorAccent;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorBackgroundFloating = global::O2CardsApp.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorButtonNormal = global::O2CardsApp.Droid.Resource.Attribute.colorButtonNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorControlActivated = global::O2CardsApp.Droid.Resource.Attribute.colorControlActivated;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorControlHighlight = global::O2CardsApp.Droid.Resource.Attribute.colorControlHighlight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorControlNormal = global::O2CardsApp.Droid.Resource.Attribute.colorControlNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorError = global::O2CardsApp.Droid.Resource.Attribute.colorError;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorPrimary = global::O2CardsApp.Droid.Resource.Attribute.colorPrimary;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorPrimaryDark = global::O2CardsApp.Droid.Resource.Attribute.colorPrimaryDark;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.colorSwitchThumbNormal = global::O2CardsApp.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.commitIcon = global::O2CardsApp.Droid.Resource.Attribute.commitIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentDescription = global::O2CardsApp.Droid.Resource.Attribute.contentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetEnd = global::O2CardsApp.Droid.Resource.Attribute.contentInsetEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetEndWithActions = global::O2CardsApp.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetLeft = global::O2CardsApp.Droid.Resource.Attribute.contentInsetLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetRight = global::O2CardsApp.Droid.Resource.Attribute.contentInsetRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetStart = global::O2CardsApp.Droid.Resource.Attribute.contentInsetStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentInsetStartWithNavigation = global::O2CardsApp.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentPadding = global::O2CardsApp.Droid.Resource.Attribute.contentPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentPaddingBottom = global::O2CardsApp.Droid.Resource.Attribute.contentPaddingBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentPaddingLeft = global::O2CardsApp.Droid.Resource.Attribute.contentPaddingLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentPaddingRight = global::O2CardsApp.Droid.Resource.Attribute.contentPaddingRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentPaddingTop = global::O2CardsApp.Droid.Resource.Attribute.contentPaddingTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.contentScrim = global::O2CardsApp.Droid.Resource.Attribute.contentScrim;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.controlBackground = global::O2CardsApp.Droid.Resource.Attribute.controlBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.counterEnabled = global::O2CardsApp.Droid.Resource.Attribute.counterEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.counterMaxLength = global::O2CardsApp.Droid.Resource.Attribute.counterMaxLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.counterOverflowTextAppearance = global::O2CardsApp.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.counterTextAppearance = global::O2CardsApp.Droid.Resource.Attribute.counterTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.customNavigationLayout = global::O2CardsApp.Droid.Resource.Attribute.customNavigationLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.defaultQueryHint = global::O2CardsApp.Droid.Resource.Attribute.defaultQueryHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dialogPreferredPadding = global::O2CardsApp.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dialogTheme = global::O2CardsApp.Droid.Resource.Attribute.dialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.displayOptions = global::O2CardsApp.Droid.Resource.Attribute.displayOptions;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.divider = global::O2CardsApp.Droid.Resource.Attribute.divider;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dividerHorizontal = global::O2CardsApp.Droid.Resource.Attribute.dividerHorizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dividerPadding = global::O2CardsApp.Droid.Resource.Attribute.dividerPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dividerVertical = global::O2CardsApp.Droid.Resource.Attribute.dividerVertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawableSize = global::O2CardsApp.Droid.Resource.Attribute.drawableSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.drawerArrowStyle = global::O2CardsApp.Droid.Resource.Attribute.drawerArrowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dropDownListViewStyle = global::O2CardsApp.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.dropdownListPreferredItemHeight = global::O2CardsApp.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.editTextBackground = global::O2CardsApp.Droid.Resource.Attribute.editTextBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.editTextColor = global::O2CardsApp.Droid.Resource.Attribute.editTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.editTextStyle = global::O2CardsApp.Droid.Resource.Attribute.editTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.elevation = global::O2CardsApp.Droid.Resource.Attribute.elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.errorEnabled = global::O2CardsApp.Droid.Resource.Attribute.errorEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.errorTextAppearance = global::O2CardsApp.Droid.Resource.Attribute.errorTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandActivityOverflowButtonDrawable = global::O2CardsApp.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expanded = global::O2CardsApp.Droid.Resource.Attribute.expanded;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleGravity = global::O2CardsApp.Droid.Resource.Attribute.expandedTitleGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleMargin = global::O2CardsApp.Droid.Resource.Attribute.expandedTitleMargin;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleMarginBottom = global::O2CardsApp.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleMarginEnd = global::O2CardsApp.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleMarginStart = global::O2CardsApp.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleMarginTop = global::O2CardsApp.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.expandedTitleTextAppearance = global::O2CardsApp.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fabSize = global::O2CardsApp.Droid.Resource.Attribute.fabSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fastScrollEnabled = global::O2CardsApp.Droid.Resource.Attribute.fastScrollEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fastScrollHorizontalThumbDrawable = global::O2CardsApp.Droid.Resource.Attribute.fastScrollHorizontalThumbDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fastScrollHorizontalTrackDrawable = global::O2CardsApp.Droid.Resource.Attribute.fastScrollHorizontalTrackDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fastScrollVerticalThumbDrawable = global::O2CardsApp.Droid.Resource.Attribute.fastScrollVerticalThumbDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fastScrollVerticalTrackDrawable = global::O2CardsApp.Droid.Resource.Attribute.fastScrollVerticalTrackDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.font = global::O2CardsApp.Droid.Resource.Attribute.font;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontFamily = global::O2CardsApp.Droid.Resource.Attribute.fontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderAuthority = global::O2CardsApp.Droid.Resource.Attribute.fontProviderAuthority;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderCerts = global::O2CardsApp.Droid.Resource.Attribute.fontProviderCerts;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderFetchStrategy = global::O2CardsApp.Droid.Resource.Attribute.fontProviderFetchStrategy;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderFetchTimeout = global::O2CardsApp.Droid.Resource.Attribute.fontProviderFetchTimeout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderPackage = global::O2CardsApp.Droid.Resource.Attribute.fontProviderPackage;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontProviderQuery = global::O2CardsApp.Droid.Resource.Attribute.fontProviderQuery;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontStyle = global::O2CardsApp.Droid.Resource.Attribute.fontStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.fontWeight = global::O2CardsApp.Droid.Resource.Attribute.fontWeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.foregroundInsidePadding = global::O2CardsApp.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.gapBetweenBars = global::O2CardsApp.Droid.Resource.Attribute.gapBetweenBars;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.goIcon = global::O2CardsApp.Droid.Resource.Attribute.goIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.headerLayout = global::O2CardsApp.Droid.Resource.Attribute.headerLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.height = global::O2CardsApp.Droid.Resource.Attribute.height;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.hideOnContentScroll = global::O2CardsApp.Droid.Resource.Attribute.hideOnContentScroll;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.hintAnimationEnabled = global::O2CardsApp.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.hintEnabled = global::O2CardsApp.Droid.Resource.Attribute.hintEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.hintTextAppearance = global::O2CardsApp.Droid.Resource.Attribute.hintTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.homeAsUpIndicator = global::O2CardsApp.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.homeLayout = global::O2CardsApp.Droid.Resource.Attribute.homeLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.icon = global::O2CardsApp.Droid.Resource.Attribute.icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.iconTint = global::O2CardsApp.Droid.Resource.Attribute.iconTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.iconTintMode = global::O2CardsApp.Droid.Resource.Attribute.iconTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.iconifiedByDefault = global::O2CardsApp.Droid.Resource.Attribute.iconifiedByDefault;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.imageButtonStyle = global::O2CardsApp.Droid.Resource.Attribute.imageButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.indeterminateProgressStyle = global::O2CardsApp.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.initialActivityCount = global::O2CardsApp.Droid.Resource.Attribute.initialActivityCount;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.insetForeground = global::O2CardsApp.Droid.Resource.Attribute.insetForeground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.isLightTheme = global::O2CardsApp.Droid.Resource.Attribute.isLightTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.itemBackground = global::O2CardsApp.Droid.Resource.Attribute.itemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.itemIconTint = global::O2CardsApp.Droid.Resource.Attribute.itemIconTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.itemPadding = global::O2CardsApp.Droid.Resource.Attribute.itemPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.itemTextAppearance = global::O2CardsApp.Droid.Resource.Attribute.itemTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.itemTextColor = global::O2CardsApp.Droid.Resource.Attribute.itemTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.keylines = global::O2CardsApp.Droid.Resource.Attribute.keylines;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout = global::O2CardsApp.Droid.Resource.Attribute.layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layoutManager = global::O2CardsApp.Droid.Resource.Attribute.layoutManager;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_anchor = global::O2CardsApp.Droid.Resource.Attribute.layout_anchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_anchorGravity = global::O2CardsApp.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_behavior = global::O2CardsApp.Droid.Resource.Attribute.layout_behavior;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_collapseMode = global::O2CardsApp.Droid.Resource.Attribute.layout_collapseMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_collapseParallaxMultiplier = global::O2CardsApp.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_dodgeInsetEdges = global::O2CardsApp.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_insetEdge = global::O2CardsApp.Droid.Resource.Attribute.layout_insetEdge;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_keyline = global::O2CardsApp.Droid.Resource.Attribute.layout_keyline;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_scrollFlags = global::O2CardsApp.Droid.Resource.Attribute.layout_scrollFlags;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.layout_scrollInterpolator = global::O2CardsApp.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listChoiceBackgroundIndicator = global::O2CardsApp.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listDividerAlertDialog = global::O2CardsApp.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listItemLayout = global::O2CardsApp.Droid.Resource.Attribute.listItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listLayout = global::O2CardsApp.Droid.Resource.Attribute.listLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listMenuViewStyle = global::O2CardsApp.Droid.Resource.Attribute.listMenuViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPopupWindowStyle = global::O2CardsApp.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemHeight = global::O2CardsApp.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemHeightLarge = global::O2CardsApp.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemHeightSmall = global::O2CardsApp.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemPaddingLeft = global::O2CardsApp.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.listPreferredItemPaddingRight = global::O2CardsApp.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.logo = global::O2CardsApp.Droid.Resource.Attribute.logo;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.logoDescription = global::O2CardsApp.Droid.Resource.Attribute.logoDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.maxActionInlineWidth = global::O2CardsApp.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.maxButtonHeight = global::O2CardsApp.Droid.Resource.Attribute.maxButtonHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.measureWithLargestChild = global::O2CardsApp.Droid.Resource.Attribute.measureWithLargestChild;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.menu = global::O2CardsApp.Droid.Resource.Attribute.menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.multiChoiceItemLayout = global::O2CardsApp.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.navigationContentDescription = global::O2CardsApp.Droid.Resource.Attribute.navigationContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.navigationIcon = global::O2CardsApp.Droid.Resource.Attribute.navigationIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.navigationMode = global::O2CardsApp.Droid.Resource.Attribute.navigationMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.numericModifiers = global::O2CardsApp.Droid.Resource.Attribute.numericModifiers;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.overlapAnchor = global::O2CardsApp.Droid.Resource.Attribute.overlapAnchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.paddingBottomNoButtons = global::O2CardsApp.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.paddingEnd = global::O2CardsApp.Droid.Resource.Attribute.paddingEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.paddingStart = global::O2CardsApp.Droid.Resource.Attribute.paddingStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.paddingTopNoTitle = global::O2CardsApp.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.panelBackground = global::O2CardsApp.Droid.Resource.Attribute.panelBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.panelMenuListTheme = global::O2CardsApp.Droid.Resource.Attribute.panelMenuListTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.panelMenuListWidth = global::O2CardsApp.Droid.Resource.Attribute.panelMenuListWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.passwordToggleContentDescription = global::O2CardsApp.Droid.Resource.Attribute.passwordToggleContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.passwordToggleDrawable = global::O2CardsApp.Droid.Resource.Attribute.passwordToggleDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.passwordToggleEnabled = global::O2CardsApp.Droid.Resource.Attribute.passwordToggleEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.passwordToggleTint = global::O2CardsApp.Droid.Resource.Attribute.passwordToggleTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.passwordToggleTintMode = global::O2CardsApp.Droid.Resource.Attribute.passwordToggleTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.popupMenuStyle = global::O2CardsApp.Droid.Resource.Attribute.popupMenuStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.popupTheme = global::O2CardsApp.Droid.Resource.Attribute.popupTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.popupWindowStyle = global::O2CardsApp.Droid.Resource.Attribute.popupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.preserveIconSpacing = global::O2CardsApp.Droid.Resource.Attribute.preserveIconSpacing;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.pressedTranslationZ = global::O2CardsApp.Droid.Resource.Attribute.pressedTranslationZ;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.progressBarPadding = global::O2CardsApp.Droid.Resource.Attribute.progressBarPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.progressBarStyle = global::O2CardsApp.Droid.Resource.Attribute.progressBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.queryBackground = global::O2CardsApp.Droid.Resource.Attribute.queryBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.queryHint = global::O2CardsApp.Droid.Resource.Attribute.queryHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.radioButtonStyle = global::O2CardsApp.Droid.Resource.Attribute.radioButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.ratingBarStyle = global::O2CardsApp.Droid.Resource.Attribute.ratingBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.ratingBarStyleIndicator = global::O2CardsApp.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.ratingBarStyleSmall = global::O2CardsApp.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.reverseLayout = global::O2CardsApp.Droid.Resource.Attribute.reverseLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.rippleColor = global::O2CardsApp.Droid.Resource.Attribute.rippleColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.scrimAnimationDuration = global::O2CardsApp.Droid.Resource.Attribute.scrimAnimationDuration;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.scrimVisibleHeightTrigger = global::O2CardsApp.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.searchHintIcon = global::O2CardsApp.Droid.Resource.Attribute.searchHintIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.searchIcon = global::O2CardsApp.Droid.Resource.Attribute.searchIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.searchViewStyle = global::O2CardsApp.Droid.Resource.Attribute.searchViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.seekBarStyle = global::O2CardsApp.Droid.Resource.Attribute.seekBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.selectableItemBackground = global::O2CardsApp.Droid.Resource.Attribute.selectableItemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.selectableItemBackgroundBorderless = global::O2CardsApp.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.showAsAction = global::O2CardsApp.Droid.Resource.Attribute.showAsAction;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.showDividers = global::O2CardsApp.Droid.Resource.Attribute.showDividers;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.showText = global::O2CardsApp.Droid.Resource.Attribute.showText;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.showTitle = global::O2CardsApp.Droid.Resource.Attribute.showTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.singleChoiceItemLayout = global::O2CardsApp.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.spanCount = global::O2CardsApp.Droid.Resource.Attribute.spanCount;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.spinBars = global::O2CardsApp.Droid.Resource.Attribute.spinBars;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.spinnerDropDownItemStyle = global::O2CardsApp.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.spinnerStyle = global::O2CardsApp.Droid.Resource.Attribute.spinnerStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.splitTrack = global::O2CardsApp.Droid.Resource.Attribute.splitTrack;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.srcCompat = global::O2CardsApp.Droid.Resource.Attribute.srcCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.stackFromEnd = global::O2CardsApp.Droid.Resource.Attribute.stackFromEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.state_above_anchor = global::O2CardsApp.Droid.Resource.Attribute.state_above_anchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.state_collapsed = global::O2CardsApp.Droid.Resource.Attribute.state_collapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.state_collapsible = global::O2CardsApp.Droid.Resource.Attribute.state_collapsible;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.statusBarBackground = global::O2CardsApp.Droid.Resource.Attribute.statusBarBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.statusBarScrim = global::O2CardsApp.Droid.Resource.Attribute.statusBarScrim;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.subMenuArrow = global::O2CardsApp.Droid.Resource.Attribute.subMenuArrow;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.submitBackground = global::O2CardsApp.Droid.Resource.Attribute.submitBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.subtitle = global::O2CardsApp.Droid.Resource.Attribute.subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.subtitleTextAppearance = global::O2CardsApp.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.subtitleTextColor = global::O2CardsApp.Droid.Resource.Attribute.subtitleTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.subtitleTextStyle = global::O2CardsApp.Droid.Resource.Attribute.subtitleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.suggestionRowLayout = global::O2CardsApp.Droid.Resource.Attribute.suggestionRowLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.switchMinWidth = global::O2CardsApp.Droid.Resource.Attribute.switchMinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.switchPadding = global::O2CardsApp.Droid.Resource.Attribute.switchPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.switchStyle = global::O2CardsApp.Droid.Resource.Attribute.switchStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.switchTextAppearance = global::O2CardsApp.Droid.Resource.Attribute.switchTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabBackground = global::O2CardsApp.Droid.Resource.Attribute.tabBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabContentStart = global::O2CardsApp.Droid.Resource.Attribute.tabContentStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabGravity = global::O2CardsApp.Droid.Resource.Attribute.tabGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabIndicatorColor = global::O2CardsApp.Droid.Resource.Attribute.tabIndicatorColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabIndicatorHeight = global::O2CardsApp.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabMaxWidth = global::O2CardsApp.Droid.Resource.Attribute.tabMaxWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabMinWidth = global::O2CardsApp.Droid.Resource.Attribute.tabMinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabMode = global::O2CardsApp.Droid.Resource.Attribute.tabMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabPadding = global::O2CardsApp.Droid.Resource.Attribute.tabPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabPaddingBottom = global::O2CardsApp.Droid.Resource.Attribute.tabPaddingBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabPaddingEnd = global::O2CardsApp.Droid.Resource.Attribute.tabPaddingEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabPaddingStart = global::O2CardsApp.Droid.Resource.Attribute.tabPaddingStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabPaddingTop = global::O2CardsApp.Droid.Resource.Attribute.tabPaddingTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabSelectedTextColor = global::O2CardsApp.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabTextAppearance = global::O2CardsApp.Droid.Resource.Attribute.tabTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tabTextColor = global::O2CardsApp.Droid.Resource.Attribute.tabTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAllCaps = global::O2CardsApp.Droid.Resource.Attribute.textAllCaps;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceLargePopupMenu = global::O2CardsApp.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceListItem = global::O2CardsApp.Droid.Resource.Attribute.textAppearanceListItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceListItemSecondary = global::O2CardsApp.Droid.Resource.Attribute.textAppearanceListItemSecondary;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceListItemSmall = global::O2CardsApp.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearancePopupMenuHeader = global::O2CardsApp.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceSearchResultSubtitle = global::O2CardsApp.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceSearchResultTitle = global::O2CardsApp.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textAppearanceSmallPopupMenu = global::O2CardsApp.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textColorAlertDialogListItem = global::O2CardsApp.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textColorError = global::O2CardsApp.Droid.Resource.Attribute.textColorError;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.textColorSearchUrl = global::O2CardsApp.Droid.Resource.Attribute.textColorSearchUrl;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.theme = global::O2CardsApp.Droid.Resource.Attribute.theme;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.thickness = global::O2CardsApp.Droid.Resource.Attribute.thickness;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.thumbTextPadding = global::O2CardsApp.Droid.Resource.Attribute.thumbTextPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.thumbTint = global::O2CardsApp.Droid.Resource.Attribute.thumbTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.thumbTintMode = global::O2CardsApp.Droid.Resource.Attribute.thumbTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tickMark = global::O2CardsApp.Droid.Resource.Attribute.tickMark;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tickMarkTint = global::O2CardsApp.Droid.Resource.Attribute.tickMarkTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tickMarkTintMode = global::O2CardsApp.Droid.Resource.Attribute.tickMarkTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tint = global::O2CardsApp.Droid.Resource.Attribute.tint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tintMode = global::O2CardsApp.Droid.Resource.Attribute.tintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.title = global::O2CardsApp.Droid.Resource.Attribute.title;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleEnabled = global::O2CardsApp.Droid.Resource.Attribute.titleEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMargin = global::O2CardsApp.Droid.Resource.Attribute.titleMargin;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMarginBottom = global::O2CardsApp.Droid.Resource.Attribute.titleMarginBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMarginEnd = global::O2CardsApp.Droid.Resource.Attribute.titleMarginEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMarginStart = global::O2CardsApp.Droid.Resource.Attribute.titleMarginStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMarginTop = global::O2CardsApp.Droid.Resource.Attribute.titleMarginTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleMargins = global::O2CardsApp.Droid.Resource.Attribute.titleMargins;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleTextAppearance = global::O2CardsApp.Droid.Resource.Attribute.titleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleTextColor = global::O2CardsApp.Droid.Resource.Attribute.titleTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.titleTextStyle = global::O2CardsApp.Droid.Resource.Attribute.titleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.toolbarId = global::O2CardsApp.Droid.Resource.Attribute.toolbarId;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.toolbarNavigationButtonStyle = global::O2CardsApp.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.toolbarStyle = global::O2CardsApp.Droid.Resource.Attribute.toolbarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tooltipForegroundColor = global::O2CardsApp.Droid.Resource.Attribute.tooltipForegroundColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tooltipFrameBackground = global::O2CardsApp.Droid.Resource.Attribute.tooltipFrameBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.tooltipText = global::O2CardsApp.Droid.Resource.Attribute.tooltipText;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.track = global::O2CardsApp.Droid.Resource.Attribute.track;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.trackTint = global::O2CardsApp.Droid.Resource.Attribute.trackTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.trackTintMode = global::O2CardsApp.Droid.Resource.Attribute.trackTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.useCompatPadding = global::O2CardsApp.Droid.Resource.Attribute.useCompatPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.voiceIcon = global::O2CardsApp.Droid.Resource.Attribute.voiceIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowActionBar = global::O2CardsApp.Droid.Resource.Attribute.windowActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowActionBarOverlay = global::O2CardsApp.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowActionModeOverlay = global::O2CardsApp.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowFixedHeightMajor = global::O2CardsApp.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowFixedHeightMinor = global::O2CardsApp.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowFixedWidthMajor = global::O2CardsApp.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowFixedWidthMinor = global::O2CardsApp.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowMinWidthMajor = global::O2CardsApp.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowMinWidthMinor = global::O2CardsApp.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.windowNoTitle = global::O2CardsApp.Droid.Resource.Attribute.windowNoTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::O2CardsApp.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Xamarin.Forms.Platform.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::O2CardsApp.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::O2CardsApp.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Xamarin.Forms.Platform.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::O2CardsApp.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::Xamarin.Forms.Platform.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::O2CardsApp.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::O2CardsApp.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::O2CardsApp.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_btn_colored_borderless_text_material = global::O2CardsApp.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_btn_colored_text_material = global::O2CardsApp.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_color_highlight_material = global::O2CardsApp.Droid.Resource.Color.abc_color_highlight_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_hint_foreground_material_dark = global::O2CardsApp.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_hint_foreground_material_light = global::O2CardsApp.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_input_method_navigation_guard = global::O2CardsApp.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_primary_text_disable_only_material_dark = global::O2CardsApp.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_primary_text_disable_only_material_light = global::O2CardsApp.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_primary_text_material_dark = global::O2CardsApp.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_primary_text_material_light = global::O2CardsApp.Droid.Resource.Color.abc_primary_text_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_search_url_text = global::O2CardsApp.Droid.Resource.Color.abc_search_url_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_search_url_text_normal = global::O2CardsApp.Droid.Resource.Color.abc_search_url_text_normal;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_search_url_text_pressed = global::O2CardsApp.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_search_url_text_selected = global::O2CardsApp.Droid.Resource.Color.abc_search_url_text_selected;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_secondary_text_material_dark = global::O2CardsApp.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_secondary_text_material_light = global::O2CardsApp.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_btn_checkable = global::O2CardsApp.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_default = global::O2CardsApp.Droid.Resource.Color.abc_tint_default;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_edittext = global::O2CardsApp.Droid.Resource.Color.abc_tint_edittext;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_seek_thumb = global::O2CardsApp.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_spinner = global::O2CardsApp.Droid.Resource.Color.abc_tint_spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.abc_tint_switch_track = global::O2CardsApp.Droid.Resource.Color.abc_tint_switch_track;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.accent_material_dark = global::O2CardsApp.Droid.Resource.Color.accent_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.accent_material_light = global::O2CardsApp.Droid.Resource.Color.accent_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.background_floating_material_dark = global::O2CardsApp.Droid.Resource.Color.background_floating_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.background_floating_material_light = global::O2CardsApp.Droid.Resource.Color.background_floating_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.background_material_dark = global::O2CardsApp.Droid.Resource.Color.background_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.background_material_light = global::O2CardsApp.Droid.Resource.Color.background_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_disabled_material_dark = global::O2CardsApp.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_disabled_material_light = global::O2CardsApp.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_inverse_material_dark = global::O2CardsApp.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_inverse_material_light = global::O2CardsApp.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_material_dark = global::O2CardsApp.Droid.Resource.Color.bright_foreground_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.bright_foreground_material_light = global::O2CardsApp.Droid.Resource.Color.bright_foreground_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.button_material_dark = global::O2CardsApp.Droid.Resource.Color.button_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.button_material_light = global::O2CardsApp.Droid.Resource.Color.button_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.cardview_dark_background = global::O2CardsApp.Droid.Resource.Color.cardview_dark_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.cardview_light_background = global::O2CardsApp.Droid.Resource.Color.cardview_light_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.cardview_shadow_end_color = global::O2CardsApp.Droid.Resource.Color.cardview_shadow_end_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.cardview_shadow_start_color = global::O2CardsApp.Droid.Resource.Color.cardview_shadow_start_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_bottom_navigation_shadow_color = global::O2CardsApp.Droid.Resource.Color.design_bottom_navigation_shadow_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_error = global::O2CardsApp.Droid.Resource.Color.design_error;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_shadow_end_color = global::O2CardsApp.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_shadow_mid_color = global::O2CardsApp.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_shadow_start_color = global::O2CardsApp.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_stroke_end_inner_color = global::O2CardsApp.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_stroke_end_outer_color = global::O2CardsApp.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_stroke_top_inner_color = global::O2CardsApp.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_fab_stroke_top_outer_color = global::O2CardsApp.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_snackbar_background_color = global::O2CardsApp.Droid.Resource.Color.design_snackbar_background_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.design_tint_password_toggle = global::O2CardsApp.Droid.Resource.Color.design_tint_password_toggle;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.dim_foreground_disabled_material_dark = global::O2CardsApp.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.dim_foreground_disabled_material_light = global::O2CardsApp.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.dim_foreground_material_dark = global::O2CardsApp.Droid.Resource.Color.dim_foreground_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.dim_foreground_material_light = global::O2CardsApp.Droid.Resource.Color.dim_foreground_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.error_color_material = global::O2CardsApp.Droid.Resource.Color.error_color_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.foreground_material_dark = global::O2CardsApp.Droid.Resource.Color.foreground_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.foreground_material_light = global::O2CardsApp.Droid.Resource.Color.foreground_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.highlighted_text_material_dark = global::O2CardsApp.Droid.Resource.Color.highlighted_text_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.highlighted_text_material_light = global::O2CardsApp.Droid.Resource.Color.highlighted_text_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_blue_grey_800 = global::O2CardsApp.Droid.Resource.Color.material_blue_grey_800;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_blue_grey_900 = global::O2CardsApp.Droid.Resource.Color.material_blue_grey_900;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_blue_grey_950 = global::O2CardsApp.Droid.Resource.Color.material_blue_grey_950;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_deep_teal_200 = global::O2CardsApp.Droid.Resource.Color.material_deep_teal_200;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_deep_teal_500 = global::O2CardsApp.Droid.Resource.Color.material_deep_teal_500;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_100 = global::O2CardsApp.Droid.Resource.Color.material_grey_100;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_300 = global::O2CardsApp.Droid.Resource.Color.material_grey_300;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_50 = global::O2CardsApp.Droid.Resource.Color.material_grey_50;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_600 = global::O2CardsApp.Droid.Resource.Color.material_grey_600;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_800 = global::O2CardsApp.Droid.Resource.Color.material_grey_800;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_850 = global::O2CardsApp.Droid.Resource.Color.material_grey_850;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.material_grey_900 = global::O2CardsApp.Droid.Resource.Color.material_grey_900;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.notification_action_color_filter = global::O2CardsApp.Droid.Resource.Color.notification_action_color_filter;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.notification_icon_bg_color = global::O2CardsApp.Droid.Resource.Color.notification_icon_bg_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.notification_material_background_media_default_color = global::O2CardsApp.Droid.Resource.Color.notification_material_background_media_default_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_dark_material_dark = global::O2CardsApp.Droid.Resource.Color.primary_dark_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_dark_material_light = global::O2CardsApp.Droid.Resource.Color.primary_dark_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_material_dark = global::O2CardsApp.Droid.Resource.Color.primary_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_material_light = global::O2CardsApp.Droid.Resource.Color.primary_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_text_default_material_dark = global::O2CardsApp.Droid.Resource.Color.primary_text_default_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_text_default_material_light = global::O2CardsApp.Droid.Resource.Color.primary_text_default_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_text_disabled_material_dark = global::O2CardsApp.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.primary_text_disabled_material_light = global::O2CardsApp.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.ripple_material_dark = global::O2CardsApp.Droid.Resource.Color.ripple_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.ripple_material_light = global::O2CardsApp.Droid.Resource.Color.ripple_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.secondary_text_default_material_dark = global::O2CardsApp.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.secondary_text_default_material_light = global::O2CardsApp.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.secondary_text_disabled_material_dark = global::O2CardsApp.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.secondary_text_disabled_material_light = global::O2CardsApp.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_disabled_material_dark = global::O2CardsApp.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_disabled_material_light = global::O2CardsApp.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_material_dark = global::O2CardsApp.Droid.Resource.Color.switch_thumb_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_material_light = global::O2CardsApp.Droid.Resource.Color.switch_thumb_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_normal_material_dark = global::O2CardsApp.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.switch_thumb_normal_material_light = global::O2CardsApp.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.tooltip_background_dark = global::O2CardsApp.Droid.Resource.Color.tooltip_background_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Color.tooltip_background_light = global::O2CardsApp.Droid.Resource.Color.tooltip_background_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_content_inset_material = global::O2CardsApp.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::O2CardsApp.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_default_height_material = global::O2CardsApp.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_default_padding_end_material = global::O2CardsApp.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_default_padding_start_material = global::O2CardsApp.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_elevation_material = global::O2CardsApp.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::O2CardsApp.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::O2CardsApp.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::O2CardsApp.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_progress_bar_size = global::O2CardsApp.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::O2CardsApp.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::O2CardsApp.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::O2CardsApp.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::O2CardsApp.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_button_min_height_material = global::O2CardsApp.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_button_min_width_material = global::O2CardsApp.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_action_button_min_width_overflow_material = global::O2CardsApp.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_alert_dialog_button_bar_height = global::O2CardsApp.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_button_inset_horizontal_material = global::O2CardsApp.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_button_inset_vertical_material = global::O2CardsApp.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_button_padding_horizontal_material = global::O2CardsApp.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_button_padding_vertical_material = global::O2CardsApp.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::O2CardsApp.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_config_prefDialogWidth = global::O2CardsApp.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_control_corner_material = global::O2CardsApp.Droid.Resource.Dimension.abc_control_corner_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_control_inset_material = global::O2CardsApp.Droid.Resource.Dimension.abc_control_inset_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_control_padding_material = global::O2CardsApp.Droid.Resource.Dimension.abc_control_padding_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_fixed_height_major = global::O2CardsApp.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_fixed_height_minor = global::O2CardsApp.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_fixed_width_major = global::O2CardsApp.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_fixed_width_minor = global::O2CardsApp.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::O2CardsApp.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::O2CardsApp.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_min_width_major = global::O2CardsApp.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_min_width_minor = global::O2CardsApp.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_padding_material = global::O2CardsApp.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_padding_top_material = global::O2CardsApp.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dialog_title_divider_material = global::O2CardsApp.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_disabled_alpha_material_dark = global::O2CardsApp.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_disabled_alpha_material_light = global::O2CardsApp.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dropdownitem_icon_width = global::O2CardsApp.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dropdownitem_text_padding_left = global::O2CardsApp.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_dropdownitem_text_padding_right = global::O2CardsApp.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_edit_text_inset_bottom_material = global::O2CardsApp.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::O2CardsApp.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_edit_text_inset_top_material = global::O2CardsApp.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_floating_window_z = global::O2CardsApp.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_list_item_padding_horizontal_material = global::O2CardsApp.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_panel_menu_list_width = global::O2CardsApp.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_progress_bar_height_material = global::O2CardsApp.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_search_view_preferred_height = global::O2CardsApp.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_search_view_preferred_width = global::O2CardsApp.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_seekbar_track_background_height_material = global::O2CardsApp.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_seekbar_track_progress_height_material = global::O2CardsApp.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_select_dialog_padding_start_material = global::O2CardsApp.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_switch_padding = global::O2CardsApp.Droid.Resource.Dimension.abc_switch_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_body_1_material = global::O2CardsApp.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_body_2_material = global::O2CardsApp.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_button_material = global::O2CardsApp.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_caption_material = global::O2CardsApp.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_display_1_material = global::O2CardsApp.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_display_2_material = global::O2CardsApp.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_display_3_material = global::O2CardsApp.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_display_4_material = global::O2CardsApp.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_headline_material = global::O2CardsApp.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_large_material = global::O2CardsApp.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_medium_material = global::O2CardsApp.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_menu_header_material = global::O2CardsApp.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_menu_material = global::O2CardsApp.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_small_material = global::O2CardsApp.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_subhead_material = global::O2CardsApp.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::O2CardsApp.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_title_material = global::O2CardsApp.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.abc_text_size_title_material_toolbar = global::O2CardsApp.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.cardview_compat_inset_shadow = global::O2CardsApp.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.cardview_default_elevation = global::O2CardsApp.Droid.Resource.Dimension.cardview_default_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.cardview_default_radius = global::O2CardsApp.Droid.Resource.Dimension.cardview_default_radius;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.compat_button_inset_horizontal_material = global::O2CardsApp.Droid.Resource.Dimension.compat_button_inset_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.compat_button_inset_vertical_material = global::O2CardsApp.Droid.Resource.Dimension.compat_button_inset_vertical_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.compat_button_padding_horizontal_material = global::O2CardsApp.Droid.Resource.Dimension.compat_button_padding_horizontal_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.compat_button_padding_vertical_material = global::O2CardsApp.Droid.Resource.Dimension.compat_button_padding_vertical_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.compat_control_corner_material = global::O2CardsApp.Droid.Resource.Dimension.compat_control_corner_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_appbar_elevation = global::O2CardsApp.Droid.Resource.Dimension.design_appbar_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::O2CardsApp.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_active_text_size = global::O2CardsApp.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_elevation = global::O2CardsApp.Droid.Resource.Dimension.design_bottom_navigation_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_height = global::O2CardsApp.Droid.Resource.Dimension.design_bottom_navigation_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_item_max_width = global::O2CardsApp.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_item_min_width = global::O2CardsApp.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_margin = global::O2CardsApp.Droid.Resource.Dimension.design_bottom_navigation_margin;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_shadow_height = global::O2CardsApp.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_navigation_text_size = global::O2CardsApp.Droid.Resource.Dimension.design_bottom_navigation_text_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_sheet_modal_elevation = global::O2CardsApp.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_bottom_sheet_peek_height_min = global::O2CardsApp.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_border_width = global::O2CardsApp.Droid.Resource.Dimension.design_fab_border_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_elevation = global::O2CardsApp.Droid.Resource.Dimension.design_fab_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_image_size = global::O2CardsApp.Droid.Resource.Dimension.design_fab_image_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_size_mini = global::O2CardsApp.Droid.Resource.Dimension.design_fab_size_mini;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_size_normal = global::O2CardsApp.Droid.Resource.Dimension.design_fab_size_normal;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_fab_translation_z_pressed = global::O2CardsApp.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_elevation = global::O2CardsApp.Droid.Resource.Dimension.design_navigation_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_icon_padding = global::O2CardsApp.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_icon_size = global::O2CardsApp.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_max_width = global::O2CardsApp.Droid.Resource.Dimension.design_navigation_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_padding_bottom = global::O2CardsApp.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_navigation_separator_vertical_padding = global::O2CardsApp.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_action_inline_max_width = global::O2CardsApp.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_background_corner_radius = global::O2CardsApp.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_elevation = global::O2CardsApp.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::O2CardsApp.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_max_width = global::O2CardsApp.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_min_width = global::O2CardsApp.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_padding_horizontal = global::O2CardsApp.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_padding_vertical = global::O2CardsApp.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::O2CardsApp.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_snackbar_text_size = global::O2CardsApp.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_tab_max_width = global::O2CardsApp.Droid.Resource.Dimension.design_tab_max_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_tab_scrollable_min_width = global::O2CardsApp.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_tab_text_size = global::O2CardsApp.Droid.Resource.Dimension.design_tab_text_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.design_tab_text_size_2line = global::O2CardsApp.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.disabled_alpha_material_dark = global::O2CardsApp.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.disabled_alpha_material_light = global::O2CardsApp.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.fastscroll_default_thickness = global::O2CardsApp.Droid.Resource.Dimension.fastscroll_default_thickness;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.fastscroll_margin = global::O2CardsApp.Droid.Resource.Dimension.fastscroll_margin;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.fastscroll_minimum_range = global::O2CardsApp.Droid.Resource.Dimension.fastscroll_minimum_range;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.highlight_alpha_material_colored = global::O2CardsApp.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.highlight_alpha_material_dark = global::O2CardsApp.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.highlight_alpha_material_light = global::O2CardsApp.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.hint_alpha_material_dark = global::O2CardsApp.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.hint_alpha_material_light = global::O2CardsApp.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.hint_pressed_alpha_material_dark = global::O2CardsApp.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.hint_pressed_alpha_material_light = global::O2CardsApp.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::O2CardsApp.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::O2CardsApp.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::O2CardsApp.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_action_icon_size = global::O2CardsApp.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_action_text_size = global::O2CardsApp.Droid.Resource.Dimension.notification_action_text_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_big_circle_margin = global::O2CardsApp.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_content_margin_start = global::O2CardsApp.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_large_icon_height = global::O2CardsApp.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_large_icon_width = global::O2CardsApp.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_main_column_padding_top = global::O2CardsApp.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_media_narrow_margin = global::O2CardsApp.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_right_icon_size = global::O2CardsApp.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_right_side_padding_top = global::O2CardsApp.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_small_icon_background_padding = global::O2CardsApp.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_small_icon_size_as_large = global::O2CardsApp.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_subtext_size = global::O2CardsApp.Droid.Resource.Dimension.notification_subtext_size;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_top_pad = global::O2CardsApp.Droid.Resource.Dimension.notification_top_pad;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.notification_top_pad_large_text = global::O2CardsApp.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_corner_radius = global::O2CardsApp.Droid.Resource.Dimension.tooltip_corner_radius;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_horizontal_padding = global::O2CardsApp.Droid.Resource.Dimension.tooltip_horizontal_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_margin = global::O2CardsApp.Droid.Resource.Dimension.tooltip_margin;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_precise_anchor_extra_offset = global::O2CardsApp.Droid.Resource.Dimension.tooltip_precise_anchor_extra_offset;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_precise_anchor_threshold = global::O2CardsApp.Droid.Resource.Dimension.tooltip_precise_anchor_threshold;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_vertical_padding = global::O2CardsApp.Droid.Resource.Dimension.tooltip_vertical_padding;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_y_offset_non_touch = global::O2CardsApp.Droid.Resource.Dimension.tooltip_y_offset_non_touch;
+			global::Xamarin.Forms.Platform.Android.Resource.Dimension.tooltip_y_offset_touch = global::O2CardsApp.Droid.Resource.Dimension.tooltip_y_offset_touch;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::O2CardsApp.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_action_bar_item_background_material = global::O2CardsApp.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_borderless_material = global::O2CardsApp.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_material = global::O2CardsApp.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::O2CardsApp.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::O2CardsApp.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_colored_material = global::O2CardsApp.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_default_mtrl_shape = global::O2CardsApp.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_material = global::O2CardsApp.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::O2CardsApp.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::O2CardsApp.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::O2CardsApp.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::O2CardsApp.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_cab_background_internal_bg = global::O2CardsApp.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_cab_background_top_material = global::O2CardsApp.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::O2CardsApp.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_control_background_material = global::O2CardsApp.Droid.Resource.Drawable.abc_control_background_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_dialog_material_background = global::O2CardsApp.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_edit_text_material = global::O2CardsApp.Droid.Resource.Drawable.abc_edit_text_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_ab_back_material = global::O2CardsApp.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::O2CardsApp.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_clear_material = global::O2CardsApp.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::O2CardsApp.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_go_search_api_material = global::O2CardsApp.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::O2CardsApp.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::O2CardsApp.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_overflow_material = global::O2CardsApp.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::O2CardsApp.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::O2CardsApp.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::O2CardsApp.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_search_api_material = global::O2CardsApp.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_black_16dp = global::O2CardsApp.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_black_36dp = global::O2CardsApp.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_black_48dp = global::O2CardsApp.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_half_black_16dp = global::O2CardsApp.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_half_black_36dp = global::O2CardsApp.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_star_half_black_48dp = global::O2CardsApp.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ic_voice_search_api_material = global::O2CardsApp.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_item_background_holo_dark = global::O2CardsApp.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_item_background_holo_light = global::O2CardsApp.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_divider_mtrl_alpha = global::O2CardsApp.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_focused_holo = global::O2CardsApp.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_longpressed_holo = global::O2CardsApp.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_pressed_holo_dark = global::O2CardsApp.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_pressed_holo_light = global::O2CardsApp.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::O2CardsApp.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::O2CardsApp.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::O2CardsApp.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_disabled_holo_light = global::O2CardsApp.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_holo_dark = global::O2CardsApp.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_list_selector_holo_light = global::O2CardsApp.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::O2CardsApp.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_popup_background_mtrl_mult = global::O2CardsApp.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ratingbar_indicator_material = global::O2CardsApp.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ratingbar_material = global::O2CardsApp.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_ratingbar_small_material = global::O2CardsApp.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::O2CardsApp.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::O2CardsApp.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::O2CardsApp.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::O2CardsApp.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::O2CardsApp.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_seekbar_thumb_material = global::O2CardsApp.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_seekbar_tick_mark_material = global::O2CardsApp.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_seekbar_track_material = global::O2CardsApp.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::O2CardsApp.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_spinner_textfield_background_material = global::O2CardsApp.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_switch_thumb_material = global::O2CardsApp.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_switch_track_mtrl_alpha = global::O2CardsApp.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_tab_indicator_material = global::O2CardsApp.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::O2CardsApp.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_cursor_material = global::O2CardsApp.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::O2CardsApp.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::O2CardsApp.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::O2CardsApp.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::O2CardsApp.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::O2CardsApp.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::O2CardsApp.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::O2CardsApp.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::O2CardsApp.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::O2CardsApp.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::O2CardsApp.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_textfield_search_material = global::O2CardsApp.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.abc_vector_test = global::O2CardsApp.Droid.Resource.Drawable.abc_vector_test;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_hide_password = global::O2CardsApp.Droid.Resource.Drawable.avd_hide_password;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_hide_password_1 = global::O2CardsApp.Droid.Resource.Drawable.avd_hide_password_1;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_hide_password_2 = global::O2CardsApp.Droid.Resource.Drawable.avd_hide_password_2;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_hide_password_3 = global::O2CardsApp.Droid.Resource.Drawable.avd_hide_password_3;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_show_password = global::O2CardsApp.Droid.Resource.Drawable.avd_show_password;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_show_password_1 = global::O2CardsApp.Droid.Resource.Drawable.avd_show_password_1;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_show_password_2 = global::O2CardsApp.Droid.Resource.Drawable.avd_show_password_2;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.avd_show_password_3 = global::O2CardsApp.Droid.Resource.Drawable.avd_show_password_3;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_bottom_navigation_item_background = global::O2CardsApp.Droid.Resource.Drawable.design_bottom_navigation_item_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_fab_background = global::O2CardsApp.Droid.Resource.Drawable.design_fab_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_ic_visibility = global::O2CardsApp.Droid.Resource.Drawable.design_ic_visibility;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_ic_visibility_off = global::O2CardsApp.Droid.Resource.Drawable.design_ic_visibility_off;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_password_eye = global::O2CardsApp.Droid.Resource.Drawable.design_password_eye;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.design_snackbar_background = global::O2CardsApp.Droid.Resource.Drawable.design_snackbar_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.navigation_empty_icon = global::O2CardsApp.Droid.Resource.Drawable.navigation_empty_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_action_background = global::O2CardsApp.Droid.Resource.Drawable.notification_action_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg = global::O2CardsApp.Droid.Resource.Drawable.notification_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg_low = global::O2CardsApp.Droid.Resource.Drawable.notification_bg_low;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg_low_normal = global::O2CardsApp.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg_low_pressed = global::O2CardsApp.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg_normal = global::O2CardsApp.Droid.Resource.Drawable.notification_bg_normal;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_bg_normal_pressed = global::O2CardsApp.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_icon_background = global::O2CardsApp.Droid.Resource.Drawable.notification_icon_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_template_icon_bg = global::O2CardsApp.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_template_icon_low_bg = global::O2CardsApp.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notification_tile_bg = global::O2CardsApp.Droid.Resource.Drawable.notification_tile_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.notify_panel_notification_icon_bg = global::O2CardsApp.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.tooltip_frame_dark = global::O2CardsApp.Droid.Resource.Drawable.tooltip_frame_dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Drawable.tooltip_frame_light = global::O2CardsApp.Droid.Resource.Drawable.tooltip_frame_light;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.ALT = global::O2CardsApp.Droid.Resource.Id.ALT;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.CTRL = global::O2CardsApp.Droid.Resource.Id.CTRL;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.FUNCTION = global::O2CardsApp.Droid.Resource.Id.FUNCTION;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.META = global::O2CardsApp.Droid.Resource.Id.META;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.SHIFT = global::O2CardsApp.Droid.Resource.Id.SHIFT;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.SYM = global::O2CardsApp.Droid.Resource.Id.SYM;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action0 = global::O2CardsApp.Droid.Resource.Id.action0;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar = global::O2CardsApp.Droid.Resource.Id.action_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_activity_content = global::O2CardsApp.Droid.Resource.Id.action_bar_activity_content;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_container = global::O2CardsApp.Droid.Resource.Id.action_bar_container;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_root = global::O2CardsApp.Droid.Resource.Id.action_bar_root;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_spinner = global::O2CardsApp.Droid.Resource.Id.action_bar_spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_subtitle = global::O2CardsApp.Droid.Resource.Id.action_bar_subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_bar_title = global::O2CardsApp.Droid.Resource.Id.action_bar_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_container = global::O2CardsApp.Droid.Resource.Id.action_container;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_context_bar = global::O2CardsApp.Droid.Resource.Id.action_context_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_divider = global::O2CardsApp.Droid.Resource.Id.action_divider;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_image = global::O2CardsApp.Droid.Resource.Id.action_image;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_menu_divider = global::O2CardsApp.Droid.Resource.Id.action_menu_divider;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_menu_presenter = global::O2CardsApp.Droid.Resource.Id.action_menu_presenter;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_mode_bar = global::O2CardsApp.Droid.Resource.Id.action_mode_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_mode_bar_stub = global::O2CardsApp.Droid.Resource.Id.action_mode_bar_stub;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_mode_close_button = global::O2CardsApp.Droid.Resource.Id.action_mode_close_button;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.action_text = global::O2CardsApp.Droid.Resource.Id.action_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.actions = global::O2CardsApp.Droid.Resource.Id.actions;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.activity_chooser_view_content = global::O2CardsApp.Droid.Resource.Id.activity_chooser_view_content;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.add = global::O2CardsApp.Droid.Resource.Id.add;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.alertTitle = global::O2CardsApp.Droid.Resource.Id.alertTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.all = global::O2CardsApp.Droid.Resource.Id.all;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.always = global::O2CardsApp.Droid.Resource.Id.always;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.async = global::O2CardsApp.Droid.Resource.Id.async;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.auto = global::O2CardsApp.Droid.Resource.Id.auto;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.beginning = global::O2CardsApp.Droid.Resource.Id.beginning;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.blocking = global::O2CardsApp.Droid.Resource.Id.blocking;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.bottom = global::O2CardsApp.Droid.Resource.Id.bottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.bottomtab_navarea = global::O2CardsApp.Droid.Resource.Id.bottomtab_navarea;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.bottomtab_tabbar = global::O2CardsApp.Droid.Resource.Id.bottomtab_tabbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.buttonPanel = global::O2CardsApp.Droid.Resource.Id.buttonPanel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.cancel_action = global::O2CardsApp.Droid.Resource.Id.cancel_action;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.center = global::O2CardsApp.Droid.Resource.Id.center;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.center_horizontal = global::O2CardsApp.Droid.Resource.Id.center_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.center_vertical = global::O2CardsApp.Droid.Resource.Id.center_vertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.checkbox = global::O2CardsApp.Droid.Resource.Id.checkbox;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.chronometer = global::O2CardsApp.Droid.Resource.Id.chronometer;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.clip_horizontal = global::O2CardsApp.Droid.Resource.Id.clip_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.clip_vertical = global::O2CardsApp.Droid.Resource.Id.clip_vertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.collapseActionView = global::O2CardsApp.Droid.Resource.Id.collapseActionView;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.container = global::O2CardsApp.Droid.Resource.Id.container;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.contentPanel = global::O2CardsApp.Droid.Resource.Id.contentPanel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.coordinator = global::O2CardsApp.Droid.Resource.Id.coordinator;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.custom = global::O2CardsApp.Droid.Resource.Id.custom;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.customPanel = global::O2CardsApp.Droid.Resource.Id.customPanel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.decor_content_parent = global::O2CardsApp.Droid.Resource.Id.decor_content_parent;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.default_activity_button = global::O2CardsApp.Droid.Resource.Id.default_activity_button;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.design_bottom_sheet = global::O2CardsApp.Droid.Resource.Id.design_bottom_sheet;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.design_menu_item_action_area = global::O2CardsApp.Droid.Resource.Id.design_menu_item_action_area;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.design_menu_item_action_area_stub = global::O2CardsApp.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.design_menu_item_text = global::O2CardsApp.Droid.Resource.Id.design_menu_item_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.design_navigation_view = global::O2CardsApp.Droid.Resource.Id.design_navigation_view;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.disableHome = global::O2CardsApp.Droid.Resource.Id.disableHome;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.edit_query = global::O2CardsApp.Droid.Resource.Id.edit_query;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.end = global::O2CardsApp.Droid.Resource.Id.end;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.end_padder = global::O2CardsApp.Droid.Resource.Id.end_padder;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.enterAlways = global::O2CardsApp.Droid.Resource.Id.enterAlways;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.enterAlwaysCollapsed = global::O2CardsApp.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.exitUntilCollapsed = global::O2CardsApp.Droid.Resource.Id.exitUntilCollapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.expand_activities_button = global::O2CardsApp.Droid.Resource.Id.expand_activities_button;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.expanded_menu = global::O2CardsApp.Droid.Resource.Id.expanded_menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.fill = global::O2CardsApp.Droid.Resource.Id.fill;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.fill_horizontal = global::O2CardsApp.Droid.Resource.Id.fill_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.fill_vertical = global::O2CardsApp.Droid.Resource.Id.fill_vertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.@fixed = global::O2CardsApp.Droid.Resource.Id.@fixed;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.flyoutcontent_appbar = global::O2CardsApp.Droid.Resource.Id.flyoutcontent_appbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.flyoutcontent_recycler = global::O2CardsApp.Droid.Resource.Id.flyoutcontent_recycler;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.forever = global::O2CardsApp.Droid.Resource.Id.forever;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.ghost_view = global::O2CardsApp.Droid.Resource.Id.ghost_view;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.home = global::O2CardsApp.Droid.Resource.Id.home;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.homeAsUp = global::O2CardsApp.Droid.Resource.Id.homeAsUp;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.icon = global::O2CardsApp.Droid.Resource.Id.icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.icon_group = global::O2CardsApp.Droid.Resource.Id.icon_group;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.ifRoom = global::O2CardsApp.Droid.Resource.Id.ifRoom;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.image = global::O2CardsApp.Droid.Resource.Id.image;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.info = global::O2CardsApp.Droid.Resource.Id.info;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.italic = global::O2CardsApp.Droid.Resource.Id.italic;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.item_touch_helper_previous_elevation = global::O2CardsApp.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.largeLabel = global::O2CardsApp.Droid.Resource.Id.largeLabel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.left = global::O2CardsApp.Droid.Resource.Id.left;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.line1 = global::O2CardsApp.Droid.Resource.Id.line1;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.line3 = global::O2CardsApp.Droid.Resource.Id.line3;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.listMode = global::O2CardsApp.Droid.Resource.Id.listMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.list_item = global::O2CardsApp.Droid.Resource.Id.list_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.main_appbar = global::O2CardsApp.Droid.Resource.Id.main_appbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.main_tablayout = global::O2CardsApp.Droid.Resource.Id.main_tablayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.main_toolbar = global::O2CardsApp.Droid.Resource.Id.main_toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.main_viewpager = global::O2CardsApp.Droid.Resource.Id.main_viewpager;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.masked = global::O2CardsApp.Droid.Resource.Id.masked;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.media_actions = global::O2CardsApp.Droid.Resource.Id.media_actions;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.message = global::O2CardsApp.Droid.Resource.Id.message;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.middle = global::O2CardsApp.Droid.Resource.Id.middle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.mini = global::O2CardsApp.Droid.Resource.Id.mini;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.multiply = global::O2CardsApp.Droid.Resource.Id.multiply;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.navigation_header_container = global::O2CardsApp.Droid.Resource.Id.navigation_header_container;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.never = global::O2CardsApp.Droid.Resource.Id.never;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.none = global::O2CardsApp.Droid.Resource.Id.none;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.normal = global::O2CardsApp.Droid.Resource.Id.normal;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.notification_background = global::O2CardsApp.Droid.Resource.Id.notification_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.notification_main_column = global::O2CardsApp.Droid.Resource.Id.notification_main_column;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.notification_main_column_container = global::O2CardsApp.Droid.Resource.Id.notification_main_column_container;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.parallax = global::O2CardsApp.Droid.Resource.Id.parallax;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.parentPanel = global::O2CardsApp.Droid.Resource.Id.parentPanel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.parent_matrix = global::O2CardsApp.Droid.Resource.Id.parent_matrix;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.pin = global::O2CardsApp.Droid.Resource.Id.pin;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.progress_circular = global::O2CardsApp.Droid.Resource.Id.progress_circular;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.progress_horizontal = global::O2CardsApp.Droid.Resource.Id.progress_horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.radio = global::O2CardsApp.Droid.Resource.Id.radio;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.right = global::O2CardsApp.Droid.Resource.Id.right;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.right_icon = global::O2CardsApp.Droid.Resource.Id.right_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.right_side = global::O2CardsApp.Droid.Resource.Id.right_side;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.save_image_matrix = global::O2CardsApp.Droid.Resource.Id.save_image_matrix;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.save_non_transition_alpha = global::O2CardsApp.Droid.Resource.Id.save_non_transition_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.save_scale_type = global::O2CardsApp.Droid.Resource.Id.save_scale_type;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.screen = global::O2CardsApp.Droid.Resource.Id.screen;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.scroll = global::O2CardsApp.Droid.Resource.Id.scroll;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollIndicatorDown = global::O2CardsApp.Droid.Resource.Id.scrollIndicatorDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollIndicatorUp = global::O2CardsApp.Droid.Resource.Id.scrollIndicatorUp;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollView = global::O2CardsApp.Droid.Resource.Id.scrollView;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.scrollable = global::O2CardsApp.Droid.Resource.Id.scrollable;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_badge = global::O2CardsApp.Droid.Resource.Id.search_badge;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_bar = global::O2CardsApp.Droid.Resource.Id.search_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_button = global::O2CardsApp.Droid.Resource.Id.search_button;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_close_btn = global::O2CardsApp.Droid.Resource.Id.search_close_btn;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_edit_frame = global::O2CardsApp.Droid.Resource.Id.search_edit_frame;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_go_btn = global::O2CardsApp.Droid.Resource.Id.search_go_btn;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_mag_icon = global::O2CardsApp.Droid.Resource.Id.search_mag_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_plate = global::O2CardsApp.Droid.Resource.Id.search_plate;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_src_text = global::O2CardsApp.Droid.Resource.Id.search_src_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.search_voice_btn = global::O2CardsApp.Droid.Resource.Id.search_voice_btn;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.select_dialog_listview = global::O2CardsApp.Droid.Resource.Id.select_dialog_listview;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.shellcontent_appbar = global::O2CardsApp.Droid.Resource.Id.shellcontent_appbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.shellcontent_toolbar = global::O2CardsApp.Droid.Resource.Id.shellcontent_toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.shortcut = global::O2CardsApp.Droid.Resource.Id.shortcut;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.showCustom = global::O2CardsApp.Droid.Resource.Id.showCustom;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.showHome = global::O2CardsApp.Droid.Resource.Id.showHome;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.showTitle = global::O2CardsApp.Droid.Resource.Id.showTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.smallLabel = global::O2CardsApp.Droid.Resource.Id.smallLabel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.snackbar_action = global::O2CardsApp.Droid.Resource.Id.snackbar_action;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.snackbar_text = global::O2CardsApp.Droid.Resource.Id.snackbar_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.snap = global::O2CardsApp.Droid.Resource.Id.snap;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.spacer = global::O2CardsApp.Droid.Resource.Id.spacer;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.split_action_bar = global::O2CardsApp.Droid.Resource.Id.split_action_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.src_atop = global::O2CardsApp.Droid.Resource.Id.src_atop;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.src_in = global::O2CardsApp.Droid.Resource.Id.src_in;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.src_over = global::O2CardsApp.Droid.Resource.Id.src_over;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.start = global::O2CardsApp.Droid.Resource.Id.start;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.status_bar_latest_event_content = global::O2CardsApp.Droid.Resource.Id.status_bar_latest_event_content;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.submenuarrow = global::O2CardsApp.Droid.Resource.Id.submenuarrow;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.submit_area = global::O2CardsApp.Droid.Resource.Id.submit_area;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.tabMode = global::O2CardsApp.Droid.Resource.Id.tabMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.tag_transition_group = global::O2CardsApp.Droid.Resource.Id.tag_transition_group;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.text = global::O2CardsApp.Droid.Resource.Id.text;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.text2 = global::O2CardsApp.Droid.Resource.Id.text2;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.textSpacerNoButtons = global::O2CardsApp.Droid.Resource.Id.textSpacerNoButtons;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.textSpacerNoTitle = global::O2CardsApp.Droid.Resource.Id.textSpacerNoTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.text_input_password_toggle = global::O2CardsApp.Droid.Resource.Id.text_input_password_toggle;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.textinput_counter = global::O2CardsApp.Droid.Resource.Id.textinput_counter;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.textinput_error = global::O2CardsApp.Droid.Resource.Id.textinput_error;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.time = global::O2CardsApp.Droid.Resource.Id.time;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.title = global::O2CardsApp.Droid.Resource.Id.title;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.titleDividerNoCustom = global::O2CardsApp.Droid.Resource.Id.titleDividerNoCustom;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.title_template = global::O2CardsApp.Droid.Resource.Id.title_template;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.top = global::O2CardsApp.Droid.Resource.Id.top;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.topPanel = global::O2CardsApp.Droid.Resource.Id.topPanel;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.touch_outside = global::O2CardsApp.Droid.Resource.Id.touch_outside;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_current_scene = global::O2CardsApp.Droid.Resource.Id.transition_current_scene;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_layout_save = global::O2CardsApp.Droid.Resource.Id.transition_layout_save;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_position = global::O2CardsApp.Droid.Resource.Id.transition_position;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_scene_layoutid_cache = global::O2CardsApp.Droid.Resource.Id.transition_scene_layoutid_cache;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.transition_transform = global::O2CardsApp.Droid.Resource.Id.transition_transform;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.uniform = global::O2CardsApp.Droid.Resource.Id.uniform;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.up = global::O2CardsApp.Droid.Resource.Id.up;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.useLogo = global::O2CardsApp.Droid.Resource.Id.useLogo;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.view_offset_helper = global::O2CardsApp.Droid.Resource.Id.view_offset_helper;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.visible = global::O2CardsApp.Droid.Resource.Id.visible;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.withText = global::O2CardsApp.Droid.Resource.Id.withText;
+			global::Xamarin.Forms.Platform.Android.Resource.Id.wrap_content = global::O2CardsApp.Droid.Resource.Id.wrap_content;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.abc_config_activityDefaultDur = global::O2CardsApp.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.abc_config_activityShortDur = global::O2CardsApp.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.app_bar_elevation_anim_duration = global::O2CardsApp.Droid.Resource.Integer.app_bar_elevation_anim_duration;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.bottom_sheet_slide_duration = global::O2CardsApp.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.cancel_button_image_alpha = global::O2CardsApp.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.config_tooltipAnimTime = global::O2CardsApp.Droid.Resource.Integer.config_tooltipAnimTime;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.design_snackbar_text_max_lines = global::O2CardsApp.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.hide_password_duration = global::O2CardsApp.Droid.Resource.Integer.hide_password_duration;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.show_password_duration = global::O2CardsApp.Droid.Resource.Integer.show_password_duration;
+			global::Xamarin.Forms.Platform.Android.Resource.Integer.status_bar_notification_info_maxnum = global::O2CardsApp.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_bar_title_item = global::O2CardsApp.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_bar_up_container = global::O2CardsApp.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_menu_item_layout = global::O2CardsApp.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_menu_layout = global::O2CardsApp.Droid.Resource.Layout.abc_action_menu_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_mode_bar = global::O2CardsApp.Droid.Resource.Layout.abc_action_mode_bar;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_action_mode_close_item_material = global::O2CardsApp.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_activity_chooser_view = global::O2CardsApp.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_activity_chooser_view_list_item = global::O2CardsApp.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_alert_dialog_button_bar_material = global::O2CardsApp.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_alert_dialog_material = global::O2CardsApp.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_alert_dialog_title_material = global::O2CardsApp.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_dialog_title_material = global::O2CardsApp.Droid.Resource.Layout.abc_dialog_title_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_expanded_menu_layout = global::O2CardsApp.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_list_menu_item_checkbox = global::O2CardsApp.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_list_menu_item_icon = global::O2CardsApp.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_list_menu_item_layout = global::O2CardsApp.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_list_menu_item_radio = global::O2CardsApp.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_popup_menu_header_item_layout = global::O2CardsApp.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_popup_menu_item_layout = global::O2CardsApp.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_screen_content_include = global::O2CardsApp.Droid.Resource.Layout.abc_screen_content_include;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_screen_simple = global::O2CardsApp.Droid.Resource.Layout.abc_screen_simple;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_screen_simple_overlay_action_mode = global::O2CardsApp.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_screen_toolbar = global::O2CardsApp.Droid.Resource.Layout.abc_screen_toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_search_dropdown_item_icons_2line = global::O2CardsApp.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_search_view = global::O2CardsApp.Droid.Resource.Layout.abc_search_view;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.abc_select_dialog_material = global::O2CardsApp.Droid.Resource.Layout.abc_select_dialog_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.BottomTabLayout = global::O2CardsApp.Droid.Resource.Layout.BottomTabLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_bottom_navigation_item = global::O2CardsApp.Droid.Resource.Layout.design_bottom_navigation_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_bottom_sheet_dialog = global::O2CardsApp.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_layout_snackbar = global::O2CardsApp.Droid.Resource.Layout.design_layout_snackbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_layout_snackbar_include = global::O2CardsApp.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_layout_tab_icon = global::O2CardsApp.Droid.Resource.Layout.design_layout_tab_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_layout_tab_text = global::O2CardsApp.Droid.Resource.Layout.design_layout_tab_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_menu_item_action_area = global::O2CardsApp.Droid.Resource.Layout.design_menu_item_action_area;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_item = global::O2CardsApp.Droid.Resource.Layout.design_navigation_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_item_header = global::O2CardsApp.Droid.Resource.Layout.design_navigation_item_header;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_item_separator = global::O2CardsApp.Droid.Resource.Layout.design_navigation_item_separator;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_item_subheader = global::O2CardsApp.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_menu = global::O2CardsApp.Droid.Resource.Layout.design_navigation_menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_navigation_menu_item = global::O2CardsApp.Droid.Resource.Layout.design_navigation_menu_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.design_text_input_password_icon = global::O2CardsApp.Droid.Resource.Layout.design_text_input_password_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.FlyoutContent = global::O2CardsApp.Droid.Resource.Layout.FlyoutContent;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_action = global::O2CardsApp.Droid.Resource.Layout.notification_action;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_action_tombstone = global::O2CardsApp.Droid.Resource.Layout.notification_action_tombstone;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_media_action = global::O2CardsApp.Droid.Resource.Layout.notification_media_action;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_media_cancel_action = global::O2CardsApp.Droid.Resource.Layout.notification_media_cancel_action;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_big_media = global::O2CardsApp.Droid.Resource.Layout.notification_template_big_media;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_big_media_custom = global::O2CardsApp.Droid.Resource.Layout.notification_template_big_media_custom;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_big_media_narrow = global::O2CardsApp.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_big_media_narrow_custom = global::O2CardsApp.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_custom_big = global::O2CardsApp.Droid.Resource.Layout.notification_template_custom_big;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_icon_group = global::O2CardsApp.Droid.Resource.Layout.notification_template_icon_group;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_lines_media = global::O2CardsApp.Droid.Resource.Layout.notification_template_lines_media;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_media = global::O2CardsApp.Droid.Resource.Layout.notification_template_media;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_media_custom = global::O2CardsApp.Droid.Resource.Layout.notification_template_media_custom;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_part_chronometer = global::O2CardsApp.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.notification_template_part_time = global::O2CardsApp.Droid.Resource.Layout.notification_template_part_time;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.RootLayout = global::O2CardsApp.Droid.Resource.Layout.RootLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_item_material = global::O2CardsApp.Droid.Resource.Layout.select_dialog_item_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_multichoice_material = global::O2CardsApp.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.select_dialog_singlechoice_material = global::O2CardsApp.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.ShellContent = global::O2CardsApp.Droid.Resource.Layout.ShellContent;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::O2CardsApp.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Xamarin.Forms.Platform.Android.Resource.Layout.tooltip = global::O2CardsApp.Droid.Resource.Layout.tooltip;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_bar_home_description = global::O2CardsApp.Droid.Resource.String.abc_action_bar_home_description;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_bar_up_description = global::O2CardsApp.Droid.Resource.String.abc_action_bar_up_description;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_menu_overflow_description = global::O2CardsApp.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_action_mode_done = global::O2CardsApp.Droid.Resource.String.abc_action_mode_done;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_activity_chooser_view_see_all = global::O2CardsApp.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_activitychooserview_choose_application = global::O2CardsApp.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_capital_off = global::O2CardsApp.Droid.Resource.String.abc_capital_off;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_capital_on = global::O2CardsApp.Droid.Resource.String.abc_capital_on;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_body_1_material = global::O2CardsApp.Droid.Resource.String.abc_font_family_body_1_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_body_2_material = global::O2CardsApp.Droid.Resource.String.abc_font_family_body_2_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_button_material = global::O2CardsApp.Droid.Resource.String.abc_font_family_button_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_caption_material = global::O2CardsApp.Droid.Resource.String.abc_font_family_caption_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_display_1_material = global::O2CardsApp.Droid.Resource.String.abc_font_family_display_1_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_display_2_material = global::O2CardsApp.Droid.Resource.String.abc_font_family_display_2_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_display_3_material = global::O2CardsApp.Droid.Resource.String.abc_font_family_display_3_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_display_4_material = global::O2CardsApp.Droid.Resource.String.abc_font_family_display_4_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_headline_material = global::O2CardsApp.Droid.Resource.String.abc_font_family_headline_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_menu_material = global::O2CardsApp.Droid.Resource.String.abc_font_family_menu_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_subhead_material = global::O2CardsApp.Droid.Resource.String.abc_font_family_subhead_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_font_family_title_material = global::O2CardsApp.Droid.Resource.String.abc_font_family_title_material;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_search_hint = global::O2CardsApp.Droid.Resource.String.abc_search_hint;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_clear = global::O2CardsApp.Droid.Resource.String.abc_searchview_description_clear;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_query = global::O2CardsApp.Droid.Resource.String.abc_searchview_description_query;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_search = global::O2CardsApp.Droid.Resource.String.abc_searchview_description_search;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_submit = global::O2CardsApp.Droid.Resource.String.abc_searchview_description_submit;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_searchview_description_voice = global::O2CardsApp.Droid.Resource.String.abc_searchview_description_voice;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_shareactionprovider_share_with = global::O2CardsApp.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_shareactionprovider_share_with_application = global::O2CardsApp.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Xamarin.Forms.Platform.Android.Resource.String.abc_toolbar_collapse_description = global::O2CardsApp.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::Xamarin.Forms.Platform.Android.Resource.String.appbar_scrolling_view_behavior = global::O2CardsApp.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::Xamarin.Forms.Platform.Android.Resource.String.bottom_sheet_behavior = global::O2CardsApp.Droid.Resource.String.bottom_sheet_behavior;
+			global::Xamarin.Forms.Platform.Android.Resource.String.character_counter_pattern = global::O2CardsApp.Droid.Resource.String.character_counter_pattern;
+			global::Xamarin.Forms.Platform.Android.Resource.String.password_toggle_content_description = global::O2CardsApp.Droid.Resource.String.password_toggle_content_description;
+			global::Xamarin.Forms.Platform.Android.Resource.String.path_password_eye = global::O2CardsApp.Droid.Resource.String.path_password_eye;
+			global::Xamarin.Forms.Platform.Android.Resource.String.path_password_eye_mask_strike_through = global::O2CardsApp.Droid.Resource.String.path_password_eye_mask_strike_through;
+			global::Xamarin.Forms.Platform.Android.Resource.String.path_password_eye_mask_visible = global::O2CardsApp.Droid.Resource.String.path_password_eye_mask_visible;
+			global::Xamarin.Forms.Platform.Android.Resource.String.path_password_strike_through = global::O2CardsApp.Droid.Resource.String.path_password_strike_through;
+			global::Xamarin.Forms.Platform.Android.Resource.String.search_menu_title = global::O2CardsApp.Droid.Resource.String.search_menu_title;
+			global::Xamarin.Forms.Platform.Android.Resource.String.status_bar_notification_info_overflow = global::O2CardsApp.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.AlertDialog_AppCompat = global::O2CardsApp.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.AlertDialog_AppCompat_Light = global::O2CardsApp.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Animation_AppCompat_Dialog = global::O2CardsApp.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Animation_AppCompat_DropDownUp = global::O2CardsApp.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Animation_AppCompat_Tooltip = global::O2CardsApp.Droid.Resource.Style.Animation_AppCompat_Tooltip;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Animation_Design_BottomSheetDialog = global::O2CardsApp.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_AlertDialog_AppCompat = global::O2CardsApp.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_AlertDialog_AppCompat_Light = global::O2CardsApp.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Animation_AppCompat_Dialog = global::O2CardsApp.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::O2CardsApp.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Animation_AppCompat_Tooltip = global::O2CardsApp.Droid.Resource.Style.Base_Animation_AppCompat_Tooltip;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_CardView = global::O2CardsApp.Droid.Resource.Style.Base_CardView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_DialogWindowTitle_AppCompat = global::O2CardsApp.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::O2CardsApp.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Button = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Large = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Small = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Title = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Tooltip = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Tooltip;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::O2CardsApp.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat = global::O2CardsApp.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::O2CardsApp.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog = global::O2CardsApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::O2CardsApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::O2CardsApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::O2CardsApp.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::O2CardsApp.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light = global::O2CardsApp.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::O2CardsApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::O2CardsApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::O2CardsApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::O2CardsApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::O2CardsApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::O2CardsApp.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat = global::O2CardsApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::O2CardsApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::O2CardsApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::O2CardsApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::O2CardsApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::O2CardsApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::O2CardsApp.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::O2CardsApp.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::O2CardsApp.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::O2CardsApp.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::O2CardsApp.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::O2CardsApp.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V14_Widget_Design_AppBarLayout = global::O2CardsApp.Droid.Resource.Style.Base_V14_Widget_Design_AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Theme_AppCompat = global::O2CardsApp.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::O2CardsApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::O2CardsApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::O2CardsApp.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::O2CardsApp.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V21_Widget_Design_AppBarLayout = global::O2CardsApp.Droid.Resource.Style.Base_V21_Widget_Design_AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V22_Theme_AppCompat = global::O2CardsApp.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::O2CardsApp.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V23_Theme_AppCompat = global::O2CardsApp.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V23_Theme_AppCompat_Light = global::O2CardsApp.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V26_Theme_AppCompat = global::O2CardsApp.Droid.Resource.Style.Base_V26_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V26_Theme_AppCompat_Light = global::O2CardsApp.Droid.Resource.Style.Base_V26_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V26_Widget_AppCompat_Toolbar = global::O2CardsApp.Droid.Resource.Style.Base_V26_Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V26_Widget_Design_AppBarLayout = global::O2CardsApp.Droid.Resource.Style.Base_V26_Widget_Design_AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Theme_AppCompat = global::O2CardsApp.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::O2CardsApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::O2CardsApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::O2CardsApp.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::O2CardsApp.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::O2CardsApp.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::O2CardsApp.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_V7_Widget_AppCompat_Toolbar = global::O2CardsApp.Droid.Resource.Style.Base_V7_Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionBar = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionButton = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActionMode = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Button_Small = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_EditText = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ImageButton = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ListView = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_RatingBar = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SearchView = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SeekBar = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Spinner = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::O2CardsApp.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_Design_AppBarLayout = global::O2CardsApp.Droid.Resource.Style.Base_Widget_Design_AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Base_Widget_Design_TabLayout = global::O2CardsApp.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView = global::O2CardsApp.Droid.Resource.Style.CardView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView_Dark = global::O2CardsApp.Droid.Resource.Style.CardView_Dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.CardView_Light = global::O2CardsApp.Droid.Resource.Style.CardView_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_AppCompat = global::O2CardsApp.Droid.Resource.Style.Platform_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_AppCompat_Light = global::O2CardsApp.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::O2CardsApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::O2CardsApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::O2CardsApp.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V11_AppCompat = global::O2CardsApp.Droid.Resource.Style.Platform_V11_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V11_AppCompat_Light = global::O2CardsApp.Droid.Resource.Style.Platform_V11_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V14_AppCompat = global::O2CardsApp.Droid.Resource.Style.Platform_V14_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V14_AppCompat_Light = global::O2CardsApp.Droid.Resource.Style.Platform_V14_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V21_AppCompat = global::O2CardsApp.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V21_AppCompat_Light = global::O2CardsApp.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V25_AppCompat = global::O2CardsApp.Droid.Resource.Style.Platform_V25_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_V25_AppCompat_Light = global::O2CardsApp.Droid.Resource.Style.Platform_V25_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Platform_Widget_AppCompat_Spinner = global::O2CardsApp.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::O2CardsApp.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::O2CardsApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::O2CardsApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::O2CardsApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::O2CardsApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::O2CardsApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::O2CardsApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::O2CardsApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::O2CardsApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::O2CardsApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::O2CardsApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::O2CardsApp.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::O2CardsApp.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::O2CardsApp.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Body1 = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Body2 = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Button = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Caption = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Display1 = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Display2 = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Display3 = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Display4 = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Headline = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Inverse = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Large = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Medium = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Menu = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Small = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Subhead = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Title = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Tooltip = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Tooltip;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::O2CardsApp.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification = global::O2CardsApp.Droid.Resource.Style.TextAppearance_Compat_Notification;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Info = global::O2CardsApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Info;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Info_Media = global::O2CardsApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Info_Media;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Line2 = global::O2CardsApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Line2_Media = global::O2CardsApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Line2_Media;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Media = global::O2CardsApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Media;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Time = global::O2CardsApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Time;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Time_Media = global::O2CardsApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Time_Media;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Title = global::O2CardsApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Compat_Notification_Title_Media = global::O2CardsApp.Droid.Resource.Style.TextAppearance_Compat_Notification_Title_Media;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::O2CardsApp.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Counter = global::O2CardsApp.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Counter_Overflow = global::O2CardsApp.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Error = global::O2CardsApp.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Hint = global::O2CardsApp.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Snackbar_Message = global::O2CardsApp.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Design_Tab = global::O2CardsApp.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::O2CardsApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::O2CardsApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::O2CardsApp.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat = global::O2CardsApp.Droid.Resource.Style.Theme_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_CompactMenu = global::O2CardsApp.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight = global::O2CardsApp.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::O2CardsApp.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::O2CardsApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::O2CardsApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::O2CardsApp.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::O2CardsApp.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::O2CardsApp.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Dialog = global::O2CardsApp.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Dialog_Alert = global::O2CardsApp.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::O2CardsApp.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::O2CardsApp.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light = global::O2CardsApp.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::O2CardsApp.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_Dialog = global::O2CardsApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::O2CardsApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::O2CardsApp.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::O2CardsApp.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::O2CardsApp.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_AppCompat_NoActionBar = global::O2CardsApp.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design = global::O2CardsApp.Droid.Resource.Style.Theme_Design;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_BottomSheetDialog = global::O2CardsApp.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_Light = global::O2CardsApp.Droid.Resource.Style.Theme_Design_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::O2CardsApp.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_Light_NoActionBar = global::O2CardsApp.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Theme_Design_NoActionBar = global::O2CardsApp.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat = global::O2CardsApp.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::O2CardsApp.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dark = global::O2CardsApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::O2CardsApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::O2CardsApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::O2CardsApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.ThemeOverlay_AppCompat_Light = global::O2CardsApp.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionBar = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionButton = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActionMode = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ActivityChooserView = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_Borderless = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_Colored = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Button_Small = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ButtonBar = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_EditText = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ImageButton = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionButton = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_SearchView = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ListMenuView = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ListPopupWindow = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ListView = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ListView_DropDown = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ListView_Menu = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_PopupMenu = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_PopupWindow = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ProgressBar = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_RatingBar = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_RatingBar_Small = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_SearchView = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_SeekBar = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Toolbar = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::O2CardsApp.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Compat_NotificationActionContainer = global::O2CardsApp.Droid.Resource.Style.Widget_Compat_NotificationActionContainer;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Compat_NotificationActionText = global::O2CardsApp.Droid.Resource.Style.Widget_Compat_NotificationActionText;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_AppBarLayout = global::O2CardsApp.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_BottomNavigationView = global::O2CardsApp.Droid.Resource.Style.Widget_Design_BottomNavigationView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_BottomSheet_Modal = global::O2CardsApp.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_CollapsingToolbar = global::O2CardsApp.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_CoordinatorLayout = global::O2CardsApp.Droid.Resource.Style.Widget_Design_CoordinatorLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_FloatingActionButton = global::O2CardsApp.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_NavigationView = global::O2CardsApp.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::O2CardsApp.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_Snackbar = global::O2CardsApp.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_TabLayout = global::O2CardsApp.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.Widget_Design_TextInputLayout = global::O2CardsApp.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Style.collectionViewStyle = global::O2CardsApp.Droid.Resource.Style.collectionViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar = global::O2CardsApp.Droid.Resource.Styleable.ActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_background = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_backgroundSplit = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_backgroundStacked = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetEnd = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetLeft = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetRight = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetStart = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_customNavigationLayout = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_displayOptions = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_divider = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_divider;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_elevation = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_height = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_hideOnContentScroll = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_homeAsUpIndicator = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_homeLayout = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_icon = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_itemPadding = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_logo = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_logo;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_navigationMode = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_popupTheme = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_progressBarPadding = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_progressBarStyle = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_subtitle = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_subtitleTextStyle = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_title = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBar_titleTextStyle = global::O2CardsApp.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBarLayout = global::O2CardsApp.Droid.Resource.Styleable.ActionBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::O2CardsApp.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMenuItemView = global::O2CardsApp.Droid.Resource.Styleable.ActionMenuItemView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMenuItemView_android_minWidth = global::O2CardsApp.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMenuView = global::O2CardsApp.Droid.Resource.Styleable.ActionMenuView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode = global::O2CardsApp.Droid.Resource.Styleable.ActionMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_background = global::O2CardsApp.Droid.Resource.Styleable.ActionMode_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_backgroundSplit = global::O2CardsApp.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_closeItemLayout = global::O2CardsApp.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_height = global::O2CardsApp.Droid.Resource.Styleable.ActionMode_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_subtitleTextStyle = global::O2CardsApp.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActionMode_titleTextStyle = global::O2CardsApp.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActivityChooserView = global::O2CardsApp.Droid.Resource.Styleable.ActivityChooserView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::O2CardsApp.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ActivityChooserView_initialActivityCount = global::O2CardsApp.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog = global::O2CardsApp.Droid.Resource.Styleable.AlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_android_layout = global::O2CardsApp.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::O2CardsApp.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_listItemLayout = global::O2CardsApp.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_listLayout = global::O2CardsApp.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::O2CardsApp.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_showTitle = global::O2CardsApp.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::O2CardsApp.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout = global::O2CardsApp.Droid.Resource.Styleable.AppBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_android_background = global::O2CardsApp.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster = global::O2CardsApp.Droid.Resource.Styleable.AppBarLayout_android_keyboardNavigationCluster;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus = global::O2CardsApp.Droid.Resource.Styleable.AppBarLayout_android_touchscreenBlocksFocus;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_elevation = global::O2CardsApp.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_expanded = global::O2CardsApp.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayoutStates = global::O2CardsApp.Droid.Resource.Styleable.AppBarLayoutStates;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::O2CardsApp.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::O2CardsApp.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_Layout = global::O2CardsApp.Droid.Resource.Styleable.AppBarLayout_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::O2CardsApp.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::O2CardsApp.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView = global::O2CardsApp.Droid.Resource.Styleable.AppCompatImageView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView_android_src = global::O2CardsApp.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView_srcCompat = global::O2CardsApp.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView_tint = global::O2CardsApp.Droid.Resource.Styleable.AppCompatImageView_tint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatImageView_tintMode = global::O2CardsApp.Droid.Resource.Styleable.AppCompatImageView_tintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar = global::O2CardsApp.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar_android_thumb = global::O2CardsApp.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar_tickMark = global::O2CardsApp.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::O2CardsApp.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::O2CardsApp.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTextView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_android_textAppearance = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTextView_autoSizeMaxTextSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTextView_autoSizeMinTextSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizePresetSizes = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTextView_autoSizePresetSizes;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTextView_autoSizeStepGranularity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_autoSizeTextType = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTextView_autoSizeTextType;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_fontFamily = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTextView_fontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTextView_textAllCaps = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarDivider = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarSize = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarTheme = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeBackground = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_checkboxStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorAccent = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorControlActivated = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorControlNormal = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorError = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_colorError;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorPrimary = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_controlBackground = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dialogTheme = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dividerVertical = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_editTextBackground = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_editTextColor = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_editTextStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_panelBackground = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_searchViewStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_seekBarStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_spinnerStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_switchStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_toolbarStyle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_tooltipForegroundColor = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_tooltipForegroundColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_tooltipFrameBackground = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_tooltipFrameBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowActionBar = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.AppCompatTheme_windowNoTitle = global::O2CardsApp.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView = global::O2CardsApp.Droid.Resource.Styleable.BottomNavigationView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView_elevation = global::O2CardsApp.Droid.Resource.Styleable.BottomNavigationView_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView_itemBackground = global::O2CardsApp.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView_itemIconTint = global::O2CardsApp.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView_itemTextColor = global::O2CardsApp.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomNavigationView_menu = global::O2CardsApp.Droid.Resource.Styleable.BottomNavigationView_menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomSheetBehavior_Layout = global::O2CardsApp.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::O2CardsApp.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::O2CardsApp.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::O2CardsApp.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ButtonBarLayout = global::O2CardsApp.Droid.Resource.Styleable.ButtonBarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ButtonBarLayout_allowStacking = global::O2CardsApp.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView = global::O2CardsApp.Droid.Resource.Styleable.CardView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_android_minHeight = global::O2CardsApp.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_android_minWidth = global::O2CardsApp.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardBackgroundColor = global::O2CardsApp.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardCornerRadius = global::O2CardsApp.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardElevation = global::O2CardsApp.Droid.Resource.Styleable.CardView_cardElevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardMaxElevation = global::O2CardsApp.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardPreventCornerOverlap = global::O2CardsApp.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_cardUseCompatPadding = global::O2CardsApp.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_contentPadding = global::O2CardsApp.Droid.Resource.Styleable.CardView_contentPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_contentPaddingBottom = global::O2CardsApp.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_contentPaddingLeft = global::O2CardsApp.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_contentPaddingRight = global::O2CardsApp.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CardView_contentPaddingTop = global::O2CardsApp.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout = global::O2CardsApp.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::O2CardsApp.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::O2CardsApp.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::O2CardsApp.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::O2CardsApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::O2CardsApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::O2CardsApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::O2CardsApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::O2CardsApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::O2CardsApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::O2CardsApp.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::O2CardsApp.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::O2CardsApp.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::O2CardsApp.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_title = global::O2CardsApp.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::O2CardsApp.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::O2CardsApp.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_Layout = global::O2CardsApp.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::O2CardsApp.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::O2CardsApp.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ColorStateListItem = global::O2CardsApp.Droid.Resource.Styleable.ColorStateListItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ColorStateListItem_alpha = global::O2CardsApp.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ColorStateListItem_android_alpha = global::O2CardsApp.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ColorStateListItem_android_color = global::O2CardsApp.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton = global::O2CardsApp.Droid.Resource.Styleable.CompoundButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_android_button = global::O2CardsApp.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_buttonTint = global::O2CardsApp.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::O2CardsApp.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout = global::O2CardsApp.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_keylines = global::O2CardsApp.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::O2CardsApp.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout = global::O2CardsApp.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::O2CardsApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::O2CardsApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::O2CardsApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::O2CardsApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::O2CardsApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::O2CardsApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::O2CardsApp.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DesignTheme = global::O2CardsApp.Droid.Resource.Styleable.DesignTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::O2CardsApp.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DesignTheme_bottomSheetStyle = global::O2CardsApp.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DesignTheme_textColorError = global::O2CardsApp.Droid.Resource.Styleable.DesignTheme_textColorError;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle = global::O2CardsApp.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::O2CardsApp.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::O2CardsApp.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_barLength = global::O2CardsApp.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_color = global::O2CardsApp.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_drawableSize = global::O2CardsApp.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::O2CardsApp.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_spinBars = global::O2CardsApp.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.DrawerArrowToggle_thickness = global::O2CardsApp.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton = global::O2CardsApp.Droid.Resource.Styleable.FloatingActionButton;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_backgroundTint = global::O2CardsApp.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::O2CardsApp.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_borderWidth = global::O2CardsApp.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_elevation = global::O2CardsApp.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_fabSize = global::O2CardsApp.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::O2CardsApp.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_rippleColor = global::O2CardsApp.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_useCompatPadding = global::O2CardsApp.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::O2CardsApp.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::O2CardsApp.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily = global::O2CardsApp.Droid.Resource.Styleable.FontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderAuthority = global::O2CardsApp.Droid.Resource.Styleable.FontFamily_fontProviderAuthority;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderCerts = global::O2CardsApp.Droid.Resource.Styleable.FontFamily_fontProviderCerts;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderFetchStrategy = global::O2CardsApp.Droid.Resource.Styleable.FontFamily_fontProviderFetchStrategy;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderFetchTimeout = global::O2CardsApp.Droid.Resource.Styleable.FontFamily_fontProviderFetchTimeout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderPackage = global::O2CardsApp.Droid.Resource.Styleable.FontFamily_fontProviderPackage;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamily_fontProviderQuery = global::O2CardsApp.Droid.Resource.Styleable.FontFamily_fontProviderQuery;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont = global::O2CardsApp.Droid.Resource.Styleable.FontFamilyFont;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_android_font = global::O2CardsApp.Droid.Resource.Styleable.FontFamilyFont_android_font;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_android_fontStyle = global::O2CardsApp.Droid.Resource.Styleable.FontFamilyFont_android_fontStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_android_fontWeight = global::O2CardsApp.Droid.Resource.Styleable.FontFamilyFont_android_fontWeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_font = global::O2CardsApp.Droid.Resource.Styleable.FontFamilyFont_font;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_fontStyle = global::O2CardsApp.Droid.Resource.Styleable.FontFamilyFont_fontStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.FontFamilyFont_fontWeight = global::O2CardsApp.Droid.Resource.Styleable.FontFamilyFont_fontWeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ForegroundLinearLayout = global::O2CardsApp.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::O2CardsApp.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::O2CardsApp.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::O2CardsApp.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat = global::O2CardsApp.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::O2CardsApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::O2CardsApp.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_gravity = global::O2CardsApp.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_orientation = global::O2CardsApp.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::O2CardsApp.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_divider = global::O2CardsApp.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::O2CardsApp.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::O2CardsApp.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_showDividers = global::O2CardsApp.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout = global::O2CardsApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::O2CardsApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::O2CardsApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::O2CardsApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::O2CardsApp.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ListPopupWindow = global::O2CardsApp.Droid.Resource.Styleable.ListPopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::O2CardsApp.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::O2CardsApp.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup = global::O2CardsApp.Droid.Resource.Styleable.MenuGroup;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_checkableBehavior = global::O2CardsApp.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_enabled = global::O2CardsApp.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_id = global::O2CardsApp.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_menuCategory = global::O2CardsApp.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_orderInCategory = global::O2CardsApp.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuGroup_android_visible = global::O2CardsApp.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem = global::O2CardsApp.Droid.Resource.Styleable.MenuItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_actionLayout = global::O2CardsApp.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_actionProviderClass = global::O2CardsApp.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_actionViewClass = global::O2CardsApp.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_alphabeticModifiers = global::O2CardsApp.Droid.Resource.Styleable.MenuItem_alphabeticModifiers;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::O2CardsApp.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_checkable = global::O2CardsApp.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_checked = global::O2CardsApp.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_enabled = global::O2CardsApp.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_icon = global::O2CardsApp.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_id = global::O2CardsApp.Droid.Resource.Styleable.MenuItem_android_id;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_menuCategory = global::O2CardsApp.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_numericShortcut = global::O2CardsApp.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_onClick = global::O2CardsApp.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_orderInCategory = global::O2CardsApp.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_title = global::O2CardsApp.Droid.Resource.Styleable.MenuItem_android_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_titleCondensed = global::O2CardsApp.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_android_visible = global::O2CardsApp.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_contentDescription = global::O2CardsApp.Droid.Resource.Styleable.MenuItem_contentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_iconTint = global::O2CardsApp.Droid.Resource.Styleable.MenuItem_iconTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_iconTintMode = global::O2CardsApp.Droid.Resource.Styleable.MenuItem_iconTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_numericModifiers = global::O2CardsApp.Droid.Resource.Styleable.MenuItem_numericModifiers;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_showAsAction = global::O2CardsApp.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuItem_tooltipText = global::O2CardsApp.Droid.Resource.Styleable.MenuItem_tooltipText;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView = global::O2CardsApp.Droid.Resource.Styleable.MenuView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_headerBackground = global::O2CardsApp.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_horizontalDivider = global::O2CardsApp.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_itemBackground = global::O2CardsApp.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::O2CardsApp.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_itemTextAppearance = global::O2CardsApp.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_verticalDivider = global::O2CardsApp.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_android_windowAnimationStyle = global::O2CardsApp.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_preserveIconSpacing = global::O2CardsApp.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.MenuView_subMenuArrow = global::O2CardsApp.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView = global::O2CardsApp.Droid.Resource.Styleable.NavigationView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_android_background = global::O2CardsApp.Droid.Resource.Styleable.NavigationView_android_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::O2CardsApp.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_android_maxWidth = global::O2CardsApp.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_elevation = global::O2CardsApp.Droid.Resource.Styleable.NavigationView_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_headerLayout = global::O2CardsApp.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_itemBackground = global::O2CardsApp.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_itemIconTint = global::O2CardsApp.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_itemTextAppearance = global::O2CardsApp.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_itemTextColor = global::O2CardsApp.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.NavigationView_menu = global::O2CardsApp.Droid.Resource.Styleable.NavigationView_menu;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindow = global::O2CardsApp.Droid.Resource.Styleable.PopupWindow;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::O2CardsApp.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindow_android_popupBackground = global::O2CardsApp.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindow_overlapAnchor = global::O2CardsApp.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindowBackgroundState = global::O2CardsApp.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::O2CardsApp.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecycleListView = global::O2CardsApp.Droid.Resource.Styleable.RecycleListView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::O2CardsApp.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::O2CardsApp.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView = global::O2CardsApp.Droid.Resource.Styleable.RecyclerView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_android_descendantFocusability = global::O2CardsApp.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_android_orientation = global::O2CardsApp.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_fastScrollEnabled = global::O2CardsApp.Droid.Resource.Styleable.RecyclerView_fastScrollEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable = global::O2CardsApp.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalThumbDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable = global::O2CardsApp.Droid.Resource.Styleable.RecyclerView_fastScrollHorizontalTrackDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable = global::O2CardsApp.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalThumbDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable = global::O2CardsApp.Droid.Resource.Styleable.RecyclerView_fastScrollVerticalTrackDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_layoutManager = global::O2CardsApp.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_reverseLayout = global::O2CardsApp.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_spanCount = global::O2CardsApp.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.RecyclerView_stackFromEnd = global::O2CardsApp.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrimInsetsFrameLayout = global::O2CardsApp.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::O2CardsApp.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrollingViewBehavior_Layout = global::O2CardsApp.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::O2CardsApp.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView = global::O2CardsApp.Droid.Resource.Styleable.SearchView;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_android_focusable = global::O2CardsApp.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_android_imeOptions = global::O2CardsApp.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_android_inputType = global::O2CardsApp.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_android_maxWidth = global::O2CardsApp.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_closeIcon = global::O2CardsApp.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_commitIcon = global::O2CardsApp.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_defaultQueryHint = global::O2CardsApp.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_goIcon = global::O2CardsApp.Droid.Resource.Styleable.SearchView_goIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_iconifiedByDefault = global::O2CardsApp.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_layout = global::O2CardsApp.Droid.Resource.Styleable.SearchView_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_queryBackground = global::O2CardsApp.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_queryHint = global::O2CardsApp.Droid.Resource.Styleable.SearchView_queryHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_searchHintIcon = global::O2CardsApp.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_searchIcon = global::O2CardsApp.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_submitBackground = global::O2CardsApp.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_suggestionRowLayout = global::O2CardsApp.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SearchView_voiceIcon = global::O2CardsApp.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SnackbarLayout = global::O2CardsApp.Droid.Resource.Styleable.SnackbarLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SnackbarLayout_android_maxWidth = global::O2CardsApp.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SnackbarLayout_elevation = global::O2CardsApp.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::O2CardsApp.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner = global::O2CardsApp.Droid.Resource.Styleable.Spinner;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_android_dropDownWidth = global::O2CardsApp.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_android_entries = global::O2CardsApp.Droid.Resource.Styleable.Spinner_android_entries;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_android_popupBackground = global::O2CardsApp.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_android_prompt = global::O2CardsApp.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Spinner_popupTheme = global::O2CardsApp.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat = global::O2CardsApp.Droid.Resource.Styleable.SwitchCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_android_textOff = global::O2CardsApp.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_android_textOn = global::O2CardsApp.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_android_thumb = global::O2CardsApp.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_showText = global::O2CardsApp.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_splitTrack = global::O2CardsApp.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_switchMinWidth = global::O2CardsApp.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_switchPadding = global::O2CardsApp.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_switchTextAppearance = global::O2CardsApp.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_thumbTextPadding = global::O2CardsApp.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_thumbTint = global::O2CardsApp.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_thumbTintMode = global::O2CardsApp.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_track = global::O2CardsApp.Droid.Resource.Styleable.SwitchCompat_track;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_trackTint = global::O2CardsApp.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.SwitchCompat_trackTintMode = global::O2CardsApp.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabItem = global::O2CardsApp.Droid.Resource.Styleable.TabItem;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabItem_android_icon = global::O2CardsApp.Droid.Resource.Styleable.TabItem_android_icon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabItem_android_layout = global::O2CardsApp.Droid.Resource.Styleable.TabItem_android_layout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabItem_android_text = global::O2CardsApp.Droid.Resource.Styleable.TabItem_android_text;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout = global::O2CardsApp.Droid.Resource.Styleable.TabLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabBackground = global::O2CardsApp.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabContentStart = global::O2CardsApp.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabGravity = global::O2CardsApp.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabIndicatorColor = global::O2CardsApp.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabIndicatorHeight = global::O2CardsApp.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabMaxWidth = global::O2CardsApp.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabMinWidth = global::O2CardsApp.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabMode = global::O2CardsApp.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabPadding = global::O2CardsApp.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabPaddingBottom = global::O2CardsApp.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabPaddingEnd = global::O2CardsApp.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabPaddingStart = global::O2CardsApp.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabPaddingTop = global::O2CardsApp.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabSelectedTextColor = global::O2CardsApp.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabTextAppearance = global::O2CardsApp.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TabLayout_tabTextColor = global::O2CardsApp.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance = global::O2CardsApp.Droid.Resource.Styleable.TextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_fontFamily = global::O2CardsApp.Droid.Resource.Styleable.TextAppearance_android_fontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_shadowColor = global::O2CardsApp.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_shadowDx = global::O2CardsApp.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_shadowDy = global::O2CardsApp.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_shadowRadius = global::O2CardsApp.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textColor = global::O2CardsApp.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textColorHint = global::O2CardsApp.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textColorLink = global::O2CardsApp.Droid.Resource.Styleable.TextAppearance_android_textColorLink;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textSize = global::O2CardsApp.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_textStyle = global::O2CardsApp.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_android_typeface = global::O2CardsApp.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_fontFamily = global::O2CardsApp.Droid.Resource.Styleable.TextAppearance_fontFamily;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextAppearance_textAllCaps = global::O2CardsApp.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout = global::O2CardsApp.Droid.Resource.Styleable.TextInputLayout;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_android_hint = global::O2CardsApp.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_android_textColorHint = global::O2CardsApp.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_counterEnabled = global::O2CardsApp.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_counterMaxLength = global::O2CardsApp.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::O2CardsApp.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_counterTextAppearance = global::O2CardsApp.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_errorEnabled = global::O2CardsApp.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_errorTextAppearance = global::O2CardsApp.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::O2CardsApp.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_hintEnabled = global::O2CardsApp.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_hintTextAppearance = global::O2CardsApp.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::O2CardsApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::O2CardsApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::O2CardsApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_passwordToggleTint = global::O2CardsApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::O2CardsApp.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar = global::O2CardsApp.Droid.Resource.Styleable.Toolbar;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_android_gravity = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_android_minHeight = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_buttonGravity = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_collapseContentDescription = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_collapseIcon = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetEnd = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetLeft = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetRight = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetStart = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_logo = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_logo;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_logoDescription = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_maxButtonHeight = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_navigationContentDescription = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_navigationIcon = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_popupTheme = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_subtitle = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_subtitleTextAppearance = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_subtitleTextColor = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_title = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_title;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMargin = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMarginBottom = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMarginEnd = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMarginStart = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMarginTop = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleMargins = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleTextAppearance = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.Toolbar_titleTextColor = global::O2CardsApp.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View = global::O2CardsApp.Droid.Resource.Styleable.View;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_android_focusable = global::O2CardsApp.Droid.Resource.Styleable.View_android_focusable;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_android_theme = global::O2CardsApp.Droid.Resource.Styleable.View_android_theme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_paddingEnd = global::O2CardsApp.Droid.Resource.Styleable.View_paddingEnd;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_paddingStart = global::O2CardsApp.Droid.Resource.Styleable.View_paddingStart;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.View_theme = global::O2CardsApp.Droid.Resource.Styleable.View_theme;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewBackgroundHelper = global::O2CardsApp.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewBackgroundHelper_android_background = global::O2CardsApp.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::O2CardsApp.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::O2CardsApp.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat = global::O2CardsApp.Droid.Resource.Styleable.ViewStubCompat;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_id = global::O2CardsApp.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::O2CardsApp.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Xamarin.Forms.Platform.Android.Resource.Styleable.ViewStubCompat_android_layout = global::O2CardsApp.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 			global::ZXing.Mobile.Resource.Id.contentFrame = global::O2CardsApp.Droid.Resource.Id.contentFrame;
 			global::ZXing.Mobile.Resource.Layout.zxingscanneractivitylayout = global::O2CardsApp.Droid.Resource.Layout.zxingscanneractivitylayout;
 			global::ZXing.Mobile.Resource.Layout.zxingscannerfragmentlayout = global::O2CardsApp.Droid.Resource.Layout.zxingscannerfragmentlayout;
@@ -179,10 +2170,22 @@ namespace O2CardsApp.Droid
 			public const int design_snackbar_out = 2131034125;
 			
 			// aapt resource value: 0x7f05000e
-			public const int tooltip_enter = 2131034126;
+			public const int EnterFromLeft = 2131034126;
 			
 			// aapt resource value: 0x7f05000f
-			public const int tooltip_exit = 2131034127;
+			public const int EnterFromRight = 2131034127;
+			
+			// aapt resource value: 0x7f050010
+			public const int ExitToLeft = 2131034128;
+			
+			// aapt resource value: 0x7f050011
+			public const int ExitToRight = 2131034129;
+			
+			// aapt resource value: 0x7f050012
+			public const int tooltip_enter = 2131034130;
+			
+			// aapt resource value: 0x7f050013
+			public const int tooltip_exit = 2131034131;
 			
 			static Animation()
 			{
@@ -1689,497 +3692,497 @@ namespace O2CardsApp.Droid
 		public partial class Dimension
 		{
 			
-			// aapt resource value: 0x7f09001b
-			public const int abc_action_bar_content_inset_material = 2131296283;
+			// aapt resource value: 0x7f0a001b
+			public const int abc_action_bar_content_inset_material = 2131361819;
 			
-			// aapt resource value: 0x7f09001c
-			public const int abc_action_bar_content_inset_with_nav = 2131296284;
+			// aapt resource value: 0x7f0a001c
+			public const int abc_action_bar_content_inset_with_nav = 2131361820;
 			
-			// aapt resource value: 0x7f090010
-			public const int abc_action_bar_default_height_material = 2131296272;
+			// aapt resource value: 0x7f0a0010
+			public const int abc_action_bar_default_height_material = 2131361808;
 			
-			// aapt resource value: 0x7f09001d
-			public const int abc_action_bar_default_padding_end_material = 2131296285;
+			// aapt resource value: 0x7f0a001d
+			public const int abc_action_bar_default_padding_end_material = 2131361821;
 			
-			// aapt resource value: 0x7f09001e
-			public const int abc_action_bar_default_padding_start_material = 2131296286;
+			// aapt resource value: 0x7f0a001e
+			public const int abc_action_bar_default_padding_start_material = 2131361822;
 			
-			// aapt resource value: 0x7f090020
-			public const int abc_action_bar_elevation_material = 2131296288;
+			// aapt resource value: 0x7f0a0020
+			public const int abc_action_bar_elevation_material = 2131361824;
 			
-			// aapt resource value: 0x7f090021
-			public const int abc_action_bar_icon_vertical_padding_material = 2131296289;
+			// aapt resource value: 0x7f0a0021
+			public const int abc_action_bar_icon_vertical_padding_material = 2131361825;
 			
-			// aapt resource value: 0x7f090022
-			public const int abc_action_bar_overflow_padding_end_material = 2131296290;
+			// aapt resource value: 0x7f0a0022
+			public const int abc_action_bar_overflow_padding_end_material = 2131361826;
 			
-			// aapt resource value: 0x7f090023
-			public const int abc_action_bar_overflow_padding_start_material = 2131296291;
+			// aapt resource value: 0x7f0a0023
+			public const int abc_action_bar_overflow_padding_start_material = 2131361827;
 			
-			// aapt resource value: 0x7f090011
-			public const int abc_action_bar_progress_bar_size = 2131296273;
+			// aapt resource value: 0x7f0a0011
+			public const int abc_action_bar_progress_bar_size = 2131361809;
 			
-			// aapt resource value: 0x7f090024
-			public const int abc_action_bar_stacked_max_height = 2131296292;
+			// aapt resource value: 0x7f0a0024
+			public const int abc_action_bar_stacked_max_height = 2131361828;
 			
-			// aapt resource value: 0x7f090025
-			public const int abc_action_bar_stacked_tab_max_width = 2131296293;
+			// aapt resource value: 0x7f0a0025
+			public const int abc_action_bar_stacked_tab_max_width = 2131361829;
 			
-			// aapt resource value: 0x7f090026
-			public const int abc_action_bar_subtitle_bottom_margin_material = 2131296294;
+			// aapt resource value: 0x7f0a0026
+			public const int abc_action_bar_subtitle_bottom_margin_material = 2131361830;
 			
-			// aapt resource value: 0x7f090027
-			public const int abc_action_bar_subtitle_top_margin_material = 2131296295;
+			// aapt resource value: 0x7f0a0027
+			public const int abc_action_bar_subtitle_top_margin_material = 2131361831;
 			
-			// aapt resource value: 0x7f090028
-			public const int abc_action_button_min_height_material = 2131296296;
+			// aapt resource value: 0x7f0a0028
+			public const int abc_action_button_min_height_material = 2131361832;
 			
-			// aapt resource value: 0x7f090029
-			public const int abc_action_button_min_width_material = 2131296297;
+			// aapt resource value: 0x7f0a0029
+			public const int abc_action_button_min_width_material = 2131361833;
 			
-			// aapt resource value: 0x7f09002a
-			public const int abc_action_button_min_width_overflow_material = 2131296298;
+			// aapt resource value: 0x7f0a002a
+			public const int abc_action_button_min_width_overflow_material = 2131361834;
 			
-			// aapt resource value: 0x7f09000f
-			public const int abc_alert_dialog_button_bar_height = 2131296271;
+			// aapt resource value: 0x7f0a000f
+			public const int abc_alert_dialog_button_bar_height = 2131361807;
 			
-			// aapt resource value: 0x7f09002b
-			public const int abc_button_inset_horizontal_material = 2131296299;
+			// aapt resource value: 0x7f0a002b
+			public const int abc_button_inset_horizontal_material = 2131361835;
 			
-			// aapt resource value: 0x7f09002c
-			public const int abc_button_inset_vertical_material = 2131296300;
+			// aapt resource value: 0x7f0a002c
+			public const int abc_button_inset_vertical_material = 2131361836;
 			
-			// aapt resource value: 0x7f09002d
-			public const int abc_button_padding_horizontal_material = 2131296301;
+			// aapt resource value: 0x7f0a002d
+			public const int abc_button_padding_horizontal_material = 2131361837;
 			
-			// aapt resource value: 0x7f09002e
-			public const int abc_button_padding_vertical_material = 2131296302;
+			// aapt resource value: 0x7f0a002e
+			public const int abc_button_padding_vertical_material = 2131361838;
 			
-			// aapt resource value: 0x7f09002f
-			public const int abc_cascading_menus_min_smallest_width = 2131296303;
+			// aapt resource value: 0x7f0a002f
+			public const int abc_cascading_menus_min_smallest_width = 2131361839;
 			
-			// aapt resource value: 0x7f090014
-			public const int abc_config_prefDialogWidth = 2131296276;
+			// aapt resource value: 0x7f0a0014
+			public const int abc_config_prefDialogWidth = 2131361812;
 			
-			// aapt resource value: 0x7f090030
-			public const int abc_control_corner_material = 2131296304;
+			// aapt resource value: 0x7f0a0030
+			public const int abc_control_corner_material = 2131361840;
 			
-			// aapt resource value: 0x7f090031
-			public const int abc_control_inset_material = 2131296305;
+			// aapt resource value: 0x7f0a0031
+			public const int abc_control_inset_material = 2131361841;
 			
-			// aapt resource value: 0x7f090032
-			public const int abc_control_padding_material = 2131296306;
+			// aapt resource value: 0x7f0a0032
+			public const int abc_control_padding_material = 2131361842;
 			
-			// aapt resource value: 0x7f090015
-			public const int abc_dialog_fixed_height_major = 2131296277;
+			// aapt resource value: 0x7f0a0015
+			public const int abc_dialog_fixed_height_major = 2131361813;
 			
-			// aapt resource value: 0x7f090016
-			public const int abc_dialog_fixed_height_minor = 2131296278;
+			// aapt resource value: 0x7f0a0016
+			public const int abc_dialog_fixed_height_minor = 2131361814;
 			
-			// aapt resource value: 0x7f090017
-			public const int abc_dialog_fixed_width_major = 2131296279;
+			// aapt resource value: 0x7f0a0017
+			public const int abc_dialog_fixed_width_major = 2131361815;
 			
-			// aapt resource value: 0x7f090018
-			public const int abc_dialog_fixed_width_minor = 2131296280;
+			// aapt resource value: 0x7f0a0018
+			public const int abc_dialog_fixed_width_minor = 2131361816;
 			
-			// aapt resource value: 0x7f090033
-			public const int abc_dialog_list_padding_bottom_no_buttons = 2131296307;
+			// aapt resource value: 0x7f0a0033
+			public const int abc_dialog_list_padding_bottom_no_buttons = 2131361843;
 			
-			// aapt resource value: 0x7f090034
-			public const int abc_dialog_list_padding_top_no_title = 2131296308;
+			// aapt resource value: 0x7f0a0034
+			public const int abc_dialog_list_padding_top_no_title = 2131361844;
 			
-			// aapt resource value: 0x7f090019
-			public const int abc_dialog_min_width_major = 2131296281;
+			// aapt resource value: 0x7f0a0019
+			public const int abc_dialog_min_width_major = 2131361817;
 			
-			// aapt resource value: 0x7f09001a
-			public const int abc_dialog_min_width_minor = 2131296282;
+			// aapt resource value: 0x7f0a001a
+			public const int abc_dialog_min_width_minor = 2131361818;
 			
-			// aapt resource value: 0x7f090035
-			public const int abc_dialog_padding_material = 2131296309;
+			// aapt resource value: 0x7f0a0035
+			public const int abc_dialog_padding_material = 2131361845;
 			
-			// aapt resource value: 0x7f090036
-			public const int abc_dialog_padding_top_material = 2131296310;
+			// aapt resource value: 0x7f0a0036
+			public const int abc_dialog_padding_top_material = 2131361846;
 			
-			// aapt resource value: 0x7f090037
-			public const int abc_dialog_title_divider_material = 2131296311;
+			// aapt resource value: 0x7f0a0037
+			public const int abc_dialog_title_divider_material = 2131361847;
 			
-			// aapt resource value: 0x7f090038
-			public const int abc_disabled_alpha_material_dark = 2131296312;
+			// aapt resource value: 0x7f0a0038
+			public const int abc_disabled_alpha_material_dark = 2131361848;
 			
-			// aapt resource value: 0x7f090039
-			public const int abc_disabled_alpha_material_light = 2131296313;
+			// aapt resource value: 0x7f0a0039
+			public const int abc_disabled_alpha_material_light = 2131361849;
 			
-			// aapt resource value: 0x7f09003a
-			public const int abc_dropdownitem_icon_width = 2131296314;
+			// aapt resource value: 0x7f0a003a
+			public const int abc_dropdownitem_icon_width = 2131361850;
 			
-			// aapt resource value: 0x7f09003b
-			public const int abc_dropdownitem_text_padding_left = 2131296315;
+			// aapt resource value: 0x7f0a003b
+			public const int abc_dropdownitem_text_padding_left = 2131361851;
 			
-			// aapt resource value: 0x7f09003c
-			public const int abc_dropdownitem_text_padding_right = 2131296316;
+			// aapt resource value: 0x7f0a003c
+			public const int abc_dropdownitem_text_padding_right = 2131361852;
 			
-			// aapt resource value: 0x7f09003d
-			public const int abc_edit_text_inset_bottom_material = 2131296317;
+			// aapt resource value: 0x7f0a003d
+			public const int abc_edit_text_inset_bottom_material = 2131361853;
 			
-			// aapt resource value: 0x7f09003e
-			public const int abc_edit_text_inset_horizontal_material = 2131296318;
+			// aapt resource value: 0x7f0a003e
+			public const int abc_edit_text_inset_horizontal_material = 2131361854;
 			
-			// aapt resource value: 0x7f09003f
-			public const int abc_edit_text_inset_top_material = 2131296319;
+			// aapt resource value: 0x7f0a003f
+			public const int abc_edit_text_inset_top_material = 2131361855;
 			
-			// aapt resource value: 0x7f090040
-			public const int abc_floating_window_z = 2131296320;
+			// aapt resource value: 0x7f0a0040
+			public const int abc_floating_window_z = 2131361856;
 			
-			// aapt resource value: 0x7f090041
-			public const int abc_list_item_padding_horizontal_material = 2131296321;
+			// aapt resource value: 0x7f0a0041
+			public const int abc_list_item_padding_horizontal_material = 2131361857;
 			
-			// aapt resource value: 0x7f090042
-			public const int abc_panel_menu_list_width = 2131296322;
+			// aapt resource value: 0x7f0a0042
+			public const int abc_panel_menu_list_width = 2131361858;
 			
-			// aapt resource value: 0x7f090043
-			public const int abc_progress_bar_height_material = 2131296323;
+			// aapt resource value: 0x7f0a0043
+			public const int abc_progress_bar_height_material = 2131361859;
 			
-			// aapt resource value: 0x7f090044
-			public const int abc_search_view_preferred_height = 2131296324;
+			// aapt resource value: 0x7f0a0044
+			public const int abc_search_view_preferred_height = 2131361860;
 			
-			// aapt resource value: 0x7f090045
-			public const int abc_search_view_preferred_width = 2131296325;
+			// aapt resource value: 0x7f0a0045
+			public const int abc_search_view_preferred_width = 2131361861;
 			
-			// aapt resource value: 0x7f090046
-			public const int abc_seekbar_track_background_height_material = 2131296326;
+			// aapt resource value: 0x7f0a0046
+			public const int abc_seekbar_track_background_height_material = 2131361862;
 			
-			// aapt resource value: 0x7f090047
-			public const int abc_seekbar_track_progress_height_material = 2131296327;
+			// aapt resource value: 0x7f0a0047
+			public const int abc_seekbar_track_progress_height_material = 2131361863;
 			
-			// aapt resource value: 0x7f090048
-			public const int abc_select_dialog_padding_start_material = 2131296328;
+			// aapt resource value: 0x7f0a0048
+			public const int abc_select_dialog_padding_start_material = 2131361864;
 			
-			// aapt resource value: 0x7f09001f
-			public const int abc_switch_padding = 2131296287;
+			// aapt resource value: 0x7f0a001f
+			public const int abc_switch_padding = 2131361823;
 			
-			// aapt resource value: 0x7f090049
-			public const int abc_text_size_body_1_material = 2131296329;
+			// aapt resource value: 0x7f0a0049
+			public const int abc_text_size_body_1_material = 2131361865;
 			
-			// aapt resource value: 0x7f09004a
-			public const int abc_text_size_body_2_material = 2131296330;
+			// aapt resource value: 0x7f0a004a
+			public const int abc_text_size_body_2_material = 2131361866;
 			
-			// aapt resource value: 0x7f09004b
-			public const int abc_text_size_button_material = 2131296331;
+			// aapt resource value: 0x7f0a004b
+			public const int abc_text_size_button_material = 2131361867;
 			
-			// aapt resource value: 0x7f09004c
-			public const int abc_text_size_caption_material = 2131296332;
+			// aapt resource value: 0x7f0a004c
+			public const int abc_text_size_caption_material = 2131361868;
 			
-			// aapt resource value: 0x7f09004d
-			public const int abc_text_size_display_1_material = 2131296333;
+			// aapt resource value: 0x7f0a004d
+			public const int abc_text_size_display_1_material = 2131361869;
 			
-			// aapt resource value: 0x7f09004e
-			public const int abc_text_size_display_2_material = 2131296334;
+			// aapt resource value: 0x7f0a004e
+			public const int abc_text_size_display_2_material = 2131361870;
 			
-			// aapt resource value: 0x7f09004f
-			public const int abc_text_size_display_3_material = 2131296335;
+			// aapt resource value: 0x7f0a004f
+			public const int abc_text_size_display_3_material = 2131361871;
 			
-			// aapt resource value: 0x7f090050
-			public const int abc_text_size_display_4_material = 2131296336;
+			// aapt resource value: 0x7f0a0050
+			public const int abc_text_size_display_4_material = 2131361872;
 			
-			// aapt resource value: 0x7f090051
-			public const int abc_text_size_headline_material = 2131296337;
+			// aapt resource value: 0x7f0a0051
+			public const int abc_text_size_headline_material = 2131361873;
 			
-			// aapt resource value: 0x7f090052
-			public const int abc_text_size_large_material = 2131296338;
+			// aapt resource value: 0x7f0a0052
+			public const int abc_text_size_large_material = 2131361874;
 			
-			// aapt resource value: 0x7f090053
-			public const int abc_text_size_medium_material = 2131296339;
+			// aapt resource value: 0x7f0a0053
+			public const int abc_text_size_medium_material = 2131361875;
 			
-			// aapt resource value: 0x7f090054
-			public const int abc_text_size_menu_header_material = 2131296340;
+			// aapt resource value: 0x7f0a0054
+			public const int abc_text_size_menu_header_material = 2131361876;
 			
-			// aapt resource value: 0x7f090055
-			public const int abc_text_size_menu_material = 2131296341;
+			// aapt resource value: 0x7f0a0055
+			public const int abc_text_size_menu_material = 2131361877;
 			
-			// aapt resource value: 0x7f090056
-			public const int abc_text_size_small_material = 2131296342;
+			// aapt resource value: 0x7f0a0056
+			public const int abc_text_size_small_material = 2131361878;
 			
-			// aapt resource value: 0x7f090057
-			public const int abc_text_size_subhead_material = 2131296343;
+			// aapt resource value: 0x7f0a0057
+			public const int abc_text_size_subhead_material = 2131361879;
 			
-			// aapt resource value: 0x7f090012
-			public const int abc_text_size_subtitle_material_toolbar = 2131296274;
+			// aapt resource value: 0x7f0a0012
+			public const int abc_text_size_subtitle_material_toolbar = 2131361810;
 			
-			// aapt resource value: 0x7f090058
-			public const int abc_text_size_title_material = 2131296344;
+			// aapt resource value: 0x7f0a0058
+			public const int abc_text_size_title_material = 2131361880;
 			
-			// aapt resource value: 0x7f090013
-			public const int abc_text_size_title_material_toolbar = 2131296275;
+			// aapt resource value: 0x7f0a0013
+			public const int abc_text_size_title_material_toolbar = 2131361811;
 			
-			// aapt resource value: 0x7f09000c
-			public const int cardview_compat_inset_shadow = 2131296268;
+			// aapt resource value: 0x7f0a000c
+			public const int cardview_compat_inset_shadow = 2131361804;
 			
-			// aapt resource value: 0x7f09000d
-			public const int cardview_default_elevation = 2131296269;
+			// aapt resource value: 0x7f0a000d
+			public const int cardview_default_elevation = 2131361805;
 			
-			// aapt resource value: 0x7f09000e
-			public const int cardview_default_radius = 2131296270;
+			// aapt resource value: 0x7f0a000e
+			public const int cardview_default_radius = 2131361806;
 			
-			// aapt resource value: 0x7f090094
-			public const int compat_button_inset_horizontal_material = 2131296404;
+			// aapt resource value: 0x7f0a0094
+			public const int compat_button_inset_horizontal_material = 2131361940;
 			
-			// aapt resource value: 0x7f090095
-			public const int compat_button_inset_vertical_material = 2131296405;
+			// aapt resource value: 0x7f0a0095
+			public const int compat_button_inset_vertical_material = 2131361941;
 			
-			// aapt resource value: 0x7f090096
-			public const int compat_button_padding_horizontal_material = 2131296406;
+			// aapt resource value: 0x7f0a0096
+			public const int compat_button_padding_horizontal_material = 2131361942;
 			
-			// aapt resource value: 0x7f090097
-			public const int compat_button_padding_vertical_material = 2131296407;
+			// aapt resource value: 0x7f0a0097
+			public const int compat_button_padding_vertical_material = 2131361943;
 			
-			// aapt resource value: 0x7f090098
-			public const int compat_control_corner_material = 2131296408;
+			// aapt resource value: 0x7f0a0098
+			public const int compat_control_corner_material = 2131361944;
 			
-			// aapt resource value: 0x7f090072
-			public const int design_appbar_elevation = 2131296370;
+			// aapt resource value: 0x7f0a0072
+			public const int design_appbar_elevation = 2131361906;
 			
-			// aapt resource value: 0x7f090073
-			public const int design_bottom_navigation_active_item_max_width = 2131296371;
+			// aapt resource value: 0x7f0a0073
+			public const int design_bottom_navigation_active_item_max_width = 2131361907;
 			
-			// aapt resource value: 0x7f090074
-			public const int design_bottom_navigation_active_text_size = 2131296372;
+			// aapt resource value: 0x7f0a0074
+			public const int design_bottom_navigation_active_text_size = 2131361908;
 			
-			// aapt resource value: 0x7f090075
-			public const int design_bottom_navigation_elevation = 2131296373;
+			// aapt resource value: 0x7f0a0075
+			public const int design_bottom_navigation_elevation = 2131361909;
 			
-			// aapt resource value: 0x7f090076
-			public const int design_bottom_navigation_height = 2131296374;
+			// aapt resource value: 0x7f0a0076
+			public const int design_bottom_navigation_height = 2131361910;
 			
-			// aapt resource value: 0x7f090077
-			public const int design_bottom_navigation_item_max_width = 2131296375;
+			// aapt resource value: 0x7f0a0077
+			public const int design_bottom_navigation_item_max_width = 2131361911;
 			
-			// aapt resource value: 0x7f090078
-			public const int design_bottom_navigation_item_min_width = 2131296376;
+			// aapt resource value: 0x7f0a0078
+			public const int design_bottom_navigation_item_min_width = 2131361912;
 			
-			// aapt resource value: 0x7f090079
-			public const int design_bottom_navigation_margin = 2131296377;
+			// aapt resource value: 0x7f0a0079
+			public const int design_bottom_navigation_margin = 2131361913;
 			
-			// aapt resource value: 0x7f09007a
-			public const int design_bottom_navigation_shadow_height = 2131296378;
+			// aapt resource value: 0x7f0a007a
+			public const int design_bottom_navigation_shadow_height = 2131361914;
 			
-			// aapt resource value: 0x7f09007b
-			public const int design_bottom_navigation_text_size = 2131296379;
+			// aapt resource value: 0x7f0a007b
+			public const int design_bottom_navigation_text_size = 2131361915;
 			
-			// aapt resource value: 0x7f09007c
-			public const int design_bottom_sheet_modal_elevation = 2131296380;
+			// aapt resource value: 0x7f0a007c
+			public const int design_bottom_sheet_modal_elevation = 2131361916;
 			
-			// aapt resource value: 0x7f09007d
-			public const int design_bottom_sheet_peek_height_min = 2131296381;
+			// aapt resource value: 0x7f0a007d
+			public const int design_bottom_sheet_peek_height_min = 2131361917;
 			
-			// aapt resource value: 0x7f09007e
-			public const int design_fab_border_width = 2131296382;
+			// aapt resource value: 0x7f0a007e
+			public const int design_fab_border_width = 2131361918;
 			
-			// aapt resource value: 0x7f09007f
-			public const int design_fab_elevation = 2131296383;
+			// aapt resource value: 0x7f0a007f
+			public const int design_fab_elevation = 2131361919;
 			
-			// aapt resource value: 0x7f090080
-			public const int design_fab_image_size = 2131296384;
+			// aapt resource value: 0x7f0a0080
+			public const int design_fab_image_size = 2131361920;
 			
-			// aapt resource value: 0x7f090081
-			public const int design_fab_size_mini = 2131296385;
+			// aapt resource value: 0x7f0a0081
+			public const int design_fab_size_mini = 2131361921;
 			
-			// aapt resource value: 0x7f090082
-			public const int design_fab_size_normal = 2131296386;
+			// aapt resource value: 0x7f0a0082
+			public const int design_fab_size_normal = 2131361922;
 			
-			// aapt resource value: 0x7f090083
-			public const int design_fab_translation_z_pressed = 2131296387;
+			// aapt resource value: 0x7f0a0083
+			public const int design_fab_translation_z_pressed = 2131361923;
 			
-			// aapt resource value: 0x7f090084
-			public const int design_navigation_elevation = 2131296388;
+			// aapt resource value: 0x7f0a0084
+			public const int design_navigation_elevation = 2131361924;
 			
-			// aapt resource value: 0x7f090085
-			public const int design_navigation_icon_padding = 2131296389;
+			// aapt resource value: 0x7f0a0085
+			public const int design_navigation_icon_padding = 2131361925;
 			
-			// aapt resource value: 0x7f090086
-			public const int design_navigation_icon_size = 2131296390;
+			// aapt resource value: 0x7f0a0086
+			public const int design_navigation_icon_size = 2131361926;
 			
-			// aapt resource value: 0x7f09006a
-			public const int design_navigation_max_width = 2131296362;
+			// aapt resource value: 0x7f0a006a
+			public const int design_navigation_max_width = 2131361898;
 			
-			// aapt resource value: 0x7f090087
-			public const int design_navigation_padding_bottom = 2131296391;
+			// aapt resource value: 0x7f0a0087
+			public const int design_navigation_padding_bottom = 2131361927;
 			
-			// aapt resource value: 0x7f090088
-			public const int design_navigation_separator_vertical_padding = 2131296392;
+			// aapt resource value: 0x7f0a0088
+			public const int design_navigation_separator_vertical_padding = 2131361928;
 			
-			// aapt resource value: 0x7f09006b
-			public const int design_snackbar_action_inline_max_width = 2131296363;
+			// aapt resource value: 0x7f0a006b
+			public const int design_snackbar_action_inline_max_width = 2131361899;
 			
-			// aapt resource value: 0x7f09006c
-			public const int design_snackbar_background_corner_radius = 2131296364;
+			// aapt resource value: 0x7f0a006c
+			public const int design_snackbar_background_corner_radius = 2131361900;
 			
-			// aapt resource value: 0x7f090089
-			public const int design_snackbar_elevation = 2131296393;
+			// aapt resource value: 0x7f0a0089
+			public const int design_snackbar_elevation = 2131361929;
 			
-			// aapt resource value: 0x7f09006d
-			public const int design_snackbar_extra_spacing_horizontal = 2131296365;
+			// aapt resource value: 0x7f0a006d
+			public const int design_snackbar_extra_spacing_horizontal = 2131361901;
 			
-			// aapt resource value: 0x7f09006e
-			public const int design_snackbar_max_width = 2131296366;
+			// aapt resource value: 0x7f0a006e
+			public const int design_snackbar_max_width = 2131361902;
 			
-			// aapt resource value: 0x7f09006f
-			public const int design_snackbar_min_width = 2131296367;
+			// aapt resource value: 0x7f0a006f
+			public const int design_snackbar_min_width = 2131361903;
 			
-			// aapt resource value: 0x7f09008a
-			public const int design_snackbar_padding_horizontal = 2131296394;
+			// aapt resource value: 0x7f0a008a
+			public const int design_snackbar_padding_horizontal = 2131361930;
 			
-			// aapt resource value: 0x7f09008b
-			public const int design_snackbar_padding_vertical = 2131296395;
+			// aapt resource value: 0x7f0a008b
+			public const int design_snackbar_padding_vertical = 2131361931;
 			
-			// aapt resource value: 0x7f090070
-			public const int design_snackbar_padding_vertical_2lines = 2131296368;
+			// aapt resource value: 0x7f0a0070
+			public const int design_snackbar_padding_vertical_2lines = 2131361904;
 			
-			// aapt resource value: 0x7f09008c
-			public const int design_snackbar_text_size = 2131296396;
+			// aapt resource value: 0x7f0a008c
+			public const int design_snackbar_text_size = 2131361932;
 			
-			// aapt resource value: 0x7f09008d
-			public const int design_tab_max_width = 2131296397;
+			// aapt resource value: 0x7f0a008d
+			public const int design_tab_max_width = 2131361933;
 			
-			// aapt resource value: 0x7f090071
-			public const int design_tab_scrollable_min_width = 2131296369;
+			// aapt resource value: 0x7f0a0071
+			public const int design_tab_scrollable_min_width = 2131361905;
 			
-			// aapt resource value: 0x7f09008e
-			public const int design_tab_text_size = 2131296398;
+			// aapt resource value: 0x7f0a008e
+			public const int design_tab_text_size = 2131361934;
 			
-			// aapt resource value: 0x7f09008f
-			public const int design_tab_text_size_2line = 2131296399;
+			// aapt resource value: 0x7f0a008f
+			public const int design_tab_text_size_2line = 2131361935;
 			
-			// aapt resource value: 0x7f090059
-			public const int disabled_alpha_material_dark = 2131296345;
+			// aapt resource value: 0x7f0a0059
+			public const int disabled_alpha_material_dark = 2131361881;
 			
-			// aapt resource value: 0x7f09005a
-			public const int disabled_alpha_material_light = 2131296346;
+			// aapt resource value: 0x7f0a005a
+			public const int disabled_alpha_material_light = 2131361882;
 			
-			// aapt resource value: 0x7f090000
-			public const int fastscroll_default_thickness = 2131296256;
+			// aapt resource value: 0x7f0a0000
+			public const int fastscroll_default_thickness = 2131361792;
 			
-			// aapt resource value: 0x7f090001
-			public const int fastscroll_margin = 2131296257;
+			// aapt resource value: 0x7f0a0001
+			public const int fastscroll_margin = 2131361793;
 			
-			// aapt resource value: 0x7f090002
-			public const int fastscroll_minimum_range = 2131296258;
+			// aapt resource value: 0x7f0a0002
+			public const int fastscroll_minimum_range = 2131361794;
 			
-			// aapt resource value: 0x7f09005b
-			public const int highlight_alpha_material_colored = 2131296347;
+			// aapt resource value: 0x7f0a005b
+			public const int highlight_alpha_material_colored = 2131361883;
 			
-			// aapt resource value: 0x7f09005c
-			public const int highlight_alpha_material_dark = 2131296348;
+			// aapt resource value: 0x7f0a005c
+			public const int highlight_alpha_material_dark = 2131361884;
 			
-			// aapt resource value: 0x7f09005d
-			public const int highlight_alpha_material_light = 2131296349;
+			// aapt resource value: 0x7f0a005d
+			public const int highlight_alpha_material_light = 2131361885;
 			
-			// aapt resource value: 0x7f09005e
-			public const int hint_alpha_material_dark = 2131296350;
+			// aapt resource value: 0x7f0a005e
+			public const int hint_alpha_material_dark = 2131361886;
 			
-			// aapt resource value: 0x7f09005f
-			public const int hint_alpha_material_light = 2131296351;
+			// aapt resource value: 0x7f0a005f
+			public const int hint_alpha_material_light = 2131361887;
 			
-			// aapt resource value: 0x7f090060
-			public const int hint_pressed_alpha_material_dark = 2131296352;
+			// aapt resource value: 0x7f0a0060
+			public const int hint_pressed_alpha_material_dark = 2131361888;
 			
-			// aapt resource value: 0x7f090061
-			public const int hint_pressed_alpha_material_light = 2131296353;
+			// aapt resource value: 0x7f0a0061
+			public const int hint_pressed_alpha_material_light = 2131361889;
 			
-			// aapt resource value: 0x7f090003
-			public const int item_touch_helper_max_drag_scroll_per_frame = 2131296259;
+			// aapt resource value: 0x7f0a0003
+			public const int item_touch_helper_max_drag_scroll_per_frame = 2131361795;
 			
-			// aapt resource value: 0x7f090004
-			public const int item_touch_helper_swipe_escape_max_velocity = 2131296260;
+			// aapt resource value: 0x7f0a0004
+			public const int item_touch_helper_swipe_escape_max_velocity = 2131361796;
 			
-			// aapt resource value: 0x7f090005
-			public const int item_touch_helper_swipe_escape_velocity = 2131296261;
+			// aapt resource value: 0x7f0a0005
+			public const int item_touch_helper_swipe_escape_velocity = 2131361797;
 			
-			// aapt resource value: 0x7f090006
-			public const int mr_controller_volume_group_list_item_height = 2131296262;
+			// aapt resource value: 0x7f0a0006
+			public const int mr_controller_volume_group_list_item_height = 2131361798;
 			
-			// aapt resource value: 0x7f090007
-			public const int mr_controller_volume_group_list_item_icon_size = 2131296263;
+			// aapt resource value: 0x7f0a0007
+			public const int mr_controller_volume_group_list_item_icon_size = 2131361799;
 			
-			// aapt resource value: 0x7f090008
-			public const int mr_controller_volume_group_list_max_height = 2131296264;
+			// aapt resource value: 0x7f0a0008
+			public const int mr_controller_volume_group_list_max_height = 2131361800;
 			
-			// aapt resource value: 0x7f09000b
-			public const int mr_controller_volume_group_list_padding_top = 2131296267;
+			// aapt resource value: 0x7f0a000b
+			public const int mr_controller_volume_group_list_padding_top = 2131361803;
 			
-			// aapt resource value: 0x7f090009
-			public const int mr_dialog_fixed_width_major = 2131296265;
+			// aapt resource value: 0x7f0a0009
+			public const int mr_dialog_fixed_width_major = 2131361801;
 			
-			// aapt resource value: 0x7f09000a
-			public const int mr_dialog_fixed_width_minor = 2131296266;
+			// aapt resource value: 0x7f0a000a
+			public const int mr_dialog_fixed_width_minor = 2131361802;
 			
-			// aapt resource value: 0x7f090099
-			public const int notification_action_icon_size = 2131296409;
+			// aapt resource value: 0x7f0a0099
+			public const int notification_action_icon_size = 2131361945;
 			
-			// aapt resource value: 0x7f09009a
-			public const int notification_action_text_size = 2131296410;
+			// aapt resource value: 0x7f0a009a
+			public const int notification_action_text_size = 2131361946;
 			
-			// aapt resource value: 0x7f09009b
-			public const int notification_big_circle_margin = 2131296411;
+			// aapt resource value: 0x7f0a009b
+			public const int notification_big_circle_margin = 2131361947;
 			
-			// aapt resource value: 0x7f090091
-			public const int notification_content_margin_start = 2131296401;
+			// aapt resource value: 0x7f0a0091
+			public const int notification_content_margin_start = 2131361937;
 			
-			// aapt resource value: 0x7f09009c
-			public const int notification_large_icon_height = 2131296412;
+			// aapt resource value: 0x7f0a009c
+			public const int notification_large_icon_height = 2131361948;
 			
-			// aapt resource value: 0x7f09009d
-			public const int notification_large_icon_width = 2131296413;
+			// aapt resource value: 0x7f0a009d
+			public const int notification_large_icon_width = 2131361949;
 			
-			// aapt resource value: 0x7f090092
-			public const int notification_main_column_padding_top = 2131296402;
+			// aapt resource value: 0x7f0a0092
+			public const int notification_main_column_padding_top = 2131361938;
 			
-			// aapt resource value: 0x7f090093
-			public const int notification_media_narrow_margin = 2131296403;
+			// aapt resource value: 0x7f0a0093
+			public const int notification_media_narrow_margin = 2131361939;
 			
-			// aapt resource value: 0x7f09009e
-			public const int notification_right_icon_size = 2131296414;
+			// aapt resource value: 0x7f0a009e
+			public const int notification_right_icon_size = 2131361950;
 			
-			// aapt resource value: 0x7f090090
-			public const int notification_right_side_padding_top = 2131296400;
+			// aapt resource value: 0x7f0a0090
+			public const int notification_right_side_padding_top = 2131361936;
 			
-			// aapt resource value: 0x7f09009f
-			public const int notification_small_icon_background_padding = 2131296415;
+			// aapt resource value: 0x7f0a009f
+			public const int notification_small_icon_background_padding = 2131361951;
 			
-			// aapt resource value: 0x7f0900a0
-			public const int notification_small_icon_size_as_large = 2131296416;
+			// aapt resource value: 0x7f0a00a0
+			public const int notification_small_icon_size_as_large = 2131361952;
 			
-			// aapt resource value: 0x7f0900a1
-			public const int notification_subtext_size = 2131296417;
+			// aapt resource value: 0x7f0a00a1
+			public const int notification_subtext_size = 2131361953;
 			
-			// aapt resource value: 0x7f0900a2
-			public const int notification_top_pad = 2131296418;
+			// aapt resource value: 0x7f0a00a2
+			public const int notification_top_pad = 2131361954;
 			
-			// aapt resource value: 0x7f0900a3
-			public const int notification_top_pad_large_text = 2131296419;
+			// aapt resource value: 0x7f0a00a3
+			public const int notification_top_pad_large_text = 2131361955;
 			
-			// aapt resource value: 0x7f090062
-			public const int tooltip_corner_radius = 2131296354;
+			// aapt resource value: 0x7f0a0062
+			public const int tooltip_corner_radius = 2131361890;
 			
-			// aapt resource value: 0x7f090063
-			public const int tooltip_horizontal_padding = 2131296355;
+			// aapt resource value: 0x7f0a0063
+			public const int tooltip_horizontal_padding = 2131361891;
 			
-			// aapt resource value: 0x7f090064
-			public const int tooltip_margin = 2131296356;
+			// aapt resource value: 0x7f0a0064
+			public const int tooltip_margin = 2131361892;
 			
-			// aapt resource value: 0x7f090065
-			public const int tooltip_precise_anchor_extra_offset = 2131296357;
+			// aapt resource value: 0x7f0a0065
+			public const int tooltip_precise_anchor_extra_offset = 2131361893;
 			
-			// aapt resource value: 0x7f090066
-			public const int tooltip_precise_anchor_threshold = 2131296358;
+			// aapt resource value: 0x7f0a0066
+			public const int tooltip_precise_anchor_threshold = 2131361894;
 			
-			// aapt resource value: 0x7f090067
-			public const int tooltip_vertical_padding = 2131296359;
+			// aapt resource value: 0x7f0a0067
+			public const int tooltip_vertical_padding = 2131361895;
 			
-			// aapt resource value: 0x7f090068
-			public const int tooltip_y_offset_non_touch = 2131296360;
+			// aapt resource value: 0x7f0a0068
+			public const int tooltip_y_offset_non_touch = 2131361896;
 			
-			// aapt resource value: 0x7f090069
-			public const int tooltip_y_offset_touch = 2131296361;
+			// aapt resource value: 0x7f0a0069
+			public const int tooltip_y_offset_touch = 2131361897;
 			
 			static Dimension()
 			{
@@ -2446,707 +4449,713 @@ namespace O2CardsApp.Droid
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
-			// aapt resource value: 0x7f020138
-			public const int avd_hide_password_1 = 2130837816;
-			
-			// aapt resource value: 0x7f020139
-			public const int avd_hide_password_2 = 2130837817;
-			
 			// aapt resource value: 0x7f02013a
-			public const int avd_hide_password_3 = 2130837818;
+			public const int avd_hide_password_1 = 2130837818;
+			
+			// aapt resource value: 0x7f02013b
+			public const int avd_hide_password_2 = 2130837819;
+			
+			// aapt resource value: 0x7f02013c
+			public const int avd_hide_password_3 = 2130837820;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
-			// aapt resource value: 0x7f02013b
-			public const int avd_show_password_1 = 2130837819;
-			
-			// aapt resource value: 0x7f02013c
-			public const int avd_show_password_2 = 2130837820;
-			
 			// aapt resource value: 0x7f02013d
-			public const int avd_show_password_3 = 2130837821;
+			public const int avd_show_password_1 = 2130837821;
+			
+			// aapt resource value: 0x7f02013e
+			public const int avd_show_password_2 = 2130837822;
+			
+			// aapt resource value: 0x7f02013f
+			public const int avd_show_password_3 = 2130837823;
 			
 			// aapt resource value: 0x7f020055
-			public const int CreateCard = 2130837589;
+			public const int business_cards_horizontal = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int design_bottom_navigation_item_background = 2130837590;
+			public const int business_cards_vertical = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int design_fab_background = 2130837591;
+			public const int CreateCard = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int design_ic_visibility = 2130837592;
+			public const int design_bottom_navigation_item_background = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int design_ic_visibility_off = 2130837593;
+			public const int design_fab_background = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int design_password_eye = 2130837594;
+			public const int design_ic_visibility = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int design_snackbar_background = 2130837595;
+			public const int design_ic_visibility_off = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int ic_audiotrack_dark = 2130837596;
+			public const int design_password_eye = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int ic_audiotrack_light = 2130837597;
+			public const int design_snackbar_background = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int ic_dialog_close_dark = 2130837598;
+			public const int ic_audiotrack_dark = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int ic_dialog_close_light = 2130837599;
+			public const int ic_audiotrack_light = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int ic_group_collapse_00 = 2130837600;
+			public const int ic_dialog_close_dark = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int ic_group_collapse_01 = 2130837601;
+			public const int ic_dialog_close_light = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int ic_group_collapse_02 = 2130837602;
+			public const int ic_group_collapse_00 = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int ic_group_collapse_03 = 2130837603;
+			public const int ic_group_collapse_01 = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int ic_group_collapse_04 = 2130837604;
+			public const int ic_group_collapse_02 = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int ic_group_collapse_05 = 2130837605;
+			public const int ic_group_collapse_03 = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int ic_group_collapse_06 = 2130837606;
+			public const int ic_group_collapse_04 = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int ic_group_collapse_07 = 2130837607;
+			public const int ic_group_collapse_05 = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int ic_group_collapse_08 = 2130837608;
+			public const int ic_group_collapse_06 = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int ic_group_collapse_09 = 2130837609;
+			public const int ic_group_collapse_07 = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int ic_group_collapse_10 = 2130837610;
+			public const int ic_group_collapse_08 = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int ic_group_collapse_11 = 2130837611;
+			public const int ic_group_collapse_09 = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int ic_group_collapse_12 = 2130837612;
+			public const int ic_group_collapse_10 = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int ic_group_collapse_13 = 2130837613;
+			public const int ic_group_collapse_11 = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int ic_group_collapse_14 = 2130837614;
+			public const int ic_group_collapse_12 = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int ic_group_collapse_15 = 2130837615;
+			public const int ic_group_collapse_13 = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int ic_group_expand_00 = 2130837616;
+			public const int ic_group_collapse_14 = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int ic_group_expand_01 = 2130837617;
+			public const int ic_group_collapse_15 = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int ic_group_expand_02 = 2130837618;
+			public const int ic_group_expand_00 = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int ic_group_expand_03 = 2130837619;
+			public const int ic_group_expand_01 = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int ic_group_expand_04 = 2130837620;
+			public const int ic_group_expand_02 = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int ic_group_expand_05 = 2130837621;
+			public const int ic_group_expand_03 = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int ic_group_expand_06 = 2130837622;
+			public const int ic_group_expand_04 = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int ic_group_expand_07 = 2130837623;
+			public const int ic_group_expand_05 = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int ic_group_expand_08 = 2130837624;
+			public const int ic_group_expand_06 = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int ic_group_expand_09 = 2130837625;
+			public const int ic_group_expand_07 = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int ic_group_expand_10 = 2130837626;
+			public const int ic_group_expand_08 = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int ic_group_expand_11 = 2130837627;
+			public const int ic_group_expand_09 = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int ic_group_expand_12 = 2130837628;
+			public const int ic_group_expand_10 = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int ic_group_expand_13 = 2130837629;
+			public const int ic_group_expand_11 = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int ic_group_expand_14 = 2130837630;
+			public const int ic_group_expand_12 = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int ic_group_expand_15 = 2130837631;
+			public const int ic_group_expand_13 = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int ic_launcher = 2130837632;
+			public const int ic_group_expand_14 = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int ic_media_pause_dark = 2130837633;
+			public const int ic_group_expand_15 = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int ic_media_pause_light = 2130837634;
+			public const int ic_launcher = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int ic_media_play_dark = 2130837635;
+			public const int ic_media_pause_dark = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int ic_media_play_light = 2130837636;
+			public const int ic_media_pause_light = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int ic_media_stop_dark = 2130837637;
+			public const int ic_media_play_dark = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int ic_media_stop_light = 2130837638;
+			public const int ic_media_play_light = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int ic_mr_button_connected_00_dark = 2130837639;
+			public const int ic_media_stop_dark = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int ic_mr_button_connected_00_light = 2130837640;
+			public const int ic_media_stop_light = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int ic_mr_button_connected_01_dark = 2130837641;
+			public const int ic_mr_button_connected_00_dark = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int ic_mr_button_connected_01_light = 2130837642;
+			public const int ic_mr_button_connected_00_light = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int ic_mr_button_connected_02_dark = 2130837643;
+			public const int ic_mr_button_connected_01_dark = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int ic_mr_button_connected_02_light = 2130837644;
+			public const int ic_mr_button_connected_01_light = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int ic_mr_button_connected_03_dark = 2130837645;
+			public const int ic_mr_button_connected_02_dark = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int ic_mr_button_connected_03_light = 2130837646;
+			public const int ic_mr_button_connected_02_light = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int ic_mr_button_connected_04_dark = 2130837647;
+			public const int ic_mr_button_connected_03_dark = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int ic_mr_button_connected_04_light = 2130837648;
+			public const int ic_mr_button_connected_03_light = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int ic_mr_button_connected_05_dark = 2130837649;
+			public const int ic_mr_button_connected_04_dark = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int ic_mr_button_connected_05_light = 2130837650;
+			public const int ic_mr_button_connected_04_light = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int ic_mr_button_connected_06_dark = 2130837651;
+			public const int ic_mr_button_connected_05_dark = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int ic_mr_button_connected_06_light = 2130837652;
+			public const int ic_mr_button_connected_05_light = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int ic_mr_button_connected_07_dark = 2130837653;
+			public const int ic_mr_button_connected_06_dark = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int ic_mr_button_connected_07_light = 2130837654;
+			public const int ic_mr_button_connected_06_light = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int ic_mr_button_connected_08_dark = 2130837655;
+			public const int ic_mr_button_connected_07_dark = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int ic_mr_button_connected_08_light = 2130837656;
+			public const int ic_mr_button_connected_07_light = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int ic_mr_button_connected_09_dark = 2130837657;
+			public const int ic_mr_button_connected_08_dark = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int ic_mr_button_connected_09_light = 2130837658;
+			public const int ic_mr_button_connected_08_light = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int ic_mr_button_connected_10_dark = 2130837659;
+			public const int ic_mr_button_connected_09_dark = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int ic_mr_button_connected_10_light = 2130837660;
+			public const int ic_mr_button_connected_09_light = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int ic_mr_button_connected_11_dark = 2130837661;
+			public const int ic_mr_button_connected_10_dark = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int ic_mr_button_connected_11_light = 2130837662;
+			public const int ic_mr_button_connected_10_light = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int ic_mr_button_connected_12_dark = 2130837663;
+			public const int ic_mr_button_connected_11_dark = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int ic_mr_button_connected_12_light = 2130837664;
+			public const int ic_mr_button_connected_11_light = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int ic_mr_button_connected_13_dark = 2130837665;
+			public const int ic_mr_button_connected_12_dark = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int ic_mr_button_connected_13_light = 2130837666;
+			public const int ic_mr_button_connected_12_light = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int ic_mr_button_connected_14_dark = 2130837667;
+			public const int ic_mr_button_connected_13_dark = 2130837667;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int ic_mr_button_connected_14_light = 2130837668;
+			public const int ic_mr_button_connected_13_light = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int ic_mr_button_connected_15_dark = 2130837669;
+			public const int ic_mr_button_connected_14_dark = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int ic_mr_button_connected_15_light = 2130837670;
+			public const int ic_mr_button_connected_14_light = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int ic_mr_button_connected_16_dark = 2130837671;
+			public const int ic_mr_button_connected_15_dark = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int ic_mr_button_connected_16_light = 2130837672;
+			public const int ic_mr_button_connected_15_light = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
-			public const int ic_mr_button_connected_17_dark = 2130837673;
+			public const int ic_mr_button_connected_16_dark = 2130837673;
 			
 			// aapt resource value: 0x7f0200aa
-			public const int ic_mr_button_connected_17_light = 2130837674;
+			public const int ic_mr_button_connected_16_light = 2130837674;
 			
 			// aapt resource value: 0x7f0200ab
-			public const int ic_mr_button_connected_18_dark = 2130837675;
+			public const int ic_mr_button_connected_17_dark = 2130837675;
 			
 			// aapt resource value: 0x7f0200ac
-			public const int ic_mr_button_connected_18_light = 2130837676;
+			public const int ic_mr_button_connected_17_light = 2130837676;
 			
 			// aapt resource value: 0x7f0200ad
-			public const int ic_mr_button_connected_19_dark = 2130837677;
+			public const int ic_mr_button_connected_18_dark = 2130837677;
 			
 			// aapt resource value: 0x7f0200ae
-			public const int ic_mr_button_connected_19_light = 2130837678;
+			public const int ic_mr_button_connected_18_light = 2130837678;
 			
 			// aapt resource value: 0x7f0200af
-			public const int ic_mr_button_connected_20_dark = 2130837679;
+			public const int ic_mr_button_connected_19_dark = 2130837679;
 			
 			// aapt resource value: 0x7f0200b0
-			public const int ic_mr_button_connected_20_light = 2130837680;
+			public const int ic_mr_button_connected_19_light = 2130837680;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int ic_mr_button_connected_21_dark = 2130837681;
+			public const int ic_mr_button_connected_20_dark = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
-			public const int ic_mr_button_connected_21_light = 2130837682;
+			public const int ic_mr_button_connected_20_light = 2130837682;
 			
 			// aapt resource value: 0x7f0200b3
-			public const int ic_mr_button_connected_22_dark = 2130837683;
+			public const int ic_mr_button_connected_21_dark = 2130837683;
 			
 			// aapt resource value: 0x7f0200b4
-			public const int ic_mr_button_connected_22_light = 2130837684;
+			public const int ic_mr_button_connected_21_light = 2130837684;
 			
 			// aapt resource value: 0x7f0200b5
-			public const int ic_mr_button_connected_23_dark = 2130837685;
+			public const int ic_mr_button_connected_22_dark = 2130837685;
 			
 			// aapt resource value: 0x7f0200b6
-			public const int ic_mr_button_connected_23_light = 2130837686;
+			public const int ic_mr_button_connected_22_light = 2130837686;
 			
 			// aapt resource value: 0x7f0200b7
-			public const int ic_mr_button_connected_24_dark = 2130837687;
+			public const int ic_mr_button_connected_23_dark = 2130837687;
 			
 			// aapt resource value: 0x7f0200b8
-			public const int ic_mr_button_connected_24_light = 2130837688;
+			public const int ic_mr_button_connected_23_light = 2130837688;
 			
 			// aapt resource value: 0x7f0200b9
-			public const int ic_mr_button_connected_25_dark = 2130837689;
+			public const int ic_mr_button_connected_24_dark = 2130837689;
 			
 			// aapt resource value: 0x7f0200ba
-			public const int ic_mr_button_connected_25_light = 2130837690;
+			public const int ic_mr_button_connected_24_light = 2130837690;
 			
 			// aapt resource value: 0x7f0200bb
-			public const int ic_mr_button_connected_26_dark = 2130837691;
+			public const int ic_mr_button_connected_25_dark = 2130837691;
 			
 			// aapt resource value: 0x7f0200bc
-			public const int ic_mr_button_connected_26_light = 2130837692;
+			public const int ic_mr_button_connected_25_light = 2130837692;
 			
 			// aapt resource value: 0x7f0200bd
-			public const int ic_mr_button_connected_27_dark = 2130837693;
+			public const int ic_mr_button_connected_26_dark = 2130837693;
 			
 			// aapt resource value: 0x7f0200be
-			public const int ic_mr_button_connected_27_light = 2130837694;
+			public const int ic_mr_button_connected_26_light = 2130837694;
 			
 			// aapt resource value: 0x7f0200bf
-			public const int ic_mr_button_connected_28_dark = 2130837695;
+			public const int ic_mr_button_connected_27_dark = 2130837695;
 			
 			// aapt resource value: 0x7f0200c0
-			public const int ic_mr_button_connected_28_light = 2130837696;
+			public const int ic_mr_button_connected_27_light = 2130837696;
 			
 			// aapt resource value: 0x7f0200c1
-			public const int ic_mr_button_connected_29_dark = 2130837697;
+			public const int ic_mr_button_connected_28_dark = 2130837697;
 			
 			// aapt resource value: 0x7f0200c2
-			public const int ic_mr_button_connected_29_light = 2130837698;
+			public const int ic_mr_button_connected_28_light = 2130837698;
 			
 			// aapt resource value: 0x7f0200c3
-			public const int ic_mr_button_connected_30_dark = 2130837699;
+			public const int ic_mr_button_connected_29_dark = 2130837699;
 			
 			// aapt resource value: 0x7f0200c4
-			public const int ic_mr_button_connected_30_light = 2130837700;
+			public const int ic_mr_button_connected_29_light = 2130837700;
 			
 			// aapt resource value: 0x7f0200c5
-			public const int ic_mr_button_connecting_00_dark = 2130837701;
+			public const int ic_mr_button_connected_30_dark = 2130837701;
 			
 			// aapt resource value: 0x7f0200c6
-			public const int ic_mr_button_connecting_00_light = 2130837702;
+			public const int ic_mr_button_connected_30_light = 2130837702;
 			
 			// aapt resource value: 0x7f0200c7
-			public const int ic_mr_button_connecting_01_dark = 2130837703;
+			public const int ic_mr_button_connecting_00_dark = 2130837703;
 			
 			// aapt resource value: 0x7f0200c8
-			public const int ic_mr_button_connecting_01_light = 2130837704;
+			public const int ic_mr_button_connecting_00_light = 2130837704;
 			
 			// aapt resource value: 0x7f0200c9
-			public const int ic_mr_button_connecting_02_dark = 2130837705;
+			public const int ic_mr_button_connecting_01_dark = 2130837705;
 			
 			// aapt resource value: 0x7f0200ca
-			public const int ic_mr_button_connecting_02_light = 2130837706;
+			public const int ic_mr_button_connecting_01_light = 2130837706;
 			
 			// aapt resource value: 0x7f0200cb
-			public const int ic_mr_button_connecting_03_dark = 2130837707;
+			public const int ic_mr_button_connecting_02_dark = 2130837707;
 			
 			// aapt resource value: 0x7f0200cc
-			public const int ic_mr_button_connecting_03_light = 2130837708;
+			public const int ic_mr_button_connecting_02_light = 2130837708;
 			
 			// aapt resource value: 0x7f0200cd
-			public const int ic_mr_button_connecting_04_dark = 2130837709;
+			public const int ic_mr_button_connecting_03_dark = 2130837709;
 			
 			// aapt resource value: 0x7f0200ce
-			public const int ic_mr_button_connecting_04_light = 2130837710;
+			public const int ic_mr_button_connecting_03_light = 2130837710;
 			
 			// aapt resource value: 0x7f0200cf
-			public const int ic_mr_button_connecting_05_dark = 2130837711;
+			public const int ic_mr_button_connecting_04_dark = 2130837711;
 			
 			// aapt resource value: 0x7f0200d0
-			public const int ic_mr_button_connecting_05_light = 2130837712;
+			public const int ic_mr_button_connecting_04_light = 2130837712;
 			
 			// aapt resource value: 0x7f0200d1
-			public const int ic_mr_button_connecting_06_dark = 2130837713;
+			public const int ic_mr_button_connecting_05_dark = 2130837713;
 			
 			// aapt resource value: 0x7f0200d2
-			public const int ic_mr_button_connecting_06_light = 2130837714;
+			public const int ic_mr_button_connecting_05_light = 2130837714;
 			
 			// aapt resource value: 0x7f0200d3
-			public const int ic_mr_button_connecting_07_dark = 2130837715;
+			public const int ic_mr_button_connecting_06_dark = 2130837715;
 			
 			// aapt resource value: 0x7f0200d4
-			public const int ic_mr_button_connecting_07_light = 2130837716;
+			public const int ic_mr_button_connecting_06_light = 2130837716;
 			
 			// aapt resource value: 0x7f0200d5
-			public const int ic_mr_button_connecting_08_dark = 2130837717;
+			public const int ic_mr_button_connecting_07_dark = 2130837717;
 			
 			// aapt resource value: 0x7f0200d6
-			public const int ic_mr_button_connecting_08_light = 2130837718;
+			public const int ic_mr_button_connecting_07_light = 2130837718;
 			
 			// aapt resource value: 0x7f0200d7
-			public const int ic_mr_button_connecting_09_dark = 2130837719;
+			public const int ic_mr_button_connecting_08_dark = 2130837719;
 			
 			// aapt resource value: 0x7f0200d8
-			public const int ic_mr_button_connecting_09_light = 2130837720;
+			public const int ic_mr_button_connecting_08_light = 2130837720;
 			
 			// aapt resource value: 0x7f0200d9
-			public const int ic_mr_button_connecting_10_dark = 2130837721;
+			public const int ic_mr_button_connecting_09_dark = 2130837721;
 			
 			// aapt resource value: 0x7f0200da
-			public const int ic_mr_button_connecting_10_light = 2130837722;
+			public const int ic_mr_button_connecting_09_light = 2130837722;
 			
 			// aapt resource value: 0x7f0200db
-			public const int ic_mr_button_connecting_11_dark = 2130837723;
+			public const int ic_mr_button_connecting_10_dark = 2130837723;
 			
 			// aapt resource value: 0x7f0200dc
-			public const int ic_mr_button_connecting_11_light = 2130837724;
+			public const int ic_mr_button_connecting_10_light = 2130837724;
 			
 			// aapt resource value: 0x7f0200dd
-			public const int ic_mr_button_connecting_12_dark = 2130837725;
+			public const int ic_mr_button_connecting_11_dark = 2130837725;
 			
 			// aapt resource value: 0x7f0200de
-			public const int ic_mr_button_connecting_12_light = 2130837726;
+			public const int ic_mr_button_connecting_11_light = 2130837726;
 			
 			// aapt resource value: 0x7f0200df
-			public const int ic_mr_button_connecting_13_dark = 2130837727;
+			public const int ic_mr_button_connecting_12_dark = 2130837727;
 			
 			// aapt resource value: 0x7f0200e0
-			public const int ic_mr_button_connecting_13_light = 2130837728;
+			public const int ic_mr_button_connecting_12_light = 2130837728;
 			
 			// aapt resource value: 0x7f0200e1
-			public const int ic_mr_button_connecting_14_dark = 2130837729;
+			public const int ic_mr_button_connecting_13_dark = 2130837729;
 			
 			// aapt resource value: 0x7f0200e2
-			public const int ic_mr_button_connecting_14_light = 2130837730;
+			public const int ic_mr_button_connecting_13_light = 2130837730;
 			
 			// aapt resource value: 0x7f0200e3
-			public const int ic_mr_button_connecting_15_dark = 2130837731;
+			public const int ic_mr_button_connecting_14_dark = 2130837731;
 			
 			// aapt resource value: 0x7f0200e4
-			public const int ic_mr_button_connecting_15_light = 2130837732;
+			public const int ic_mr_button_connecting_14_light = 2130837732;
 			
 			// aapt resource value: 0x7f0200e5
-			public const int ic_mr_button_connecting_16_dark = 2130837733;
+			public const int ic_mr_button_connecting_15_dark = 2130837733;
 			
 			// aapt resource value: 0x7f0200e6
-			public const int ic_mr_button_connecting_16_light = 2130837734;
+			public const int ic_mr_button_connecting_15_light = 2130837734;
 			
 			// aapt resource value: 0x7f0200e7
-			public const int ic_mr_button_connecting_17_dark = 2130837735;
+			public const int ic_mr_button_connecting_16_dark = 2130837735;
 			
 			// aapt resource value: 0x7f0200e8
-			public const int ic_mr_button_connecting_17_light = 2130837736;
+			public const int ic_mr_button_connecting_16_light = 2130837736;
 			
 			// aapt resource value: 0x7f0200e9
-			public const int ic_mr_button_connecting_18_dark = 2130837737;
+			public const int ic_mr_button_connecting_17_dark = 2130837737;
 			
 			// aapt resource value: 0x7f0200ea
-			public const int ic_mr_button_connecting_18_light = 2130837738;
+			public const int ic_mr_button_connecting_17_light = 2130837738;
 			
 			// aapt resource value: 0x7f0200eb
-			public const int ic_mr_button_connecting_19_dark = 2130837739;
+			public const int ic_mr_button_connecting_18_dark = 2130837739;
 			
 			// aapt resource value: 0x7f0200ec
-			public const int ic_mr_button_connecting_19_light = 2130837740;
+			public const int ic_mr_button_connecting_18_light = 2130837740;
 			
 			// aapt resource value: 0x7f0200ed
-			public const int ic_mr_button_connecting_20_dark = 2130837741;
+			public const int ic_mr_button_connecting_19_dark = 2130837741;
 			
 			// aapt resource value: 0x7f0200ee
-			public const int ic_mr_button_connecting_20_light = 2130837742;
+			public const int ic_mr_button_connecting_19_light = 2130837742;
 			
 			// aapt resource value: 0x7f0200ef
-			public const int ic_mr_button_connecting_21_dark = 2130837743;
+			public const int ic_mr_button_connecting_20_dark = 2130837743;
 			
 			// aapt resource value: 0x7f0200f0
-			public const int ic_mr_button_connecting_21_light = 2130837744;
+			public const int ic_mr_button_connecting_20_light = 2130837744;
 			
 			// aapt resource value: 0x7f0200f1
-			public const int ic_mr_button_connecting_22_dark = 2130837745;
+			public const int ic_mr_button_connecting_21_dark = 2130837745;
 			
 			// aapt resource value: 0x7f0200f2
-			public const int ic_mr_button_connecting_22_light = 2130837746;
+			public const int ic_mr_button_connecting_21_light = 2130837746;
 			
 			// aapt resource value: 0x7f0200f3
-			public const int ic_mr_button_connecting_23_dark = 2130837747;
+			public const int ic_mr_button_connecting_22_dark = 2130837747;
 			
 			// aapt resource value: 0x7f0200f4
-			public const int ic_mr_button_connecting_23_light = 2130837748;
+			public const int ic_mr_button_connecting_22_light = 2130837748;
 			
 			// aapt resource value: 0x7f0200f5
-			public const int ic_mr_button_connecting_24_dark = 2130837749;
+			public const int ic_mr_button_connecting_23_dark = 2130837749;
 			
 			// aapt resource value: 0x7f0200f6
-			public const int ic_mr_button_connecting_24_light = 2130837750;
+			public const int ic_mr_button_connecting_23_light = 2130837750;
 			
 			// aapt resource value: 0x7f0200f7
-			public const int ic_mr_button_connecting_25_dark = 2130837751;
+			public const int ic_mr_button_connecting_24_dark = 2130837751;
 			
 			// aapt resource value: 0x7f0200f8
-			public const int ic_mr_button_connecting_25_light = 2130837752;
+			public const int ic_mr_button_connecting_24_light = 2130837752;
 			
 			// aapt resource value: 0x7f0200f9
-			public const int ic_mr_button_connecting_26_dark = 2130837753;
+			public const int ic_mr_button_connecting_25_dark = 2130837753;
 			
 			// aapt resource value: 0x7f0200fa
-			public const int ic_mr_button_connecting_26_light = 2130837754;
+			public const int ic_mr_button_connecting_25_light = 2130837754;
 			
 			// aapt resource value: 0x7f0200fb
-			public const int ic_mr_button_connecting_27_dark = 2130837755;
+			public const int ic_mr_button_connecting_26_dark = 2130837755;
 			
 			// aapt resource value: 0x7f0200fc
-			public const int ic_mr_button_connecting_27_light = 2130837756;
+			public const int ic_mr_button_connecting_26_light = 2130837756;
 			
 			// aapt resource value: 0x7f0200fd
-			public const int ic_mr_button_connecting_28_dark = 2130837757;
+			public const int ic_mr_button_connecting_27_dark = 2130837757;
 			
 			// aapt resource value: 0x7f0200fe
-			public const int ic_mr_button_connecting_28_light = 2130837758;
+			public const int ic_mr_button_connecting_27_light = 2130837758;
 			
 			// aapt resource value: 0x7f0200ff
-			public const int ic_mr_button_connecting_29_dark = 2130837759;
+			public const int ic_mr_button_connecting_28_dark = 2130837759;
 			
 			// aapt resource value: 0x7f020100
-			public const int ic_mr_button_connecting_29_light = 2130837760;
+			public const int ic_mr_button_connecting_28_light = 2130837760;
 			
 			// aapt resource value: 0x7f020101
-			public const int ic_mr_button_connecting_30_dark = 2130837761;
+			public const int ic_mr_button_connecting_29_dark = 2130837761;
 			
 			// aapt resource value: 0x7f020102
-			public const int ic_mr_button_connecting_30_light = 2130837762;
+			public const int ic_mr_button_connecting_29_light = 2130837762;
 			
 			// aapt resource value: 0x7f020103
-			public const int ic_mr_button_disabled_dark = 2130837763;
+			public const int ic_mr_button_connecting_30_dark = 2130837763;
 			
 			// aapt resource value: 0x7f020104
-			public const int ic_mr_button_disabled_light = 2130837764;
+			public const int ic_mr_button_connecting_30_light = 2130837764;
 			
 			// aapt resource value: 0x7f020105
-			public const int ic_mr_button_disconnected_dark = 2130837765;
+			public const int ic_mr_button_disabled_dark = 2130837765;
 			
 			// aapt resource value: 0x7f020106
-			public const int ic_mr_button_disconnected_light = 2130837766;
+			public const int ic_mr_button_disabled_light = 2130837766;
 			
 			// aapt resource value: 0x7f020107
-			public const int ic_mr_button_grey = 2130837767;
+			public const int ic_mr_button_disconnected_dark = 2130837767;
 			
 			// aapt resource value: 0x7f020108
-			public const int ic_vol_type_speaker_dark = 2130837768;
+			public const int ic_mr_button_disconnected_light = 2130837768;
 			
 			// aapt resource value: 0x7f020109
-			public const int ic_vol_type_speaker_group_dark = 2130837769;
+			public const int ic_mr_button_grey = 2130837769;
 			
 			// aapt resource value: 0x7f02010a
-			public const int ic_vol_type_speaker_group_light = 2130837770;
+			public const int ic_vol_type_speaker_dark = 2130837770;
 			
 			// aapt resource value: 0x7f02010b
-			public const int ic_vol_type_speaker_light = 2130837771;
+			public const int ic_vol_type_speaker_group_dark = 2130837771;
 			
 			// aapt resource value: 0x7f02010c
-			public const int ic_vol_type_tv_dark = 2130837772;
+			public const int ic_vol_type_speaker_group_light = 2130837772;
 			
 			// aapt resource value: 0x7f02010d
-			public const int ic_vol_type_tv_light = 2130837773;
+			public const int ic_vol_type_speaker_light = 2130837773;
 			
 			// aapt resource value: 0x7f02010e
-			public const int icon = 2130837774;
+			public const int ic_vol_type_tv_dark = 2130837774;
 			
 			// aapt resource value: 0x7f02010f
-			public const int launcher_foreground = 2130837775;
+			public const int ic_vol_type_tv_light = 2130837775;
 			
 			// aapt resource value: 0x7f020110
-			public const int mr_button_connected_dark = 2130837776;
+			public const int icon = 2130837776;
 			
 			// aapt resource value: 0x7f020111
-			public const int mr_button_connected_light = 2130837777;
+			public const int launcher_foreground = 2130837777;
 			
 			// aapt resource value: 0x7f020112
-			public const int mr_button_connecting_dark = 2130837778;
+			public const int mr_button_connected_dark = 2130837778;
 			
 			// aapt resource value: 0x7f020113
-			public const int mr_button_connecting_light = 2130837779;
+			public const int mr_button_connected_light = 2130837779;
 			
 			// aapt resource value: 0x7f020114
-			public const int mr_button_dark = 2130837780;
+			public const int mr_button_connecting_dark = 2130837780;
 			
 			// aapt resource value: 0x7f020115
-			public const int mr_button_light = 2130837781;
+			public const int mr_button_connecting_light = 2130837781;
 			
 			// aapt resource value: 0x7f020116
-			public const int mr_dialog_close_dark = 2130837782;
+			public const int mr_button_dark = 2130837782;
 			
 			// aapt resource value: 0x7f020117
-			public const int mr_dialog_close_light = 2130837783;
+			public const int mr_button_light = 2130837783;
 			
 			// aapt resource value: 0x7f020118
-			public const int mr_dialog_material_background_dark = 2130837784;
+			public const int mr_dialog_close_dark = 2130837784;
 			
 			// aapt resource value: 0x7f020119
-			public const int mr_dialog_material_background_light = 2130837785;
+			public const int mr_dialog_close_light = 2130837785;
 			
 			// aapt resource value: 0x7f02011a
-			public const int mr_group_collapse = 2130837786;
+			public const int mr_dialog_material_background_dark = 2130837786;
 			
 			// aapt resource value: 0x7f02011b
-			public const int mr_group_expand = 2130837787;
+			public const int mr_dialog_material_background_light = 2130837787;
 			
 			// aapt resource value: 0x7f02011c
-			public const int mr_media_pause_dark = 2130837788;
+			public const int mr_group_collapse = 2130837788;
 			
 			// aapt resource value: 0x7f02011d
-			public const int mr_media_pause_light = 2130837789;
+			public const int mr_group_expand = 2130837789;
 			
 			// aapt resource value: 0x7f02011e
-			public const int mr_media_play_dark = 2130837790;
+			public const int mr_media_pause_dark = 2130837790;
 			
 			// aapt resource value: 0x7f02011f
-			public const int mr_media_play_light = 2130837791;
+			public const int mr_media_pause_light = 2130837791;
 			
 			// aapt resource value: 0x7f020120
-			public const int mr_media_stop_dark = 2130837792;
+			public const int mr_media_play_dark = 2130837792;
 			
 			// aapt resource value: 0x7f020121
-			public const int mr_media_stop_light = 2130837793;
+			public const int mr_media_play_light = 2130837793;
 			
 			// aapt resource value: 0x7f020122
-			public const int mr_vol_type_audiotrack_dark = 2130837794;
+			public const int mr_media_stop_dark = 2130837794;
 			
 			// aapt resource value: 0x7f020123
-			public const int mr_vol_type_audiotrack_light = 2130837795;
+			public const int mr_media_stop_light = 2130837795;
 			
 			// aapt resource value: 0x7f020124
-			public const int navigation_empty_icon = 2130837796;
+			public const int mr_vol_type_audiotrack_dark = 2130837796;
 			
 			// aapt resource value: 0x7f020125
-			public const int notification_action_background = 2130837797;
+			public const int mr_vol_type_audiotrack_light = 2130837797;
 			
 			// aapt resource value: 0x7f020126
-			public const int notification_bg = 2130837798;
+			public const int navigation_empty_icon = 2130837798;
 			
 			// aapt resource value: 0x7f020127
-			public const int notification_bg_low = 2130837799;
+			public const int notification_action_background = 2130837799;
 			
 			// aapt resource value: 0x7f020128
-			public const int notification_bg_low_normal = 2130837800;
+			public const int notification_bg = 2130837800;
 			
 			// aapt resource value: 0x7f020129
-			public const int notification_bg_low_pressed = 2130837801;
+			public const int notification_bg_low = 2130837801;
 			
 			// aapt resource value: 0x7f02012a
-			public const int notification_bg_normal = 2130837802;
+			public const int notification_bg_low_normal = 2130837802;
 			
 			// aapt resource value: 0x7f02012b
-			public const int notification_bg_normal_pressed = 2130837803;
+			public const int notification_bg_low_pressed = 2130837803;
 			
 			// aapt resource value: 0x7f02012c
-			public const int notification_icon_background = 2130837804;
-			
-			// aapt resource value: 0x7f020136
-			public const int notification_template_icon_bg = 2130837814;
-			
-			// aapt resource value: 0x7f020137
-			public const int notification_template_icon_low_bg = 2130837815;
+			public const int notification_bg_normal = 2130837804;
 			
 			// aapt resource value: 0x7f02012d
-			public const int notification_tile_bg = 2130837805;
+			public const int notification_bg_normal_pressed = 2130837805;
 			
 			// aapt resource value: 0x7f02012e
-			public const int notify_panel_notification_icon_bg = 2130837806;
+			public const int notification_icon_background = 2130837806;
+			
+			// aapt resource value: 0x7f020138
+			public const int notification_template_icon_bg = 2130837816;
+			
+			// aapt resource value: 0x7f020139
+			public const int notification_template_icon_low_bg = 2130837817;
 			
 			// aapt resource value: 0x7f02012f
-			public const int QRCode = 2130837807;
+			public const int notification_tile_bg = 2130837807;
 			
 			// aapt resource value: 0x7f020130
-			public const int ScanCard = 2130837808;
+			public const int notify_panel_notification_icon_bg = 2130837808;
 			
 			// aapt resource value: 0x7f020131
-			public const int SearchCard = 2130837809;
+			public const int QRCode = 2130837809;
 			
 			// aapt resource value: 0x7f020132
-			public const int ShareCard = 2130837810;
+			public const int ScanCard = 2130837810;
 			
 			// aapt resource value: 0x7f020133
-			public const int splash_background = 2130837811;
+			public const int SearchCard = 2130837811;
 			
 			// aapt resource value: 0x7f020134
-			public const int tooltip_frame_dark = 2130837812;
+			public const int ShareCard = 2130837812;
 			
 			// aapt resource value: 0x7f020135
-			public const int tooltip_frame_light = 2130837813;
+			public const int splash_background = 2130837813;
+			
+			// aapt resource value: 0x7f020136
+			public const int tooltip_frame_dark = 2130837814;
+			
+			// aapt resource value: 0x7f020137
+			public const int tooltip_frame_light = 2130837815;
 			
 			static Drawable()
 			{
@@ -3161,617 +5170,647 @@ namespace O2CardsApp.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0a0032
-			public const int ALT = 2131361842;
+			// aapt resource value: 0x7f0b0032
+			public const int ALT = 2131427378;
 			
-			// aapt resource value: 0x7f0a0033
-			public const int CTRL = 2131361843;
+			// aapt resource value: 0x7f0b0033
+			public const int CTRL = 2131427379;
 			
-			// aapt resource value: 0x7f0a0034
-			public const int FUNCTION = 2131361844;
+			// aapt resource value: 0x7f0b0034
+			public const int FUNCTION = 2131427380;
 			
-			// aapt resource value: 0x7f0a0035
-			public const int META = 2131361845;
+			// aapt resource value: 0x7f0b0035
+			public const int META = 2131427381;
 			
-			// aapt resource value: 0x7f0a0036
-			public const int SHIFT = 2131361846;
+			// aapt resource value: 0x7f0b0036
+			public const int SHIFT = 2131427382;
 			
-			// aapt resource value: 0x7f0a0037
-			public const int SYM = 2131361847;
+			// aapt resource value: 0x7f0b0037
+			public const int SYM = 2131427383;
 			
-			// aapt resource value: 0x7f0a00b6
-			public const int action0 = 2131361974;
+			// aapt resource value: 0x7f0b00ba
+			public const int action0 = 2131427514;
 			
-			// aapt resource value: 0x7f0a007c
-			public const int action_bar = 2131361916;
+			// aapt resource value: 0x7f0b007c
+			public const int action_bar = 2131427452;
 			
-			// aapt resource value: 0x7f0a0001
-			public const int action_bar_activity_content = 2131361793;
+			// aapt resource value: 0x7f0b0001
+			public const int action_bar_activity_content = 2131427329;
 			
-			// aapt resource value: 0x7f0a007b
-			public const int action_bar_container = 2131361915;
+			// aapt resource value: 0x7f0b007b
+			public const int action_bar_container = 2131427451;
 			
-			// aapt resource value: 0x7f0a0077
-			public const int action_bar_root = 2131361911;
+			// aapt resource value: 0x7f0b0077
+			public const int action_bar_root = 2131427447;
 			
-			// aapt resource value: 0x7f0a0002
-			public const int action_bar_spinner = 2131361794;
+			// aapt resource value: 0x7f0b0002
+			public const int action_bar_spinner = 2131427330;
 			
-			// aapt resource value: 0x7f0a005b
-			public const int action_bar_subtitle = 2131361883;
+			// aapt resource value: 0x7f0b005b
+			public const int action_bar_subtitle = 2131427419;
 			
-			// aapt resource value: 0x7f0a005a
-			public const int action_bar_title = 2131361882;
+			// aapt resource value: 0x7f0b005a
+			public const int action_bar_title = 2131427418;
 			
-			// aapt resource value: 0x7f0a00b3
-			public const int action_container = 2131361971;
+			// aapt resource value: 0x7f0b00b7
+			public const int action_container = 2131427511;
 			
-			// aapt resource value: 0x7f0a007d
-			public const int action_context_bar = 2131361917;
+			// aapt resource value: 0x7f0b007d
+			public const int action_context_bar = 2131427453;
 			
-			// aapt resource value: 0x7f0a00ba
-			public const int action_divider = 2131361978;
+			// aapt resource value: 0x7f0b00be
+			public const int action_divider = 2131427518;
 			
-			// aapt resource value: 0x7f0a00b4
-			public const int action_image = 2131361972;
+			// aapt resource value: 0x7f0b00b8
+			public const int action_image = 2131427512;
 			
-			// aapt resource value: 0x7f0a0003
-			public const int action_menu_divider = 2131361795;
+			// aapt resource value: 0x7f0b0003
+			public const int action_menu_divider = 2131427331;
 			
-			// aapt resource value: 0x7f0a0004
-			public const int action_menu_presenter = 2131361796;
+			// aapt resource value: 0x7f0b0004
+			public const int action_menu_presenter = 2131427332;
 			
-			// aapt resource value: 0x7f0a0079
-			public const int action_mode_bar = 2131361913;
+			// aapt resource value: 0x7f0b0079
+			public const int action_mode_bar = 2131427449;
 			
-			// aapt resource value: 0x7f0a0078
-			public const int action_mode_bar_stub = 2131361912;
+			// aapt resource value: 0x7f0b0078
+			public const int action_mode_bar_stub = 2131427448;
 			
-			// aapt resource value: 0x7f0a005c
-			public const int action_mode_close_button = 2131361884;
+			// aapt resource value: 0x7f0b005c
+			public const int action_mode_close_button = 2131427420;
 			
-			// aapt resource value: 0x7f0a00b5
-			public const int action_text = 2131361973;
+			// aapt resource value: 0x7f0b00b9
+			public const int action_text = 2131427513;
 			
-			// aapt resource value: 0x7f0a00c3
-			public const int actions = 2131361987;
+			// aapt resource value: 0x7f0b00c7
+			public const int actions = 2131427527;
 			
-			// aapt resource value: 0x7f0a005d
-			public const int activity_chooser_view_content = 2131361885;
+			// aapt resource value: 0x7f0b005d
+			public const int activity_chooser_view_content = 2131427421;
 			
-			// aapt resource value: 0x7f0a0027
-			public const int add = 2131361831;
+			// aapt resource value: 0x7f0b0027
+			public const int add = 2131427367;
 			
-			// aapt resource value: 0x7f0a0070
-			public const int alertTitle = 2131361904;
+			// aapt resource value: 0x7f0b0070
+			public const int alertTitle = 2131427440;
 			
-			// aapt resource value: 0x7f0a0052
-			public const int all = 2131361874;
+			// aapt resource value: 0x7f0b0052
+			public const int all = 2131427410;
 			
-			// aapt resource value: 0x7f0a0038
-			public const int always = 2131361848;
+			// aapt resource value: 0x7f0b0038
+			public const int always = 2131427384;
 			
-			// aapt resource value: 0x7f0a0056
-			public const int async = 2131361878;
+			// aapt resource value: 0x7f0b0056
+			public const int async = 2131427414;
 			
-			// aapt resource value: 0x7f0a0044
-			public const int auto = 2131361860;
+			// aapt resource value: 0x7f0b0044
+			public const int auto = 2131427396;
 			
-			// aapt resource value: 0x7f0a002f
-			public const int beginning = 2131361839;
+			// aapt resource value: 0x7f0b002f
+			public const int beginning = 2131427375;
 			
-			// aapt resource value: 0x7f0a0057
-			public const int blocking = 2131361879;
+			// aapt resource value: 0x7f0b0057
+			public const int blocking = 2131427415;
 			
-			// aapt resource value: 0x7f0a003d
-			public const int bottom = 2131361853;
+			// aapt resource value: 0x7f0b003d
+			public const int bottom = 2131427389;
 			
-			// aapt resource value: 0x7f0a0063
-			public const int buttonPanel = 2131361891;
+			// aapt resource value: 0x7f0b008b
+			public const int bottomtab_navarea = 2131427467;
 			
-			// aapt resource value: 0x7f0a00b7
-			public const int cancel_action = 2131361975;
+			// aapt resource value: 0x7f0b008c
+			public const int bottomtab_tabbar = 2131427468;
 			
-			// aapt resource value: 0x7f0a0045
-			public const int center = 2131361861;
+			// aapt resource value: 0x7f0b0063
+			public const int buttonPanel = 2131427427;
 			
-			// aapt resource value: 0x7f0a0046
-			public const int center_horizontal = 2131361862;
+			// aapt resource value: 0x7f0b00bb
+			public const int cancel_action = 2131427515;
 			
-			// aapt resource value: 0x7f0a0047
-			public const int center_vertical = 2131361863;
+			// aapt resource value: 0x7f0b0045
+			public const int center = 2131427397;
 			
-			// aapt resource value: 0x7f0a0073
-			public const int checkbox = 2131361907;
+			// aapt resource value: 0x7f0b0046
+			public const int center_horizontal = 2131427398;
 			
-			// aapt resource value: 0x7f0a00bf
-			public const int chronometer = 2131361983;
+			// aapt resource value: 0x7f0b0047
+			public const int center_vertical = 2131427399;
 			
-			// aapt resource value: 0x7f0a004e
-			public const int clip_horizontal = 2131361870;
+			// aapt resource value: 0x7f0b0073
+			public const int checkbox = 2131427443;
 			
-			// aapt resource value: 0x7f0a004f
-			public const int clip_vertical = 2131361871;
+			// aapt resource value: 0x7f0b00c3
+			public const int chronometer = 2131427523;
 			
-			// aapt resource value: 0x7f0a0039
-			public const int collapseActionView = 2131361849;
+			// aapt resource value: 0x7f0b004e
+			public const int clip_horizontal = 2131427406;
 			
-			// aapt resource value: 0x7f0a008d
-			public const int container = 2131361933;
+			// aapt resource value: 0x7f0b004f
+			public const int clip_vertical = 2131427407;
 			
-			// aapt resource value: 0x7f0a00c9
-			public const int contentFrame = 2131361993;
+			// aapt resource value: 0x7f0b0039
+			public const int collapseActionView = 2131427385;
 			
-			// aapt resource value: 0x7f0a0066
-			public const int contentPanel = 2131361894;
+			// aapt resource value: 0x7f0b008f
+			public const int container = 2131427471;
 			
-			// aapt resource value: 0x7f0a008e
-			public const int coordinator = 2131361934;
+			// aapt resource value: 0x7f0b00d3
+			public const int contentFrame = 2131427539;
 			
-			// aapt resource value: 0x7f0a006d
-			public const int custom = 2131361901;
+			// aapt resource value: 0x7f0b0066
+			public const int contentPanel = 2131427430;
 			
-			// aapt resource value: 0x7f0a006c
-			public const int customPanel = 2131361900;
+			// aapt resource value: 0x7f0b0090
+			public const int coordinator = 2131427472;
 			
-			// aapt resource value: 0x7f0a007a
-			public const int decor_content_parent = 2131361914;
+			// aapt resource value: 0x7f0b006d
+			public const int custom = 2131427437;
 			
-			// aapt resource value: 0x7f0a0060
-			public const int default_activity_button = 2131361888;
+			// aapt resource value: 0x7f0b006c
+			public const int customPanel = 2131427436;
 			
-			// aapt resource value: 0x7f0a0090
-			public const int design_bottom_sheet = 2131361936;
+			// aapt resource value: 0x7f0b007a
+			public const int decor_content_parent = 2131427450;
 			
-			// aapt resource value: 0x7f0a0097
-			public const int design_menu_item_action_area = 2131361943;
+			// aapt resource value: 0x7f0b0060
+			public const int default_activity_button = 2131427424;
 			
-			// aapt resource value: 0x7f0a0096
-			public const int design_menu_item_action_area_stub = 2131361942;
+			// aapt resource value: 0x7f0b0092
+			public const int design_bottom_sheet = 2131427474;
 			
-			// aapt resource value: 0x7f0a0095
-			public const int design_menu_item_text = 2131361941;
+			// aapt resource value: 0x7f0b0099
+			public const int design_menu_item_action_area = 2131427481;
 			
-			// aapt resource value: 0x7f0a0094
-			public const int design_navigation_view = 2131361940;
+			// aapt resource value: 0x7f0b0098
+			public const int design_menu_item_action_area_stub = 2131427480;
 			
-			// aapt resource value: 0x7f0a0020
-			public const int disableHome = 2131361824;
+			// aapt resource value: 0x7f0b0097
+			public const int design_menu_item_text = 2131427479;
 			
-			// aapt resource value: 0x7f0a007e
-			public const int edit_query = 2131361918;
+			// aapt resource value: 0x7f0b0096
+			public const int design_navigation_view = 2131427478;
 			
-			// aapt resource value: 0x7f0a0030
-			public const int end = 2131361840;
+			// aapt resource value: 0x7f0b0020
+			public const int disableHome = 2131427360;
 			
-			// aapt resource value: 0x7f0a00c5
-			public const int end_padder = 2131361989;
+			// aapt resource value: 0x7f0b007e
+			public const int edit_query = 2131427454;
 			
-			// aapt resource value: 0x7f0a003f
-			public const int enterAlways = 2131361855;
+			// aapt resource value: 0x7f0b0030
+			public const int end = 2131427376;
 			
-			// aapt resource value: 0x7f0a0040
-			public const int enterAlwaysCollapsed = 2131361856;
+			// aapt resource value: 0x7f0b00c9
+			public const int end_padder = 2131427529;
 			
-			// aapt resource value: 0x7f0a0041
-			public const int exitUntilCollapsed = 2131361857;
+			// aapt resource value: 0x7f0b003f
+			public const int enterAlways = 2131427391;
 			
-			// aapt resource value: 0x7f0a005e
-			public const int expand_activities_button = 2131361886;
+			// aapt resource value: 0x7f0b0040
+			public const int enterAlwaysCollapsed = 2131427392;
 			
-			// aapt resource value: 0x7f0a0072
-			public const int expanded_menu = 2131361906;
+			// aapt resource value: 0x7f0b0041
+			public const int exitUntilCollapsed = 2131427393;
 			
-			// aapt resource value: 0x7f0a0050
-			public const int fill = 2131361872;
+			// aapt resource value: 0x7f0b005e
+			public const int expand_activities_button = 2131427422;
 			
-			// aapt resource value: 0x7f0a0051
-			public const int fill_horizontal = 2131361873;
+			// aapt resource value: 0x7f0b0072
+			public const int expanded_menu = 2131427442;
 			
-			// aapt resource value: 0x7f0a0048
-			public const int fill_vertical = 2131361864;
+			// aapt resource value: 0x7f0b0050
+			public const int fill = 2131427408;
 			
-			// aapt resource value: 0x7f0a0054
-			public const int @fixed = 2131361876;
+			// aapt resource value: 0x7f0b0051
+			public const int fill_horizontal = 2131427409;
 			
-			// aapt resource value: 0x7f0a0058
-			public const int forever = 2131361880;
+			// aapt resource value: 0x7f0b0048
+			public const int fill_vertical = 2131427400;
 			
-			// aapt resource value: 0x7f0a000a
-			public const int ghost_view = 2131361802;
+			// aapt resource value: 0x7f0b0054
+			public const int @fixed = 2131427412;
 			
-			// aapt resource value: 0x7f0a0005
-			public const int home = 2131361797;
+			// aapt resource value: 0x7f0b009b
+			public const int flyoutcontent_appbar = 2131427483;
 			
-			// aapt resource value: 0x7f0a0021
-			public const int homeAsUp = 2131361825;
+			// aapt resource value: 0x7f0b009c
+			public const int flyoutcontent_recycler = 2131427484;
 			
-			// aapt resource value: 0x7f0a0062
-			public const int icon = 2131361890;
+			// aapt resource value: 0x7f0b0058
+			public const int forever = 2131427416;
 			
-			// aapt resource value: 0x7f0a00c4
-			public const int icon_group = 2131361988;
+			// aapt resource value: 0x7f0b000a
+			public const int ghost_view = 2131427338;
 			
-			// aapt resource value: 0x7f0a003a
-			public const int ifRoom = 2131361850;
+			// aapt resource value: 0x7f0b0005
+			public const int home = 2131427333;
 			
-			// aapt resource value: 0x7f0a005f
-			public const int image = 2131361887;
+			// aapt resource value: 0x7f0b0021
+			public const int homeAsUp = 2131427361;
 			
-			// aapt resource value: 0x7f0a00c0
-			public const int info = 2131361984;
+			// aapt resource value: 0x7f0b0062
+			public const int icon = 2131427426;
 			
-			// aapt resource value: 0x7f0a0059
-			public const int italic = 2131361881;
+			// aapt resource value: 0x7f0b00c8
+			public const int icon_group = 2131427528;
 			
-			// aapt resource value: 0x7f0a0000
-			public const int item_touch_helper_previous_elevation = 2131361792;
+			// aapt resource value: 0x7f0b003a
+			public const int ifRoom = 2131427386;
 			
-			// aapt resource value: 0x7f0a008c
-			public const int largeLabel = 2131361932;
+			// aapt resource value: 0x7f0b005f
+			public const int image = 2131427423;
 			
-			// aapt resource value: 0x7f0a0049
-			public const int left = 2131361865;
+			// aapt resource value: 0x7f0b00c4
+			public const int info = 2131427524;
 			
-			// aapt resource value: 0x7f0a0017
-			public const int line1 = 2131361815;
+			// aapt resource value: 0x7f0b0059
+			public const int italic = 2131427417;
 			
-			// aapt resource value: 0x7f0a0018
-			public const int line3 = 2131361816;
+			// aapt resource value: 0x7f0b0000
+			public const int item_touch_helper_previous_elevation = 2131427328;
 			
-			// aapt resource value: 0x7f0a001d
-			public const int listMode = 2131361821;
+			// aapt resource value: 0x7f0b008e
+			public const int largeLabel = 2131427470;
 			
-			// aapt resource value: 0x7f0a0061
-			public const int list_item = 2131361889;
+			// aapt resource value: 0x7f0b0049
+			public const int left = 2131427401;
 			
-			// aapt resource value: 0x7f0a00cb
-			public const int masked = 2131361995;
+			// aapt resource value: 0x7f0b0017
+			public const int line1 = 2131427351;
 			
-			// aapt resource value: 0x7f0a00b9
-			public const int media_actions = 2131361977;
+			// aapt resource value: 0x7f0b0018
+			public const int line3 = 2131427352;
 			
-			// aapt resource value: 0x7f0a00c8
-			public const int message = 2131361992;
+			// aapt resource value: 0x7f0b001d
+			public const int listMode = 2131427357;
 			
-			// aapt resource value: 0x7f0a0031
-			public const int middle = 2131361841;
+			// aapt resource value: 0x7f0b0061
+			public const int list_item = 2131427425;
 			
-			// aapt resource value: 0x7f0a0053
-			public const int mini = 2131361875;
+			// aapt resource value: 0x7f0b00ca
+			public const int main_appbar = 2131427530;
 			
-			// aapt resource value: 0x7f0a00a5
-			public const int mr_art = 2131361957;
+			// aapt resource value: 0x7f0b00cc
+			public const int main_tablayout = 2131427532;
 			
-			// aapt resource value: 0x7f0a009a
-			public const int mr_chooser_list = 2131361946;
+			// aapt resource value: 0x7f0b00cb
+			public const int main_toolbar = 2131427531;
 			
-			// aapt resource value: 0x7f0a009d
-			public const int mr_chooser_route_desc = 2131361949;
+			// aapt resource value: 0x7f0b00cd
+			public const int main_viewpager = 2131427533;
 			
-			// aapt resource value: 0x7f0a009b
-			public const int mr_chooser_route_icon = 2131361947;
+			// aapt resource value: 0x7f0b00d5
+			public const int masked = 2131427541;
 			
-			// aapt resource value: 0x7f0a009c
-			public const int mr_chooser_route_name = 2131361948;
+			// aapt resource value: 0x7f0b00bd
+			public const int media_actions = 2131427517;
 			
-			// aapt resource value: 0x7f0a0099
-			public const int mr_chooser_title = 2131361945;
+			// aapt resource value: 0x7f0b00d2
+			public const int message = 2131427538;
 			
-			// aapt resource value: 0x7f0a00a2
-			public const int mr_close = 2131361954;
+			// aapt resource value: 0x7f0b0031
+			public const int middle = 2131427377;
 			
-			// aapt resource value: 0x7f0a00a8
-			public const int mr_control_divider = 2131361960;
+			// aapt resource value: 0x7f0b0053
+			public const int mini = 2131427411;
 			
-			// aapt resource value: 0x7f0a00ae
-			public const int mr_control_playback_ctrl = 2131361966;
+			// aapt resource value: 0x7f0b00a9
+			public const int mr_art = 2131427497;
 			
-			// aapt resource value: 0x7f0a00b1
-			public const int mr_control_subtitle = 2131361969;
+			// aapt resource value: 0x7f0b009e
+			public const int mr_chooser_list = 2131427486;
 			
-			// aapt resource value: 0x7f0a00b0
-			public const int mr_control_title = 2131361968;
+			// aapt resource value: 0x7f0b00a1
+			public const int mr_chooser_route_desc = 2131427489;
 			
-			// aapt resource value: 0x7f0a00af
-			public const int mr_control_title_container = 2131361967;
+			// aapt resource value: 0x7f0b009f
+			public const int mr_chooser_route_icon = 2131427487;
 			
-			// aapt resource value: 0x7f0a00a3
-			public const int mr_custom_control = 2131361955;
+			// aapt resource value: 0x7f0b00a0
+			public const int mr_chooser_route_name = 2131427488;
 			
-			// aapt resource value: 0x7f0a00a4
-			public const int mr_default_control = 2131361956;
+			// aapt resource value: 0x7f0b009d
+			public const int mr_chooser_title = 2131427485;
 			
-			// aapt resource value: 0x7f0a009f
-			public const int mr_dialog_area = 2131361951;
+			// aapt resource value: 0x7f0b00a6
+			public const int mr_close = 2131427494;
 			
-			// aapt resource value: 0x7f0a009e
-			public const int mr_expandable_area = 2131361950;
+			// aapt resource value: 0x7f0b00ac
+			public const int mr_control_divider = 2131427500;
 			
-			// aapt resource value: 0x7f0a00b2
-			public const int mr_group_expand_collapse = 2131361970;
+			// aapt resource value: 0x7f0b00b2
+			public const int mr_control_playback_ctrl = 2131427506;
 			
-			// aapt resource value: 0x7f0a00a6
-			public const int mr_media_main_control = 2131361958;
+			// aapt resource value: 0x7f0b00b5
+			public const int mr_control_subtitle = 2131427509;
 			
-			// aapt resource value: 0x7f0a00a1
-			public const int mr_name = 2131361953;
+			// aapt resource value: 0x7f0b00b4
+			public const int mr_control_title = 2131427508;
 			
-			// aapt resource value: 0x7f0a00a7
-			public const int mr_playback_control = 2131361959;
+			// aapt resource value: 0x7f0b00b3
+			public const int mr_control_title_container = 2131427507;
 			
-			// aapt resource value: 0x7f0a00a0
-			public const int mr_title_bar = 2131361952;
+			// aapt resource value: 0x7f0b00a7
+			public const int mr_custom_control = 2131427495;
 			
-			// aapt resource value: 0x7f0a00a9
-			public const int mr_volume_control = 2131361961;
+			// aapt resource value: 0x7f0b00a8
+			public const int mr_default_control = 2131427496;
 			
-			// aapt resource value: 0x7f0a00aa
-			public const int mr_volume_group_list = 2131361962;
+			// aapt resource value: 0x7f0b00a3
+			public const int mr_dialog_area = 2131427491;
 			
-			// aapt resource value: 0x7f0a00ac
-			public const int mr_volume_item_icon = 2131361964;
+			// aapt resource value: 0x7f0b00a2
+			public const int mr_expandable_area = 2131427490;
 			
-			// aapt resource value: 0x7f0a00ad
-			public const int mr_volume_slider = 2131361965;
+			// aapt resource value: 0x7f0b00b6
+			public const int mr_group_expand_collapse = 2131427510;
 			
-			// aapt resource value: 0x7f0a0028
-			public const int multiply = 2131361832;
+			// aapt resource value: 0x7f0b00aa
+			public const int mr_media_main_control = 2131427498;
 			
-			// aapt resource value: 0x7f0a0093
-			public const int navigation_header_container = 2131361939;
+			// aapt resource value: 0x7f0b00a5
+			public const int mr_name = 2131427493;
 			
-			// aapt resource value: 0x7f0a003b
-			public const int never = 2131361851;
+			// aapt resource value: 0x7f0b00ab
+			public const int mr_playback_control = 2131427499;
 			
-			// aapt resource value: 0x7f0a0022
-			public const int none = 2131361826;
+			// aapt resource value: 0x7f0b00a4
+			public const int mr_title_bar = 2131427492;
 			
-			// aapt resource value: 0x7f0a001e
-			public const int normal = 2131361822;
+			// aapt resource value: 0x7f0b00ad
+			public const int mr_volume_control = 2131427501;
 			
-			// aapt resource value: 0x7f0a00c2
-			public const int notification_background = 2131361986;
+			// aapt resource value: 0x7f0b00ae
+			public const int mr_volume_group_list = 2131427502;
 			
-			// aapt resource value: 0x7f0a00bc
-			public const int notification_main_column = 2131361980;
+			// aapt resource value: 0x7f0b00b0
+			public const int mr_volume_item_icon = 2131427504;
 			
-			// aapt resource value: 0x7f0a00bb
-			public const int notification_main_column_container = 2131361979;
+			// aapt resource value: 0x7f0b00b1
+			public const int mr_volume_slider = 2131427505;
 			
-			// aapt resource value: 0x7f0a004c
-			public const int parallax = 2131361868;
+			// aapt resource value: 0x7f0b0028
+			public const int multiply = 2131427368;
 			
-			// aapt resource value: 0x7f0a0065
-			public const int parentPanel = 2131361893;
+			// aapt resource value: 0x7f0b0095
+			public const int navigation_header_container = 2131427477;
 			
-			// aapt resource value: 0x7f0a000b
-			public const int parent_matrix = 2131361803;
+			// aapt resource value: 0x7f0b003b
+			public const int never = 2131427387;
 			
-			// aapt resource value: 0x7f0a004d
-			public const int pin = 2131361869;
+			// aapt resource value: 0x7f0b0022
+			public const int none = 2131427362;
 			
-			// aapt resource value: 0x7f0a0006
-			public const int progress_circular = 2131361798;
+			// aapt resource value: 0x7f0b001e
+			public const int normal = 2131427358;
 			
-			// aapt resource value: 0x7f0a0007
-			public const int progress_horizontal = 2131361799;
+			// aapt resource value: 0x7f0b00c6
+			public const int notification_background = 2131427526;
 			
-			// aapt resource value: 0x7f0a0075
-			public const int radio = 2131361909;
+			// aapt resource value: 0x7f0b00c0
+			public const int notification_main_column = 2131427520;
 			
-			// aapt resource value: 0x7f0a004a
-			public const int right = 2131361866;
+			// aapt resource value: 0x7f0b00bf
+			public const int notification_main_column_container = 2131427519;
 			
-			// aapt resource value: 0x7f0a00c1
-			public const int right_icon = 2131361985;
+			// aapt resource value: 0x7f0b004c
+			public const int parallax = 2131427404;
 			
-			// aapt resource value: 0x7f0a00bd
-			public const int right_side = 2131361981;
+			// aapt resource value: 0x7f0b0065
+			public const int parentPanel = 2131427429;
 			
-			// aapt resource value: 0x7f0a000c
-			public const int save_image_matrix = 2131361804;
+			// aapt resource value: 0x7f0b000b
+			public const int parent_matrix = 2131427339;
 			
-			// aapt resource value: 0x7f0a000d
-			public const int save_non_transition_alpha = 2131361805;
+			// aapt resource value: 0x7f0b004d
+			public const int pin = 2131427405;
 			
-			// aapt resource value: 0x7f0a000e
-			public const int save_scale_type = 2131361806;
+			// aapt resource value: 0x7f0b0006
+			public const int progress_circular = 2131427334;
 			
-			// aapt resource value: 0x7f0a0029
-			public const int screen = 2131361833;
+			// aapt resource value: 0x7f0b0007
+			public const int progress_horizontal = 2131427335;
 			
-			// aapt resource value: 0x7f0a0042
-			public const int scroll = 2131361858;
+			// aapt resource value: 0x7f0b0075
+			public const int radio = 2131427445;
 			
-			// aapt resource value: 0x7f0a006b
-			public const int scrollIndicatorDown = 2131361899;
+			// aapt resource value: 0x7f0b004a
+			public const int right = 2131427402;
 			
-			// aapt resource value: 0x7f0a0067
-			public const int scrollIndicatorUp = 2131361895;
+			// aapt resource value: 0x7f0b00c5
+			public const int right_icon = 2131427525;
 			
-			// aapt resource value: 0x7f0a0068
-			public const int scrollView = 2131361896;
+			// aapt resource value: 0x7f0b00c1
+			public const int right_side = 2131427521;
 			
-			// aapt resource value: 0x7f0a0055
-			public const int scrollable = 2131361877;
+			// aapt resource value: 0x7f0b000c
+			public const int save_image_matrix = 2131427340;
 			
-			// aapt resource value: 0x7f0a0080
-			public const int search_badge = 2131361920;
+			// aapt resource value: 0x7f0b000d
+			public const int save_non_transition_alpha = 2131427341;
 			
-			// aapt resource value: 0x7f0a007f
-			public const int search_bar = 2131361919;
+			// aapt resource value: 0x7f0b000e
+			public const int save_scale_type = 2131427342;
 			
-			// aapt resource value: 0x7f0a0081
-			public const int search_button = 2131361921;
+			// aapt resource value: 0x7f0b0029
+			public const int screen = 2131427369;
 			
-			// aapt resource value: 0x7f0a0086
-			public const int search_close_btn = 2131361926;
+			// aapt resource value: 0x7f0b0042
+			public const int scroll = 2131427394;
 			
-			// aapt resource value: 0x7f0a0082
-			public const int search_edit_frame = 2131361922;
+			// aapt resource value: 0x7f0b006b
+			public const int scrollIndicatorDown = 2131427435;
 			
-			// aapt resource value: 0x7f0a0088
-			public const int search_go_btn = 2131361928;
+			// aapt resource value: 0x7f0b0067
+			public const int scrollIndicatorUp = 2131427431;
 			
-			// aapt resource value: 0x7f0a0083
-			public const int search_mag_icon = 2131361923;
+			// aapt resource value: 0x7f0b0068
+			public const int scrollView = 2131427432;
 			
-			// aapt resource value: 0x7f0a0084
-			public const int search_plate = 2131361924;
+			// aapt resource value: 0x7f0b0055
+			public const int scrollable = 2131427413;
 			
-			// aapt resource value: 0x7f0a0085
-			public const int search_src_text = 2131361925;
+			// aapt resource value: 0x7f0b0080
+			public const int search_badge = 2131427456;
 			
-			// aapt resource value: 0x7f0a0089
-			public const int search_voice_btn = 2131361929;
+			// aapt resource value: 0x7f0b007f
+			public const int search_bar = 2131427455;
 			
-			// aapt resource value: 0x7f0a008a
-			public const int select_dialog_listview = 2131361930;
+			// aapt resource value: 0x7f0b0081
+			public const int search_button = 2131427457;
 			
-			// aapt resource value: 0x7f0a0074
-			public const int shortcut = 2131361908;
+			// aapt resource value: 0x7f0b0086
+			public const int search_close_btn = 2131427462;
 			
-			// aapt resource value: 0x7f0a0023
-			public const int showCustom = 2131361827;
+			// aapt resource value: 0x7f0b0082
+			public const int search_edit_frame = 2131427458;
 			
-			// aapt resource value: 0x7f0a0024
-			public const int showHome = 2131361828;
+			// aapt resource value: 0x7f0b0088
+			public const int search_go_btn = 2131427464;
 			
-			// aapt resource value: 0x7f0a0025
-			public const int showTitle = 2131361829;
+			// aapt resource value: 0x7f0b0083
+			public const int search_mag_icon = 2131427459;
 			
-			// aapt resource value: 0x7f0a00c6
-			public const int sliding_tabs = 2131361990;
+			// aapt resource value: 0x7f0b0084
+			public const int search_plate = 2131427460;
 			
-			// aapt resource value: 0x7f0a008b
-			public const int smallLabel = 2131361931;
+			// aapt resource value: 0x7f0b0085
+			public const int search_src_text = 2131427461;
 			
-			// aapt resource value: 0x7f0a0092
-			public const int snackbar_action = 2131361938;
+			// aapt resource value: 0x7f0b0089
+			public const int search_voice_btn = 2131427465;
 			
-			// aapt resource value: 0x7f0a0091
-			public const int snackbar_text = 2131361937;
+			// aapt resource value: 0x7f0b008a
+			public const int select_dialog_listview = 2131427466;
 			
-			// aapt resource value: 0x7f0a0043
-			public const int snap = 2131361859;
+			// aapt resource value: 0x7f0b00ce
+			public const int shellcontent_appbar = 2131427534;
 			
-			// aapt resource value: 0x7f0a0064
-			public const int spacer = 2131361892;
+			// aapt resource value: 0x7f0b00cf
+			public const int shellcontent_toolbar = 2131427535;
 			
-			// aapt resource value: 0x7f0a0008
-			public const int split_action_bar = 2131361800;
+			// aapt resource value: 0x7f0b0074
+			public const int shortcut = 2131427444;
 			
-			// aapt resource value: 0x7f0a002a
-			public const int src_atop = 2131361834;
+			// aapt resource value: 0x7f0b0023
+			public const int showCustom = 2131427363;
 			
-			// aapt resource value: 0x7f0a002b
-			public const int src_in = 2131361835;
+			// aapt resource value: 0x7f0b0024
+			public const int showHome = 2131427364;
 			
-			// aapt resource value: 0x7f0a002c
-			public const int src_over = 2131361836;
+			// aapt resource value: 0x7f0b0025
+			public const int showTitle = 2131427365;
 			
-			// aapt resource value: 0x7f0a004b
-			public const int start = 2131361867;
+			// aapt resource value: 0x7f0b00d0
+			public const int sliding_tabs = 2131427536;
 			
-			// aapt resource value: 0x7f0a00b8
-			public const int status_bar_latest_event_content = 2131361976;
+			// aapt resource value: 0x7f0b008d
+			public const int smallLabel = 2131427469;
 			
-			// aapt resource value: 0x7f0a0076
-			public const int submenuarrow = 2131361910;
+			// aapt resource value: 0x7f0b0094
+			public const int snackbar_action = 2131427476;
 			
-			// aapt resource value: 0x7f0a0087
-			public const int submit_area = 2131361927;
+			// aapt resource value: 0x7f0b0093
+			public const int snackbar_text = 2131427475;
 			
-			// aapt resource value: 0x7f0a001f
-			public const int tabMode = 2131361823;
+			// aapt resource value: 0x7f0b0043
+			public const int snap = 2131427395;
 			
-			// aapt resource value: 0x7f0a0019
-			public const int tag_transition_group = 2131361817;
+			// aapt resource value: 0x7f0b0064
+			public const int spacer = 2131427428;
 			
-			// aapt resource value: 0x7f0a001a
-			public const int text = 2131361818;
+			// aapt resource value: 0x7f0b0008
+			public const int split_action_bar = 2131427336;
 			
-			// aapt resource value: 0x7f0a001b
-			public const int text2 = 2131361819;
+			// aapt resource value: 0x7f0b002a
+			public const int src_atop = 2131427370;
 			
-			// aapt resource value: 0x7f0a006a
-			public const int textSpacerNoButtons = 2131361898;
+			// aapt resource value: 0x7f0b002b
+			public const int src_in = 2131427371;
 			
-			// aapt resource value: 0x7f0a0069
-			public const int textSpacerNoTitle = 2131361897;
+			// aapt resource value: 0x7f0b002c
+			public const int src_over = 2131427372;
 			
-			// aapt resource value: 0x7f0a0098
-			public const int text_input_password_toggle = 2131361944;
+			// aapt resource value: 0x7f0b004b
+			public const int start = 2131427403;
 			
-			// aapt resource value: 0x7f0a0014
-			public const int textinput_counter = 2131361812;
+			// aapt resource value: 0x7f0b00bc
+			public const int status_bar_latest_event_content = 2131427516;
 			
-			// aapt resource value: 0x7f0a0015
-			public const int textinput_error = 2131361813;
+			// aapt resource value: 0x7f0b0076
+			public const int submenuarrow = 2131427446;
 			
-			// aapt resource value: 0x7f0a00be
-			public const int time = 2131361982;
+			// aapt resource value: 0x7f0b0087
+			public const int submit_area = 2131427463;
 			
-			// aapt resource value: 0x7f0a001c
-			public const int title = 2131361820;
+			// aapt resource value: 0x7f0b001f
+			public const int tabMode = 2131427359;
 			
-			// aapt resource value: 0x7f0a0071
-			public const int titleDividerNoCustom = 2131361905;
+			// aapt resource value: 0x7f0b0019
+			public const int tag_transition_group = 2131427353;
 			
-			// aapt resource value: 0x7f0a006f
-			public const int title_template = 2131361903;
+			// aapt resource value: 0x7f0b001a
+			public const int text = 2131427354;
 			
-			// aapt resource value: 0x7f0a00c7
-			public const int toolbar = 2131361991;
+			// aapt resource value: 0x7f0b001b
+			public const int text2 = 2131427355;
 			
-			// aapt resource value: 0x7f0a003e
-			public const int top = 2131361854;
+			// aapt resource value: 0x7f0b006a
+			public const int textSpacerNoButtons = 2131427434;
 			
-			// aapt resource value: 0x7f0a006e
-			public const int topPanel = 2131361902;
+			// aapt resource value: 0x7f0b0069
+			public const int textSpacerNoTitle = 2131427433;
 			
-			// aapt resource value: 0x7f0a008f
-			public const int touch_outside = 2131361935;
+			// aapt resource value: 0x7f0b009a
+			public const int text_input_password_toggle = 2131427482;
 			
-			// aapt resource value: 0x7f0a000f
-			public const int transition_current_scene = 2131361807;
+			// aapt resource value: 0x7f0b0014
+			public const int textinput_counter = 2131427348;
 			
-			// aapt resource value: 0x7f0a0010
-			public const int transition_layout_save = 2131361808;
+			// aapt resource value: 0x7f0b0015
+			public const int textinput_error = 2131427349;
 			
-			// aapt resource value: 0x7f0a0011
-			public const int transition_position = 2131361809;
+			// aapt resource value: 0x7f0b00c2
+			public const int time = 2131427522;
 			
-			// aapt resource value: 0x7f0a0012
-			public const int transition_scene_layoutid_cache = 2131361810;
+			// aapt resource value: 0x7f0b001c
+			public const int title = 2131427356;
 			
-			// aapt resource value: 0x7f0a0013
-			public const int transition_transform = 2131361811;
+			// aapt resource value: 0x7f0b0071
+			public const int titleDividerNoCustom = 2131427441;
 			
-			// aapt resource value: 0x7f0a002d
-			public const int uniform = 2131361837;
+			// aapt resource value: 0x7f0b006f
+			public const int title_template = 2131427439;
 			
-			// aapt resource value: 0x7f0a0009
-			public const int up = 2131361801;
+			// aapt resource value: 0x7f0b00d1
+			public const int toolbar = 2131427537;
 			
-			// aapt resource value: 0x7f0a0026
-			public const int useLogo = 2131361830;
+			// aapt resource value: 0x7f0b003e
+			public const int top = 2131427390;
 			
-			// aapt resource value: 0x7f0a0016
-			public const int view_offset_helper = 2131361814;
+			// aapt resource value: 0x7f0b006e
+			public const int topPanel = 2131427438;
 			
-			// aapt resource value: 0x7f0a00ca
-			public const int visible = 2131361994;
+			// aapt resource value: 0x7f0b0091
+			public const int touch_outside = 2131427473;
 			
-			// aapt resource value: 0x7f0a00ab
-			public const int volume_item_container = 2131361963;
+			// aapt resource value: 0x7f0b000f
+			public const int transition_current_scene = 2131427343;
 			
-			// aapt resource value: 0x7f0a003c
-			public const int withText = 2131361852;
+			// aapt resource value: 0x7f0b0010
+			public const int transition_layout_save = 2131427344;
 			
-			// aapt resource value: 0x7f0a002e
-			public const int wrap_content = 2131361838;
+			// aapt resource value: 0x7f0b0011
+			public const int transition_position = 2131427345;
+			
+			// aapt resource value: 0x7f0b0012
+			public const int transition_scene_layoutid_cache = 2131427346;
+			
+			// aapt resource value: 0x7f0b0013
+			public const int transition_transform = 2131427347;
+			
+			// aapt resource value: 0x7f0b002d
+			public const int uniform = 2131427373;
+			
+			// aapt resource value: 0x7f0b0009
+			public const int up = 2131427337;
+			
+			// aapt resource value: 0x7f0b0026
+			public const int useLogo = 2131427366;
+			
+			// aapt resource value: 0x7f0b0016
+			public const int view_offset_helper = 2131427350;
+			
+			// aapt resource value: 0x7f0b00d4
+			public const int visible = 2131427540;
+			
+			// aapt resource value: 0x7f0b00af
+			public const int volume_item_container = 2131427503;
+			
+			// aapt resource value: 0x7f0b003c
+			public const int withText = 2131427388;
+			
+			// aapt resource value: 0x7f0b002e
+			public const int wrap_content = 2131427374;
 			
 			static Id()
 			{
@@ -3786,44 +5825,44 @@ namespace O2CardsApp.Droid
 		public partial class Integer
 		{
 			
-			// aapt resource value: 0x7f0c0003
-			public const int abc_config_activityDefaultDur = 2131492867;
+			// aapt resource value: 0x7f0d0003
+			public const int abc_config_activityDefaultDur = 2131558403;
 			
-			// aapt resource value: 0x7f0c0004
-			public const int abc_config_activityShortDur = 2131492868;
+			// aapt resource value: 0x7f0d0004
+			public const int abc_config_activityShortDur = 2131558404;
 			
-			// aapt resource value: 0x7f0c0008
-			public const int app_bar_elevation_anim_duration = 2131492872;
+			// aapt resource value: 0x7f0d0008
+			public const int app_bar_elevation_anim_duration = 2131558408;
 			
-			// aapt resource value: 0x7f0c0009
-			public const int bottom_sheet_slide_duration = 2131492873;
+			// aapt resource value: 0x7f0d0009
+			public const int bottom_sheet_slide_duration = 2131558409;
 			
-			// aapt resource value: 0x7f0c0005
-			public const int cancel_button_image_alpha = 2131492869;
+			// aapt resource value: 0x7f0d0005
+			public const int cancel_button_image_alpha = 2131558405;
 			
-			// aapt resource value: 0x7f0c0006
-			public const int config_tooltipAnimTime = 2131492870;
+			// aapt resource value: 0x7f0d0006
+			public const int config_tooltipAnimTime = 2131558406;
 			
-			// aapt resource value: 0x7f0c0007
-			public const int design_snackbar_text_max_lines = 2131492871;
+			// aapt resource value: 0x7f0d0007
+			public const int design_snackbar_text_max_lines = 2131558407;
 			
-			// aapt resource value: 0x7f0c000a
-			public const int hide_password_duration = 2131492874;
+			// aapt resource value: 0x7f0d000a
+			public const int hide_password_duration = 2131558410;
 			
-			// aapt resource value: 0x7f0c0000
-			public const int mr_controller_volume_group_list_animation_duration_ms = 2131492864;
+			// aapt resource value: 0x7f0d0000
+			public const int mr_controller_volume_group_list_animation_duration_ms = 2131558400;
 			
-			// aapt resource value: 0x7f0c0001
-			public const int mr_controller_volume_group_list_fade_in_duration_ms = 2131492865;
+			// aapt resource value: 0x7f0d0001
+			public const int mr_controller_volume_group_list_fade_in_duration_ms = 2131558401;
 			
-			// aapt resource value: 0x7f0c0002
-			public const int mr_controller_volume_group_list_fade_out_duration_ms = 2131492866;
+			// aapt resource value: 0x7f0d0002
+			public const int mr_controller_volume_group_list_fade_out_duration_ms = 2131558402;
 			
-			// aapt resource value: 0x7f0c000b
-			public const int show_password_duration = 2131492875;
+			// aapt resource value: 0x7f0d000b
+			public const int show_password_duration = 2131558411;
 			
-			// aapt resource value: 0x7f0c000c
-			public const int status_bar_notification_info_maxnum = 2131492876;
+			// aapt resource value: 0x7f0d000c
+			public const int status_bar_notification_info_maxnum = 2131558412;
 			
 			static Integer()
 			{
@@ -3936,136 +5975,148 @@ namespace O2CardsApp.Droid
 			public const int abc_select_dialog_material = 2130968601;
 			
 			// aapt resource value: 0x7f04001a
-			public const int design_bottom_navigation_item = 2130968602;
+			public const int BottomTabLayout = 2130968602;
 			
 			// aapt resource value: 0x7f04001b
-			public const int design_bottom_sheet_dialog = 2130968603;
+			public const int design_bottom_navigation_item = 2130968603;
 			
 			// aapt resource value: 0x7f04001c
-			public const int design_layout_snackbar = 2130968604;
+			public const int design_bottom_sheet_dialog = 2130968604;
 			
 			// aapt resource value: 0x7f04001d
-			public const int design_layout_snackbar_include = 2130968605;
+			public const int design_layout_snackbar = 2130968605;
 			
 			// aapt resource value: 0x7f04001e
-			public const int design_layout_tab_icon = 2130968606;
+			public const int design_layout_snackbar_include = 2130968606;
 			
 			// aapt resource value: 0x7f04001f
-			public const int design_layout_tab_text = 2130968607;
+			public const int design_layout_tab_icon = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public const int design_menu_item_action_area = 2130968608;
+			public const int design_layout_tab_text = 2130968608;
 			
 			// aapt resource value: 0x7f040021
-			public const int design_navigation_item = 2130968609;
+			public const int design_menu_item_action_area = 2130968609;
 			
 			// aapt resource value: 0x7f040022
-			public const int design_navigation_item_header = 2130968610;
+			public const int design_navigation_item = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public const int design_navigation_item_separator = 2130968611;
+			public const int design_navigation_item_header = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public const int design_navigation_item_subheader = 2130968612;
+			public const int design_navigation_item_separator = 2130968612;
 			
 			// aapt resource value: 0x7f040025
-			public const int design_navigation_menu = 2130968613;
+			public const int design_navigation_item_subheader = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int design_navigation_menu_item = 2130968614;
+			public const int design_navigation_menu = 2130968614;
 			
 			// aapt resource value: 0x7f040027
-			public const int design_text_input_password_icon = 2130968615;
+			public const int design_navigation_menu_item = 2130968615;
 			
 			// aapt resource value: 0x7f040028
-			public const int mr_chooser_dialog = 2130968616;
+			public const int design_text_input_password_icon = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public const int mr_chooser_list_item = 2130968617;
+			public const int FlyoutContent = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public const int mr_controller_material_dialog_b = 2130968618;
+			public const int mr_chooser_dialog = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int mr_controller_volume_item = 2130968619;
+			public const int mr_chooser_list_item = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int mr_playback_control = 2130968620;
+			public const int mr_controller_material_dialog_b = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int mr_volume_control = 2130968621;
+			public const int mr_controller_volume_item = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int notification_action = 2130968622;
+			public const int mr_playback_control = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int notification_action_tombstone = 2130968623;
+			public const int mr_volume_control = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int notification_media_action = 2130968624;
+			public const int notification_action = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int notification_media_cancel_action = 2130968625;
+			public const int notification_action_tombstone = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int notification_template_big_media = 2130968626;
+			public const int notification_media_action = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int notification_template_big_media_custom = 2130968627;
+			public const int notification_media_cancel_action = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int notification_template_big_media_narrow = 2130968628;
+			public const int notification_template_big_media = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int notification_template_big_media_narrow_custom = 2130968629;
+			public const int notification_template_big_media_custom = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int notification_template_custom_big = 2130968630;
+			public const int notification_template_big_media_narrow = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int notification_template_icon_group = 2130968631;
+			public const int notification_template_big_media_narrow_custom = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int notification_template_lines_media = 2130968632;
+			public const int notification_template_custom_big = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int notification_template_media = 2130968633;
+			public const int notification_template_icon_group = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int notification_template_media_custom = 2130968634;
+			public const int notification_template_lines_media = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int notification_template_part_chronometer = 2130968635;
+			public const int notification_template_media = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int notification_template_part_time = 2130968636;
+			public const int notification_template_media_custom = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public const int select_dialog_item_material = 2130968637;
+			public const int notification_template_part_chronometer = 2130968637;
 			
 			// aapt resource value: 0x7f04003e
-			public const int select_dialog_multichoice_material = 2130968638;
+			public const int notification_template_part_time = 2130968638;
 			
 			// aapt resource value: 0x7f04003f
-			public const int select_dialog_singlechoice_material = 2130968639;
+			public const int RootLayout = 2130968639;
 			
 			// aapt resource value: 0x7f040040
-			public const int support_simple_spinner_dropdown_item = 2130968640;
+			public const int select_dialog_item_material = 2130968640;
 			
 			// aapt resource value: 0x7f040041
-			public const int Tabbar = 2130968641;
+			public const int select_dialog_multichoice_material = 2130968641;
 			
 			// aapt resource value: 0x7f040042
-			public const int Toolbar = 2130968642;
+			public const int select_dialog_singlechoice_material = 2130968642;
 			
 			// aapt resource value: 0x7f040043
-			public const int tooltip = 2130968643;
+			public const int ShellContent = 2130968643;
 			
 			// aapt resource value: 0x7f040044
-			public const int zxingscanneractivitylayout = 2130968644;
+			public const int support_simple_spinner_dropdown_item = 2130968644;
 			
 			// aapt resource value: 0x7f040045
-			public const int zxingscannerfragmentlayout = 2130968645;
+			public const int Tabbar = 2130968645;
+			
+			// aapt resource value: 0x7f040046
+			public const int Toolbar = 2130968646;
+			
+			// aapt resource value: 0x7f040047
+			public const int tooltip = 2130968647;
+			
+			// aapt resource value: 0x7f040048
+			public const int zxingscanneractivitylayout = 2130968648;
+			
+			// aapt resource value: 0x7f040049
+			public const int zxingscannerfragmentlayout = 2130968649;
 			
 			static Layout()
 			{
@@ -4123,185 +6174,185 @@ namespace O2CardsApp.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f0b0015
-			public const int abc_action_bar_home_description = 2131427349;
+			// aapt resource value: 0x7f0c0015
+			public const int abc_action_bar_home_description = 2131492885;
 			
-			// aapt resource value: 0x7f0b0016
-			public const int abc_action_bar_up_description = 2131427350;
+			// aapt resource value: 0x7f0c0016
+			public const int abc_action_bar_up_description = 2131492886;
 			
-			// aapt resource value: 0x7f0b0017
-			public const int abc_action_menu_overflow_description = 2131427351;
+			// aapt resource value: 0x7f0c0017
+			public const int abc_action_menu_overflow_description = 2131492887;
 			
-			// aapt resource value: 0x7f0b0018
-			public const int abc_action_mode_done = 2131427352;
+			// aapt resource value: 0x7f0c0018
+			public const int abc_action_mode_done = 2131492888;
 			
-			// aapt resource value: 0x7f0b0019
-			public const int abc_activity_chooser_view_see_all = 2131427353;
+			// aapt resource value: 0x7f0c0019
+			public const int abc_activity_chooser_view_see_all = 2131492889;
 			
-			// aapt resource value: 0x7f0b001a
-			public const int abc_activitychooserview_choose_application = 2131427354;
+			// aapt resource value: 0x7f0c001a
+			public const int abc_activitychooserview_choose_application = 2131492890;
 			
-			// aapt resource value: 0x7f0b001b
-			public const int abc_capital_off = 2131427355;
+			// aapt resource value: 0x7f0c001b
+			public const int abc_capital_off = 2131492891;
 			
-			// aapt resource value: 0x7f0b001c
-			public const int abc_capital_on = 2131427356;
+			// aapt resource value: 0x7f0c001c
+			public const int abc_capital_on = 2131492892;
 			
-			// aapt resource value: 0x7f0b0027
-			public const int abc_font_family_body_1_material = 2131427367;
+			// aapt resource value: 0x7f0c0027
+			public const int abc_font_family_body_1_material = 2131492903;
 			
-			// aapt resource value: 0x7f0b0028
-			public const int abc_font_family_body_2_material = 2131427368;
+			// aapt resource value: 0x7f0c0028
+			public const int abc_font_family_body_2_material = 2131492904;
 			
-			// aapt resource value: 0x7f0b0029
-			public const int abc_font_family_button_material = 2131427369;
+			// aapt resource value: 0x7f0c0029
+			public const int abc_font_family_button_material = 2131492905;
 			
-			// aapt resource value: 0x7f0b002a
-			public const int abc_font_family_caption_material = 2131427370;
+			// aapt resource value: 0x7f0c002a
+			public const int abc_font_family_caption_material = 2131492906;
 			
-			// aapt resource value: 0x7f0b002b
-			public const int abc_font_family_display_1_material = 2131427371;
+			// aapt resource value: 0x7f0c002b
+			public const int abc_font_family_display_1_material = 2131492907;
 			
-			// aapt resource value: 0x7f0b002c
-			public const int abc_font_family_display_2_material = 2131427372;
+			// aapt resource value: 0x7f0c002c
+			public const int abc_font_family_display_2_material = 2131492908;
 			
-			// aapt resource value: 0x7f0b002d
-			public const int abc_font_family_display_3_material = 2131427373;
+			// aapt resource value: 0x7f0c002d
+			public const int abc_font_family_display_3_material = 2131492909;
 			
-			// aapt resource value: 0x7f0b002e
-			public const int abc_font_family_display_4_material = 2131427374;
+			// aapt resource value: 0x7f0c002e
+			public const int abc_font_family_display_4_material = 2131492910;
 			
-			// aapt resource value: 0x7f0b002f
-			public const int abc_font_family_headline_material = 2131427375;
+			// aapt resource value: 0x7f0c002f
+			public const int abc_font_family_headline_material = 2131492911;
 			
-			// aapt resource value: 0x7f0b0030
-			public const int abc_font_family_menu_material = 2131427376;
+			// aapt resource value: 0x7f0c0030
+			public const int abc_font_family_menu_material = 2131492912;
 			
-			// aapt resource value: 0x7f0b0031
-			public const int abc_font_family_subhead_material = 2131427377;
+			// aapt resource value: 0x7f0c0031
+			public const int abc_font_family_subhead_material = 2131492913;
 			
-			// aapt resource value: 0x7f0b0032
-			public const int abc_font_family_title_material = 2131427378;
+			// aapt resource value: 0x7f0c0032
+			public const int abc_font_family_title_material = 2131492914;
 			
-			// aapt resource value: 0x7f0b001d
-			public const int abc_search_hint = 2131427357;
+			// aapt resource value: 0x7f0c001d
+			public const int abc_search_hint = 2131492893;
 			
-			// aapt resource value: 0x7f0b001e
-			public const int abc_searchview_description_clear = 2131427358;
+			// aapt resource value: 0x7f0c001e
+			public const int abc_searchview_description_clear = 2131492894;
 			
-			// aapt resource value: 0x7f0b001f
-			public const int abc_searchview_description_query = 2131427359;
+			// aapt resource value: 0x7f0c001f
+			public const int abc_searchview_description_query = 2131492895;
 			
-			// aapt resource value: 0x7f0b0020
-			public const int abc_searchview_description_search = 2131427360;
+			// aapt resource value: 0x7f0c0020
+			public const int abc_searchview_description_search = 2131492896;
 			
-			// aapt resource value: 0x7f0b0021
-			public const int abc_searchview_description_submit = 2131427361;
+			// aapt resource value: 0x7f0c0021
+			public const int abc_searchview_description_submit = 2131492897;
 			
-			// aapt resource value: 0x7f0b0022
-			public const int abc_searchview_description_voice = 2131427362;
+			// aapt resource value: 0x7f0c0022
+			public const int abc_searchview_description_voice = 2131492898;
 			
-			// aapt resource value: 0x7f0b0023
-			public const int abc_shareactionprovider_share_with = 2131427363;
+			// aapt resource value: 0x7f0c0023
+			public const int abc_shareactionprovider_share_with = 2131492899;
 			
-			// aapt resource value: 0x7f0b0024
-			public const int abc_shareactionprovider_share_with_application = 2131427364;
+			// aapt resource value: 0x7f0c0024
+			public const int abc_shareactionprovider_share_with_application = 2131492900;
 			
-			// aapt resource value: 0x7f0b0025
-			public const int abc_toolbar_collapse_description = 2131427365;
+			// aapt resource value: 0x7f0c0025
+			public const int abc_toolbar_collapse_description = 2131492901;
 			
-			// aapt resource value: 0x7f0b0033
-			public const int appbar_scrolling_view_behavior = 2131427379;
+			// aapt resource value: 0x7f0c0033
+			public const int appbar_scrolling_view_behavior = 2131492915;
 			
-			// aapt resource value: 0x7f0b0034
-			public const int bottom_sheet_behavior = 2131427380;
+			// aapt resource value: 0x7f0c0034
+			public const int bottom_sheet_behavior = 2131492916;
 			
-			// aapt resource value: 0x7f0b0035
-			public const int character_counter_pattern = 2131427381;
+			// aapt resource value: 0x7f0c0035
+			public const int character_counter_pattern = 2131492917;
 			
-			// aapt resource value: 0x7f0b0000
-			public const int mr_button_content_description = 2131427328;
+			// aapt resource value: 0x7f0c0000
+			public const int mr_button_content_description = 2131492864;
 			
-			// aapt resource value: 0x7f0b0001
-			public const int mr_cast_button_connected = 2131427329;
+			// aapt resource value: 0x7f0c0001
+			public const int mr_cast_button_connected = 2131492865;
 			
-			// aapt resource value: 0x7f0b0002
-			public const int mr_cast_button_connecting = 2131427330;
+			// aapt resource value: 0x7f0c0002
+			public const int mr_cast_button_connecting = 2131492866;
 			
-			// aapt resource value: 0x7f0b0003
-			public const int mr_cast_button_disconnected = 2131427331;
+			// aapt resource value: 0x7f0c0003
+			public const int mr_cast_button_disconnected = 2131492867;
 			
-			// aapt resource value: 0x7f0b0004
-			public const int mr_chooser_searching = 2131427332;
+			// aapt resource value: 0x7f0c0004
+			public const int mr_chooser_searching = 2131492868;
 			
-			// aapt resource value: 0x7f0b0005
-			public const int mr_chooser_title = 2131427333;
+			// aapt resource value: 0x7f0c0005
+			public const int mr_chooser_title = 2131492869;
 			
-			// aapt resource value: 0x7f0b0006
-			public const int mr_controller_album_art = 2131427334;
+			// aapt resource value: 0x7f0c0006
+			public const int mr_controller_album_art = 2131492870;
 			
-			// aapt resource value: 0x7f0b0007
-			public const int mr_controller_casting_screen = 2131427335;
+			// aapt resource value: 0x7f0c0007
+			public const int mr_controller_casting_screen = 2131492871;
 			
-			// aapt resource value: 0x7f0b0008
-			public const int mr_controller_close_description = 2131427336;
+			// aapt resource value: 0x7f0c0008
+			public const int mr_controller_close_description = 2131492872;
 			
-			// aapt resource value: 0x7f0b0009
-			public const int mr_controller_collapse_group = 2131427337;
+			// aapt resource value: 0x7f0c0009
+			public const int mr_controller_collapse_group = 2131492873;
 			
-			// aapt resource value: 0x7f0b000a
-			public const int mr_controller_disconnect = 2131427338;
+			// aapt resource value: 0x7f0c000a
+			public const int mr_controller_disconnect = 2131492874;
 			
-			// aapt resource value: 0x7f0b000b
-			public const int mr_controller_expand_group = 2131427339;
+			// aapt resource value: 0x7f0c000b
+			public const int mr_controller_expand_group = 2131492875;
 			
-			// aapt resource value: 0x7f0b000c
-			public const int mr_controller_no_info_available = 2131427340;
+			// aapt resource value: 0x7f0c000c
+			public const int mr_controller_no_info_available = 2131492876;
 			
-			// aapt resource value: 0x7f0b000d
-			public const int mr_controller_no_media_selected = 2131427341;
+			// aapt resource value: 0x7f0c000d
+			public const int mr_controller_no_media_selected = 2131492877;
 			
-			// aapt resource value: 0x7f0b000e
-			public const int mr_controller_pause = 2131427342;
+			// aapt resource value: 0x7f0c000e
+			public const int mr_controller_pause = 2131492878;
 			
-			// aapt resource value: 0x7f0b000f
-			public const int mr_controller_play = 2131427343;
+			// aapt resource value: 0x7f0c000f
+			public const int mr_controller_play = 2131492879;
 			
-			// aapt resource value: 0x7f0b0010
-			public const int mr_controller_stop = 2131427344;
+			// aapt resource value: 0x7f0c0010
+			public const int mr_controller_stop = 2131492880;
 			
-			// aapt resource value: 0x7f0b0011
-			public const int mr_controller_stop_casting = 2131427345;
+			// aapt resource value: 0x7f0c0011
+			public const int mr_controller_stop_casting = 2131492881;
 			
-			// aapt resource value: 0x7f0b0012
-			public const int mr_controller_volume_slider = 2131427346;
+			// aapt resource value: 0x7f0c0012
+			public const int mr_controller_volume_slider = 2131492882;
 			
-			// aapt resource value: 0x7f0b0013
-			public const int mr_system_route_name = 2131427347;
+			// aapt resource value: 0x7f0c0013
+			public const int mr_system_route_name = 2131492883;
 			
-			// aapt resource value: 0x7f0b0014
-			public const int mr_user_route_category_name = 2131427348;
+			// aapt resource value: 0x7f0c0014
+			public const int mr_user_route_category_name = 2131492884;
 			
-			// aapt resource value: 0x7f0b0036
-			public const int password_toggle_content_description = 2131427382;
+			// aapt resource value: 0x7f0c0036
+			public const int password_toggle_content_description = 2131492918;
 			
-			// aapt resource value: 0x7f0b0037
-			public const int path_password_eye = 2131427383;
+			// aapt resource value: 0x7f0c0037
+			public const int path_password_eye = 2131492919;
 			
-			// aapt resource value: 0x7f0b0038
-			public const int path_password_eye_mask_strike_through = 2131427384;
+			// aapt resource value: 0x7f0c0038
+			public const int path_password_eye_mask_strike_through = 2131492920;
 			
-			// aapt resource value: 0x7f0b0039
-			public const int path_password_eye_mask_visible = 2131427385;
+			// aapt resource value: 0x7f0c0039
+			public const int path_password_eye_mask_visible = 2131492921;
 			
-			// aapt resource value: 0x7f0b003a
-			public const int path_password_strike_through = 2131427386;
+			// aapt resource value: 0x7f0c003a
+			public const int path_password_strike_through = 2131492922;
 			
-			// aapt resource value: 0x7f0b0026
-			public const int search_menu_title = 2131427366;
+			// aapt resource value: 0x7f0c0026
+			public const int search_menu_title = 2131492902;
 			
-			// aapt resource value: 0x7f0b003b
-			public const int status_bar_notification_info_overflow = 2131427387;
+			// aapt resource value: 0x7f0c003b
+			public const int status_bar_notification_info_overflow = 2131492923;
 			
 			static String()
 			{
@@ -4316,1214 +6367,1217 @@ namespace O2CardsApp.Droid
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f0d00a4
-			public const int AlertDialog_AppCompat = 2131558564;
+			// aapt resource value: 0x7f0900a5
+			public const int AlertDialog_AppCompat = 2131296421;
 			
-			// aapt resource value: 0x7f0d00a5
-			public const int AlertDialog_AppCompat_Light = 2131558565;
+			// aapt resource value: 0x7f0900a6
+			public const int AlertDialog_AppCompat_Light = 2131296422;
 			
-			// aapt resource value: 0x7f0d00a6
-			public const int Animation_AppCompat_Dialog = 2131558566;
+			// aapt resource value: 0x7f0900a7
+			public const int Animation_AppCompat_Dialog = 2131296423;
 			
-			// aapt resource value: 0x7f0d00a7
-			public const int Animation_AppCompat_DropDownUp = 2131558567;
+			// aapt resource value: 0x7f0900a8
+			public const int Animation_AppCompat_DropDownUp = 2131296424;
 			
-			// aapt resource value: 0x7f0d00a8
-			public const int Animation_AppCompat_Tooltip = 2131558568;
+			// aapt resource value: 0x7f0900a9
+			public const int Animation_AppCompat_Tooltip = 2131296425;
 			
-			// aapt resource value: 0x7f0d016e
-			public const int Animation_Design_BottomSheetDialog = 2131558766;
+			// aapt resource value: 0x7f09016f
+			public const int Animation_Design_BottomSheetDialog = 2131296623;
 			
-			// aapt resource value: 0x7f0d0191
-			public const int AppCompatDialogStyle = 2131558801;
+			// aapt resource value: 0x7f090192
+			public const int AppCompatDialogStyle = 2131296658;
 			
-			// aapt resource value: 0x7f0d00a9
-			public const int Base_AlertDialog_AppCompat = 2131558569;
+			// aapt resource value: 0x7f0900aa
+			public const int Base_AlertDialog_AppCompat = 2131296426;
 			
-			// aapt resource value: 0x7f0d00aa
-			public const int Base_AlertDialog_AppCompat_Light = 2131558570;
+			// aapt resource value: 0x7f0900ab
+			public const int Base_AlertDialog_AppCompat_Light = 2131296427;
 			
-			// aapt resource value: 0x7f0d00ab
-			public const int Base_Animation_AppCompat_Dialog = 2131558571;
+			// aapt resource value: 0x7f0900ac
+			public const int Base_Animation_AppCompat_Dialog = 2131296428;
 			
-			// aapt resource value: 0x7f0d00ac
-			public const int Base_Animation_AppCompat_DropDownUp = 2131558572;
+			// aapt resource value: 0x7f0900ad
+			public const int Base_Animation_AppCompat_DropDownUp = 2131296429;
 			
-			// aapt resource value: 0x7f0d00ad
-			public const int Base_Animation_AppCompat_Tooltip = 2131558573;
+			// aapt resource value: 0x7f0900ae
+			public const int Base_Animation_AppCompat_Tooltip = 2131296430;
 			
-			// aapt resource value: 0x7f0d000c
-			public const int Base_CardView = 2131558412;
+			// aapt resource value: 0x7f09000d
+			public const int Base_CardView = 2131296269;
 			
-			// aapt resource value: 0x7f0d00ae
-			public const int Base_DialogWindowTitle_AppCompat = 2131558574;
+			// aapt resource value: 0x7f0900af
+			public const int Base_DialogWindowTitle_AppCompat = 2131296431;
 			
-			// aapt resource value: 0x7f0d00af
-			public const int Base_DialogWindowTitleBackground_AppCompat = 2131558575;
+			// aapt resource value: 0x7f0900b0
+			public const int Base_DialogWindowTitleBackground_AppCompat = 2131296432;
 			
-			// aapt resource value: 0x7f0d0048
-			public const int Base_TextAppearance_AppCompat = 2131558472;
+			// aapt resource value: 0x7f090049
+			public const int Base_TextAppearance_AppCompat = 2131296329;
 			
-			// aapt resource value: 0x7f0d0049
-			public const int Base_TextAppearance_AppCompat_Body1 = 2131558473;
+			// aapt resource value: 0x7f09004a
+			public const int Base_TextAppearance_AppCompat_Body1 = 2131296330;
 			
-			// aapt resource value: 0x7f0d004a
-			public const int Base_TextAppearance_AppCompat_Body2 = 2131558474;
+			// aapt resource value: 0x7f09004b
+			public const int Base_TextAppearance_AppCompat_Body2 = 2131296331;
 			
-			// aapt resource value: 0x7f0d0036
-			public const int Base_TextAppearance_AppCompat_Button = 2131558454;
+			// aapt resource value: 0x7f090037
+			public const int Base_TextAppearance_AppCompat_Button = 2131296311;
 			
-			// aapt resource value: 0x7f0d004b
-			public const int Base_TextAppearance_AppCompat_Caption = 2131558475;
+			// aapt resource value: 0x7f09004c
+			public const int Base_TextAppearance_AppCompat_Caption = 2131296332;
 			
-			// aapt resource value: 0x7f0d004c
-			public const int Base_TextAppearance_AppCompat_Display1 = 2131558476;
+			// aapt resource value: 0x7f09004d
+			public const int Base_TextAppearance_AppCompat_Display1 = 2131296333;
 			
-			// aapt resource value: 0x7f0d004d
-			public const int Base_TextAppearance_AppCompat_Display2 = 2131558477;
+			// aapt resource value: 0x7f09004e
+			public const int Base_TextAppearance_AppCompat_Display2 = 2131296334;
 			
-			// aapt resource value: 0x7f0d004e
-			public const int Base_TextAppearance_AppCompat_Display3 = 2131558478;
+			// aapt resource value: 0x7f09004f
+			public const int Base_TextAppearance_AppCompat_Display3 = 2131296335;
 			
-			// aapt resource value: 0x7f0d004f
-			public const int Base_TextAppearance_AppCompat_Display4 = 2131558479;
+			// aapt resource value: 0x7f090050
+			public const int Base_TextAppearance_AppCompat_Display4 = 2131296336;
 			
-			// aapt resource value: 0x7f0d0050
-			public const int Base_TextAppearance_AppCompat_Headline = 2131558480;
+			// aapt resource value: 0x7f090051
+			public const int Base_TextAppearance_AppCompat_Headline = 2131296337;
 			
-			// aapt resource value: 0x7f0d001a
-			public const int Base_TextAppearance_AppCompat_Inverse = 2131558426;
+			// aapt resource value: 0x7f09001b
+			public const int Base_TextAppearance_AppCompat_Inverse = 2131296283;
 			
-			// aapt resource value: 0x7f0d0051
-			public const int Base_TextAppearance_AppCompat_Large = 2131558481;
+			// aapt resource value: 0x7f090052
+			public const int Base_TextAppearance_AppCompat_Large = 2131296338;
 			
-			// aapt resource value: 0x7f0d001b
-			public const int Base_TextAppearance_AppCompat_Large_Inverse = 2131558427;
+			// aapt resource value: 0x7f09001c
+			public const int Base_TextAppearance_AppCompat_Large_Inverse = 2131296284;
 			
-			// aapt resource value: 0x7f0d0052
-			public const int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 2131558482;
+			// aapt resource value: 0x7f090053
+			public const int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 2131296339;
 			
-			// aapt resource value: 0x7f0d0053
-			public const int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 2131558483;
+			// aapt resource value: 0x7f090054
+			public const int Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 2131296340;
 			
-			// aapt resource value: 0x7f0d0054
-			public const int Base_TextAppearance_AppCompat_Medium = 2131558484;
+			// aapt resource value: 0x7f090055
+			public const int Base_TextAppearance_AppCompat_Medium = 2131296341;
 			
-			// aapt resource value: 0x7f0d001c
-			public const int Base_TextAppearance_AppCompat_Medium_Inverse = 2131558428;
+			// aapt resource value: 0x7f09001d
+			public const int Base_TextAppearance_AppCompat_Medium_Inverse = 2131296285;
 			
-			// aapt resource value: 0x7f0d0055
-			public const int Base_TextAppearance_AppCompat_Menu = 2131558485;
+			// aapt resource value: 0x7f090056
+			public const int Base_TextAppearance_AppCompat_Menu = 2131296342;
 			
-			// aapt resource value: 0x7f0d00b0
-			public const int Base_TextAppearance_AppCompat_SearchResult = 2131558576;
+			// aapt resource value: 0x7f0900b1
+			public const int Base_TextAppearance_AppCompat_SearchResult = 2131296433;
 			
-			// aapt resource value: 0x7f0d0056
-			public const int Base_TextAppearance_AppCompat_SearchResult_Subtitle = 2131558486;
+			// aapt resource value: 0x7f090057
+			public const int Base_TextAppearance_AppCompat_SearchResult_Subtitle = 2131296343;
 			
-			// aapt resource value: 0x7f0d0057
-			public const int Base_TextAppearance_AppCompat_SearchResult_Title = 2131558487;
+			// aapt resource value: 0x7f090058
+			public const int Base_TextAppearance_AppCompat_SearchResult_Title = 2131296344;
 			
-			// aapt resource value: 0x7f0d0058
-			public const int Base_TextAppearance_AppCompat_Small = 2131558488;
+			// aapt resource value: 0x7f090059
+			public const int Base_TextAppearance_AppCompat_Small = 2131296345;
 			
-			// aapt resource value: 0x7f0d001d
-			public const int Base_TextAppearance_AppCompat_Small_Inverse = 2131558429;
+			// aapt resource value: 0x7f09001e
+			public const int Base_TextAppearance_AppCompat_Small_Inverse = 2131296286;
 			
-			// aapt resource value: 0x7f0d0059
-			public const int Base_TextAppearance_AppCompat_Subhead = 2131558489;
+			// aapt resource value: 0x7f09005a
+			public const int Base_TextAppearance_AppCompat_Subhead = 2131296346;
 			
-			// aapt resource value: 0x7f0d001e
-			public const int Base_TextAppearance_AppCompat_Subhead_Inverse = 2131558430;
+			// aapt resource value: 0x7f09001f
+			public const int Base_TextAppearance_AppCompat_Subhead_Inverse = 2131296287;
 			
-			// aapt resource value: 0x7f0d005a
-			public const int Base_TextAppearance_AppCompat_Title = 2131558490;
+			// aapt resource value: 0x7f09005b
+			public const int Base_TextAppearance_AppCompat_Title = 2131296347;
 			
-			// aapt resource value: 0x7f0d001f
-			public const int Base_TextAppearance_AppCompat_Title_Inverse = 2131558431;
+			// aapt resource value: 0x7f090020
+			public const int Base_TextAppearance_AppCompat_Title_Inverse = 2131296288;
 			
-			// aapt resource value: 0x7f0d00b1
-			public const int Base_TextAppearance_AppCompat_Tooltip = 2131558577;
+			// aapt resource value: 0x7f0900b2
+			public const int Base_TextAppearance_AppCompat_Tooltip = 2131296434;
 			
-			// aapt resource value: 0x7f0d0095
-			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = 2131558549;
+			// aapt resource value: 0x7f090096
+			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = 2131296406;
 			
-			// aapt resource value: 0x7f0d005b
-			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 2131558491;
+			// aapt resource value: 0x7f09005c
+			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 2131296348;
 			
-			// aapt resource value: 0x7f0d005c
-			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 2131558492;
+			// aapt resource value: 0x7f09005d
+			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 2131296349;
 			
-			// aapt resource value: 0x7f0d005d
-			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Title = 2131558493;
+			// aapt resource value: 0x7f09005e
+			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Title = 2131296350;
 			
-			// aapt resource value: 0x7f0d005e
-			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 2131558494;
+			// aapt resource value: 0x7f09005f
+			public const int Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 2131296351;
 			
-			// aapt resource value: 0x7f0d005f
-			public const int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 2131558495;
+			// aapt resource value: 0x7f090060
+			public const int Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 2131296352;
 			
-			// aapt resource value: 0x7f0d0060
-			public const int Base_TextAppearance_AppCompat_Widget_ActionMode_Title = 2131558496;
+			// aapt resource value: 0x7f090061
+			public const int Base_TextAppearance_AppCompat_Widget_ActionMode_Title = 2131296353;
 			
-			// aapt resource value: 0x7f0d0061
-			public const int Base_TextAppearance_AppCompat_Widget_Button = 2131558497;
+			// aapt resource value: 0x7f090062
+			public const int Base_TextAppearance_AppCompat_Widget_Button = 2131296354;
 			
-			// aapt resource value: 0x7f0d009c
-			public const int Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = 2131558556;
+			// aapt resource value: 0x7f09009d
+			public const int Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = 2131296413;
 			
-			// aapt resource value: 0x7f0d009d
-			public const int Base_TextAppearance_AppCompat_Widget_Button_Colored = 2131558557;
+			// aapt resource value: 0x7f09009e
+			public const int Base_TextAppearance_AppCompat_Widget_Button_Colored = 2131296414;
 			
-			// aapt resource value: 0x7f0d0096
-			public const int Base_TextAppearance_AppCompat_Widget_Button_Inverse = 2131558550;
+			// aapt resource value: 0x7f090097
+			public const int Base_TextAppearance_AppCompat_Widget_Button_Inverse = 2131296407;
 			
-			// aapt resource value: 0x7f0d00b2
-			public const int Base_TextAppearance_AppCompat_Widget_DropDownItem = 2131558578;
+			// aapt resource value: 0x7f0900b3
+			public const int Base_TextAppearance_AppCompat_Widget_DropDownItem = 2131296435;
 			
-			// aapt resource value: 0x7f0d0062
-			public const int Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = 2131558498;
+			// aapt resource value: 0x7f090063
+			public const int Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = 2131296355;
 			
-			// aapt resource value: 0x7f0d0063
-			public const int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = 2131558499;
+			// aapt resource value: 0x7f090064
+			public const int Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = 2131296356;
 			
-			// aapt resource value: 0x7f0d0064
-			public const int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = 2131558500;
+			// aapt resource value: 0x7f090065
+			public const int Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = 2131296357;
 			
-			// aapt resource value: 0x7f0d0065
-			public const int Base_TextAppearance_AppCompat_Widget_Switch = 2131558501;
+			// aapt resource value: 0x7f090066
+			public const int Base_TextAppearance_AppCompat_Widget_Switch = 2131296358;
 			
-			// aapt resource value: 0x7f0d0066
-			public const int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131558502;
+			// aapt resource value: 0x7f090067
+			public const int Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131296359;
 			
-			// aapt resource value: 0x7f0d00b3
-			public const int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 2131558579;
+			// aapt resource value: 0x7f0900b4
+			public const int Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 2131296436;
 			
-			// aapt resource value: 0x7f0d0067
-			public const int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 2131558503;
+			// aapt resource value: 0x7f090068
+			public const int Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 2131296360;
 			
-			// aapt resource value: 0x7f0d0068
-			public const int Base_TextAppearance_Widget_AppCompat_Toolbar_Title = 2131558504;
+			// aapt resource value: 0x7f090069
+			public const int Base_TextAppearance_Widget_AppCompat_Toolbar_Title = 2131296361;
 			
-			// aapt resource value: 0x7f0d0069
-			public const int Base_Theme_AppCompat = 2131558505;
+			// aapt resource value: 0x7f09006a
+			public const int Base_Theme_AppCompat = 2131296362;
 			
-			// aapt resource value: 0x7f0d00b4
-			public const int Base_Theme_AppCompat_CompactMenu = 2131558580;
+			// aapt resource value: 0x7f0900b5
+			public const int Base_Theme_AppCompat_CompactMenu = 2131296437;
 			
-			// aapt resource value: 0x7f0d0020
-			public const int Base_Theme_AppCompat_Dialog = 2131558432;
+			// aapt resource value: 0x7f090021
+			public const int Base_Theme_AppCompat_Dialog = 2131296289;
 			
-			// aapt resource value: 0x7f0d0021
-			public const int Base_Theme_AppCompat_Dialog_Alert = 2131558433;
+			// aapt resource value: 0x7f090022
+			public const int Base_Theme_AppCompat_Dialog_Alert = 2131296290;
 			
-			// aapt resource value: 0x7f0d00b5
-			public const int Base_Theme_AppCompat_Dialog_FixedSize = 2131558581;
+			// aapt resource value: 0x7f0900b6
+			public const int Base_Theme_AppCompat_Dialog_FixedSize = 2131296438;
 			
-			// aapt resource value: 0x7f0d0022
-			public const int Base_Theme_AppCompat_Dialog_MinWidth = 2131558434;
+			// aapt resource value: 0x7f090023
+			public const int Base_Theme_AppCompat_Dialog_MinWidth = 2131296291;
 			
-			// aapt resource value: 0x7f0d0010
-			public const int Base_Theme_AppCompat_DialogWhenLarge = 2131558416;
+			// aapt resource value: 0x7f090011
+			public const int Base_Theme_AppCompat_DialogWhenLarge = 2131296273;
 			
-			// aapt resource value: 0x7f0d006a
-			public const int Base_Theme_AppCompat_Light = 2131558506;
+			// aapt resource value: 0x7f09006b
+			public const int Base_Theme_AppCompat_Light = 2131296363;
 			
-			// aapt resource value: 0x7f0d00b6
-			public const int Base_Theme_AppCompat_Light_DarkActionBar = 2131558582;
+			// aapt resource value: 0x7f0900b7
+			public const int Base_Theme_AppCompat_Light_DarkActionBar = 2131296439;
 			
-			// aapt resource value: 0x7f0d0023
-			public const int Base_Theme_AppCompat_Light_Dialog = 2131558435;
+			// aapt resource value: 0x7f090024
+			public const int Base_Theme_AppCompat_Light_Dialog = 2131296292;
 			
-			// aapt resource value: 0x7f0d0024
-			public const int Base_Theme_AppCompat_Light_Dialog_Alert = 2131558436;
+			// aapt resource value: 0x7f090025
+			public const int Base_Theme_AppCompat_Light_Dialog_Alert = 2131296293;
 			
-			// aapt resource value: 0x7f0d00b7
-			public const int Base_Theme_AppCompat_Light_Dialog_FixedSize = 2131558583;
+			// aapt resource value: 0x7f0900b8
+			public const int Base_Theme_AppCompat_Light_Dialog_FixedSize = 2131296440;
 			
-			// aapt resource value: 0x7f0d0025
-			public const int Base_Theme_AppCompat_Light_Dialog_MinWidth = 2131558437;
+			// aapt resource value: 0x7f090026
+			public const int Base_Theme_AppCompat_Light_Dialog_MinWidth = 2131296294;
 			
-			// aapt resource value: 0x7f0d0011
-			public const int Base_Theme_AppCompat_Light_DialogWhenLarge = 2131558417;
+			// aapt resource value: 0x7f090012
+			public const int Base_Theme_AppCompat_Light_DialogWhenLarge = 2131296274;
 			
-			// aapt resource value: 0x7f0d00b8
-			public const int Base_ThemeOverlay_AppCompat = 2131558584;
+			// aapt resource value: 0x7f0900b9
+			public const int Base_ThemeOverlay_AppCompat = 2131296441;
 			
-			// aapt resource value: 0x7f0d00b9
-			public const int Base_ThemeOverlay_AppCompat_ActionBar = 2131558585;
+			// aapt resource value: 0x7f0900ba
+			public const int Base_ThemeOverlay_AppCompat_ActionBar = 2131296442;
 			
-			// aapt resource value: 0x7f0d00ba
-			public const int Base_ThemeOverlay_AppCompat_Dark = 2131558586;
+			// aapt resource value: 0x7f0900bb
+			public const int Base_ThemeOverlay_AppCompat_Dark = 2131296443;
 			
-			// aapt resource value: 0x7f0d00bb
-			public const int Base_ThemeOverlay_AppCompat_Dark_ActionBar = 2131558587;
+			// aapt resource value: 0x7f0900bc
+			public const int Base_ThemeOverlay_AppCompat_Dark_ActionBar = 2131296444;
 			
-			// aapt resource value: 0x7f0d0026
-			public const int Base_ThemeOverlay_AppCompat_Dialog = 2131558438;
+			// aapt resource value: 0x7f090027
+			public const int Base_ThemeOverlay_AppCompat_Dialog = 2131296295;
 			
-			// aapt resource value: 0x7f0d0027
-			public const int Base_ThemeOverlay_AppCompat_Dialog_Alert = 2131558439;
+			// aapt resource value: 0x7f090028
+			public const int Base_ThemeOverlay_AppCompat_Dialog_Alert = 2131296296;
 			
-			// aapt resource value: 0x7f0d00bc
-			public const int Base_ThemeOverlay_AppCompat_Light = 2131558588;
+			// aapt resource value: 0x7f0900bd
+			public const int Base_ThemeOverlay_AppCompat_Light = 2131296445;
 			
-			// aapt resource value: 0x7f0d0028
-			public const int Base_V11_Theme_AppCompat_Dialog = 2131558440;
+			// aapt resource value: 0x7f090029
+			public const int Base_V11_Theme_AppCompat_Dialog = 2131296297;
 			
-			// aapt resource value: 0x7f0d0029
-			public const int Base_V11_Theme_AppCompat_Light_Dialog = 2131558441;
+			// aapt resource value: 0x7f09002a
+			public const int Base_V11_Theme_AppCompat_Light_Dialog = 2131296298;
 			
-			// aapt resource value: 0x7f0d002a
-			public const int Base_V11_ThemeOverlay_AppCompat_Dialog = 2131558442;
+			// aapt resource value: 0x7f09002b
+			public const int Base_V11_ThemeOverlay_AppCompat_Dialog = 2131296299;
 			
-			// aapt resource value: 0x7f0d0032
-			public const int Base_V12_Widget_AppCompat_AutoCompleteTextView = 2131558450;
+			// aapt resource value: 0x7f090033
+			public const int Base_V12_Widget_AppCompat_AutoCompleteTextView = 2131296307;
 			
-			// aapt resource value: 0x7f0d0033
-			public const int Base_V12_Widget_AppCompat_EditText = 2131558451;
+			// aapt resource value: 0x7f090034
+			public const int Base_V12_Widget_AppCompat_EditText = 2131296308;
 			
-			// aapt resource value: 0x7f0d016f
-			public const int Base_V14_Widget_Design_AppBarLayout = 2131558767;
+			// aapt resource value: 0x7f090170
+			public const int Base_V14_Widget_Design_AppBarLayout = 2131296624;
 			
-			// aapt resource value: 0x7f0d006b
-			public const int Base_V21_Theme_AppCompat = 2131558507;
+			// aapt resource value: 0x7f09006c
+			public const int Base_V21_Theme_AppCompat = 2131296364;
 			
-			// aapt resource value: 0x7f0d006c
-			public const int Base_V21_Theme_AppCompat_Dialog = 2131558508;
+			// aapt resource value: 0x7f09006d
+			public const int Base_V21_Theme_AppCompat_Dialog = 2131296365;
 			
-			// aapt resource value: 0x7f0d006d
-			public const int Base_V21_Theme_AppCompat_Light = 2131558509;
+			// aapt resource value: 0x7f09006e
+			public const int Base_V21_Theme_AppCompat_Light = 2131296366;
 			
-			// aapt resource value: 0x7f0d006e
-			public const int Base_V21_Theme_AppCompat_Light_Dialog = 2131558510;
+			// aapt resource value: 0x7f09006f
+			public const int Base_V21_Theme_AppCompat_Light_Dialog = 2131296367;
 			
-			// aapt resource value: 0x7f0d006f
-			public const int Base_V21_ThemeOverlay_AppCompat_Dialog = 2131558511;
+			// aapt resource value: 0x7f090070
+			public const int Base_V21_ThemeOverlay_AppCompat_Dialog = 2131296368;
 			
-			// aapt resource value: 0x7f0d016b
-			public const int Base_V21_Widget_Design_AppBarLayout = 2131558763;
+			// aapt resource value: 0x7f09016c
+			public const int Base_V21_Widget_Design_AppBarLayout = 2131296620;
 			
-			// aapt resource value: 0x7f0d0093
-			public const int Base_V22_Theme_AppCompat = 2131558547;
+			// aapt resource value: 0x7f090094
+			public const int Base_V22_Theme_AppCompat = 2131296404;
 			
-			// aapt resource value: 0x7f0d0094
-			public const int Base_V22_Theme_AppCompat_Light = 2131558548;
+			// aapt resource value: 0x7f090095
+			public const int Base_V22_Theme_AppCompat_Light = 2131296405;
 			
-			// aapt resource value: 0x7f0d0097
-			public const int Base_V23_Theme_AppCompat = 2131558551;
+			// aapt resource value: 0x7f090098
+			public const int Base_V23_Theme_AppCompat = 2131296408;
 			
-			// aapt resource value: 0x7f0d0098
-			public const int Base_V23_Theme_AppCompat_Light = 2131558552;
+			// aapt resource value: 0x7f090099
+			public const int Base_V23_Theme_AppCompat_Light = 2131296409;
 			
-			// aapt resource value: 0x7f0d00a0
-			public const int Base_V26_Theme_AppCompat = 2131558560;
+			// aapt resource value: 0x7f0900a1
+			public const int Base_V26_Theme_AppCompat = 2131296417;
 			
-			// aapt resource value: 0x7f0d00a1
-			public const int Base_V26_Theme_AppCompat_Light = 2131558561;
+			// aapt resource value: 0x7f0900a2
+			public const int Base_V26_Theme_AppCompat_Light = 2131296418;
 			
-			// aapt resource value: 0x7f0d00a2
-			public const int Base_V26_Widget_AppCompat_Toolbar = 2131558562;
+			// aapt resource value: 0x7f0900a3
+			public const int Base_V26_Widget_AppCompat_Toolbar = 2131296419;
 			
-			// aapt resource value: 0x7f0d016d
-			public const int Base_V26_Widget_Design_AppBarLayout = 2131558765;
+			// aapt resource value: 0x7f09016e
+			public const int Base_V26_Widget_Design_AppBarLayout = 2131296622;
 			
-			// aapt resource value: 0x7f0d00bd
-			public const int Base_V7_Theme_AppCompat = 2131558589;
+			// aapt resource value: 0x7f0900be
+			public const int Base_V7_Theme_AppCompat = 2131296446;
 			
-			// aapt resource value: 0x7f0d00be
-			public const int Base_V7_Theme_AppCompat_Dialog = 2131558590;
+			// aapt resource value: 0x7f0900bf
+			public const int Base_V7_Theme_AppCompat_Dialog = 2131296447;
 			
-			// aapt resource value: 0x7f0d00bf
-			public const int Base_V7_Theme_AppCompat_Light = 2131558591;
+			// aapt resource value: 0x7f0900c0
+			public const int Base_V7_Theme_AppCompat_Light = 2131296448;
 			
-			// aapt resource value: 0x7f0d00c0
-			public const int Base_V7_Theme_AppCompat_Light_Dialog = 2131558592;
+			// aapt resource value: 0x7f0900c1
+			public const int Base_V7_Theme_AppCompat_Light_Dialog = 2131296449;
 			
-			// aapt resource value: 0x7f0d00c1
-			public const int Base_V7_ThemeOverlay_AppCompat_Dialog = 2131558593;
+			// aapt resource value: 0x7f0900c2
+			public const int Base_V7_ThemeOverlay_AppCompat_Dialog = 2131296450;
 			
-			// aapt resource value: 0x7f0d00c2
-			public const int Base_V7_Widget_AppCompat_AutoCompleteTextView = 2131558594;
+			// aapt resource value: 0x7f0900c3
+			public const int Base_V7_Widget_AppCompat_AutoCompleteTextView = 2131296451;
 			
-			// aapt resource value: 0x7f0d00c3
-			public const int Base_V7_Widget_AppCompat_EditText = 2131558595;
+			// aapt resource value: 0x7f0900c4
+			public const int Base_V7_Widget_AppCompat_EditText = 2131296452;
 			
-			// aapt resource value: 0x7f0d00c4
-			public const int Base_V7_Widget_AppCompat_Toolbar = 2131558596;
+			// aapt resource value: 0x7f0900c5
+			public const int Base_V7_Widget_AppCompat_Toolbar = 2131296453;
 			
-			// aapt resource value: 0x7f0d00c5
-			public const int Base_Widget_AppCompat_ActionBar = 2131558597;
+			// aapt resource value: 0x7f0900c6
+			public const int Base_Widget_AppCompat_ActionBar = 2131296454;
 			
-			// aapt resource value: 0x7f0d00c6
-			public const int Base_Widget_AppCompat_ActionBar_Solid = 2131558598;
+			// aapt resource value: 0x7f0900c7
+			public const int Base_Widget_AppCompat_ActionBar_Solid = 2131296455;
 			
-			// aapt resource value: 0x7f0d00c7
-			public const int Base_Widget_AppCompat_ActionBar_TabBar = 2131558599;
+			// aapt resource value: 0x7f0900c8
+			public const int Base_Widget_AppCompat_ActionBar_TabBar = 2131296456;
 			
-			// aapt resource value: 0x7f0d0070
-			public const int Base_Widget_AppCompat_ActionBar_TabText = 2131558512;
+			// aapt resource value: 0x7f090071
+			public const int Base_Widget_AppCompat_ActionBar_TabText = 2131296369;
 			
-			// aapt resource value: 0x7f0d0071
-			public const int Base_Widget_AppCompat_ActionBar_TabView = 2131558513;
+			// aapt resource value: 0x7f090072
+			public const int Base_Widget_AppCompat_ActionBar_TabView = 2131296370;
 			
-			// aapt resource value: 0x7f0d0072
-			public const int Base_Widget_AppCompat_ActionButton = 2131558514;
+			// aapt resource value: 0x7f090073
+			public const int Base_Widget_AppCompat_ActionButton = 2131296371;
 			
-			// aapt resource value: 0x7f0d0073
-			public const int Base_Widget_AppCompat_ActionButton_CloseMode = 2131558515;
+			// aapt resource value: 0x7f090074
+			public const int Base_Widget_AppCompat_ActionButton_CloseMode = 2131296372;
 			
-			// aapt resource value: 0x7f0d0074
-			public const int Base_Widget_AppCompat_ActionButton_Overflow = 2131558516;
+			// aapt resource value: 0x7f090075
+			public const int Base_Widget_AppCompat_ActionButton_Overflow = 2131296373;
 			
-			// aapt resource value: 0x7f0d00c8
-			public const int Base_Widget_AppCompat_ActionMode = 2131558600;
+			// aapt resource value: 0x7f0900c9
+			public const int Base_Widget_AppCompat_ActionMode = 2131296457;
 			
-			// aapt resource value: 0x7f0d00c9
-			public const int Base_Widget_AppCompat_ActivityChooserView = 2131558601;
+			// aapt resource value: 0x7f0900ca
+			public const int Base_Widget_AppCompat_ActivityChooserView = 2131296458;
 			
-			// aapt resource value: 0x7f0d0034
-			public const int Base_Widget_AppCompat_AutoCompleteTextView = 2131558452;
+			// aapt resource value: 0x7f090035
+			public const int Base_Widget_AppCompat_AutoCompleteTextView = 2131296309;
 			
-			// aapt resource value: 0x7f0d0075
-			public const int Base_Widget_AppCompat_Button = 2131558517;
+			// aapt resource value: 0x7f090076
+			public const int Base_Widget_AppCompat_Button = 2131296374;
 			
-			// aapt resource value: 0x7f0d0076
-			public const int Base_Widget_AppCompat_Button_Borderless = 2131558518;
+			// aapt resource value: 0x7f090077
+			public const int Base_Widget_AppCompat_Button_Borderless = 2131296375;
 			
-			// aapt resource value: 0x7f0d0077
-			public const int Base_Widget_AppCompat_Button_Borderless_Colored = 2131558519;
+			// aapt resource value: 0x7f090078
+			public const int Base_Widget_AppCompat_Button_Borderless_Colored = 2131296376;
 			
-			// aapt resource value: 0x7f0d00ca
-			public const int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131558602;
+			// aapt resource value: 0x7f0900cb
+			public const int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131296459;
 			
-			// aapt resource value: 0x7f0d0099
-			public const int Base_Widget_AppCompat_Button_Colored = 2131558553;
+			// aapt resource value: 0x7f09009a
+			public const int Base_Widget_AppCompat_Button_Colored = 2131296410;
 			
-			// aapt resource value: 0x7f0d0078
-			public const int Base_Widget_AppCompat_Button_Small = 2131558520;
+			// aapt resource value: 0x7f090079
+			public const int Base_Widget_AppCompat_Button_Small = 2131296377;
 			
-			// aapt resource value: 0x7f0d0079
-			public const int Base_Widget_AppCompat_ButtonBar = 2131558521;
+			// aapt resource value: 0x7f09007a
+			public const int Base_Widget_AppCompat_ButtonBar = 2131296378;
 			
-			// aapt resource value: 0x7f0d00cb
-			public const int Base_Widget_AppCompat_ButtonBar_AlertDialog = 2131558603;
+			// aapt resource value: 0x7f0900cc
+			public const int Base_Widget_AppCompat_ButtonBar_AlertDialog = 2131296460;
 			
-			// aapt resource value: 0x7f0d007a
-			public const int Base_Widget_AppCompat_CompoundButton_CheckBox = 2131558522;
+			// aapt resource value: 0x7f09007b
+			public const int Base_Widget_AppCompat_CompoundButton_CheckBox = 2131296379;
 			
-			// aapt resource value: 0x7f0d007b
-			public const int Base_Widget_AppCompat_CompoundButton_RadioButton = 2131558523;
+			// aapt resource value: 0x7f09007c
+			public const int Base_Widget_AppCompat_CompoundButton_RadioButton = 2131296380;
 			
-			// aapt resource value: 0x7f0d00cc
-			public const int Base_Widget_AppCompat_CompoundButton_Switch = 2131558604;
+			// aapt resource value: 0x7f0900cd
+			public const int Base_Widget_AppCompat_CompoundButton_Switch = 2131296461;
 			
-			// aapt resource value: 0x7f0d000f
-			public const int Base_Widget_AppCompat_DrawerArrowToggle = 2131558415;
+			// aapt resource value: 0x7f090010
+			public const int Base_Widget_AppCompat_DrawerArrowToggle = 2131296272;
 			
-			// aapt resource value: 0x7f0d00cd
-			public const int Base_Widget_AppCompat_DrawerArrowToggle_Common = 2131558605;
+			// aapt resource value: 0x7f0900ce
+			public const int Base_Widget_AppCompat_DrawerArrowToggle_Common = 2131296462;
 			
-			// aapt resource value: 0x7f0d007c
-			public const int Base_Widget_AppCompat_DropDownItem_Spinner = 2131558524;
+			// aapt resource value: 0x7f09007d
+			public const int Base_Widget_AppCompat_DropDownItem_Spinner = 2131296381;
 			
-			// aapt resource value: 0x7f0d0035
-			public const int Base_Widget_AppCompat_EditText = 2131558453;
+			// aapt resource value: 0x7f090036
+			public const int Base_Widget_AppCompat_EditText = 2131296310;
 			
-			// aapt resource value: 0x7f0d007d
-			public const int Base_Widget_AppCompat_ImageButton = 2131558525;
+			// aapt resource value: 0x7f09007e
+			public const int Base_Widget_AppCompat_ImageButton = 2131296382;
 			
-			// aapt resource value: 0x7f0d00ce
-			public const int Base_Widget_AppCompat_Light_ActionBar = 2131558606;
+			// aapt resource value: 0x7f0900cf
+			public const int Base_Widget_AppCompat_Light_ActionBar = 2131296463;
 			
-			// aapt resource value: 0x7f0d00cf
-			public const int Base_Widget_AppCompat_Light_ActionBar_Solid = 2131558607;
+			// aapt resource value: 0x7f0900d0
+			public const int Base_Widget_AppCompat_Light_ActionBar_Solid = 2131296464;
 			
-			// aapt resource value: 0x7f0d00d0
-			public const int Base_Widget_AppCompat_Light_ActionBar_TabBar = 2131558608;
+			// aapt resource value: 0x7f0900d1
+			public const int Base_Widget_AppCompat_Light_ActionBar_TabBar = 2131296465;
 			
-			// aapt resource value: 0x7f0d007e
-			public const int Base_Widget_AppCompat_Light_ActionBar_TabText = 2131558526;
+			// aapt resource value: 0x7f09007f
+			public const int Base_Widget_AppCompat_Light_ActionBar_TabText = 2131296383;
 			
-			// aapt resource value: 0x7f0d007f
-			public const int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131558527;
+			// aapt resource value: 0x7f090080
+			public const int Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131296384;
 			
-			// aapt resource value: 0x7f0d0080
-			public const int Base_Widget_AppCompat_Light_ActionBar_TabView = 2131558528;
+			// aapt resource value: 0x7f090081
+			public const int Base_Widget_AppCompat_Light_ActionBar_TabView = 2131296385;
 			
-			// aapt resource value: 0x7f0d0081
-			public const int Base_Widget_AppCompat_Light_PopupMenu = 2131558529;
+			// aapt resource value: 0x7f090082
+			public const int Base_Widget_AppCompat_Light_PopupMenu = 2131296386;
 			
-			// aapt resource value: 0x7f0d0082
-			public const int Base_Widget_AppCompat_Light_PopupMenu_Overflow = 2131558530;
+			// aapt resource value: 0x7f090083
+			public const int Base_Widget_AppCompat_Light_PopupMenu_Overflow = 2131296387;
 			
-			// aapt resource value: 0x7f0d00d1
-			public const int Base_Widget_AppCompat_ListMenuView = 2131558609;
+			// aapt resource value: 0x7f0900d2
+			public const int Base_Widget_AppCompat_ListMenuView = 2131296466;
 			
-			// aapt resource value: 0x7f0d0083
-			public const int Base_Widget_AppCompat_ListPopupWindow = 2131558531;
+			// aapt resource value: 0x7f090084
+			public const int Base_Widget_AppCompat_ListPopupWindow = 2131296388;
 			
-			// aapt resource value: 0x7f0d0084
-			public const int Base_Widget_AppCompat_ListView = 2131558532;
+			// aapt resource value: 0x7f090085
+			public const int Base_Widget_AppCompat_ListView = 2131296389;
 			
-			// aapt resource value: 0x7f0d0085
-			public const int Base_Widget_AppCompat_ListView_DropDown = 2131558533;
+			// aapt resource value: 0x7f090086
+			public const int Base_Widget_AppCompat_ListView_DropDown = 2131296390;
 			
-			// aapt resource value: 0x7f0d0086
-			public const int Base_Widget_AppCompat_ListView_Menu = 2131558534;
+			// aapt resource value: 0x7f090087
+			public const int Base_Widget_AppCompat_ListView_Menu = 2131296391;
 			
-			// aapt resource value: 0x7f0d0087
-			public const int Base_Widget_AppCompat_PopupMenu = 2131558535;
+			// aapt resource value: 0x7f090088
+			public const int Base_Widget_AppCompat_PopupMenu = 2131296392;
 			
-			// aapt resource value: 0x7f0d0088
-			public const int Base_Widget_AppCompat_PopupMenu_Overflow = 2131558536;
+			// aapt resource value: 0x7f090089
+			public const int Base_Widget_AppCompat_PopupMenu_Overflow = 2131296393;
 			
-			// aapt resource value: 0x7f0d00d2
-			public const int Base_Widget_AppCompat_PopupWindow = 2131558610;
+			// aapt resource value: 0x7f0900d3
+			public const int Base_Widget_AppCompat_PopupWindow = 2131296467;
 			
-			// aapt resource value: 0x7f0d002b
-			public const int Base_Widget_AppCompat_ProgressBar = 2131558443;
+			// aapt resource value: 0x7f09002c
+			public const int Base_Widget_AppCompat_ProgressBar = 2131296300;
 			
-			// aapt resource value: 0x7f0d002c
-			public const int Base_Widget_AppCompat_ProgressBar_Horizontal = 2131558444;
+			// aapt resource value: 0x7f09002d
+			public const int Base_Widget_AppCompat_ProgressBar_Horizontal = 2131296301;
 			
-			// aapt resource value: 0x7f0d0089
-			public const int Base_Widget_AppCompat_RatingBar = 2131558537;
+			// aapt resource value: 0x7f09008a
+			public const int Base_Widget_AppCompat_RatingBar = 2131296394;
 			
-			// aapt resource value: 0x7f0d009a
-			public const int Base_Widget_AppCompat_RatingBar_Indicator = 2131558554;
+			// aapt resource value: 0x7f09009b
+			public const int Base_Widget_AppCompat_RatingBar_Indicator = 2131296411;
 			
-			// aapt resource value: 0x7f0d009b
-			public const int Base_Widget_AppCompat_RatingBar_Small = 2131558555;
+			// aapt resource value: 0x7f09009c
+			public const int Base_Widget_AppCompat_RatingBar_Small = 2131296412;
 			
-			// aapt resource value: 0x7f0d00d3
-			public const int Base_Widget_AppCompat_SearchView = 2131558611;
+			// aapt resource value: 0x7f0900d4
+			public const int Base_Widget_AppCompat_SearchView = 2131296468;
 			
-			// aapt resource value: 0x7f0d00d4
-			public const int Base_Widget_AppCompat_SearchView_ActionBar = 2131558612;
+			// aapt resource value: 0x7f0900d5
+			public const int Base_Widget_AppCompat_SearchView_ActionBar = 2131296469;
 			
-			// aapt resource value: 0x7f0d008a
-			public const int Base_Widget_AppCompat_SeekBar = 2131558538;
+			// aapt resource value: 0x7f09008b
+			public const int Base_Widget_AppCompat_SeekBar = 2131296395;
 			
-			// aapt resource value: 0x7f0d00d5
-			public const int Base_Widget_AppCompat_SeekBar_Discrete = 2131558613;
+			// aapt resource value: 0x7f0900d6
+			public const int Base_Widget_AppCompat_SeekBar_Discrete = 2131296470;
 			
-			// aapt resource value: 0x7f0d008b
-			public const int Base_Widget_AppCompat_Spinner = 2131558539;
+			// aapt resource value: 0x7f09008c
+			public const int Base_Widget_AppCompat_Spinner = 2131296396;
 			
-			// aapt resource value: 0x7f0d0012
-			public const int Base_Widget_AppCompat_Spinner_Underlined = 2131558418;
+			// aapt resource value: 0x7f090013
+			public const int Base_Widget_AppCompat_Spinner_Underlined = 2131296275;
 			
-			// aapt resource value: 0x7f0d008c
-			public const int Base_Widget_AppCompat_TextView_SpinnerItem = 2131558540;
+			// aapt resource value: 0x7f09008d
+			public const int Base_Widget_AppCompat_TextView_SpinnerItem = 2131296397;
 			
-			// aapt resource value: 0x7f0d00a3
-			public const int Base_Widget_AppCompat_Toolbar = 2131558563;
+			// aapt resource value: 0x7f0900a4
+			public const int Base_Widget_AppCompat_Toolbar = 2131296420;
 			
-			// aapt resource value: 0x7f0d008d
-			public const int Base_Widget_AppCompat_Toolbar_Button_Navigation = 2131558541;
+			// aapt resource value: 0x7f09008e
+			public const int Base_Widget_AppCompat_Toolbar_Button_Navigation = 2131296398;
 			
-			// aapt resource value: 0x7f0d016c
-			public const int Base_Widget_Design_AppBarLayout = 2131558764;
+			// aapt resource value: 0x7f09016d
+			public const int Base_Widget_Design_AppBarLayout = 2131296621;
 			
-			// aapt resource value: 0x7f0d0170
-			public const int Base_Widget_Design_TabLayout = 2131558768;
+			// aapt resource value: 0x7f090171
+			public const int Base_Widget_Design_TabLayout = 2131296625;
 			
-			// aapt resource value: 0x7f0d000b
-			public const int CardView = 2131558411;
+			// aapt resource value: 0x7f09000c
+			public const int CardView = 2131296268;
 			
-			// aapt resource value: 0x7f0d000d
-			public const int CardView_Dark = 2131558413;
+			// aapt resource value: 0x7f09000e
+			public const int CardView_Dark = 2131296270;
 			
-			// aapt resource value: 0x7f0d000e
-			public const int CardView_Light = 2131558414;
+			// aapt resource value: 0x7f09000f
+			public const int CardView_Light = 2131296271;
 			
-			// aapt resource value: 0x7f0d018f
-			public const int MainTheme = 2131558799;
+			// aapt resource value: 0x7f090190
+			public const int MainTheme = 2131296656;
 			
-			// aapt resource value: 0x7f0d0190
-			public const int MainTheme_Base = 2131558800;
+			// aapt resource value: 0x7f090191
+			public const int MainTheme_Base = 2131296657;
 			
-			// aapt resource value: 0x7f0d0192
-			public const int O2Cards_Splash = 2131558802;
+			// aapt resource value: 0x7f090193
+			public const int O2Cards_Splash = 2131296659;
 			
-			// aapt resource value: 0x7f0d002d
-			public const int Platform_AppCompat = 2131558445;
+			// aapt resource value: 0x7f09002e
+			public const int Platform_AppCompat = 2131296302;
 			
-			// aapt resource value: 0x7f0d002e
-			public const int Platform_AppCompat_Light = 2131558446;
+			// aapt resource value: 0x7f09002f
+			public const int Platform_AppCompat_Light = 2131296303;
 			
-			// aapt resource value: 0x7f0d008e
-			public const int Platform_ThemeOverlay_AppCompat = 2131558542;
+			// aapt resource value: 0x7f09008f
+			public const int Platform_ThemeOverlay_AppCompat = 2131296399;
 			
-			// aapt resource value: 0x7f0d008f
-			public const int Platform_ThemeOverlay_AppCompat_Dark = 2131558543;
+			// aapt resource value: 0x7f090090
+			public const int Platform_ThemeOverlay_AppCompat_Dark = 2131296400;
 			
-			// aapt resource value: 0x7f0d0090
-			public const int Platform_ThemeOverlay_AppCompat_Light = 2131558544;
+			// aapt resource value: 0x7f090091
+			public const int Platform_ThemeOverlay_AppCompat_Light = 2131296401;
 			
-			// aapt resource value: 0x7f0d002f
-			public const int Platform_V11_AppCompat = 2131558447;
+			// aapt resource value: 0x7f090030
+			public const int Platform_V11_AppCompat = 2131296304;
 			
-			// aapt resource value: 0x7f0d0030
-			public const int Platform_V11_AppCompat_Light = 2131558448;
+			// aapt resource value: 0x7f090031
+			public const int Platform_V11_AppCompat_Light = 2131296305;
 			
-			// aapt resource value: 0x7f0d0037
-			public const int Platform_V14_AppCompat = 2131558455;
+			// aapt resource value: 0x7f090038
+			public const int Platform_V14_AppCompat = 2131296312;
 			
-			// aapt resource value: 0x7f0d0038
-			public const int Platform_V14_AppCompat_Light = 2131558456;
+			// aapt resource value: 0x7f090039
+			public const int Platform_V14_AppCompat_Light = 2131296313;
 			
-			// aapt resource value: 0x7f0d0091
-			public const int Platform_V21_AppCompat = 2131558545;
+			// aapt resource value: 0x7f090092
+			public const int Platform_V21_AppCompat = 2131296402;
 			
-			// aapt resource value: 0x7f0d0092
-			public const int Platform_V21_AppCompat_Light = 2131558546;
+			// aapt resource value: 0x7f090093
+			public const int Platform_V21_AppCompat_Light = 2131296403;
 			
-			// aapt resource value: 0x7f0d009e
-			public const int Platform_V25_AppCompat = 2131558558;
+			// aapt resource value: 0x7f09009f
+			public const int Platform_V25_AppCompat = 2131296415;
 			
-			// aapt resource value: 0x7f0d009f
-			public const int Platform_V25_AppCompat_Light = 2131558559;
+			// aapt resource value: 0x7f0900a0
+			public const int Platform_V25_AppCompat_Light = 2131296416;
 			
-			// aapt resource value: 0x7f0d0031
-			public const int Platform_Widget_AppCompat_Spinner = 2131558449;
+			// aapt resource value: 0x7f090032
+			public const int Platform_Widget_AppCompat_Spinner = 2131296306;
 			
-			// aapt resource value: 0x7f0d003a
-			public const int RtlOverlay_DialogWindowTitle_AppCompat = 2131558458;
+			// aapt resource value: 0x7f09003b
+			public const int RtlOverlay_DialogWindowTitle_AppCompat = 2131296315;
 			
-			// aapt resource value: 0x7f0d003b
-			public const int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = 2131558459;
+			// aapt resource value: 0x7f09003c
+			public const int RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = 2131296316;
 			
-			// aapt resource value: 0x7f0d003c
-			public const int RtlOverlay_Widget_AppCompat_DialogTitle_Icon = 2131558460;
+			// aapt resource value: 0x7f09003d
+			public const int RtlOverlay_Widget_AppCompat_DialogTitle_Icon = 2131296317;
 			
-			// aapt resource value: 0x7f0d003d
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem = 2131558461;
+			// aapt resource value: 0x7f09003e
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem = 2131296318;
 			
-			// aapt resource value: 0x7f0d003e
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = 2131558462;
+			// aapt resource value: 0x7f09003f
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = 2131296319;
 			
-			// aapt resource value: 0x7f0d003f
-			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = 2131558463;
+			// aapt resource value: 0x7f090040
+			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = 2131296320;
 			
-			// aapt resource value: 0x7f0d0040
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown = 2131558464;
+			// aapt resource value: 0x7f090041
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown = 2131296321;
 			
-			// aapt resource value: 0x7f0d0041
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = 2131558465;
+			// aapt resource value: 0x7f090042
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = 2131296322;
 			
-			// aapt resource value: 0x7f0d0042
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = 2131558466;
+			// aapt resource value: 0x7f090043
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = 2131296323;
 			
-			// aapt resource value: 0x7f0d0043
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Query = 2131558467;
+			// aapt resource value: 0x7f090044
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Query = 2131296324;
 			
-			// aapt resource value: 0x7f0d0044
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Text = 2131558468;
+			// aapt resource value: 0x7f090045
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Text = 2131296325;
 			
-			// aapt resource value: 0x7f0d0045
-			public const int RtlOverlay_Widget_AppCompat_SearchView_MagIcon = 2131558469;
+			// aapt resource value: 0x7f090046
+			public const int RtlOverlay_Widget_AppCompat_SearchView_MagIcon = 2131296326;
 			
-			// aapt resource value: 0x7f0d0046
-			public const int RtlUnderlay_Widget_AppCompat_ActionButton = 2131558470;
+			// aapt resource value: 0x7f090047
+			public const int RtlUnderlay_Widget_AppCompat_ActionButton = 2131296327;
 			
-			// aapt resource value: 0x7f0d0047
-			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131558471;
+			// aapt resource value: 0x7f090048
+			public const int RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = 2131296328;
 			
-			// aapt resource value: 0x7f0d00d6
-			public const int TextAppearance_AppCompat = 2131558614;
+			// aapt resource value: 0x7f0900d7
+			public const int TextAppearance_AppCompat = 2131296471;
 			
-			// aapt resource value: 0x7f0d00d7
-			public const int TextAppearance_AppCompat_Body1 = 2131558615;
+			// aapt resource value: 0x7f0900d8
+			public const int TextAppearance_AppCompat_Body1 = 2131296472;
 			
-			// aapt resource value: 0x7f0d00d8
-			public const int TextAppearance_AppCompat_Body2 = 2131558616;
+			// aapt resource value: 0x7f0900d9
+			public const int TextAppearance_AppCompat_Body2 = 2131296473;
 			
-			// aapt resource value: 0x7f0d00d9
-			public const int TextAppearance_AppCompat_Button = 2131558617;
+			// aapt resource value: 0x7f0900da
+			public const int TextAppearance_AppCompat_Button = 2131296474;
 			
-			// aapt resource value: 0x7f0d00da
-			public const int TextAppearance_AppCompat_Caption = 2131558618;
+			// aapt resource value: 0x7f0900db
+			public const int TextAppearance_AppCompat_Caption = 2131296475;
 			
-			// aapt resource value: 0x7f0d00db
-			public const int TextAppearance_AppCompat_Display1 = 2131558619;
+			// aapt resource value: 0x7f0900dc
+			public const int TextAppearance_AppCompat_Display1 = 2131296476;
 			
-			// aapt resource value: 0x7f0d00dc
-			public const int TextAppearance_AppCompat_Display2 = 2131558620;
+			// aapt resource value: 0x7f0900dd
+			public const int TextAppearance_AppCompat_Display2 = 2131296477;
 			
-			// aapt resource value: 0x7f0d00dd
-			public const int TextAppearance_AppCompat_Display3 = 2131558621;
+			// aapt resource value: 0x7f0900de
+			public const int TextAppearance_AppCompat_Display3 = 2131296478;
 			
-			// aapt resource value: 0x7f0d00de
-			public const int TextAppearance_AppCompat_Display4 = 2131558622;
+			// aapt resource value: 0x7f0900df
+			public const int TextAppearance_AppCompat_Display4 = 2131296479;
 			
-			// aapt resource value: 0x7f0d00df
-			public const int TextAppearance_AppCompat_Headline = 2131558623;
+			// aapt resource value: 0x7f0900e0
+			public const int TextAppearance_AppCompat_Headline = 2131296480;
 			
-			// aapt resource value: 0x7f0d00e0
-			public const int TextAppearance_AppCompat_Inverse = 2131558624;
+			// aapt resource value: 0x7f0900e1
+			public const int TextAppearance_AppCompat_Inverse = 2131296481;
 			
-			// aapt resource value: 0x7f0d00e1
-			public const int TextAppearance_AppCompat_Large = 2131558625;
+			// aapt resource value: 0x7f0900e2
+			public const int TextAppearance_AppCompat_Large = 2131296482;
 			
-			// aapt resource value: 0x7f0d00e2
-			public const int TextAppearance_AppCompat_Large_Inverse = 2131558626;
+			// aapt resource value: 0x7f0900e3
+			public const int TextAppearance_AppCompat_Large_Inverse = 2131296483;
 			
-			// aapt resource value: 0x7f0d00e3
-			public const int TextAppearance_AppCompat_Light_SearchResult_Subtitle = 2131558627;
+			// aapt resource value: 0x7f0900e4
+			public const int TextAppearance_AppCompat_Light_SearchResult_Subtitle = 2131296484;
 			
-			// aapt resource value: 0x7f0d00e4
-			public const int TextAppearance_AppCompat_Light_SearchResult_Title = 2131558628;
+			// aapt resource value: 0x7f0900e5
+			public const int TextAppearance_AppCompat_Light_SearchResult_Title = 2131296485;
 			
-			// aapt resource value: 0x7f0d00e5
-			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 2131558629;
+			// aapt resource value: 0x7f0900e6
+			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = 2131296486;
 			
-			// aapt resource value: 0x7f0d00e6
-			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 2131558630;
+			// aapt resource value: 0x7f0900e7
+			public const int TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = 2131296487;
 			
-			// aapt resource value: 0x7f0d00e7
-			public const int TextAppearance_AppCompat_Medium = 2131558631;
+			// aapt resource value: 0x7f0900e8
+			public const int TextAppearance_AppCompat_Medium = 2131296488;
 			
-			// aapt resource value: 0x7f0d00e8
-			public const int TextAppearance_AppCompat_Medium_Inverse = 2131558632;
+			// aapt resource value: 0x7f0900e9
+			public const int TextAppearance_AppCompat_Medium_Inverse = 2131296489;
 			
-			// aapt resource value: 0x7f0d00e9
-			public const int TextAppearance_AppCompat_Menu = 2131558633;
+			// aapt resource value: 0x7f0900ea
+			public const int TextAppearance_AppCompat_Menu = 2131296490;
 			
-			// aapt resource value: 0x7f0d00ea
-			public const int TextAppearance_AppCompat_SearchResult_Subtitle = 2131558634;
+			// aapt resource value: 0x7f0900eb
+			public const int TextAppearance_AppCompat_SearchResult_Subtitle = 2131296491;
 			
-			// aapt resource value: 0x7f0d00eb
-			public const int TextAppearance_AppCompat_SearchResult_Title = 2131558635;
+			// aapt resource value: 0x7f0900ec
+			public const int TextAppearance_AppCompat_SearchResult_Title = 2131296492;
 			
-			// aapt resource value: 0x7f0d00ec
-			public const int TextAppearance_AppCompat_Small = 2131558636;
+			// aapt resource value: 0x7f0900ed
+			public const int TextAppearance_AppCompat_Small = 2131296493;
 			
-			// aapt resource value: 0x7f0d00ed
-			public const int TextAppearance_AppCompat_Small_Inverse = 2131558637;
+			// aapt resource value: 0x7f0900ee
+			public const int TextAppearance_AppCompat_Small_Inverse = 2131296494;
 			
-			// aapt resource value: 0x7f0d00ee
-			public const int TextAppearance_AppCompat_Subhead = 2131558638;
+			// aapt resource value: 0x7f0900ef
+			public const int TextAppearance_AppCompat_Subhead = 2131296495;
 			
-			// aapt resource value: 0x7f0d00ef
-			public const int TextAppearance_AppCompat_Subhead_Inverse = 2131558639;
+			// aapt resource value: 0x7f0900f0
+			public const int TextAppearance_AppCompat_Subhead_Inverse = 2131296496;
 			
-			// aapt resource value: 0x7f0d00f0
-			public const int TextAppearance_AppCompat_Title = 2131558640;
+			// aapt resource value: 0x7f0900f1
+			public const int TextAppearance_AppCompat_Title = 2131296497;
 			
-			// aapt resource value: 0x7f0d00f1
-			public const int TextAppearance_AppCompat_Title_Inverse = 2131558641;
+			// aapt resource value: 0x7f0900f2
+			public const int TextAppearance_AppCompat_Title_Inverse = 2131296498;
 			
-			// aapt resource value: 0x7f0d0039
-			public const int TextAppearance_AppCompat_Tooltip = 2131558457;
+			// aapt resource value: 0x7f09003a
+			public const int TextAppearance_AppCompat_Tooltip = 2131296314;
 			
-			// aapt resource value: 0x7f0d00f2
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Menu = 2131558642;
+			// aapt resource value: 0x7f0900f3
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Menu = 2131296499;
 			
-			// aapt resource value: 0x7f0d00f3
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 2131558643;
+			// aapt resource value: 0x7f0900f4
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle = 2131296500;
 			
-			// aapt resource value: 0x7f0d00f4
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 2131558644;
+			// aapt resource value: 0x7f0900f5
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = 2131296501;
 			
-			// aapt resource value: 0x7f0d00f5
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Title = 2131558645;
+			// aapt resource value: 0x7f0900f6
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Title = 2131296502;
 			
-			// aapt resource value: 0x7f0d00f6
-			public const int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 2131558646;
+			// aapt resource value: 0x7f0900f7
+			public const int TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = 2131296503;
 			
-			// aapt resource value: 0x7f0d00f7
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 2131558647;
+			// aapt resource value: 0x7f0900f8
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle = 2131296504;
 			
-			// aapt resource value: 0x7f0d00f8
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = 2131558648;
+			// aapt resource value: 0x7f0900f9
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = 2131296505;
 			
-			// aapt resource value: 0x7f0d00f9
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Title = 2131558649;
+			// aapt resource value: 0x7f0900fa
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Title = 2131296506;
 			
-			// aapt resource value: 0x7f0d00fa
-			public const int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = 2131558650;
+			// aapt resource value: 0x7f0900fb
+			public const int TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = 2131296507;
 			
-			// aapt resource value: 0x7f0d00fb
-			public const int TextAppearance_AppCompat_Widget_Button = 2131558651;
+			// aapt resource value: 0x7f0900fc
+			public const int TextAppearance_AppCompat_Widget_Button = 2131296508;
 			
-			// aapt resource value: 0x7f0d00fc
-			public const int TextAppearance_AppCompat_Widget_Button_Borderless_Colored = 2131558652;
+			// aapt resource value: 0x7f0900fd
+			public const int TextAppearance_AppCompat_Widget_Button_Borderless_Colored = 2131296509;
 			
-			// aapt resource value: 0x7f0d00fd
-			public const int TextAppearance_AppCompat_Widget_Button_Colored = 2131558653;
+			// aapt resource value: 0x7f0900fe
+			public const int TextAppearance_AppCompat_Widget_Button_Colored = 2131296510;
 			
-			// aapt resource value: 0x7f0d00fe
-			public const int TextAppearance_AppCompat_Widget_Button_Inverse = 2131558654;
+			// aapt resource value: 0x7f0900ff
+			public const int TextAppearance_AppCompat_Widget_Button_Inverse = 2131296511;
 			
-			// aapt resource value: 0x7f0d00ff
-			public const int TextAppearance_AppCompat_Widget_DropDownItem = 2131558655;
+			// aapt resource value: 0x7f090100
+			public const int TextAppearance_AppCompat_Widget_DropDownItem = 2131296512;
 			
-			// aapt resource value: 0x7f0d0100
-			public const int TextAppearance_AppCompat_Widget_PopupMenu_Header = 2131558656;
+			// aapt resource value: 0x7f090101
+			public const int TextAppearance_AppCompat_Widget_PopupMenu_Header = 2131296513;
 			
-			// aapt resource value: 0x7f0d0101
-			public const int TextAppearance_AppCompat_Widget_PopupMenu_Large = 2131558657;
+			// aapt resource value: 0x7f090102
+			public const int TextAppearance_AppCompat_Widget_PopupMenu_Large = 2131296514;
 			
-			// aapt resource value: 0x7f0d0102
-			public const int TextAppearance_AppCompat_Widget_PopupMenu_Small = 2131558658;
+			// aapt resource value: 0x7f090103
+			public const int TextAppearance_AppCompat_Widget_PopupMenu_Small = 2131296515;
 			
-			// aapt resource value: 0x7f0d0103
-			public const int TextAppearance_AppCompat_Widget_Switch = 2131558659;
+			// aapt resource value: 0x7f090104
+			public const int TextAppearance_AppCompat_Widget_Switch = 2131296516;
 			
-			// aapt resource value: 0x7f0d0104
-			public const int TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131558660;
+			// aapt resource value: 0x7f090105
+			public const int TextAppearance_AppCompat_Widget_TextView_SpinnerItem = 2131296517;
 			
-			// aapt resource value: 0x7f0d0188
-			public const int TextAppearance_Compat_Notification = 2131558792;
+			// aapt resource value: 0x7f090189
+			public const int TextAppearance_Compat_Notification = 2131296649;
 			
-			// aapt resource value: 0x7f0d0189
-			public const int TextAppearance_Compat_Notification_Info = 2131558793;
+			// aapt resource value: 0x7f09018a
+			public const int TextAppearance_Compat_Notification_Info = 2131296650;
 			
-			// aapt resource value: 0x7f0d0165
-			public const int TextAppearance_Compat_Notification_Info_Media = 2131558757;
+			// aapt resource value: 0x7f090166
+			public const int TextAppearance_Compat_Notification_Info_Media = 2131296614;
 			
-			// aapt resource value: 0x7f0d018e
-			public const int TextAppearance_Compat_Notification_Line2 = 2131558798;
+			// aapt resource value: 0x7f09018f
+			public const int TextAppearance_Compat_Notification_Line2 = 2131296655;
 			
-			// aapt resource value: 0x7f0d0169
-			public const int TextAppearance_Compat_Notification_Line2_Media = 2131558761;
+			// aapt resource value: 0x7f09016a
+			public const int TextAppearance_Compat_Notification_Line2_Media = 2131296618;
 			
-			// aapt resource value: 0x7f0d0166
-			public const int TextAppearance_Compat_Notification_Media = 2131558758;
+			// aapt resource value: 0x7f090167
+			public const int TextAppearance_Compat_Notification_Media = 2131296615;
 			
-			// aapt resource value: 0x7f0d018a
-			public const int TextAppearance_Compat_Notification_Time = 2131558794;
+			// aapt resource value: 0x7f09018b
+			public const int TextAppearance_Compat_Notification_Time = 2131296651;
 			
-			// aapt resource value: 0x7f0d0167
-			public const int TextAppearance_Compat_Notification_Time_Media = 2131558759;
+			// aapt resource value: 0x7f090168
+			public const int TextAppearance_Compat_Notification_Time_Media = 2131296616;
 			
-			// aapt resource value: 0x7f0d018b
-			public const int TextAppearance_Compat_Notification_Title = 2131558795;
+			// aapt resource value: 0x7f09018c
+			public const int TextAppearance_Compat_Notification_Title = 2131296652;
 			
-			// aapt resource value: 0x7f0d0168
-			public const int TextAppearance_Compat_Notification_Title_Media = 2131558760;
+			// aapt resource value: 0x7f090169
+			public const int TextAppearance_Compat_Notification_Title_Media = 2131296617;
 			
-			// aapt resource value: 0x7f0d0171
-			public const int TextAppearance_Design_CollapsingToolbar_Expanded = 2131558769;
+			// aapt resource value: 0x7f090172
+			public const int TextAppearance_Design_CollapsingToolbar_Expanded = 2131296626;
 			
-			// aapt resource value: 0x7f0d0172
-			public const int TextAppearance_Design_Counter = 2131558770;
+			// aapt resource value: 0x7f090173
+			public const int TextAppearance_Design_Counter = 2131296627;
 			
-			// aapt resource value: 0x7f0d0173
-			public const int TextAppearance_Design_Counter_Overflow = 2131558771;
+			// aapt resource value: 0x7f090174
+			public const int TextAppearance_Design_Counter_Overflow = 2131296628;
 			
-			// aapt resource value: 0x7f0d0174
-			public const int TextAppearance_Design_Error = 2131558772;
+			// aapt resource value: 0x7f090175
+			public const int TextAppearance_Design_Error = 2131296629;
 			
-			// aapt resource value: 0x7f0d0175
-			public const int TextAppearance_Design_Hint = 2131558773;
+			// aapt resource value: 0x7f090176
+			public const int TextAppearance_Design_Hint = 2131296630;
 			
-			// aapt resource value: 0x7f0d0176
-			public const int TextAppearance_Design_Snackbar_Message = 2131558774;
+			// aapt resource value: 0x7f090177
+			public const int TextAppearance_Design_Snackbar_Message = 2131296631;
 			
-			// aapt resource value: 0x7f0d0177
-			public const int TextAppearance_Design_Tab = 2131558775;
+			// aapt resource value: 0x7f090178
+			public const int TextAppearance_Design_Tab = 2131296632;
 			
-			// aapt resource value: 0x7f0d0000
-			public const int TextAppearance_MediaRouter_PrimaryText = 2131558400;
+			// aapt resource value: 0x7f090001
+			public const int TextAppearance_MediaRouter_PrimaryText = 2131296257;
 			
-			// aapt resource value: 0x7f0d0001
-			public const int TextAppearance_MediaRouter_SecondaryText = 2131558401;
+			// aapt resource value: 0x7f090002
+			public const int TextAppearance_MediaRouter_SecondaryText = 2131296258;
 			
-			// aapt resource value: 0x7f0d0002
-			public const int TextAppearance_MediaRouter_Title = 2131558402;
+			// aapt resource value: 0x7f090003
+			public const int TextAppearance_MediaRouter_Title = 2131296259;
 			
-			// aapt resource value: 0x7f0d0105
-			public const int TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 2131558661;
+			// aapt resource value: 0x7f090106
+			public const int TextAppearance_Widget_AppCompat_ExpandedMenu_Item = 2131296518;
 			
-			// aapt resource value: 0x7f0d0106
-			public const int TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 2131558662;
+			// aapt resource value: 0x7f090107
+			public const int TextAppearance_Widget_AppCompat_Toolbar_Subtitle = 2131296519;
 			
-			// aapt resource value: 0x7f0d0107
-			public const int TextAppearance_Widget_AppCompat_Toolbar_Title = 2131558663;
+			// aapt resource value: 0x7f090108
+			public const int TextAppearance_Widget_AppCompat_Toolbar_Title = 2131296520;
 			
-			// aapt resource value: 0x7f0d0108
-			public const int Theme_AppCompat = 2131558664;
+			// aapt resource value: 0x7f090109
+			public const int Theme_AppCompat = 2131296521;
 			
-			// aapt resource value: 0x7f0d0109
-			public const int Theme_AppCompat_CompactMenu = 2131558665;
+			// aapt resource value: 0x7f09010a
+			public const int Theme_AppCompat_CompactMenu = 2131296522;
 			
-			// aapt resource value: 0x7f0d0013
-			public const int Theme_AppCompat_DayNight = 2131558419;
+			// aapt resource value: 0x7f090014
+			public const int Theme_AppCompat_DayNight = 2131296276;
 			
-			// aapt resource value: 0x7f0d0014
-			public const int Theme_AppCompat_DayNight_DarkActionBar = 2131558420;
+			// aapt resource value: 0x7f090015
+			public const int Theme_AppCompat_DayNight_DarkActionBar = 2131296277;
 			
-			// aapt resource value: 0x7f0d0015
-			public const int Theme_AppCompat_DayNight_Dialog = 2131558421;
+			// aapt resource value: 0x7f090016
+			public const int Theme_AppCompat_DayNight_Dialog = 2131296278;
 			
-			// aapt resource value: 0x7f0d0016
-			public const int Theme_AppCompat_DayNight_Dialog_Alert = 2131558422;
+			// aapt resource value: 0x7f090017
+			public const int Theme_AppCompat_DayNight_Dialog_Alert = 2131296279;
 			
-			// aapt resource value: 0x7f0d0017
-			public const int Theme_AppCompat_DayNight_Dialog_MinWidth = 2131558423;
+			// aapt resource value: 0x7f090018
+			public const int Theme_AppCompat_DayNight_Dialog_MinWidth = 2131296280;
 			
-			// aapt resource value: 0x7f0d0018
-			public const int Theme_AppCompat_DayNight_DialogWhenLarge = 2131558424;
+			// aapt resource value: 0x7f090019
+			public const int Theme_AppCompat_DayNight_DialogWhenLarge = 2131296281;
 			
-			// aapt resource value: 0x7f0d0019
-			public const int Theme_AppCompat_DayNight_NoActionBar = 2131558425;
+			// aapt resource value: 0x7f09001a
+			public const int Theme_AppCompat_DayNight_NoActionBar = 2131296282;
 			
-			// aapt resource value: 0x7f0d010a
-			public const int Theme_AppCompat_Dialog = 2131558666;
+			// aapt resource value: 0x7f09010b
+			public const int Theme_AppCompat_Dialog = 2131296523;
 			
-			// aapt resource value: 0x7f0d010b
-			public const int Theme_AppCompat_Dialog_Alert = 2131558667;
+			// aapt resource value: 0x7f09010c
+			public const int Theme_AppCompat_Dialog_Alert = 2131296524;
 			
-			// aapt resource value: 0x7f0d010c
-			public const int Theme_AppCompat_Dialog_MinWidth = 2131558668;
+			// aapt resource value: 0x7f09010d
+			public const int Theme_AppCompat_Dialog_MinWidth = 2131296525;
 			
-			// aapt resource value: 0x7f0d010d
-			public const int Theme_AppCompat_DialogWhenLarge = 2131558669;
+			// aapt resource value: 0x7f09010e
+			public const int Theme_AppCompat_DialogWhenLarge = 2131296526;
 			
-			// aapt resource value: 0x7f0d010e
-			public const int Theme_AppCompat_Light = 2131558670;
+			// aapt resource value: 0x7f09010f
+			public const int Theme_AppCompat_Light = 2131296527;
 			
-			// aapt resource value: 0x7f0d010f
-			public const int Theme_AppCompat_Light_DarkActionBar = 2131558671;
+			// aapt resource value: 0x7f090110
+			public const int Theme_AppCompat_Light_DarkActionBar = 2131296528;
 			
-			// aapt resource value: 0x7f0d0110
-			public const int Theme_AppCompat_Light_Dialog = 2131558672;
+			// aapt resource value: 0x7f090111
+			public const int Theme_AppCompat_Light_Dialog = 2131296529;
 			
-			// aapt resource value: 0x7f0d0111
-			public const int Theme_AppCompat_Light_Dialog_Alert = 2131558673;
+			// aapt resource value: 0x7f090112
+			public const int Theme_AppCompat_Light_Dialog_Alert = 2131296530;
 			
-			// aapt resource value: 0x7f0d0112
-			public const int Theme_AppCompat_Light_Dialog_MinWidth = 2131558674;
+			// aapt resource value: 0x7f090113
+			public const int Theme_AppCompat_Light_Dialog_MinWidth = 2131296531;
 			
-			// aapt resource value: 0x7f0d0113
-			public const int Theme_AppCompat_Light_DialogWhenLarge = 2131558675;
+			// aapt resource value: 0x7f090114
+			public const int Theme_AppCompat_Light_DialogWhenLarge = 2131296532;
 			
-			// aapt resource value: 0x7f0d0114
-			public const int Theme_AppCompat_Light_NoActionBar = 2131558676;
+			// aapt resource value: 0x7f090115
+			public const int Theme_AppCompat_Light_NoActionBar = 2131296533;
 			
-			// aapt resource value: 0x7f0d0115
-			public const int Theme_AppCompat_NoActionBar = 2131558677;
+			// aapt resource value: 0x7f090116
+			public const int Theme_AppCompat_NoActionBar = 2131296534;
 			
-			// aapt resource value: 0x7f0d0178
-			public const int Theme_Design = 2131558776;
+			// aapt resource value: 0x7f090179
+			public const int Theme_Design = 2131296633;
 			
-			// aapt resource value: 0x7f0d0179
-			public const int Theme_Design_BottomSheetDialog = 2131558777;
+			// aapt resource value: 0x7f09017a
+			public const int Theme_Design_BottomSheetDialog = 2131296634;
 			
-			// aapt resource value: 0x7f0d017a
-			public const int Theme_Design_Light = 2131558778;
+			// aapt resource value: 0x7f09017b
+			public const int Theme_Design_Light = 2131296635;
 			
-			// aapt resource value: 0x7f0d017b
-			public const int Theme_Design_Light_BottomSheetDialog = 2131558779;
+			// aapt resource value: 0x7f09017c
+			public const int Theme_Design_Light_BottomSheetDialog = 2131296636;
 			
-			// aapt resource value: 0x7f0d017c
-			public const int Theme_Design_Light_NoActionBar = 2131558780;
+			// aapt resource value: 0x7f09017d
+			public const int Theme_Design_Light_NoActionBar = 2131296637;
 			
-			// aapt resource value: 0x7f0d017d
-			public const int Theme_Design_NoActionBar = 2131558781;
+			// aapt resource value: 0x7f09017e
+			public const int Theme_Design_NoActionBar = 2131296638;
 			
-			// aapt resource value: 0x7f0d0003
-			public const int Theme_MediaRouter = 2131558403;
+			// aapt resource value: 0x7f090004
+			public const int Theme_MediaRouter = 2131296260;
 			
-			// aapt resource value: 0x7f0d0004
-			public const int Theme_MediaRouter_Light = 2131558404;
+			// aapt resource value: 0x7f090005
+			public const int Theme_MediaRouter_Light = 2131296261;
 			
-			// aapt resource value: 0x7f0d0005
-			public const int Theme_MediaRouter_Light_DarkControlPanel = 2131558405;
+			// aapt resource value: 0x7f090006
+			public const int Theme_MediaRouter_Light_DarkControlPanel = 2131296262;
 			
-			// aapt resource value: 0x7f0d0006
-			public const int Theme_MediaRouter_LightControlPanel = 2131558406;
+			// aapt resource value: 0x7f090007
+			public const int Theme_MediaRouter_LightControlPanel = 2131296263;
 			
-			// aapt resource value: 0x7f0d0116
-			public const int ThemeOverlay_AppCompat = 2131558678;
+			// aapt resource value: 0x7f090117
+			public const int ThemeOverlay_AppCompat = 2131296535;
 			
-			// aapt resource value: 0x7f0d0117
-			public const int ThemeOverlay_AppCompat_ActionBar = 2131558679;
+			// aapt resource value: 0x7f090118
+			public const int ThemeOverlay_AppCompat_ActionBar = 2131296536;
 			
-			// aapt resource value: 0x7f0d0118
-			public const int ThemeOverlay_AppCompat_Dark = 2131558680;
+			// aapt resource value: 0x7f090119
+			public const int ThemeOverlay_AppCompat_Dark = 2131296537;
 			
-			// aapt resource value: 0x7f0d0119
-			public const int ThemeOverlay_AppCompat_Dark_ActionBar = 2131558681;
+			// aapt resource value: 0x7f09011a
+			public const int ThemeOverlay_AppCompat_Dark_ActionBar = 2131296538;
 			
-			// aapt resource value: 0x7f0d011a
-			public const int ThemeOverlay_AppCompat_Dialog = 2131558682;
+			// aapt resource value: 0x7f09011b
+			public const int ThemeOverlay_AppCompat_Dialog = 2131296539;
 			
-			// aapt resource value: 0x7f0d011b
-			public const int ThemeOverlay_AppCompat_Dialog_Alert = 2131558683;
+			// aapt resource value: 0x7f09011c
+			public const int ThemeOverlay_AppCompat_Dialog_Alert = 2131296540;
 			
-			// aapt resource value: 0x7f0d011c
-			public const int ThemeOverlay_AppCompat_Light = 2131558684;
+			// aapt resource value: 0x7f09011d
+			public const int ThemeOverlay_AppCompat_Light = 2131296541;
 			
-			// aapt resource value: 0x7f0d0007
-			public const int ThemeOverlay_MediaRouter_Dark = 2131558407;
+			// aapt resource value: 0x7f090008
+			public const int ThemeOverlay_MediaRouter_Dark = 2131296264;
 			
-			// aapt resource value: 0x7f0d0008
-			public const int ThemeOverlay_MediaRouter_Light = 2131558408;
+			// aapt resource value: 0x7f090009
+			public const int ThemeOverlay_MediaRouter_Light = 2131296265;
 			
-			// aapt resource value: 0x7f0d011d
-			public const int Widget_AppCompat_ActionBar = 2131558685;
+			// aapt resource value: 0x7f09011e
+			public const int Widget_AppCompat_ActionBar = 2131296542;
 			
-			// aapt resource value: 0x7f0d011e
-			public const int Widget_AppCompat_ActionBar_Solid = 2131558686;
+			// aapt resource value: 0x7f09011f
+			public const int Widget_AppCompat_ActionBar_Solid = 2131296543;
 			
-			// aapt resource value: 0x7f0d011f
-			public const int Widget_AppCompat_ActionBar_TabBar = 2131558687;
+			// aapt resource value: 0x7f090120
+			public const int Widget_AppCompat_ActionBar_TabBar = 2131296544;
 			
-			// aapt resource value: 0x7f0d0120
-			public const int Widget_AppCompat_ActionBar_TabText = 2131558688;
+			// aapt resource value: 0x7f090121
+			public const int Widget_AppCompat_ActionBar_TabText = 2131296545;
 			
-			// aapt resource value: 0x7f0d0121
-			public const int Widget_AppCompat_ActionBar_TabView = 2131558689;
+			// aapt resource value: 0x7f090122
+			public const int Widget_AppCompat_ActionBar_TabView = 2131296546;
 			
-			// aapt resource value: 0x7f0d0122
-			public const int Widget_AppCompat_ActionButton = 2131558690;
+			// aapt resource value: 0x7f090123
+			public const int Widget_AppCompat_ActionButton = 2131296547;
 			
-			// aapt resource value: 0x7f0d0123
-			public const int Widget_AppCompat_ActionButton_CloseMode = 2131558691;
+			// aapt resource value: 0x7f090124
+			public const int Widget_AppCompat_ActionButton_CloseMode = 2131296548;
 			
-			// aapt resource value: 0x7f0d0124
-			public const int Widget_AppCompat_ActionButton_Overflow = 2131558692;
+			// aapt resource value: 0x7f090125
+			public const int Widget_AppCompat_ActionButton_Overflow = 2131296549;
 			
-			// aapt resource value: 0x7f0d0125
-			public const int Widget_AppCompat_ActionMode = 2131558693;
+			// aapt resource value: 0x7f090126
+			public const int Widget_AppCompat_ActionMode = 2131296550;
 			
-			// aapt resource value: 0x7f0d0126
-			public const int Widget_AppCompat_ActivityChooserView = 2131558694;
+			// aapt resource value: 0x7f090127
+			public const int Widget_AppCompat_ActivityChooserView = 2131296551;
 			
-			// aapt resource value: 0x7f0d0127
-			public const int Widget_AppCompat_AutoCompleteTextView = 2131558695;
+			// aapt resource value: 0x7f090128
+			public const int Widget_AppCompat_AutoCompleteTextView = 2131296552;
 			
-			// aapt resource value: 0x7f0d0128
-			public const int Widget_AppCompat_Button = 2131558696;
+			// aapt resource value: 0x7f090129
+			public const int Widget_AppCompat_Button = 2131296553;
 			
-			// aapt resource value: 0x7f0d0129
-			public const int Widget_AppCompat_Button_Borderless = 2131558697;
+			// aapt resource value: 0x7f09012a
+			public const int Widget_AppCompat_Button_Borderless = 2131296554;
 			
-			// aapt resource value: 0x7f0d012a
-			public const int Widget_AppCompat_Button_Borderless_Colored = 2131558698;
+			// aapt resource value: 0x7f09012b
+			public const int Widget_AppCompat_Button_Borderless_Colored = 2131296555;
 			
-			// aapt resource value: 0x7f0d012b
-			public const int Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131558699;
+			// aapt resource value: 0x7f09012c
+			public const int Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131296556;
 			
-			// aapt resource value: 0x7f0d012c
-			public const int Widget_AppCompat_Button_Colored = 2131558700;
+			// aapt resource value: 0x7f09012d
+			public const int Widget_AppCompat_Button_Colored = 2131296557;
 			
-			// aapt resource value: 0x7f0d012d
-			public const int Widget_AppCompat_Button_Small = 2131558701;
+			// aapt resource value: 0x7f09012e
+			public const int Widget_AppCompat_Button_Small = 2131296558;
 			
-			// aapt resource value: 0x7f0d012e
-			public const int Widget_AppCompat_ButtonBar = 2131558702;
+			// aapt resource value: 0x7f09012f
+			public const int Widget_AppCompat_ButtonBar = 2131296559;
 			
-			// aapt resource value: 0x7f0d012f
-			public const int Widget_AppCompat_ButtonBar_AlertDialog = 2131558703;
+			// aapt resource value: 0x7f090130
+			public const int Widget_AppCompat_ButtonBar_AlertDialog = 2131296560;
 			
-			// aapt resource value: 0x7f0d0130
-			public const int Widget_AppCompat_CompoundButton_CheckBox = 2131558704;
+			// aapt resource value: 0x7f090131
+			public const int Widget_AppCompat_CompoundButton_CheckBox = 2131296561;
 			
-			// aapt resource value: 0x7f0d0131
-			public const int Widget_AppCompat_CompoundButton_RadioButton = 2131558705;
+			// aapt resource value: 0x7f090132
+			public const int Widget_AppCompat_CompoundButton_RadioButton = 2131296562;
 			
-			// aapt resource value: 0x7f0d0132
-			public const int Widget_AppCompat_CompoundButton_Switch = 2131558706;
+			// aapt resource value: 0x7f090133
+			public const int Widget_AppCompat_CompoundButton_Switch = 2131296563;
 			
-			// aapt resource value: 0x7f0d0133
-			public const int Widget_AppCompat_DrawerArrowToggle = 2131558707;
+			// aapt resource value: 0x7f090134
+			public const int Widget_AppCompat_DrawerArrowToggle = 2131296564;
 			
-			// aapt resource value: 0x7f0d0134
-			public const int Widget_AppCompat_DropDownItem_Spinner = 2131558708;
+			// aapt resource value: 0x7f090135
+			public const int Widget_AppCompat_DropDownItem_Spinner = 2131296565;
 			
-			// aapt resource value: 0x7f0d0135
-			public const int Widget_AppCompat_EditText = 2131558709;
+			// aapt resource value: 0x7f090136
+			public const int Widget_AppCompat_EditText = 2131296566;
 			
-			// aapt resource value: 0x7f0d0136
-			public const int Widget_AppCompat_ImageButton = 2131558710;
+			// aapt resource value: 0x7f090137
+			public const int Widget_AppCompat_ImageButton = 2131296567;
 			
-			// aapt resource value: 0x7f0d0137
-			public const int Widget_AppCompat_Light_ActionBar = 2131558711;
+			// aapt resource value: 0x7f090138
+			public const int Widget_AppCompat_Light_ActionBar = 2131296568;
 			
-			// aapt resource value: 0x7f0d0138
-			public const int Widget_AppCompat_Light_ActionBar_Solid = 2131558712;
+			// aapt resource value: 0x7f090139
+			public const int Widget_AppCompat_Light_ActionBar_Solid = 2131296569;
 			
-			// aapt resource value: 0x7f0d0139
-			public const int Widget_AppCompat_Light_ActionBar_Solid_Inverse = 2131558713;
+			// aapt resource value: 0x7f09013a
+			public const int Widget_AppCompat_Light_ActionBar_Solid_Inverse = 2131296570;
 			
-			// aapt resource value: 0x7f0d013a
-			public const int Widget_AppCompat_Light_ActionBar_TabBar = 2131558714;
+			// aapt resource value: 0x7f09013b
+			public const int Widget_AppCompat_Light_ActionBar_TabBar = 2131296571;
 			
-			// aapt resource value: 0x7f0d013b
-			public const int Widget_AppCompat_Light_ActionBar_TabBar_Inverse = 2131558715;
+			// aapt resource value: 0x7f09013c
+			public const int Widget_AppCompat_Light_ActionBar_TabBar_Inverse = 2131296572;
 			
-			// aapt resource value: 0x7f0d013c
-			public const int Widget_AppCompat_Light_ActionBar_TabText = 2131558716;
+			// aapt resource value: 0x7f09013d
+			public const int Widget_AppCompat_Light_ActionBar_TabText = 2131296573;
 			
-			// aapt resource value: 0x7f0d013d
-			public const int Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131558717;
+			// aapt resource value: 0x7f09013e
+			public const int Widget_AppCompat_Light_ActionBar_TabText_Inverse = 2131296574;
 			
-			// aapt resource value: 0x7f0d013e
-			public const int Widget_AppCompat_Light_ActionBar_TabView = 2131558718;
+			// aapt resource value: 0x7f09013f
+			public const int Widget_AppCompat_Light_ActionBar_TabView = 2131296575;
 			
-			// aapt resource value: 0x7f0d013f
-			public const int Widget_AppCompat_Light_ActionBar_TabView_Inverse = 2131558719;
+			// aapt resource value: 0x7f090140
+			public const int Widget_AppCompat_Light_ActionBar_TabView_Inverse = 2131296576;
 			
-			// aapt resource value: 0x7f0d0140
-			public const int Widget_AppCompat_Light_ActionButton = 2131558720;
+			// aapt resource value: 0x7f090141
+			public const int Widget_AppCompat_Light_ActionButton = 2131296577;
 			
-			// aapt resource value: 0x7f0d0141
-			public const int Widget_AppCompat_Light_ActionButton_CloseMode = 2131558721;
+			// aapt resource value: 0x7f090142
+			public const int Widget_AppCompat_Light_ActionButton_CloseMode = 2131296578;
 			
-			// aapt resource value: 0x7f0d0142
-			public const int Widget_AppCompat_Light_ActionButton_Overflow = 2131558722;
+			// aapt resource value: 0x7f090143
+			public const int Widget_AppCompat_Light_ActionButton_Overflow = 2131296579;
 			
-			// aapt resource value: 0x7f0d0143
-			public const int Widget_AppCompat_Light_ActionMode_Inverse = 2131558723;
+			// aapt resource value: 0x7f090144
+			public const int Widget_AppCompat_Light_ActionMode_Inverse = 2131296580;
 			
-			// aapt resource value: 0x7f0d0144
-			public const int Widget_AppCompat_Light_ActivityChooserView = 2131558724;
+			// aapt resource value: 0x7f090145
+			public const int Widget_AppCompat_Light_ActivityChooserView = 2131296581;
 			
-			// aapt resource value: 0x7f0d0145
-			public const int Widget_AppCompat_Light_AutoCompleteTextView = 2131558725;
+			// aapt resource value: 0x7f090146
+			public const int Widget_AppCompat_Light_AutoCompleteTextView = 2131296582;
 			
-			// aapt resource value: 0x7f0d0146
-			public const int Widget_AppCompat_Light_DropDownItem_Spinner = 2131558726;
+			// aapt resource value: 0x7f090147
+			public const int Widget_AppCompat_Light_DropDownItem_Spinner = 2131296583;
 			
-			// aapt resource value: 0x7f0d0147
-			public const int Widget_AppCompat_Light_ListPopupWindow = 2131558727;
+			// aapt resource value: 0x7f090148
+			public const int Widget_AppCompat_Light_ListPopupWindow = 2131296584;
 			
-			// aapt resource value: 0x7f0d0148
-			public const int Widget_AppCompat_Light_ListView_DropDown = 2131558728;
+			// aapt resource value: 0x7f090149
+			public const int Widget_AppCompat_Light_ListView_DropDown = 2131296585;
 			
-			// aapt resource value: 0x7f0d0149
-			public const int Widget_AppCompat_Light_PopupMenu = 2131558729;
+			// aapt resource value: 0x7f09014a
+			public const int Widget_AppCompat_Light_PopupMenu = 2131296586;
 			
-			// aapt resource value: 0x7f0d014a
-			public const int Widget_AppCompat_Light_PopupMenu_Overflow = 2131558730;
+			// aapt resource value: 0x7f09014b
+			public const int Widget_AppCompat_Light_PopupMenu_Overflow = 2131296587;
 			
-			// aapt resource value: 0x7f0d014b
-			public const int Widget_AppCompat_Light_SearchView = 2131558731;
+			// aapt resource value: 0x7f09014c
+			public const int Widget_AppCompat_Light_SearchView = 2131296588;
 			
-			// aapt resource value: 0x7f0d014c
-			public const int Widget_AppCompat_Light_Spinner_DropDown_ActionBar = 2131558732;
+			// aapt resource value: 0x7f09014d
+			public const int Widget_AppCompat_Light_Spinner_DropDown_ActionBar = 2131296589;
 			
-			// aapt resource value: 0x7f0d014d
-			public const int Widget_AppCompat_ListMenuView = 2131558733;
+			// aapt resource value: 0x7f09014e
+			public const int Widget_AppCompat_ListMenuView = 2131296590;
 			
-			// aapt resource value: 0x7f0d014e
-			public const int Widget_AppCompat_ListPopupWindow = 2131558734;
+			// aapt resource value: 0x7f09014f
+			public const int Widget_AppCompat_ListPopupWindow = 2131296591;
 			
-			// aapt resource value: 0x7f0d014f
-			public const int Widget_AppCompat_ListView = 2131558735;
+			// aapt resource value: 0x7f090150
+			public const int Widget_AppCompat_ListView = 2131296592;
 			
-			// aapt resource value: 0x7f0d0150
-			public const int Widget_AppCompat_ListView_DropDown = 2131558736;
+			// aapt resource value: 0x7f090151
+			public const int Widget_AppCompat_ListView_DropDown = 2131296593;
 			
-			// aapt resource value: 0x7f0d0151
-			public const int Widget_AppCompat_ListView_Menu = 2131558737;
+			// aapt resource value: 0x7f090152
+			public const int Widget_AppCompat_ListView_Menu = 2131296594;
 			
-			// aapt resource value: 0x7f0d0152
-			public const int Widget_AppCompat_PopupMenu = 2131558738;
+			// aapt resource value: 0x7f090153
+			public const int Widget_AppCompat_PopupMenu = 2131296595;
 			
-			// aapt resource value: 0x7f0d0153
-			public const int Widget_AppCompat_PopupMenu_Overflow = 2131558739;
+			// aapt resource value: 0x7f090154
+			public const int Widget_AppCompat_PopupMenu_Overflow = 2131296596;
 			
-			// aapt resource value: 0x7f0d0154
-			public const int Widget_AppCompat_PopupWindow = 2131558740;
+			// aapt resource value: 0x7f090155
+			public const int Widget_AppCompat_PopupWindow = 2131296597;
 			
-			// aapt resource value: 0x7f0d0155
-			public const int Widget_AppCompat_ProgressBar = 2131558741;
+			// aapt resource value: 0x7f090156
+			public const int Widget_AppCompat_ProgressBar = 2131296598;
 			
-			// aapt resource value: 0x7f0d0156
-			public const int Widget_AppCompat_ProgressBar_Horizontal = 2131558742;
+			// aapt resource value: 0x7f090157
+			public const int Widget_AppCompat_ProgressBar_Horizontal = 2131296599;
 			
-			// aapt resource value: 0x7f0d0157
-			public const int Widget_AppCompat_RatingBar = 2131558743;
+			// aapt resource value: 0x7f090158
+			public const int Widget_AppCompat_RatingBar = 2131296600;
 			
-			// aapt resource value: 0x7f0d0158
-			public const int Widget_AppCompat_RatingBar_Indicator = 2131558744;
+			// aapt resource value: 0x7f090159
+			public const int Widget_AppCompat_RatingBar_Indicator = 2131296601;
 			
-			// aapt resource value: 0x7f0d0159
-			public const int Widget_AppCompat_RatingBar_Small = 2131558745;
+			// aapt resource value: 0x7f09015a
+			public const int Widget_AppCompat_RatingBar_Small = 2131296602;
 			
-			// aapt resource value: 0x7f0d015a
-			public const int Widget_AppCompat_SearchView = 2131558746;
+			// aapt resource value: 0x7f09015b
+			public const int Widget_AppCompat_SearchView = 2131296603;
 			
-			// aapt resource value: 0x7f0d015b
-			public const int Widget_AppCompat_SearchView_ActionBar = 2131558747;
+			// aapt resource value: 0x7f09015c
+			public const int Widget_AppCompat_SearchView_ActionBar = 2131296604;
 			
-			// aapt resource value: 0x7f0d015c
-			public const int Widget_AppCompat_SeekBar = 2131558748;
+			// aapt resource value: 0x7f09015d
+			public const int Widget_AppCompat_SeekBar = 2131296605;
 			
-			// aapt resource value: 0x7f0d015d
-			public const int Widget_AppCompat_SeekBar_Discrete = 2131558749;
+			// aapt resource value: 0x7f09015e
+			public const int Widget_AppCompat_SeekBar_Discrete = 2131296606;
 			
-			// aapt resource value: 0x7f0d015e
-			public const int Widget_AppCompat_Spinner = 2131558750;
+			// aapt resource value: 0x7f09015f
+			public const int Widget_AppCompat_Spinner = 2131296607;
 			
-			// aapt resource value: 0x7f0d015f
-			public const int Widget_AppCompat_Spinner_DropDown = 2131558751;
+			// aapt resource value: 0x7f090160
+			public const int Widget_AppCompat_Spinner_DropDown = 2131296608;
 			
-			// aapt resource value: 0x7f0d0160
-			public const int Widget_AppCompat_Spinner_DropDown_ActionBar = 2131558752;
+			// aapt resource value: 0x7f090161
+			public const int Widget_AppCompat_Spinner_DropDown_ActionBar = 2131296609;
 			
-			// aapt resource value: 0x7f0d0161
-			public const int Widget_AppCompat_Spinner_Underlined = 2131558753;
+			// aapt resource value: 0x7f090162
+			public const int Widget_AppCompat_Spinner_Underlined = 2131296610;
 			
-			// aapt resource value: 0x7f0d0162
-			public const int Widget_AppCompat_TextView_SpinnerItem = 2131558754;
+			// aapt resource value: 0x7f090163
+			public const int Widget_AppCompat_TextView_SpinnerItem = 2131296611;
 			
-			// aapt resource value: 0x7f0d0163
-			public const int Widget_AppCompat_Toolbar = 2131558755;
+			// aapt resource value: 0x7f090164
+			public const int Widget_AppCompat_Toolbar = 2131296612;
 			
-			// aapt resource value: 0x7f0d0164
-			public const int Widget_AppCompat_Toolbar_Button_Navigation = 2131558756;
+			// aapt resource value: 0x7f090165
+			public const int Widget_AppCompat_Toolbar_Button_Navigation = 2131296613;
 			
-			// aapt resource value: 0x7f0d018c
-			public const int Widget_Compat_NotificationActionContainer = 2131558796;
+			// aapt resource value: 0x7f09018d
+			public const int Widget_Compat_NotificationActionContainer = 2131296653;
 			
-			// aapt resource value: 0x7f0d018d
-			public const int Widget_Compat_NotificationActionText = 2131558797;
+			// aapt resource value: 0x7f09018e
+			public const int Widget_Compat_NotificationActionText = 2131296654;
 			
-			// aapt resource value: 0x7f0d017e
-			public const int Widget_Design_AppBarLayout = 2131558782;
+			// aapt resource value: 0x7f09017f
+			public const int Widget_Design_AppBarLayout = 2131296639;
 			
-			// aapt resource value: 0x7f0d017f
-			public const int Widget_Design_BottomNavigationView = 2131558783;
+			// aapt resource value: 0x7f090180
+			public const int Widget_Design_BottomNavigationView = 2131296640;
 			
-			// aapt resource value: 0x7f0d0180
-			public const int Widget_Design_BottomSheet_Modal = 2131558784;
+			// aapt resource value: 0x7f090181
+			public const int Widget_Design_BottomSheet_Modal = 2131296641;
 			
-			// aapt resource value: 0x7f0d0181
-			public const int Widget_Design_CollapsingToolbar = 2131558785;
+			// aapt resource value: 0x7f090182
+			public const int Widget_Design_CollapsingToolbar = 2131296642;
 			
-			// aapt resource value: 0x7f0d0182
-			public const int Widget_Design_CoordinatorLayout = 2131558786;
+			// aapt resource value: 0x7f090183
+			public const int Widget_Design_CoordinatorLayout = 2131296643;
 			
-			// aapt resource value: 0x7f0d0183
-			public const int Widget_Design_FloatingActionButton = 2131558787;
+			// aapt resource value: 0x7f090184
+			public const int Widget_Design_FloatingActionButton = 2131296644;
 			
-			// aapt resource value: 0x7f0d0184
-			public const int Widget_Design_NavigationView = 2131558788;
+			// aapt resource value: 0x7f090185
+			public const int Widget_Design_NavigationView = 2131296645;
 			
-			// aapt resource value: 0x7f0d0185
-			public const int Widget_Design_ScrimInsetsFrameLayout = 2131558789;
+			// aapt resource value: 0x7f090186
+			public const int Widget_Design_ScrimInsetsFrameLayout = 2131296646;
 			
-			// aapt resource value: 0x7f0d0186
-			public const int Widget_Design_Snackbar = 2131558790;
+			// aapt resource value: 0x7f090187
+			public const int Widget_Design_Snackbar = 2131296647;
 			
-			// aapt resource value: 0x7f0d016a
-			public const int Widget_Design_TabLayout = 2131558762;
+			// aapt resource value: 0x7f09016b
+			public const int Widget_Design_TabLayout = 2131296619;
 			
-			// aapt resource value: 0x7f0d0187
-			public const int Widget_Design_TextInputLayout = 2131558791;
+			// aapt resource value: 0x7f090188
+			public const int Widget_Design_TextInputLayout = 2131296648;
 			
-			// aapt resource value: 0x7f0d0009
-			public const int Widget_MediaRouter_Light_MediaRouteButton = 2131558409;
+			// aapt resource value: 0x7f09000a
+			public const int Widget_MediaRouter_Light_MediaRouteButton = 2131296266;
 			
-			// aapt resource value: 0x7f0d000a
-			public const int Widget_MediaRouter_MediaRouteButton = 2131558410;
+			// aapt resource value: 0x7f09000b
+			public const int Widget_MediaRouter_MediaRouteButton = 2131296267;
+			
+			// aapt resource value: 0x7f090000
+			public const int collectionViewStyle = 2131296256;
 			
 			static Style()
 			{

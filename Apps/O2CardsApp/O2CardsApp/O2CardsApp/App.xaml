@@ -4,8 +4,8 @@
              x:Class="O2CardsApp.App">
     <Application.Resources>
         <Style TargetType="NavigationPage">
-            <Setter Property="BarBackgroundColor" Value="#2ECC71"></Setter>
-            <Setter Property="BarTextColor" Value="White"></Setter>
+            <Setter Property="BarBackgroundColor" Value="#FFFFFF"></Setter>
+            <Setter Property="BarTextColor" Value="#2ECC71"></Setter>
         </Style>
     </Application.Resources>
 </Application>

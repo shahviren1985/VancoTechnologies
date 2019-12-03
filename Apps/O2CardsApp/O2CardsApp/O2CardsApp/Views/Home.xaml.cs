@@ -17,7 +17,6 @@ namespace O2CardsApp.Views
         public Home()
         {
             InitializeComponent();
-
             BindingContext = new MenuItemViewModel();
         }
 
@@ -30,12 +29,14 @@ namespace O2CardsApp.Views
             switch (name)
             {
                 case "CreateCard":
-                    await Navigation.PushAsync(new CreateCard());
+                    await Navigation.PushAsync(new CreateCard(), false);
                     break;
                 case "QRCode":
                     await Navigation.PushAsync(new QRCodeScanner());
                     break;
                 case "ShareCard":
+                    await Navigation.PushAsync(new ShareBusinessCard());
+                    break;
                 case "SearchCard":
                     break;
                 case "ScanCard":

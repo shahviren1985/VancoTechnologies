@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="O2CardsApp.Views.CompanySocialMedia">
+    <NavigationPage.TitleView>
+        <Label Text="Company Social Media Links" TextColor="#2ECC71" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" Padding="10" Orientation="Vertical">
+            <StackLayout Orientation="Vertical" Margin="2">
+                <Label Text="Facebook" TextColor="Gray" WidthRequest="300" />
+                <Entry x:Name="txtFacebook"  WidthRequest="300" TextColor="Black" FontSize="Small" AutomationId="txtFacebook" />
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Margin="2">
+                <Label Text="Twitter" TextColor="Gray" WidthRequest="300" />
+                <Entry x:Name="txtTwitter"  WidthRequest="300" TextColor="Black" FontSize="Small" AutomationId="txtTwitter" />
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Margin="2">
+                <Label Text="Youtube" TextColor="Gray" WidthRequest="300" />
+                <Entry  x:Name="txtYoutube"  WidthRequest="300" TextColor="Black" FontSize="Small" AutomationId="txtYoutube" />
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Margin="2">
+                <Label Text="Instagram" TextColor="Gray" WidthRequest="300" />
+                <Entry x:Name="txtInstagram"   WidthRequest="300" TextColor="Black" FontSize="Small" AutomationId="txtInstagram" />
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Margin="2">
+                <Label Text="LinkedIn" TextColor="Gray" WidthRequest="300" />
+                <Entry x:Name="txtLinkedIn"  WidthRequest="300" TextColor="Black" FontSize="Small" AutomationId="txtLinkedin" />
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Margin="2">
+                <Label Text="Pinterest" TextColor="Gray" WidthRequest="300" />
+                <Entry x:Name="txtPinterest"  WidthRequest="300" TextColor="Black" FontSize="Small" AutomationId="txtPinterest" />
+            </StackLayout>
+            <StackLayout VerticalOptions="End" Margin="2">
+                <Button x:Name="btnNext" Text="Next" BackgroundColor="#2ECC71" TextColor="White" HorizontalOptions="Center" WidthRequest="400" HeightRequest="50"></Button>
+            </StackLayout>
+        </StackLayout>
+        <!--<ContentPage.ToolbarItems>
+            <ToolbarItem Icon="search.png" Text="Search" Clicked="Search_Clicked"/>
+        </ContentPage.ToolbarItems>-->
+    </ContentPage.Content>
+</ContentPage>

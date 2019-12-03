@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="O2CardsApp.Views.ScanCard">
     <NavigationPage.TitleView>
-        <Label Text="Scan Business Card" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+        <Label Text="Scan Business Card" TextColor="#2ECC71" FontAttributes="Bold" HorizontalTextAlignment="Center" />
     </NavigationPage.TitleView>
     <ContentPage.Content>
         <StackLayout Spacing="10" Padding="10">

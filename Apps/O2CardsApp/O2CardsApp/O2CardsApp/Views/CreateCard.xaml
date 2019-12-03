@@ -3,40 +3,40 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="O2CardsApp.Views.CreateCard">
     <NavigationPage.TitleView>
-        <Label Text="Create Business Card" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+        <Label Text="Create Business Card" TextColor="#2ECC71" FontAttributes="Bold" HorizontalTextAlignment="Center" />
     </NavigationPage.TitleView>
     <ContentPage.Content>
         <StackLayout BackgroundColor="White" Padding="10" Orientation="Vertical">
             <StackLayout Orientation="Vertical" Margin="2">
                 <Label Text="Name" TextColor="Gray" WidthRequest="300" />
-                <Entry WidthRequest="300" TextColor="Black" FontSize="Small" AutomationId="txtName" />
+                <Entry x:Name="txtName" WidthRequest="300" TextColor="Black" FontSize="Small" AutomationId="txtName" />
             </StackLayout>
             <StackLayout Orientation="Vertical" Margin="2">
                 <Label Text="Email" TextColor="Gray" WidthRequest="300" />
-                <Entry WidthRequest="300" TextColor="Black" FontSize="Small" AutomationId="txtEmail" />
+                <Entry x:Name="txtEmail" Keyboard="Email" WidthRequest="300" TextColor="Black" FontSize="Small" AutomationId="txtEmail" />
             </StackLayout>
             <StackLayout Orientation="Vertical" Margin="2">
                 <Label Text="Mobile Number" TextColor="Gray" WidthRequest="300" />
-                <Entry WidthRequest="300" TextColor="Black" FontSize="Small" AutomationId="txtMobile" />
+                <Entry x:Name="txtMobile" Keyboard="Telephone" WidthRequest="300" TextColor="Black" FontSize="Small" AutomationId="txtMobile" />
             </StackLayout>
             <StackLayout Orientation="Vertical" Margin="2">
                 <Label Text="Designation" TextColor="Gray" WidthRequest="300" />
-                <Entry WidthRequest="300" TextColor="Black" FontSize="Small" AutomationId="txtDesignation" />
+                <Entry x:Name="txtDesignation" WidthRequest="300" TextColor="Black" FontSize="Small" AutomationId="txtDesignation" />
             </StackLayout>
             <StackLayout Orientation="Vertical" Margin="2">
                 <Label Text="Company Name" TextColor="Gray" WidthRequest="300" />
-                <Entry WidthRequest="300" TextColor="Black" FontSize="Small" AutomationId="txtCompany" />
+                <Entry x:Name="txtCompanyName" WidthRequest="300" TextColor="Black" FontSize="Small" AutomationId="txtCompany" />
             </StackLayout>
             <StackLayout Orientation="Vertical" Margin="2">
                 <Label Text="Website" TextColor="Gray" WidthRequest="300" />
-                <Entry WidthRequest="300" TextColor="Black" FontSize="Small" AutomationId="txtWebsite" />
+                <Entry x:Name="txtWebsite" WidthRequest="300" TextColor="Black" FontSize="Small" AutomationId="txtWebsite" />
             </StackLayout>
-            <StackLayout Orientation="Vertical" Margin="2">
+            <!--<StackLayout Orientation="Vertical" Margin="2">
                 <Label Text="Tags" TextColor="Gray" WidthRequest="300" />
                 <Entry WidthRequest="300" TextColor="Black" FontSize="Small" AutomationId="txtTags" />
-            </StackLayout>
+            </StackLayout>-->
             <StackLayout VerticalOptions="End" Margin="2">
-                <Button Text="Save" BackgroundColor="#2ECC71" TextColor="White" FontSize="Large" HorizontalOptions="Center" WidthRequest="400" HeightRequest="50"></Button>
+                <Button  x:Name="btnNext" Text="Next" BackgroundColor="#2ECC71" TextColor="White" HorizontalOptions="Center" WidthRequest="400" HeightRequest="50"></Button>
             </StackLayout>
         </StackLayout>
         <!--<ContentPage.ToolbarItems>

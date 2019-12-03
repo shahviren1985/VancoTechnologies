@@ -1,13 +1,10 @@
-﻿using System;
-
+﻿
 using Android.App;
 using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
 using Plugin.Permissions;
 using Plugin.CurrentActivity;
+using Android.Content;
 
 namespace O2CardsApp.Droid
 {
@@ -23,7 +20,7 @@ namespace O2CardsApp.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
             ZXing.Mobile.MobileBarcodeScanner.Initialize(Application);
-
+            
             LoadApplication(new App());
             
             CrossCurrentActivity.Current.Init(this, savedInstanceState);
@@ -33,6 +30,18 @@ namespace O2CardsApp.Droid
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)
         {
             PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
+
+        public void Share(string filepath)
+        {
+            var intent = new Intent(Intent.ActionSend);
+            intent.SetType("text/vcard");
+            Java.IO.File file = new Java.IO.File(filepath);
+
+            intent.PutExtra(Intent.ExtraStream, Android.Net.Uri.FromFile(file));
+
+            var intentChooser = Intent.CreateChooser(intent, "Share vCard");
+            Android.App.Application.Context.StartActivity(intentChooser);
         }
     }
 }

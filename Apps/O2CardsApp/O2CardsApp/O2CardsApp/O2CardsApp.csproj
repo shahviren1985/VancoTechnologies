@@ -10,9 +10,31 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Xam.Plugin.Media" Version="4.4.8-beta" />
-    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+    <PackageReference Include="Xamarin.Forms" Version="4.3.0.991211" />
     <PackageReference Include="ZXing.Net.Mobile" Version="2.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\ShareBusinessCard.xaml.cs">
+      <DependentUpon>ShareBusinessCard.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\TemplatePicker.xaml.cs">
+      <DependentUpon>TemplatePicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\MarketingMaterial.xaml.cs">
+      <DependentUpon>MarketingMaterial.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\LogoPicker.xaml.cs">
+      <DependentUpon>LogoPicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\CompanySocialMedia.xaml.cs">
+      <DependentUpon>CompanySocialMedia.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\CardAddress.xaml.cs">
+      <DependentUpon>CardAddress.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -28,5 +50,41 @@
     <EmbeddedResource Update="Views\ScanCard.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\CardAddress.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\CompanySocialMedia.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\CreateCard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\Home.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\LogoPicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\MarketingMaterial.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\QRCodeScanner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\ScanCard.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="Views\TemplatePicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
   </ItemGroup>
 </Project>

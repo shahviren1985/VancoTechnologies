@@ -3,13 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="O2CardsApp.Views.Home" BackgroundColor="White">
     <NavigationPage.TitleView>
-        <Label Text="O2 Cards" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+        <!--<Label Text="O2 Cards" TextColor="White" FontAttributes="Bold" HorizontalTextAlignment="Center" />-->
+        <Image Source="launcher_foreground" HorizontalOptions="Center" HeightRequest="60" WidthRequest="170"></Image>
     </NavigationPage.TitleView>
     <ContentPage.Content>
         <StackLayout>
             <ListView ItemsSource="{Binding Items}"
               CachingStrategy="RecycleElement"
-              RowHeight="75" ItemTapped="Menu_Tapped">
+              RowHeight="75" ItemTapped="Menu_Tapped" SeparatorColor="Gray">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -28,19 +29,4 @@
             </ListView>
         </StackLayout>
     </ContentPage.Content>
-    <!--<AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-        <Button x:Name="ScanButton" Image="Camera"
-                IsVisible="True"
-                AbsoluteLayout.LayoutFlags="PositionProportional"
-                AbsoluteLayout.LayoutBounds="1, 1, AutoSize, AutoSize"
-                BackgroundColor="#2ECC71"
-                HeightRequest="50"
-                WidthRequest="50"
-                HorizontalOptions="CenterAndExpand"
-                VerticalOptions="CenterAndExpand"
-                Padding="10"
-                Margin="0,0,0,15"
-                CornerRadius="10"
-                />
-    </AbsoluteLayout>-->
 </ContentPage>

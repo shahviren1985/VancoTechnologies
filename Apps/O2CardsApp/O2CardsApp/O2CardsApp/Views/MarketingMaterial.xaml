@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="O2CardsApp.Views.MarketingMaterial">
+    <NavigationPage.TitleView>
+        <Label Text="Company Marketing Materia" TextColor="#2ECC71" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="White" Padding="10" Orientation="Vertical">
+            <StackLayout Orientation="Vertical" Margin="2">
+                <Label Text="Brochure Link" TextColor="Gray" WidthRequest="300" />
+                <Entry x:Name="txtBrochure"  WidthRequest="300" TextColor="Black" FontSize="Small" AutomationId="txtBrochure" />
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Margin="2">
+                <Label Text="Presentation" TextColor="Gray" WidthRequest="300" />
+                <Entry x:Name="txtPresentation" WidthRequest="300" TextColor="Black" FontSize="Small" AutomationId="txtPresentation" />
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Margin="2">
+                <Label Text="Other Attachments" TextColor="Gray" WidthRequest="300" />
+                <Entry  x:Name="txtOtherAttachments" WidthRequest="300" TextColor="Black" FontSize="Small" AutomationId="txtOtherAttachments" />
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Margin="2">
+                <Label Text="Tags (Comma Separated)" TextColor="Gray" WidthRequest="300" />
+                <Entry x:Name="txtTags"  WidthRequest="300" TextColor="Black" FontSize="Small" AutomationId="txtTags" />
+            </StackLayout>
+            <StackLayout VerticalOptions="End" Margin="2">
+                <Button x:Name="btnSave" Text="Next" BackgroundColor="#2ECC71" TextColor="White" HorizontalOptions="Center" WidthRequest="400" HeightRequest="50"></Button>
+            </StackLayout>
+        </StackLayout>
+        <!--<ContentPage.ToolbarItems>
+            <ToolbarItem Icon="search.png" Text="Search" Clicked="Search_Clicked"/>
+        </ContentPage.ToolbarItems>-->
+    </ContentPage.Content>
+</ContentPage>
