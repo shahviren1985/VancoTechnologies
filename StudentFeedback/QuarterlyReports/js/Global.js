@@ -1,5 +1,5 @@
 ﻿
-var GloableWebsite = 'https://vancotech.com/StudentFeedback/dev/'
+var GloableWebsite = 'https://vancotech.com/StudentFeedback/prod/';
 
 if (window.location.href.indexOf("localhost") != -1) {
     GloableWebsite = "http://localhost:51135/";

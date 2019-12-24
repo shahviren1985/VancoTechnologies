@@ -12,6 +12,10 @@ function getUrlVars() {
 var userType = getUrlVars()["type"];
 var crn = getUrlVars()["crn"];
 var collegeCode = getUrlVars()["cc"];
+var specialisation = getUrlVars()["specialization"];
+var semester = getUrlVars()["sem"];
+var course = getUrlVars()["course"];
+var courseyear = getUrlVars()["courseyear"];
 
 $(document).ready(function () {
     $("#exitForm").hide();
@@ -24,7 +28,7 @@ $(document).ready(function () {
     //$("title").html(userType + " Feedback Form");
 
     var questions = [];
-
+    var teachers = [];
     $.ajax({
         url: GloableWebsite + 'api/Feedback/GetFeedbackDetails?CollegeCode=' + collegeCode + '&userType=' + userType,
         contentType: "application/json",
@@ -39,6 +43,22 @@ $(document).ready(function () {
         type: 'GET'
     });
 
+    if (userType.toLowerCase() == "teacher") {
+        $.ajax({
+            url: GloableWebsite + 'api/Feedback/GetTeacherDetails?id=' + collegeCode,
+            contentType: "application/json",
+            success: function (data, status, jqXHR) {
+                teachers = data;
+                TeacherListBind(teachers);
+            },
+            error: function (jqXHR, status) {
+                // error handler
+                console.log(jqXHR);
+            },
+            type: 'GET'
+        });
+    }
+
     $("#btnSubmitAns").click(function () {
         $("#successmsg").hide();
         $("#errormsg").hide();
@@ -50,6 +70,10 @@ $(document).ready(function () {
         var subjectCode = value[1];
         */
         var ansData = '{"userId" : "102' + crn + '","teacherCode" : "" , "subjectCode" :  "", "collegeCode" : ' + collegeCode + ', "userType": "' + userType + '"';
+
+        if (userType.toLowerCase() == "teacher") {
+            ansData = '{"userId" : "102' + crn + '","teacherCode" : "' + $("#dd_teachers").find(":selected").val() + '" , "subjectCode" :  "' + $("#dd_teachers").find(":selected").attr("subjectcode") + '", "collegeCode" : ' + collegeCode + ', "userType": "' + userType + '"';
+        }
 
         var validationArraray = [];
 
@@ -118,6 +142,19 @@ $(document).ready(function () {
     });
 });
 
+function TeacherListBind(teachers) {
+    var element = "<label style='padding: 10px;' for='dd_teachers'>Select teacher to give feedback:</label> <select id='dd_teachers' name='dd_teachers'><option selected value='-1'>--Select Teacher--</option>";
+
+    for (i = 0; i < teachers.length; i++) {
+        if (teachers[i].course.toLowerCase() == decodeURIComponent(courseyear.toLowerCase()) && teachers[i].subCourse.toLowerCase() == decodeURIComponent(specialisation.toLowerCase()) && teachers[i].semester.toLowerCase() == semester.toLowerCase()) {
+            element += "<option value='" + teachers[i].teacherCode + "' subjectCode='" + teachers[i].subjectCode + "'>" + teachers[i].teacherName + " (" + teachers[i].subjectName + ")" + "</option>";
+        }
+    }
+
+    element += "</select>";
+    $("#teacherDropdown").append(element);
+}
+
 function FeedbackQuestionListBind(questions) {
     var questionList = '<div class="form-group">';
     var serialNumber = 1;
@@ -160,9 +197,14 @@ function PostAnsData(_data) {
     //model.userType = localStorage.getItem("roleType");
     _data = JSON.stringify(model);
 
+    var api = GloableWebsite + "api/CommonFeedback/AddFeedback";
+    if (userType.toLowerCase() == "teacher") {
+        api = GloableWebsite + "api/Feedback/AddTeacherFeedbacks";
+    }
+
     $.ajax({
         type: "POST",
-        url: GloableWebsite + "api/CommonFeedback/AddFeedback",
+        url: api,
         data: _data,
         contentType: "application/json",
         success: function (data, status, jqXHR) {
@@ -170,14 +212,14 @@ function PostAnsData(_data) {
             $('#successmsg').fadeIn().delay(800).fadeOut();
             $("#commonfeedbackForm").hide();
             var feedbackStatus = [];
-            alert("Parents Feedback submitted successfully.");
+            alert(userType + " Feedback submitted successfully.");
             setTimeout(function () { location.reload(true); }, 800);
         },
 
         error: function (jqXHR, status) {
             $(".loader-img").hide();
             $("#errormsg").show();
-            alert("An error occurred while submitting " + localStorage.getItem("roleType") + " Feedback.");
+            alert("An error occurred while submitting " + userType + " Feedback.");
             console.log(jqXHR);
         }
     });
