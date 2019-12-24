@@ -1,0 +1,39 @@
+﻿[
+  {
+    "Specialization": "HOSPITALITY AND TOURISM MANAGEMENT",
+    "specialisationCode": "HTM",
+    "ElectiveSubject": []
+  },
+  {
+    "Specialization": "Food Nutrition & Dietetics",
+    "specialisationCode": "FND",
+    "ElectiveSubject":[]
+  },
+  {
+    "Specialization": "Hospitality And Tourism Management",
+    "specialisationCode": "HTM",
+    "ElectiveSubject": [
+    ]
+  },
+  {
+    "Specialization": "Interior Design And Resource Management",
+    "specialisationCode": "IDRM",
+    "ElectiveSubject": [
+      
+    ]
+  },
+  {
+    "Specialization": "Developmental Counselling",
+    "specialisationCode": "DC",
+    "ElectiveSubject": [
+      
+    ]
+  },
+  {
+    "Specialization": "Early Childhood Care And Education",
+    "specialisationCode": "ECCE",
+    "ElectiveSubject": [
+    ]
+  }
+
+]

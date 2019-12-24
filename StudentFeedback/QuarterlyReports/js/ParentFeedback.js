@@ -49,7 +49,7 @@ $(document).ready(function () {
         var teacherCode = value[0];
         var subjectCode = value[1];
         */
-        var ansData = '{"userId" : "102' + crn + '","teacherCode" : "" , "subjectCode" :  "", "collegeCode" : ' + collegeCode + ', "userType": ' + userType;
+        var ansData = '{"userId" : "102' + crn + '","teacherCode" : "" , "subjectCode" :  "", "collegeCode" : ' + collegeCode + ', "userType": "' + userType + '"';
 
         var validationArraray = [];
 

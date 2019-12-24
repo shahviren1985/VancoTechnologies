@@ -1,0 +1,163 @@
+[
+    {
+        "Specialization": "HOSPITALITY & TOURISM MANAGEMENT",
+        "specialisationCode": "HTM",
+        "ElectiveSubject": [
+          {
+              "Title": "TG GE",
+              "Subject": [{
+                  "Code": "TG102"
+              }, {
+                  "Code": "TG101"
+              }]
+          },
+        {
+            "Title": "FG GE",
+            "Subject": [
+              {
+                  "Code": "FG101"
+              }, {
+                  "Code": "FG102"
+              }]
+        }
+        ]
+    },
+    {
+        "Specialization": "Food Nutrition And Dietetics",
+        "specialisationCode": "FND",
+        "ElectiveSubject": [
+          {
+              "Title": "HD GE",
+              "Subject": [{
+                  "Code": "HG101"
+              }, {
+                  "Code": "HG102"
+              }]
+          },
+        {
+            "Title": "RM GE",
+            "Subject": [
+              {
+                  "Code": "RG101"
+              }, {
+                  "Code": "RG102"
+              }]
+        }
+        ]
+    },
+    {
+        "Specialization": "Developmental Counselling",
+        "specialisationCode": "DC",
+        "ElectiveSubject": [
+          {
+              "Title": "TAD GE",
+              "Subject": [{
+                  "Code": "TG101"
+              }, {
+                  "Code": "TG102"
+              }]
+          },
+        {
+            "Title": "MCE GE",
+            "Subject": [
+              {
+                  "Code": "MG101"
+              }, {
+                  "Code": "MG102"
+              }]
+        }
+        ]
+    },
+    {
+        "Specialization": "Mass Communication And Extension",
+        "specialisationCode": "MCE",
+        "ElectiveSubject": [
+          {
+              "Title": "TAD GE",
+              "Subject": [{
+                  "Code": "TG101"
+              }, {
+                  "Code": "TG102"
+              }]
+          },
+            {
+                "Title": "FSN GE",
+                "Subject": [
+                  {
+                      "Code": "FG101"
+                  }, {
+                      "Code": "FG102"
+                  }]
+            }
+        ]
+    },
+    {
+        "Specialization": "Textiles And Apparel Designing",
+        "specialisationCode": "TAD",
+        "ElectiveSubject": [
+          {
+              "Title": "HD GE",
+              "Subject": [{
+                  "Code": "HG101"
+              }, {
+                  "Code": "HG102"
+              }]
+          },
+            {
+                "Title": "MCE GE",
+                "Subject": [
+                  {
+                      "Code": "MG101"
+                  }, {
+                      "Code": "MG102"
+                  }]
+            }
+        ]
+    },
+    {
+        "Specialization": "Early Childhood Care And Education",
+        "specialisationCode": "ECCE",
+        "ElectiveSubject": [
+          {
+              "Title": "TAD GE",
+              "Subject": [{
+                  "Code": "TG101"
+              }, {
+                  "Code": "TG102"
+              }]
+          },
+        {
+            "Title": "MCE GE",
+            "Subject": [
+              {
+                  "Code": "MG101"
+              }, {
+                  "Code": "MG102"
+              }]
+        }
+        ]
+    },
+  {
+        "Specialization": "Interior Design & Resource Management",
+        "specialisationCode": "IDRM",
+        "ElectiveSubject": [
+          {
+              "Title": "TAD GE",
+              "Subject": [{
+                  "Code": "TG101"
+              }, {
+                  "Code": "TG102"
+              }]
+          },
+            {
+                "Title": "FND GE",
+                "Subject": [
+                  {
+                      "Code": "FG101"
+                  }, {
+                      "Code": "FG102"
+                  }]
+            }
+        ]
+    }
+]

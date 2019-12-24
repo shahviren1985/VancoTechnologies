@@ -95,6 +95,24 @@
         "practicalMaxMarks": "0",
         "credits": "4",
         "maxGrace": ""
+      },
+      {
+        "paperTitle": "Introduction To Therapeutic Recreation",
+        "code": "HCV05",
+        "isElective": "No",
+        "order": "6",
+        "paperCode": "HCV05",
+        "isGrade": "No",
+        "isContinousAssessment": true,
+        "paperType": "Practical",
+        "theoryInternalMax": "0",
+        "theoryInternalPassing": "0",
+        "theoryExternalSection1Max": "0",
+        "theoryExternalSection2Max": "0",
+        "theoryExternalPassing": "40",
+        "practicalMaxMarks": "100",
+        "credits": "2",
+        "maxGrace": ""
       }
     ]
   },
@@ -178,38 +196,20 @@
         "maxGrace": ""
       },
 	  {
-        "paperTitle": "Training in Preschool Settings",
-        "code": "HCV31",
-        "isElective": "No",
-        "order": "1",
-        "paperCode": "HCV31",
-        "isGrade": "No",
-        "isContinousAssessment": false,
-        "paperType": "Practical",
-        "theoryInternalMax": "0",
-        "theoryInternalPassing": "0",
-        "theoryExternalSection1Max": "0",
-        "theoryExternalSection2Max": "0",
-        "theoryExternalPassing": "0",
-        "practicalMaxMarks": "200",
-        "credits": "8",
-        "maxGrace": ""
-      },
-	  {
         "paperTitle": "Working with Infants and Toddlers",
         "code": "HCV32",
         "isElective": "No",
         "order": "1",
         "paperCode": "HCV32",
         "isGrade": "No",
-        "isContinousAssessment": false,
+        "isContinousAssessment": true,
         "paperType": "Practical",
         "theoryInternalMax": "0",
         "theoryInternalPassing": "0",
         "theoryExternalSection1Max": "0",
         "theoryExternalSection2Max": "0",
         "theoryExternalPassing": "0",
-        "practicalMaxMarks": "50",
+        "practicalMaxMarks": "100",
         "credits": "2",
         "maxGrace": ""
       }
@@ -283,14 +283,14 @@
         "order": "4",
         "paperCode": "FCV02",
         "isGrade": "No",
-        "isContinousAssessment": true,
+        "isContinousAssessment": false,
         "paperType": "Practical",
-        "theoryInternalMax": "0",
-        "theoryInternalPassing": "0",
+        "theoryInternalMax": "50",
+        "theoryInternalPassing": "20",
         "theoryExternalSection1Max": "0",
         "theoryExternalSection2Max": "0",
-        "theoryExternalPassing": "40",
-        "practicalMaxMarks": "100",
+        "theoryExternalPassing": "20",
+        "practicalMaxMarks": "50",
         "credits": "2",
         "maxGrace": ""
       },
@@ -519,7 +519,7 @@
         "credits": "4",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Consumer Durables",
         "code": "RDV02",
         "isElective": "Yes",
@@ -537,7 +537,7 @@
         "credits": "2",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Safety Practices at Workplace",
         "code": "RDV04",
         "isElective": "Yes",
@@ -555,7 +555,7 @@
         "credits": "2",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Creative Up-scaling of Dry Waste",
         "code": "RDV11",
         "isElective": "Yes",
@@ -571,6 +571,24 @@
         "theoryExternalPassing": "20",
         "practicalMaxMarks": "50",
         "credits": "2",
+        "maxGrace": ""
+      },
+      {
+        "paperTitle": "Research Methods in Resources Management",
+        "code": "RDV47",
+        "isElective": "Yes",
+        "order": "6",
+        "paperCode": "RDV47",
+        "isGrade": "No",
+        "isContinousAssessment": false,
+        "paperType": "Theory",
+        "theoryInternalMax": "50",
+        "theoryInternalPassing": "20",
+        "theoryExternalSection1Max": "25",
+        "theoryExternalSection2Max": "25",
+        "theoryExternalPassing": "20",
+        "practicalMaxMarks": "0",
+        "credits": "4",
         "maxGrace": ""
       }
     ]
@@ -618,7 +636,7 @@
         "credits": "4",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Commercial Interior Design",
         "code": "RDV33",
         "isElective": "No",
@@ -636,7 +654,7 @@
         "credits": "4",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Working Drawing",
         "code": "RDV34",
         "isElective": "No",
@@ -654,7 +672,7 @@
         "credits": "4",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Landscape Design",
         "code": "RDVI14",
         "isElective": "Yes",
@@ -672,7 +690,7 @@
         "credits": "2",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Industrial Visit",
         "code": "RDVI15",
         "isElective": "Yes",
@@ -690,7 +708,7 @@
         "credits": "2",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Consumer Durables",
         "code": "RDV02",
         "isElective": "Yes",
@@ -708,7 +726,7 @@
         "credits": "2",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Safety Practices at Workplace",
         "code": "RDV04",
         "isElective": "Yes",
@@ -726,7 +744,7 @@
         "credits": "2",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Creative Up-scaling of Dry Waste",
         "code": "RDV11",
         "isElective": "Yes",
@@ -742,6 +760,24 @@
         "theoryExternalPassing": "40",
         "practicalMaxMarks": "100",
         "credits": "2",
+        "maxGrace": ""
+      },
+      {
+        "paperTitle": "Research Methods in Resources Management",
+        "code": "RDV47",
+        "isElective": "Yes",
+        "order": "6",
+        "paperCode": "RDV47",
+        "isGrade": "No",
+        "isContinousAssessment": false,
+        "paperType": "Theory",
+        "theoryInternalMax": "50",
+        "theoryInternalPassing": "20",
+        "theoryExternalSection1Max": "25",
+        "theoryExternalSection2Max": "25",
+        "theoryExternalPassing": "20",
+        "practicalMaxMarks": "0",
+        "credits": "4",
         "maxGrace": ""
       }
     ]
@@ -825,7 +861,7 @@
         "credits": "4",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Video Production",
         "code": "MCVI06",
         "isElective": "No",
@@ -843,7 +879,7 @@
         "credits": "4",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Content Development for Broadcast Media",
         "code": "MCV03",
         "isElective": "No",
@@ -978,21 +1014,21 @@
         "credits": "2",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Fashion Pattern Making",
         "code": "TDV17",
         "isElective": "No",
         "order": "7",
         "paperCode": "TDV17",
         "isGrade": "No",
-        "isContinousAssessment": true,
+        "isContinousAssessment": false,
         "paperType": "Practical",
-        "theoryInternalMax": "0",
-        "theoryInternalPassing": "0",
+        "theoryInternalMax": "50",
+        "theoryInternalPassing": "20",
         "theoryExternalSection1Max": "0",
         "theoryExternalSection2Max": "0",
-        "theoryExternalPassing": "60",
-        "practicalMaxMarks": "150",
+        "theoryExternalPassing": "20",
+        "practicalMaxMarks": "50",
         "credits": "6",
         "maxGrace": ""
       },

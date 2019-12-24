@@ -1,0 +1,70 @@
+﻿[
+  {
+    "Specialization": "Developmental Counselling",
+    "specialisationCode": "DC",
+    "ElectiveSubject": [
+      {
+        "Title": "DC GE",
+        "Subject": [
+          {
+            "Code": "MG201"
+          },
+          {
+            "Code": "LG201"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Early Childhood Care And Education",
+    "specialisationCode": "ECCE",
+    "ElectiveSubject": [
+      {
+        "Title": "ECCE GE",
+        "Subject": [
+          {
+            "Code": "MG201"
+          },
+          {
+            "Code": "LG201"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Mass Communication And Extension",
+    "specialisationCode": "MCE",
+    "ElectiveSubject": [
+      {
+        "Title": "MCE GE",
+        "Subject": [
+          {
+            "Code": "MG201"
+          },
+          {
+            "Code": "LG201"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Textiles And Apparel Designing",
+    "specialisationCode": "TAD",
+    "ElectiveSubject": [
+      {
+        "Title": "TAD GE",
+        "Subject": [
+          {
+            "Code": "MG201"
+          },
+          {
+            "Code": "LG201"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,166 @@
+﻿[
+  {
+    "Specialization": "Hospitality & Tourism Management",
+    "specialisationCode": "HTM",
+    "ElectiveSubject": [
+      {
+        "Title": "HTM DSE",
+        "Subject": [
+          {
+            "Code": "RCV17"
+          },
+          {
+            "Code": "RDV03"
+          },
+		  {
+            "Code": "RDV06"
+          },
+		  {
+            "Code": "RDV02"
+          },
+		  {
+            "Code": "RDV04"
+          },
+		  {
+            "Code": "RDV11"
+          }
+		]
+      }
+    ]
+  },
+  {
+    "Specialization": "Food Nutrition And Dietetics",
+    "specialisationCode": "FND",
+    "ElectiveSubject": [
+      {
+        "Title": "FND DSE",
+        "Subject": [
+          {
+            "Code": "FCV01"
+          },
+          {
+            "Code": "FCV02"
+          },
+		  {
+            "Code": "FCV03"
+          },
+		  {
+            "Code": "FCV04"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Developmental Counselling",
+    "specialisationCode": "DC",
+    "ElectiveSubject": [
+      {
+        "Title": "DC DSE",
+        "Subject": [
+          {
+            "Code": "HCV18"
+          },
+          {
+            "Code": "HCV19"
+          },
+		  {
+			"Code": "HDV07"
+		  },
+		  {
+			"Code": "HDV08"
+		  },
+		  {
+			"Code": "HDV06"
+		  }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Early Childhood Care And Education",
+    "specialisationCode": "ECCE",
+    "ElectiveSubject": [
+      {
+        "Title": "ECCE DSE",
+        "Subject": [
+          {
+            "Code": "HCV18"
+          },
+          {
+            "Code": "HCV19"
+          },
+		  {
+			"Code": "HDV06"
+		  }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Mass Communication And Extension",
+    "specialisationCode": "MCE",
+    "ElectiveSubject": [
+      {
+        "Title": "MCE DSE",
+        "Subject": [
+          {
+            "Code": "MDV01"
+          },
+          {
+            "Code": "RCV17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Textiles And Apparel Designing",
+    "specialisationCode": "TAD",
+    "ElectiveSubject": [
+      {
+        "Title": "TAD DSE",
+        "Subject": [
+          {
+            "Code": "TDV02"
+          },
+          {
+            "Code": "TDV03"
+          },
+		  {
+            "Code": "TDV19"
+          }
+		]
+      }
+    ]
+  },
+  {
+    "Specialization": "Interior Design And Resource Management",
+    "specialisationCode": "IDRM",
+    "ElectiveSubject": [
+      {
+        "Title": "IDRM DSE",
+        "Subject": [
+          {
+            "Code": "RDV03"
+          },
+          {
+            "Code": "RDVI14"
+          },
+		  {
+            "Code": "RDVI15"
+          },
+		  {
+            "Code": "RDV02"
+          },
+		  {
+            "Code": "RDV04"
+          },
+		  {
+            "Code": "RDV11"
+          }
+		]
+      }
+    ]
+  }
+]

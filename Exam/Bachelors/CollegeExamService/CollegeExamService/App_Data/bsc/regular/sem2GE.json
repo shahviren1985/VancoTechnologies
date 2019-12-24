@@ -8,11 +8,13 @@
         "Subject": [
           {
             "Code": "LG102",
-            "Title": "Advanced English"
+            "Title": "Advanced English",
+            "Credit": "4"
           },
           {
             "Code": "LG101",
-            "Title": "Functional English"
+            "Title": "Functional English",
+            "Credit": "4"
           }
         ]
       },
@@ -21,11 +23,13 @@
         "Subject": [
           {
             "Code": "RG101",
-            "Title": "Consumer Education and Financial Literacy"
+            "Title": "Consumer Education and Financial Literacy",
+            "Credit": "4"
           },
           {
             "Code": "RG102",
-            "Title": "Travel Arrangements and Formalities"
+            "Title": "Travel Arrangements and Formalities",
+            "Credit": "4"
           }
         ]
       },
@@ -34,11 +38,13 @@
         "Subject": [
           {
             "Code": "HG101",
-            "Title": "Personal and Professional Relationships in Adulthood"
+            "Title": "Personal and Professional Relationships in Adulthood",
+            "Credit": "4"
           },
           {
             "Code": "HG102",
-            "Title": "Marriage and Parenting"
+            "Title": "Marriage and Parenting",
+            "Credit": "4"
           }
         ]
       }
@@ -53,15 +59,18 @@
         "Subject": [
           {
             "Code": "LG102",
-            "Title": "Advanced English"
+            "Title": "Advanced English",
+            "Credit": "4"
           },
           {
             "Code": "LG101",
-            "Title": "Functional English"
+            "Title": "Functional English",
+            "Credit": "4"
           },
           {
             "Code": "SG101",
-            "Title": "Science for Life"
+            "Title": "Science for Life",
+            "Credit": "4"
           }
         ]
       },
@@ -70,11 +79,13 @@
         "Subject": [
           {
             "Code": "RG101",
-            "Title": "Consumer Education and Financial Literacy"
+            "Title": "Consumer Education and Financial Literacy",
+            "Credit": "4"
           },
           {
             "Code": "RG102",
-            "Title": "Travel Arrangements and Formalities"
+            "Title": "Travel Arrangements and Formalities",
+            "Credit": "4"
           }
         ]
       },
@@ -83,11 +94,13 @@
         "Subject": [
           {
             "Code": "FG101",
-            "Title": "Nutrition for Health Promotion"
+            "Title": "Nutrition for Health Promotion",
+            "Credit": "4"
           },
           {
             "Code": "FG102",
-            "Title": "Fundamentals of Baking"
+            "Title": "Fundamentals of Baking",
+            "Credit": "4"
           }
         ]
       }
@@ -102,15 +115,18 @@
         "Subject": [
           {
             "Code": "LG102",
-            "Title": "Advanced English"
+            "Title": "Advanced English",
+            "Credit": "4"
           },
           {
             "Code": "LG101",
-            "Title": "Functional English"
+            "Title": "Functional English",
+            "Credit": "4"
           },
           {
             "Code": "SG101",
-            "Title": "Science for Life"
+            "Title": "Science for Life",
+            "Credit": "4"
           }
         ]
       },
@@ -119,11 +135,13 @@
         "Subject": [
           {
             "Code": "TG102",
-            "Title": "Fundamentals of Fashion"
+            "Title": "Fundamentals of Fashion",
+            "Credit": "4"
           },
           {
             "Code": "TG101",
-            "Title": "Fashion Craft"
+            "Title": "Fashion Craft",
+            "Credit": "4"
           }
         ]
       },
@@ -132,11 +150,13 @@
         "Subject": [
           {
             "Code": "MG104",
-            "Title": "Voice Culture and Modulation"
+            "Title": "Voice Culture and Modulation",
+            "Credit": "4"
           },
           {
             "Code": "MG103",
-            "Title": "Digital Photography"
+            "Title": "Digital Photography",
+            "Credit": "4"
           }
         ]
       }
@@ -151,15 +171,18 @@
         "Subject": [
           {
             "Code": "LG102",
-            "Title": "Advanced English"
+            "Title": "Advanced English",
+            "Credit": "4"
           },
           {
             "Code": "LG101",
-            "Title": "Functional English"
+            "Title": "Functional English",
+            "Credit": "4"
           },
           {
             "Code": "SG101",
-            "Title": "Science for Life"
+            "Title": "Science for Life",
+            "Credit": "4"
           }
         ]
       },
@@ -168,11 +191,13 @@
         "Subject": [
           {
             "Code": "HG101",
-            "Title": "Personal and Professional Relationships in Adulthood"
+            "Title": "Personal and Professional Relationships in Adulthood",
+            "Credit": "4"
           },
           {
             "Code": "HG102",
-            "Title": "Marriage and Parenting"
+            "Title": "Marriage and Parenting",
+            "Credit": "4"
           }
         ]
       },
@@ -181,11 +206,13 @@
         "Subject": [
           {
             "Code": "MG104",
-            "Title": "Voice Culture and Modulation"
+            "Title": "Voice Culture and Modulation",
+            "Credit": "4"
           },
           {
             "Code": "MG103",
-            "Title": "Digital Photography"
+            "Title": "Digital Photography",
+            "Credit": "4"
           }
         ]
       }
@@ -200,15 +227,18 @@
         "Subject": [
           {
             "Code": "LG102",
-            "Title": "Advanced English"
+            "Title": "Advanced English",
+            "Credit": "4"
           },
           {
             "Code": "LG101",
-            "Title": "Functional English"
+            "Title": "Functional English",
+            "Credit": "4"
           },
           {
             "Code": "SG101",
-            "Title": "Science for Life"
+            "Title": "Science for Life",
+            "Credit": "4"
           }
         ]
       },
@@ -217,11 +247,13 @@
         "Subject": [
           {
             "Code": "HG101",
-            "Title": "Personal and Professional Relationships in Adulthood"
+            "Title": "Personal and Professional Relationships in Adulthood",
+            "Credit": "4"
           },
           {
             "Code": "HG102",
-            "Title": "Marriage and Parenting"
+            "Title": "Marriage and Parenting",
+            "Credit": "4"
           }
         ]
       },
@@ -230,11 +262,13 @@
         "Subject": [
           {
             "Code": "MG104",
-            "Title": "Voice Culture and Modulation"
+            "Title": "Voice Culture and Modulation",
+            "Credit": "4"
           },
           {
             "Code": "MG101",
-            "Title": "Digital Photography"
+            "Title": "Digital Photography",
+            "Credit": "4"
           }
         ]
       }
@@ -249,15 +283,18 @@
         "Subject": [
           {
             "Code": "LG102",
-            "Title": "Advanced English"
+            "Title": "Advanced English",
+            "Credit": "4"
           },
           {
             "Code": "LG101",
-            "Title": "Functional English"
+            "Title": "Functional English",
+            "Credit": "4"
           },
           {
             "Code": "SG101",
-            "Title": "Science for Life"
+            "Title": "Science for Life",
+            "Credit": "4"
           }
         ]
       },
@@ -266,11 +303,13 @@
         "Subject": [
           {
             "Code": "RG101",
-            "Title": "Consumer Education and Financial Literacy"
+            "Title": "Consumer Education and Financial Literacy",
+            "Credit": "4"
           },
           {
             "Code": "RG102",
-            "Title": "Travel Arrangements and Formalities"
+            "Title": "Travel Arrangements and Formalities",
+            "Credit": "4"
           }
         ]
       },
@@ -279,11 +318,13 @@
         "Subject": [
           {
             "Code": "HG101",
-            "Title": "Personal and Professional Relationships in Adulthood"
+            "Title": "Personal and Professional Relationships in Adulthood",
+            "Credit": "4"
           },
           {
             "Code": "HG102",
-            "Title": "Marriage and Parenting"
+            "Title": "Marriage and Parenting",
+            "Credit": "4"
           }
         ]
       }
@@ -298,15 +339,18 @@
         "Subject": [
           {
             "Code": "LG102",
-            "Title": "Advanced English"
+            "Title": "Advanced English",
+            "Credit": "4"
           },
           {
             "Code": "LG101",
-            "Title": "Functional English"
+            "Title": "Functional English",
+            "Credit": "4"
           },
           {
             "Code": "SG101",
-            "Title": "Science for Life"
+            "Title": "Science for Life",
+            "Credit": "4"
           }
         ]
       },
@@ -315,11 +359,13 @@
         "Subject": [
           {
             "Code": "RG101",
-            "Title": "Consumer Education and Financial Literacy"
+            "Title": "Consumer Education and Financial Literacy",
+            "Credit": "4"
           },
           {
             "Code": "RG102",
-            "Title": "Travel Arrangements and Formalities"
+            "Title": "Travel Arrangements and Formalities",
+            "Credit": "4"
           }
         ]
       },
@@ -328,11 +374,13 @@
         "Subject": [
           {
             "Code": "FG101",
-            "Title": "Nutrition for Health Promotion"
+            "Title": "Nutrition for Health Promotion",
+            "Credit": "4"
           },
           {
             "Code": "FG102",
-            "Title": "Fundamentals of Baking"
+            "Title": "Fundamentals of Baking",
+            "Credit": "4"
           }
         ]
       }

@@ -177,7 +177,7 @@
         "credits": "4",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Training in Preschool Settings",
         "code": "HCV31",
         "isElective": "No",
@@ -195,7 +195,7 @@
         "credits": "8",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Working with Infants and Toddlers",
         "code": "HCV32",
         "isElective": "No",
@@ -283,14 +283,14 @@
         "order": "4",
         "paperCode": "FCV02",
         "isGrade": "No",
-        "isContinousAssessment": true,
+        "isContinousAssessment": false,
         "paperType": "Practical",
-        "theoryInternalMax": "0",
-        "theoryInternalPassing": "0",
+        "theoryInternalMax": "50",
+        "theoryInternalPassing": "20",
         "theoryExternalSection1Max": "0",
         "theoryExternalSection2Max": "0",
-        "theoryExternalPassing": "40",
-        "practicalMaxMarks": "100",
+        "theoryExternalPassing": "20",
+        "practicalMaxMarks": "50",
         "credits": "2",
         "maxGrace": ""
       },
@@ -330,7 +330,7 @@
         "credits": "2",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Nutrition Communication and Counselling",
         "code": "FCV05",
         "isElective": "No",
@@ -348,7 +348,7 @@
         "credits": "2",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Techniques of Nutritional Assessment",
         "code": "FCV20",
         "isElective": "No",
@@ -366,7 +366,7 @@
         "credits": "2",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Nutrition and Ayurveda",
         "code": "FCV21",
         "isElective": "No",
@@ -384,7 +384,7 @@
         "credits": "2",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Psychology of Eating",
         "code": "FCV07",
         "isElective": "No",
@@ -402,7 +402,7 @@
         "credits": "2",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Yoga For Health and Well Being",
         "code": "FCV06",
         "isElective": "No",
@@ -519,7 +519,7 @@
         "credits": "4",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Consumer Durables",
         "code": "RDV02",
         "isElective": "Yes",
@@ -537,7 +537,7 @@
         "credits": "2",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Safety Practices at Workplace",
         "code": "RDV04",
         "isElective": "Yes",
@@ -555,7 +555,7 @@
         "credits": "2",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Creative Up-scaling of Dry Waste",
         "code": "RDV11",
         "isElective": "Yes",
@@ -618,7 +618,7 @@
         "credits": "4",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Commercial Interior Design",
         "code": "RDV33",
         "isElective": "No",
@@ -636,7 +636,7 @@
         "credits": "4",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Working Drawing",
         "code": "RDV34",
         "isElective": "No",
@@ -654,7 +654,7 @@
         "credits": "4",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Landscape Design",
         "code": "RDVI14",
         "isElective": "Yes",
@@ -672,7 +672,7 @@
         "credits": "2",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Industrial Visit",
         "code": "RDVI15",
         "isElective": "Yes",
@@ -690,7 +690,7 @@
         "credits": "2",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Consumer Durables",
         "code": "RDV02",
         "isElective": "Yes",
@@ -708,7 +708,7 @@
         "credits": "2",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Safety Practices at Workplace",
         "code": "RDV04",
         "isElective": "Yes",
@@ -726,7 +726,7 @@
         "credits": "2",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Creative Up-scaling of Dry Waste",
         "code": "RDV11",
         "isElective": "Yes",
@@ -807,7 +807,7 @@
         "credits": "4",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Entrepreneurship Development",
         "code": "MCV17",
         "isElective": "No",
@@ -825,7 +825,7 @@
         "credits": "4",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Video Production",
         "code": "MCVI06",
         "isElective": "No",
@@ -843,13 +843,12 @@
         "credits": "4",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Content Development for Broadcast Media",
         "code": "MCV03",
         "isElective": "No",
         "order": "7",
         "paperCode": "MCV03",
-        "isGrade": "No",
         "isContinousAssessment": true,
         "paperType": "Practical",
         "theoryInternalMax": "0",
@@ -861,7 +860,7 @@
         "credits": "4",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Event Management",
         "code": "RCV17",
         "isElective": "Yes",
@@ -942,7 +941,7 @@
         "credits": "4",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Appreciation of Art and Craft",
         "code": "TDV04",
         "isElective": "No",
@@ -960,7 +959,7 @@
         "credits": "2",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Computer Aided Textile Designing",
         "code": "TDV19",
         "isElective": "Yes",
@@ -978,25 +977,25 @@
         "credits": "2",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Fashion Pattern Making",
         "code": "TDV17",
         "isElective": "No",
         "order": "7",
         "paperCode": "TDV17",
         "isGrade": "No",
-        "isContinousAssessment": true,
+        "isContinousAssessment": false,
         "paperType": "Practical",
-        "theoryInternalMax": "0",
-        "theoryInternalPassing": "0",
+        "theoryInternalMax": "50",
+        "theoryInternalPassing": "20",
         "theoryExternalSection1Max": "0",
         "theoryExternalSection2Max": "0",
-        "theoryExternalPassing": "60",
-        "practicalMaxMarks": "150",
+        "theoryExternalPassing": "20",
+        "practicalMaxMarks": "50",
         "credits": "6",
         "maxGrace": ""
       },
-	  {
+      {
         "paperTitle": "Surface Ornamentation",
         "code": "TDVI26",
         "isElective": "No",

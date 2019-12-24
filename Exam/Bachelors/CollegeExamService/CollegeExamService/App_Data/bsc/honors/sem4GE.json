@@ -8,11 +8,14 @@
         "Subject": [
           {
             "Code": "LG201",
-            "Title": "Foreign Language (French)"
+            "Title": "Foreign Language (French)",
+            "Credit": "2"
+
           },
           {
             "Code": "MG201",
-            "Title": "Media & Information Literacy"
+            "Title": "Media & Information Literacy",
+            "Credit": "2"
           }
         ]
       }
@@ -27,11 +30,13 @@
         "Subject": [
           {
             "Code": "LG201",
-            "Title": "Foreign Language (French)"
+            "Title": "Foreign Language (French)",
+            "Credit": "2"
           },
           {
             "Code": "MG201",
-            "Title": "Media & Information Literacy"
+            "Title": "Media & Information Literacy",
+            "Credit": "2"
           }
         ]
       }
@@ -46,11 +51,13 @@
         "Subject": [
           {
             "Code": "LG201",
-            "Title": "Foreign Language (French)"
+            "Title": "Foreign Language (French)",
+            "Credit": "2"
           },
           {
             "Code": "MG201",
-            "Title": "Media & Information Literacy"
+            "Title": "Media & Information Literacy",
+            "Credit": "2"
           }
         ]
       }

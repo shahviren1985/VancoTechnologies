@@ -325,6 +325,7 @@
                                 <th>Internal Marks(50)</th>
                                 <th>Final Marks(50)</th>
                                 <th>Total Marks(100)</th>
+                                <th>Total Weighted Marks</th>
                                 <th>Grade</th>
                                 <th>Grade Point</th>
                                 <th>Total Grade Point</th>
@@ -341,6 +342,7 @@
                                 <td ng-if="stu.isContinousAssessment==false">{{stu._ExternalTotal+stu._FloatPracticalMark}}</td>
                                 <td colspan="2" ng-if="stu.isContinousAssessment==true">Continous Assessment</td>
                                 <td>{{stu._FinalTotalMarks}}</td>
+                                <td>{{stu._TotalWeightedMarks}}</td>
                                 <td>{{stu._Grade}}</td>
                                 <td>{{stu._TotalGrade | number : 2}}</td>
                                 <td>{{stu._TotalGradePoint | number : 2}}</td>
@@ -352,9 +354,10 @@
                                 <th style="text-align: left;">Total</th>
                                 <th></th>
                                 <th>{{StudentDetailDispl._FinalTotalCredit}}</th>
-                                <th>-</th>
-                                <th>-</th>
+                                <th>{{StudentDetailDispl._FinalTotalInternalMark}}</th>
+                                <th>{{StudentDetailDispl._FinalPract_ExternalTotal}}</th>
                                 <th>{{StudentDetailDispl.TotalAllSubjectMark}}</th>
+                                <th>{{StudentDetailDispl._FinalWeightedMarks}}</th>
                                 <th></th>
                                 <th>{{StudentDetailDispl._FinalTotalGrade | number : 2}}</th>
                                 <th>{{StudentDetailDispl._FinalTotalGradePoint | number : 2}}</th>
@@ -368,7 +371,7 @@
                 <div class="col-md-4">
                     Date: {{resultDeclarationDate}}<br />
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-2">
                     <div class="row" ng-if="StudentDetailDispl.Backlog=='Reserved'">
                         <span><b>Result : </b></span>
                         <span class="" ng-if="StudentDetailDispl.FailureCount==0"><b> Reserved</b></span>
@@ -383,7 +386,7 @@
                         <span class="" ng-if="StudentDetailDispl.FailedCredits>0 && StudentDetailDispl.Semester==6"><b> Fail</b></span>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <div class="row">
                         <div class="col-md-6"><b>Percentage : </b></div>
                         <div class="col-md-6" ng-if="StudentDetailDispl.FailureCount>0"><b>-</b></div>

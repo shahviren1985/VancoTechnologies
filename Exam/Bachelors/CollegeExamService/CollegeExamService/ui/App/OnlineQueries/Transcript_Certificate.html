@@ -131,13 +131,13 @@
                 </div>
                 <br />-->
                 <div class="row" style="font-family: Calibri; padding-right: 50px; padding-left: 50px; font-size: 18px;">
-                    <div class="col-md-12" style="padding-top: 20px; float: right">
+                    <div class="col-md-12" style="padding-top: 70px; float: right">
                         <span> <b>Date - {{DateOfToday}}</b></span>
                     </div>
                     <div class="col-md-12" style="text-align:center; padding-top:50px;font-size:20px;font-weight:600">
                         TRANSCRIPT CERTIFICATE
                     </div>
-                    <div class="col-md-12" style="text-align: justify; padding-top: 40px; font-size: 18px;">
+                    <div class="col-md-12" style="text-align: justify; padding-top: 120px; font-size: 18px;">
                         This is certify that, <span><b>Ms. {{TranscriptData.LastName}} {{TranscriptData.FirstName}} {{TranscriptData.FatherName}} {{TranscriptData.MotherName}}</b></span> has been a bonafide student of Sir
                         Vithaldas Thackersey College of Home Science (Autonomous) S.N.D.T. Women's University Juhu, Mumbai from
                         <span>July 2016</span> to <span>June 2019</span>. She has successfully completed the B.Sc. course in
@@ -202,7 +202,7 @@
                                 <td style="width:40%"><i style="float:right">Name of the Program</i></td>
                                 <td style="width:30px"></td>
                                 <td style="width:30px">:</td>
-                                <td><b><span>B.Sc. in Home Science</span></b></td>
+                                <td><b><span>B.Sc. in Home Science {{TranscriptData.Program}}</span></b></td>
                             </tr>
                             <tr>
                                 <td style="width:40%"><i style="float:right">Duration</i></td>
@@ -220,13 +220,13 @@
                                 <td style="width:40%"><i style="float:right">Name of the University</i></td>
                                 <td style="width:30px"></td>
                                 <td style="width:30px">:</td>
-                                <td><b><span>S.N.D.T Women's University</span></b></td>
+                                <td><b><span>S.N.D.T. Women's University</span></b></td>
                             </tr>
                             <tr>
                                 <td style="width:40%"><i style="float:right">Name of the Institute</i><br /></td>
                                 <td style="width:30px"></td>
                                 <td style="width:30px">:</td>
-                                <td><b><span>Sir Vithaldas Thackersey College of Home Science<br/> (Autonomous)</span></b></td>
+                                <td><b><span>Sir Vithaldas Thackersey College of Home Science<br /> (Autonomous)</span></b></td>
                             </tr>
                             <tr>
                                 <td style="width:40%"><i style="float:right">Registration No.</i></td>
@@ -238,30 +238,30 @@
                                 <td style="width:40%"><i style="float:right">Department</i></td>
                                 <td style="width:30px"></td>
                                 <td style="width:30px">:</td>
-                                <!--<td><b><span>{{TranscriptData.DepartmentName}}</span></b></td>-->
-                                <td><b><span>FOOD, NUTRITION AND DIETETICS</span></b></td>
-                                
+                                <td><b><span>{{TranscriptData.DepartmentName}}</span></b></td>
+                                <!--<td><b><span>FOOD, NUTRITION AND DIETETICS</span></b></td>-->
+
                             </tr>
                             <tr>
                                 <td style="width:40%"><i style="float:right">Specialization</i></td>
                                 <td style="width:30px"></td>
                                 <td style="width:30px">:</td>
-                                <!--<td><b><span>{{TranscriptData.Specialisation | uppercase}}</span></b></td>-->
-                                <td><b><span>FOOD, NUTRITION AND DIETETICS</span></b></td>
+                                <td><b><span style="font-size: 15px; font-weight: bolder;">{{TranscriptData.Specialisation | uppercase}}</span></b></td>
+                                <!--<td><b><span>FOOD, NUTRITION AND DIETETICS</span></b></td>-->
                             </tr>
                             <tr>
                                 <td style="width:40%"><i style="float:right">Weighted Percentage</i></td>
                                 <td style="width:30px"></td>
                                 <td style="width:30px">:</td>
                                 <!--<td><b><span>{{TranscriptData.TotalOverAllPercentage | number:2}}</span></b></td>-->
-                                <td><b><span>73.89</span></b></td>
+                                <td><b><span>74.30</span></b></td>
                             </tr>
                             <tr>
                                 <td style="width:40%"><i style="float:right">Aggregate Grade</i></td>
                                 <td style="width:30px"></td>
                                 <td style="width:30px">:</td>
-                                <!--<td><b><span>{{TranscriptData.OverAllGrade}}</span></b></td>-->
-                                <td><b><span>A+</span></b></td>
+                                <td><b><span>{{TranscriptData.OverAllGrade}}</span></b></td>
+                                <!--<td><b><span>A+</span></b></td>-->
                             </tr>
                             <tr>
                                 <td style="width:40%"><i style="float:right">Grade Point Average</i></td>
@@ -269,6 +269,12 @@
                                 <td style="width:30px">:</td>
                                 <!--<td><b><span>{{TranscriptData.OverAllGradePOint | number:2}}</span></b></td>-->
                                 <td><b><span>8.39</span></b></td>
+                            </tr>
+                            <tr>
+                                <td style="width:40%"><i style="float:right">Passing Year</i></td>
+                                <td style="width:30px"></td>
+                                <td style="width:30px">:</td>
+                                <td><b><span>April 2019</span></b></td>
                             </tr>
                             <tr style="padding-top:10px; width: 100%;">
                                 <td colspan="3" style="width: 100%;">

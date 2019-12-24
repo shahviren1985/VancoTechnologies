@@ -44,7 +44,7 @@ Examapp.controller("GenerateTranscriptCertificateCtrl", function ($scope, $http,
                     $scope.TranscriptData.FirstName = ConvertName($scope.TranscriptData.FirstName);
                     $scope.TranscriptData.FatherName = ConvertName($scope.TranscriptData.FatherName);
                     $scope.TranscriptData.MotherName = ConvertName($scope.TranscriptData.MotherName);
-
+                    $scope.TranscriptData.Program = $scope.TranscriptData.Course.indexOf("Honors") > -1 ? " - Honors" : ""; 
                     $scope.TranscriptData.DepartmentName = MarksheetService.GetDepartment($scope.TranscriptData.Specialisation);
 
                     $scope.TranscriptData.Sem1 = {};

@@ -3066,6 +3066,11 @@ Examapp.factory('MarksheetService', ['PaperService', '$http', function (PaperSer
                                 // Added below mentioned line on 14 June to show NP if student is failed in internal
                                 PaperObj._FloatInternalMark = 0;
                                 PaperObj._InternalMark = (PaperObj._InternalMark == "ABS") ? "ABS" : Math.round(PaperObj._InternalMark);
+
+                                if (PaperObj._InternalMark != "ABS") {
+                                    PaperObj._FloatInternalMark = PaperObj._InternalMark;
+                                }
+
                                 PaperObj._Status = 'Repeat Course';
                                 if (!IsFailInExternal) {
                                     StudentDetailObj.FailedCredits = parseInt(StudentDetailObj.FailedCredits) + parseInt(PaperObj.credits);
@@ -3080,7 +3085,8 @@ Examapp.factory('MarksheetService', ['PaperService', '$http', function (PaperSer
                             else
                                 PaperObj._Grade = 'F';
 
-                            if (strTotalMarkCode < 40) PaperObj._Grade = 'F';
+                            if (PaperObj._Grade == 'F') PaperObj._Grade = 'F';
+                            else if (strTotalMarkCode < 40) PaperObj._Grade = 'F';
                             else if (strTotalMarkCode >= 40 && strTotalMarkCode < 44) PaperObj._Grade = 'P';
                             else if (strTotalMarkCode >= 44 && strTotalMarkCode < 50) PaperObj._Grade = 'C';
                             else if (strTotalMarkCode >= 50 && strTotalMarkCode < 55) PaperObj._Grade = 'B';

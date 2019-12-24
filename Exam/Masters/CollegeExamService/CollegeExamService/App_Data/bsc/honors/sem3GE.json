@@ -1,0 +1,116 @@
+﻿[
+  {
+    "Specialization": "HOSPITALITY AND TOURISM MANAGEMENT",
+    "specialisationCode": "HTM",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "LG201"
+          },
+          {
+            "Code": "MG201"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Food Nutrition & Dietetics",
+    "specialisationCode": "FND",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "LG201"
+          },
+          {
+            "Code": "MG201"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Hospitality And Tourism Management",
+    "specialisationCode": "HTM",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "LG201"
+          },
+          {
+            "Code": "MG201"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Interior Design And Resource Management",
+    "specialisationCode": "IDRM",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "LG201"
+          },
+          {
+            "Code": "MG201"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Developmental Counselling",
+    "specialisationCode": "DC",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "LG201"
+          },
+          {
+            "Code": "MG201"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Early Childhood Care And Education",
+    "specialisationCode": "ECCE",
+    "ElectiveSubject": [
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "HDIV01"
+          },
+          {
+            "Code": "HDIV03"
+          }
+        ]
+      },
+      {
+        "Title": "GE",
+        "Subject": [
+          {
+            "Code": "HDIV02"
+          },
+          {
+            "Code": "HDIV04"
+          }
+        ]
+      }
+    ]
+  }
+
+]

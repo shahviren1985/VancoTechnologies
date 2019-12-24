@@ -578,6 +578,7 @@
         "code": "MG103",
         "isElective": "Yes",
         "order": "6",
+        "paperTitle": "Digital Photography",
         "paperCode": "MG103",
         "isGrade": "No",
         "isContinousAssessment": true,

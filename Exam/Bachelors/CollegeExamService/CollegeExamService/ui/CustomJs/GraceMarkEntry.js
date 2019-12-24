@@ -168,12 +168,20 @@ Examapp.controller("GraceMarkEntryCtrl", function ($scope) {
                         arrayonj.PracticalMark=parseFloat($scope.StudentData[i][PracticalReal])|| 0;
                         arrayonj.LogicalSeatNumberKe = $scope.StudentData[i].SeatNumber.substring(4, $scope.StudentData[i].SeatNumber.length);
 
-
-                        if (arrayonj.LD.toLowerCase() == "true") {
-                            arrayonj.MaxAllowedGraceMark = ((15 - arrayonj.TotalAllGrace) + arrayonj.GraceMark);
-                        }
-                        else {
-                            arrayonj.MaxAllowedGraceMark = (((($scope.TotalAllSubjectMaxMark * 1) / 100) - arrayonj.TotalAllGrace) + arrayonj.GraceMark);
+                        if ($scope.InternalMark.examType == "ATKT") {
+                            if (arrayonj.LD.toLowerCase() == "true") {
+                                arrayonj.MaxAllowedGraceMark = ((15 - arrayonj.TotalAllGrace) + arrayonj.GraceMark);
+                            }
+                            else {
+                                arrayonj.MaxAllowedGraceMark = 6;
+                            }
+                        } else {
+                            if (arrayonj.LD.toLowerCase() == "true") {
+                                arrayonj.MaxAllowedGraceMark = ((15 - arrayonj.TotalAllGrace) + arrayonj.GraceMark);
+                            }
+                            else {
+                                arrayonj.MaxAllowedGraceMark = (((($scope.TotalAllSubjectMaxMark * 1) / 100) - arrayonj.TotalAllGrace) + arrayonj.GraceMark);
+                            }
                         }
 
                         

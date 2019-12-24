@@ -8,15 +8,18 @@
         "Subject": [
           {
             "Code": "MDVI05",
-            "Title": "Dubbing and Voice Over"
+            "Title": "Dubbing and Voice Over",
+            "Credit": "4"
           },
           {
             "Code": "MDVI07",
-            "Title": "Photojournalism"
+            "Title": "Photojournalism",
+            "Credit": "4"
           },
           {
             "Code": "MDVI08",
-            "Title": "Editing"
+            "Title": "Editing",
+            "Credit": "4"
           }
         ]
       }
@@ -31,19 +34,23 @@
         "Subject": [
           {
             "Code": "TDVI07",
-            "Title": "Global Supply Chain Management"
+            "Title": "Global Supply Chain Management",
+            "Credit": "4"
           },
           {
             "Code": "TDVI09",
-            "Title": "Research Methods in Textile and Apparel Designing"
+            "Title": "Research Methods in Textile and Apparel Designing",
+            "Credit": "4"
           },
           {
             "Code": "TDVI05",
-            "Title": "Design Process and Product Development"
+            "Title": "Design Process and Product Development",
+            "Credit": "4"
           },
           {
             "Code": "TDVI06",
-            "Title": "Draping and Grading"
+            "Title": "Draping and Grading",
+            "Credit": "4"
           }
         ]
       }
@@ -58,31 +65,38 @@
         "Subject": [
           {
             "Code": "FCVI08",
-            "Title": "Maternal and Child Nutrition (Theory)"
+            "Title": "Maternal and Child Nutrition (Theory)",
+            "Credit": "4"
           },
           {
             "Code": "FCVI09",
-            "Title": "Maternal and Child Nutrition (Practical)"
+            "Title": "Maternal and Child Nutrition (Practical)",
+            "Credit": "2"
           },
           {
             "Code": "FCVI10",
-            "Title": "Food Preservation, Safety and Quality Control (Theory)"
+            "Title": "Food Preservation, Safety and Quality Control (Theory)",
+            "Credit": "4"
           },
           {
             "Code": "FCVI11",
-            "Title": "Food Preservation, Safety and Quality Control (Practical)"
+            "Title": "Food Preservation, Safety and Quality Control (Practical)",
+            "Credit": "2"
           },
           {
             "Code": "FCVI12",
-            "Title": "Bariatric Nutrition"
+            "Title": "Bariatric Nutrition",
+            "Credit": "2"
           },
           {
             "Code": "FCVI13",
-            "Title": "Sports Nutrition and Fitness Management"
+            "Title": "Sports Nutrition and Fitness Management",
+            "Credit": "2"
           },
           {
             "Code": "FCVI15",
-            "Title": "Global Cuisine and Nutrition"
+            "Title": "Global Cuisine and Nutrition",
+            "Credit": "2"
           }
         ]
       }
@@ -97,19 +111,23 @@
         "Subject": [
           {
             "Code": "RCVI10",
-            "Title": "Office Administration"
+            "Title": "Office Administration",
+            "Credit": "4"
           },
           {
             "Code": "RCVI11",
-            "Title": "Itinerary Planning"
+            "Title": "Itinerary Planning",
+            "Credit": "4"
           },
           {
             "Code": "RCVI08",
-            "Title": "Soft Skills and Image Management"
+            "Title": "Soft Skills and Image Management",
+            "Credit": "4"
           },
           {
             "Code": "FCVI17",
-            "Title": "Food Production"
+            "Title": "Food Production",
+            "Credit": "4"
           }
         ]
       }
@@ -124,19 +142,23 @@
         "Subject": [
           {
             "Code": "RCVI45",
-            "Title": "Global Interior Architecture"
+            "Title": "Global Interior Architecture",
+            "Credit": "4"
           },
           {
             "Code": "RDVI08",
-            "Title": "Soft Skills and Image Management"
+            "Title": "Soft Skills and Image Management",
+            "Credit": "4"
           },
           {
             "Code": "RDVI13",
-            "Title": "Set Design"
+            "Title": "Set Design",
+            "Credit": "4"
           },
           {
             "Code": "RDV12",
-            "Title": "Furniture Workshop"
+            "Title": "Furniture Workshop",
+            "Credit": "4"
           }
         ]
       }
@@ -151,15 +173,18 @@
         "Subject": [
           {
             "Code": "HDVI11",
-            "Title": "Gerontology"
+            "Title": "Gerontology",
+            "Credit": "4"
           },
           {
             "Code": "HCVI25",
-            "Title": "Life Skill Training for Children and Adolescent"
+            "Title": "Life Skill Training for Children and Adolescent",
+            "Credit": "4"
           },
           {
             "Code": "HCVI34",
-            "Title": "Management of Special Events for Children"
+            "Title": "Management of Special Events for Children",
+            "Credit": "4"
           }
         ]
       }
@@ -175,19 +200,23 @@
         "Subject": [
           {
             "Code": "HDVI11",
-            "Title": "Gerontology"
+            "Title": "Gerontology",
+            "Credit": "4"
           },
           {
             "Code": "HCVI25",
-            "Title": "Life Skill Training for Children and Adolescent"
+            "Title": "Life Skill Training for Children and Adolescent",
+            "Credit": "4"
           },
           {
             "Code": "HCIV31",
-            "Title": "Training in Preschool Setting"
+            "Title": "Training in Preschool Setting",
+            "Credit": "8"
           },
           {
             "Code": "HDVI10",
-            "Title": "Development of Early Childhood Education Curriculum and Standards"
+            "Title": "Development of Early Childhood Education Curriculum and Standards",
+            "Credit": "4"
           }
 
         ]

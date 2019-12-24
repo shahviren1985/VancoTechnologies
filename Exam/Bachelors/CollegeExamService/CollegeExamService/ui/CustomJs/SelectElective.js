@@ -29,7 +29,10 @@ ExamSystem.controller("SelectElectiveCtrl", function ($scope) {
         $("#ddSemester").attr("disabled", "disabled");
     }
 
+    $(".elective").html("Loading Elective List...");
+
     CallAPI('User/GetGEList?Course=bsc&specialization=' + program + '&sem=' + sem + '', 'GET', '').done(function (data) {
+        $(".elective").html("");
         PrepareFYElectives(data);
     });
 });
@@ -77,10 +80,10 @@ function PrepareFYElectives(data) {
                 var radioList = "<div class='elective'><div><b>Please choose Elective " + electiveNo + ":</b></div>";
                 for (j = 0; j < subjects.length; j++) {
                     if (sem > 0 && sem < 5) {
-                        radioList += "<input type='radio' id='" + subjects[j].Code + "' name='elective" + k + "' value='" + subjects[j].Code + "' /><label for='" + subjects[j].Code + "'>" + subjects[j].Title + "</label>";
+                        radioList += "<input type='radio' id='" + subjects[j].Code + "' name='elective" + k + "' value='" + subjects[j].Code + "' /><label for='" + subjects[j].Code + "'>" + subjects[j].Title + " (Credits: " + subjects[j].Credit +  ")" + "</label>";
                     }
                     else if (sem == 5 || sem == 6) {
-                        radioList += "<input type='checkbox' id='" + subjects[j].Code + "' name='elective" + k + "' value='" + subjects[j].Code + "' /><label for='" + subjects[j].Code + "'>" + subjects[j].Title + "</label>";
+                        radioList += "<input type='checkbox' id='" + subjects[j].Code + "' name='elective" + k + "' value='" + subjects[j].Code + "' /><label for='" + subjects[j].Code + "'>" + subjects[j].Title + " (Credits: " + subjects[j].Credit + ")" + "</label>";
                     }
                 }
 
@@ -111,6 +114,7 @@ function SaveElective(element) {
         "rollNumber": decodeURIComponent(getUrlVars()["rollNumber"]),
         "studentName": decodeURIComponent(getUrlVars()["name"]),
         "department": department[getUrlVars()["specialization"]],
+        "program": decodeURIComponent(getUrlVars()["program"]),
         "year": getUrlVars()["year"],
         "elective1": "",
         "elective2": "",

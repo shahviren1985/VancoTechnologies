@@ -8,11 +8,13 @@
         "Subject": [
           {
             "Code": "MDV01",
-            "Title": "Program Planning and Evaluation"
+            "Title": "Program Planning and Evaluation",
+            "Credit":  "4"
           },
           {
             "Code": "RCV17",
-            "Title": "Event Management"
+            "Title": "Event Management",
+            "Credit": "4"
           }
         ]
       }
@@ -27,19 +29,23 @@
         "Subject": [
           {
             "Code": "TDV02",
-            "Title": "Fashion Forecasting and Styling"
+            "Title": "Fashion Forecasting and Styling",
+            "Credit": "4"
           },
           {
             "Code": "TDV03",
-            "Title": "Global Costumes"
+            "Title": "Global Costumes",
+            "Credit": "4"
           },
           {
             "Code": "TDV31",
-            "Title": "Eco-Friendly Textiles"
+            "Title": "Eco-Friendly Textiles",
+            "Credit": "4"
           },
           {
             "Code": "TDV19",
-            "Title": "Computer Aided Textile Designing"
+            "Title": "Computer Aided Textile Designing",
+            "Credit": "2"
           }
         ]
       }
@@ -54,19 +60,23 @@
         "Subject": [
           {
             "Code": "FCV01",
-            "Title": "Public Health Nutrition (Theory)"
+            "Title": "Public Health Nutrition (Theory)",
+            "Credit": "4"
           },
           {
             "Code": "FCV02",
-            "Title": "Public Health Nutrition (Practical)"
+            "Title": "Public Health Nutrition (Practical)",
+            "Credit": "2"
           },
           {
             "Code": "FCV03",
-            "Title": "Specialized Dietetics  (Theory)"
+            "Title": "Specialized Dietetics  (Theory)",
+            "Credit": "4"
           },
           {
             "Code": "FCV04",
-            "Title": "Specialized Dietetics  (Practical)"
+            "Title": "Specialized Dietetics  (Practical)",
+            "Credit": "2"
           }
         ]
       }
@@ -81,27 +91,33 @@
         "Subject": [
           {
             "Code": "RCV17",
-            "Title": "Event Management"
+            "Title": "Event Management",
+            "Credit": "4"
           },
           {
             "Code": "RDV03",
-            "Title": "Disaster Management"
+            "Title": "Disaster Management",
+            "Credit": "4"
           },
           {
             "Code": "RDV06",
-            "Title": "Tourism Resources in India"
+            "Title": "Tourism Resources in India",
+            "Credit": "4"
           },
           {
             "Code": "RDV02",
-            "Title": "Consumer Durables"
+            "Title": "Consumer Durables",
+            "Credit": "2"
           },
           {
             "Code": "RDV04",
-            "Title": "Safety Practices at Workplace"
+            "Title": "Safety Practices at Workplace",
+            "Credit": "2"
           },
           {
             "Code": "RDV11",
-            "Title": "Creative Up-scaling of Dry Waste"
+            "Title": "Creative Up-scaling of Dry Waste",
+            "Credit": "2"
           }
         ]
       }
@@ -116,27 +132,33 @@
         "Subject": [
           {
             "Code": "RDVI14",
-            "Title": "Landscape Design"
+            "Title": "Landscape Design",
+            "Credit": "2"
           },
           {
             "Code": "RDV03",
-            "Title": "Disaster Management"
+            "Title": "Disaster Management",
+            "Credit": "4"
           },
           {
             "Code": "RDVI15",
-            "Title": "Industrial Visit"
+            "Title": "Industrial Visit",
+            "Credit": "2"
           },
           {
             "Code": "RDV02",
-            "Title": "Consumer Durables"
+            "Title": "Consumer Durables",
+            "Credit": "2"
           },
           {
             "Code": "RDV04",
-            "Title": "Safety Practices at Workplace"
+            "Title": "Safety Practices at Workplace",
+            "Credit": "2"
           },
           {
             "Code": "RDV11",
-            "Title": "Creative Up-scaling of Dry Waste"
+            "Title": "Creative Up-scaling of Dry Waste",
+            "Credit": "2"
           }
         ]
       }
@@ -151,15 +173,18 @@
         "Subject": [
           {
             "Code": "HDV07",
-            "Title": "Preschool Education (Theory)"
+            "Title": "Preschool Education (Theory)",
+            "Credit": "4"
           },
           {
             "Code": "HDV08",
-            "Title": "Preschool Education (Practical)"
+            "Title": "Preschool Education (Practical)",
+            "Credit": "2"
           },
           {
             "Code": "HDV06",
-            "Title": "Positive Psychology"
+            "Title": "Positive Psychology",
+            "Credit": "4"
           }
         ]
       }
@@ -175,15 +200,18 @@
         "Subject": [
           {
             "Code": "HCV18",
-            "Title": "Guidance and Counselling (Theory)"
+            "Title": "Guidance and Counselling (Theory)",
+            "Credit": "4"
           },
           {
             "Code": "HCV19",
-            "Title": "Guidance and Counselling (Practical)"
+            "Title": "Guidance and Counselling (Practical)",
+            "Credit": "2"
           },
           {
             "Code": "HDV06",
-            "Title": "Positive Psychology"
+            "Title": "Positive Psychology",
+            "Credit": "4"
           }
         ]
       }
