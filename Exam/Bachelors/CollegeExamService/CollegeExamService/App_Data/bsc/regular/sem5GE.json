@@ -1,67 +1,5 @@
 ﻿[
   {
-    "Specialization": "Hospitality & Tourism Management",
-    "specialisationCode": "HTM",
-    "ElectiveSubject": [
-      {
-        "Title": "HTM DSE",
-        "Subject": [
-          {
-            "Code": "RCV17",
-            "Title": "Event Management"
-          },
-          {
-            "Code": "RDV03",
-            "Title": "Disaster Management"
-          },
-          {
-            "Code": "RDV06",
-            "Title": "Tourism Resources in India"
-          },
-          {
-            "Code": "RDV02",
-            "Title": "Consumer Durables"
-          },
-          {
-            "Code": "RDV04",
-            "Title": "Safety Practices at Workplace"
-          },
-          {
-            "Code": "RDV11",
-            "Title": "Creative Up-scaling of Dry Waste"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "Specialization": "Food Nutrition And Dietetics",
-    "specialisationCode": "FND",
-    "ElectiveSubject": [
-      {
-        "Title": "FND DSE",
-        "Subject": [
-          {
-            "Code": "FCV01",
-            "Title": "Public Health Nutrition (Theory)"
-          },
-          {
-            "Code": "FCV02",
-            "Title": "Public Health Nutrition (Practical)"
-          },
-          {
-            "Code": "FCV03",
-            "Title": "Specialized Dietetics  (Theory)"
-          },
-          {
-            "Code": "FCV04",
-            "Title": "Specialized Dietetics  (Practical)"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "Specialization": "Developmental Counselling",
     "specialisationCode": "DC",
     "ElectiveSubject": [
@@ -70,27 +8,28 @@
         "Subject": [
           {
             "Code": "HCV18",
-            "Title": "Guidance and Counselling (Theory)"
+            "Title": "Guidance and Counselling (Theory)",
+            "Credit": "4"
           },
           {
             "Code": "HCV19",
-            "Title": "Guidance and Counselling (Practical)"
+            "Title": "Guidance and Counselling (Practical)",
+            "Credit": "2"
           },
           {
             "Code": "HDV07",
-            "Title": "Preschool Education (Theory)"
+            "Title": "Preschool Education (Theory)",
+            "Credit": "4"
           },
           {
             "Code": "HDV08",
-            "Title": "Preschool Education (Practical)"
+            "Title": "Preschool Education (Practical)",
+            "Credit": "2"
           },
           {
             "Code": "HDV06",
-            "Title": "Positive Psychology"
-          },
-          {
-            "Code": "HCV05",
-            "Title": "Introduction To Therapeutic Recreation"
+            "Title": "Positive Psychology",
+            "Credit": "4"
           }
         ]
       }
@@ -105,57 +44,95 @@
         "Subject": [
           {
             "Code": "HCV18",
-            "Title": "Guidance and Counselling (Theory)"
+            "Title": "Guidance and Counselling (Theory)",
+            "Credit": "4"
           },
           {
             "Code": "HCV19",
-            "Title": "Guidance and Counselling (Practical)"
+            "Title": "Guidance and Counselling (Practical)",
+            "Credit": "2"
           },
           {
             "Code": "HDV06",
-            "Title": "Positive Psychology"
+            "Title": "Positive Psychology",
+            "Credit": "4"
           }
         ]
       }
     ]
   },
   {
-    "Specialization": "Mass Communication And Extension",
-    "specialisationCode": "MCE",
+    "Specialization": "Food Nutrition And Dietetics",
+    "specialisationCode": "FND",
     "ElectiveSubject": [
       {
-        "Title": "MCE DSE",
+        "Title": "FND DSE",
         "Subject": [
           {
-            "Code": "MDV01",
-            "Title": "Program Planning and Evaluation"
+            "Code": "FCV01",
+            "Title": "Public Health Nutrition (Theory)",
+            "Credit": "4"
           },
+          {
+            "Code": "FCV02",
+            "Title": "Public Health Nutrition (Practical)",
+            "Credit": "2"
+          },
+          {
+            "Code": "FCV03",
+            "Title": "Specialized Dietetics (Theory)",
+            "Credit": "4"
+          },
+          {
+            "Code": "FCV04",
+            "Title": "Specialized Dietetics (Practical)",
+            "Credit": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Hospitality & Tourism Management",
+    "specialisationCode": "HTM",
+    "ElectiveSubject": [
+      {
+        "Title": "HTM DSE",
+        "Subject": [
           {
             "Code": "RCV17",
-            "Title": "Event Management"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "Specialization": "Textiles And Apparel Designing",
-    "specialisationCode": "TAD",
-    "ElectiveSubject": [
-      {
-        "Title": "TAD DSE",
-        "Subject": [
-          {
-            "Code": "TDV02",
-            "Title": "Fashion Forecasting and Styling"
+            "Title": "Event Management",
+            "Credit": "4"
           },
           {
-            "Code": "TDV03",
-            "Title": "Global Costumes"
+            "Code": "RDV03",
+            "Title": "Disaster Management",
+            "Credit": "4"
           },
           {
-            "Code": "TDV19",
-            "Title": "Computer Aided Textile Designing"
+            "Code": "RDV06",
+            "Title": "Tourism Resources in India",
+            "Credit": "4"
+          },
+          {
+            "Code": "RDV02",
+            "Title": "Consumer Durables",
+            "Credit": "2"
+          },
+          {
+            "Code": "RDV04",
+            "Title": "Safety Practices at Workplace",
+            "Credit": "2"
+          },
+          {
+            "Code": "RDV11",
+            "Title": "Creative Up-scaling of Dry Waste",
+            "Credit": "2"
+          },
+          {
+            "Code": "RDV47",
+            "Title": "Research Methods in Resources Management",
+            "Credit": "4"
           }
         ]
       }
@@ -170,27 +147,85 @@
         "Subject": [
           {
             "Code": "RDVI14",
-            "Title": "Landscape Design"
+            "Title": "Landscape Design",
+            "Credit": "2"
           },
           {
             "Code": "RDV03",
-            "Title": "Disaster Management"
+            "Title": "Disaster Management",
+            "Credit": "4"
           },
           {
             "Code": "RDVI15",
-            "Title": "Industrial Visit"
+            "Title": "Industrial Visit",
+            "Credit": "2"
           },
           {
             "Code": "RDV02",
-            "Title": "Consumer Durables"
+            "Title": "Consumer Durables",
+            "Credit": "2"
           },
           {
             "Code": "RDV04",
-            "Title": "Safety Practices at Workplace"
+            "Title": "Safety Practices at Workplace",
+            "Credit": "2"
           },
           {
             "Code": "RDV11",
-            "Title": "Creative Up-scaling of Dry Waste"
+            "Title": "Creative Up-scaling of Dry Waste",
+            "Credit": "2"
+          },
+          {
+            "Code": "RDV47",
+            "Title": "Research Methods in Resources Management",
+            "Credit": "4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Mass Communication And Extension",
+    "specialisationCode": "MCE",
+    "ElectiveSubject": [
+      {
+        "Title": "MCE DSE",
+        "Subject": [
+          {
+            "Code": "MDV01",
+            "Title": "Program Planning and Evaluation",
+            "Credit": "4"
+          },
+          {
+            "Code": "RCV17",
+            "Title": "Event Management",
+            "Credit": "4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Specialization": "Textiles And Apparel Designing",
+    "specialisationCode": "TAD",
+    "ElectiveSubject": [
+      {
+        "Title": "TAD DSE",
+        "Subject": [
+          {
+            "Code": "TDV02",
+            "Title": "Fashion Forecasting and Styling",
+            "Credit": "4"
+          },
+          {
+            "Code": "TDV03",
+            "Title": "Global Costumes",
+            "Credit": "4"
+          },
+          {
+            "Code": "TDV19",
+            "Title": "Computer Aided Textile Designing",
+            "Credit": "2"
           }
         ]
       }
