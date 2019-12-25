@@ -164,10 +164,10 @@ namespace CollegeExamService.Controllers
         }
 
         [HttpGet]
-        public HttpResponseMessage GetStudentElectives(string specialisation, string semester, string year)
+        public HttpResponseMessage GetStudentElectives(string program, string specialisation, string semester, string year)
         {
             ExamDbOperations db = new ExamDbOperations();
-            return Request.CreateResponse(HttpStatusCode.OK, db.GetStudentElectives(specialisation, semester, year));
+            return Request.CreateResponse(HttpStatusCode.OK, db.GetStudentElectives(program,specialisation, semester, year));
         }
 
         [HttpGet]

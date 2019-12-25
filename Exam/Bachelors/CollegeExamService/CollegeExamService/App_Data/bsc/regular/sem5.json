@@ -95,24 +95,6 @@
         "practicalMaxMarks": "0",
         "credits": "4",
         "maxGrace": ""
-      },
-      {
-        "paperTitle": "Introduction To Therapeutic Recreation",
-        "code": "HCV05",
-        "isElective": "No",
-        "order": "6",
-        "paperCode": "HCV05",
-        "isGrade": "No",
-        "isContinousAssessment": true,
-        "paperType": "Practical",
-        "theoryInternalMax": "0",
-        "theoryInternalPassing": "0",
-        "theoryExternalSection1Max": "0",
-        "theoryExternalSection2Max": "0",
-        "theoryExternalPassing": "40",
-        "practicalMaxMarks": "100",
-        "credits": "2",
-        "maxGrace": ""
       }
     ]
   },

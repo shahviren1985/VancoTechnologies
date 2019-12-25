@@ -8,18 +8,36 @@ ExamSystem.controller("ApproveElectiveCtrl", function ($scope) {
     var specialization = getUrlVars()["specialization"];
     var sem = getUrlVars()["semester"];
     var year = getUrlVars()["year"];
-
-    $("#Specialisation").html("Specialisation - " + specialization);
+    var spl = $("#ddSpecial option:selected").val();
+    $("#Specialisation").html("Department - " + specialization);
     $("#Semester").html("Semester - " + sem);
+    PrepareSpecialisationDropdown(specialization);
 
     CallAPI('User/GetGEList?Course=bsc&specialization=' + program + '&sem=' + sem + '', 'GET', '').done(function (data) {
         var totalPaper = PrepareFYElectives(data);
-        GetStudentElectives(specialization, sem, year, totalPaper);
+        GetStudentElectives(program, spl, sem, year, totalPaper);
     });
 });
 
-function GetStudentElectives(specialization, sem, year, totalPaper) {
-    CallAPI('Attendance/GetStudentElectives?specialisation=' + specialization + '&semester=' + sem + '&year=' + year, 'GET', '').done(function (data) {
+function ReloadStudentData() {
+    var program = getUrlVars()["program"];
+    var sem = getUrlVars()["semester"];
+    var year = getUrlVars()["year"];
+    //var spl = $("#ddSpecial option:selected").val();
+
+    $("#electives").children().remove();
+
+    CallAPI('User/GetGEList?Course=bsc&specialization=' + program + '&sem=' + sem + '', 'GET', '').done(function (data) {
+        var totalPaper = PrepareFYElectives(data);
+        var spl = $("#ddSpecial option:selected").val();
+        GetStudentElectives(program, spl, sem, year);
+    });
+    
+}
+
+function GetStudentElectives(program,specialization, sem, year, totalPaper) {
+    
+    CallAPI('Attendance/GetStudentElectives?program=' + program + '&specialisation=' + specialization + '&semester=' + sem + '&year=' + year, 'GET', '').done(function (data) {
         var counter = 1;
         var papers = [];
         $("#electives tbody td").each(function () {
@@ -29,7 +47,7 @@ function GetStudentElectives(specialization, sem, year, totalPaper) {
             }
         });
 
-        console.log(data);
+        //console.log(data);
 
         var t = "";
         for (i = 0; i < data.length; i++) {
@@ -81,8 +99,35 @@ function CalculateTotal() {
     });
 }
 
+function PrepareSpecialisationDropdown(dept) {
+    var dd = "<select id='ddSpecial' onchange='ReloadStudentData()'>";
+    switch (dept) {
+        case "HD":
+            dd += "<option value='DC' selected='selected'>Developmental Counseling</option>";
+            dd += "<option value='ECCE'>Early Childhood Care & Education</option>";
+            break;
+        case "FND":
+            dd += "<option value='FND' selected='selected'>Food, Nutrition & Dietetics</option>";
+            break;
+        case "RM":
+            dd += "<option value='HTM' selected='selected'>Hospitality & Tourism Management</option>";
+            dd += "<option value='IDRM'>Interior Designing & Resource Management</option>";
+            break;
+        case "MCE":
+            dd += "<option value='MCE' selected='selected'>Mass Communication & Extensions</option>";
+            break;
+        case "TAD":
+            dd += "<option value='TAD' selected='selected'>Textile & Apparel Designing</option>";
+            break;
+    }
+
+    dd += "</select>";
+
+    $("#Spl").append(dd);
+}
+
 function PrepareFYElectives(data) {
-    var specialization = getUrlVars()["specialization"];
+    var specialization = $("#ddSpecial option:selected").val();//getUrlVars()["specialization"];
     var totalPaper = 0;
 
     var table = "<table border='1' id='electives' class='electives'><tr class='header'><td><b>Serial #</b></td><td><b>Roll #</b></td><td class='large'><b>Student Name</b></td>";
@@ -143,3 +188,22 @@ function ApproveElectives(element) {
         alert(data.SuccessMessage);
     });
 }
+
+var tableToExcel = (function () {
+    var uri = 'data:application/vnd.ms-excel;base64,',
+        template = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>{table}</table></body></html>',
+        base64 = function (s) { return window.btoa(unescape(encodeURIComponent(s))) },
+        format = function (s, c) { return s.replace(/{(\w+)}/g, function (m, p) { return c[p]; }) }
+    return function (table, name) {
+        var specialization = $("#ddSpecial option:selected").val();
+        var program = getUrlVars()["program"];
+        var sem = getUrlVars()["semester"];
+        var year = getUrlVars()["year"];
+
+        table = "electives";
+        name = "Sem-" + sem + "-" + program + "-Electives-" + specialization + "-" + year;
+        if (!table.nodeType) table = document.getElementById(table)
+        var ctx = { worksheet: name || 'Worksheet', table: table.innerHTML }
+        window.location.href = uri + base64(format(template, ctx))
+    }
+})()

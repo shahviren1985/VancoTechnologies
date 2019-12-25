@@ -1604,9 +1604,9 @@ namespace CollegeExamService.Helpers
                 );
         }
 
-        public DataTable GetStudentElectives(string specialisation, string semester, string year)
+        public DataTable GetStudentElectives(string program, string specialisation, string semester, string year)
         {
-            string query = string.Format("SELECT crn,department,specialisation, semester, elective1, elective2, elective3, elective4, elective5, elective6, elective7, approvedelective1, approvedelective2, approvedelective3, approvedelective4, approvedelective5, approvedelective6, approvedelective7, lastmodified, academicyear, rollnumber, studentname FROM electives WHERE specialisation='{0}' and semester='{1}' and academicyear='{2}'", specialisation, semester, year);
+            string query = string.Format("SELECT crn,department,specialisation, semester, elective1, elective2, elective3, elective4, elective5, elective6, elective7, approvedelective1, approvedelective2, approvedelective3, approvedelective4, approvedelective5, approvedelective6, approvedelective7, lastmodified, academicyear, rollnumber, studentname FROM electives WHERE specialisation='{0}' and semester='{1}' and academicyear='{2}' and stream='{3}'", specialisation, semester, year, program);
             obcon = new OdbcConnection(connection);
             DataSet dsItems = new DataSet();
             odbAdp = new OdbcDataAdapter(query, obcon);
