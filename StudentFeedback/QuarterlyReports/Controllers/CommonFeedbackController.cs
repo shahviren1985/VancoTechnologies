@@ -16,6 +16,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Web;
 using System.Web.Http;
+using System.Web.Script.Serialization;
 
 namespace QuarterlyReports.Controllers
 {
@@ -163,6 +164,33 @@ namespace QuarterlyReports.Controllers
                 if (!isInserted)
                     return Request.CreateResponse(HttpStatusCode.InternalServerError, "Invalid Data");
                 */
+                return Request.CreateResponse(HttpStatusCode.OK, "Record inserted successfully");
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+
+        [HttpPost]
+        public HttpResponseMessage AddCommonFeedback(Object model)
+        {
+            try
+            {
+                string userType = Request.Headers.GetValues("userType").ElementAt(0);
+                string collegeCode = Request.Headers.GetValues("collegeCode").ElementAt(0);
+                string data = model.ToString();
+                if (model == null)
+                    return Request.CreateResponse(HttpStatusCode.BadRequest, "Invalid Data");
+
+                string folderPath = Path.Combine(System.Web.Configuration.WebConfigurationManager.AppSettings["NNWCFeedbackFolderPath"], "BatchProcessing\\" + collegeCode);
+                if (!Directory.Exists(folderPath))
+                {
+                    Directory.CreateDirectory(folderPath);
+                }
+                string fileName = folderPath + "\\" + userType + "_" + DateTime.Now.ToString("yyyy-MM-dd HH mm ss") + ".json";
+                System.IO.File.WriteAllText(fileName, data);
+                
                 return Request.CreateResponse(HttpStatusCode.OK, "Record inserted successfully");
             }
             catch (Exception ex)
@@ -684,6 +712,12 @@ namespace QuarterlyReports.Controllers
             {
                 throw ex;
             }
+        }
+
+        [HttpGet]
+        public void GetFeedbackTest()
+        {
+            dbOp.GetMDShahFeedabck();
         }
 
         [HttpGet]

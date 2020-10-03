@@ -6,33 +6,97 @@ function getUrlVars() {
         vars.push(hash[0]);
         vars[hash[0]] = hash[1];
     }
-    return vars;
+    return  encodeURIComponent(vars);
 }
 
-var userType = getUrlVars()["type"];
-var crn = getUrlVars()["crn"];
-var collegeCode = getUrlVars()["cc"];
-var specialisation = getUrlVars()["specialization"];
-var semester = getUrlVars()["sem"];
-var course = getUrlVars()["course"];
-var courseyear = getUrlVars()["courseyear"];
+function getUrlParameter(name) {
+    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+    var results = regex.exec(location.search);
+    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+}
 
+var userType = getUrlParameter("type");
+var crn = getUrlParameter("crn");
+var collegeCode = getUrlParameter("cc");
+var specialisation = getUrlParameter("sp");
+var ipAddress = "";
+var fwdIPAddresses = "";
 $(document).ready(function () {
     $("#exitForm").hide();
     $("#commonfeedbackForm").show();
     $("#successmsg").hide();
     $("#errormsg").hide();
     $("#validationerrormsg").hide();
+    var uType = "";
+    switch (userType) {
+        case "TeacherPO":
+            uType = "Teacher Program Outcome";
+            break;
+        case "AlumniPODC":
+            uType = "Alumni (DC) Program Outcome";
+            break;
+        case "AlumniPOECCE":
+            uType = "Alumni (ECCE) Program Outcome";
+            break;
+        case "AlumniPOFND":
+            uType = "Alumni (FND) Program Outcome";
+            break;
+        case "AlumniPOHTM":
+            uType = "Alumni (HTM) Program Outcome";
+            break;
+        case "AlumniPOIDRM":
+            uType = "Alumni (IDRM) Program Outcome";
+            break;
+        case "AlumniPOMCE":
+            uType = "Alumni (MCE) Program Outcome";
+            break;
+        case "AlumniPOTAD":
+            uType = "Alumni (TAD) Program Outcome";
+            break;
+        case "ParentsPODC":
+            uType = "Parents (DC) Program Outcome";
+            break;
+        case "ParentsPOECCE":
+            uType = "Parents (ECCE) Program Outcome";
+            break;
+        case "ParentsPOFND":
+            uType = "Parents (FND) Program Outcome";
+            break;
+        case "ParentsPOHTM":
+            uType = "Parents (HTM) Program Outcome";
+            break;
+        case "ParentsPOIDRM":
+            uType = "Parents (IDRM) Program Outcome";
+            break;
+        case "ParentsPOMCE":
+            uType = "Parents (MCE) Program Outcome";
+            break;
+        case "ParentsPOTAD":
+            uType = "Parents (TAD) Program Outcome";
+            break;
+		case "SSSFY":
+		case "SSSSY":
+		case "SSSTY":
+		case "SSSMFY":
+		case "SSSMSY":
+			uType = "Student Satisfaction Survey";
+			break;
+        default:
+            uType = userType;
+    }
 
-    $(".panel-title").html(userType + " Feedback Form");
+    $(".panel-title").html(uType + " Feedback Form");
     //$("title").html(userType + " Feedback Form");
 
     var questions = [];
-    var teachers = [];
+
     $.ajax({
-        url: GloableWebsite + 'api/Feedback/GetFeedbackDetails?CollegeCode=' + collegeCode + '&userType=' + userType,
+        url: GloableWebsite + 'api/Feedback/GetFeedbackQuestions?CollegeCode=' + collegeCode + '&userType=' + userType,
         contentType: "application/json",
         success: function (data, status, jqXHR) {
+            ipAddress = jqXHR.getResponseHeader('ipaddress');
+            fwdIPAddresses = jqXHR.getResponseHeader('FwdIPAddresses');
             questions = data;
             FeedbackQuestionListBind(questions);
         },
@@ -42,22 +106,6 @@ $(document).ready(function () {
         },
         type: 'GET'
     });
-
-    if (userType.toLowerCase() == "teacher") {
-        $.ajax({
-            url: GloableWebsite + 'api/Feedback/GetTeacherDetails?id=' + collegeCode,
-            contentType: "application/json",
-            success: function (data, status, jqXHR) {
-                teachers = data;
-                TeacherListBind(teachers);
-            },
-            error: function (jqXHR, status) {
-                // error handler
-                console.log(jqXHR);
-            },
-            type: 'GET'
-        });
-    }
 
     $("#btnSubmitAns").click(function () {
         $("#successmsg").hide();
@@ -69,11 +117,7 @@ $(document).ready(function () {
         var teacherCode = value[0];
         var subjectCode = value[1];
         */
-        var ansData = '{"userId" : "102' + crn + '","teacherCode" : "" , "subjectCode" :  "", "collegeCode" : ' + collegeCode + ', "userType": "' + userType + '"';
-
-        if (userType.toLowerCase() == "teacher") {
-            ansData = '{"userId" : "102' + crn + '","teacherCode" : "' + $("#dd_teachers").find(":selected").val() + '" , "subjectCode" :  "' + $("#dd_teachers").find(":selected").attr("subjectcode") + '", "collegeCode" : ' + collegeCode + ', "userType": "' + userType + '"';
-        }
+        var ansData = '{"userId" : "102' + crn + '","teacherCode" : "" , "subjectCode" :  "", "specialisation" : "'+specialisation+'", "collegeCode" : ' + collegeCode + ', "userType": "' + userType + "\"";
 
         var validationArraray = [];
 
@@ -108,7 +152,7 @@ $(document).ready(function () {
                 }
                 else {
                     $("#txt_" + questions[i].id + "_2").removeClass("InvalidError");
-                    ansData = ansData + ", " + '"' + questions[i].id + '" : "' + Ans1 + '"';
+                    ansData = ansData + ", " + '"' + questions[i].id + '" : ["' + Ans1 + '"]';
                 }
             }
             else if (questions[i].type == 'dropdown') {
@@ -141,19 +185,6 @@ $(document).ready(function () {
         }
     });
 });
-
-function TeacherListBind(teachers) {
-    var element = "<label style='padding: 10px;' for='dd_teachers'>Select teacher to give feedback:</label> <select id='dd_teachers' name='dd_teachers'><option selected value='-1'>--Select Teacher--</option>";
-
-    for (i = 0; i < teachers.length; i++) {
-        if (teachers[i].course.toLowerCase() == decodeURIComponent(courseyear.toLowerCase()) && teachers[i].subCourse.toLowerCase() == decodeURIComponent(specialisation.toLowerCase()) && teachers[i].semester.toLowerCase() == semester.toLowerCase()) {
-            element += "<option value='" + teachers[i].teacherCode + "' subjectCode='" + teachers[i].subjectCode + "'>" + teachers[i].teacherName + " (" + teachers[i].subjectName + ")" + "</option>";
-        }
-    }
-
-    element += "</select>";
-    $("#teacherDropdown").append(element);
-}
 
 function FeedbackQuestionListBind(questions) {
     var questionList = '<div class="form-group">';
@@ -192,34 +223,36 @@ function FeedbackQuestionListBind(questions) {
 
 function PostAnsData(_data) {
     $(".loader-img").show();
-
+    console.log("1",_data);
     var model = JSON.parse(_data);
+    console.log("2", _data);
     //model.userType = localStorage.getItem("roleType");
+    model.ipAddress = ipAddress;
+    model.fwdIPAddresses = fwdIPAddresses;
     _data = JSON.stringify(model);
-
-    var api = GloableWebsite + "api/CommonFeedback/AddFeedback";
-    if (userType.toLowerCase() == "teacher") {
-        api = GloableWebsite + "api/Feedback/AddTeacherFeedbacks";
-    }
-
+    console.log("3", _data);
     $.ajax({
         type: "POST",
-        url: api,
+        url: GloableWebsite + "api/CommonFeedback/AddCommonFeedback",
         data: _data,
         contentType: "application/json",
+        beforeSend: function (xhr) {
+            xhr.setRequestHeader('collegeCode', collegeCode);
+            xhr.setRequestHeader('userType', userType);
+        },
         success: function (data, status, jqXHR) {
             $(".loader-img").hide();
             $('#successmsg').fadeIn().delay(800).fadeOut();
             $("#commonfeedbackForm").hide();
             var feedbackStatus = [];
-            alert(userType + " Feedback submitted successfully.");
+            alert("Feedback submitted successfully.");
             setTimeout(function () { location.reload(true); }, 800);
         },
 
         error: function (jqXHR, status) {
             $(".loader-img").hide();
             $("#errormsg").show();
-            alert("An error occurred while submitting " + userType + " Feedback.");
+            alert("An error occurred while submitting " + localStorage.getItem("roleType") + " Feedback.");
             console.log(jqXHR);
         }
     });

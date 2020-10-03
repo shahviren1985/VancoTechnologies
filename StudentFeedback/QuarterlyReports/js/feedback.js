@@ -111,6 +111,17 @@ $(document).ready(function () {
                 }
                 ansData = ansData + ", " + '"' + questions[i].id + '" : "' + ans + '"';
             }
+            else if (questions[i].type == 'dropdown') {
+                var ansDd = $('select[id=dd_' + questions[i].id + ']').children("option:selected").val();
+                if (ansDd == undefined) {
+                    ansDd = '';
+                    validationArraray.push('dv_' + questions[i].id);
+                }
+                else {
+                    $("#dv_" + questions[i].id).removeClass("InvalidError");
+                }
+                ansData = ansData + ", " + '"' + questions[i].id + '" : "' + ansDd + '"';
+            }
             else if (questions[i].type == 'text') {
                 var Ans1 = $("#txt_" + questions[i].id + "_1").val();
                 if (Ans1 == undefined || Ans1 == null || Ans1 == "") {
@@ -119,14 +130,15 @@ $(document).ready(function () {
                 else {
                     $("#txt_" + questions[i].id + "_1").removeClass("InvalidError");
                 }
-                var Ans2 = $("#txt_" + questions[i].id + "_2").val();
+                /*var Ans2 = $("#txt_" + questions[i].id + "_2").val();
                 if (Ans2 == undefined || Ans2 == null || Ans2 == "") {
                     validationArraray.push("txt_" + questions[i].id + "_2");
                 }
                 else {
                     $("#txt_" + questions[i].id + "_2").removeClass("InvalidError");
-                }
-                ansData = ansData + ", " + '"' + questions[i].id + '" : ["' + Ans1 + '", "' + Ans2 + '"]';
+                }*/
+                //ansData = ansData + ", " + '"' + questions[i].id + '" : ["' + Ans1 + '", "' + Ans2 + '"]';
+                ansData = ansData + ", " + '"' + questions[i].id + '" : "' + Ans1 + '"';
             }
         }
 
@@ -152,16 +164,30 @@ $(document).ready(function () {
 function FeedbackQuestionListBind(questions) {
     var questionList = '<div class="form-group">';
     for (var i = 0; i < questions.length; i++) {
-        questionList = questionList + '<div class="ques"> <strong> <span>' + (i + 1) + '. </span>' + questions[i].question + ' </strong> </div> <div id="dv_' + questions[i].id + '">';
 
+        if (questions[i].id == "a0") {
+            questionList = questionList + '<div class="ques"> <strong>' + questions[i].question + ' </strong> </div> <div id="dv_' + questions[i].id + '">';
+            continue;
+        }
+        else {
+            questionList = questionList + '<div class="ques"> <strong> <span>' + (i) + '. </span>' + questions[i].question + ' </strong> </div> <div id="dv_' + questions[i].id + '">';
+        }
         if (questions[i].type == 'radio') {
             for (var j = 0; j < questions[i].optionValues.length; j++) {
                 questionList = questionList + '<label class="radio"> <input type="radio" value="' + questions[i].optionValues[j] + '" name="rdo_' + questions[i].id + '"> ' + questions[i].optionValues[j] + ' </label>';
             }
         }
+        else if (questions[i].type == 'dropdown') {
+            questionList += "<label class='dropdown'><select id='dd_" + questions[i].id+"'><option value='-1' selected='selected'>---Select---</option>";
+            for (var q = 0; q < questions[i].optionValues.length; q++) {
+                questionList = questionList + '<option value="' + questions[i].optionValues[q] + '">' + questions[i].optionValues[q] + ' </option>';
+            }
+
+            questionList += "</select>";
+        }
         else if (questions[i].type == 'text') {
             questionList = questionList + '<textarea class="form-control" id="txt_' + questions[i].id + '_1" name="txt_' + questions[i].id + '" rows="2" placeholder="' + questions[i].placeHolder + '"></textarea>';
-            questionList = questionList + '<textarea class="form-control" id="txt_' + questions[i].id + '_2" name="txt_' + questions[i].id + '" rows="2" placeholder="' + questions[i].placeHolder + '"></textarea>';
+            //questionList = questionList + '<textarea class="form-control" id="txt_' + questions[i].id + '_2" name="txt_' + questions[i].id + '" rows="2" placeholder="' + questions[i].placeHolder + '"></textarea>';
         }
 
         questionList = questionList + '</div></div>';

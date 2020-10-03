@@ -127,6 +127,7 @@
     <Content Include="css\style.css" />
     <Content Include="Analysis.html" />
     <Content Include="js\ParentFeedback.js" />
+    <Content Include="ProgramOutcomeFeedback.html" />
     <Content Include="ParentFeedback.html" />
     <Content Include="StudentFeedback.html" />
     <Content Include="Summary.html" />
@@ -256,8 +257,14 @@
     <Content Include="App_Data\105_FeedbackQuestions.json" />
     <Content Include="App_Data\105_PeerAllDepartment_Questions.json" />
     <Content Include="App_Data\103_FeedbackQuestions.json" />
-    <Content Include="App_Data\101_ExitForm_MCQ_AnswerColumns_.json" />
     <Content Include="App_Data\teachers_105.json" />
+    <Content Include="App_Data\105_Parent_Questions.json" />
+    <Content Include="App_Data\105_Teachers_Questions.json" />
+    <Content Include="App_Data\105_Employer_Questions.json" />
+    <Content Include="App_Data\105_Student_Questions.json" />
+    <Content Include="App_Data\105_Alumni_Questions.json" />
+    <Content Include="App_Data\105_Teacher_Questions.json" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\QuerterlyReports.pubxml" />
     <Content Include="StakeholderFeedback.html" />
     <Content Include="templates\Teachers2.html" />
@@ -268,7 +275,6 @@
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="UserData\teachers_101old.json" />
     <Content Include="UserData\teachers_102.json" />
     <Content Include="UserData\teachers_101.json" />
     <Content Include="UserData\Course_101.json" />
@@ -282,7 +288,6 @@
     <Content Include="UserData\teachers_104.json" />
     <Content Include="UserData\teachers_105.json" />
     <Content Include="UserData\Users.csv" />
-    <Content Include="UserData\teachers_105 - Copy.json" />
     <Content Include="UserData\Course_103.json" />
     <Content Include="UserData\teachers_103.json" />
     <None Include="Web.Debug.config">

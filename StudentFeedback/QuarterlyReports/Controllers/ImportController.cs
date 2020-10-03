@@ -267,11 +267,12 @@ namespace QuarterlyReports.Controllers
                             feedback.CollegeCode = "105";
                             if (teachers.FirstOrDefault(t => t.SubjectCode == subjectCode) != null)
                             {
-                                var teacher = teachers.FirstOrDefault(t => t.SubjectCode == subjectCode && t.Semester == sem && t.Course == user.Course && t.SubCourse == user.SubCourse && t.TeacherName == teacherName);
+                                user.Course = string.IsNullOrEmpty(user.Course) ? "" : user.Course;
+                                var teacher = teachers.FirstOrDefault(t => t.SubjectCode == subjectCode && t.Semester == sem && t.Course.Replace(".", "").ToLower() == user.Course.Replace(".", "").ToLower() && t.SubCourse.Trim().ToLower() == user.SubCourse.Trim().ToLower() && t.TeacherName.Trim().ToLower() == teacherName.Trim().ToLower());
 
                                 if (teacher == null)
                                 {
-                                    System.Diagnostics.Debug.WriteLine("Subject:" + subjectCode + ",Course:" + user.Course + ", SubCourse:" + user.SubCourse);
+                                    System.Diagnostics.Debug.WriteLine("Subject:" + subjectCode + ",Course:" + user.Course + ", SubCourse:" + user.SubCourse + ", Teacher:" + teacherName);
                                 }
                                 else
                                 {

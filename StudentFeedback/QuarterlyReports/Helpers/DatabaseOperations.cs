@@ -1271,6 +1271,87 @@ namespace QuarterlyReports
             }
         }
 
+        public void GetMDShahFeedabck()
+        {
+            int currentyear = 2017;
+            int nextyear = 18;
+            StringBuilder str = new StringBuilder();
+            for (int j = 0; j < 3; j++)
+            {
+                string getUserQuery = "select * from commonfeedback where usertype='Student' and collegecode='105' and feedbackid>3254 and a3='" + currentyear + "-" + nextyear + "';";
+
+                DataSet dsItems = new DataSet();
+                dsItems = GetQuery(getUserQuery);
+                if (dsItems.Tables[0].Rows != null && dsItems.Tables[0].Rows.Count > 0)
+                {
+                    double sum = 0;
+                    double counter = 0;
+                    var ienumlist = dsItems.Tables[0].AsEnumerable();
+                    int totalRows = 0;
+                    for (int i = 5; i < 13; i++)
+                    {
+                        if (i == 12)
+                            i = 14;
+
+                        string columnname = "a" + i;
+                        var dRows = ienumlist.Select(s => s.Field<string>(columnname));
+                        totalRows = dRows.Count();
+                        int one = 0;
+                        int two = 0;
+                        int three = 0;
+                        int four = 0;
+                        int five = 0;
+
+                        foreach (string dr in dRows)
+                        {
+                            int sValue = 0;
+                            string strValue = string.IsNullOrEmpty(dr) ? "" : dr.Trim().Substring(0, 1);
+                            bool isParse = int.TryParse(strValue, out sValue);
+                            if (isParse)
+                            {
+                                counter++;
+
+                                switch (strValue)
+                                {
+                                    case "1":
+                                        sValue = 5;
+                                        one++;
+                                        break;
+                                    case "2":
+                                        sValue = 4;
+                                        two++;
+                                        break;
+                                    case "3":
+                                        sValue = 3;
+                                        three++;
+                                        break;
+                                    case "4":
+                                        sValue = 2;
+                                        four++;
+                                        break;
+                                    case "5":
+                                        sValue = 1;
+                                        five++;
+                                        break;
+                                }
+
+                                sum += sValue;
+                            }
+                        }
+
+                        double avg = Math.Round(sum / counter, 2);
+                        str.AppendLine(currentyear + "=" + nextyear + " => a" + i + ": Excellent:" + (one * 100 /totalRows) + ", Very Good:" + (two * 100 / totalRows) + ", Good:" + (three * 100 / totalRows) + ", Average:" + (four * 100 / totalRows) + ", Poor: "+ (five * 100 / totalRows));
+                        //str.AppendLine(currentyear + "=" + nextyear + " => a" + i + "=" + avg);
+                    }
+                }
+
+                currentyear++;
+                nextyear++;
+            }
+
+            string finalo = str.ToString();
+        }
+
         public ReportCard AcademicAdministratorReportCard2(string adminName, string collageCode, string academicYear)
         {
             ReportCard rc = null;
@@ -1972,7 +2053,8 @@ namespace QuarterlyReports
                     DataRow r2 = dt.NewRow();
                     r2["SR NO."] = "";
                     r2["THE TEACHER"] = "GRAND MEAN";
-                    double grandMean = Math.Round(dt.AsEnumerable().Average(r => Convert.ToDouble(r.Field<string>("AVERAGE"))), 2);
+                    double grandMean = Math.Round(dt.AsEnumerable().Sum(r => Convert.ToDouble(r.Field<string>("AVERAGE"))), 2);
+                    grandMean = grandMean / (dt.Rows.Count - 1);
                     rc.GrandMean = grandMean;
                     rc.GrandPercentage = Math.Round((grandMean * 100) / 5);
                     r2["AVERAGE"] = grandMean;

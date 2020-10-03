@@ -344,6 +344,38 @@ namespace QuarterlyReports.Controllers
 
         }
 
+        [HttpGet]
+        public HttpResponseMessage GetFeedbackQuestions(string CollegeCode = null, string userType = null)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(CollegeCode) || string.IsNullOrEmpty(userType))
+                {
+                    string filePath = System.Web.Hosting.HostingEnvironment.MapPath(@"~/App_Data/FeedbackQuestions.json");
+                    string allText = System.IO.File.ReadAllText(filePath);
+                    List<FeedbackQuestions> response = JsonConvert.DeserializeObject<List<FeedbackQuestions>>(allText);
+                    HttpResponseMessage message = Request.CreateResponse(HttpStatusCode.OK, response);
+                    message.Headers.Add("ipaddress", HttpContext.Current.Request.UserHostAddress);
+                    return message;
+                }
+                else
+                {
+                    string filePath = System.Web.Hosting.HostingEnvironment.MapPath(@"~/App_Data/" + CollegeCode + "_" + userType + "_Questions.json");
+                    string allText = System.IO.File.ReadAllText(filePath);
+                    List<FeedbackQuestions> message  = JsonConvert.DeserializeObject<List<FeedbackQuestions>>(allText);
+                    HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.OK, message);
+                    response.Headers.Add("IPAddress", HttpContext.Current.Request.UserHostAddress);
+                    response.Headers.Add("FwdIPAddresses", HttpContext.Current.Request.UserHostAddress);
+                    return response;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+        }
+
         [HttpPost]
         public HttpResponseMessage AddExitForm(ExitForm model)
         {
