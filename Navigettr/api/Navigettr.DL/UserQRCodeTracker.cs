@@ -22,5 +22,11 @@ namespace Navigettr.Data
         public Nullable<int> UserId { get; set; }
         public int Id { get; set; }
         public int LocationId { get; set; }
+        public Nullable<double> Rate { get; set; }
+        public string FeedbackRating { get; set; }
+        public string FeedbackComment { get; set; }
+        public string ServiceType { get; set; }
+        public Nullable<double> Fees { get; set; }
+        public string FeesCurrency { get; set; }
     }
 }

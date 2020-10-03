@@ -33,6 +33,8 @@ namespace Navigettr.Data
         public string MobileNumber { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string Name { get; set; }
+        public string Nationality { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<PartnerDetail> PartnerDetails { get; set; }

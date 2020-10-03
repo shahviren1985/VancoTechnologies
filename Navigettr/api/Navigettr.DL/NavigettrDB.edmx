@@ -40,6 +40,8 @@
           <Property Name="DateExpiry" Type="datetime" />
           <Property Name="Status" Type="varchar" MaxLength="20" Nullable="false" />
           <Property Name="RedirectLink" Type="varchar(max)" />
+          <Property Name="Fees" Type="decimal" Precision="10" Scale="5" />
+          <Property Name="FeesCurrency" Type="varchar" MaxLength="5" />
         </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'navigettr.dbo.PartnerLocationDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -69,7 +71,7 @@ warning 6002: The table/view 'navigettr.dbo.PartnerLocationDetails' does not hav
           <Property Name="DateActivated" Type="datetime" Nullable="false" />
           <Property Name="DateExpiry" Type="datetime" Nullable="false" />
           <Property Name="Status" Type="varchar" MaxLength="20" Nullable="false" />
-          <Property Name="IFSCCode" Type="nchar" MaxLength="20" />
+          <Property Name="IFSCCode" Type="varchar" MaxLength="20" />
         </EntityType>
         <EntityType Name="PartnerLocationWorkTime">
           <Key>
@@ -114,7 +116,7 @@ warning 6002: The table/view 'navigettr.dbo.PartnerLocationDetails' does not hav
           <Property Name="DateCreated" Type="datetime" Nullable="false" />
           <Property Name="LastModified" Type="datetime" Nullable="false" />
           <Property Name="Status" Type="varchar" MaxLength="20" Nullable="false" />
-          <Property Name="RateType" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="RateType" Type="nchar" MaxLength="20" Nullable="false" />
         </EntityType>
         <EntityType Name="Roles">
           <Key>
@@ -123,6 +125,33 @@ warning 6002: The table/view 'navigettr.dbo.PartnerLocationDetails' does not hav
           <Property Name="RoleId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="RoleName" Type="varchar" MaxLength="20" Nullable="false" />
           <Property Name="Status" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'navigettr.dbo.SupportRequests' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="SupportRequests">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="MobileNumber" />
+            <PropertyRef Name="CountryCode" />
+            <PropertyRef Name="QueryType" />
+            <PropertyRef Name="Query" />
+            <PropertyRef Name="DateCreated" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nchar" MaxLength="50" Nullable="false" />
+          <Property Name="MobileNumber" Type="nchar" MaxLength="20" Nullable="false" />
+          <Property Name="CountryCode" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="EmailAddress" Type="nchar" MaxLength="250" />
+          <Property Name="QueryType" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="Query" Type="nchar" MaxLength="1000" Nullable="false" />
+          <Property Name="DateCreated" Type="date" Nullable="false" />
+          <Property Name="Status" Type="nchar" MaxLength="10" />
+          <Property Name="Param1" Type="nchar" MaxLength="100" />
+          <Property Name="Param2" Type="nchar" MaxLength="100" />
+          <Property Name="Param3" Type="nchar" MaxLength="100" />
+          <Property Name="Param4" Type="nchar" MaxLength="100" />
+          <Property Name="Param5" Type="nchar" MaxLength="100" />
         </EntityType>
         <EntityType Name="SystemParam">
           <Key>
@@ -136,6 +165,40 @@ warning 6002: The table/view 'navigettr.dbo.PartnerLocationDetails' does not hav
           <Property Name="ParentId" Type="int" />
           <Property Name="DateCreated" Type="datetime" Nullable="false" />
           <Property Name="Status" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'navigettr.dbo.UserBlockRateDetails' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="UserBlockRateDetails">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="FromCurrency" />
+            <PropertyRef Name="ToCurrency" />
+            <PropertyRef Name="Amount" />
+            <PropertyRef Name="Rate" />
+            <PropertyRef Name="Product" />
+            <PropertyRef Name="DateCreated" />
+            <PropertyRef Name="OfferValidityHours" />
+            <PropertyRef Name="OfferValidityMinutes" />
+            <PropertyRef Name="OfferValiditySeconds" />
+            <PropertyRef Name="FirstName" />
+            <PropertyRef Name="LastName" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="FromCurrency" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="ToCurrency" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Amount" Type="decimal" Precision="6" Scale="2" Nullable="false" />
+          <Property Name="Rate" Type="decimal" Precision="18" Scale="5" Nullable="false" />
+          <Property Name="Product" Type="nchar" MaxLength="50" Nullable="false" />
+          <Property Name="DateCreated" Type="date" Nullable="false" />
+          <Property Name="OfferValidityHours" Type="int" Nullable="false" />
+          <Property Name="OfferValidityMinutes" Type="int" Nullable="false" />
+          <Property Name="OfferValiditySeconds" Type="int" Nullable="false" />
+          <Property Name="FirstName" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="LastName" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="PartnerId" Type="int" />
+          <Property Name="LocationId" Type="int" />
         </EntityType>
         <EntityType Name="UserDetails">
           <Key>
@@ -152,6 +215,8 @@ warning 6002: The table/view 'navigettr.dbo.PartnerLocationDetails' does not hav
           <Property Name="MobileNumber" Type="varchar" MaxLength="50" />
           <Property Name="FirstName" Type="varchar" MaxLength="50" />
           <Property Name="LastName" Type="varchar" MaxLength="50" />
+          <Property Name="Name" Type="varchar" MaxLength="250" />
+          <Property Name="Nationality" Type="varchar" MaxLength="100" />
         </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'navigettr.dbo.UserLocationTracker' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -202,6 +267,12 @@ warning 6002: The table/view 'navigettr.dbo.UserQRCodeTracker' does not have a p
           <Property Name="UserId" Type="int" />
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="LocationId" Type="int" Nullable="false" />
+          <Property Name="Rate" Type="float" />
+          <Property Name="FeedbackRating" Type="varchar" MaxLength="50" />
+          <Property Name="FeedbackComment" Type="varchar" MaxLength="500" />
+          <Property Name="ServiceType" Type="varchar" MaxLength="50" />
+          <Property Name="Fees" Type="float" />
+          <Property Name="FeesCurrency" Type="varchar" MaxLength="10" />
         </EntityType>
         <EntityType Name="UserReminders">
           <Key>
@@ -236,6 +307,7 @@ warning 6002: The table/view 'navigettr.dbo.UserRewardPoints' does not have a pr
 warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="UserSearchTracker">
           <Key>
+            <PropertyRef Name="Id" />
             <PropertyRef Name="City" />
             <PropertyRef Name="Country" />
             <PropertyRef Name="ZipCode" />
@@ -245,8 +317,8 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
             <PropertyRef Name="FromCurrency" />
             <PropertyRef Name="ToCurrency" />
             <PropertyRef Name="DateSearched" />
-            <PropertyRef Name="Id" />
           </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="UserId" Type="int" />
           <Property Name="City" Type="nchar" MaxLength="100" Nullable="false" />
           <Property Name="Country" Type="nchar" MaxLength="100" Nullable="false" />
@@ -258,7 +330,6 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
           <Property Name="ToCurrency" Type="nchar" MaxLength="5" Nullable="false" />
           <Property Name="DateSearched" Type="datetime" Nullable="false" />
           <Property Name="ResultsCount" Type="int" />
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <Association Name="FK_PartnerCharges_PartnerDetails">
           <End Role="PartnerDetails" Type="Self.PartnerDetails" Multiplicity="1" />
@@ -365,6 +436,15 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
         <Function Name="SP_FetchLocationWorkTimeDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="PartnerID" Type="int" Mode="In" />
         </Function>
+        <Function Name="SP_FetchOffers" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="City" Type="varchar" Mode="In" />
+          <Parameter Name="Country" Type="varchar" Mode="In" />
+          <Parameter Name="Lat" Type="varchar" Mode="In" />
+          <Parameter Name="Long" Type="varchar" Mode="In" />
+          <Parameter Name="Radius" Type="int" Mode="In" />
+          <Parameter Name="Page" Type="int" Mode="In" />
+          <Parameter Name="Pagedata" Type="int" Mode="In" />
+        </Function>
         <Function Name="SP_FetchPartnerCharges" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_FetchPartnerChargesByPartnerID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="PartnerID" Type="int" Mode="In" />
@@ -402,13 +482,49 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
         <Function Name="SP_FetchPartnerSettings" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="ID" Type="int" Mode="In" />
         </Function>
+        <Function Name="SP_FetchRecentTransactions" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="Page" Type="int" Mode="In" />
+          <Parameter Name="Pagedata" Type="int" Mode="In" />
+          <Parameter Name="TotalCount" Type="int" Mode="InOut" />
+        </Function>
+        <Function Name="SP_FetchServiceProviderLocations" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="PARTNERID" Type="int" Mode="In" />
+          <Parameter Name="RADIUS" Type="int" Mode="In" />
+          <Parameter Name="LAT" Type="varchar" Mode="In" />
+          <Parameter Name="LONG" Type="varchar" Mode="In" />
+          <Parameter Name="FromCurrency" Type="varchar" Mode="In" />
+          <Parameter Name="ToCurrency" Type="varchar" Mode="In" />
+          <Parameter Name="OrderByColumn" Type="varchar" Mode="In" />
+          <Parameter Name="OrderDirection" Type="varchar" Mode="In" />
+          <Parameter Name="Page" Type="int" Mode="In" />
+          <Parameter Name="Pagedata" Type="int" Mode="In" />
+          <Parameter Name="TotalCount" Type="int" Mode="InOut" />
+          <Parameter Name="Offers" Type="int" Mode="InOut" />
+          <Parameter Name="RedirectLink" Type="bit" Mode="InOut" />
+        </Function>
+        <Function Name="SP_FetchServiceProviders" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="RADIUS" Type="int" Mode="In" />
+          <Parameter Name="LAT" Type="varchar" Mode="In" />
+          <Parameter Name="LONG" Type="varchar" Mode="In" />
+          <Parameter Name="FromCurrency" Type="varchar" Mode="In" />
+          <Parameter Name="ToCurrency" Type="varchar" Mode="In" />
+          <Parameter Name="Amount" Type="decimal" Mode="In" />
+          <Parameter Name="OrderByColumn" Type="varchar" Mode="In" />
+          <Parameter Name="OrderDirection" Type="varchar" Mode="In" />
+          <Parameter Name="Page" Type="int" Mode="In" />
+          <Parameter Name="Pagedata" Type="int" Mode="In" />
+          <Parameter Name="TotalCount" Type="int" Mode="InOut" />
+          <Parameter Name="Offers" Type="int" Mode="InOut" />
+          <Parameter Name="RedirectLink" Type="bit" Mode="InOut" />
+        </Function>
+        <Function Name="SP_FetchServiceProvidersWorkLocations" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="LocationId" Type="varchar(max)" Mode="In" />
+        </Function>
         <Function Name="SP_FetchSystemParam" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
         <Function Name="SP_FetchUnProcessedLocations" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
-        <Function Name="SP_FetchUserRewardPoints" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="UserId" Type="int" Mode="In" />
-        </Function>
         <Function Name="SP_forgotPassword" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="EmailId" Type="varchar" Mode="In" />
+          <Parameter Name="mobileNumber" Type="varchar" Mode="In" />
         </Function>
         <Function Name="SP_PartnerCharges_InsertUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="PartnerChargesID" Type="int" Mode="In" />
@@ -506,6 +622,22 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
           <Parameter Name="Status" Type="varchar" Mode="In" />
           <Parameter Name="StatusResult" Type="varchar" Mode="InOut" />
         </Function>
+        <Function Name="SP_UserBlockRateDetails_InsertUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="UserId" Type="int" Mode="In" />
+          <Parameter Name="FromCurrency" Type="varchar" Mode="In" />
+          <Parameter Name="ToCurrency" Type="varchar" Mode="In" />
+          <Parameter Name="Amount" Type="decimal" Mode="In" />
+          <Parameter Name="Rate" Type="decimal" Mode="In" />
+          <Parameter Name="Product" Type="varchar" Mode="In" />
+          <Parameter Name="DateCreated" Type="date" Mode="In" />
+          <Parameter Name="OfferValidityHours" Type="int" Mode="In" />
+          <Parameter Name="OfferValidityMinutes" Type="int" Mode="In" />
+          <Parameter Name="OfferValiditySeconds" Type="int" Mode="In" />
+          <Parameter Name="FirstName" Type="varchar" Mode="In" />
+          <Parameter Name="LastName" Type="varchar" Mode="In" />
+          <Parameter Name="PartnerId" Type="int" Mode="In" />
+          <Parameter Name="LocationId" Type="int" Mode="In" />
+        </Function>
         <Function Name="SP_UserDetails_InsertUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="UserId" Type="int" Mode="In" />
           <Parameter Name="LoginType" Type="varchar" Mode="In" />
@@ -513,10 +645,9 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
           <Parameter Name="Password" Type="varchar" Mode="In" />
           <Parameter Name="RoleId" Type="int" Mode="In" />
           <Parameter Name="UStatus" Type="varchar" Mode="In" />
-          <Parameter Name="FirstName" Type="varchar" Mode="In" />
-          <Parameter Name="LastName" Type="varchar" Mode="In" />
+          <Parameter Name="Name" Type="varchar" Mode="In" />
+          <Parameter Name="Nationality" Type="varchar" Mode="In" />
           <Parameter Name="MobileNumber" Type="varchar" Mode="In" />
-          <Parameter Name="Email" Type="varchar" Mode="In" />
           <Parameter Name="StatusResult" Type="varchar" Mode="InOut" />
           <Parameter Name="StatusResultUserId" Type="varchar" Mode="InOut" />
         </Function>
@@ -539,6 +670,16 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
           <Parameter Name="FromCurrency" Type="varchar" Mode="In" />
           <Parameter Name="ToCurrency" Type="varchar" Mode="In" />
           <Parameter Name="DateScanned" Type="datetime" Mode="In" />
+          <Parameter Name="Rate" Type="float" Mode="In" />
+          <Parameter Name="ServiceType" Type="varchar" Mode="In" />
+          <Parameter Name="Fees" Type="float" Mode="In" />
+          <Parameter Name="FeesCurrency" Type="varchar" Mode="In" />
+          <Parameter Name="StatusResult" Type="varchar" Mode="InOut" />
+        </Function>
+        <Function Name="SP_UserQRCodeTracker_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Id" Type="int" Mode="In" />
+          <Parameter Name="Rating" Type="varchar" Mode="In" />
+          <Parameter Name="Comment" Type="varchar" Mode="In" />
           <Parameter Name="StatusResult" Type="varchar" Mode="InOut" />
         </Function>
         <Function Name="SP_UserRewardPoints_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
@@ -563,8 +704,26 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
           <Parameter Name="ResultsCount" Type="int" Mode="In" />
           <Parameter Name="StatusResult" Type="varchar" Mode="InOut" />
         </Function>
+        <Function Name="SP_UserSupportRequests_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="Name" Type="varchar" Mode="In" />
+          <Parameter Name="MobileNumber" Type="varchar" Mode="In" />
+          <Parameter Name="CountryCode" Type="varchar" Mode="In" />
+          <Parameter Name="EmailAddress" Type="varchar" Mode="In" />
+          <Parameter Name="QueryType" Type="varchar" Mode="In" />
+          <Parameter Name="Query" Type="varchar" Mode="In" />
+          <Parameter Name="Status" Type="varchar" Mode="In" />
+          <Parameter Name="Param1" Type="varchar" Mode="In" />
+          <Parameter Name="Param2" Type="varchar" Mode="In" />
+          <Parameter Name="Param3" Type="varchar" Mode="In" />
+          <Parameter Name="Param4" Type="varchar" Mode="In" />
+          <Parameter Name="Param5" Type="varchar" Mode="In" />
+          <Parameter Name="StatusResult" Type="varchar" Mode="InOut" />
+        </Function>
         <Function Name="usp_Roles_Get" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
           <Parameter Name="ID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="SP_FetchLocationWorkTimeDetails1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="navigettradmin" StoreFunctionName="SP_FetchLocationWorkTimeDetails">
+          <Parameter Name="PartnerID" Type="int" Mode="In" />
         </Function>
         <EntityContainer Name="NavigettrModelStoreContainer">
           <EntitySet Name="LoginHistory" EntityType="Self.LoginHistory" Schema="dbo" store:Type="Tables" />
@@ -598,6 +757,43 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
     [PartnerLocationDetails].[IFSCCode] AS [IFSCCode]
     FROM [dbo].[PartnerLocationDetails] AS [PartnerLocationDetails]</DefiningQuery>
           </EntitySet>
+          <EntitySet Name="SupportRequests" EntityType="Self.SupportRequests" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [SupportRequests].[Id] AS [Id], 
+    [SupportRequests].[Name] AS [Name], 
+    [SupportRequests].[MobileNumber] AS [MobileNumber], 
+    [SupportRequests].[CountryCode] AS [CountryCode], 
+    [SupportRequests].[EmailAddress] AS [EmailAddress], 
+    [SupportRequests].[QueryType] AS [QueryType], 
+    [SupportRequests].[Query] AS [Query], 
+    [SupportRequests].[DateCreated] AS [DateCreated], 
+    [SupportRequests].[Status] AS [Status], 
+    [SupportRequests].[Param1] AS [Param1], 
+    [SupportRequests].[Param2] AS [Param2], 
+    [SupportRequests].[Param3] AS [Param3], 
+    [SupportRequests].[Param4] AS [Param4], 
+    [SupportRequests].[Param5] AS [Param5]
+    FROM [dbo].[SupportRequests] AS [SupportRequests]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="UserBlockRateDetails" EntityType="Self.UserBlockRateDetails" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [UserBlockRateDetails].[Id] AS [Id], 
+    [UserBlockRateDetails].[UserId] AS [UserId], 
+    [UserBlockRateDetails].[FromCurrency] AS [FromCurrency], 
+    [UserBlockRateDetails].[ToCurrency] AS [ToCurrency], 
+    [UserBlockRateDetails].[Amount] AS [Amount], 
+    [UserBlockRateDetails].[Rate] AS [Rate], 
+    [UserBlockRateDetails].[Product] AS [Product], 
+    [UserBlockRateDetails].[DateCreated] AS [DateCreated], 
+    [UserBlockRateDetails].[OfferValidityHours] AS [OfferValidityHours], 
+    [UserBlockRateDetails].[OfferValidityMinutes] AS [OfferValidityMinutes], 
+    [UserBlockRateDetails].[OfferValiditySeconds] AS [OfferValiditySeconds], 
+    [UserBlockRateDetails].[FirstName] AS [FirstName], 
+    [UserBlockRateDetails].[LastName] AS [LastName], 
+    [UserBlockRateDetails].[PartnerId] AS [PartnerId], 
+    [UserBlockRateDetails].[LocationId] AS [LocationId]
+    FROM [dbo].[UserBlockRateDetails] AS [UserBlockRateDetails]</DefiningQuery>
+          </EntitySet>
           <EntitySet Name="UserLocationTracker" EntityType="Self.UserLocationTracker" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
     [UserLocationTracker].[Id] AS [Id], 
@@ -616,7 +812,13 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
     [UserQRCodeTracker].[DateScanned] AS [DateScanned], 
     [UserQRCodeTracker].[UserId] AS [UserId], 
     [UserQRCodeTracker].[Id] AS [Id], 
-    [UserQRCodeTracker].[LocationId] AS [LocationId]
+    [UserQRCodeTracker].[LocationId] AS [LocationId], 
+    [UserQRCodeTracker].[Rate] AS [Rate], 
+    [UserQRCodeTracker].[FeedbackRating] AS [FeedbackRating], 
+    [UserQRCodeTracker].[FeedbackComment] AS [FeedbackComment], 
+    [UserQRCodeTracker].[ServiceType] AS [ServiceType], 
+    [UserQRCodeTracker].[Fees] AS [Fees], 
+    [UserQRCodeTracker].[FeesCurrency] AS [FeesCurrency]
     FROM [dbo].[UserQRCodeTracker] AS [UserQRCodeTracker]</DefiningQuery>
           </EntitySet>
           <EntitySet Name="UserRewardPoints" EntityType="Self.UserRewardPoints" store:Type="Tables" store:Schema="dbo">
@@ -631,6 +833,7 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
           </EntitySet>
           <EntitySet Name="UserSearchTracker" EntityType="Self.UserSearchTracker" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
+    [UserSearchTracker].[Id] AS [Id], 
     [UserSearchTracker].[UserId] AS [UserId], 
     [UserSearchTracker].[City] AS [City], 
     [UserSearchTracker].[Country] AS [Country], 
@@ -641,8 +844,7 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
     [UserSearchTracker].[FromCurrency] AS [FromCurrency], 
     [UserSearchTracker].[ToCurrency] AS [ToCurrency], 
     [UserSearchTracker].[DateSearched] AS [DateSearched], 
-    [UserSearchTracker].[ResultsCount] AS [ResultsCount], 
-    [UserSearchTracker].[Id] AS [Id]
+    [UserSearchTracker].[ResultsCount] AS [ResultsCount]
     FROM [dbo].[UserSearchTracker] AS [UserSearchTracker]</DefiningQuery>
           </EntitySet>
           <AssociationSet Name="FK_PartnerCharges_PartnerDetails" Association="Self.FK_PartnerCharges_PartnerDetails">
@@ -877,10 +1079,6 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
             <Parameter Name="Pagedata" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="SP_FetchSystemParam" ReturnType="Collection(NavigettrModel.SP_FetchSystemParam_Result)" />
-          <FunctionImport Name="SP_UserLogIn" ReturnType="Collection(NavigettrModel.SP_UserLogIn_Result)">
-            <Parameter Name="UserName" Mode="In" Type="String" />
-            <Parameter Name="Password" Mode="In" Type="String" />
-          </FunctionImport>
           <FunctionImport Name="SP_changePassword">
             <Parameter Name="UserId" Mode="In" Type="Int32" />
             <Parameter Name="oldPassword" Mode="In" Type="String" />
@@ -891,7 +1089,7 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
           <Parameter Name="PartnerID" Mode="In" Type="Int32" />
           </FunctionImport>
           <FunctionImport Name="SP_forgotPassword" ReturnType="Collection(NavigettrModel.SP_forgotPassword_Result1)">
-          <Parameter Name="EmailId" Mode="In" Type="String" />
+          <Parameter Name="mobileNumber" Mode="In" Type="String" />
           </FunctionImport>
           <FunctionImport Name="SP_FetchUnProcessedLocations" ReturnType="Collection(NavigettrModel.SP_FetchUnProcessedLocations_Result)" />
           <FunctionImport Name="SP_UserDetails_InsertUpdate">
@@ -901,10 +1099,9 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
             <Parameter Name="Password" Mode="In" Type="String" />
             <Parameter Name="RoleId" Mode="In" Type="Int32" />
             <Parameter Name="UStatus" Mode="In" Type="String" />
-            <Parameter Name="FirstName" Mode="In" Type="String" />
-            <Parameter Name="LastName" Mode="In" Type="String" />
+            <Parameter Name="Name" Mode="In" Type="String" />
+            <Parameter Name="Nationality" Mode="In" Type="String" />
             <Parameter Name="MobileNumber" Mode="In" Type="String" />
-            <Parameter Name="Email" Mode="In" Type="String" />
             <Parameter Name="StatusResult" Mode="InOut" Type="String" />
             <Parameter Name="StatusResultUserId" Mode="InOut" Type="String" />
           </FunctionImport>
@@ -929,6 +1126,10 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
             <Parameter Name="FromCurrency" Mode="In" Type="String" />
             <Parameter Name="ToCurrency" Mode="In" Type="String" />
             <Parameter Name="DateScanned" Mode="In" Type="DateTime" />
+            <Parameter Name="Rate" Mode="In" Type="Double" />
+            <Parameter Name="ServiceType" Mode="In" Type="String" />
+            <Parameter Name="Fees" Mode="In" Type="Double" />
+            <Parameter Name="FeesCurrency" Mode="In" Type="String" />
             <Parameter Name="StatusResult" Mode="InOut" Type="String" />
           </FunctionImport>
           <FunctionImport Name="SP_UserRewardPoints_Insert">
@@ -954,6 +1155,100 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
             <Parameter Name="StatusResult" Mode="InOut" Type="String" />
           </FunctionImport>
           <EntitySet Name="UserQRCodeTrackers" EntityType="NavigettrModel.UserQRCodeTracker" />
+          <FunctionImport Name="SP_FetchLocationWorkTimeDetails1" ReturnType="Collection(NavigettrModel.SP_FetchLocationWorkTimeDetails1_Result2)">
+          <Parameter Name="PartnerID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_FetchOffers">
+            <Parameter Name="City" Mode="In" Type="String" />
+            <Parameter Name="Country" Mode="In" Type="String" />
+            <Parameter Name="Lat" Mode="In" Type="String" />
+            <Parameter Name="Long" Mode="In" Type="String" />
+            <Parameter Name="Radius" Mode="In" Type="Int32" />
+            <Parameter Name="Page" Mode="In" Type="Int32" />
+            <Parameter Name="Pagedata" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <EntitySet Name="UserBlockRateDetails" EntityType="NavigettrModel.UserBlockRateDetail" />
+          <EntitySet Name="SupportRequests" EntityType="NavigettrModel.SupportRequest" />
+          <FunctionImport Name="SP_UserQRCodeTracker_Update">
+            <Parameter Name="Id" Mode="In" Type="Int32" />
+            <Parameter Name="Rating" Mode="In" Type="String" />
+            <Parameter Name="Comment" Mode="In" Type="String" />
+            <Parameter Name="StatusResult" Mode="InOut" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_UserSupportRequests_Insert">
+            <Parameter Name="Name" Mode="In" Type="String" />
+            <Parameter Name="MobileNumber" Mode="In" Type="String" />
+            <Parameter Name="CountryCode" Mode="In" Type="String" />
+            <Parameter Name="EmailAddress" Mode="In" Type="String" />
+            <Parameter Name="QueryType" Mode="In" Type="String" />
+            <Parameter Name="Query" Mode="In" Type="String" />
+            <Parameter Name="Status" Mode="In" Type="String" />
+            <Parameter Name="Param1" Mode="In" Type="String" />
+            <Parameter Name="Param2" Mode="In" Type="String" />
+            <Parameter Name="Param3" Mode="In" Type="String" />
+            <Parameter Name="Param4" Mode="In" Type="String" />
+            <Parameter Name="Param5" Mode="In" Type="String" />
+            <Parameter Name="StatusResult" Mode="InOut" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_FetchServiceProviders">
+            <Parameter Name="RADIUS" Mode="In" Type="Int32" />
+            <Parameter Name="LAT" Mode="In" Type="String" />
+            <Parameter Name="LONG" Mode="In" Type="String" />
+            <Parameter Name="FromCurrency" Mode="In" Type="String" />
+            <Parameter Name="ToCurrency" Mode="In" Type="String" />
+            <Parameter Name="Amount" Mode="In" Type="Decimal" />
+            <Parameter Name="OrderByColumn" Mode="In" Type="String" />
+            <Parameter Name="OrderDirection" Mode="In" Type="String" />
+            <Parameter Name="Page" Mode="In" Type="Int32" />
+            <Parameter Name="Pagedata" Mode="In" Type="Int32" />
+            <Parameter Name="TotalCount" Mode="InOut" Type="Int32" />
+            <Parameter Name="Offers" Mode="InOut" Type="Int32" />
+            <Parameter Name="RedirectLink" Mode="InOut" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SP_UserLogIn" ReturnType="Collection(NavigettrModel.SP_UserLogIn_Result)">
+            <Parameter Name="UserName" Mode="In" Type="String" />
+            <Parameter Name="Password" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_FetchRecentTransactions" ReturnType="Collection(NavigettrModel.SP_FetchRecentTransactions_Result1)">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="Page" Mode="In" Type="Int32" />
+            <Parameter Name="Pagedata" Mode="In" Type="Int32" />
+            <Parameter Name="TotalCount" Mode="InOut" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="SP_FetchServiceProviderLocations">
+            <Parameter Name="PARTNERID" Mode="In" Type="Int32" />
+            <Parameter Name="RADIUS" Mode="In" Type="Int32" />
+            <Parameter Name="LAT" Mode="In" Type="String" />
+            <Parameter Name="LONG" Mode="In" Type="String" />
+            <Parameter Name="FromCurrency" Mode="In" Type="String" />
+            <Parameter Name="ToCurrency" Mode="In" Type="String" />
+            <Parameter Name="OrderByColumn" Mode="In" Type="String" />
+            <Parameter Name="OrderDirection" Mode="In" Type="String" />
+            <Parameter Name="Page" Mode="In" Type="Int32" />
+            <Parameter Name="Pagedata" Mode="In" Type="Int32" />
+            <Parameter Name="TotalCount" Mode="InOut" Type="Int32" />
+            <Parameter Name="Offers" Mode="InOut" Type="Int32" />
+            <Parameter Name="RedirectLink" Mode="InOut" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="SP_FetchServiceProvidersWorkLocations">
+          <Parameter Name="LocationId" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="SP_UserBlockRateDetails_InsertUpdate" ReturnType="Collection(NavigettrModel.SP_UserBlockRateDetails_InsertUpdate_Result1)">
+            <Parameter Name="UserId" Mode="In" Type="Int32" />
+            <Parameter Name="FromCurrency" Mode="In" Type="String" />
+            <Parameter Name="ToCurrency" Mode="In" Type="String" />
+            <Parameter Name="Amount" Mode="In" Type="Decimal" />
+            <Parameter Name="Rate" Mode="In" Type="Decimal" />
+            <Parameter Name="Product" Mode="In" Type="String" />
+            <Parameter Name="DateCreated" Mode="In" Type="DateTime" />
+            <Parameter Name="OfferValidityHours" Mode="In" Type="Int32" />
+            <Parameter Name="OfferValidityMinutes" Mode="In" Type="Int32" />
+            <Parameter Name="OfferValiditySeconds" Mode="In" Type="Int32" />
+            <Parameter Name="FirstName" Mode="In" Type="String" />
+            <Parameter Name="LastName" Mode="In" Type="String" />
+            <Parameter Name="PartnerId" Mode="In" Type="Int32" />
+            <Parameter Name="LocationId" Mode="In" Type="Int32" />
+          </FunctionImport>
           </EntityContainer>
         <ComplexType Name="usp_Roles_Get_Result">
           <Property Type="Int32" Name="RoleId" Nullable="false" />
@@ -994,6 +1289,8 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
           <NavigationProperty Name="PartnerRates" Relationship="NavigettrModel.FK_PartnerRates_PartnerDetails" FromRole="PartnerDetail" ToRole="PartnerRate" />
           <NavigationProperty Name="PartnerCharges" Relationship="NavigettrModel.FK_PartnerCharges_PartnerDetails" FromRole="PartnerDetail" ToRole="PartnerCharge" />
           <Property Name="RedirectLink" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Fees" Type="Decimal" Precision="10" Scale="5" />
+          <Property Name="FeesCurrency" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="PartnerLocationDetail">
           <Key>
@@ -1016,7 +1313,7 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
           <Property Name="Status" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="PartnerDetail" Relationship="NavigettrModel.FK_PartnerLocationDetails_PartnerDetails" FromRole="PartnerLocationDetail" ToRole="PartnerDetail" />
           <NavigationProperty Name="PartnerLocationWorkTimes" Relationship="NavigettrModel.FK_PartnerLocationWorkTime_PartnerLocationDetails" FromRole="PartnerLocationDetail" ToRole="PartnerLocationWorkTime" />
-          <Property Name="IFSCCode" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="IFSCCode" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="PartnerLocationWorkTime">
           <Key>
@@ -1067,7 +1364,7 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
           <Property Name="LastModified" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="Status" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="PartnerDetail" Relationship="NavigettrModel.FK_PartnerRates_PartnerDetails" FromRole="PartnerRate" ToRole="PartnerDetail" />
-          <Property Name="RateType" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="RateType" Type="String" Nullable="false" MaxLength="20" FixedLength="true" Unicode="true" />
         </EntityType>
         <EntityType Name="Role">
           <Key>
@@ -1110,6 +1407,8 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
           <NavigationProperty Name="UserReminders" Relationship="NavigettrModel.FK_UserReminders_UserDetails" FromRole="UserDetail" ToRole="UserReminder" />
           <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Name" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="Nationality" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="UserNotification">
           <Key>
@@ -1369,13 +1668,6 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
           <Property Type="String" Name="status" Nullable="false" MaxLength="20" />
           <Property Type="Int32" Name="Id" Nullable="false" />
         </ComplexType>
-        <ComplexType Name="SP_UserLogIn_Result">
-          <Property Type="String" Name="name" Nullable="false" MaxLength="500" />
-          <Property Type="String" Name="logo" Nullable="false" MaxLength="500" />
-          <Property Type="Int32" Name="UserId" Nullable="false" />
-          <Property Type="String" Name="RoleName" Nullable="false" MaxLength="20" />
-          <Property Type="Int32" Name="ID" Nullable="false" />
-        </ComplexType>
         <ComplexType Name="SP_FetchLocationWorkTimeDetails_Result">
           <Property Type="Int32" Name="ID" Nullable="false" />
           <Property Type="Int32" Name="LocationId" Nullable="true" />
@@ -1508,6 +1800,12 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
           <Property Name="UserId" Type="Int32" />
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="LocationId" Type="Int32" Nullable="false" />
+          <Property Name="Rate" Type="Double" />
+          <Property Name="FeedbackRating" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="FeedbackComment" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="ServiceType" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Fees" Type="Double" />
+          <Property Name="FeesCurrency" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
         </EntityType>
         <ComplexType Name="SP_FetchPartnerRates_Result1">
           <Property Type="Int32" Name="Id" Nullable="false" />
@@ -1517,6 +1815,153 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
           <Property Type="Double" Name="indicative" Nullable="false" />
           <Property Type="String" Name="Status" Nullable="false" MaxLength="20" />
           <Property Type="String" Name="RateType" Nullable="false" MaxLength="10" />
+        </ComplexType>
+        <ComplexType Name="SP_FetchLocationWorkTimeDetails1_Result2">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="Int32" Name="LocationId" Nullable="true" />
+          <Property Type="String" Name="WorkDay" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="WorkStartTime" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="WorkEndTime" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Status" Nullable="false" MaxLength="20" />
+        </ComplexType>
+        <EntityType Name="UserBlockRateDetail">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="UserId" />
+            <PropertyRef Name="FromCurrency" />
+            <PropertyRef Name="ToCurrency" />
+            <PropertyRef Name="Amount" />
+            <PropertyRef Name="Rate" />
+            <PropertyRef Name="Product" />
+            <PropertyRef Name="DateCreated" />
+            <PropertyRef Name="OfferValidityHours" />
+            <PropertyRef Name="OfferValidityMinutes" />
+            <PropertyRef Name="OfferValiditySeconds" />
+            <PropertyRef Name="FirstName" />
+            <PropertyRef Name="LastName" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="FromCurrency" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="ToCurrency" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Amount" Type="Decimal" Nullable="false" Precision="6" Scale="2" />
+          <Property Name="Rate" Type="Decimal" Nullable="false" Precision="18" Scale="5" />
+          <Property Name="Product" Type="String" Nullable="false" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="OfferValidityHours" Type="Int32" Nullable="false" />
+          <Property Name="OfferValidityMinutes" Type="Int32" Nullable="false" />
+          <Property Name="OfferValiditySeconds" Type="Int32" Nullable="false" />
+          <Property Name="FirstName" Type="String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="LastName" Type="String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="PartnerId" Type="Int32" />
+          <Property Name="LocationId" Type="Int32" />
+        </EntityType>
+        <ComplexType Name="SP_UserBlockRateDetails_InsertUpdate_Result">
+          <Property Type="String" Name="PartnerName" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="PartnerLogoPath" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="RedirectLink" Nullable="true" />
+          <Property Type="String" Name="AddressLine1" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="AddressLine2" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="City" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Country" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="State" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="ZipCode" Nullable="true" MaxLength="100" />
+          <Property Type="Double" Name="Latitude" Nullable="true" />
+          <Property Type="Double" Name="Longitude" Nullable="true" />
+          <Property Type="String" Name="MobileNumber" Nullable="true" MaxLength="20" />
+        </ComplexType>
+        <ComplexType Name="SP_FetchRecentTransactions_Result">
+          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+          <Property Type="Double" Name="TransactionAmount" Nullable="false" />
+          <Property Type="String" Name="FromCurrency" Nullable="false" MaxLength="10" />
+          <Property Type="String" Name="ToCurrency" Nullable="false" MaxLength="10" />
+          <Property Type="DateTime" Name="DateScanned" Nullable="false" Precision="23" />
+          <Property Type="Double" Name="Rate" Nullable="true" />
+          <Property Type="String" Name="PartnerName" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="PartnerLogoPath" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="AddressLine1" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="AddressLine2" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="City" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="State" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Country" Nullable="true" MaxLength="100" />
+          <Property Type="Double" Name="Latitude" Nullable="true" />
+          <Property Type="Double" Name="Longitude" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="SupportRequest">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="Name" />
+            <PropertyRef Name="MobileNumber" />
+            <PropertyRef Name="CountryCode" />
+            <PropertyRef Name="QueryType" />
+            <PropertyRef Name="Query" />
+            <PropertyRef Name="DateCreated" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="MobileNumber" Type="String" Nullable="false" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="CountryCode" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="EmailAddress" Type="String" MaxLength="250" FixedLength="true" Unicode="true" />
+          <Property Name="QueryType" Type="String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="Query" Type="String" Nullable="false" MaxLength="1000" FixedLength="true" Unicode="true" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Status" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Param1" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="Param2" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="Param3" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="Param4" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="Param5" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <ComplexType Name="SP_UserLogIn_Result">
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="PartnerName" Nullable="false" MaxLength="9" />
+          <Property Type="String" Name="logo" Nullable="false" MaxLength="19" />
+          <Property Type="Int32" Name="UserId" Nullable="false" />
+          <Property Type="String" Name="RoleName" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="Name" Nullable="true" MaxLength="250" />
+          <Property Type="String" Name="Nationality" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="MobileNumber" Nullable="true" MaxLength="50" />
+        </ComplexType>
+        <ComplexType Name="SP_FetchRecentTransactions_Result1">
+          <Property Type="String" Name="FirstName" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="LastName" Nullable="true" MaxLength="50" />
+          <Property Type="Double" Name="TransactionAmount" Nullable="false" />
+          <Property Type="String" Name="FromCurrency" Nullable="false" MaxLength="10" />
+          <Property Type="String" Name="ToCurrency" Nullable="false" MaxLength="10" />
+          <Property Type="DateTime" Name="DateScanned" Nullable="false" Precision="23" />
+          <Property Type="Double" Name="Rate" Nullable="true" />
+          <Property Type="String" Name="PartnerName" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="PartnerLogoPath" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="AddressLine1" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="AddressLine2" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="City" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="State" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="Country" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="MobileNumber" Nullable="true" MaxLength="20" />
+          <Property Type="Double" Name="Latitude" Nullable="true" />
+          <Property Type="Double" Name="Longitude" Nullable="true" />
+          <Property Type="String" Name="ServiceType" Nullable="true" MaxLength="50" />
+          <Property Type="Double" Name="Fees" Nullable="true" />
+          <Property Type="String" Name="FeesCurrency" Nullable="true" MaxLength="10" />
+        </ComplexType>
+        <ComplexType Name="SP_UserBlockRateDetails_InsertUpdate_Result1">
+          <Property Type="String" Name="PartnerName" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="PartnerLogoPath" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="RedirectLink" Nullable="true" />
+          <Property Type="Decimal" Name="Fees" Nullable="true" Precision="10" Scale="5" />
+          <Property Type="String" Name="FeesCurrency" Nullable="true" MaxLength="5" />
+          <Property Type="String" Name="AddressLine1" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="AddressLine2" Nullable="false" MaxLength="500" />
+          <Property Type="String" Name="City" Nullable="false" MaxLength="100" />
+          <Property Type="String" Name="Country" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="State" Nullable="true" MaxLength="100" />
+          <Property Type="String" Name="ZipCode" Nullable="true" MaxLength="100" />
+          <Property Type="Double" Name="Latitude" Nullable="true" />
+          <Property Type="Double" Name="Longitude" Nullable="true" />
+          <Property Type="String" Name="MobileNumber" Nullable="true" MaxLength="20" />
         </ComplexType>
         </Schema>
     </edmx:ConceptualModels>
@@ -1561,6 +2006,8 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
           <EntitySetMapping Name="PartnerDetails">
             <EntityTypeMapping TypeName="NavigettrModel.PartnerDetail">
               <MappingFragment StoreEntitySet="PartnerDetails">
+                <ScalarProperty Name="FeesCurrency" ColumnName="FeesCurrency" />
+                <ScalarProperty Name="Fees" ColumnName="Fees" />
                 <ScalarProperty Name="RedirectLink" ColumnName="RedirectLink" />
                 <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="DateExpiry" ColumnName="DateExpiry" />
@@ -1668,6 +2115,8 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
           <EntitySetMapping Name="UserDetails">
             <EntityTypeMapping TypeName="NavigettrModel.UserDetail">
               <MappingFragment StoreEntitySet="UserDetails">
+                <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="LastName" ColumnName="LastName" />
                 <ScalarProperty Name="FirstName" ColumnName="FirstName" />
                 <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
@@ -1847,17 +2296,6 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
               </ComplexTypeMapping>
             </ResultMapping>
           </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="SP_UserLogIn" FunctionName="NavigettrModel.Store.SP_UserLogIn">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="NavigettrModel.SP_UserLogIn_Result">
-                <ScalarProperty Name="name" ColumnName="name" />
-                <ScalarProperty Name="logo" ColumnName="logo" />
-                <ScalarProperty Name="UserId" ColumnName="UserId" />
-                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
-                <ScalarProperty Name="ID" ColumnName="ID" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="SP_changePassword" FunctionName="NavigettrModel.Store.SP_changePassword" />
           <FunctionImportMapping FunctionImportName="SP_FetchLocationWorkTimeDetails" FunctionName="NavigettrModel.Store.SP_FetchLocationWorkTimeDetails" >
             <ResultMapping>
@@ -1941,17 +2379,6 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <FunctionImportMapping FunctionImportName="SP_FetchUserRewardPoints" FunctionName="NavigettrModel.Store.SP_FetchUserRewardPoints">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="NavigettrModel.SP_FetchUserRewardPoints_Result">
-                <ScalarProperty Name="Id" ColumnName="Id" />
-                <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
-                <ScalarProperty Name="RewardPointsEarned" ColumnName="RewardPointsEarned" />
-                <ScalarProperty Name="DateEarned" ColumnName="DateEarned" />
-                <ScalarProperty Name="Comments" ColumnName="Comments" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
           <FunctionImportMapping FunctionImportName="SP_UserLocationTracker_Insert" FunctionName="NavigettrModel.Store.SP_UserLocationTracker_Insert" />
           <FunctionImportMapping FunctionImportName="SP_UserQRCodeTracker_Insert" FunctionName="NavigettrModel.Store.SP_UserQRCodeTracker_Insert" />
           <FunctionImportMapping FunctionImportName="SP_UserRewardPoints_Insert" FunctionName="NavigettrModel.Store.SP_UserRewardPoints_Insert" />
@@ -1959,6 +2386,12 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
           <EntitySetMapping Name="UserQRCodeTrackers">
             <EntityTypeMapping TypeName="NavigettrModel.UserQRCodeTracker">
               <MappingFragment StoreEntitySet="UserQRCodeTracker">
+                <ScalarProperty Name="FeesCurrency" ColumnName="FeesCurrency" />
+                <ScalarProperty Name="Fees" ColumnName="Fees" />
+                <ScalarProperty Name="ServiceType" ColumnName="ServiceType" />
+                <ScalarProperty Name="FeedbackComment" ColumnName="FeedbackComment" />
+                <ScalarProperty Name="FeedbackRating" ColumnName="FeedbackRating" />
+                <ScalarProperty Name="Rate" ColumnName="Rate" />
                 <ScalarProperty Name="LocationId" ColumnName="LocationId" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -1970,6 +2403,127 @@ warning 6002: The table/view 'navigettr.dbo.UserSearchTracker' does not have a p
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SP_FetchLocationWorkTimeDetails1" FunctionName="NavigettrModel.Store.SP_FetchLocationWorkTimeDetails1">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NavigettrModel.SP_FetchLocationWorkTimeDetails1_Result2">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+                <ScalarProperty Name="WorkDay" ColumnName="WorkDay" />
+                <ScalarProperty Name="WorkStartTime" ColumnName="WorkStartTime" />
+                <ScalarProperty Name="WorkEndTime" ColumnName="WorkEndTime" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_FetchOffers" FunctionName="NavigettrModel.Store.SP_FetchOffers" />
+          <EntitySetMapping Name="UserBlockRateDetails">
+            <EntityTypeMapping TypeName="NavigettrModel.UserBlockRateDetail">
+              <MappingFragment StoreEntitySet="UserBlockRateDetails">
+                <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+                <ScalarProperty Name="PartnerId" ColumnName="PartnerId" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="OfferValiditySeconds" ColumnName="OfferValiditySeconds" />
+                <ScalarProperty Name="OfferValidityMinutes" ColumnName="OfferValidityMinutes" />
+                <ScalarProperty Name="OfferValidityHours" ColumnName="OfferValidityHours" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="Product" ColumnName="Product" />
+                <ScalarProperty Name="Rate" ColumnName="Rate" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="ToCurrency" ColumnName="ToCurrency" />
+                <ScalarProperty Name="FromCurrency" ColumnName="FromCurrency" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SupportRequests">
+            <EntityTypeMapping TypeName="NavigettrModel.SupportRequest">
+              <MappingFragment StoreEntitySet="SupportRequests">
+                <ScalarProperty Name="Param5" ColumnName="Param5" />
+                <ScalarProperty Name="Param4" ColumnName="Param4" />
+                <ScalarProperty Name="Param3" ColumnName="Param3" />
+                <ScalarProperty Name="Param2" ColumnName="Param2" />
+                <ScalarProperty Name="Param1" ColumnName="Param1" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+                <ScalarProperty Name="Query" ColumnName="Query" />
+                <ScalarProperty Name="QueryType" ColumnName="QueryType" />
+                <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+                <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+                <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SP_UserQRCodeTracker_Update" FunctionName="NavigettrModel.Store.SP_UserQRCodeTracker_Update" />
+          <FunctionImportMapping FunctionImportName="SP_UserSupportRequests_Insert" FunctionName="NavigettrModel.Store.SP_UserSupportRequests_Insert" />
+          <FunctionImportMapping FunctionImportName="SP_FetchServiceProviders" FunctionName="NavigettrModel.Store.SP_FetchServiceProviders" />
+          <FunctionImportMapping FunctionImportName="SP_UserLogIn" FunctionName="NavigettrModel.Store.SP_UserLogIn">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NavigettrModel.SP_UserLogIn_Result">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="PartnerName" ColumnName="PartnerName" />
+                <ScalarProperty Name="logo" ColumnName="logo" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Nationality" ColumnName="Nationality" />
+                <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_FetchRecentTransactions" FunctionName="NavigettrModel.Store.SP_FetchRecentTransactions">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NavigettrModel.SP_FetchRecentTransactions_Result1">
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="TransactionAmount" ColumnName="TransactionAmount" />
+                <ScalarProperty Name="FromCurrency" ColumnName="FromCurrency" />
+                <ScalarProperty Name="ToCurrency" ColumnName="ToCurrency" />
+                <ScalarProperty Name="DateScanned" ColumnName="DateScanned" />
+                <ScalarProperty Name="Rate" ColumnName="Rate" />
+                <ScalarProperty Name="PartnerName" ColumnName="PartnerName" />
+                <ScalarProperty Name="PartnerLogoPath" ColumnName="PartnerLogoPath" />
+                <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+                <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="ServiceType" ColumnName="ServiceType" />
+                <ScalarProperty Name="Fees" ColumnName="Fees" />
+                <ScalarProperty Name="FeesCurrency" ColumnName="FeesCurrency" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="SP_FetchServiceProviderLocations" FunctionName="NavigettrModel.Store.SP_FetchServiceProviderLocations" />
+          <FunctionImportMapping FunctionImportName="SP_FetchServiceProvidersWorkLocations" FunctionName="NavigettrModel.Store.SP_FetchServiceProvidersWorkLocations" />
+          <FunctionImportMapping FunctionImportName="SP_UserBlockRateDetails_InsertUpdate" FunctionName="NavigettrModel.Store.SP_UserBlockRateDetails_InsertUpdate">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="NavigettrModel.SP_UserBlockRateDetails_InsertUpdate_Result1">
+                <ScalarProperty Name="PartnerName" ColumnName="PartnerName" />
+                <ScalarProperty Name="PartnerLogoPath" ColumnName="PartnerLogoPath" />
+                <ScalarProperty Name="RedirectLink" ColumnName="RedirectLink" />
+                <ScalarProperty Name="Fees" ColumnName="Fees" />
+                <ScalarProperty Name="FeesCurrency" ColumnName="FeesCurrency" />
+                <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+                <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Country" ColumnName="Country" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

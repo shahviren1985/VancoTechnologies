@@ -51,10 +51,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EmailData.cs" />
+    <Compile Include="Partners\OfferDetails.cs" />
+    <Compile Include="Partners\PartnerSettings.cs" />
+    <Compile Include="Partners\SearchParams.cs" />
+    <Compile Include="Partners\ServiceParams.cs" />
+    <Compile Include="Partners\ServiceProvider.cs" />
+    <Compile Include="SP_FetchRecentTransactions_Result1.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_UserBlockRateDetails_InsertUpdate_Result1.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_UserLogIn_Result.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupportData.cs" />
     <Compile Include="SP_FetchLocationWorkTimeDetails1_Result.cs">
       <DependentUpon>NavigettrDB.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_FetchLocationWorkTimeDetails1_Result1.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SP_FetchLocationWorkTimeDetails1_Result2.cs">
       <DependentUpon>NavigettrDB.tt</DependentUpon>
     </Compile>
     <Compile Include="SP_FetchLocationWorkTimeDetails_Result.cs">
@@ -137,6 +155,9 @@
     <Compile Include="SP_FetchPartnerRates_Result.cs">
       <DependentUpon>NavigettrDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="SP_FetchRecentTransactions_Result.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
     <Compile Include="SP_FetchSystemParam_Result.cs">
       <DependentUpon>NavigettrDB.tt</DependentUpon>
     </Compile>
@@ -152,10 +173,16 @@
     <Compile Include="SP_forgotPassword_Result1.cs">
       <DependentUpon>NavigettrDB.tt</DependentUpon>
     </Compile>
-    <Compile Include="SP_UserLogIn_Result.cs">
+    <Compile Include="SP_UserBlockRateDetails_InsertUpdate_Result.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupportRequest.cs">
       <DependentUpon>NavigettrDB.tt</DependentUpon>
     </Compile>
     <Compile Include="SystemParam.cs">
+      <DependentUpon>NavigettrDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserBlockRateDetail.cs">
       <DependentUpon>NavigettrDB.tt</DependentUpon>
     </Compile>
     <Compile Include="UserData.cs" />
@@ -180,6 +207,9 @@
     <Compile Include="UserSearchTracker.cs">
       <DependentUpon>NavigettrDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="User\RegisterUserDetails.cs" />
+    <Compile Include="User\TransactionData.cs" />
+    <Compile Include="User\UserDetails.cs" />
     <Compile Include="usp_Roles_Get_Result.cs">
       <DependentUpon>NavigettrDB.tt</DependentUpon>
     </Compile>

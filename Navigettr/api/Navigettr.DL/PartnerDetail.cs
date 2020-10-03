@@ -32,6 +32,8 @@ namespace Navigettr.Data
         public Nullable<System.DateTime> DateExpiry { get; set; }
         public string Status { get; set; }
         public string RedirectLink { get; set; }
+        public Nullable<decimal> Fees { get; set; }
+        public string FeesCurrency { get; set; }
     
         public virtual UserDetail UserDetail { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -13,10 +13,15 @@ namespace Navigettr.Data
     
     public partial class SP_UserLogIn_Result
     {
-        public string name { get; set; }
+        public int ID { get; set; }
+        public string PartnerName { get; set; }
         public string logo { get; set; }
         public int UserId { get; set; }
         public string RoleName { get; set; }
-        public int ID { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Name { get; set; }
+        public string Nationality { get; set; }
+        public string MobileNumber { get; set; }
     }
 }

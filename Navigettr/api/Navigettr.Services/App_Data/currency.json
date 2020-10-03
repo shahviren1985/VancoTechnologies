@@ -1,16 +1,64 @@
 {
   "currency": [
-    {"AED": "AED"},
-    {"AUD": "AUD"},
-    {"CAD": "CAD"},
-    {"CHF": "CHF"},
-    {"DKK": "DKK"},
-    {"EUR": "EUR"},
-    {"GBP": "GBP"},
-    {"INR": "INR"},
-    {"SEK": "SEK"},
-    {"SGD": "SGD"},
-    {"USD": "USD"},
-    {"YEN": "YEN"}
+    {
+      "Country": "United Arab Emirates",
+      "Code": "AED",
+      "Url": "http://vancotech.com/navigettr/flags/aed.png"
+    },
+    {
+      "Country": "Australia",
+      "Code": "AUD",
+      "Url": "http://vancotech.com/navigettr/flags/aud.png"
+    },
+    {
+      "Country": "Canada",
+      "Code": "CAD",
+      "Url": "http://vancotech.com/navigettr/flags/cad.png"
+    },
+    {
+      "Country": "Switzerland",
+      "Code": "CHF",
+      "Url": "http://vancotech.com/navigettr/flags/chf.png"
+    },
+    {
+      "Country": "Denmark",
+      "Code": "DKK",
+      "Url": "http://vancotech.com/navigettr/flags/dkk.png"
+    },
+    {
+      "Country": "Europe",
+      "Code": "EUR",
+      "Url": "http://vancotech.com/navigettr/flags/eur.png"
+    },
+    {
+      "Country": "Great Britain",
+      "Code": "GBP",
+      "Url": "http://vancotech.com/navigettr/flags/gbp.png"
+    },
+    {
+      "Country": "India",
+      "Code": "INR",
+      "Url": "http://vancotech.com/navigettr/flags/inr.png"
+    },
+    {
+      "Country": "Sweden",
+      "Code": "SEK",
+      "Url": "http://vancotech.com/navigettr/flags/sek.png"
+    },
+    {
+      "Country": "Singapore",
+      "Code": "SGD",
+      "Url": "http://vancotech.com/navigettr/flags/sgd.png"
+    },
+    {
+      "Country": "United States of America",
+      "Code": "USD",
+      "Url": "http://vancotech.com/navigettr/flags/usd.png"
+    },
+    {
+      "Country": "Japan",
+      "Code": "YEN",
+      "Url": "http://vancotech.com/navigettr/flags/yen.png"
+    }
   ]
 }

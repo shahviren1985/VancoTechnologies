@@ -43,6 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Accounts.cs" />
+    <Compile Include="ISupportRepository.cs" />
+    <Compile Include="ITransactionRepository.cs" />
     <Compile Include="ISearchRepository.cs" />
     <Compile Include="IPartnerLocationRepository.cs" />
     <Compile Include="IPartnerOffersRepository.cs" />
@@ -53,6 +55,8 @@
     <Compile Include="PartnerOffersRepository.cs" />
     <Compile Include="PartnerRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SupportRepository.cs" />
+    <Compile Include="TransactionRepository.cs" />
     <Compile Include="RoleRepository.cs" />
     <Compile Include="UserRepository.cs" />
   </ItemGroup>

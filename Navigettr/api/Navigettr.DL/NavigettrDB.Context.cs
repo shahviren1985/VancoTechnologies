@@ -43,6 +43,8 @@ namespace Navigettr.Data
         public virtual DbSet<UserRewardPoint> UserRewardPoints { get; set; }
         public virtual DbSet<UserSearchTracker> UserSearchTrackers { get; set; }
         public virtual DbSet<UserQRCodeTracker> UserQRCodeTrackers { get; set; }
+        public virtual DbSet<UserBlockRateDetail> UserBlockRateDetails { get; set; }
+        public virtual DbSet<SupportRequest> SupportRequests { get; set; }
     
         public virtual ObjectResult<usp_Roles_Get_Result> usp_Roles_Get(Nullable<int> iD)
         {
@@ -508,19 +510,6 @@ namespace Navigettr.Data
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_FetchSystemParam_Result>("SP_FetchSystemParam");
         }
     
-        public virtual ObjectResult<SP_UserLogIn_Result> SP_UserLogIn(string userName, string password)
-        {
-            var userNameParameter = userName != null ?
-                new ObjectParameter("UserName", userName) :
-                new ObjectParameter("UserName", typeof(string));
-    
-            var passwordParameter = password != null ?
-                new ObjectParameter("Password", password) :
-                new ObjectParameter("Password", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_UserLogIn_Result>("SP_UserLogIn", userNameParameter, passwordParameter);
-        }
-    
         public virtual int SP_changePassword(Nullable<int> userId, string oldPassword, string newPassword, ObjectParameter statusResult)
         {
             var userIdParameter = userId.HasValue ?
@@ -547,13 +536,13 @@ namespace Navigettr.Data
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_FetchLocationWorkTimeDetails_Result>("SP_FetchLocationWorkTimeDetails", partnerIDParameter);
         }
     
-        public virtual ObjectResult<SP_forgotPassword_Result1> SP_forgotPassword(string emailId)
+        public virtual ObjectResult<SP_forgotPassword_Result1> SP_forgotPassword(string mobileNumber)
         {
-            var emailIdParameter = emailId != null ?
-                new ObjectParameter("EmailId", emailId) :
-                new ObjectParameter("EmailId", typeof(string));
+            var mobileNumberParameter = mobileNumber != null ?
+                new ObjectParameter("mobileNumber", mobileNumber) :
+                new ObjectParameter("mobileNumber", typeof(string));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_forgotPassword_Result1>("SP_forgotPassword", emailIdParameter);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_forgotPassword_Result1>("SP_forgotPassword", mobileNumberParameter);
         }
     
         public virtual ObjectResult<SP_FetchUnProcessedLocations_Result> SP_FetchUnProcessedLocations()
@@ -561,7 +550,7 @@ namespace Navigettr.Data
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_FetchUnProcessedLocations_Result>("SP_FetchUnProcessedLocations");
         }
     
-        public virtual int SP_UserDetails_InsertUpdate(Nullable<int> userId, string loginType, string userName, string password, Nullable<int> roleId, string uStatus, string firstName, string lastName, string mobileNumber, string email, ObjectParameter statusResult, ObjectParameter statusResultUserId)
+        public virtual int SP_UserDetails_InsertUpdate(Nullable<int> userId, string loginType, string userName, string password, Nullable<int> roleId, string uStatus, string name, string nationality, string mobileNumber, ObjectParameter statusResult, ObjectParameter statusResultUserId)
         {
             var userIdParameter = userId.HasValue ?
                 new ObjectParameter("UserId", userId) :
@@ -587,23 +576,19 @@ namespace Navigettr.Data
                 new ObjectParameter("UStatus", uStatus) :
                 new ObjectParameter("UStatus", typeof(string));
     
-            var firstNameParameter = firstName != null ?
-                new ObjectParameter("FirstName", firstName) :
-                new ObjectParameter("FirstName", typeof(string));
+            var nameParameter = name != null ?
+                new ObjectParameter("Name", name) :
+                new ObjectParameter("Name", typeof(string));
     
-            var lastNameParameter = lastName != null ?
-                new ObjectParameter("LastName", lastName) :
-                new ObjectParameter("LastName", typeof(string));
+            var nationalityParameter = nationality != null ?
+                new ObjectParameter("Nationality", nationality) :
+                new ObjectParameter("Nationality", typeof(string));
     
             var mobileNumberParameter = mobileNumber != null ?
                 new ObjectParameter("MobileNumber", mobileNumber) :
                 new ObjectParameter("MobileNumber", typeof(string));
     
-            var emailParameter = email != null ?
-                new ObjectParameter("Email", email) :
-                new ObjectParameter("Email", typeof(string));
-    
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_UserDetails_InsertUpdate", userIdParameter, loginTypeParameter, userNameParameter, passwordParameter, roleIdParameter, uStatusParameter, firstNameParameter, lastNameParameter, mobileNumberParameter, emailParameter, statusResult, statusResultUserId);
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_UserDetails_InsertUpdate", userIdParameter, loginTypeParameter, userNameParameter, passwordParameter, roleIdParameter, uStatusParameter, nameParameter, nationalityParameter, mobileNumberParameter, statusResult, statusResultUserId);
         }
     
         public virtual ObjectResult<SP_FetchUserRewardPoints_Result> SP_FetchUserRewardPoints(Nullable<int> userId)
@@ -636,7 +621,7 @@ namespace Navigettr.Data
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_UserLocationTracker_Insert", userIdParameter, partnerIdParameter, locationIdParameter, reachedDestinationAtParameter, statusResult);
         }
     
-        public virtual int SP_UserQRCodeTracker_Insert(Nullable<int> userId, string locationId, Nullable<int> partnerId, Nullable<double> transactionAmount, string fromCurrency, string toCurrency, Nullable<System.DateTime> dateScanned, ObjectParameter statusResult)
+        public virtual int SP_UserQRCodeTracker_Insert(Nullable<int> userId, string locationId, Nullable<int> partnerId, Nullable<double> transactionAmount, string fromCurrency, string toCurrency, Nullable<System.DateTime> dateScanned, Nullable<double> rate, string serviceType, Nullable<double> fees, string feesCurrency, ObjectParameter statusResult)
         {
             var userIdParameter = userId.HasValue ?
                 new ObjectParameter("UserId", userId) :
@@ -666,7 +651,23 @@ namespace Navigettr.Data
                 new ObjectParameter("DateScanned", dateScanned) :
                 new ObjectParameter("DateScanned", typeof(System.DateTime));
     
-            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_UserQRCodeTracker_Insert", userIdParameter, locationIdParameter, partnerIdParameter, transactionAmountParameter, fromCurrencyParameter, toCurrencyParameter, dateScannedParameter, statusResult);
+            var rateParameter = rate.HasValue ?
+                new ObjectParameter("Rate", rate) :
+                new ObjectParameter("Rate", typeof(double));
+    
+            var serviceTypeParameter = serviceType != null ?
+                new ObjectParameter("ServiceType", serviceType) :
+                new ObjectParameter("ServiceType", typeof(string));
+    
+            var feesParameter = fees.HasValue ?
+                new ObjectParameter("Fees", fees) :
+                new ObjectParameter("Fees", typeof(double));
+    
+            var feesCurrencyParameter = feesCurrency != null ?
+                new ObjectParameter("FeesCurrency", feesCurrency) :
+                new ObjectParameter("FeesCurrency", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_UserQRCodeTracker_Insert", userIdParameter, locationIdParameter, partnerIdParameter, transactionAmountParameter, fromCurrencyParameter, toCurrencyParameter, dateScannedParameter, rateParameter, serviceTypeParameter, feesParameter, feesCurrencyParameter, statusResult);
         }
     
         public virtual int SP_UserRewardPoints_Insert(Nullable<int> userId, string transactionId, string rewardPointsEarned, Nullable<System.DateTime> dateEarned, string comments, ObjectParameter statusResult)
@@ -741,6 +742,308 @@ namespace Navigettr.Data
                 new ObjectParameter("ResultsCount", typeof(int));
     
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_UserSearchTracker_Insert", userIdParameter, cityParameter, countryParameter, zipCodeParameter, latitudeParameter, longitudeParameter, amountParameter, fromCurrencyParameter, toCurrencyParameter, dateSearchedParameter, resultsCountParameter, statusResult);
+        }
+    
+        public virtual ObjectResult<SP_FetchLocationWorkTimeDetails1_Result2> SP_FetchLocationWorkTimeDetails1(Nullable<int> partnerID)
+        {
+            var partnerIDParameter = partnerID.HasValue ?
+                new ObjectParameter("PartnerID", partnerID) :
+                new ObjectParameter("PartnerID", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_FetchLocationWorkTimeDetails1_Result2>("SP_FetchLocationWorkTimeDetails1", partnerIDParameter);
+        }
+    
+        public virtual int SP_FetchOffers(string city, string country, string lat, string @long, Nullable<int> radius, Nullable<int> page, Nullable<int> pagedata)
+        {
+            var cityParameter = city != null ?
+                new ObjectParameter("City", city) :
+                new ObjectParameter("City", typeof(string));
+    
+            var countryParameter = country != null ?
+                new ObjectParameter("Country", country) :
+                new ObjectParameter("Country", typeof(string));
+    
+            var latParameter = lat != null ?
+                new ObjectParameter("Lat", lat) :
+                new ObjectParameter("Lat", typeof(string));
+    
+            var longParameter = @long != null ?
+                new ObjectParameter("Long", @long) :
+                new ObjectParameter("Long", typeof(string));
+    
+            var radiusParameter = radius.HasValue ?
+                new ObjectParameter("Radius", radius) :
+                new ObjectParameter("Radius", typeof(int));
+    
+            var pageParameter = page.HasValue ?
+                new ObjectParameter("Page", page) :
+                new ObjectParameter("Page", typeof(int));
+    
+            var pagedataParameter = pagedata.HasValue ?
+                new ObjectParameter("Pagedata", pagedata) :
+                new ObjectParameter("Pagedata", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_FetchOffers", cityParameter, countryParameter, latParameter, longParameter, radiusParameter, pageParameter, pagedataParameter);
+        }
+    
+        public virtual int SP_UserQRCodeTracker_Update(Nullable<int> id, string rating, string comment, ObjectParameter statusResult)
+        {
+            var idParameter = id.HasValue ?
+                new ObjectParameter("Id", id) :
+                new ObjectParameter("Id", typeof(int));
+    
+            var ratingParameter = rating != null ?
+                new ObjectParameter("Rating", rating) :
+                new ObjectParameter("Rating", typeof(string));
+    
+            var commentParameter = comment != null ?
+                new ObjectParameter("Comment", comment) :
+                new ObjectParameter("Comment", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_UserQRCodeTracker_Update", idParameter, ratingParameter, commentParameter, statusResult);
+        }
+    
+        public virtual int SP_UserSupportRequests_Insert(string name, string mobileNumber, string countryCode, string emailAddress, string queryType, string query, string status, string param1, string param2, string param3, string param4, string param5, ObjectParameter statusResult)
+        {
+            var nameParameter = name != null ?
+                new ObjectParameter("Name", name) :
+                new ObjectParameter("Name", typeof(string));
+    
+            var mobileNumberParameter = mobileNumber != null ?
+                new ObjectParameter("MobileNumber", mobileNumber) :
+                new ObjectParameter("MobileNumber", typeof(string));
+    
+            var countryCodeParameter = countryCode != null ?
+                new ObjectParameter("CountryCode", countryCode) :
+                new ObjectParameter("CountryCode", typeof(string));
+    
+            var emailAddressParameter = emailAddress != null ?
+                new ObjectParameter("EmailAddress", emailAddress) :
+                new ObjectParameter("EmailAddress", typeof(string));
+    
+            var queryTypeParameter = queryType != null ?
+                new ObjectParameter("QueryType", queryType) :
+                new ObjectParameter("QueryType", typeof(string));
+    
+            var queryParameter = query != null ?
+                new ObjectParameter("Query", query) :
+                new ObjectParameter("Query", typeof(string));
+    
+            var statusParameter = status != null ?
+                new ObjectParameter("Status", status) :
+                new ObjectParameter("Status", typeof(string));
+    
+            var param1Parameter = param1 != null ?
+                new ObjectParameter("Param1", param1) :
+                new ObjectParameter("Param1", typeof(string));
+    
+            var param2Parameter = param2 != null ?
+                new ObjectParameter("Param2", param2) :
+                new ObjectParameter("Param2", typeof(string));
+    
+            var param3Parameter = param3 != null ?
+                new ObjectParameter("Param3", param3) :
+                new ObjectParameter("Param3", typeof(string));
+    
+            var param4Parameter = param4 != null ?
+                new ObjectParameter("Param4", param4) :
+                new ObjectParameter("Param4", typeof(string));
+    
+            var param5Parameter = param5 != null ?
+                new ObjectParameter("Param5", param5) :
+                new ObjectParameter("Param5", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_UserSupportRequests_Insert", nameParameter, mobileNumberParameter, countryCodeParameter, emailAddressParameter, queryTypeParameter, queryParameter, statusParameter, param1Parameter, param2Parameter, param3Parameter, param4Parameter, param5Parameter, statusResult);
+        }
+    
+        public virtual int SP_FetchServiceProviders(Nullable<int> rADIUS, string lAT, string lONG, string fromCurrency, string toCurrency, Nullable<decimal> amount, string orderByColumn, string orderDirection, Nullable<int> page, Nullable<int> pagedata, ObjectParameter totalCount, ObjectParameter offers, ObjectParameter redirectLink)
+        {
+            var rADIUSParameter = rADIUS.HasValue ?
+                new ObjectParameter("RADIUS", rADIUS) :
+                new ObjectParameter("RADIUS", typeof(int));
+    
+            var lATParameter = lAT != null ?
+                new ObjectParameter("LAT", lAT) :
+                new ObjectParameter("LAT", typeof(string));
+    
+            var lONGParameter = lONG != null ?
+                new ObjectParameter("LONG", lONG) :
+                new ObjectParameter("LONG", typeof(string));
+    
+            var fromCurrencyParameter = fromCurrency != null ?
+                new ObjectParameter("FromCurrency", fromCurrency) :
+                new ObjectParameter("FromCurrency", typeof(string));
+    
+            var toCurrencyParameter = toCurrency != null ?
+                new ObjectParameter("ToCurrency", toCurrency) :
+                new ObjectParameter("ToCurrency", typeof(string));
+    
+            var amountParameter = amount.HasValue ?
+                new ObjectParameter("Amount", amount) :
+                new ObjectParameter("Amount", typeof(decimal));
+    
+            var orderByColumnParameter = orderByColumn != null ?
+                new ObjectParameter("OrderByColumn", orderByColumn) :
+                new ObjectParameter("OrderByColumn", typeof(string));
+    
+            var orderDirectionParameter = orderDirection != null ?
+                new ObjectParameter("OrderDirection", orderDirection) :
+                new ObjectParameter("OrderDirection", typeof(string));
+    
+            var pageParameter = page.HasValue ?
+                new ObjectParameter("Page", page) :
+                new ObjectParameter("Page", typeof(int));
+    
+            var pagedataParameter = pagedata.HasValue ?
+                new ObjectParameter("Pagedata", pagedata) :
+                new ObjectParameter("Pagedata", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_FetchServiceProviders", rADIUSParameter, lATParameter, lONGParameter, fromCurrencyParameter, toCurrencyParameter, amountParameter, orderByColumnParameter, orderDirectionParameter, pageParameter, pagedataParameter, totalCount, offers, redirectLink);
+        }
+    
+        public virtual ObjectResult<SP_UserLogIn_Result> SP_UserLogIn(string userName, string password)
+        {
+            var userNameParameter = userName != null ?
+                new ObjectParameter("UserName", userName) :
+                new ObjectParameter("UserName", typeof(string));
+    
+            var passwordParameter = password != null ?
+                new ObjectParameter("Password", password) :
+                new ObjectParameter("Password", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_UserLogIn_Result>("SP_UserLogIn", userNameParameter, passwordParameter);
+        }
+    
+        public virtual ObjectResult<SP_FetchRecentTransactions_Result1> SP_FetchRecentTransactions(Nullable<int> userId, Nullable<int> page, Nullable<int> pagedata, ObjectParameter totalCount)
+        {
+            var userIdParameter = userId.HasValue ?
+                new ObjectParameter("UserId", userId) :
+                new ObjectParameter("UserId", typeof(int));
+    
+            var pageParameter = page.HasValue ?
+                new ObjectParameter("Page", page) :
+                new ObjectParameter("Page", typeof(int));
+    
+            var pagedataParameter = pagedata.HasValue ?
+                new ObjectParameter("Pagedata", pagedata) :
+                new ObjectParameter("Pagedata", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_FetchRecentTransactions_Result1>("SP_FetchRecentTransactions", userIdParameter, pageParameter, pagedataParameter, totalCount);
+        }
+    
+        public virtual int SP_FetchServiceProviderLocations(Nullable<int> pARTNERID, Nullable<int> rADIUS, string lAT, string lONG, string fromCurrency, string toCurrency, string orderByColumn, string orderDirection, Nullable<int> page, Nullable<int> pagedata, ObjectParameter totalCount, ObjectParameter offers, ObjectParameter redirectLink)
+        {
+            var pARTNERIDParameter = pARTNERID.HasValue ?
+                new ObjectParameter("PARTNERID", pARTNERID) :
+                new ObjectParameter("PARTNERID", typeof(int));
+    
+            var rADIUSParameter = rADIUS.HasValue ?
+                new ObjectParameter("RADIUS", rADIUS) :
+                new ObjectParameter("RADIUS", typeof(int));
+    
+            var lATParameter = lAT != null ?
+                new ObjectParameter("LAT", lAT) :
+                new ObjectParameter("LAT", typeof(string));
+    
+            var lONGParameter = lONG != null ?
+                new ObjectParameter("LONG", lONG) :
+                new ObjectParameter("LONG", typeof(string));
+    
+            var fromCurrencyParameter = fromCurrency != null ?
+                new ObjectParameter("FromCurrency", fromCurrency) :
+                new ObjectParameter("FromCurrency", typeof(string));
+    
+            var toCurrencyParameter = toCurrency != null ?
+                new ObjectParameter("ToCurrency", toCurrency) :
+                new ObjectParameter("ToCurrency", typeof(string));
+    
+            var orderByColumnParameter = orderByColumn != null ?
+                new ObjectParameter("OrderByColumn", orderByColumn) :
+                new ObjectParameter("OrderByColumn", typeof(string));
+    
+            var orderDirectionParameter = orderDirection != null ?
+                new ObjectParameter("OrderDirection", orderDirection) :
+                new ObjectParameter("OrderDirection", typeof(string));
+    
+            var pageParameter = page.HasValue ?
+                new ObjectParameter("Page", page) :
+                new ObjectParameter("Page", typeof(int));
+    
+            var pagedataParameter = pagedata.HasValue ?
+                new ObjectParameter("Pagedata", pagedata) :
+                new ObjectParameter("Pagedata", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_FetchServiceProviderLocations", pARTNERIDParameter, rADIUSParameter, lATParameter, lONGParameter, fromCurrencyParameter, toCurrencyParameter, orderByColumnParameter, orderDirectionParameter, pageParameter, pagedataParameter, totalCount, offers, redirectLink);
+        }
+    
+        public virtual int SP_FetchServiceProvidersWorkLocations(string locationId)
+        {
+            var locationIdParameter = locationId != null ?
+                new ObjectParameter("LocationId", locationId) :
+                new ObjectParameter("LocationId", typeof(string));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("SP_FetchServiceProvidersWorkLocations", locationIdParameter);
+        }
+    
+        public virtual ObjectResult<SP_UserBlockRateDetails_InsertUpdate_Result1> SP_UserBlockRateDetails_InsertUpdate(Nullable<int> userId, string fromCurrency, string toCurrency, Nullable<decimal> amount, Nullable<decimal> rate, string product, Nullable<System.DateTime> dateCreated, Nullable<int> offerValidityHours, Nullable<int> offerValidityMinutes, Nullable<int> offerValiditySeconds, string firstName, string lastName, Nullable<int> partnerId, Nullable<int> locationId)
+        {
+            var userIdParameter = userId.HasValue ?
+                new ObjectParameter("UserId", userId) :
+                new ObjectParameter("UserId", typeof(int));
+    
+            var fromCurrencyParameter = fromCurrency != null ?
+                new ObjectParameter("FromCurrency", fromCurrency) :
+                new ObjectParameter("FromCurrency", typeof(string));
+    
+            var toCurrencyParameter = toCurrency != null ?
+                new ObjectParameter("ToCurrency", toCurrency) :
+                new ObjectParameter("ToCurrency", typeof(string));
+    
+            var amountParameter = amount.HasValue ?
+                new ObjectParameter("Amount", amount) :
+                new ObjectParameter("Amount", typeof(decimal));
+    
+            var rateParameter = rate.HasValue ?
+                new ObjectParameter("Rate", rate) :
+                new ObjectParameter("Rate", typeof(decimal));
+    
+            var productParameter = product != null ?
+                new ObjectParameter("Product", product) :
+                new ObjectParameter("Product", typeof(string));
+    
+            var dateCreatedParameter = dateCreated.HasValue ?
+                new ObjectParameter("DateCreated", dateCreated) :
+                new ObjectParameter("DateCreated", typeof(System.DateTime));
+    
+            var offerValidityHoursParameter = offerValidityHours.HasValue ?
+                new ObjectParameter("OfferValidityHours", offerValidityHours) :
+                new ObjectParameter("OfferValidityHours", typeof(int));
+    
+            var offerValidityMinutesParameter = offerValidityMinutes.HasValue ?
+                new ObjectParameter("OfferValidityMinutes", offerValidityMinutes) :
+                new ObjectParameter("OfferValidityMinutes", typeof(int));
+    
+            var offerValiditySecondsParameter = offerValiditySeconds.HasValue ?
+                new ObjectParameter("OfferValiditySeconds", offerValiditySeconds) :
+                new ObjectParameter("OfferValiditySeconds", typeof(int));
+    
+            var firstNameParameter = firstName != null ?
+                new ObjectParameter("FirstName", firstName) :
+                new ObjectParameter("FirstName", typeof(string));
+    
+            var lastNameParameter = lastName != null ?
+                new ObjectParameter("LastName", lastName) :
+                new ObjectParameter("LastName", typeof(string));
+    
+            var partnerIdParameter = partnerId.HasValue ?
+                new ObjectParameter("PartnerId", partnerId) :
+                new ObjectParameter("PartnerId", typeof(int));
+    
+            var locationIdParameter = locationId.HasValue ?
+                new ObjectParameter("LocationId", locationId) :
+                new ObjectParameter("LocationId", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<SP_UserBlockRateDetails_InsertUpdate_Result1>("SP_UserBlockRateDetails_InsertUpdate", userIdParameter, fromCurrencyParameter, toCurrencyParameter, amountParameter, rateParameter, productParameter, dateCreatedParameter, offerValidityHoursParameter, offerValidityMinutesParameter, offerValiditySecondsParameter, firstNameParameter, lastNameParameter, partnerIdParameter, locationIdParameter);
         }
     }
 }

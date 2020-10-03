@@ -10,8 +10,7 @@
 namespace Navigettr.Data
 {
     using System;
-    using System.Collections.Generic;
-
+    
     public partial class SP_FetchPartnerLocationDetails_Result
     {
         public int id { get; set; }
@@ -30,6 +29,6 @@ namespace Navigettr.Data
         public string expiryDate { get; set; }
         public string partnerName { get; set; }
         public Nullable<int> totalCount { get; set; }
-        public List<SP_FetchLocationWorkTimeDetails_Result> PartnerLocationWorkTimes { get; set; }
+        public System.Collections.Generic.List<SP_FetchLocationWorkTimeDetails_Result> PartnerLocationWorkTimes { get; set; }
     }
 }

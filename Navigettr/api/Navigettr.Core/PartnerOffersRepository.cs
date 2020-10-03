@@ -36,6 +36,19 @@ namespace Navigettr.Core
                 throw ex;
             }
         }
-      
+
+        public List<SP_FetchPartnerOffers_Result> FetchOffer(string city, string country, string latitude,string longitude, int radius)
+        {
+            try
+            {
+                //return Objdb.FetchOffer(city, country, latitude, longitude, radius).ToList();
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
     }
 }

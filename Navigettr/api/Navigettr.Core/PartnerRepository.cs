@@ -151,6 +151,18 @@ namespace Navigettr.Core
             }
         }
 
+        public ServiceProviders SearchServiceProviderLocations(int userId, int partnerId, double amount, string city, string country, string zipCode, int radius, float latitude, float longitude, string fromCurrency, string toCurrency, string orderByColumn, string orderDirection, int page, int pageData)
+        {
+            try
+            {
+                return objPartnerData.SearchServiceProviderLocations(userId, partnerId, amount, city, country, zipCode, radius, latitude, longitude, fromCurrency, toCurrency, orderByColumn, orderDirection, page, pageData);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public int UserLocationTracker(int userId, int partnerId, int locationId, DateTime reachedAt)
         {
             try
@@ -163,11 +175,11 @@ namespace Navigettr.Core
             }
         }
 
-        public int UserQRCodeTracker(int userId, string transactionId, int partnerId, float amount, string fromCurrency, string toCurrnecy, DateTime scannedOn)
+        public int UserQRCodeTracker(int userId, string transactionId, int partnerId, float amount, string fromCurrency, string toCurrnecy, DateTime scannedOn, float rate, string serviceType, float fees, string feesCurrency)
         {
             try
             {
-                return objPartnerData.UserQRCodeTracker(userId, transactionId, partnerId, amount, fromCurrency, toCurrnecy, scannedOn);
+                return objPartnerData.UserQRCodeTracker(userId, transactionId, partnerId, amount, fromCurrency, toCurrnecy, scannedOn, rate, serviceType, fees, feesCurrency);
             }
             catch (Exception ex)
             {

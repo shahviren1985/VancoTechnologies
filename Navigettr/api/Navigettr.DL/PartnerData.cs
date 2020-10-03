@@ -166,6 +166,7 @@ namespace Navigettr.Data
         public ServiceProviders SearchServiceProviders(int userId, double amount, string city, string country, string zipCode, int radius, float latitude, float longitude, string fromCurrency, string toCurrency, string orderByColumn, string orderDirection, int page, int pageData)
         {
             string connString = System.Configuration.ConfigurationSettings.AppSettings["conn"];
+            //int pageSize = int.Parse(System.Configuration.ConfigurationSettings.AppSettings["PageSize"]);
             List<SP_SearchServiceProviders_Result> providers = new List<SP_SearchServiceProviders_Result>();
 
             int totalCount = 0;
@@ -192,6 +193,7 @@ namespace Navigettr.Data
                     cmd.Parameters.Add("@LONG", SqlDbType.Float).Value = longitude;
                     cmd.Parameters.Add("@FromCurrency", SqlDbType.NVarChar).Value = fromCurrency;
                     cmd.Parameters.Add("@ToCurrency", SqlDbType.NVarChar).Value = toCurrency;
+                    cmd.Parameters.Add("@Amount", SqlDbType.Decimal).Value = amount;
                     cmd.Parameters.Add("@OrderByColumn", SqlDbType.NVarChar).Value = orderByColumn;
                     cmd.Parameters.Add("@OrderDirection", SqlDbType.NVarChar).Value = orderDirection;
                     cmd.Parameters.Add("@Page", SqlDbType.NVarChar).Value = page;
@@ -220,23 +222,36 @@ namespace Navigettr.Data
                         provider.City = reader["City"].ToString();
                         provider.State = reader["State"].ToString();
                         provider.ZipCode = reader["ZipCode"].ToString();
-
-                        provider.Latitude = float.Parse(reader["Latitude"].ToString());
-                        provider.Longitude = float.Parse(reader["Longitude"].ToString());
                         provider.MobileNumber = reader["MobileNumber"].ToString();
-                        provider.Distance = float.Parse(reader["Distance"].ToString());
-                        provider.Guaranteed = float.Parse(reader["Guaranteed"].ToString());
-                        provider.Indicative = float.Parse(reader["Indicative"].ToString());
+
+                        try
+                        {
+                            provider.Latitude = float.Parse(reader["Latitude"].ToString());
+                            provider.Longitude = float.Parse(reader["Longitude"].ToString());
+                            provider.Distance = decimal.Parse(reader["Distance"].ToString());
+                        }
+                        catch(Exception ex)
+                        {
+                            Console.WriteLine(ex);
+                        }
+                        
+                        provider.Guaranteed = decimal.Parse(reader["Guaranteed"].ToString());
+                        provider.Indicative = double.Parse(reader["Indicative"].ToString()) + 0.001;
+                        provider.TAT = int.Parse(reader["TAT"].ToString());
+                        provider.Fees = int.Parse(reader["Fees"].ToString());
+                        provider.FeesCurrency = reader["FeesCurrency"].ToString();
+                        provider.ReceivingAmount = decimal.Parse(reader["RecevingAmount"].ToString());
                         providers.Add(provider);
                     }
 
                     reader.Close();
 
+                    providers = providers.OrderBy(r => r.Distance).GroupBy(provider => provider.PartnerId).Select(group => group.First()).ToList();
                     ObjectParameter statusResult = new ObjectParameter("StatusResult", "");
 
                     if (total.Value != null)
                     {
-                        totalCount = int.Parse(total.Value.ToString());
+                        totalCount = providers.Count;//int.Parse(total.Value.ToString());
                         offerCount = int.Parse(offerParam.Value.ToString());
                         redirectLink = redirect.Value.ToString() == "0" ? false : true;
                     }
@@ -279,7 +294,8 @@ namespace Navigettr.Data
                 }
 
                 // return offers only if user has logged in
-                if (userId > 0 && providers.Count > 0)
+                if (providers.Count > 0)
+                //if (userId > 0 && providers.Count > 0)
                 {
                     using (SqlCommand cmd = new SqlCommand("SP_FetchServiceProvidersOffers", con))
                     {
@@ -313,16 +329,158 @@ namespace Navigettr.Data
             return serviceProvider;
         }
 
+        public ServiceProviders SearchServiceProviderLocations(int userId, int partnerId, double amount, string city, string country, string zipCode, int radius, float latitude, float longitude, string fromCurrency, string toCurrency, string orderByColumn, string orderDirection, int page, int pageData)
+        {
+            string connString = System.Configuration.ConfigurationSettings.AppSettings["conn"];
+            List<SP_SearchServiceProviders_Result> providers = new List<SP_SearchServiceProviders_Result>();
+
+            int totalCount = 0;
+            int offerCount = 0;
+            bool redirectLink = false;
+
+            SqlParameter total = new SqlParameter("TotalCount", DbType.Int16);
+            SqlParameter offerParam = new SqlParameter("Offers", DbType.Int16);
+            SqlParameter redirect = new SqlParameter("RedirectLink", DbType.Boolean);
+
+            total.Direction = ParameterDirection.Output;
+            offerParam.Direction = ParameterDirection.Output;
+            redirect.Direction = ParameterDirection.Output;
+
+            using (SqlConnection con = new SqlConnection(connString))
+            {
+                using (SqlCommand cmd = new SqlCommand("SP_FetchServiceProviderLocations", con))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.Add("@PARTNERID", SqlDbType.Int).Value = partnerId;
+                    cmd.Parameters.Add("@RADIUS", SqlDbType.Int).Value = radius;
+                    cmd.Parameters.Add("@LAT", SqlDbType.Float).Value = latitude;
+                    cmd.Parameters.Add("@LONG", SqlDbType.Float).Value = longitude;
+                    cmd.Parameters.Add("@FromCurrency", SqlDbType.NVarChar).Value = fromCurrency;
+                    cmd.Parameters.Add("@ToCurrency", SqlDbType.NVarChar).Value = toCurrency;
+                    cmd.Parameters.Add("@OrderByColumn", SqlDbType.NVarChar).Value = orderByColumn;
+                    cmd.Parameters.Add("@OrderDirection", SqlDbType.NVarChar).Value = orderDirection;
+                    cmd.Parameters.Add("@Page", SqlDbType.NVarChar).Value = page;
+                    cmd.Parameters.Add("@Pagedata", SqlDbType.NVarChar).Value = pageData;
+                    //cmd.Parameters.Add("@TotalCount", SqlDbType.Int).Value = 0;
+                    //cmd.Parameters.Add("@Offers", SqlDbType.Int).Value = 0;
+                    //cmd.Parameters.Add("@RedirectLink", SqlDbType.Bit).Value = 0;
+
+                    cmd.Parameters.Add(total);
+                    cmd.Parameters.Add(offerParam);
+                    cmd.Parameters.Add(redirect);
+
+                    con.Open();
+                    var reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        SP_SearchServiceProviders_Result provider = new SP_SearchServiceProviders_Result();
+                        provider.ID = int.Parse(reader["ID"].ToString());
+
+                        if (providers.Find(p => p.ID == provider.ID) != null)
+                            continue;
+
+                        provider.PartnerId = int.Parse(reader["PartnerId"].ToString());
+                        provider.PartnerName = reader["PartnerName"].ToString();
+                        provider.PartnerLogoPath = reader["PartnerLogoPath"].ToString();
+                        provider.RedirectLink = reader["RedirectLink"].ToString();
+
+                        provider.AddressLine1 = reader["AddressLine1"].ToString();
+                        provider.AddressLine2 = reader["AddressLine2"].ToString();
+                        provider.City = reader["City"].ToString();
+                        provider.State = reader["State"].ToString();
+                        provider.ZipCode = reader["ZipCode"].ToString();
+
+                        provider.Latitude = float.Parse(reader["Latitude"].ToString());
+                        provider.Longitude = float.Parse(reader["Longitude"].ToString());
+                        provider.MobileNumber = reader["MobileNumber"].ToString();
+                        provider.Distance = decimal.Parse(reader["Distance"].ToString());
+                        provider.Guaranteed = decimal.Parse(reader["Guaranteed"].ToString());
+                        provider.Indicative = double.Parse(reader["Indicative"].ToString()) + 0.001;
+                        provider.Fees = decimal.ToInt32(decimal.Parse(reader["Fees"].ToString()));
+                        provider.FeesCurrency = reader["FeesCurrency"].ToString();
+
+                        try
+                        {
+                            if (reader["RecevingAmount"] != null)
+                            {
+                                provider.ReceivingAmount = decimal.Parse(reader["RecevingAmount"].ToString());
+                                provider.TAT = int.Parse(reader["TAT"].ToString());
+                            }
+                        }
+                        catch(Exception ex)
+                        {
+
+                        }
+
+                        providers.Add(provider);
+                    }
+
+                    reader.Close();
+
+                    ObjectParameter statusResult = new ObjectParameter("StatusResult", "");
+
+                    if (total.Value != null)
+                    {
+                        totalCount = int.Parse(total.Value.ToString());
+                        //offerCount = int.Parse(offerParam.Value.ToString());
+                        redirectLink = redirect.Value.ToString() == "0" ? false : true;
+                    }
+
+                    //Objdb.SP_UserSearchTracker_Insert(userId, city, country, zipCode, latitude, longitude, amount, fromCurrency, toCurrency, DateTime.UtcNow, totalCount, statusResult);
+                }
+
+                if (providers.Count > 0)
+                {
+                    using (SqlCommand cmd = new SqlCommand("SP_FetchServiceProvidersWorkLocations", con))
+                    {
+                        List<SP_FetchLocationWorkTimeDetails_Result> worktimes = new List<SP_FetchLocationWorkTimeDetails_Result>();
+                        string locationId = string.Join(",", providers.Select(p => p.ID));
+                        cmd.CommandType = CommandType.StoredProcedure;
+
+                        cmd.Parameters.Add("@LocationId", SqlDbType.VarChar).Value = locationId;
+                        var reader = cmd.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            SP_FetchLocationWorkTimeDetails_Result worktime = new SP_FetchLocationWorkTimeDetails_Result();
+                            worktime.ID = int.Parse(reader["ID"].ToString());
+                            worktime.LocationId = int.Parse(reader["LocationId"].ToString());
+                            worktime.WorkDay = reader["WorkDay"].ToString();
+                            worktime.WorkStartTime = reader["WorkStartTime"].ToString();
+                            worktime.WorkEndTime = reader["WorkEndTime"].ToString();
+                            worktimes.Add(worktime);
+
+                            var location = providers.Find(p => p.ID == worktime.LocationId);
+                            if (location != null)
+                            {
+                                if (location.WorkTime == null)
+                                    location.WorkTime = new List<SP_FetchLocationWorkTimeDetails_Result>();
+
+                                location.WorkTime.Add(worktime);
+                            }
+                        }
+
+                        reader.Close();
+                    }
+                }
+            }
+
+            ServiceProviders serviceProvider = new ServiceProviders();
+            serviceProvider.Providers = providers;
+            serviceProvider.TotalCount = totalCount;
+            return serviceProvider;
+        }
+
         public int UserLocationTracker(int userId, int partnerId, int locationId, DateTime reachedAt)
         {
             ObjectParameter StatusResult = new ObjectParameter("StatusResult", typeof(string));
             return Objdb.SP_UserLocationTracker_Insert(userId, partnerId, locationId, reachedAt, StatusResult);
         }
 
-        public int UserQRCodeTracker(int userId, string locationId, int partnerId, float amount, string fromCurrency, string toCurrnecy, DateTime scannedOn)
+        public int UserQRCodeTracker(int userId, string locationId, int partnerId, float amount, string fromCurrency, string toCurrnecy, DateTime scannedOn, float rate, string serviceType, float fees, string feesCurrency)
         {
             ObjectParameter statusResult = new ObjectParameter("StatusResult", typeof(string));
-            return Objdb.SP_UserQRCodeTracker_Insert(userId, locationId, partnerId, amount, fromCurrency, toCurrnecy, scannedOn, statusResult);
+            return Objdb.SP_UserQRCodeTracker_Insert(userId, locationId, partnerId, amount, fromCurrency, toCurrnecy, scannedOn, rate, serviceType, fees, feesCurrency, statusResult);
         }
     }
 }

@@ -25,11 +25,11 @@ namespace Navigettr.Core
         }
 
 
-        public List<SP_forgotPassword_Result1> ForgotPassword(string emailId)
+        public List<SP_forgotPassword_Result1> ForgotPassword(string mobileNumber)
         {
             try
             {
-                return objData.ForgotPassword(emailId).ToList();
+                return objData.ForgotPassword(mobileNumber).ToList();
             }
             catch (Exception ex)
             {
@@ -44,9 +44,9 @@ namespace Navigettr.Core
             return retval;
         }
 
-        public int RegisterUser(int userId, string firstName, string lastName, string password, string mobileNumber, string userName, string emailAddress)
+        public int RegisterUser(int userId, string firstName, string lastName, string password, string mobileNumber, string countryCode)
         {
-            return objData.AddUser(userId, firstName, lastName, password, mobileNumber, userName, emailAddress);
+            return objData.AddUser(userId, firstName, lastName, password, mobileNumber, countryCode);
         }
     }
 }

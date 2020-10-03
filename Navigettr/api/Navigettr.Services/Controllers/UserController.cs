@@ -1,12 +1,10 @@
 ﻿using Navigettr.Core;
 using Navigettr.Data;
+using Navigettr.Services.Models;
 using System;
-using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Net.Mail;
 using System.Web.Http;
 
 namespace Navigettr.Services.Controllers
@@ -17,17 +15,29 @@ namespace Navigettr.Services.Controllers
         UserData objData = new UserData();
         NavigettrEntities Objdb = new NavigettrEntities();
 
-        public class UserDetails
+        [Route("api/user/register")]
+        [HttpPost]
+        [HttpOptions]
+        public HttpResponseMessage RegisterUser([FromBody]RegisterUserDetails userDetails)
         {
-            public int userId { get; set; }
-            public string username { get; set; }
-            public string oldPassword { get; set; }
-            public string newPassword { get; set; }
-            public string email { get; set; }
-            public string password { get; set; }
+            //userDetails.MobileNumber = userDetails.CountryCode + userDetails.MobileNumber;
+            int data = _repository.RegisterUser(userDetails.Id, userDetails.Name, userDetails.Nationality, userDetails.Mpin, userDetails.MobileNumber, userDetails.CountryCode);
+
+            if (data > 0)
+            {
+                string userMessage = "Successfully registered the user.";
+                return Request.CreateResponse(HttpStatusCode.OK, new { message = userMessage, user = userDetails });
+            }
+            else if (data == -1 || data == -100)
+            {
+                string userMessage = "Mobile number already registered. Please try registering using different mobile number.";
+                return Request.CreateResponse(HttpStatusCode.OK, new { message = userMessage });
+            }
+
+            return Request.CreateErrorResponse(HttpStatusCode.BadRequest, new Exception("Unable to register the user."));
         }
 
-        [Route("api/login")]
+        [Route("api/user/login")]
         [HttpPost]
         [HttpOptions]
         public HttpResponseMessage Login([FromBody]UserDetails jsondata)
@@ -35,33 +45,27 @@ namespace Navigettr.Services.Controllers
             try
             {
                 string yourJson = "";
-                var data = _repository.UserLogIn(jsondata.username, jsondata.password);
+                var data = _repository.UserLogIn(jsondata.mobileNumber, jsondata.mPin);
 
                 if (data.Count > 0 && data != null)
                 {
-
                     return Request.CreateResponse(HttpStatusCode.OK, data);
                 }
                 else
                 {
                     //return Request.CreateResponse(HttpStatusCode.NotFound, "No Data found ");
-                    yourJson = "Unable to login at this moment";
+                    yourJson = "Invalid Mobile number or MPIN";
                     HttpError myCustomError = new HttpError(yourJson);
                     return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, myCustomError);
                 }
-
-
             }
             catch (Exception ex)
             {
-
                 return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "");
             }
-
         }
 
-
-        [Route("api/changePassword")]
+        [Route("api/user/changeMPin")]
         [HttpPost]
         [HttpOptions]
         public HttpResponseMessage ChangePassword([FromBody]UserDetails jsondata)
@@ -69,16 +73,16 @@ namespace Navigettr.Services.Controllers
             try
             {
                 string yourJson = "";
-                var data = _repository.ChangePassword(jsondata.userId, jsondata.oldPassword, jsondata.newPassword);
+                var data = _repository.ChangePassword(jsondata.userId, jsondata.oldMPin, jsondata.newMPin);
 
                 if (Convert.ToInt32(data) == 1)
                 {
-                    yourJson = "Successfully changed the password";
+                    yourJson = "Successfully changed the MPIN";
                     return Request.CreateResponse(HttpStatusCode.OK, new { message = yourJson });
                 }
                 else
                 {
-                    yourJson = "Either Incorrect userid or old password, unable to change the password";
+                    yourJson = "Either Incorrect userid or old MPIN, unable to change the password";
                     HttpError myCustomError = new HttpError(yourJson);
                     return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, myCustomError);
                 }
@@ -90,37 +94,25 @@ namespace Navigettr.Services.Controllers
             }
         }
 
-        [Route("api/forgotPassword")]
+        [Route("api/user/forgotPassword")]
         [HttpPost]
         [HttpOptions]
-        public HttpResponseMessage ForgotPassword(string emailId)
+        public HttpResponseMessage ForgotPassword(string mobileNumber)
         {
             try
             {
                 string yourJson = "";
-                var data = _repository.ForgotPassword(emailId);
+                var data = _repository.ForgotPassword(mobileNumber);
 
                 // Send an email notification in case we have got the user id 
                 if (data != null && data.Count > 0 && Convert.ToInt32((data[0] as SP_forgotPassword_Result1).UserId) > 0)
                 {
-                    EmailData email = new EmailData();
-                    email.ToEmailAdress = emailId;
-                    email.Body = string.Format(ConfigurationManager.AppSettings["ChangePasswordLink"], (data[0] as SP_forgotPassword_Result1).UserId);
-                    email.EnableSSL = bool.Parse(ConfigurationManager.AppSettings["EnableSSL"]);
-                    email.FromEmailAddress = ConfigurationManager.AppSettings["MailUserName"];
-                    email.FromName = ConfigurationManager.AppSettings["MailName"];
-                    email.FromPassword = ConfigurationManager.AppSettings["MailPassword"];
-                    email.Port = int.Parse(ConfigurationManager.AppSettings["Port"]);
-                    email.Subject = "Navigettr - Reset your password";
-                    email.HostName = ConfigurationManager.AppSettings["Host"];
-
-                    EmailData.SendEmail(email);
-                    yourJson = "An email is sent to your registered email address to reset the password";
-                    return Request.CreateResponse(HttpStatusCode.OK, new { message = yourJson });
+                    string link = string.Format(ConfigurationManager.AppSettings["ChangePasswordLink"], (data[0] as SP_forgotPassword_Result1).UserId);
+                    return Request.CreateResponse(HttpStatusCode.OK, new { message = link });
                 }
                 else
                 {
-                    yourJson = "Email address doesn't exist";
+                    yourJson = "Mobile number doesn't exist";
                     HttpError myCustomError = new HttpError(yourJson);
                     return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, myCustomError);
                 }
@@ -131,39 +123,5 @@ namespace Navigettr.Services.Controllers
                 return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex.Message);
             }
         }
-
-        [Route("api/register")]
-        [HttpPost]
-        [HttpOptions]
-        public HttpResponseMessage RegisterUser([FromBody]RegisterUserDetails userDetails)
-        {
-            userDetails.UserName = userDetails.MobileNumber;
-            userDetails.MobileNumber = userDetails.CountryCode + userDetails.MobileNumber;
-            int data = _repository.RegisterUser(userDetails.Id, userDetails.FirstName, userDetails.LastName, userDetails.Password, userDetails.MobileNumber, userDetails.UserName, userDetails.EmailAddress);
-
-            if (data > 0)
-            {
-                string userMessage = "Successfully registered the user.";
-                return Request.CreateResponse(HttpStatusCode.OK, new { message = userMessage });
-            }
-            else if (data == -1 || data == -100)
-            {
-                string userMessage = "Username already exist. Please try registering using different mobile number or try forgot password from website.";
-                return Request.CreateResponse(HttpStatusCode.OK, new { message = userMessage });
-            }
-            return Request.CreateErrorResponse(HttpStatusCode.BadRequest, new Exception("Unable to register the user."));
-        }
-    }
-
-    public class RegisterUserDetails
-    {
-        public int Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string CountryCode { get; set; }
-        public string EmailAddress { get; set; }
-        public string MobileNumber { get; set; }
-        public string UserName { get; set; }
-        public string Password { get; set; }
     }
 }

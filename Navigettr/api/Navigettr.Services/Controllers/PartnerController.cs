@@ -1,6 +1,5 @@
 ﻿using Navigettr.Core;
 using Navigettr.Data;
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -8,9 +7,6 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
 
@@ -249,17 +245,6 @@ namespace Navigettr.Services.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, fromList);
         }
 
-        [HttpGet]
-        [HttpOptions]
-        [Route("api/getAllCurrencies")]
-        public HttpResponseMessage GetAllCurrencies()
-        {
-            string filePath = System.Web.Hosting.HostingEnvironment.MapPath(@"~/App_Data/currency.json");
-            string allText = System.IO.File.ReadAllText(filePath);
-            var currency = JsonConvert.DeserializeObject(allText);
-            return Request.CreateResponse(HttpStatusCode.OK, currency);
-        }
-
         [HttpPost]
         [HttpOptions]
         [Route("api/savePartnerRates")]
@@ -270,13 +255,6 @@ namespace Navigettr.Services.Controllers
             {
                 List<int> data = _repository.SaveUpdateRates(rates);
                 return Request.CreateResponse(HttpStatusCode.OK, data);
-
-                //else
-                //{
-                //    HttpError myCustomError = new HttpError("Unable to add the new rates for partner");
-                //    return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, myCustomError);
-
-                //}
             }
             catch (Exception ex)
             {
@@ -313,56 +291,6 @@ namespace Navigettr.Services.Controllers
             {
                 HttpError myCustomError = new HttpError("Unable to add/update the charges for partner");
                 return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, myCustomError);
-            }
-        }
-
-        [HttpPost]
-        [HttpOptions]
-        [Route("api/getGlobalConfig")]
-        public HttpResponseMessage GetGlobalConfig()
-        {
-            try
-            {
-                var data = _repository.FetchGlobalConfig();
-                if (data.Count > 0 && data != null)
-                {
-                    return Request.CreateResponse(HttpStatusCode.OK, data);
-                }
-                else
-                {
-                    HttpError myCustomError = new HttpError("No Global configurations found");
-                    return Request.CreateErrorResponse(HttpStatusCode.NotFound, myCustomError);
-                }
-            }
-            catch (Exception ex)
-            {
-
-                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "An error occurred while getting the global configuration");
-            }
-        }
-
-        [HttpPost]
-        [HttpOptions]
-        [Route("api/saveGlobalConfig")]
-        public HttpResponseMessage SaveGlobalConfig(List<SystemParam> config)
-        {
-            try
-            {
-                var saved = _repository.SaveGlobalConfig(config);
-                if (saved)
-                {
-                    return Request.CreateResponse(HttpStatusCode.OK, config);
-                }
-                else
-                {
-                    HttpError myCustomError = new HttpError("No Global configurations found");
-                    return Request.CreateErrorResponse(HttpStatusCode.NotFound, myCustomError);
-                }
-            }
-            catch (Exception ex)
-            {
-
-                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, "An error occurred while saving the global configuration");
             }
         }
 
@@ -436,18 +364,40 @@ namespace Navigettr.Services.Controllers
             return Request.CreateResponse(HttpStatusCode.InternalServerError, settings);
         }
 
-        [Route("api/search")]
+        [Route("api/partner/search")]
         [HttpPost]
         [HttpOptions]
         public HttpResponseMessage Search(SearchParams param)
         {
             ServiceProviders result = _repository.SearchServiceProviders(param.UserId, param.ServiceParams.Amount, param.City, param.Country, param.ZipCode, param.SearchRadius, float.Parse(param.Latitude), float.Parse(param.Longitude), param.ServiceParams.FromCurrency, param.ServiceParams.ToCurrency, param.OrderByColumn, param.OrderByDirection, param.PageNumber, param.PageSize);
+            List<SP_SearchServiceProviders_Result> tempProviders = result.Providers.OrderBy(r=>r.Distance).GroupBy(provider => provider.PartnerId).Select(group => group.First()).ToList();
+            result.Providers = tempProviders;
+
+            if(param.OrderByDirection == "ASC" && param.OrderByColumn == "RATE")
+            {
+                result.Providers = result.Providers.OrderBy(r => r.Indicative).ToList();
+            }
+            else if (param.OrderByDirection == "DESC" && param.OrderByColumn == "RATE")
+            {
+                result.Providers = result.Providers.OrderByDescending(r => r.Indicative).ToList();
+            }
+
+            result.TotalCount = tempProviders.Count;
             // 1. Get the worktime of each location
             // 5. Get offers for top N results. N is configured in DB - get only if user id not missing
             return Request.CreateResponse(HttpStatusCode.OK, result);
         }
 
-        [Route("api/trackUserVisit")]
+        [Route("api/partner/locations/search")]
+        [HttpPost]
+        [HttpOptions]
+        public HttpResponseMessage LocationSearch(SearchParams param)
+        {
+            ServiceProviders result = _repository.SearchServiceProviderLocations(param.UserId,param.PartnerId, param.ServiceParams.Amount, param.City, param.Country, param.ZipCode, param.SearchRadius, float.Parse(param.Latitude), float.Parse(param.Longitude), param.ServiceParams.FromCurrency, param.ServiceParams.ToCurrency, param.OrderByColumn, param.OrderByDirection, param.PageNumber, param.PageSize);
+            return Request.CreateResponse(HttpStatusCode.OK, result);
+        }
+
+        [Route("api/user/trackVisit")]
         [HttpPost]
         [HttpOptions]
         public HttpResponseMessage TrackUserVisit(int userId, int partnerId, int locationId)
@@ -456,13 +406,13 @@ namespace Navigettr.Services.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, new { message = "User visit tracked successfully." });
         }
 
-        [Route("api/scanPartnerQRCode")]
+        [Route("api/partner/scanQRCode")]
         [HttpPost]
         [HttpOptions]
-        public HttpResponseMessage ScanPartnerQRCode(int userId, int partnerId, string locationId, float amount, string fromCurrency, string toCurrency, DateTime dateScanned)
+        public HttpResponseMessage ScanPartnerQRCode(int userId, int partnerId, string locationId, float amount, string fromCurrency, string toCurrency, DateTime dateScanned, float rate, string serviceType, float fees, string feesCurrency)
         {
-            int response = _repository.UserQRCodeTracker(userId, locationId, partnerId, amount, fromCurrency, toCurrency, dateScanned);
-            return Request.CreateResponse(HttpStatusCode.OK, new { message = "QR Code scanned successfully." });
+            int response = _repository.UserQRCodeTracker(userId, locationId, partnerId, amount, fromCurrency, toCurrency, dateScanned, rate, serviceType, fees, feesCurrency);
+            return Request.CreateResponse(HttpStatusCode.OK, new { message = "QR Code scanned successfully.", id = response });
         }
 
         [Route("api/getRewards")]

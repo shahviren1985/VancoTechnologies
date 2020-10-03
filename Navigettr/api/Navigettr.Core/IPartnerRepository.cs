@@ -1,9 +1,6 @@
 ﻿using Navigettr.Data;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Navigettr.Core
 {
@@ -21,8 +18,9 @@ namespace Navigettr.Core
         int SavePartnerSettings(PartnerSettings settings);
         bool SendAddPartnerEmail(EmailData data);
         ServiceProviders SearchServiceProviders(int userId, double amount, string city, string country, string zipCode, int radius, float latitude, float longitude, string fromCurrency, string toCurrency, string orderByColumn, string orderDirection, int page, int pageData);
+        ServiceProviders SearchServiceProviderLocations(int userId, int partnerId, double amount, string city, string country, string zipCode, int radius, float latitude, float longitude, string fromCurrency, string toCurrency, string orderByColumn, string orderDirection, int page, int pageData);
         int UserLocationTracker(int userId, int partnerId, int locationId, DateTime reachedAt);
-        int UserQRCodeTracker(int userId, string locationId, int partnerId, float amount, string fromCurrency, string toCurrnecy, DateTime scannedOn);
+        int UserQRCodeTracker(int userId, string locationId, int partnerId, float amount, string fromCurrency, string toCurrnecy, DateTime scannedOn, float rate, string serviceType, float fees, string feesCurrency);
         //int UserRewardPointsTracker(int userId, string transactionId, string rewardPointsEarned, DateTime earnedDate, string comments);
 
     }

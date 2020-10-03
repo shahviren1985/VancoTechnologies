@@ -271,7 +271,7 @@ namespace Navigettr.Services.Controllers
             {
                 string address = location.AddressLine1 + ", " + location.AddressLine2 + ", " + location.City + ", " + location.State + ", " + location.Country;
                 // key =AIzaSyDOgpcjQu4kRkC4ZqE0YAXIvgDEi2P2HFE
-                string requestUri = string.Format("https://maps.googleapis.com/maps/api/geocode/xml?key=&address={0}&sensor=false", Uri.EscapeDataString(address));
+                string requestUri = string.Format("https://maps.googleapis.com/maps/api/geocode/xml?key=AIzaSyC7Bgi2lHuE5WaMAsVeTZznuLC0ocAAC04&address={0}&sensor=false", Uri.EscapeDataString(address));
 
                 WebRequest request = WebRequest.Create(requestUri);
                 WebResponse response = request.GetResponse();
