@@ -1,0 +1,17 @@
+D:\Developement\POCs\CSVDataFilter\VATReceiptBook\VATReceiptBook\bin\Release\VATReceiptBook.exe.config
+D:\Developement\POCs\CSVDataFilter\VATReceiptBook\VATReceiptBook\bin\Release\VATReceiptBook.exe
+D:\Developement\POCs\CSVDataFilter\VATReceiptBook\VATReceiptBook\bin\Release\VATReceiptBook.pdb
+D:\Developement\POCs\CSVDataFilter\VATReceiptBook\VATReceiptBook\obj\Release\CSVDataProcessor.ProjectInstaller.resources
+D:\Developement\POCs\CSVDataFilter\VATReceiptBook\VATReceiptBook\obj\Release\CSVDataProcessor.csproj.GenerateResource.Cache
+D:\Developement\POCs\CSVDataFilter\VATReceiptBook\VATReceiptBook\obj\Release\VATReceiptBook.exe
+D:\Developement\POCs\CSVDataFilter\VATReceiptBook\VATReceiptBook\obj\Release\VATReceiptBook.pdb
+D:\Developement\POCs\CSVDataFilter\CSVDataProcessor\VATReceiptBook\obj\Release\CSVDataProcessor.ProjectInstaller.resources
+D:\Developement\POCs\CSVDataFilter\CSVDataProcessor\VATReceiptBook\obj\Release\CSVDataProcessor.csproj.GenerateResource.Cache
+D:\Developement\POCs\CSVDataFilter\CSVDataProcessor\VATReceiptBook\bin\Release\CSVDataProcessor.exe.config
+D:\Developement\POCs\CSVDataFilter\CSVDataProcessor\VATReceiptBook\bin\Release\CSVDataProcessor.exe
+D:\Developement\POCs\CSVDataFilter\CSVDataProcessor\VATReceiptBook\bin\Release\CSVDataProcessor.pdb
+D:\Developement\POCs\CSVDataFilter\CSVDataProcessor\VATReceiptBook\obj\Release\CSVDataProcessor.exe
+D:\Developement\POCs\CSVDataFilter\CSVDataProcessor\VATReceiptBook\obj\Release\CSVDataProcessor.pdb
+D:\Personal\UpWork\CSVDataFilterService\Deliverables\Code\CSVDataProcessor\CSVDataProcessor\bin\Release\CSVDataProcessor.exe.config
+D:\Personal\UpWork\CSVDataFilterService\Deliverables\Code\CSVDataProcessor\CSVDataProcessor\obj\Release\CSVDataProcessor.exe
+D:\Personal\UpWork\CSVDataFilterService\Deliverables\Code\CSVDataProcessor\CSVDataProcessor\obj\Release\CSVDataProcessor.pdb

@@ -1,0 +1,65 @@
+2/22/2020 12:06:00 AM ==> service start...
+2/22/2020 12:06:00 AM ==> 1 files found at D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process
+2/22/2020 12:06:00 AM ==> File Name is : D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process\201910 (1).csv
+2/22/2020 12:06:00 AM ==> Processing start...
+2/22/2020 12:06:01 AM ==> file moved to Data Folder: 201910 (1)_22022020120601.csv
+2/22/2020 12:06:01 AM ==> file moved to Processed Folder: 201910 (1).csv
+2/22/2020 12:06:53 AM ==> File Successfully Imported
+2/22/2020 12:06:53 AM ==> {"isSuccess":true,"SuccessMessage":"File imported Successfully"}
+2/22/2020 12:06:53 AM ==> Processing complete...
+2/22/2020 12:15:22 AM ==> 1 files found at D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process
+2/22/2020 12:15:22 AM ==> File Name is : D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process\201909.csv
+2/22/2020 12:15:22 AM ==> Processing start...
+2/22/2020 12:15:22 AM ==> file moved to Data Folder: 201909_22022020121522.csv
+2/22/2020 12:15:22 AM ==> file moved to Processed Folder: 201909.csv
+2/22/2020 12:15:23 AM ==> File Successfully Imported
+2/22/2020 12:15:23 AM ==> {"isSuccess":true,"SuccessMessage":"File imported Successfully"}
+2/22/2020 12:15:23 AM ==> Processing complete...
+2/22/2020 12:15:27 AM ==> 1 files found at D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process
+2/22/2020 12:15:27 AM ==> File Name is : D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process\201910.csv
+2/22/2020 12:15:27 AM ==> Processing start...
+2/22/2020 12:15:27 AM ==> file moved to Data Folder: 201910_22022020121527.csv
+2/22/2020 12:15:27 AM ==> file moved to Processed Folder: 201910.csv
+2/22/2020 12:15:28 AM ==> File Successfully Imported
+2/22/2020 12:15:28 AM ==> {"isSuccess":true,"SuccessMessage":"File imported Successfully"}
+2/22/2020 12:15:28 AM ==> Processing complete...
+2/22/2020 12:15:31 AM ==> 1 files found at D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process
+2/22/2020 12:15:31 AM ==> File Name is : D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process\201912.csv
+2/22/2020 12:15:31 AM ==> Processing start...
+2/22/2020 12:15:31 AM ==> file moved to Data Folder: 201912_22022020121531.csv
+2/22/2020 12:15:31 AM ==> file moved to Processed Folder: 201912.csv
+2/22/2020 12:15:31 AM ==> File Successfully Imported
+2/22/2020 12:15:32 AM ==> {"isSuccess":true,"SuccessMessage":"File imported Successfully"}
+2/22/2020 12:15:32 AM ==> Processing complete...
+2/22/2020 12:15:33 AM ==> 1 files found at D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process
+2/22/2020 12:15:33 AM ==> File Name is : D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process\201911.csv
+2/22/2020 12:15:33 AM ==> Processing start...
+2/22/2020 12:15:33 AM ==> file moved to Data Folder: 201911_22022020121533.csv
+2/22/2020 12:15:33 AM ==> file moved to Processed Folder: 201911.csv
+2/22/2020 12:15:33 AM ==> File Successfully Imported
+2/22/2020 12:15:33 AM ==> {"isSuccess":true,"SuccessMessage":"File imported Successfully"}
+2/22/2020 12:15:34 AM ==> Processing complete...
+2/22/2020 12:18:14 AM ==> 1 files found at D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process
+2/22/2020 12:18:14 AM ==> File Name is : D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process\201909.csv
+2/22/2020 12:18:14 AM ==> Processing start...
+2/22/2020 12:18:14 AM ==> file moved to Data Folder: 201909_22022020121814.csv
+2/22/2020 12:18:14 AM ==> File moved to Processed Folder: overwrite with existing file: 201909.csv
+2/22/2020 12:18:15 AM ==> File Successfully Imported
+2/22/2020 12:18:15 AM ==> {"isSuccess":true,"SuccessMessage":"File imported Successfully"}
+2/22/2020 12:18:15 AM ==> Processing complete...
+2/22/2020 12:19:22 AM ==> 1 files found at D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process
+2/22/2020 12:19:22 AM ==> File Name is : D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process\201909.csv
+2/22/2020 12:19:22 AM ==> Processing start...
+2/22/2020 12:19:22 AM ==> file moved to Data Folder: 201909_22022020121922.csv
+2/22/2020 12:19:22 AM ==> File moved to Processed Folder: overwrite with existing file: 201909.csv
+2/22/2020 12:19:23 AM ==> File Successfully Imported
+2/22/2020 12:19:23 AM ==> {"isSuccess":true,"SuccessMessage":"File imported Successfully"}
+2/22/2020 12:19:23 AM ==> Processing complete...
+2/22/2020 12:21:41 AM ==> 1 files found at D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process
+2/22/2020 12:21:41 AM ==> File Name is : D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process\201909.csv
+2/22/2020 12:21:41 AM ==> Processing start...
+2/22/2020 12:21:41 AM ==> file moved to Data Folder: 201909_22022020122141.csv
+2/22/2020 12:21:41 AM ==> file moved to Processed Folder: 201909.csv
+2/22/2020 12:21:42 AM ==> File Successfully Imported
+2/22/2020 12:21:42 AM ==> {"isSuccess":true,"SuccessMessage":"File imported Successfully"}
+2/22/2020 12:21:42 AM ==> Processing complete...

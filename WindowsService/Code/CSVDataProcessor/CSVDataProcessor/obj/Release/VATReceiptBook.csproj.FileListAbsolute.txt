@@ -1,0 +1,19 @@
+C:\Users\khurramshahzad\Documents\Visual Studio 2015\Projects\VATReceiptBook\VATReceiptBook\bin\Release\VATReceiptBook.exe.config
+C:\Users\khurramshahzad\Documents\Visual Studio 2015\Projects\VATReceiptBook\VATReceiptBook\bin\Release\VATReceiptBook.exe
+C:\Users\khurramshahzad\Documents\Visual Studio 2015\Projects\VATReceiptBook\VATReceiptBook\bin\Release\VATReceiptBook.pdb
+C:\Users\khurramshahzad\Documents\Visual Studio 2015\Projects\VATReceiptBook\VATReceiptBook\obj\Release\VATReceiptBook.ProjectInstaller.resources
+C:\Users\khurramshahzad\Documents\Visual Studio 2015\Projects\VATReceiptBook\VATReceiptBook\obj\Release\VATReceiptBook.csproj.GenerateResource.Cache
+C:\Users\khurramshahzad\Documents\Visual Studio 2015\Projects\VATReceiptBook\VATReceiptBook\obj\Release\VATReceiptBook.exe
+C:\Users\khurramshahzad\Documents\Visual Studio 2015\Projects\VATReceiptBook\VATReceiptBook\obj\Release\VATReceiptBook.pdb
+C:\Users\khurramshahzad\Documents\Visual Studio 2015\Projects\VATReceiptBook\VATReceiptBook\obj\Release\VATReceiptBook.csprojResolveAssemblyReference.cache
+D:\Developement\VAT\VATReceiptBooks\VATReceiptBook\VATReceiptBook\bin\Release\VATReceiptBook.exe.config
+D:\Developement\VAT\VATReceiptBooks\VATReceiptBook\VATReceiptBook\obj\Release\VATReceiptBook.exe
+D:\Developement\VAT\VATReceiptBooks\VATReceiptBook\VATReceiptBook\obj\Release\VATReceiptBook.pdb
+D:\Developement\VAT\VATReceiptBooks\VATReceiptBook\VATReceiptBook\bin\Release\VATReceiptBook.exe
+D:\Developement\VAT\VATReceiptBooks\VATReceiptBook\VATReceiptBook\bin\Release\VATReceiptBook.pdb
+D:\Developement\VAT\VATReceiptBooks\VATReceiptBook\VATReceiptBook\obj\Release\VATReceiptBook.csprojResolveAssemblyReference.cache
+D:\Developement\VAT\VATReceiptBooks\VATReceiptBook\VATReceiptBook\obj\Release\VATReceiptBook.ProjectInstaller.resources
+D:\Developement\VAT\VATReceiptBooks\VATReceiptBook\VATReceiptBook\obj\Release\VATReceiptBook.csproj.GenerateResource.Cache
+D:\Developement\POCs\CSVDataFilter\VATReceiptBook\VATReceiptBook\bin\Release\VATReceiptBook.exe.config
+D:\Developement\POCs\CSVDataFilter\VATReceiptBook\VATReceiptBook\obj\Release\VATReceiptBook.exe
+D:\Developement\POCs\CSVDataFilter\VATReceiptBook\VATReceiptBook\obj\Release\VATReceiptBook.pdb

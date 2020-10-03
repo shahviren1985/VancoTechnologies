@@ -1,0 +1,16 @@
+C:\Users\khurramshahzad\Documents\Visual Studio 2015\Projects\VATReceiptBook\VATReceiptBook\bin\Debug\VATReceiptBook.exe.config
+C:\Users\khurramshahzad\Documents\Visual Studio 2015\Projects\VATReceiptBook\VATReceiptBook\bin\Debug\VATReceiptBook.exe
+C:\Users\khurramshahzad\Documents\Visual Studio 2015\Projects\VATReceiptBook\VATReceiptBook\bin\Debug\VATReceiptBook.pdb
+C:\Users\khurramshahzad\Documents\Visual Studio 2015\Projects\VATReceiptBook\VATReceiptBook\obj\Debug\VATReceiptBook.ProjectInstaller.resources
+C:\Users\khurramshahzad\Documents\Visual Studio 2015\Projects\VATReceiptBook\VATReceiptBook\obj\Debug\VATReceiptBook.csproj.GenerateResource.Cache
+C:\Users\khurramshahzad\Documents\Visual Studio 2015\Projects\VATReceiptBook\VATReceiptBook\obj\Debug\VATReceiptBook.exe
+C:\Users\khurramshahzad\Documents\Visual Studio 2015\Projects\VATReceiptBook\VATReceiptBook\obj\Debug\VATReceiptBook.pdb
+C:\Users\khurramshahzad\Documents\Visual Studio 2015\Projects\VATReceiptBook\VATReceiptBook\obj\Debug\VATReceiptBook.csprojResolveAssemblyReference.cache
+D:\Developement\VAT\VATReceiptBooks\VATReceiptBook\VATReceiptBook\bin\Debug\VATReceiptBook.exe.config
+D:\Developement\VAT\VATReceiptBooks\VATReceiptBook\VATReceiptBook\obj\Debug\VATReceiptBook.exe
+D:\Developement\VAT\VATReceiptBooks\VATReceiptBook\VATReceiptBook\obj\Debug\VATReceiptBook.pdb
+D:\Developement\VAT\VATReceiptBooks\VATReceiptBook\VATReceiptBook\bin\Debug\VATReceiptBook.exe
+D:\Developement\VAT\VATReceiptBooks\VATReceiptBook\VATReceiptBook\bin\Debug\VATReceiptBook.pdb
+D:\Developement\VAT\VATReceiptBooks\VATReceiptBook\VATReceiptBook\obj\Debug\VATReceiptBook.csprojResolveAssemblyReference.cache
+D:\Developement\VAT\VATReceiptBooks\VATReceiptBook\VATReceiptBook\obj\Debug\VATReceiptBook.ProjectInstaller.resources
+D:\Developement\VAT\VATReceiptBooks\VATReceiptBook\VATReceiptBook\obj\Debug\VATReceiptBook.csproj.GenerateResource.Cache

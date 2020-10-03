@@ -1,0 +1,80 @@
+2/21/2020 12:00:50 AM ==> service start...
+2/21/2020 12:00:50 AM ==> 1 files found at D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process
+2/21/2020 12:00:50 AM ==> File Name is : D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process\201909.csv
+2/21/2020 12:00:51 AM ==> Processing start...
+2/21/2020 12:00:51 AM ==> System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at CSVDataProcessor.FileParsing.ProcessCSV(String FileName)
+2/21/2020 12:00:52 AM ==> 1 files found at D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process
+2/21/2020 12:00:52 AM ==> File Name is : D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process\201909.csv
+2/21/2020 12:00:52 AM ==> Processing start...
+2/21/2020 12:00:52 AM ==> System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at CSVDataProcessor.FileParsing.ProcessCSV(String FileName)
+2/21/2020 12:00:53 AM ==> 1 files found at D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process
+2/21/2020 12:00:53 AM ==> File Name is : D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process\201909.csv
+2/21/2020 12:00:53 AM ==> Processing start...
+2/21/2020 12:00:53 AM ==> System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at CSVDataProcessor.FileParsing.ProcessCSV(String FileName)
+2/21/2020 12:00:54 AM ==> 1 files found at D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process
+2/21/2020 12:00:54 AM ==> File Name is : D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process\201909.csv
+2/21/2020 12:00:54 AM ==> Processing start...
+2/21/2020 12:00:54 AM ==> System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at CSVDataProcessor.FileParsing.ProcessCSV(String FileName)
+2/21/2020 12:00:55 AM ==> 1 files found at D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process
+2/21/2020 12:00:55 AM ==> File Name is : D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process\201909.csv
+2/21/2020 12:00:55 AM ==> Processing start...
+2/21/2020 12:00:55 AM ==> System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at CSVDataProcessor.FileParsing.ProcessCSV(String FileName)
+2/21/2020 12:00:56 AM ==> 1 files found at D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process
+2/21/2020 12:00:56 AM ==> File Name is : D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process\201909.csv
+2/21/2020 12:00:56 AM ==> Processing start...
+2/21/2020 12:00:56 AM ==> System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at CSVDataProcessor.FileParsing.ProcessCSV(String FileName)
+2/21/2020 12:00:57 AM ==> 1 files found at D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process
+2/21/2020 12:00:57 AM ==> File Name is : D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process\201909.csv
+2/21/2020 12:00:57 AM ==> Processing start...
+2/21/2020 12:00:57 AM ==> System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at CSVDataProcessor.FileParsing.ProcessCSV(String FileName)
+2/21/2020 12:00:58 AM ==> 1 files found at D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process
+2/21/2020 12:00:58 AM ==> File Name is : D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process\201909.csv
+2/21/2020 12:00:59 AM ==> Processing start...
+2/21/2020 12:00:59 AM ==> System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at CSVDataProcessor.FileParsing.ProcessCSV(String FileName)
+2/21/2020 12:01:00 AM ==> 1 files found at D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process
+2/21/2020 12:01:00 AM ==> File Name is : D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process\201909.csv
+2/21/2020 12:01:00 AM ==> Processing start...
+2/21/2020 12:01:00 AM ==> System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at CSVDataProcessor.FileParsing.ProcessCSV(String FileName)
+2/21/2020 12:01:01 AM ==> 1 files found at D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process
+2/21/2020 12:01:01 AM ==> File Name is : D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process\201909.csv
+2/21/2020 12:01:01 AM ==> Processing start...
+2/21/2020 12:01:01 AM ==> System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at CSVDataProcessor.FileParsing.ProcessCSV(String FileName)
+2/21/2020 12:01:02 AM ==> 1 files found at D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process
+2/21/2020 12:01:02 AM ==> File Name is : D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process\201909.csv
+2/21/2020 12:01:02 AM ==> Processing start...
+2/21/2020 12:01:02 AM ==> System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at CSVDataProcessor.FileParsing.ProcessCSV(String FileName)
+2/21/2020 12:01:03 AM ==> 1 files found at D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process
+2/21/2020 12:01:03 AM ==> File Name is : D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process\201909.csv
+2/21/2020 12:01:03 AM ==> Processing start...
+2/21/2020 12:01:03 AM ==> System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at CSVDataProcessor.FileParsing.ProcessCSV(String FileName)
+2/21/2020 12:01:04 AM ==> 1 files found at D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process
+2/21/2020 12:01:04 AM ==> File Name is : D:\VancoTechnologies\GIT\VancoTechnologies\WindowsService\Data\Process\201909.csv
+2/21/2020 12:01:04 AM ==> Processing start...
+2/21/2020 12:01:04 AM ==> System.FormatException: String was not recognized as a valid DateTime.
+   at System.DateTimeParse.ParseExact(String s, String format, DateTimeFormatInfo dtfi, DateTimeStyles style)
+   at CSVDataProcessor.FileParsing.ProcessCSV(String FileName)
+2/21/2020 12:01:05 AM ==> service stopped...

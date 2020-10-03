@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D76C6C2-C6D2-4189-A546-65ED2DBE5319}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AcademicCalendar</RootNamespace>
+    <AssemblyName>AcademicCalendar</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.10.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.10.9\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.10.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entity.6.10.9\lib\net452\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config.cs" />
+    <Compile Include="Forms\CommonTimeslotMaster\FrmCommonTimeslotMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CommonTimeslotMaster\FrmCommonTimeslotMaster.Designer.cs">
+      <DependentUpon>FrmCommonTimeslotMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CommonTimeslotMaster\FrmCommonTimeslotDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CommonTimeslotMaster\FrmCommonTimeslotDetails.Designer.cs">
+      <DependentUpon>FrmCommonTimeslotDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FacultyMaster\FrmFacultyDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FacultyMaster\FrmFacultyDetails.Designer.cs">
+      <DependentUpon>FrmFacultyDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FacultyMaster\FrmFacultyMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FacultyMaster\FrmFacultyMaster.Designer.cs">
+      <DependentUpon>FrmFacultyMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HolidayMaster\FrmHolidayDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HolidayMaster\FrmHolidayDetails.Designer.cs">
+      <DependentUpon>FrmHolidayDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HolidayMaster\FrmHolidayMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HolidayMaster\FrmHolidayMaster.Designer.cs">
+      <DependentUpon>FrmHolidayMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Mappers\FrmSubjectTimeslotMapDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mappers\FrmSubjectTimeslotMapDetails.Designer.cs">
+      <DependentUpon>FrmSubjectTimeslotMapDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Mappers\FrmSubjectTimeslotMapList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Mappers\FrmSubjectTimeslotMapList.Designer.cs">
+      <DependentUpon>FrmSubjectTimeslotMapList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubjectMaster\FrmSubjectDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubjectMaster\FrmSubjectDetails.Designer.cs">
+      <DependentUpon>FrmSubjectDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubjectMaster\FrmSubjectMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SubjectMaster\FrmSubjectMaster.Designer.cs">
+      <DependentUpon>FrmSubjectMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TopicMaster\FrmTopicDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TopicMaster\FrmTopicDetails.Designer.cs">
+      <DependentUpon>FrmTopicDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TopicMaster\FrmTopicMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TopicMaster\FrmTopicMaster.Designer.cs">
+      <DependentUpon>FrmTopicMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\TopicData.cs" />
+    <Compile Include="Helpers\TopicHelper.cs" />
+    <Compile Include="Helpers\WeekData.cs" />
+    <Compile Include="Models\CalContext.cs" />
+    <Compile Include="Models\CommonTimeslot.cs" />
+    <Compile Include="Models\Day.cs" />
+    <Compile Include="Models\Faculty.cs" />
+    <Compile Include="Models\FacultySubject.cs" />
+    <Compile Include="Models\Holiday.cs" />
+    <Compile Include="Models\Subject.cs" />
+    <Compile Include="Models\Term.cs" />
+    <Compile Include="Models\Timeslot.cs" />
+    <Compile Include="Models\Topic.cs" />
+    <Compile Include="Models\Year.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\CommonTimeslotMaster\FrmCommonTimeslotDetails.resx">
+      <DependentUpon>FrmCommonTimeslotDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CommonTimeslotMaster\FrmCommonTimeslotMaster.resx">
+      <DependentUpon>FrmCommonTimeslotMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FacultyMaster\FrmFacultyDetails.resx">
+      <DependentUpon>FrmFacultyDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FacultyMaster\FrmFacultyMaster.resx">
+      <DependentUpon>FrmFacultyMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HolidayMaster\FrmHolidayDetails.resx">
+      <DependentUpon>FrmHolidayDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HolidayMaster\FrmHolidayMaster.resx">
+      <DependentUpon>FrmHolidayMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mappers\FrmSubjectTimeslotMapDetails.resx">
+      <DependentUpon>FrmSubjectTimeslotMapDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Mappers\FrmSubjectTimeslotMapList.resx">
+      <DependentUpon>FrmSubjectTimeslotMapList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubjectMaster\FrmSubjectDetails.resx">
+      <DependentUpon>FrmSubjectDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubjectMaster\FrmSubjectMaster.resx">
+      <DependentUpon>FrmSubjectMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TopicMaster\FrmTopicDetails.resx">
+      <DependentUpon>FrmTopicDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TopicMaster\FrmTopicMaster.resx">
+      <DependentUpon>FrmTopicMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\AcademicCalendar.Models.Subject.datasource" />
+    <None Include="Properties\DataSources\AcademicCalendar.Models.Subject1.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
