@@ -17,7 +17,7 @@ Examapp.controller("marksheetsCtrl", function ($scope) {
         addValidClassOnAll: false,
         modules: 'file',
         onSuccess: function ($form) {
-            window.open(_CommonurlUI + '/App/Marksheet/Marksheet.html?course=' + $scope.user.course + '&StudentType=' + $scope.user.specialization + '&sem=' + $('#sem').val() + '&CurrentYear=' + CurrentYear + '&ExamType=' + $scope.user.examType + '&date=' + $('#SelectedDate').val(), '_blank');
+            window.open(_CommonurlUI + '/App/Marksheet/Marksheet2.html?course=' + $scope.user.course + '&StudentType=' + $scope.user.specialization + '&sem=' + $('#sem').val() + '&CurrentYear=' + CurrentYear + '&ExamType=' + $scope.user.examType + '&date=' + $('#SelectedDate').val(), '_blank');
             //GetCsvToJsonData('File/Download/Data/SVT?fileName=' + $scope.user.course + '-' + $scope.user.specialization + '_sem' + $('#sem').val() + '_' + CurrentYear + '_' + $scope.user.examType + '.csv').done(function (dataresponse) {
             //    console.log(dataresponse)
             //    try {

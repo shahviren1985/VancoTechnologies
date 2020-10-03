@@ -134,13 +134,13 @@
                     <div class="col-md-12" style="padding-top: 70px; float: right">
                         <span> <b>Date - {{DateOfToday}}</b></span>
                     </div>
-                    <div class="col-md-12" style="text-align:center; padding-top:50px;font-size:20px;font-weight:600">
+                    <div class="col-md-12" style="text-align:center; padding-top:50px; padding-left: 230px; font-size:20px;font-weight:600">
                         TRANSCRIPT CERTIFICATE
                     </div>
                     <div class="col-md-12" style="text-align: justify; padding-top: 120px; font-size: 18px;">
                         This is certify that, <span><b>Ms. {{TranscriptData.LastName}} {{TranscriptData.FirstName}} {{TranscriptData.FatherName}} {{TranscriptData.MotherName}}</b></span> has been a bonafide student of Sir
                         Vithaldas Thackersey College of Home Science (Autonomous) S.N.D.T. Women's University Juhu, Mumbai from
-                        <span>July 2016</span> to <span>June 2019</span>. She has successfully completed the B.Sc. course in
+                        <span>July 2016</span> to <span>{{PassingYear}}</span>. She has successfully completed the B.Sc. course in
                         <span><b>{{TranscriptData.Specialisation}}</b></span> offered by S.N.D.T Women's University and the duration
                         of the program is three years. College conducts the examinations twice in every year. The medium of instruction for above program is English.
                     </div>
@@ -254,27 +254,27 @@
                                 <td style="width:30px"></td>
                                 <td style="width:30px">:</td>
                                 <!--<td><b><span>{{TranscriptData.TotalOverAllPercentage | number:2}}</span></b></td>-->
-                                <td><b><span>74.30</span></b></td>
+                                <td><b><span>61.48</span></b></td>
                             </tr>
                             <tr>
                                 <td style="width:40%"><i style="float:right">Aggregate Grade</i></td>
                                 <td style="width:30px"></td>
                                 <td style="width:30px">:</td>
-                                <td><b><span>{{TranscriptData.OverAllGrade}}</span></b></td>
-                                <!--<td><b><span>A+</span></b></td>-->
+                                <!--<td><b><span>{{TranscriptData.OverAllGrade}}</span></b></td>-->
+                                <td><b><span>A</span></b></td>
                             </tr>
                             <tr>
                                 <td style="width:40%"><i style="float:right">Grade Point Average</i></td>
                                 <td style="width:30px"></td>
                                 <td style="width:30px">:</td>
                                 <!--<td><b><span>{{TranscriptData.OverAllGradePOint | number:2}}</span></b></td>-->
-                                <td><b><span>8.39</span></b></td>
+                                <td><b><span>6.86</span></b></td>
                             </tr>
                             <tr>
                                 <td style="width:40%"><i style="float:right">Passing Year</i></td>
                                 <td style="width:30px"></td>
                                 <td style="width:30px">:</td>
-                                <td><b><span>April 2019</span></b></td>
+                                <td><b><span>{{ToYear}}</span></b></td>
                             </tr>
                             <tr style="padding-top:10px; width: 100%;">
                                 <td colspan="3" style="width: 100%;">
@@ -306,9 +306,9 @@
                                 <td>{{GetCountTotalMark(paper)}}</td>
                                 <td>{{GetCountObtainedTotalMark(paper)}}</td>
                                 <td ng-if="paper.RetryCount<=1">{{paper.gp}}</td>
+                                <td ng-if="paper.RetryCount>1">{{paper.gp}}*</td>
                                 <td>{{paper._Grade}}</td>
-                                <td>{{paper._GradePoint}}</td>
-                                <td ng-if="paper.RetryCount>1">*</td>
+                                <td>{{paper._GradePoint  | number : 1}}</td>
                                 <td ng-if="paper.papertype == 'TH'">{{paper.credit}}</td>
                                 <td ng-if="paper.papertype == 'PR'">{{paper.credit*2}}</td>
                                 <td>15</td>
@@ -326,11 +326,15 @@
                                 <td><div><b>Grade</b></div></td>
                                 <td><div><b>Grade Point Average</b></div></td>
                             </tr>
-                            <tr>
-
+                            <tr ng-if="TranscriptData.Sem1.RetryCount<=1">
                                 <td><b>{{TranscriptData.Sem1._percentege  | number : 2 }}</b></td>
                                 <td><b>{{TranscriptData.Sem1._percentegeGrade}}</b></td>
                                 <td><b>{{TranscriptData.Sem1._FinalPercentageGradePoint | number : 2}}</b> </td>
+                            </tr>
+                            <tr ng-if="TranscriptData.Sem1.RetryCount>1">
+                                <td><b>-</b></td>
+                                <td><b>-</b></td>
+                                <td><b>-</b></td>
                             </tr>
                         </table>
                     </div>
@@ -395,9 +399,9 @@
                                     <td>{{GetCountTotalMark(paper)}}</td>
                                     <td>{{GetCountObtainedTotalMark(paper)}}</td>
                                     <td ng-if="paper.RetryCount<=1">{{paper.gp}}</td>
-                                    <td ng-if="paper.RetryCount<=1">{{paper._Grade}}</td>
-                                    <td ng-if="paper.RetryCount<=1">{{paper._GradePoint}}</td>
-                                    <td ng-if="paper.RetryCount>1">*</td>
+                                    <td ng-if="paper.RetryCount>1">{{paper.gp}}*</td>
+                                    <td>{{paper._Grade}}</td>
+                                    <td>{{paper._GradePoint | number : 1}}</td>
                                     <td ng-if="paper.papertype == 'TH'">{{paper.credit}}</td>
                                     <td ng-if="paper.papertype == 'PR'">{{paper.credit*2}}</td>
                                     <td>15</td>
@@ -415,10 +419,15 @@
                                     <td><div><b>Grade</b></div></td>
                                     <td><div><b>Grade Point Average</b></div></td>
                                 </tr>
-                                <tr>
+                                <tr ng-if="TranscriptData.Sem2.RetryCount<=1">
                                     <td><b>{{TranscriptData.Sem2._percentege  | number : 2 }}</b></td>
                                     <td><b>{{TranscriptData.Sem2._percentegeGrade}}</b></td>
                                     <td><b>{{TranscriptData.Sem2._FinalPercentageGradePoint | number : 2}}</b> </td>
+                                </tr>
+                                <tr ng-if="TranscriptData.Sem2.RetryCount>1">
+                                    <td><b>-</b></td>
+                                    <td><b>-</b></td>
+                                    <td><b>-</b></td>
                                 </tr>
                             </table>
                         </div>
@@ -450,9 +459,9 @@
                                     <td>{{GetCountTotalMark(paper)}}</td>
                                     <td>{{GetCountObtainedTotalMark(paper)}}</td>
                                     <td ng-if="paper.RetryCount<=1">{{paper.gp}}</td>
-                                    <td ng-if="paper.RetryCount<=1">{{paper._Grade}}</td>
-                                    <td ng-if="paper.RetryCount<=1">{{paper._GradePoint}}</td>
-                                    <td ng-if="paper.RetryCount>1">*</td>
+                                    <td ng-if="paper.RetryCount>1">{{paper.gp}}*</td>
+                                    <td>{{paper._Grade}}</td>
+                                    <td>{{paper._GradePoint | number : 1}}</td>
                                     <td ng-if="paper.papertype == 'TH'">{{paper.credit}}</td>
                                     <td ng-if="paper.papertype == 'PR'">{{paper.credit*2}}</td>
                                     <td>15</td>
@@ -470,10 +479,15 @@
                                     <td><div><b>Grade</b></div></td>
                                     <td><div><b>Grade Point Average</b></div></td>
                                 </tr>
-                                <tr>
+                                <tr ng-if="TranscriptData.Sem3.RetryCount<=1">
                                     <td><b>{{TranscriptData.Sem3._percentege  | number : 2 }}</b></td>
                                     <td><b>{{TranscriptData.Sem3._percentegeGrade}}</b></td>
                                     <td><b>{{TranscriptData.Sem3._FinalPercentageGradePoint | number : 2}}</b> </td>
+                                </tr>
+                                <tr ng-if="TranscriptData.Sem3.RetryCount>1">
+                                    <td><b>-</b></td>
+                                    <td><b>-</b></td>
+                                    <td><b>-</b></td>
                                 </tr>
                             </table>
                         </div>
@@ -542,9 +556,9 @@
                                     <td>{{GetCountTotalMark(paper)}}</td>
                                     <td>{{GetCountObtainedTotalMark(paper)}}</td>
                                     <td ng-if="paper.RetryCount<=1">{{paper.gp}}</td>
-                                    <td ng-if="paper.RetryCount<=1">{{paper._Grade}}</td>
-                                    <td ng-if="paper.RetryCount<=1">{{paper._GradePoint}}</td>
-                                    <td ng-if="paper.RetryCount>1">*</td>
+                                    <td ng-if="paper.RetryCount>1">{{paper.gp}}*</td>
+                                    <td>{{paper._Grade}}</td>
+                                    <td>{{paper._GradePoint | number : 1}}</td>
                                     <td ng-if="paper.papertype == 'TH'">{{paper.credit}}</td>
                                     <td ng-if="paper.papertype == 'PR'">{{paper.credit*2}}</td>
                                     <td>15</td>
@@ -562,10 +576,15 @@
                                     <td><div><b>Grade</b></div></td>
                                     <td><div><b>Grade Point Average</b></div></td>
                                 </tr>
-                                <tr>
+                                <tr ng-if="TranscriptData.Sem4.RetryCount<=1">
                                     <td><b>{{TranscriptData.Sem4._percentege  | number : 2 }}</b></td>
                                     <td><b>{{TranscriptData.Sem4._percentegeGrade}}</b></td>
                                     <td><b>{{TranscriptData.Sem4._FinalPercentageGradePoint | number : 2}}</b> </td>
+                                </tr>
+                                <tr ng-if="TranscriptData.Sem4.RetryCount>1">
+                                    <td><b>-</b></td>
+                                    <td><b>-</b></td>
+                                    <td><b>-</b></td>
                                 </tr>
                             </table>
                         </div>
@@ -597,9 +616,9 @@
                                     <td>{{GetCountTotalMark(paper)}}</td>
                                     <td>{{GetCountObtainedTotalMark(paper)}}</td>
                                     <td ng-if="paper.RetryCount<=1">{{paper.gp}}</td>
-                                    <td ng-if="paper.RetryCount<=1">{{paper._Grade}}</td>
-                                    <td ng-if="paper.RetryCount<=1">{{paper._GradePoint}}</td>
-                                    <td ng-if="paper.RetryCount>1">*</td>
+                                    <td ng-if="paper.RetryCount>1">{{paper.gp}}*</td>
+                                    <td>{{paper._Grade}}</td>
+                                    <td>{{paper._GradePoint | number : 1}}</td>
                                     <td ng-if="paper.papertype == 'TH'">{{paper.credit}}</td>
                                     <td ng-if="paper.papertype == 'PR'">{{paper.credit*2}}</td>
                                     <td>15</td>
@@ -617,10 +636,15 @@
                                     <td><div><b>Grade</b></div></td>
                                     <td><div><b>Grade Point Average</b></div></td>
                                 </tr>
-                                <tr>
+                                <tr ng-if="TranscriptData.Sem5.RetryCount<=1">
                                     <td><b>{{TranscriptData.Sem5._percentege  | number : 2 }}</b></td>
                                     <td><b>{{TranscriptData.Sem5._percentegeGrade}}</b></td>
                                     <td><b>{{TranscriptData.Sem5._FinalPercentageGradePoint | number : 2}}</b> </td>
+                                </tr>
+                                <tr ng-if="TranscriptData.Sem5.RetryCount>1">
+                                    <td><b>-</b></td>
+                                    <td><b>-</b></td>
+                                    <td><b>-</b></td>
                                 </tr>
                             </table>
                         </div>
@@ -692,16 +716,17 @@
                                     <td>{{GetCountObtainedTotalMark(paper)}}</td>
 
                                     <td ng-if="paper.RetryCount<=1 && paper.papertitle.indexOf('Incentive')<0">{{paper.gp}}</td>
-                                    <td ng-if="paper.RetryCount > 1 || paper.papertitle.indexOf('Incentive')>=0">-</td>
-
-                                    <td ng-if="paper.RetryCount<=1 && paper.papertitle.indexOf('Incentive')<0">{{paper._Grade}}</td>
-                                    <td ng-if="paper.RetryCount > 1 || paper.papertitle.indexOf('Incentive')>=0">-</td>
-
-                                    <td ng-if="paper.RetryCount<=1 && paper.papertitle.indexOf('Incentive')<0">{{paper._GradePoint}}</td>
-                                    <td ng-if="paper.RetryCount > 1 || paper.papertitle.indexOf('Incentive')>=0">-</td>
-
-                                    <td ng-if="paper.RetryCount>1 && paper.papertitle.indexOf('Incentive')<0">*</td>
+                                    <td ng-if="paper.RetryCount>1 && paper.papertitle.indexOf('Incentive')<0">{{paper.gp}}*</td>
                                     <td ng-if="paper.RetryCount > 1 && paper.papertitle.indexOf('Incentive')>=0">-</td>
+
+                                    <td ng-if="paper.papertitle.indexOf('Incentive')<0">{{paper._Grade}}</td>
+                                    <td ng-if="paper.papertitle.indexOf('Incentive')>=0">-</td>
+
+                                    <td ng-if="paper.papertitle.indexOf('Incentive')<0">{{paper._GradePoint | number : 1}}</td>
+                                    <td ng-if="paper.papertitle.indexOf('Incentive')>=0">-</td>
+
+                                    <!--<td ng-if="paper.RetryCount>1 && paper.papertitle.indexOf('Incentive')<0">*</td>
+                                    <td ng-if="paper.RetryCount > 1 && paper.papertitle.indexOf('Incentive')>=0">-</td>-->
 
                                     <td ng-if="paper.papertype == 'TH'">{{paper.credit}}</td>
                                     <td ng-if="paper.papertype == 'PR' && paper.papertitle.indexOf('Incentive')<0">{{paper.credit*2}}</td>
@@ -726,10 +751,15 @@
                                     <td><div><b>Grade</b></div></td>
                                     <td><div><b>Grade Point Average</b></div></td>
                                 </tr>
-                                <tr>
+                                <tr ng-if="TranscriptData.Sem6.RetryCount<=1">
                                     <td><b>{{TranscriptData.Sem6._percentege  | number : 2 }}</b></td>
                                     <td><b>{{TranscriptData.Sem6._percentegeGrade}}</b></td>
                                     <td><b>{{TranscriptData.Sem6._FinalPercentageGradePoint | number : 2}}</b> </td>
+                                </tr>
+                                <tr ng-if="TranscriptData.Sem6.RetryCount>1">
+                                    <td><b>-</b></td>
+                                    <td><b>-</b></td>
+                                    <td><b>-</b></td>
                                 </tr>
                             </table>
                         </div>

@@ -13,19 +13,19 @@
 
 
     //Read property from url
-    var course = getUrlVars()["course"]
-    var StudentType = getUrlVars()["StudentType"]
-    var sem = getUrlVars()["sem"]
-    var CurrentYear = getUrlVars()["CurrentYear"]
-    var ExamType = getUrlVars()["ExamType"]
+    var course = getUrlVars()["course"];
+    var StudentType = getUrlVars()["StudentType"];
+    var sem = getUrlVars()["sem"];
+    var CurrentYear = getUrlVars()["CurrentYear"];
+    var ExamType = getUrlVars()["ExamType"];
 	
-	$scope.StudentType = getUrlVars()["StudentType"]
-	$scope.ExamType = getUrlVars()["ExamType"]
-    $scope.date = getUrlVars()["date"]
+    $scope.StudentType = getUrlVars()["StudentType"];
+    $scope.ExamType = getUrlVars()["ExamType"];
+    $scope.date = getUrlVars()["date"];
     $scope.IsLoadingCompleted = false;
     if (StudentType.toLowerCase() == 'elective') {
         $scope.FinalResultDisplay = false;
-        StudentType = 'honors'
+        StudentType = 'honors';
     } else {
         $scope.FinalResultDisplay = true;
     }
@@ -40,6 +40,28 @@
                 StudentDetail_Obj.ExamType = ExamType;
                 StudentDetail_Obj.Semester = sem;
                 StudentDetail_Obj.RegularORHonors = StudentType;
+                
+				switch(StudentDetail_Obj.Semester){
+					case "1":
+						StudentDetail_Obj.Semester = "I";
+						break;
+					case "2":
+						StudentDetail_Obj.Semester = "II";
+						break;
+					case "3":
+						StudentDetail_Obj.Semester = "III";
+						break;
+					case "4":
+						StudentDetail_Obj.Semester = "IV";
+						break;
+					case "5":
+						StudentDetail_Obj.Semester = "V";
+						break;
+					case "6":
+						StudentDetail_Obj.Semester = "VI";
+						break;
+				}
+				
                 var MainObject = [];
                 var StudentData = csvJSON(dataresponse);
                 var StudentCurrentData = StudentData;
@@ -48,11 +70,24 @@
                     try {
                         throw aj;
                     } catch (ii) {
-                        if (StudentCurrentData[aj].College_Registration_No_ == '5977') {
-                            debugger;
-                        }
                         var SpecializationObj = PaperService.GetSpecilizationObj(CurrentSubjectRecord, StudentCurrentData[ii]['Specialisation']);
                         var MarksheetObjFinal = MarksheetService.GetMarksheetObjectFromCsvObj(StudentCurrentData[ii], SpecializationObj, StudentDetail_Obj);
+
+                        var qrCodeString = "Name: " + StudentCurrentData[aj].LastName + " " + StudentCurrentData[aj].FirstName + "\nCRN: " + StudentCurrentData[aj].College_Registration_No_ + "\nPRN: " + StudentCurrentData[aj].PRN + "\nSeat Number: " + StudentCurrentData[aj].SeatNumber + '\nExam Year: ' + MarksheetObjFinal.MarksheetYear + "\nSpecialisation: " + MarksheetObjFinal.Specialisation;
+
+                        var canvas = $("<canvas/>");
+                        var qr = new QRious({
+                            element: canvas,
+                            value: qrCodeString,
+                            size: 150
+                        });
+
+                        var url = qr.toDataURL('image/png');
+                        $scope.qrcode = url;
+                        console.log(url);
+                        
+                        MarksheetObjFinal.qrcode = url;
+                        
                         StudentMarksheetData.push(MarksheetObjFinal);
                     }
                     if (aj == (StudentCurrentData.length - 1)) {
@@ -65,7 +100,7 @@
                     }
                 }
             } catch (e) {
-                console.log(e)
+                console.log(e);
             }
         });
     });

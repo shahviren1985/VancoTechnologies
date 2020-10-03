@@ -1774,14 +1774,21 @@ Examapp.controller("StudentResultCtrl", ['$scope', 'MarksheetService', 'PaperSer
                 (StudentDetailObj.Semester == 6 && displayResult.semester6 == true)
             ) {
                 CallAPI("User/GetPaperList?Course=" + StudentDetailObj.Course + "&specialization=" + StudentDetailObj.Specialisation + "&sem=" + StudentDetailObj.Semester).done(function (PaperList) {
-                    GetCsvToJsonData('File/Download/Data/SVT?fileName=' + StudentDetailObj.Course + '-' + StudentDetailObj.Specialisation + '_sem' + StudentDetailObj.Semester + '_2019_' + StudentDetailObj.ExamType + '.csv').done(function (dataresponse) {
+                    GetCsvToJsonData('File/Download/Data/SVT?fileName=' + StudentDetailObj.Course + '-' + StudentDetailObj.Specialisation + '_sem' + StudentDetailObj.Semester + '_' + CurrentYear+'_' + StudentDetailObj.ExamType + '.csv').done(function (dataresponse) {
                         try {
                             var StudentData = csvJSON(dataresponse);
                         } catch (e) {
                             console.log(e)
                         }
                         if (StudentData.length > 0) {
-                            var index = StudentData.findIndex(p => p.SeatNumber == $.trim($('#txt_SeatNumber').val()));
+                            var index = -1;
+                            if ($('#txt_SeatNumber').val().length == 4 && $.isNumeric($('#txt_SeatNumber').val())) {
+                                index = StudentData.findIndex(p => p.College_Registration_No_ == $.trim($('#txt_SeatNumber').val()));
+                            }
+                            else {
+                                index = StudentData.findIndex(p => p.SeatNumber == $.trim($('#txt_SeatNumber').val()));
+                            }
+                             
                             if (index != undefined && index >= 0) {
                                 var SpecializationObj = PaperService.GetSpecilizationObj(PaperList, StudentData[index]['Specialisation']);
                                 console.log(SpecializationObj);
@@ -1819,7 +1826,7 @@ Examapp.controller("StudentResultCtrl", ['$scope', 'MarksheetService', 'PaperSer
             $("#btn_GetResult").prop('disabled', '');
             $('#tbl_StudentResult').css('display', 'none');
             $('#row_error').css('display', '');
-            $('#Error_Text').html('Invalid Seat Number!')
+            $('#Error_Text').html('Invalid Seat Number!');
         }
         $("#txt_SeatNumber").focus();
     });
@@ -1845,14 +1852,19 @@ Examapp.controller("StudentResultValidationCtrl", ['$scope', 'MarksheetService',
         if (StudentDetailObj != undefined && StudentDetailObj != null) {
             if (StudentDetailObj.Semester >= 1) {
                 CallAPI("User/GetPaperList?Course=" + StudentDetailObj.Course + "&specialization=" + StudentDetailObj.Specialisation + "&sem=" + StudentDetailObj.Semester).done(function (PaperList) {
-                    GetCsvToJsonData('File/Download/Data/SVT?fileName=' + StudentDetailObj.Course + '-' + StudentDetailObj.Specialisation + '_sem' + StudentDetailObj.Semester + '_2019_' + StudentDetailObj.ExamType + '.csv').done(function (dataresponse) {
+                    GetCsvToJsonData('File/Download/Data/SVT?fileName=' + StudentDetailObj.Course + '-' + StudentDetailObj.Specialisation + '_sem' + StudentDetailObj.Semester + '_2020_' + StudentDetailObj.ExamType + '.csv').done(function (dataresponse) {
                         try {
                             var StudentData = csvJSON(dataresponse);
                         } catch (e) {
                             console.log(e)
                         }
                         if (StudentData.length > 0) {
-                            var index = StudentData.findIndex(p => p.SeatNumber == $.trim($('#txt_SeatNumber').val()));
+                            if ($('#txt_SeatNumber').val().length == 4 && $.isNumeric($('#txt_SeatNumber').val())) {
+                                index = StudentData.findIndex(p => p.College_Registration_No_ == $.trim($('#txt_SeatNumber').val()));
+                            }
+                            else {
+                                index = StudentData.findIndex(p => p.SeatNumber == $.trim($('#txt_SeatNumber').val()));
+                            }
                             if (index != undefined && index >= 0) {
                                 var SpecializationObj = PaperService.GetSpecilizationObj(PaperList, StudentData[index]['Specialisation']);
                                 //console.log(SpecializationObj);
@@ -1890,7 +1902,7 @@ Examapp.controller("StudentResultValidationCtrl", ['$scope', 'MarksheetService',
             $("#btn_GetResult").prop('disabled', '');
             $('#tbl_StudentResult').css('display', 'none');
             $('#row_error').css('display', '');
-            $('#Error_Text').html('Invalid Seat Number!')
+            $('#Error_Text').html('Invalid Seat Number!');
         }
         $("#txt_SeatNumber").focus();
     });
@@ -2698,37 +2710,56 @@ Examapp.factory('MarksheetService', ['PaperService', '$http', function (PaperSer
 
     Marksheetservice.GetObjectFromSeatNumber = function (_SeatNumber) {
         var StudentDetailObj = {};
-        var R1 = _SeatNumber.toUpperCase().charAt(0);//Course
-        var R2 = _SeatNumber.toUpperCase().charAt(2);//Exam Type
-        var R3 = _SeatNumber.toUpperCase().charAt(3);//Specialization
-        var R4 = _SeatNumber.toUpperCase().charAt(4);//Semester
-        if (R1 == 'B') {
+        
+        if (_SeatNumber.length == 4 && $.isNumeric(_SeatNumber)) {
+            // search based on selectd values
             StudentDetailObj.Course = "BSc";
-        } else if (R1 == 'M') {
-            StudentDetailObj.Course = "MSc";
-        } else {
-            StudentDetailObj = null;
-            return StudentDetailObj;
-        }
-
-        if (R2 == 'R') {
             StudentDetailObj.ExamType = "Regular";
-        } else if (R2 == 'A') {
-            StudentDetailObj.ExamType = "ATKT";
-        } else {
-            StudentDetailObj = null;
+            StudentDetailObj.Specialisation = $('#program').children("option:selected").val();
+            StudentDetailObj.Semester = $('#semester').children("option:selected").val();
+            if (StudentDetailObj.Specialisation == "-1" || StudentDetailObj.Semester == "-1") {
+                alert("Please select correct semester & program type");
+                return StudentDetailObj;
+            }
+
             return StudentDetailObj;
+        }
+        else {
+            // search based on seat number
+            var R1 = _SeatNumber.toUpperCase().charAt(0);//Course
+            var R2 = _SeatNumber.toUpperCase().charAt(2);//Exam Type
+            var R3 = _SeatNumber.toUpperCase().charAt(3);//Specialization
+            var R4 = _SeatNumber.toUpperCase().charAt(4);//Semester
+            if (R1 == 'B') {
+                StudentDetailObj.Course = "BSc";
+            } else if (R1 == 'M') {
+                StudentDetailObj.Course = "MSc";
+            } else {
+                StudentDetailObj = null;
+                return StudentDetailObj;
+            }
+
+            if (R2 == 'R') {
+                StudentDetailObj.ExamType = "Regular";
+            } else if (R2 == 'A') {
+                StudentDetailObj.ExamType = "ATKT";
+            } else {
+                StudentDetailObj = null;
+                return StudentDetailObj;
+            }
+
+            if (R3 == 'R') {
+                StudentDetailObj.Specialisation = "Regular";
+            } else if (R3 == 'H') {
+                StudentDetailObj.Specialisation = "Honors";
+            } else {
+                StudentDetailObj = null;
+                return StudentDetailObj;
+            }
+            StudentDetailObj.Semester = R4;
         }
 
-        if (R3 == 'R') {
-            StudentDetailObj.Specialisation = "Regular";
-        } else if (R3 == 'H') {
-            StudentDetailObj.Specialisation = "Honors";
-        } else {
-            StudentDetailObj = null;
-            return StudentDetailObj;
-        }
-        StudentDetailObj.Semester = R4;
+        
         return StudentDetailObj;
     };
 
@@ -2857,9 +2888,9 @@ Examapp.factory('MarksheetService', ['PaperService', '$http', function (PaperSer
         var intyear = parseFloat(year) || 0;
 
         if (sem == 1 || sem == 3 || sem == 5) {
-            if (month < 6)
+            /*if (month < 6)
                 intyear = (intyear - 1) + "-" + intyear.toString().substr(-2);
-            else
+            else*/
                 intyear = intyear + "-" + (parseFloat(intyear.toString().substr(-2)) + 1);
 
             return intyear;
@@ -2997,7 +3028,7 @@ Examapp.factory('MarksheetService', ['PaperService', '$http', function (PaperSer
                             PaperObj._FloatInternalMark = Math.round(PaperObj.DoubleCount * (parseFloat(PaperObj._InternalMark) || 0));
                             PaperObj._FloatCredit = (PaperObj.DoubleCount * (parseFloat(PaperObj.credits) || 0));
                             PaperObj._Remarks = CSVObj[strRemarks];
-                            if (SemesterDetails == 1 || SemesterDetails == 2) {
+                            if (SemesterDetails == 1 || SemesterDetails == 2 || SemesterDetails == "I" || SemesterDetails == "II") {
                                 PaperObj._Section1Mark = CSVObj[strExternalSection1Code];
                                 PaperObj._Section2Mark = CSVObj[strExternalSection2Code];
 
@@ -3080,7 +3111,7 @@ Examapp.factory('MarksheetService', ['PaperService', '$http', function (PaperSer
 
                             var strTotalMarkCode = Math.round(PaperObj._FinalTotalMarks);
 
-                            if (PaperObj._Status == '')
+                            if (PaperObj._Status == '' || PaperObj._Status == '*')
                                 PaperObj._Grade = this.GetGrade(strTotalMarkCode);
                             else
                                 PaperObj._Grade = 'F';

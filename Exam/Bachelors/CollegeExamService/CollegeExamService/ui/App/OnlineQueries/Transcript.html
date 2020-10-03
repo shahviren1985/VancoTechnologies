@@ -18,10 +18,12 @@
                     <th>#</th>
                     <th>First Name</th>
                     <th>Last Name</th>
-                    <th>College Registration #</th>
+                    <th>College <br />Registration #</th>
                     <th>Admission Year</th>
                     <th>Request Date</th>
                     <th>Inward Number</th>
+                    <th>To Year</th>
+                    <th>Passing Year</th>
                     <th>status</th>
                     <th>Option</th>
                 </tr>
@@ -35,7 +37,13 @@
                     <td>{{stu.AdmissionYear}}</td>
                     <td>{{stu.ReqRecvdOn | date : 'dd/MM/yyyy'}}</td>
                     <td>
-                        <input type="text" class="txtInwardNumber" onchange="SetInwardNumber(this);" />
+                        <input type="text" class="txtInwardNumber" style="width: 50px" onchange="SetInwardNumber(this);" />
+                    </td>
+                    <td>
+                        <input type="text" class="txtToYear" style="width: 50px" onchange="SetToYear(this);" />
+                    </td>
+                    <td>
+                        <input type="text" class="txtPassingYear" style="width: 120px" onchange="SetPassingYear(this);" />
                     </td>
                     <td>
                         <span ng-if="stu.RequestStatus==0" class="badge badge-success">Pending</span>
@@ -55,5 +63,11 @@
 <script>
     function SetInwardNumber(element) {
         localStorage.setItem("InwardNumber", $(element).val());
+    }
+    function SetToYear(element) {
+        localStorage.setItem("ToYear", $(element).val());
+    }
+    function SetPassingYear(element) {
+        localStorage.setItem("PassingYear", $(element).val());
     }
 </script>

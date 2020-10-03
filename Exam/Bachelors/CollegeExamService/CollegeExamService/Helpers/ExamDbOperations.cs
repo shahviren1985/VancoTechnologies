@@ -1614,6 +1614,16 @@ namespace CollegeExamService.Helpers
             return dsItems.Tables[0];
         }
 
+        public DataTable GetStudentElective(string crn, string semester)
+        {
+            string query = string.Format("SELECT crn,department,specialisation, semester, elective1, elective2, elective3, elective4, elective5, elective6, elective7, approvedelective1, approvedelective2, approvedelective3, approvedelective4, approvedelective5, approvedelective6, approvedelective7, lastmodified, academicyear, rollnumber, studentname FROM electives WHERE crn='{0}' and semester='{1}'", crn, semester);
+            obcon = new OdbcConnection(connection);
+            DataSet dsItems = new DataSet();
+            odbAdp = new OdbcDataAdapter(query, obcon);
+            odbAdp.Fill(dsItems);
+            return dsItems.Tables[0];
+        }
+
         public int InsertElective(string query)
         {
             return ExcuteQuery(query);

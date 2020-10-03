@@ -251,7 +251,7 @@
 							<td ng-if="comparestringToIntValue(paper.practicalMaxMarks) >= 0 && comparestringToIntValue(paper.theoryInternalMax) > 0">
                                 <div ng-if="paper.IsSelected">
                                     <!--{{(paper._ExternalTotal + paper._FloatPracticalMark)>0?(paper._ExternalTotalWithOutGrace + paper._FloatPracticalMark)+(paper._GraceMark > 0 ? '+' + paper._GraceMark : ''):(paper._FloatInternalMark>0?'ABS':'NP')}}-->
-                                    {{(paper._ExternalTotal + paper._FloatPracticalMark)>0?(paper._ExternalTotalWithOutGrace + paper._FloatPracticalMark)+(paper._GraceMark > 0 ? '+' + paper._GraceMark : ''):(paper._FloatInternalMark>0?'ABS':'NP')}}
+                                    {{(paper._ExternalTotal + paper._FloatPracticalMark)>0?(paper._ExternalTotalWithOutGrace + paper._FloatPracticalMark)+(paper._GraceMark > 0 ? '+' + paper._GraceMark : ''):((paper._FloatInternalMark)<(paper.theoryInternalPassing)?'NP':'ABS')}}
                                 </div>
                                 <div ng-if="!paper.IsSelected">
                                     -

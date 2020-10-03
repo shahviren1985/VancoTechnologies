@@ -171,6 +171,13 @@ namespace CollegeExamService.Controllers
         }
 
         [HttpGet]
+        public HttpResponseMessage GetStudentElective(string crn, string semester)
+        {
+            ExamDbOperations db = new ExamDbOperations();
+            return Request.CreateResponse(HttpStatusCode.OK, db.GetStudentElective(crn, semester));
+        }
+
+        [HttpGet]
         public HttpResponseMessage GetAttendanceSummary(string bioEmpCode, int month, int year)
         {
             ExamDbOperations db = new ExamDbOperations();

@@ -264,9 +264,31 @@
             <div class="col-md-4"></div>
             <div class="col-md-4">
                 <form class="form-inline" id="SeatNumberForms">
+                    <div class="col col-lg-12 form-group">
+                        <label for="semester">Semester</label>
+                        <select id="semester" name="semester" class="Drp_Cnrtl form-control">
+                            <option value="-1" selected="selected">--- Select ---</option>
+                            <option value="1">Semester 1</option>
+                            <option value="2">Semester 2</option>
+                            <option value="3">Semester 3</option>
+                            <option value="4">Semester 4</option>
+                            <option value="5">Semester 5</option>
+                            <option value="6">Semester 6</option>
+                        </select>
+                    </div>
+                    <div class="col col-lg-12 form-group">
+                        <label for="program">Program</label>
+                        <select id="program" name="course" data-validation="required"
+                                data-validation-error-msg="The program field is required" class="Drp_Cnrtl form-control">
+                            <option value="-1" selected="selected">--- Select ---</option>
+                            <option value="Regular">Regular</option>
+                            <option value="Honors">Honors</option>
+                            <option value="Elective">Elective</option>
+                        </select>
+                    </div>
                     <div class="form-group">
-                        <label class="sr-only" for="exampleInputEmail3">Seat Number</label>
-                        <input type="text" required class="form-control" id="txt_SeatNumber" placeholder="Seat Number">
+                        <label class="sr-only" for="exampleInputEmail3">College Registration Number / Seat Number</label>
+                        <input type="text" required class="form-control" id="txt_SeatNumber" placeholder="College Registration Number / Seat Number">
                     </div>
                     <!--<button type="submit" class="btn btn-default" id="btnload" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Checking Seat Number">Get Result</button>-->
                     <button id="btn_GetResult" type="submit" class="btn btn-default">Get Result</button>
@@ -334,8 +356,10 @@
                                 <td ng-if="stu.paperType=='Theory'">TH</td>
                                 <td ng-if="stu.paperType=='Practical'">PR</td>
                                 <td>{{stu._FloatCredit}}</td>
-                                <td ng-if="stu.isContinousAssessment==false">{{stu._FloatInternalMark}}</td>
-                                <td ng-if="stu.isContinousAssessment==false">{{stu._ExternalTotal+stu._FloatPracticalMark}}</td>
+<td ng-if="stu.isContinousAssessment==false">{{stu._FloatInternalMark}}</td>
+<td ng-if="stu.isContinousAssessment==false && (stu._ExternalTotal+stu._FloatPracticalMark)<=0 && stu._FloatInternalMark >= stu.theoryInternalPassing">ABS</td>
+<td ng-if="stu.isContinousAssessment==false && (stu._ExternalTotal+stu._FloatPracticalMark)>0 && stu._FloatInternalMark >= stu.theoryInternalPassing">{{stu._ExternalTotal+stu._FloatPracticalMark}}</td>
+<td ng-if="stu.isContinousAssessment==false && stu._FloatInternalMark < stu.theoryInternalPassing">NP</td>
                                 <td colspan="2" ng-if="stu.isContinousAssessment==true">Continous Assessment</td>
                                 <td>{{stu._FinalTotalMarks}}</td>
                                 <td>{{stu._TotalWeightedMarks}}</td>

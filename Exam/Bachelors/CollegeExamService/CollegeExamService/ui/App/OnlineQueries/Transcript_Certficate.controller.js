@@ -1,6 +1,8 @@
 ﻿
 Examapp.controller("GenerateTranscriptCertificateCtrl", function ($scope, $http, commonService, MarksheetService) {
     var prn = getUrlVars()['CollegeRegistrationNumber'];
+    var toYear= getUrlVars()['ToYear'];
+    var passingYear = getUrlVars()['PassingYear'];
     var sem1 = getUrlVars()['AdmissionYear'];
     var sem2 = parseInt(sem1) + 1;
     var sem3 = sem2;
@@ -18,9 +20,13 @@ Examapp.controller("GenerateTranscriptCertificateCtrl", function ($scope, $http,
     $scope.IsLoadingCompleted = false;
     $scope.DateOfToday = commonService.GetTodayDate(2);
     $scope.InwardNumber = getUrlVars()['InwardNumber'];
+    
+    
     var y = commonService.GetCurrentAcademicYear();
     y = y.split("-")[0] + "-" + y.split("-")[1].substring(2);
 
+    $scope.ToYear = (toYear == null) ? "June " + y : decodeURIComponent(toYear);
+    $scope.PassingYear = (passingYear == null) ? "April " + y : decodeURIComponent(passingYear);
     $scope.CurrentAcademicYear = y;
     function ConvertName(string) {
         return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
@@ -110,6 +116,7 @@ Examapp.controller("GenerateTranscriptCertificateCtrl", function ($scope, $http,
             transcriptData.Papers = sortByKey(transcriptData.Papers, "papercode");
 
             var objToConsider = angular.copy(transcriptData);
+            objToConsider.RetryCount = 1;
             var totalPercentage = 0;
             var totalGradePoint = 0;
             var totalCredit = 0;
@@ -123,15 +130,16 @@ Examapp.controller("GenerateTranscriptCertificateCtrl", function ($scope, $http,
                 objToConsider.Papers[p]._TotalObtainedMark = $scope.GetCountObtainedTotalMark(objToConsider.Papers[p]);
                 objToConsider.Papers[p]._percentage = ((objToConsider.Papers[p]._TotalObtainedMark * 100) / objToConsider.Papers[p]._TotalMaxMark);
                 objToConsider.Papers[p]._Grade = MarksheetService.GetGradePoint(objToConsider.Papers[p]._TotalObtainedMark);
+                objToConsider.RetryCount = objToConsider.Papers[p].RetryCount > 1 ? parseFloat(objToConsider.RetryCount) + 1 : parseFloat(objToConsider.RetryCount);
 
-                objToConsider.Papers[p]._GradePoint = (objToConsider.Papers[p]._Grade * (parseFloat(objToConsider.Papers[p].credit)));
+                objToConsider.Papers[p]._GradePoint = (objToConsider.Papers[p]._Grade * (parseFloat(objToConsider.Papers[p].credit))).toFixed(2);
                 if (objToConsider.Papers[p]._TotalMaxMark != 10) {
                     totalPercentage += objToConsider.Papers[p]._percentage;
                 } else {
                     totalPercentage += objToConsider.Papers[p]._TotalMaxMark;
                 }
 
-                totalGradePoint += objToConsider.Papers[p]._GradePoint;
+                totalGradePoint += parseFloat(objToConsider.Papers[p]._GradePoint);
                 var fltCredit = parseFloat(objToConsider.Papers[p].credit) || 0;
                 totalCredit += fltCredit;
             }

@@ -100,24 +100,24 @@ function CalculateTotal() {
 }
 
 function PrepareSpecialisationDropdown(dept) {
-    var dd = "<select id='ddSpecial' onchange='ReloadStudentData()'>";
+    var dd = "<select id='ddSpecial' onchange='ReloadStudentData()'><option value='-1'>---Select---</option>";
     switch (dept) {
         case "HD":
-            dd += "<option value='DC' selected='selected'>Developmental Counseling</option>";
+            dd += "<option value='DC'>Developmental Counseling</option>";
             dd += "<option value='ECCE'>Early Childhood Care & Education</option>";
             break;
         case "FND":
-            dd += "<option value='FND' selected='selected'>Food, Nutrition & Dietetics</option>";
+            dd += "<option value='FND'>Food, Nutrition & Dietetics</option>";
             break;
         case "RM":
-            dd += "<option value='HTM' selected='selected'>Hospitality & Tourism Management</option>";
+            dd += "<option value='HTM'>Hospitality & Tourism Management</option>";
             dd += "<option value='IDRM'>Interior Designing & Resource Management</option>";
             break;
         case "MCE":
-            dd += "<option value='MCE' selected='selected'>Mass Communication & Extensions</option>";
+            dd += "<option value='MCE'>Mass Communication & Extensions</option>";
             break;
         case "TAD":
-            dd += "<option value='TAD' selected='selected'>Textile & Apparel Designing</option>";
+            dd += "<option value='TAD'>Textile & Apparel Designing</option>";
             break;
     }
 

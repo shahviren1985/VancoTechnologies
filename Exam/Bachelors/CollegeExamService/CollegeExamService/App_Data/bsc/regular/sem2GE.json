@@ -1,7 +1,7 @@
 [
   {
-    "Specialization": "Mass Communication And Extension",
-    "specialisationCode": "MCE",
+    "Specialization": "Developmental Counselling",
+    "specialisationCode": "DC",
     "ElectiveSubject": [
       {
         "Title": "GE",
@@ -14,6 +14,11 @@
           {
             "Code": "LG101",
             "Title": "Functional English",
+            "Credit": "4"
+          },
+          {
+            "Code": "SG101",
+            "Title": "Science for Life",
             "Credit": "4"
           }
         ]
@@ -34,16 +39,16 @@
         ]
       },
       {
-        "Title": "HD GE",
+        "Title": "FN GE",
         "Subject": [
           {
-            "Code": "HG101",
-            "Title": "Personal and Professional Relationships in Adulthood",
+            "Code": "FG101",
+            "Title": "Nutrition for Health Promotion",
             "Credit": "4"
           },
           {
-            "Code": "HG102",
-            "Title": "Marriage and Parenting",
+            "Code": "FG102",
+            "Title": "Fundamentals of Baking",
             "Credit": "4"
           }
         ]
@@ -51,8 +56,8 @@
     ]
   },
   {
-    "Specialization": "Developmental Counselling",
-    "specialisationCode": "DC",
+    "Specialization": "Early Childhood Care And Education",
+    "specialisationCode": "ECCE",
     "ElectiveSubject": [
       {
         "Title": "GE",

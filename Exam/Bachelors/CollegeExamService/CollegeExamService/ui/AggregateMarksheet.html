@@ -181,7 +181,7 @@
                                                             <td class="Heading2SmallFont" style="color:black;font-size:18px">JUHU ROAD,  SANTACRUZ (WEST), MUMBAI- 400 049</td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="Heading2SmallFont colorRuleChromeGreen" style="font-weight: 0; padding: 5px; color: green; text-decoration: underline;">AGGREGATE MARKSHEET - APRIL 2019</td>
+                                                            <td class="Heading2SmallFont colorRuleChromeGreen" style="font-weight: 0; padding: 5px; color: green; text-decoration: underline;">AGGREGATE MARKSHEET - {{student.MarksheetYear}}</td>
                                                         </tr>
                                                     </table>
                                                 </td>
@@ -449,6 +449,8 @@
 						response[i].AggregateTotalGradePoint = 0;
 						
                         response[i].StudentType = getUrlVars()["examType"] == "Honors" ? " - Honors" : "";
+						response[i].MarksheetYear = (getUrlVars()["Year"] == undefined || getUrlVars()["Year"] == null )? "APRIL 2019" : getUrlVars()["Year"];
+						response[i].MarksheetYear = decodeURIComponent(response[i].MarksheetYear).toUpperCase();
                         var Sem1Display = true;
                         var Sem2Display = true;
                         var Sem3Display = true;

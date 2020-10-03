@@ -22,7 +22,7 @@ Examapp.controller("TranscriptCtrl", function ($scope, $http) {
     $scope.GetAllPedingRequest(1);
     $scope.drpType = "1";
     $scope.OpenTranscript = function (RequestDetail) {
-        window.open(_CommonurlUI + '/App/OnlineQueries/Transcript_Certificate.html?InwardNumber=' + localStorage.getItem("InwardNumber") + '&CollegeRegistrationNumber=' + RequestDetail.PNR + '&semester=6&AdmissionYear=' + RequestDetail.AdmissionYear, '_blank');
+        window.open(_CommonurlUI + '/App/OnlineQueries/Transcript_Certificate.html?InwardNumber=' + localStorage.getItem("InwardNumber") + '&CollegeRegistrationNumber=' + RequestDetail.PNR + '&semester=6&AdmissionYear=' + RequestDetail.AdmissionYear + '&ToYear=' + localStorage.getItem("ToYear") + '&PassingYear=' + localStorage.getItem("PassingYear"), '_blank');
     }
 
     $scope.ComplatedRequest = function (Request) {

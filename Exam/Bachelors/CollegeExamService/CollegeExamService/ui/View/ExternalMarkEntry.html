@@ -80,7 +80,7 @@
                         <thead>
                             <tr>
                                 <th>Seat Number</th>
-                                <!--<th>Name</th>-->
+                                <th>Name</th>
                                 <th style="text-align: center;">Internal Mark (Out of 50)</th>
                                 <th ng-if="SemesterSelected=='1'||SemesterSelected=='2'" style="text-align: center;">External Mark Section I (Out of 25)</th>
                                 <th ng-if="SemesterSelected=='1'||SemesterSelected=='2'" style="text-align: center;">External Mark Section II (Out of 25)</th>
@@ -91,7 +91,7 @@
                         <tbody style="max-height: 500px; overflow: auto;">
                             <tr ng-repeat="stu in array">
                                 <td style="text-align: center;">{{stu.RollNumber}}</td>
-                                <!--<td>{{stu.LastName}} {{stu.FirstName}} {{stu.FatherName}} {{stu.MotherName}}</td>-->
+                                <td>{{stu.LastName}} {{stu.FirstName}} {{stu.FatherName}} {{stu.MotherName}}</td>
                                 <td style="text-align: center;">{{stu.InternalMark}}</td>
                                 <td style="text-align: center;">
                                     <input style="max-width: 80px; margin-left: 32%; text-align: center;" id="txt_ExternalSection1_{{stu.RollNumber}}" ng-disabled="stu.IsRequiredDisble" data-rollnumber="{{stu.RollNumber}}" ng-model="stu.ExternalMarkSection1" type="text" class="StudentExternalMark form-control txt_ExternalMark_{{stu.RollNumber}}" />
