@@ -1,0 +1,2665 @@
+﻿[
+  {
+    "id": "a0001",
+    "type": "radio",
+    "category": "1",
+    "question": "Which fuel system does aerobic system use?",
+    "correctAnswer": "Glycogen, fats, protein",
+    "optionValues": [
+      "Creatine from glucose supplies",
+      "Glycogen only",
+      "Glycogen, fats, protein",
+      "Citric acid"
+    ]
+  },
+  {
+    "id": "a0002",
+    "type": "radio",
+    "category": "1",
+    "question": "The sport of shot put relies primarily on which energy system?",
+    "correctAnswer": "ATP-CP",
+    "optionValues": [
+      "Anaerobic",
+      "ATP-CP",
+      "Aerobic",
+      "Lactic acid"
+    ]
+  },
+  {
+    "id": "a0003",
+    "type": "radio",
+    "category": "1",
+    "question": "A high aerobic capacity (cardio-respiratory endurance) is most important for?",
+    "correctAnswer": "Removal of lactic acid",
+    "optionValues": [
+      "Increased muscle strength",
+      "Removal of lactic acid",
+      "Improved flexibility",
+      "Preventing muscle breakdown"
+    ]
+  },
+  {
+    "id": "a0004",
+    "type": "radio",
+    "category": "1",
+    "question": "What by-product does ATP-CP produce?",
+    "correctAnswer": "None of the above",
+    "optionValues": [
+      "Creatine Phosphate",
+      "Water",
+      "Adenosine Triphophate",
+      "None of the above"
+    ]
+  },
+  {
+    "id": "a0005",
+    "type": "radio",
+    "category": "1",
+    "question": "What fitness component matches the aerobic energy system?",
+    "correctAnswer": "Cardio-respiratory endurance",
+    "optionValues": [
+      "Speed",
+      "Agility",
+      "Cardio-respiratory endurance",
+      "Muscle endurance"
+    ]
+  },
+  {
+    "id": "a0006",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following amino acids cannot provide a substrate for gluconeogenesis?",
+    "correctAnswer": "leucine",
+    "optionValues": [
+      "leucine",
+      "tryptophan",
+      "histidine",
+      "isoleucine"
+    ]
+  },
+  {
+    "id": "a0007",
+    "type": "radio",
+    "category": "1",
+    "question": "How much dietary protein should endurance athletes consume daily?",
+    "correctAnswer": "1.2-1.7g per kg body weight per day",
+    "optionValues": [
+      "<0.8 g per kg body weight per day",
+      "0.8-1.2 g per kg body weight per day",
+      "1.2-1.7g per kg body weight per day",
+      ">2.0g per kg body weight per day"
+    ]
+  },
+  {
+    "id": "a0008",
+    "type": "radio",
+    "category": "1",
+    "question": "What is the ideal carbohydrate recommendation during training for a well-trained endurance athlete competing at high intensity (for more than 2.5 hours)?",
+    "correctAnswer": "90g glucose plus fructose per hour",
+    "optionValues": [
+      "60g glucose plus fructose per hour",
+      "90g glucose per hour",
+      "90g glucose plus fructose per hour",
+      "60g glucose per hour"
+    ]
+  },
+  {
+    "id": "a0009",
+    "type": "radio",
+    "category": "1",
+    "question": "What is the basic functional unit of skeletal muscle tisue?",
+    "correctAnswer": "the sarcomere",
+    "optionValues": [
+      "the muscle fibre",
+      "the sarcomere",
+      "the myofibril",
+      "the sarcoplasmic reticulum"
+    ]
+  },
+  {
+    "id": "a0010",
+    "type": "radio",
+    "category": "1",
+    "question": "During marathon running, maximum amount of energy is derived from:",
+    "correctAnswer": "Fat",
+    "optionValues": [
+      "Glucose",
+      "Amino acids",
+      "Fat",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0011",
+    "type": "radio",
+    "category": "1",
+    "question": "The energy system that initially functions during weight lifting is:",
+    "correctAnswer": "Phosphagen system",
+    "optionValues": [
+      "B-Oxidation",
+      "TCA",
+      "Glycolysis",
+      "Phosphagen system"
+    ]
+  },
+  {
+    "id": "a0012",
+    "type": "radio",
+    "category": "1",
+    "question": "The Lactic acid pathway supplies energy for:",
+    "correctAnswer": "upto 10 seconds",
+    "optionValues": [
+      "upto 30 seconds",
+      "upto 20 seconds",
+      "upto 10 seconds",
+      "upto 60 seconds"
+    ]
+  },
+  {
+    "id": "a0013",
+    "type": "radio",
+    "category": "1",
+    "question": "The strategy that helps management of lactic acidosis is",
+    "correctAnswer": "Bicarbonate loading",
+    "optionValues": [
+      "Protein loading",
+      "Bicarbonate loading",
+      "Glycogen Loading",
+      "None of the above"
+    ]
+  },
+  {
+    "id": "a0014",
+    "type": "radio",
+    "category": "1",
+    "question": "One NADH+ molecule produces:",
+    "correctAnswer": "3 ATP",
+    "optionValues": [
+      "3 ATP",
+      "6 ATP",
+      "12 ATP",
+      "36 ATP"
+    ]
+  },
+  {
+    "id": "a0015",
+    "type": "radio",
+    "category": "1",
+    "question": "Electron transport system occurs in:",
+    "correctAnswer": "Mitochondria",
+    "optionValues": [
+      "Cytoplasm",
+      "Endoplasmic Reticulum",
+      "Mitochondria",
+      "Nucleus"
+    ]
+  },
+  {
+    "id": "a0016",
+    "type": "radio",
+    "category": "1",
+    "question": "The total amount of energy produced when one molecule of glucose is completely oxidised:",
+    "correctAnswer": "38 ATP",
+    "optionValues": [
+      "12 ATP",
+      "32 ATP",
+      "34 ATP",
+      "38 ATP"
+    ]
+  },
+  {
+    "id": "a0017",
+    "type": "radio",
+    "category": "1",
+    "question": "Which one of the following is an essential amino acid?",
+    "correctAnswer": "Isoleucine",
+    "optionValues": [
+      "Isoleucine",
+      "Aspartic acid",
+      "Fumaric acid",
+      "Glutamic acid"
+    ]
+  },
+  {
+    "id": "a0018",
+    "type": "radio",
+    "category": "1",
+    "question": "The optimum carbohydrate recommendation for an endurance athlete (training for 1-3 hours/day at moderate-to-high intensity) is:",
+    "correctAnswer": "6 to 10gm/kg body weight",
+    "optionValues": [
+      "4 to 6gm/kg body weight",
+      "6 to 8gm/kg body weight",
+      "4 to 8gm/kg body weight",
+      "6 to 10gm/kg body weight"
+    ]
+  },
+  {
+    "id": "a0019",
+    "type": "radio",
+    "category": "1",
+    "question": "Glycogen loading is recommended for endurance athletes performing activity at or above this duration:",
+    "correctAnswer": "90 Minutes",
+    "optionValues": [
+      "30 Minutes",
+      "45 Minutes",
+      "60 Minutes",
+      "90 Minutes"
+    ]
+  },
+  {
+    "id": "a0020",
+    "type": "radio",
+    "category": "1",
+    "question": "The ideal carbohydrate content in a pre-competition meal (taken 3-4 hours before event) is:",
+    "correctAnswer": "150-200 grams",
+    "optionValues": [
+      "100-150 grams",
+      "150-200 grams",
+      "200-250 grams",
+      "250-300 grams"
+    ]
+  },
+  {
+    "id": "a0021",
+    "type": "radio",
+    "category": "1",
+    "question": "The carbohydrate recommendation for an athlete performing moderate-to-high intensity endurance exercise (lasting longer than 1 hour) is:",
+    "correctAnswer": "60 grams per hour",
+    "optionValues": [
+      "50 grams per hour",
+      "60 grams per hour",
+      "70 grams per hour",
+      "80 grams per hour"
+    ]
+  },
+  {
+    "id": "a0022",
+    "type": "radio",
+    "category": "1",
+    "question": "Protein requirements of male athletes are higher than those of female athletes by:",
+    "correctAnswer": "25%",
+    "optionValues": [
+      "10%",
+      "15%",
+      "20%",
+      "25%"
+    ]
+  },
+  {
+    "id": "a0023",
+    "type": "radio",
+    "category": "1",
+    "question": "One of the following is a marker of muscle protein degradation:",
+    "correctAnswer": "3-Methyl Histidine",
+    "optionValues": [
+      "Glutamine",
+      "Uric acid",
+      "3-Methyl Histidine",
+      "3-Methyl valine "
+    ]
+  },
+  {
+    "id": "a0024",
+    "type": "radio",
+    "category": "1",
+    "question": "Post game meal must contain:",
+    "correctAnswer": "75 grams carbohydrate & 25 grams of protein",
+    "optionValues": [
+      "75 grams carbohydrate & 25 grams of protein",
+      "65 grams carbohydrate & 15 grams of protein",
+      "55 grams carbohydrate & 12 grams of protein",
+      "45 grams carbohydrate & 10 grams of protein"
+    ]
+  },
+  {
+    "id": "a0025",
+    "type": "radio",
+    "category": "1",
+    "question": "During absorption from the intestine, Fructose uses which of the following transporters?",
+    "correctAnswer": "GLUT-5",
+    "optionValues": [
+      "GLUT-1",
+      "GLUT-2",
+      "GLUT-4",
+      "GLUT-5"
+    ]
+  },
+  {
+    "id": "a0026",
+    "type": "radio",
+    "category": "1",
+    "question": "The International Olympic Committee  guidelines for consumption of carbohydrate during exercise are between:",
+    "correctAnswer": "20 to 60 gm per hour",
+    "optionValues": [
+      "20 to 60 gm per hour",
+      "20 to 40 mg per hour",
+      "20 to 40 gm per hour",
+      "20 to 60 mg per hour"
+    ]
+  },
+  {
+    "id": "a0027",
+    "type": "radio",
+    "category": "1",
+    "question": "As per NIN, the recommended amount of protein for strength athletes is:",
+    "correctAnswer": "1.0-1.5 gm/kg body weight",
+    "optionValues": [
+      "0.8-1.0 gm/kg body weight",
+      "1.0-1.5 gm/kg body weight",
+      "2-2.5 gm/kg body weight",
+      "3-3.5 gm/kg body weight"
+    ]
+  },
+  {
+    "id": "a0028",
+    "type": "radio",
+    "category": "1",
+    "question": "The antioxidant effect of Alpha lipoic acid is because it:",
+    "correctAnswer": "Increases glutathione levels",
+    "optionValues": [
+      "Is a part of SOD enzyme complex",
+      "Is a part of glutathione peroxidase system",
+      "Increases glutathione levels",
+      "Scavenges peroxyl radicals"
+    ]
+  },
+  {
+    "id": "a0029",
+    "type": "radio",
+    "category": "1",
+    "question": "Isotonic and hypotonic dehydration is common amongst which athletes?",
+    "correctAnswer": "boxers, wrestlers and gymnasts",
+    "optionValues": [
+      "marathon runners",
+      "boxers, wrestlers and gymnasts",
+      "football players",
+      "not common in any sport"
+    ]
+  },
+  {
+    "id": "a0030",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following terms refer to breakdown of muscle fibers that occurs after strenuous exercise?",
+    "correctAnswer": "rhabdomyolysis",
+    "optionValues": [
+      "hemolysis",
+      "fibrinolysis",
+      "autolysis",
+      "rhabdomyolysis"
+    ]
+  },
+  {
+    "id": "a0031",
+    "type": "radio",
+    "category": "1",
+    "question": "Chromium supplementation claims to:",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "improve body composition",
+      "increase lean body mass",
+      " lower fat mass",
+      "All of the above "
+    ]
+  },
+  {
+    "id": "a0032",
+    "type": "radio",
+    "category": "1",
+    "question": "Exercise mobilises and redistributes magnesium to meet metabolic needs and it is lost in sweat, feces and urine.",
+    "correctAnswer": "TRUE",
+    "optionValues": [
+      "TRUE",
+      "FALSE"
+    ]
+  },
+  {
+    "id": "a0033",
+    "type": "radio",
+    "category": "1",
+    "question": "When iron stores are depleted- the synthesis of red blood cells is impaired, cell size is reduced and the color becomes pale resulting in:",
+    "correctAnswer": "Microcytic hypochromic anemia",
+    "optionValues": [
+      "Aplastic anemia",
+      "Microcytic hypochromic anemia",
+      "Hemolytic anemia",
+      "Sickle cell anemia"
+    ]
+  },
+  {
+    "id": "a0034",
+    "type": "radio",
+    "category": "1",
+    "question": "Athletes in weight-category sports (e.g. gymnasts, figure skaters, boxers) and endurance athletes have a high risk of:",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Eating disorders",
+      "Low BMD",
+      "Menstrual dysfunction",
+      "All of the above "
+    ]
+  },
+  {
+    "id": "a0035",
+    "type": "radio",
+    "category": "1",
+    "question": "To prevent deficieny, athletes must maintain their serum 25-hydroxy Vitamin D at a minimum level of:",
+    "correctAnswer": "30ng per ml",
+    "optionValues": [
+      "35ng per ml",
+      "30ng per ml",
+      "20ng per ml",
+      "15ng per ml "
+    ]
+  },
+  {
+    "id": "a0036",
+    "type": "radio",
+    "category": "1",
+    "question": "Vitamin E is involved in oxidative metabolism of which type of muscle fibres?",
+    "correctAnswer": "Option1 and 3",
+    "optionValues": [
+      "Type 1 (red slow twitch)",
+      "Type 2a (pink fast twitch)",
+      "Type 2b (white fast twitch)",
+      "Option1 and 3"
+    ]
+  },
+  {
+    "id": "a0037",
+    "type": "radio",
+    "category": "1",
+    "question": "Athletes on low calorie diet and endurance athletes on high carbohydrate diet are prone to:",
+    "correctAnswer": "Zinc deficiency",
+    "optionValues": [
+      "Selenium deficiency",
+      "Zinc deficiency",
+      "Vitamin A deficiency",
+      "Magnesium deficiency "
+    ]
+  },
+  {
+    "id": "a0038",
+    "type": "radio",
+    "category": "1",
+    "question": "At what stage of exercise, should you aim to be well hydrated?",
+    "correctAnswer": "Before beginning exercise",
+    "optionValues": [
+      "Halfway through exercise",
+      "After you have finished exercising",
+      "Before beginning exercise",
+      "A few hours after exercising"
+    ]
+  },
+  {
+    "id": "a0039",
+    "type": "radio",
+    "category": "1",
+    "question": "Dietary sources of antioxidants include:",
+    "correctAnswer": "Vitamins E, C and A",
+    "optionValues": [
+      "Vitamin B6, Iron and Calcium",
+      "Vitamin D, E and B",
+      "Vitamin B12, Iron and Vitamin C",
+      "Vitamins E, C and A"
+    ]
+  },
+  {
+    "id": "a0040",
+    "type": "radio",
+    "category": "1",
+    "question": "Deficiency of which of the following minerals may cause muscle cramps in athletes?",
+    "correctAnswer": "Magnesium",
+    "optionValues": [
+      "Chromium",
+      "Selenium",
+      "Magnesium",
+      "Iron"
+    ]
+  },
+  {
+    "id": "a0041",
+    "type": "radio",
+    "category": "1",
+    "question": "Antioxidants are important to fight \"free radicals\"because they:",
+    "correctAnswer": "damage cells",
+    "optionValues": [
+      "damage cells",
+      "Increase need of calorie supplying nutrients",
+      "destroy stored glucose",
+      "limit conversion of protein to ATP"
+    ]
+  },
+  {
+    "id": "a0042",
+    "type": "radio",
+    "category": "2",
+    "question": "During exercise, which of the following nutrients is lost in highest amount?",
+    "correctAnswer": "Water",
+    "optionValues": [
+      "Fats",
+      "Electrolytes",
+      "Carbohydrates",
+      "Water"
+    ]
+  },
+  {
+    "id": "a0043",
+    "type": "radio",
+    "category": "2",
+    "question": "Which of the following is not a function of water?",
+    "correctAnswer": "Acts as a fuel",
+    "optionValues": [
+      "Coolant",
+      "Acts as a fuel",
+      "Transports nutrients",
+      "Acid-Base balance"
+    ]
+  },
+  {
+    "id": "a0044",
+    "type": "radio",
+    "category": "2",
+    "question": "Moderate-intensity exercise can raise body temperature by ________ degree every 5 min",
+    "correctAnswer": "1",
+    "optionValues": [
+      "5",
+      "2",
+      "1",
+      "1.5"
+    ]
+  },
+  {
+    "id": "a0045",
+    "type": "radio",
+    "category": "2",
+    "question": "Cardiac re-distribution involves",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Increased blood flow to the skin",
+      "Re-distribution of cardiac output from muscle to periphery",
+      "Heat loss from skin to environment from convection & radiation",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0046",
+    "type": "radio",
+    "category": "2",
+    "question": "Which of the following is not heat-related?",
+    "correctAnswer": "DOMS",
+    "optionValues": [
+      "Heat stroke",
+      "Muscle cramps",
+      "Heat exhaustion",
+      "DOMS"
+    ]
+  },
+  {
+    "id": "a0047",
+    "type": "radio",
+    "category": "2",
+    "question": "The key re-hydration strategy is to replace ___litre of fluids per kg loss of body weight",
+    "correctAnswer": "1-1.5",
+    "optionValues": [
+      "2.5-3",
+      "2-2.5",
+      "1-1.5",
+      "0.5-1"
+    ]
+  },
+  {
+    "id": "a0048",
+    "type": "radio",
+    "category": "2",
+    "question": "Hyperhydration has been suggested to enhance performance only during hot & humid environmental conditions",
+    "correctAnswer": "This statement is true",
+    "optionValues": [
+      "This statement is true",
+      "This statement is false",
+      "This statement is partly true",
+      "Inconclusive research"
+    ]
+  },
+  {
+    "id": "a0049",
+    "type": "radio",
+    "category": "2",
+    "question": "The amount of sodium required  for optimal fluid absorption & prevention of hyponatremia is",
+    "correctAnswer": "10-30mmol/L",
+    "optionValues": [
+      "40-50 mmol/L",
+      "50-60 mmol/L",
+      "5-10 mmol/L",
+      "10-30mmol/L"
+    ]
+  },
+  {
+    "id": "a0050",
+    "type": "radio",
+    "category": "2",
+    "question": "Gastro-intestinal problems during long distance endurance runs are due to the ingestion of",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "protein solutions",
+      "concentrated carbohydrated solutions",
+      "high osmolality solutions",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0051",
+    "type": "radio",
+    "category": "2",
+    "question": "Seizures, coma and death can occur in which of the following",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "severe dehydration",
+      "hyponatremia",
+      "heat stroke",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0052",
+    "type": "radio",
+    "category": "2",
+    "question": "How many grams of carbohydrates per kg body weight should athletes ingest 1 to 4 hours before aerobic endurance exercise or competition?",
+    "correctAnswer": "1 to 4 g",
+    "optionValues": [
+      "6 g",
+      "8 to 10 g",
+      "1 to 4 g",
+      "6 to 8 g"
+    ]
+  },
+  {
+    "id": "a0053",
+    "type": "radio",
+    "category": "2",
+    "question": "Ingestion of large amounts of which monosaccharide is not recommended during exercise due to the greater likelihood of gastroinstestinal problems?",
+    "correctAnswer": "Fructose",
+    "optionValues": [
+      "Glucose",
+      "Fructose",
+      "Sucrose",
+      "Maltodextrin"
+    ]
+  },
+  {
+    "id": "a0054",
+    "type": "radio",
+    "category": "2",
+    "question": "The preferred Carbohydrate-to-Protein ratio in a post-training meal is:",
+    "correctAnswer": "4:01",
+    "optionValues": [
+      "2:01",
+      "3:02",
+      "3:04",
+      "4:01"
+    ]
+  },
+  {
+    "id": "a0055",
+    "type": "radio",
+    "category": "2",
+    "question": "Post exercise carbohydrate and protein consumption should occur within ____ minutes for optimal replenishment of glycogen stores and muscle repair",
+    "correctAnswer": "30 minutes",
+    "optionValues": [
+      "30 minutes",
+      "90 minutes",
+      "50 minutes",
+      "5 minutes"
+    ]
+  },
+  {
+    "id": "a0056",
+    "type": "radio",
+    "category": "2",
+    "question": "Which of the following can be consumed during a full marathon?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Sports drink",
+      "Carbohydrate gel",
+      "Banana",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0057",
+    "type": "radio",
+    "category": "2",
+    "question": "During exercise, athletes should consume a carbohydrate–electrolyte solution that delivers ________ carbohydrate solution every 15 to 20 minutes to sustain blood glucose levels.",
+    "correctAnswer": "6% to 8%",
+    "optionValues": [
+      "8% to 10%",
+      "4% to 6%",
+      "6% to 8%",
+      "10% to 12%"
+    ]
+  },
+  {
+    "id": "a0058",
+    "type": "radio",
+    "category": "2",
+    "question": "During exercise of 1-1.5 hour duration, the carbohydrate intake must be ____ to ____ g per hour:",
+    "correctAnswer": "30 to 60 g",
+    "optionValues": [
+      "30 to 60 g",
+      "50 to 70 g",
+      "40 to 50 g",
+      "60 to 70 g "
+    ]
+  },
+  {
+    "id": "a0059",
+    "type": "radio",
+    "category": "2",
+    "question": "Classic method of Carbohydrate loading is generally started ______ before the competition day",
+    "correctAnswer": "7 days",
+    "optionValues": [
+      "10 days",
+      "7 days",
+      "15 days",
+      "9 days"
+    ]
+  },
+  {
+    "id": "a0060",
+    "type": "radio",
+    "category": "2",
+    "question": "1 gram glycogen requires ______ grams of water for storage",
+    "correctAnswer": "3",
+    "optionValues": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "id": "a0061",
+    "type": "radio",
+    "category": "2",
+    "question": "When glycogen is depleted, which enzyme is elevated in the blood?",
+    "correctAnswer": "glycogen synthetase",
+    "optionValues": [
+      "glycogen synthetase",
+      "glycogen phosphorylase",
+      "glucosidase",
+      "glucosyltransferase"
+    ]
+  },
+  {
+    "id": "a0062",
+    "type": "radio",
+    "category": "3",
+    "question": "Which of the following sports is not included in the power event category?",
+    "correctAnswer": "Cricket",
+    "optionValues": [
+      "Weightlifting",
+      "Gymnastics",
+      "Shot Put",
+      "Cricket"
+    ]
+  },
+  {
+    "id": "a0063",
+    "type": "radio",
+    "category": "3",
+    "question": "Power development is dependent on the following muscle fibre type",
+    "correctAnswer": "Both Type IIa & Type IIb",
+    "optionValues": [
+      "Type IIa",
+      "Type IIb",
+      "Both Type IIa & Type IIb",
+      "Type I"
+    ]
+  },
+  {
+    "id": "a0064",
+    "type": "radio",
+    "category": "3",
+    "question": "Power events majorily rely on the following energy system",
+    "correctAnswer": "Both Option1 and 2",
+    "optionValues": [
+      "ATP-CP",
+      "Anaerobic glycolysis",
+      "Oxidative phosphorylation",
+      "Both Option1 and 2"
+    ]
+  },
+  {
+    "id": "a0065",
+    "type": "radio",
+    "category": "3",
+    "question": "In which of the following sports, do athletes undergo repetitive patterns of weight gain and weight loss to build muscle and then reduce body-fat levels?",
+    "correctAnswer": "Bodybuilding",
+    "optionValues": [
+      "Sprinting",
+      "Swimming",
+      "Bodybuilding",
+      "Gymnastics"
+    ]
+  },
+  {
+    "id": "a0066",
+    "type": "radio",
+    "category": "3",
+    "question": "To attain weight loss in wrestlers, the daily calorie intake from the macronutrients (Carbohydrates/Proteins/Fats) can be:",
+    "correctAnswer": "55/20/25",
+    "optionValues": [
+      "70/10/20",
+      "60/20/20",
+      "55/20/25",
+      "65/15/20"
+    ]
+  },
+  {
+    "id": "a0067",
+    "type": "radio",
+    "category": "3",
+    "question": "On competition day, weightlifters highly rely on _________ for energy",
+    "correctAnswer": "Phosphocreatine",
+    "optionValues": [
+      "Fats",
+      "Phosphocreatine",
+      "Amino acids",
+      "Carbohydrates"
+    ]
+  },
+  {
+    "id": "a0068",
+    "type": "radio",
+    "category": "3",
+    "question": "During multiple bouts of high intensity activity in competition, athletes need to consume beverage containing carbohydrates and ____________",
+    "correctAnswer": "Electrolytes",
+    "optionValues": [
+      "Proteins",
+      "Fats",
+      "Electrolytes",
+      "Iron"
+    ]
+  },
+  {
+    "id": "a0069",
+    "type": "radio",
+    "category": "3",
+    "question": "To make weight in the last few days before competition, athletes commonly attempt to lose weight rapidly by a combination of:",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Sweating",
+      "Severe restriction of food",
+      "Drastic drop in fluid intake",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0070",
+    "type": "radio",
+    "category": "3",
+    "question": "A high body mass is an advantage in which of the following sports?",
+    "correctAnswer": "Throwing events",
+    "optionValues": [
+      "Gymnastics",
+      "Figure skating",
+      "Swimming",
+      "Throwing events"
+    ]
+  },
+  {
+    "id": "a0071",
+    "type": "radio",
+    "category": "3",
+    "question": "During Endurance events of more than 2.5hrs duration, carbohydrate intake must be upto ______",
+    "correctAnswer": "90 gm/hr",
+    "optionValues": [
+      "50 gm/hr",
+      "55 gm/hr",
+      "65 gm/hr",
+      "90 gm/hr"
+    ]
+  },
+  {
+    "id": "a0072",
+    "type": "radio",
+    "category": "3",
+    "question": "Carbohydrate mouth rinsing is one of the ways to ____________________",
+    "correctAnswer": "Stimulate taste receptor cells",
+    "optionValues": [
+      "Boost protein synthesis",
+      "Increase strength",
+      "Stimulate taste receptor cells",
+      "None of the above"
+    ]
+  },
+  {
+    "id": "a0073",
+    "type": "radio",
+    "category": "3",
+    "question": "It is beneficial for an endurance athlete to take ______ caffeine (along with carbohydrates) 30mins before an event",
+    "correctAnswer": "3-6mg/kg",
+    "optionValues": [
+      ">6gm/kg",
+      "3-6mg/kg",
+      ">6mg/kg",
+      "3-6gm/kg"
+    ]
+  },
+  {
+    "id": "a0074",
+    "type": "radio",
+    "category": "3",
+    "question": "Which diet is most suitable for endurance athletes?",
+    "correctAnswer": "High Carbohydrate, Moderate Protein diet",
+    "optionValues": [
+      "High Carbohydrate, Moderate Protein diet",
+      "Low Carbohydrate, Moderate Protein diet",
+      "Low Carbohydrate, High Protein diet",
+      "Low Carbohydrate, Low Protein diet"
+    ]
+  },
+  {
+    "id": "a0075",
+    "type": "radio",
+    "category": "3",
+    "question": "As the duration of a tennis match increases, _____________ becomes important for energy provision.",
+    "correctAnswer": "Fat Oxidation",
+    "optionValues": [
+      "Glycogen utilisation",
+      "Protein Oxidation",
+      "Fat Oxidation",
+      "None of the above"
+    ]
+  },
+  {
+    "id": "a0076",
+    "type": "radio",
+    "category": "3",
+    "question": "Racket Sports rely on:",
+    "correctAnswer": "Both Aerobic & Anaerobic energy systems",
+    "optionValues": [
+      "Only Phosphagen energy system",
+      "Only Aerobic energy system",
+      "Only Anaerobic energy system",
+      "Both Aerobic & Anaerobic energy systems"
+    ]
+  },
+  {
+    "id": "a0077",
+    "type": "radio",
+    "category": "3",
+    "question": "The fat recommendation during the \"specific training phase\"for a racket sport is",
+    "correctAnswer": "1-1.5g/kg body weight",
+    "optionValues": [
+      "1-1.5g/kg body weight",
+      "1.5-2g/kg body weight",
+      "0.8-1g/kg body weight",
+      "2-2.5g/kg body weight"
+    ]
+  },
+  {
+    "id": "a0078",
+    "type": "radio",
+    "category": "3",
+    "question": "Which of the following sport is played with a racket and a shuttle?",
+    "correctAnswer": "Badminton",
+    "optionValues": [
+      "Squash",
+      "Tennis",
+      "Badminton",
+      "Table Tennis"
+    ]
+  },
+  {
+    "id": "a0079",
+    "type": "radio",
+    "category": "3",
+    "question": "Which of the following external factors will influence the athlete's performance in racket sports?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Surface of the court",
+      "Equipment used",
+      "Environmental conditions",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0080",
+    "type": "radio",
+    "category": "3",
+    "question": "One of the benefits of using Multiple Transportable Carbs during Endurance Exercise is____________:",
+    "correctAnswer": "Minimal gastrointestinal distress",
+    "optionValues": [
+      "Reduced carbohydrate oxidation",
+      "Minimal gastrointestinal distress",
+      "Decreased fluid delivery",
+      "None of the above"
+    ]
+  },
+  {
+    "id": "a0081",
+    "type": "radio",
+    "category": "3",
+    "question": "During an ultra-endurance event, the athlete may benefit from intake of _________:",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Carbohydrates",
+      "Electrolytes",
+      "Sodium Bicarbonate",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0082",
+    "type": "radio",
+    "category": "3",
+    "question": "An endurance sport is characterised by __________:",
+    "correctAnswer": "Low-to-moderate intensity, Long duration",
+    "optionValues": [
+      "Low-to-moderate intensity, Long duration",
+      "High Intensity, long duration",
+      "Low-to-moderate intensity, short duration",
+      "High Intensity, short duration"
+    ]
+  },
+  {
+    "id": "a0083",
+    "type": "radio",
+    "category": "3",
+    "question": "Which of the following events is the longest in duration?",
+    "correctAnswer": "Ironman",
+    "optionValues": [
+      "Full Marathon",
+      "10km open water swimming",
+      "Ironman",
+      "Olympic Triathlon"
+    ]
+  },
+  {
+    "id": "a0084",
+    "type": "radio",
+    "category": "3",
+    "question": "What kind of body composition is ideal for an endurance athlete?",
+    "correctAnswer": "Low Body weight with low body fat%",
+    "optionValues": [
+      "High Body weight with moderate body fat%",
+      "Low Body weight with low body fat%",
+      "Low Body weight with moderate body fat%",
+      "Low Body weight with high body fat%"
+    ]
+  },
+  {
+    "id": "a0085",
+    "type": "radio",
+    "category": "3",
+    "question": "The minimum desirable body fat% in endurance athletes is ___________:",
+    "correctAnswer": "Males - 8% and Females - 12%",
+    "optionValues": [
+      "Males - 8% and Females - 12%",
+      "Males - 20% and Females - 15%",
+      "Males - 15% and Females - 20%",
+      "Males - 12% and Females - 8%"
+    ]
+  },
+  {
+    "id": "a0086",
+    "type": "radio",
+    "category": "3",
+    "question": "The primary energy system(s) used in team sports:",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "ATP-CP",
+      "Aerobic",
+      "Anaerobic glycolysis",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0087",
+    "type": "radio",
+    "category": "3",
+    "question": "___________ athletes cover on an average of 10-13 km during  football matches",
+    "correctAnswer": "mid-field",
+    "optionValues": [
+      "forwards",
+      "defenders",
+      "mid-field",
+      "goal keepers"
+    ]
+  },
+  {
+    "id": "a0088",
+    "type": "radio",
+    "category": "3",
+    "question": "The correct dose of protein post training for cricketers is:",
+    "correctAnswer": "20-25g",
+    "optionValues": [
+      "15-20g",
+      "20-25g",
+      "30g",
+      "10g"
+    ]
+  },
+  {
+    "id": "a0089",
+    "type": "radio",
+    "category": "3",
+    "question": "Daily requirements of carbohydrates for recovery from moderate-to-heavy endurance training (pre-season) for football players is:",
+    "correctAnswer": "7 -10 gm/kg body weight",
+    "optionValues": [
+      "7 -10 gm/kg body weight",
+      "10-12 gm/kg body weight",
+      "4 -5 gm/kg body weight",
+      "6-8 gm/kg body weight"
+    ]
+  },
+  {
+    "id": "a0090",
+    "type": "radio",
+    "category": "3",
+    "question": "The key vitamin essential for recovery from muscle soreness is:",
+    "correctAnswer": "Vitamin C",
+    "optionValues": [
+      "Vitamin A",
+      "Vitamin E",
+      "Vitamin C",
+      "Vitamin D"
+    ]
+  },
+  {
+    "id": "a0091",
+    "type": "radio",
+    "category": "3",
+    "question": "Micronutrient requirements during hockey are increased due to the following:",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Increased BMR",
+      "Increased need for tissue maintenance & repair",
+      "Increased concentrations of mitochondrial enzymes",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0092",
+    "type": "radio",
+    "category": "3",
+    "question": "What should be the carbohydrate quantity in a 3-hour pre-training low-glycemic meal for a basketball player?",
+    "correctAnswer": "3 gm/kg body weight",
+    "optionValues": [
+      "1 gm/kg body weight",
+      "2.5 gm/kg body weight",
+      "3 gm/kg body weight",
+      "4 gm/kg body weight"
+    ]
+  },
+  {
+    "id": "a0093",
+    "type": "radio",
+    "category": "3",
+    "question": "Which of the following is a good meal option for half-time during a hockey match?",
+    "correctAnswer": "Banana",
+    "optionValues": [
+      "BCAA",
+      "Banana",
+      "Chocolate bar",
+      "plain water"
+    ]
+  },
+  {
+    "id": "a0094",
+    "type": "radio",
+    "category": "3",
+    "question": "Which of the following is the most beneficial supplement for kabaddi players?",
+    "correctAnswer": "Creatine",
+    "optionValues": [
+      "Creatine",
+      "Caffeine",
+      "Multivitamin",
+      "Beta-alanine"
+    ]
+  },
+  {
+    "id": "a0095",
+    "type": "radio",
+    "category": "3",
+    "question": "The key recovery supplement for team sport athletes is:",
+    "correctAnswer": "Glutamine",
+    "optionValues": [
+      "Multivitamin",
+      "Glutamine",
+      "Collagen",
+      "Caffeine"
+    ]
+  },
+  {
+    "id": "a0096",
+    "type": "radio",
+    "category": "4",
+    "question": "If a sportsperson fails a dope test- who/what of the following can be considered most responsible for doping violation?",
+    "correctAnswer": "Sportsperson",
+    "optionValues": [
+      "Supplement",
+      "Coach",
+      "Sportsperson",
+      "Medicines"
+    ]
+  },
+  {
+    "id": "a0097",
+    "type": "radio",
+    "category": "4",
+    "question": "An athlete’s biological passport is an evidence of his/her:",
+    "correctAnswer": "Doping tests collated",
+    "optionValues": [
+      "Body composition",
+      "Clinical markers",
+      "Blood profile",
+      "Doping tests collated "
+    ]
+  },
+  {
+    "id": "a0098",
+    "type": "radio",
+    "category": "4",
+    "question": "TUE  in anti-doping is termed as:",
+    "correctAnswer": "Therapeutic use exemption",
+    "optionValues": [
+      "Therapeutic use exemption",
+      "Technical use example",
+      "Therapeutic use experiments",
+      "Therapeutic use of exercise "
+    ]
+  },
+  {
+    "id": "a0099",
+    "type": "radio",
+    "category": "4",
+    "question": "Caffeine is a controlled or a restricted substance as per IOC. The acceptable limit for caffeine in per ml of urine is:",
+    "correctAnswer": "12ug/ml",
+    "optionValues": [
+      "5-7ug/ml",
+      "3-4ug/ml",
+      "15ug/ml",
+      "12ug/ml"
+    ]
+  },
+  {
+    "id": "a0100",
+    "type": "radio",
+    "category": "4",
+    "question": "Which product can result in a two year ban for the athlete - if used in or out of competition in 'shooting'?",
+    "correctAnswer": "Beta-blockers",
+    "optionValues": [
+      "Beta-alanine",
+      "Beta-glutamine",
+      "Beta-blockers",
+      "BCAA"
+    ]
+  },
+  {
+    "id": "a0101",
+    "type": "radio",
+    "category": "4",
+    "question": "What are the performance benefits of using blood doping in a sport?",
+    "correctAnswer": "Increased numbers of RBC and hemoglobin",
+    "optionValues": [
+      "Increased numbers of RBC and hemoglobin",
+      "Decreased cardiac output",
+      "Increased blood viscosity",
+      "None of the above "
+    ]
+  },
+  {
+    "id": "a0102",
+    "type": "radio",
+    "category": "4",
+    "question": "What are the physiological reasons that might motivate an elite sportsperson to take steroids?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Aids assimilation of protein",
+      "Increased ability to train longer at higher intensities",
+      "Increased fat loss",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0103",
+    "type": "radio",
+    "category": "4",
+    "question": "Child athletes who take growth hormones are at an increased risk of the following except:",
+    "correctAnswer": "Nutrient deficiencies",
+    "optionValues": [
+      "Gigantism",
+      "Insulin resistance",
+      "Nutrient deficiencies",
+      "Acromegalic syndrome"
+    ]
+  },
+  {
+    "id": "a0104",
+    "type": "radio",
+    "category": "4",
+    "question": "Athletes use amphetamines because their actions mimic the effect of which hormones?",
+    "correctAnswer": "Epinephrine and nor-epinephrine",
+    "optionValues": [
+      "Epinephrine and nor-epinephrine",
+      "Growth hormone",
+      "Thyroxine",
+      "Aldosterone"
+    ]
+  },
+  {
+    "id": "a0105",
+    "type": "radio",
+    "category": "4",
+    "question": "When an athlete is buying a supplement, what should he check to prevent inadvertent doping?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Composition of the product",
+      "Third party certification",
+      "Place of manufacture/ import",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0106",
+    "type": "radio",
+    "category": "4",
+    "question": "What are the benefits of using caffeine as an ergogenic aid?",
+    "correctAnswer": "Improved alertness and reaction time",
+    "optionValues": [
+      "Increased Fatigue",
+      "Improved alertness and reaction time",
+      "Decreased blood glucose",
+      "Decreased blood viscosity "
+    ]
+  },
+  {
+    "id": "a0107",
+    "type": "radio",
+    "category": "4",
+    "question": "High altitude training as an ergogenic aid is most beneficial for which sport?",
+    "correctAnswer": "Ultra endurance running",
+    "optionValues": [
+      "Ultra endurance running",
+      "Weightlifting",
+      "Sprinting",
+      "Speed skating "
+    ]
+  },
+  {
+    "id": "a0108",
+    "type": "radio",
+    "category": "4",
+    "question": "WADA is the acronym for:",
+    "correctAnswer": "World anti-doping agency",
+    "optionValues": [
+      "World athletics development association",
+      "World anti- doping authority",
+      "World archery development agency",
+      "World anti-doping agency"
+    ]
+  },
+  {
+    "id": "a0109",
+    "type": "radio",
+    "category": "4",
+    "question": "Which of the following can be considered an Anti-doping rule violation for an athlete?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Presence of a prohibited substance",
+      "Refusal to report for a test",
+      "Use of a prohibited method",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0110",
+    "type": "radio",
+    "category": "4",
+    "question": "Mental imagery can be best used as an ergogenic aid to:",
+    "correctAnswer": "Familarize with the competition routine or site",
+    "optionValues": [
+      "Familarize with the competition routine or site",
+      "Improved arithmetic ability",
+      "Improve strength and performance",
+      "None of the above "
+    ]
+  },
+  {
+    "id": "a0111",
+    "type": "radio",
+    "category": "4",
+    "question": "Which protein supplement can be used by a lactose intolerant individual?",
+    "correctAnswer": "Whey protein isolate",
+    "optionValues": [
+      "Whey protein concentrate",
+      "Whey protein isolate",
+      "Blend of whey protein concentrate and isolate",
+      "None of the above- Whey protein cant be used by lactose intolerant"
+    ]
+  },
+  {
+    "id": "a0112",
+    "type": "radio",
+    "category": "4",
+    "question": "Which is the best time to take a whey protein?",
+    "correctAnswer": "Post-Exercise and Morning",
+    "optionValues": [
+      "Post-Exercise and Bedtime",
+      "Pre-Exercise and Bedtime",
+      "Post-Exercise and Morning",
+      "Pre-Exercise and Morning"
+    ]
+  },
+  {
+    "id": "a0113",
+    "type": "radio",
+    "category": "4",
+    "question": "Which is the best time to take a casein protein?",
+    "correctAnswer": "Pre-Exercise and Bedtime",
+    "optionValues": [
+      "Post-Exercise and Bedtime",
+      "Pre-Exercise and Bedtime",
+      "Post-Exercise and Morning",
+      "Pre-Exercise and Morning"
+    ]
+  },
+  {
+    "id": "a0114",
+    "type": "radio",
+    "category": "4",
+    "question": "Which of the following protein supplements is fastest absorbed?",
+    "correctAnswer": "Hydrolysed Whey protein isolate",
+    "optionValues": [
+      "Hydrolysed Whey protein isolate",
+      "Pure Whey protein isolate",
+      "Blend of Whey and Casein",
+      "Milk protein isolate"
+    ]
+  },
+  {
+    "id": "a0115",
+    "type": "radio",
+    "category": "4",
+    "question": "Which of the following protein supplements is slowest absorbed?",
+    "correctAnswer": "Pure Micellar Casein",
+    "optionValues": [
+      "Blend of Whey and Casein",
+      "Pure Milk protein isolate",
+      "Calcium and Sodium caseinate",
+      "Pure Micellar Casein"
+    ]
+  },
+  {
+    "id": "a0116",
+    "type": "radio",
+    "category": "4",
+    "question": "If a protein supplement has a Protein:Carb ratio of 1:5, what can it be used for:",
+    "correctAnswer": "Weight gain",
+    "optionValues": [
+      "Weight loss",
+      "Maintenance after weight loss",
+      "Weight gain",
+      "It is a meal replacement that can be used for both weight loss & weight gain"
+    ]
+  },
+  {
+    "id": "a0117",
+    "type": "radio",
+    "category": "4",
+    "question": "In a BCAA supplement, which ratio of Leucine: Isoleucine: Valine is best to supply energy?",
+    "correctAnswer": "2:1:1 ratio",
+    "optionValues": [
+      "2:1:1 ratio",
+      "4:1:1 ratio",
+      "8:1:1 ratio",
+      "12:1:1 ratio"
+    ]
+  },
+  {
+    "id": "a0118",
+    "type": "radio",
+    "category": "4",
+    "question": "What is the primary benefit of taking a pure Leucine supplement after exercise?",
+    "correctAnswer": "To increase rate of protein synthesis",
+    "optionValues": [
+      "To increase power",
+      "To stimulate increased alertness",
+      "To increase vasodilation",
+      "To increase rate of protein synthesis"
+    ]
+  },
+  {
+    "id": "a0119",
+    "type": "radio",
+    "category": "4",
+    "question": "What are the best timings to take Glutamine?",
+    "correctAnswer": "Post-Exercise and Bedtime",
+    "optionValues": [
+      "Post-Exercise and Bedtime",
+      "Pre-Exercise and Bedtime",
+      "Post-Exercise and Morning",
+      "Pre-Exercise and Morning"
+    ]
+  },
+  {
+    "id": "a0120",
+    "type": "radio",
+    "category": "4",
+    "question": "What are the primary benefits of Glutamine?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Improves muscle recovery",
+      "Boosts immunity",
+      "Reducing negative effects of cortisol",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0121",
+    "type": "radio",
+    "category": "4",
+    "question": "Which of the following help increase vasodilation?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Arginine",
+      "Citrulline",
+      "Beetroot juice",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0122",
+    "type": "radio",
+    "category": "4",
+    "question": "What is the ideal carbohydrate content in a sports drink?",
+    "correctAnswer": "6-8% carbs",
+    "optionValues": [
+      "1-2% carbs",
+      "3-5% carbs",
+      "6-8% carbs",
+      "9-11% carbs"
+    ]
+  },
+  {
+    "id": "a0123",
+    "type": "radio",
+    "category": "4",
+    "question": "Identify the type of supplement containing: Dextrose- 1.5%, Sodium- 75mmol/L, Chloride- 65 mmol/L, Potassium- 20mmol/L",
+    "correctAnswer": "Oral Rehydration Solution",
+    "optionValues": [
+      "Sports drink",
+      "Sports gel",
+      "Energy drink",
+      "Oral Rehydration Solution"
+    ]
+  },
+  {
+    "id": "a0124",
+    "type": "radio",
+    "category": "4",
+    "question": "Which is the preferred carbohydrate source in a sports drink?",
+    "correctAnswer": "A mix of all of the above",
+    "optionValues": [
+      "Only Glucose",
+      "Only Fructose",
+      "Only Maltodextrin",
+      "A mix of all of the above"
+    ]
+  },
+  {
+    "id": "a0125",
+    "type": "radio",
+    "category": "4",
+    "question": "What does a sports gel contain?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Carbohydrates",
+      "Electrolytes",
+      "Caffeine and/or Vitamins",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0126",
+    "type": "radio",
+    "category": "4",
+    "question": "Which of the following can help buffer Lactic acid?",
+    "correctAnswer": "Creatine and Beta-alanine",
+    "optionValues": [
+      "BCAA and Glutamine",
+      "Creatine and Beta-alanine",
+      "Leucine and Caffeine",
+      "Tyrosine and Phenylalanine"
+    ]
+  },
+  {
+    "id": "a0127",
+    "type": "radio",
+    "category": "4",
+    "question": "What are the advantages of creatine ethyl ester over creatine monohydrate?",
+    "correctAnswer": "Better absorption",
+    "optionValues": [
+      "Better absorption",
+      "Glucose is required for its uptake",
+      "Lower cost",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0128",
+    "type": "radio",
+    "category": "4",
+    "question": "What should a single dose of creatine monohydrate ideally comprise?",
+    "correctAnswer": "3-5gm creatine monohydrate + 50-75gm glucose in water",
+    "optionValues": [
+      "3-5gm creatine monohydrate in water",
+      "6-10gm creatine monohydrate in water",
+      "3-5gm creatine monohydrate + 50-75gm glucose in water",
+      "6-10gm creatine monohydrate + 50-75gm glucose in water"
+    ]
+  },
+  {
+    "id": "a0129",
+    "type": "radio",
+    "category": "4",
+    "question": "Which of the following would be the preferred choice to have along with creatine?",
+    "correctAnswer": "Grape juice",
+    "optionValues": [
+      "Bananas",
+      "Orange juice",
+      "Grape juice",
+      "Apple juice"
+    ]
+  },
+  {
+    "id": "a0130",
+    "type": "radio",
+    "category": "4",
+    "question": "Which of these supplements would be beneficial to an endurance athlete?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Carnitine",
+      "Medium-chain Triglycerides",
+      "Coenzyme Q10",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0131",
+    "type": "radio",
+    "category": "4",
+    "question": "Which of these supplements would be beneficial to a power athlete?",
+    "correctAnswer": "Creatine and Caffeine",
+    "optionValues": [
+      "Creatine and Caffeine",
+      "Carnitine and Beta-alanine",
+      "MCTs and Coenzyme Q10",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0132",
+    "type": "radio",
+    "category": "5",
+    "question": "The definition of Cardiorespiratory fitness is",
+    "correctAnswer": "The coordinated capacity of the heart, blood vessels, respiratory system and tissues to take in, deliver and use oxygen",
+    "optionValues": [
+      "The maximal force that a muscle or muscle group can generate in a single effort",
+      "The coordinated capacity of the heart, blood vessels, respiratory system and tissues to take in, deliver and use oxygen",
+      "The ability to sustain a maximal effort or to continue repeated submaximal contractions",
+      "The functional ROM about a joint"
+    ]
+  },
+  {
+    "id": "a0133",
+    "type": "radio",
+    "category": "5",
+    "question": "From rest to maximal exercise, the systolic blood pressure should ____________ with an increasing workload.",
+    "correctAnswer": "Increase",
+    "optionValues": [
+      "Increase",
+      "Decrease",
+      "Stay the same",
+      "Decrease with isometric or increase with isotonic contractions"
+    ]
+  },
+  {
+    "id": "a0134",
+    "type": "radio",
+    "category": "5",
+    "question": "The ACSM recommendation for intensity, duration, and frequency of physical activity for apparently healthy individuals includes",
+    "correctAnswer": "Intensity of 60% to 90% maximal heart rate, duration of 20-60 min, and frequency of 3 to 5 days a week",
+    "optionValues": [
+      "Intensity of 60% to 90% maximal heart rate, duration of 20-60 min, and frequency of 3 to 5 days a week",
+      "Intensity of 85% to 90% maximal heart rate, duration of 30 minutes, and frequency of 3 days a week",
+      "Intensity of 50% to 70% maximal heart rate, duration of 15 to 45 minutes, and frequency of 5 days a week",
+      "Intensity of 60% to 90% maximal heart rate reserve, duration of 20 to 60 minutes, and frequency of 7 days a week"
+    ]
+  },
+  {
+    "id": "a0135",
+    "type": "radio",
+    "category": "5",
+    "question": "The Ventilatory Threshold",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "results from an increase in CO2 due to lactate buffering",
+      "usually occurs at 80-85 % VO2max in trained individuals",
+      "corresponds to the fall in aerobic energy production from aerobic glycolysis and take over by the anaerobic glycolysis and phosphagen system",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0136",
+    "type": "radio",
+    "category": "5",
+    "question": "Which of the below mentioned physiological responses will not occur as a result of regular Cardiovascular training?",
+    "correctAnswer": "Resting HR will increase",
+    "optionValues": [
+      "VO2max will increase",
+      "Resting HR will increase",
+      "Resting BP will decrease",
+      "Exercise HR will decrease"
+    ]
+  },
+  {
+    "id": "a0137",
+    "type": "radio",
+    "category": "5",
+    "question": "Type II muscle fibers",
+    "correctAnswer": "Are recruited at a higher percentage of maximum force than Type I fibers",
+    "optionValues": [
+      "Have a high capacity to generate energy through the electron transport system",
+      "Have a high capacity to generate energy from fat",
+      "Are recruited at a higher percentage of maximum force than Type I fibers",
+      "Have high endurance capabilities"
+    ]
+  },
+  {
+    "id": "a0138",
+    "type": "radio",
+    "category": "5",
+    "question": "Using the original RPE scale (6 to 20), what level of perceived exertion is associated with a Cardio Respiratory Fitness (CRF) training effect?",
+    "correctAnswer": "11 to 15",
+    "optionValues": [
+      "6 to 9",
+      "11 to 15",
+      "13 to 17",
+      "6 to 11"
+    ]
+  },
+  {
+    "id": "a0139",
+    "type": "radio",
+    "category": "5",
+    "question": "Which of the following is/are true with regard to specificity and fitness?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Training effect is limited to the muscle fibers involved in the activity",
+      "Muscle fiber adapts specifically to a type of activity",
+      "Mitochondria demonstrate greater adaptation with endurance activity",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0140",
+    "type": "radio",
+    "category": "5",
+    "question": "What is the primary physiological benefit to be gained during a cool-down after exercise?",
+    "correctAnswer": "Option2 and 3",
+    "optionValues": [
+      "promotes increase in cardiovascular fitness",
+      "prevents venous pooling",
+      "facilitates lactate removal",
+      "Option2 and 3"
+    ]
+  },
+  {
+    "id": "a0141",
+    "type": "radio",
+    "category": "5",
+    "question": "Optimal warm up before activity results in which of the following?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Less muscle resistance when the warm-up is performed similarly to the actual activity",
+      "Facilitated nerve transmission and motor unit recruitment",
+      "Facilitated oxygen delivery and use by the muscle",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0142",
+    "type": "radio",
+    "category": "5",
+    "question": "What happens to the muscle during isometric tension development?",
+    "correctAnswer": "No change in the length of the muscle",
+    "optionValues": [
+      "Shortening of the muscle",
+      "Lengthening of the muscle",
+      "No change in the length of the muscle",
+      "Relaxation of the muscle"
+    ]
+  },
+  {
+    "id": "a0143",
+    "type": "radio",
+    "category": "5",
+    "question": "A female client expresses an interest in joining a recreational crew team. She hires you to train her to withstand the demands of the sport. You design a resistance training program that includes low reps, 4-6 sets of high intensity squats and seated row within a comprehensive  resistance training program. You gradually increase her sets and load/intensity. In addition, you have included sprints and long distance swimming in her overall program plan. Which of the  following training principles have you incorporated?",
+    "correctAnswer": "overload, strength and specificity",
+    "optionValues": [
+      "specificity, reversibility and variation",
+      "overload, adaptability and strength",
+      "specificity, overload and variation",
+      "overload, strength and specificity"
+    ]
+  },
+  {
+    "id": "a0144",
+    "type": "radio",
+    "category": "5",
+    "question": "Muscle hypertrophy refers to",
+    "correctAnswer": "an increase in muscle size",
+    "optionValues": [
+      "immobilization of a muscle",
+      "a decrease in muscle size",
+      "an increase in muscle size",
+      "an increase in number of muscle fibers"
+    ]
+  },
+  {
+    "id": "a0145",
+    "type": "radio",
+    "category": "5",
+    "question": "Neural mechanisms responsible for adaptations in strength and power include all of the following  EXCEPT an increased",
+    "correctAnswer": "antagonist muscle coactivation",
+    "optionValues": [
+      "motor unit recruitment",
+      "antagonist muscle coactivation",
+      "motor unit firing rate",
+      "fast-twitch fiber recruitment"
+    ]
+  },
+  {
+    "id": "a0146",
+    "type": "radio",
+    "category": "5",
+    "question": "An increase in the number of muscle fibers in a muscle is referred to as:",
+    "correctAnswer": "hyperplasia",
+    "optionValues": [
+      "hyperplasia",
+      "atrophy",
+      "hypertrophy",
+      "hypoplasia"
+    ]
+  },
+  {
+    "id": "a0147",
+    "type": "radio",
+    "category": "5",
+    "question": "Which of the following indicates the correct order for a traditional periodization program for resistance training?",
+    "correctAnswer": "hypertrophy, strength/power, peaking, recovery",
+    "optionValues": [
+      "hypertrophy, peaking, strength/power, recovery",
+      "strength/power, peaking, recovery, hypertrophy",
+      "strength/power, hypertrophy, recovery, peaking",
+      "hypertrophy, strength/power, peaking, recovery"
+    ]
+  },
+  {
+    "id": "a0148",
+    "type": "radio",
+    "category": "5",
+    "question": "What is the equivalent of 2.5 pounds (1.13 kg) of body fat in terms of caloric deficit?",
+    "correctAnswer": "8750 kilocalories",
+    "optionValues": [
+      "5250 kilocalories",
+      "7000 kilocalories",
+      "8000 kilocalories",
+      "8750 kilocalories"
+    ]
+  },
+  {
+    "id": "a0149",
+    "type": "radio",
+    "category": "5",
+    "question": "The treatment modality RICES includes all of the following EXCEPT",
+    "correctAnswer": "Covering",
+    "optionValues": [
+      "Covering",
+      "Ice",
+      "Stabilization",
+      "Rest"
+    ]
+  },
+  {
+    "id": "a0150",
+    "type": "radio",
+    "category": "5",
+    "question": "Which of the following will not cause an elevation of RHR values?",
+    "correctAnswer": "High hemoglobin level",
+    "optionValues": [
+      "Low stroke volume",
+      "Poor oxygen extraction capability",
+      "High hemoglobin level",
+      "Elevated stress hormones"
+    ]
+  },
+  {
+    "id": "a0151",
+    "type": "radio",
+    "category": "5",
+    "question": "The difference between the oxygen required to support a given exercise intensity and the actual oxygen consumption at the start of exercise is known as the:",
+    "correctAnswer": "oxygen deficit",
+    "optionValues": [
+      "EPOC",
+      "oxygen deficit",
+      "lactate threshold",
+      "maximum oxygen uptake"
+    ]
+  },
+  {
+    "id": "a0152",
+    "type": "radio",
+    "category": "5",
+    "question": "Which answers are correct? The lactate threshold: i. represents the point at which blood lactate begins to accumulate above resting concentrations during exercise of increasing intensity; ii. represents the point at which lactate production exceeds lactate clearance; iii. occurs at a lower power output after endurance exercise training",
+    "correctAnswer": "i and ii",
+    "optionValues": [
+      "i only",
+      "i and ii",
+      "i, ii and iii",
+      "None of them"
+    ]
+  },
+  {
+    "id": "a0153",
+    "type": "radio",
+    "category": "5",
+    "question": "During high intensity exercise lasting approximately 2-3 minutes in duration, fatigue is most likely to be caused by:",
+    "correctAnswer": "accumulation of metabolic by-products such as lactic acid and H+",
+    "optionValues": [
+      "depletion of ATP-PCr",
+      "accumulation of metabolic by-products such as lactic acid and H+",
+      "depletion of glycogen stores",
+      "increase in muscle pH"
+    ]
+  },
+  {
+    "id": "a0154",
+    "type": "radio",
+    "category": "5",
+    "question": "Exercise training can lead to a lowering of resting heart rate. This response is known as:",
+    "correctAnswer": "bradycardia",
+    "optionValues": [
+      "subcardia",
+      "bradycardia",
+      "hypocardia",
+      "tachycardia"
+    ]
+  },
+  {
+    "id": "a0155",
+    "type": "radio",
+    "category": "5",
+    "question": "Cardiac output refers to",
+    "correctAnswer": "the volume of blood pumped by the heart per minute",
+    "optionValues": [
+      "the volume of blood pumped by the heart per minute",
+      "the proportion of blood pumped out of each ventricle during systole",
+      "the volume of blood pumped by the heart per contraction",
+      "the product of the ejection fraction and heart rate"
+    ]
+  },
+  {
+    "id": "a0156",
+    "type": "radio",
+    "category": "5",
+    "question": "Stroke volume increases during exercise due to:",
+    "correctAnswer": "all of the above",
+    "optionValues": [
+      "greater elastic recoil due to increased filling of the heart",
+      "increased ventricular contractility",
+      "decreased peripheral resistance",
+      "all of the above"
+    ]
+  },
+  {
+    "id": "a0157",
+    "type": "radio",
+    "category": "5",
+    "question": "When designing training programs, the following should be considered:",
+    "correctAnswer": "the principle of progressive overload",
+    "optionValues": [
+      "the principle of progressive overload",
+      "the all-or-none principle",
+      "the Fick principle",
+      "Boyle's law"
+    ]
+  },
+  {
+    "id": "a0158",
+    "type": "radio",
+    "category": "5",
+    "question": "For most individuals, stroke volume starts to plateau at approximately _____% of maximal oxygen uptake",
+    "correctAnswer": "50%",
+    "optionValues": [
+      "25%",
+      "50%",
+      "75%",
+      "100%"
+    ]
+  },
+  {
+    "id": "a0159",
+    "type": "radio",
+    "category": "5",
+    "question": "Compared to untrained individuals, trained endurance athletes have",
+    "correctAnswer": "higher maximal stroke volumes",
+    "optionValues": [
+      "higher maximal heart rates",
+      "higher resting cardiac outputs",
+      "higher resting heart rates",
+      "higher maximal stroke volumes"
+    ]
+  },
+  {
+    "id": "a0160",
+    "type": "radio",
+    "category": "5",
+    "question": "Which athlete is the most powerful?",
+    "correctAnswer": "athlete A (bench presses 100 kg over 0.6 m in 0.5 s)",
+    "optionValues": [
+      "athlete A (bench presses 100 kg over 0.6 m in 0.5 s)",
+      "athlete B (bench presses 150 kg over 0.6 m in 1.0 s)",
+      "athlete C (bench presses 200 kg over 0.6 m in 2.0 s)",
+      "athlete D (bench presses 250 kg over 0.6 m in 2.5 s)"
+    ]
+  },
+  {
+    "id": "a0161",
+    "type": "radio",
+    "category": "5",
+    "question": "By inserting rest intervals into anaerobic or aerobic power training programs, athletes",
+    "correctAnswer": "can perform a greater volume of work in a session",
+    "optionValues": [
+      "accumulate more lactate",
+      "sustain less muscle damage",
+      "build muscle strength faster",
+      "can perform a greater volume of work in a session"
+    ]
+  },
+  {
+    "id": "a0162",
+    "type": "radio",
+    "category": "5",
+    "question": "An eccentric skeletal muscle contraction refers to a contraction where:",
+    "correctAnswer": "Force is generated while the muscle is lengthening",
+    "optionValues": [
+      "Force is generated while the muscle is lengthening",
+      "Force is generated while the muscle is shortening",
+      "Force is generated but the muscle does not change length",
+      "No force is generated by the muscle"
+    ]
+  },
+  {
+    "id": "a0163",
+    "type": "radio",
+    "category": "5",
+    "question": "Maximal oxygen uptake (VO2max) is:",
+    "correctAnswer": "all of the above",
+    "optionValues": [
+      "the best measure of cardiorespiratory fitness",
+      "increases with physical training",
+      "declines by ~1% per year in inactive people after the age of 25-30",
+      "all of the above"
+    ]
+  },
+  {
+    "id": "a0164",
+    "type": "radio",
+    "category": "5",
+    "question": "At sea level, minute ventilation increases during exercise primarily to:",
+    "correctAnswer": "eliminate carbon dioxide that is produced as a result of increased metabolism",
+    "optionValues": [
+      "increase loading of oxygen onto hemoglobin to maintain the arterial partial pressure of oxygen",
+      "eliminate carbon dioxide that is produced as a result of increased metabolism",
+      "lose heat via evaporation",
+      "maintain the respiratory pump"
+    ]
+  },
+  {
+    "id": "a0165",
+    "type": "radio",
+    "category": "5",
+    "question": "The percentage (i.e. relative) increases in strength that can be achieved with resistance training are:",
+    "correctAnswer": "similar in males and females",
+    "optionValues": [
+      "greater in males than females",
+      "greater in females than males",
+      "similar in males and females",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0166",
+    "type": "radio",
+    "category": "5",
+    "question": "In response to aerobic exercise, training heart rate is",
+    "correctAnswer": "decreased at a standard submaximal exercise intensity",
+    "optionValues": [
+      "increased at rest",
+      "increased at a standard submaximal exercise intensity",
+      "decreased at a standard submaximal exercise intensity",
+      "all of the above"
+    ]
+  },
+  {
+    "id": "a0167",
+    "type": "radio",
+    "category": "5",
+    "question": "One MET is equal to",
+    "correctAnswer": "3.5 mL O2/kg body weight /min",
+    "optionValues": [
+      "350 L O2/kg body weight/week",
+      "35 L O2/kg body weight /day",
+      "35 mL O2/kg body weight /hour",
+      "3.5 mL O2/kg body weight /min"
+    ]
+  },
+  {
+    "id": "a0168",
+    "type": "radio",
+    "category": "5",
+    "question": "Athletes who are successful in endurance type activities are more likely to have a higher proportion of the following muscle fibre type in the skeletal muscles that are the prime movers for the activity in question:",
+    "correctAnswer": "Slow-twitch muscle fibres",
+    "optionValues": [
+      "Fast-glycolytic muscle fibres",
+      "Fast oxidative-glycolytic fibres",
+      "Slow-twitch muscle fibres",
+      "They are more likely to have an even proportion of each"
+    ]
+  },
+  {
+    "id": "a0169",
+    "type": "radio",
+    "category": "5",
+    "question": "The arteriovenous oxygen difference across a muscle increases with increasing exercise intensity because of",
+    "correctAnswer": "increased extraction of oxygen by the muscle",
+    "optionValues": [
+      "increased delivery of oxygen to the muscle",
+      "increased extraction of oxygen by the muscle",
+      "decreased delivery of oxygen to the muscle",
+      "decreased extraction of oxygen by the muscle"
+    ]
+  },
+  {
+    "id": "a0170",
+    "type": "radio",
+    "category": "5",
+    "question": "Which energy system has the highest power output for ATP production",
+    "correctAnswer": "CrP system",
+    "optionValues": [
+      "Anaerobic glycolysis",
+      "Aerobic glycolysis",
+      "Beta-oxidation",
+      "CrP system"
+    ]
+  },
+  {
+    "id": "a0171",
+    "type": "radio",
+    "category": "5",
+    "question": "Which of the following adaptations will be apt to increase the work capacity at high altitude?",
+    "correctAnswer": "Decreasing workload, increasing duration of exercise",
+    "optionValues": [
+      "Increasing workload, decreasing duration of exercise",
+      "Increasing workload, increasing duration off exercise",
+      "Decreasing workload, increasing duration of exercise",
+      "Decreasing workload, decreasing duration of exercise"
+    ]
+  },
+  {
+    "id": "a0172",
+    "type": "radio",
+    "category": "5",
+    "question": "When doing a push-up on the floor, the motion at the elbow joint during the down phase is called  ________ and the type of muscle action is called ________.",
+    "correctAnswer": "flexion, eccentric",
+    "optionValues": [
+      "extension, eccentric",
+      "flexion, eccentric",
+      "flexion, concentric",
+      "extension, concentric"
+    ]
+  },
+  {
+    "id": "a0173",
+    "type": "radio",
+    "category": "6",
+    "question": "Which statement is true regarding informed consent?",
+    "correctAnswer": "It should be obtained before an exercise test and before participation in a supervised exercise program",
+    "optionValues": [
+      "It should be obtained before an exercise test and before participation in a supervised exercise program",
+      "It should be obtained before an exercise test but is not needed prior to a supervised exercise program",
+      "It should be sent to the potential exercise participant, and the signed form should be mailed to the exercise program director one week prior to program participation.",
+      "It should include an explanation of medications the participant should take to reduce muscle soreness."
+    ]
+  },
+  {
+    "id": "a0174",
+    "type": "radio",
+    "category": "6",
+    "question": "Barring complications, a submaximal treadmill exercise test is often terminated when the client obtains a predetermined HR endpoint of what percentage of age predicted maximal HR?",
+    "correctAnswer": "85",
+    "optionValues": [
+      "55",
+      "65",
+      "75",
+      "85"
+    ]
+  },
+  {
+    "id": "a0175",
+    "type": "radio",
+    "category": "6",
+    "question": "Which of the following represents a rank order of the most accurate to the least accurate technique for determining body composition?",
+    "correctAnswer": "hydrostatic, skinfold, anthropometric, bioelectrical impedance, infrared interactance",
+    "optionValues": [
+      "hydrostatic, skinfold, anthropometric, bioelectrical impedance, infrared interactance",
+      "hydrostatic, anthropometric, skinfold, infrared interactance, bioelectrical impedance",
+      "infrared interactance, hydrostatic, skinfold, anthropometric, bioelectrical impedance",
+      "bioelectrical impedance, skinfold, hydrostatic, anthropometric, , infrared interactance"
+    ]
+  },
+  {
+    "id": "a0176",
+    "type": "radio",
+    "category": "6",
+    "question": "As an exercise professional, what should you direct a low-risk male, interested in beginning a low-to-moderate intensity exercise program, to do first?",
+    "correctAnswer": "take the PAR-Q +",
+    "optionValues": [
+      "receive a physician’s clearance",
+      "contact a cardiologist to take a Graded Exercise Test",
+      "take the PAR-Q +",
+      "take the Cooper Walk/Run test"
+    ]
+  },
+  {
+    "id": "a0177",
+    "type": "radio",
+    "category": "6",
+    "question": "Of the following, which is not an absolute contraindication to exercise testing?",
+    "correctAnswer": "uncontrolled metabolic disease",
+    "optionValues": [
+      "acute infection",
+      "uncontrolled metabolic disease",
+      "uncontrolled atrial arrhythmia",
+      "unstable angina"
+    ]
+  },
+  {
+    "id": "a0178",
+    "type": "radio",
+    "category": "6",
+    "question": "For how many hours preceding physical fitness testing should the participant be instructed to avoid any food intake",
+    "correctAnswer": "Four",
+    "optionValues": [
+      "One",
+      "Twelve",
+      "Four",
+      "Eight"
+    ]
+  },
+  {
+    "id": "a0179",
+    "type": "radio",
+    "category": "6",
+    "question": "What is considered the gold standard for determining body composition?",
+    "correctAnswer": "Hydrostatic Weighing",
+    "optionValues": [
+      "Bioelectrical Impedance Analysis",
+      "Hydrostatic Weighing",
+      "Skinfold measurements",
+      "Body mass index"
+    ]
+  },
+  {
+    "id": "a0180",
+    "type": "radio",
+    "category": "6",
+    "question": "What is considered the gold standard for determining VO2max?",
+    "correctAnswer": "Graded Exercise Test using Douglas Bag method",
+    "optionValues": [
+      "Cooper Walk/Run test",
+      "Graded Exercise Test using Douglas Bag method",
+      "Queens College Step Test",
+      "YMCA Submaximal Cycle ergometry test"
+    ]
+  },
+  {
+    "id": "a0181",
+    "type": "radio",
+    "category": "6",
+    "question": "What is the duration of each stage in a Bruce Protocol (the most commonly used protocol for VO2max testing?",
+    "correctAnswer": "None of the above",
+    "optionValues": [
+      "2 min",
+      "5 min",
+      "4 min",
+      "None of the above"
+    ]
+  },
+  {
+    "id": "a0182",
+    "type": "radio",
+    "category": "6",
+    "question": "What minimal baseline measures should be obtained prior to the start of an exercise test for a low-risk individual?",
+    "correctAnswer": "Resting HR & Resting BP",
+    "optionValues": [
+      "Resting HR",
+      "Resting BP",
+      "Resting ECG",
+      "Resting HR & Resting BP"
+    ]
+  },
+  {
+    "id": "a0183",
+    "type": "radio",
+    "category": "6",
+    "question": "Which of the BP responses would represent a general indication to discontinue a Graded Exercise Test in an apparently healthy adult?",
+    "correctAnswer": "SBP drops 20 mmHg with an increase in exercise intensity",
+    "optionValues": [
+      "SBP drops 20 mmHg with an increase in exercise intensity",
+      "SBP rises to 200 mm Hg",
+      "DBP fails to increase with increase in exercise intensity",
+      "Both Option1 and 3"
+    ]
+  },
+  {
+    "id": "a0184",
+    "type": "radio",
+    "category": "6",
+    "question": "General indications for discontinuing a Graded Exercise Test in low risk adults would include all but which of the following?",
+    "correctAnswer": "Subject’s HR fails to increase with an increase in exercise intensity",
+    "optionValues": [
+      "Subject asks to stop the test",
+      "Subject’s HR increases to 170 beats per minute",
+      "Subject shows manifestations of severe fatigue",
+      "Subject’s HR fails to increase with an increase in exercise intensity"
+    ]
+  },
+  {
+    "id": "a0185",
+    "type": "radio",
+    "category": "6",
+    "question": "A person having a BMI of 25.3 would be indicative of being",
+    "correctAnswer": "Overweight",
+    "optionValues": [
+      "Underweight",
+      "Normal Weight",
+      "Overweight",
+      "Obese"
+    ]
+  },
+  {
+    "id": "a0186",
+    "type": "radio",
+    "category": "6",
+    "question": "As per the latest AHA guidelines, the defining threshold value for Hypertension is",
+    "correctAnswer": "≥ 130/80",
+    "optionValues": [
+      "≥ 130/80",
+      "≥ 120/80",
+      "≥ 140/90",
+      "≥ 160/100"
+    ]
+  },
+  {
+    "id": "a0187",
+    "type": "radio",
+    "category": "6",
+    "question": "Reasons for fitness testing of the older adult include",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Evaluation of progress",
+      "Exercise prescription",
+      "Motivation",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0188",
+    "type": "radio",
+    "category": "6",
+    "question": "A measure of muscular endurance is",
+    "correctAnswer": "Number of push ups till exhaustion",
+    "optionValues": [
+      "One-repitition maximum",
+      "Three-repitition maximum",
+      "Number of push ups till exhaustion",
+      "Treadmill testing"
+    ]
+  },
+  {
+    "id": "a0189",
+    "type": "radio",
+    "category": "6",
+    "question": "Of the following, which is not an objective of a CR fitness assessment in a low-risk individual",
+    "correctAnswer": "To identify CV disease",
+    "optionValues": [
+      "Provide bases for the development of an exercise prescription",
+      "To motivate one to begin an exercise program",
+      "To identify CV disease",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0190",
+    "type": "radio",
+    "category": "6",
+    "question": "Which of the following best describes the appropriate abdominal skinfold site?",
+    "correctAnswer": "Vertical fold taken 2 cms to the right of the umbilicus",
+    "optionValues": [
+      "Horizontal fold taken 2 cms to the left of the umbilicus",
+      "Vertical fold taken 2 cms to the right of the umbilicus",
+      "Horizontal fold taken 2 inches to the left of the umbilicus",
+      "Vertical fold taken 2 inches to the right of the umbilicus"
+    ]
+  },
+  {
+    "id": "a0191",
+    "type": "radio",
+    "category": "6",
+    "question": "Relative proportions of fat and fat-free tissue can be assessed and reported as",
+    "correctAnswer": "Body composition",
+    "optionValues": [
+      "Percentage body fat",
+      "Body composition",
+      "Hydrodensitometry",
+      "Near-infrared interactance"
+    ]
+  },
+  {
+    "id": "a0192",
+    "type": "radio",
+    "category": "6",
+    "question": "What is the appropriate sequence for fitness testing?",
+    "correctAnswer": "Body composition, cardiorespiratory endurance, muscular fitness, flexibility",
+    "optionValues": [
+      "Flexibility, cardiorespiratory endurance, muscular fitness, body composition",
+      "Cardiorespiratory endurance, flexibility, muscular fitness, body composition",
+      "Body composition, cardiorespiratory endurance, muscular fitness, flexibility",
+      "Body composition, flexibility, cardiorespiratory endurance, muscular fitness"
+    ]
+  },
+  {
+    "id": "a0193",
+    "type": "radio",
+    "category": "7",
+    "question": "Why does Motivation play an important role in study of sports nutrition?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Motivation influences desire and determination to follow dietary plan.",
+      "Motivation influences the ability to initiate and persist on given dietary plan .",
+      "Motivation helps face fatigue, boredom, pain and desire to go beyond comfort.",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0194",
+    "type": "radio",
+    "category": "7",
+    "question": "Which of the following characteristics has regularly been implicated in the etiology of eating disorders?",
+    "correctAnswer": "Perfectionism",
+    "optionValues": [
+      "Perfectionism",
+      "Narcissism",
+      "Extroversion",
+      "Introversion"
+    ]
+  },
+  {
+    "id": "a0195",
+    "type": "radio",
+    "category": "7",
+    "question": "Which of the following affects performance of athletes?",
+    "correctAnswer": "Both A and B are true",
+    "optionValues": [
+      "Dehydration impairs cognitive functions, influences reaction time, motor task performance and mood states",
+      "Over Hydration causes dizziness, nausea, state of confusion, vomiting, swelling of hands and legs.",
+      "Neither A nor B is true",
+      "Both A and B are true "
+    ]
+  },
+  {
+    "id": "a0196",
+    "type": "radio",
+    "category": "7",
+    "question": "Food can influence peak performance of players through:",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Improved body image",
+      "Improved health",
+      "Increase in energy levels and alertness",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0197",
+    "type": "radio",
+    "category": "7",
+    "question": "Fatigue and confidence can be influenced by foods high in:",
+    "correctAnswer": "Carbohydrates and Proteins",
+    "optionValues": [
+      "Carbohydrates and Proteins",
+      "Fats and Fibers",
+      "Proteins and fats",
+      "None of the above"
+    ]
+  },
+  {
+    "id": "a0198",
+    "type": "radio",
+    "category": "7",
+    "question": "Which of the following needs to be avoided for anxious athletes before or during competition?",
+    "correctAnswer": "Foods high in sugar",
+    "optionValues": [
+      "Foods high in sugar",
+      "Foods high in complex carbs",
+      "Foods high in protein",
+      "Foods high in fats"
+    ]
+  },
+  {
+    "id": "a0199",
+    "type": "radio",
+    "category": "7",
+    "question": "Does Sports Psychology have a role in performance?",
+    "correctAnswer": "Mental state and emotions affect performance",
+    "optionValues": [
+      "Motor Coordination is related to the body, and not the mind.",
+      "Efficient Practice leads to excellence in performance, where mind does not play much role.",
+      "Mental state and emotions affect performance",
+      "None of the above"
+    ]
+  },
+  {
+    "id": "a0200",
+    "type": "radio",
+    "category": "7",
+    "question": "Behaviours related to nutrition can be modified by:",
+    "correctAnswer": "Educational programs and maintaining food mood diary",
+    "optionValues": [
+      "Putting stringent limits to calorie intake",
+      "Keeping a close watch on calorie expenditure",
+      "Educational programs and maintaining food mood diary",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0201",
+    "type": "radio",
+    "category": "7",
+    "question": "Mental technique of Goal setting can be a determinant in sports success because:",
+    "correctAnswer": "Goals give direction and purpose",
+    "optionValues": [
+      "Goals increase anxiety",
+      "Goals increase pressure to perform",
+      "Goals reduce confidence",
+      "Goals give direction and purpose"
+    ]
+  },
+  {
+    "id": "a0202",
+    "type": "radio",
+    "category": "7",
+    "question": "Which one of the following is a diagnostic criterion for aneroxia nervosa ?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "A refusal to maintain a minimal body weight",
+      "A pathological fear of gaining weight",
+      "A distorted body image in which even when clearly emaciated, sufferers continue to insist they are overweight",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0203",
+    "type": "radio",
+    "category": "7",
+    "question": "Players with bulimia have a perceived lack of control over their eating behaviour and often report which of the following?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "High level of self disgust",
+      "Low self esteem",
+      "High levels of depression",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0204",
+    "type": "radio",
+    "category": "7",
+    "question": "Mindfulness can be used by nutritionists in sports scenarios by:",
+    "correctAnswer": "Both B and C",
+    "optionValues": [
+      "Eating slowly with distractions",
+      "Helping players to reach state of full attention to experiences, cravings and physical cues when eating",
+      "Engaging senses by noticing colours, smells, sounds, textures and flavours",
+      "Both B and C"
+    ]
+  },
+  {
+    "id": "a0205",
+    "type": "radio",
+    "category": "7",
+    "question": "Eating disorders can influence an athlete's performance by affecting:",
+    "correctAnswer": "Body image and self esteem",
+    "optionValues": [
+      "Motivation to play",
+      "Distraction and inability to concentrate on task relevant cues",
+      "Body image and self esteem",
+      "All of the above"
+    ]
+  }
+]

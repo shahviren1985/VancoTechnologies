@@ -1,0 +1,678 @@
+﻿[
+  {
+    "id": "a0001",
+    "type": "radio",
+    "category": "1",
+    "question": "The slow twitch muscle  fibres are particularly  beneficial in this sport",
+    "correctAnswer": "Running",
+    "optionValues": [
+      "Weight lifting",
+      "Running",
+      "Boxing ",
+      "Gymnastics"
+    ]
+  },
+  {
+    "id": "a0002",
+    "type": "radio",
+    "category": "1",
+    "question": "The energy currency of the cell is",
+    "correctAnswer": "Adenosine tri-phosphate",
+    "optionValues": [
+      "Adenosine tri-phosphate",
+      "Adenosine tri potasium",
+      "Amino tri- phosphate",
+      "Alanine tri - phosphate"
+    ]
+  },
+  {
+    "id": "a0003",
+    "type": "radio",
+    "category": "1",
+    "question": "Rahul goes for one hour of walk everyday what would be the best drink for him to drink after exercise.",
+    "correctAnswer": "Plain water",
+    "optionValues": [
+      "Glucon D",
+      "Plain water",
+      "Sugar cane juice",
+      "Sports drinks"
+    ]
+  },
+  {
+    "id": "a0004",
+    "type": "radio",
+    "category": "1",
+    "question": "Creatine phopshate is used as an energy source in which of the following activities",
+    "correctAnswer": "Sprinting",
+    "optionValues": [
+      "Sprinting",
+      "Walking",
+      "Writing",
+      "Sleeping"
+    ]
+  },
+  {
+    "id": "a0005",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following is a very good source of Vitamin C",
+    "correctAnswer": "Amla",
+    "optionValues": [
+      "Sweetlime",
+      "Papaya",
+      "Amla",
+      "Milk"
+    ]
+  },
+  {
+    "id": "a0006",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following foods  has a low glycemic index ?",
+    "correctAnswer": "Soyabean",
+    "optionValues": [
+      "Bread",
+      "Watermelon",
+      "Potato",
+      "Soyabean"
+    ]
+  },
+  {
+    "id": "a0007",
+    "type": "radio",
+    "category": "1",
+    "question": "What are the effects of excess protein intake ?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Dehydration",
+      "Kidney damage",
+      "Bone loss",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0008",
+    "type": "radio",
+    "category": "1",
+    "question": "In a football match which of the energy system is used to  obtain energy ?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "ATP-CP system",
+      "Anerobic glycolysis",
+      "Aerobic glycolysis",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0009",
+    "type": "radio",
+    "category": "1",
+    "question": "What is the daily protein requirement for a normal person is ?",
+    "correctAnswer": "1g/Kg of body weight/d",
+    "optionValues": [
+      "1g/Kg of body weight/d",
+      "1.2g/Kg of body weight/d",
+      "1.5g/Kg of body weight/d",
+      "0.7g/Kg of body weight/d"
+    ]
+  },
+  {
+    "id": "a00010",
+    "type": "radio",
+    "category": "1",
+    "question": "What is the predominant nutrient present in the daily Indian diet",
+    "correctAnswer": "Carbohdyrates",
+    "optionValues": [
+      "Vitamins and Minerals",
+      "Carbohydrates",
+      "Proteins",
+      "Fats"
+    ]
+  },
+  {
+    "id": "a00011",
+    "type": "radio",
+    "category": "1",
+    "question": "Our body needs vitamins and minerals because they",
+    "correctAnswer": "Help in metabolic reactions of the body",
+    "optionValues": [
+      "Give energy to our body",
+      "Help in metabolic reactions of the body",
+      "Insulate body organs",
+      "Help to maintain body temperature"
+    ]
+  },
+  {
+    "id": "a00012",
+    "type": "radio",
+    "category": "1",
+    "question": "Calculate the BMI of a 40year old woman with body weight of 60Kg and height of 160cm",
+    "correctAnswer": "23.43",
+    "optionValues": [
+      "25.24",
+      "26.34",
+      "23.43",
+      "27.34"
+    ]
+  },
+  {
+    "id": "a00013",
+    "type": "radio",
+    "category": "1",
+    "question": "The fat which is present in the abdomen is called",
+    "correctAnswer": "Non essential Fat",
+    "optionValues": [
+      "Essential Fat",
+      "Non essential Fat",
+      "Harmful Fat",
+      "Cholesterol"
+    ]
+  },
+  {
+    "id": "a00014",
+    "type": "radio",
+    "category": "1",
+    "question": "The best method to quantitatively assess dietary nutrient intake is",
+    "correctAnswer": "24 hour recall method",
+    "optionValues": [
+      "Food Diary",
+      "Quantative Food Frquency Qustionnaire",
+      "Qualitative Food Frquency Qustionnaire",
+      "24 hour recall method"
+    ]
+  },
+  {
+    "id": "a00015",
+    "type": "radio",
+    "category": "1",
+    "question": "The normal BUN to Creatinin Ratio is",
+    "correctAnswer": "10-15:1",
+    "optionValues": [
+      "10-15:2",
+      "1:10-15",
+      "10-15:1",
+      "2:10-15"
+    ]
+  },
+  {
+    "id": "a00016",
+    "type": "radio",
+    "category": "1",
+    "question": "Iron deficiency leads to this condition",
+    "correctAnswer": "Spoon shaped nails",
+    "optionValues": [
+      "Hair discolouration",
+      "Spoon shaped nails",
+      "Dry Skin",
+      "Brittle Nails"
+    ]
+  },
+  {
+    "id": "a00017",
+    "type": "radio",
+    "category": "1",
+    "question": "This method identifies the nutrient deficiency much before the clinical signs appear",
+    "correctAnswer": "Biochemical assessment",
+    "optionValues": [
+      "Anthropometrical assessment",
+      "Dietary assessment",
+      "Biochemical assessment",
+      "Clinical assessment"
+    ]
+  },
+  {
+    "id": "a00018",
+    "type": "radio",
+    "category": "1",
+    "question": "The clinical symptom of Vitamin C deficiency is",
+    "correctAnswer": "Glossitis",
+    "optionValues": [
+      "Defective vision",
+      "Rickets",
+      "Glossitis",
+      "Beri Beri"
+    ]
+  },
+  {
+    "id": "a00019",
+    "type": "radio",
+    "category": "1",
+    "question": "Dark adaptation is a functional test to assess the nutritional status of",
+    "correctAnswer": "Vitamin A",
+    "optionValues": [
+      "Vitamin D",
+      "Vitamin A",
+      "Vitamin K",
+      "Vitamin C"
+    ]
+  },
+  {
+    "id": "a00020",
+    "type": "radio",
+    "category": "1",
+    "question": "Energy system for a mid-fielder is mainly",
+    "correctAnswer": "Aerobic",
+    "optionValues": [
+      "ATP-CP",
+      "Aerobic",
+      "Anaerobic-glycolysis",
+      "None-of the above"
+    ]
+  },
+  {
+    "id": "a00021",
+    "type": "radio",
+    "category": "1",
+    "question": "Endurance training enhances which of the following",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Mitochondira no.",
+      "Capillariation",
+      "Aerobic oxidative enzymes",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a00022",
+    "type": "radio",
+    "category": "1",
+    "question": "Percent body fat of  runners ranges between",
+    "correctAnswer": "7-15%",
+    "optionValues": [
+      "20-25%",
+      "25-30%",
+      "10-15%",
+      "7-15%"
+    ]
+  },
+  {
+    "id": "a00023",
+    "type": "radio",
+    "category": "1",
+    "question": "Carbohydrate loading is suitable for which sports",
+    "correctAnswer": "Triathlon",
+    "optionValues": [
+      "Triathlon",
+      "Kabbadi",
+      "Goal keepers in football",
+      "Boxing"
+    ]
+  },
+  {
+    "id": "a00024",
+    "type": "radio",
+    "category": "1",
+    "question": "Weight cycling- weight gain and loss is common in which of the following sport",
+    "correctAnswer": "Taekwondo",
+    "optionValues": [
+      "Taekwondo",
+      "Archery",
+      "Kho-Kho",
+      "Tennis "
+    ]
+  },
+  {
+    "id": "a00025",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following is not a symptom of Female athlete triad",
+    "correctAnswer": "Weight gain",
+    "optionValues": [
+      "Menstrual dysfunction",
+      "Osteoporosis",
+      "Weight gain",
+      "Low energy availability"
+    ]
+  },
+  {
+    "id": "a00026",
+    "type": "radio",
+    "category": "1",
+    "question": "Hypo-natremia is caused due to the drop in levels of which mineral",
+    "correctAnswer": "Na",
+    "optionValues": [
+      "K",
+      "Ca",
+      "Na",
+      "Cl"
+    ]
+  },
+  {
+    "id": "a00027",
+    "type": "radio",
+    "category": "1",
+    "question": "Protein requirements (g/kg/bw/d) for hockey players",
+    "correctAnswer": "1.2-2",
+    "optionValues": [
+      "1.2-2",
+      "1-1.5",
+      "1.5-2.5",
+      "2-2.5"
+    ]
+  },
+  {
+    "id": "a00028",
+    "type": "radio",
+    "category": "1",
+    "question": "What are the Key supplements that can be used by Kabbadi players ?",
+    "correctAnswer": "Protein, creatine",
+    "optionValues": [
+      "Protein, creatine",
+      "Protein, multivitamin",
+      "Calcium, electrolytes",
+      "Creatine, calcium"
+    ]
+  },
+  {
+    "id": "a00029",
+    "type": "radio",
+    "category": "1",
+    "question": "Hydration opportunities in team sports in match include",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Half-times",
+      "Substitutions",
+      "Technical time-outs",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a00030",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following nutrient does not provide energy ?",
+    "correctAnswer": "Calcium",
+    "optionValues": [
+      "Calcium",
+      "Protein",
+      "Fat",
+      "Carbohydrate"
+    ]
+  },
+  {
+    "id": "a00031",
+    "type": "radio",
+    "category": "1",
+    "question": "Sports anaemia results in",
+    "correctAnswer": "Decrease in heamatocrit",
+    "optionValues": [
+      "Increase in heamoglobin",
+      "Decrease in blood volume",
+      "Decrease in heamatocrit",
+      "Increase in serum ferritin"
+    ]
+  },
+  {
+    "id": "a00032",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following components are essential for muscle buiding ?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Resistance Exercise",
+      "Protein",
+      "Rest",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a00033",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following nutrient is essential to increase blood haemoglobin ?",
+    "correctAnswer": "Iron",
+    "optionValues": [
+      "Glucose",
+      "Iron",
+      "Vitamin A",
+      "Phosphorus"
+    ]
+  },
+  {
+    "id": "a00034",
+    "type": "radio",
+    "category": "1",
+    "question": "Energy obtained from a meal that contains 25g carbohydrate, 10g protein and 10g fat would be ___________kcal",
+    "correctAnswer": "230",
+    "optionValues": [
+      "360",
+      "500",
+      "230",
+      "150"
+    ]
+  },
+  {
+    "id": "a00035",
+    "type": "radio",
+    "category": "1",
+    "question": "The symptoms of disordered eating are------------ except",
+    "correctAnswer": "Eating balanced diet",
+    "optionValues": [
+      "Eating balanced diet",
+      "Induce vomitting",
+      "Use of laxatives",
+      "Voluntary starvation"
+    ]
+  },
+  {
+    "id": "a00036",
+    "type": "radio",
+    "category": "1",
+    "question": "____________ is example of empty calorie food",
+    "correctAnswer": "Potato chips",
+    "optionValues": [
+      "Tomato soup",
+      "Aloo paratha",
+      "Potato chips",
+      "Chicken sandwich"
+    ]
+  },
+  {
+    "id": "a00037",
+    "type": "radio",
+    "category": "1",
+    "question": "Choose the best meal option that an athlete can eat during training",
+    "correctAnswer": "Banana",
+    "optionValues": [
+      "Sprouts",
+      "Cucumber",
+      "Soup",
+      "Banana"
+    ]
+  },
+  {
+    "id": "a00038",
+    "type": "radio",
+    "category": "1",
+    "question": "______________ is example of modifiable risk factor of chronic diseases",
+    "correctAnswer": "Lifestyle",
+    "optionValues": [
+      "Age",
+      "Race",
+      "Lifestyle",
+      "Gender"
+    ]
+  },
+  {
+    "id": "a00039",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following statement is false",
+    "correctAnswer": "Physical activity is subcatagory of exercise",
+    "optionValues": [
+      "Physical activity is subcatagory of exercise",
+      "Excersise is stuctured activity",
+      "Excersise can be repeated",
+      "Exercise can be planned"
+    ]
+  },
+  {
+    "id": "a00040",
+    "type": "radio",
+    "category": "1",
+    "question": "_______ is example of power sport",
+    "correctAnswer": "Throwing",
+    "optionValues": [
+      "Throwing",
+      "Hockey",
+      "Shooting",
+      "Swimming"
+    ]
+  },
+  {
+    "id": "a00041",
+    "type": "radio",
+    "category": "1",
+    "question": "Vitamins that works as an antioxidants in the body",
+    "correctAnswer": "Vitamin E",
+    "optionValues": [
+      "Vitamin B",
+      "Vitamin D",
+      "Vitamin E",
+      "Vitamin K"
+    ]
+  },
+  {
+    "id": "a00042",
+    "type": "radio",
+    "category": "1",
+    "question": "Badminton is a  sport that originated in this city of India",
+    "correctAnswer": "Pune",
+    "optionValues": [
+      "Panaji",
+      "Mumbai",
+      "Bangalore",
+      "Pune"
+    ]
+  },
+  {
+    "id": "a00043",
+    "type": "radio",
+    "category": "1",
+    "question": "What is the best time to take a Vitamin C supplement by a sports person ?",
+    "correctAnswer": "With Post-training meal",
+    "optionValues": [
+      "With Pre-training meal or Breakfast",
+      "With Post-training meal",
+      "At bedtime or Dinner",
+      "Empty stomach – on waking up"
+    ]
+  },
+  {
+    "id": "a00044",
+    "type": "radio",
+    "category": "1",
+    "question": "Whey and casein are protein supplements- when can you use them?- Choose the correct statement :",
+    "correctAnswer": "Whey is ideal for post-training, and casein is ideal for pre-training.",
+    "optionValues": [
+      "Whey and casein should not be taken pre-training.",
+      "Whey and casein should not be taken post-training.",
+      "Whey is ideal for pre-training, and casein is ideal for post-training.",
+      "Whey is ideal for post-training, and casein is ideal for pre-training."
+    ]
+  },
+  {
+    "id": "a00045",
+    "type": "radio",
+    "category": "1",
+    "question": "Who can face the consequences of Doping ?",
+    "correctAnswer": "Athletes and Athlete Supporting Personnel",
+    "optionValues": [
+      "Only Athletes",
+      "Athletes and Athlete Supporting Personnel",
+      "Only Athlete Supporting Personnel",
+      "There are no consequences of doping"
+    ]
+  },
+  {
+    "id": "a00046",
+    "type": "radio",
+    "category": "1",
+    "question": "A good sports drink provides",
+    "correctAnswer": "6-8% carbohydrates with some electrolytes",
+    "optionValues": [
+      "6-8% carbohydrates with some electrolytes",
+      "More of electrolytes, with small amounts of carbohydrates",
+      "Only vitamins and minerals",
+      "Only water"
+    ]
+  },
+  {
+    "id": "a00047",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following supplements can make the training session feel easier ?",
+    "correctAnswer": "Caffeine",
+    "optionValues": [
+      "Vitamin E",
+      "Caffeine",
+      "Glutamine",
+      "Calcium"
+    ]
+  },
+  {
+    "id": "a00048",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following supplement is recommended during a training session or competition ?",
+    "correctAnswer": "Sports drinks",
+    "optionValues": [
+      "Sports drinks",
+      "Vitamin E",
+      "Creatine",
+      "Iron"
+    ]
+  },
+  {
+    "id": "a00049",
+    "type": "radio",
+    "category": "1",
+    "question": "Which supplement is known as a Nitric oxide booster ?",
+    "correctAnswer": "Arginine",
+    "optionValues": [
+      "Creatine",
+      "Carnitine",
+      "Arginine",
+      "BCAA"
+    ]
+  },
+  {
+    "id": "a00050",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following statements is correct ?",
+    "correctAnswer": "Supplements use is associated with doping risk",
+    "optionValues": [
+      "All supplements are listed on the WADA Prohibited list",
+      "Supplements are very safe and can be used without any precaution",
+      "Use of Supplements are safe from doping risk",
+      "Supplements use is associated with doping risk"
+    ]
+  },
+  {
+    "id": "a00051",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following supplement is recommended during a training session or competition ?",
+    "correctAnswer": "Sports drinks",
+    "optionValues": [
+      "Sports drinks",
+      "Vitamin E",
+      "Creatine",
+      "Iron"
+    ]
+  },
+  {
+    "id": "a00052",
+    "type": "radio",
+    "category": "1",
+    "question": "What is the primary benefit of an Arginine supplement ?",
+    "correctAnswer": "Increased blood flow",
+    "optionValues": [
+      "Immunity",
+      "Increased blood flow",
+      "Haemoglobin synthesis",
+      "Bone formation"
+    ]
+  }
+]

@@ -1,0 +1,505 @@
+﻿[
+  {
+    "id": "a0001",
+    "type": "radio",
+    "category": "1",
+    "question": "Bacteria in the rumen which synthesis CLA",
+    "correctAnswer": "Anaerobic bacteria Butyrivibrio fibrisolvens",
+    "optionValues": [
+      "Rumen aerobic bacteria Butyrivibrio fibrisolvens",
+      "Aerobic bacteria Butyrivibrio fibrisolvens",
+      "Anaerobic bacteria Butyrivibrio fibrisolvens",
+      "None of the above"
+    ]
+  },
+  {
+    "id": "a0002",
+    "type": "radio",
+    "category": "1",
+    "question": "An algae which is source of omega 3 fatty acids",
+    "correctAnswer": "Gyptherodinium Cohnis",
+    "optionValues": [
+      "Schizochytrium species",
+      "Gyptherodinium Cohnis",
+      "Both 1+2",
+      "None of the above"
+    ]
+  },
+  {
+    "id": "a0003",
+    "type": "radio",
+    "category": "1",
+    "question": "Recommended ratio of n-6:n-3 ratio in diet",
+    "correctAnswer": "1∕1",
+    "optionValues": [
+      "4∕1",
+      "1∕1",
+      "3∕1",
+      "2∕1"
+    ]
+  },
+  {
+    "id": "a0004",
+    "type": "radio",
+    "category": "1",
+    "question": "Most common isomer of CLA found in dairy products",
+    "correctAnswer": "cis-9, trans -11 CLA",
+    "optionValues": [
+      "cis-9, trans -11 CLA",
+      "trans-10, cis-12 CLA",
+      "cis-9, trans -11 CLS",
+      "None"
+    ]
+  },
+  {
+    "id": "a0005",
+    "type": "radio",
+    "category": "1",
+    "question": "Omega 3 fatty acid found in animal foods",
+    "correctAnswer": "EPA",
+    "optionValues": [
+      "DHA",
+      "EPA",
+      "Both",
+      "None"
+    ]
+  },
+  {
+    "id": "a0006",
+    "type": "radio",
+    "category": "1",
+    "question": "Pre-dominant n-3 fatty acid present in retina",
+    "correctAnswer": "DHA",
+    "optionValues": [
+      "EPA",
+      "Xanthophylls",
+      "Carotenoids",
+      "DHA"
+    ]
+  },
+  {
+    "id": "a0007",
+    "type": "radio",
+    "category": "1",
+    "question": "Eicosanoid responsible for increased vasodilation on intake of n-3 fatty acid",
+    "correctAnswer": "increased PGI2, NO",
+    "optionValues": [
+      "increased TxA2",
+      "increased PGI2, NO",
+      "increased tissue plasmogen factor",
+      "decreased PG12"
+    ]
+  },
+  {
+    "id": "a0008",
+    "type": "radio",
+    "category": "1",
+    "question": "Food source of CLA",
+    "correctAnswer": "Dairy products",
+    "optionValues": [
+      "spinach and carrot",
+      "red wine",
+      "designer eggs",
+      "Dairy products"
+    ]
+  },
+  {
+    "id": "a0009",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following are source of ALNA",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "flaxseeds, sunflower seeds",
+      "soyabean oil,canola oil",
+      "walnut, methi seeds, mustard seeds",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0010",
+    "type": "radio",
+    "category": "1",
+    "question": "Ceramide is",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "aliphatic amino alcohol sphingosine and fatty acid",
+      "sphingosine and a fatty acid",
+      "Sphingolipids",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0011",
+    "type": "radio",
+    "category": "1",
+    "question": "Sphingomyelin is hydrolysed",
+    "correctAnswer": "1 and 2",
+    "optionValues": [
+      "hydrolysed in intestinal lumen",
+      "alkaline sphingomyelinase",
+      "In presence of pancreatic juice",
+      "1 and 2"
+    ]
+  },
+  {
+    "id": "a0012",
+    "type": "radio",
+    "category": "1",
+    "question": "which of the following is fat based fat replacers",
+    "correctAnswer": "Olestra",
+    "optionValues": [
+      "Olestra",
+      "Polyols",
+      "Nu-trim",
+      "Simplene"
+    ]
+  },
+  {
+    "id": "a0013",
+    "type": "radio",
+    "category": "1",
+    "question": "Best known ACE inhibitor peptides include",
+    "correctAnswer": "Ile-Pro-Pro",
+    "optionValues": [
+      "Glu-ala-pro",
+      "leu-Iso-Val",
+      "Ile-Pro-Pro",
+      "None of the above"
+    ]
+  },
+  {
+    "id": "a0014",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following is not a product with ACE inhibotor peptide",
+    "correctAnswer": "Crisco",
+    "optionValues": [
+      "Calpis",
+      "Evolus",
+      "Festivo Cheese",
+      "Crisco"
+    ]
+  },
+  {
+    "id": "a0015",
+    "type": "radio",
+    "category": "1",
+    "question": "Peptides enhancing mineral absorption",
+    "correctAnswer": "Caseinophosphopeptides",
+    "optionValues": [
+      "Casomrphins",
+      "Exorphins",
+      "Casoxins",
+      "Caseinophosphopeptides"
+    ]
+  },
+  {
+    "id": "a0016",
+    "type": "radio",
+    "category": "1",
+    "question": "BCAA regulates protein synthesis by",
+    "correctAnswer": "1 and 2",
+    "optionValues": [
+      "increasing vasculature",
+      "decreasing expression of atrogenes",
+      "decreasing vasculature",
+      "1 and 2"
+    ]
+  },
+  {
+    "id": "a0017",
+    "type": "radio",
+    "category": "1",
+    "question": "Isoflavones increase vasculature to prevent cancer",
+    "correctAnswer": "TRUE",
+    "optionValues": [
+      "TRUE",
+      "FALSE"
+    ]
+  },
+  {
+    "id": "a0018",
+    "type": "radio",
+    "category": "1",
+    "question": "Omega 3 fatty acids are called so because thery have 3 double bonds",
+    "correctAnswer": "FALSE",
+    "optionValues": [
+      "TRUE",
+      "FALSE"
+    ]
+  },
+  {
+    "id": "a0019",
+    "type": "radio",
+    "category": "1",
+    "question": "An increase in Endothelial derived relaxation factore decreases the blood pressure",
+    "correctAnswer": "TRUE",
+    "optionValues": [
+      "TRUE",
+      "FALSE"
+    ]
+  },
+  {
+    "id": "a0020",
+    "type": "radio",
+    "category": "1",
+    "question": "Isoflavones increase follicular phase and decrease luteal phase of menstrual cycle",
+    "correctAnswer": "TRUE",
+    "optionValues": [
+      "TRUE",
+      "FALSE"
+    ]
+  },
+  {
+    "id": "a0021",
+    "type": "radio",
+    "category": "1",
+    "question": "Omega 3 fatty acids decrease HDL cholesterol levela",
+    "correctAnswer": "FALSE",
+    "optionValues": [
+      "TRUE",
+      "FALSE"
+    ]
+  },
+  {
+    "id": "a0022",
+    "type": "radio",
+    "category": "1",
+    "question": "BCAA are essential for lymphocyte responsiveness",
+    "correctAnswer": "TRUE",
+    "optionValues": [
+      "TRUE",
+      "FALSE"
+    ]
+  },
+  {
+    "id": "a0023",
+    "type": "radio",
+    "category": "1",
+    "question": "During endurance exercise BCAA",
+    "correctAnswer": "all the above",
+    "optionValues": [
+      "increases serotonin and fatigue",
+      "decreases tryptophan transport to brain",
+      "causes central fatigue syndrome",
+      "all the above"
+    ]
+  },
+  {
+    "id": "a0024",
+    "type": "radio",
+    "category": "1",
+    "question": "Glutamine supplementation has following effect among cancer patients undergoing chemotherpay",
+    "correctAnswer": "decreases mucositis",
+    "optionValues": [
+      "increases cachexia",
+      "decreases mucositis",
+      "causes body wasting",
+      "causes gut injury"
+    ]
+  },
+  {
+    "id": "a0025",
+    "type": "radio",
+    "category": "1",
+    "question": "Stanols are type of phytosterol which lacks double bond in the sterol ring",
+    "correctAnswer": "TRUE",
+    "optionValues": [
+      "TRUE",
+      "FALSE"
+    ]
+  },
+  {
+    "id": "a0026",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following is not a food source of phytosterol",
+    "correctAnswer": "carrot and spinach",
+    "optionValues": [
+      "wheat germ",
+      "peanuts",
+      "sesame oil",
+      "carrot and spinach"
+    ]
+  },
+  {
+    "id": "a0027",
+    "type": "radio",
+    "category": "1",
+    "question": "Red or purple juices are good source of reserveraterol",
+    "correctAnswer": "TRUE",
+    "optionValues": [
+      "TRUE",
+      "FALSE"
+    ]
+  },
+  {
+    "id": "a0028",
+    "type": "radio",
+    "category": "1",
+    "question": "phytosterol displaces cholesterol and reduces CHD risk by",
+    "correctAnswer": "competition for micelle formationand precipitation of cholesterol",
+    "optionValues": [
+      "does not inhibit cholesterol absorption",
+      "increases cholesterol absorption",
+      "competition for micelle formationand precipitation of cholesterol",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0029",
+    "type": "radio",
+    "category": "1",
+    "question": "TE of blueberry is 9019",
+    "correctAnswer": "quantifies anti oxidant capacity",
+    "optionValues": [
+      "TE is trolox equivalent",
+      "has high antioxidant activity",
+      "quantifies anti oxidant capacity",
+      "all the above"
+    ]
+  },
+  {
+    "id": "a0030",
+    "type": "radio",
+    "category": "1",
+    "question": "flavonols include",
+    "correctAnswer": "quercetin, kaemferol, myricetin",
+    "optionValues": [
+      "catechins",
+      "cyanidin",
+      "apigenin, luteolin",
+      "quercetin, kaemferol, myricetin"
+    ]
+  },
+  {
+    "id": "a0031",
+    "type": "radio",
+    "category": "1",
+    "question": "retina has highest concentration of",
+    "correctAnswer": "lutein and zeaxanthin",
+    "optionValues": [
+      "carotenoids",
+      "beta caroten",
+      "anthocyanidins",
+      "lutein and zeaxanthin"
+    ]
+  },
+  {
+    "id": "a0032",
+    "type": "radio",
+    "category": "1",
+    "question": "higher the intakes of lutein and zeaxanthin",
+    "correctAnswer": "lower the risk of ARMD",
+    "optionValues": [
+      "lower the risk of cancer",
+      "lower the risk of ARMD",
+      "increases CVD Risk",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0033",
+    "type": "radio",
+    "category": "1",
+    "question": "oats contain soluble fiber",
+    "correctAnswer": "beta glucan which is hypoglycemic and hypo cholesterolemic",
+    "optionValues": [
+      "contains insoluble fiber which relieves constipation",
+      "contains both soluble and insoluble fiber",
+      "Has no effect",
+      "beta glucan which is hypoglycemic and hypo cholesterolemic"
+    ]
+  },
+  {
+    "id": "a0034",
+    "type": "radio",
+    "category": "1",
+    "question": "GLYCONE contains",
+    "correctAnswer": "sugar molecule attached",
+    "optionValues": [
+      "sugar molecule attached",
+      "sugar molecule is absent",
+      "is hydrolysed by an enzyme before absorption",
+      "none of the above",
+      "1 and 2"
+    ]
+  },
+  {
+    "id": "a0035",
+    "type": "radio",
+    "category": "1",
+    "question": "A commercial source of phytosterol",
+    "correctAnswer": "benecol spread",
+    "optionValues": [
+      "corn oil",
+      "olive oil",
+      "pumpkin seeds and walnuts",
+      "benecol spread"
+    ]
+  },
+  {
+    "id": "a0036",
+    "type": "radio",
+    "category": "1",
+    "question": "2 classes of phytosterols",
+    "correctAnswer": "sterols and stanols",
+    "optionValues": [
+      "sitosterols and compesterol",
+      "sterols and stanols",
+      "stanols and sitosterols",
+      "campesterol and stigmasterol"
+    ]
+  },
+  {
+    "id": "a0037",
+    "type": "radio",
+    "category": "1",
+    "question": "High fish intake/ DHA supplementation increases DHA in human milk",
+    "correctAnswer": "true",
+    "optionValues": [
+      "true",
+      "false"
+    ]
+  },
+  {
+    "id": "a0038",
+    "type": "radio",
+    "category": "1",
+    "question": "correct ration for choice of oil-groundnut oil and soy oil",
+    "correctAnswer": "4:1",
+    "optionValues": [
+      "2:1",
+      "4:1",
+      "1:3",
+      "3:1"
+    ]
+  },
+  {
+    "id": "a0039",
+    "type": "radio",
+    "category": "1",
+    "question": "limitations of fat -based replacer include",
+    "correctAnswer": "diarrhoea and cramping, fat soluble vitamins are not absorbed",
+    "optionValues": [
+      "has no side effects",
+      "decreases absorption of fat souble vitamins",
+      "diarrhoea and cramping, fat soluble vitamins are not absorbed",
+      "only causes diarrhoea and cramping"
+    ]
+  },
+  {
+    "id": "a0040",
+    "type": "radio",
+    "category": "1",
+    "question": "which is not a EPA, DHA supplemented functional foods",
+    "correctAnswer": "ultrabake",
+    "optionValues": [
+      "ultrabake",
+      "suguna eggs",
+      "junior horlicks",
+      "silk soymilk"
+    ]
+  }
+]

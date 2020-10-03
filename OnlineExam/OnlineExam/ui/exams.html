@@ -1,0 +1,613 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>
+        ASNFS - Online Certification for Sports Nutritionists
+    </title>
+    <script src="script/jquery-2.2.3.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+
+
+        .page-header {
+            float: left;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .panel-title h3 {
+            float: left;
+            margin-left: 20px;
+            font-size: 24px;
+            margin-top: 30px;
+            color: deepskyblue;
+        }
+
+        #Timer {
+            font-size: 20px;
+            text-align: center;
+            color: white;
+            background-color: #00accd;
+            padding: 10px;
+            border-radius: 10px;
+            float: left;
+            margin: 20px;
+        }
+
+        #Start {
+            display: none;
+            font-size: 30px;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+            background-color: #a6ce39;
+            padding: 10px;
+            border-radius: 10px;
+            float: left;
+            margin: 20px;
+        }
+
+        #Timer {
+            display: none;
+        }
+
+        #Question {
+            float: left;
+            width: 100%;
+        }
+
+        .form-group {
+            float: left;
+            width: 57%;
+            margin-left: 2%;
+        }
+
+        .radio {
+            float: left;
+            width: 100%;
+        }
+
+        .btn {
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        #Review {
+            position: absolute;
+            top: 2%;
+            left: 60%;
+            display: none;
+            width: 20%;
+            background-color: lightyellow;
+            border: 1px solid lightgray;
+            padding-bottom: 20px;
+        }
+
+        #Answered, #Skipped {
+            float: left;
+            text-align: left;
+            margin-left: 10px;
+            width: 100%;
+            font-size: 16px;
+            color: black;
+        }
+
+        #QuestionIndex ul {
+            float: left;
+            margin: 0px;
+            padding: 10px;
+        }
+
+            #QuestionIndex ul li {
+                float: left;
+                list-style: none;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+
+                #QuestionIndex ul li a.Submitted {
+                    color: dodgerblue;
+                }
+
+                #QuestionIndex ul li a.Pending {
+                    color: orange;
+                }
+
+        #Error {
+            font-weight: bold;
+            color: red;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        h6 {
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        @media only screen and (max-device-width: 600px) {
+            #Error {
+                font-size: 40px;
+            }
+
+            .page-header img {
+                width: 200px !important;
+                height: 180px !important;
+            }
+
+            .panel-title h3 {
+                width: 75%;
+                text-align: center;
+                font-size: 40px;
+                margin-top: 70px;
+            }
+
+            #Start, #Timer {
+                padding: 30px;
+                font-size: 40px;
+                margin-left: 35%;
+            }
+
+            #Timer {
+                margin-left: 22%;
+            }
+
+            .form-group {
+                font-size: 36px;
+                padding: 20px;
+                width: 96%;
+            }
+
+            .btn-primary, .btn-warning, h6, #Answered, #Skipped {
+                font-size: 36px;
+                padding: 20px;
+            }
+
+            #Review {
+                position: relative;
+                float: left;
+                margin: 10px;
+                left: 2%;
+                width: 94%;
+                font-size: 36px;
+            }
+
+                #Review ul li {
+                    padding: 10px;
+                }
+
+            input[type=radio] {
+                border: 0px;
+                width: 10%;
+                height: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-header">
+        <img src="img/logo.jpg" style="width: 100px; height: 90px; float: left;" alt="ASNFS" />
+        <div class="panel-title">
+            <h3>Online Exams</h3><h6 id="PaperTitle"></h6>
+                                 <div id="instructions">
+                                     <p style="color: red; float: left; width: 100%">Instructions:</p>
+                                     <ul style="color: red; float: left; width: 100%">
+                                         <li>Exam timing is of 45 minutes</li>
+                                         <li>The passing marks for this test is 50.</li>
+                                         <li>Each question carries 2 marks</li>
+                                         <li>Click on Start Your Exam button to start the test</li>
+                                         <li>If you don't know the answer, you can skip that specific question. However before finishing the exam, you must attempt all skipped questions</li>
+                                         <li>Click on Finish button to submit your exam.</li>
+                                         <li>You will get your score after finishing the exam. Please reach out to us asnfs.org@gmail.com in case you don't receive your score.</li>
+                                     </ul>
+                                 </div>
+        </div>
+    </div>
+    <div id="ExamCompleted"></div>
+    <div id="Error"></div>
+    <div id="Start">Start Exam</div>
+    <div id="Timer"></div>
+    <div id="Question"></div>
+    <div id="Review">
+        <div><h6>Review Your Answers</h6></div>
+        <div id="Answered">Total Answered: 0</div>
+        <div id="Skipped">Total Pending: 0</div>
+        <div id="QuestionIndex"></div>
+    </div>
+</body>
+</html>
+<script>
+    var paperCodes = [
+        {
+            "code": "ASNFS",
+            "title": "ASNFS"
+        },
+        {
+            "code": "FCIV13",
+            "title": "Functional foods and introduction to Nutrigenomics"
+        },
+        {
+            "code": "FCIV14",
+            "title": "Therapeutic Dietetics"
+        },
+        {
+            "code": "FCIV16",
+            "title": "MACRONUTRIENTS IN HEALTH AND DISEASES"
+        },
+        {
+            "code": "FCVI22",
+            "title": "Geriatric Nutrition"
+        },
+        {
+            "code": "FG101",
+            "title": "Nutrition Health Promotion"
+        },
+        {
+            "code": "FCVI27",
+            "title": "Food Analysis"
+        },
+        {
+            "code": "Demo",
+            "title": "Demo Exam"
+        },
+        {
+            "code": "SN101",
+            "title": "FUNDAMENTALS OF SPORTS NUTRITION"
+        }
+    ];
+
+
+    function getUrlVars() {
+        var vars = [], hash;
+        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+        for (var i = 0; i < hashes.length; i++) {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+        }
+        return vars;
+    }
+
+    var title = "";
+    for (j = 0; j < paperCodes.length; j++) {
+        if (paperCodes[j].code == getUrlVars("code")["code"]) {
+            title = paperCodes[j].title;
+            break;
+        }
+    }
+    $("#PaperTitle").html(title);
+</script>
+<script>
+    function BuildReview() {
+        $("#QuestionIndex").html("");
+        var list = "<ul>";
+        var totalSkipped = 0;
+        var totalAnswered = 0;
+        for (i = 0; i < questions.length; i++) {
+            var index = i < 9 ? "0" + parseInt(i + 1) : parseInt(i + 1);
+            var state = (questions[i].answer == null || questions[i].answer == "") ? "Pending" : "Submitted";
+            list += "<li><a class='" + state + "' onclick='QuestionBind(" + parseInt(i) + ",\"" + state + "\")'><span>Q-" + index + "</span></a></li>";
+            totalSkipped = state == "Pending" ? parseInt(totalSkipped) + 1 : parseInt(totalSkipped);
+            totalAnswered = state == "Submitted" ? parseInt(totalAnswered) + 1 : parseInt(totalAnswered);
+        }
+
+        list += "</ul>";
+
+        $("#Answered").html("Total Answered: " + totalAnswered);
+        $("#Skipped").html("Total Pending: " + totalSkipped);
+
+        $("#QuestionIndex").append(list);
+        $("#Review").show();
+    }
+    // Exam related functions
+    $.ajax({
+        method: "GET",
+        url: "/Home/ValidateUser?examid=" + getUrlVars("examid")["examid"]
+
+    }).done(function (data) {
+
+        if (!data.IsExamValid) {
+            // Show error message
+            $("#Error").html("Your exam number seems invalid, please contact exam administrators on asnfs.org@gmail.com").show();
+            $("#Question").hide();
+            $("#Review").hide();
+        }
+        else if (data.IsExamExpired) {
+            // Exam is already finished. Show message
+            var score = (data.Result * 2);
+            var msg = "You examination time is finished. You have scored " + score + ".";
+            $("#Error").html(msg).show();
+            $("#Question").hide();
+            $("#Review").hide();
+        }
+        else if (data.IsFinished) {
+            // Exam is already finished. Show message
+            var score = (data.Result * 2);
+            msg = "You have already completed your examination. You have scored " + score + ".";
+            $("#Error").html(msg).show();
+            $("#Question").hide();
+            $("#Review").hide();
+        }
+        else {
+            $("#Error").hide();
+            $("#Start").click(function () {
+                $("#Start").hide();
+                $("#instructions").hide();
+                GetQuestions();
+                $.ajax({
+                    method: "GET",
+                    url: "/Home/StartExam?examid=" + getUrlVars("examid")["examid"] + "&subjectCode=" + getUrlVars("code")["code"]
+                });
+
+                $("#Timer").show();
+
+                var countDownDate = new Date();
+
+                var sTime = data.StartTime.substring(7, 21);
+                var sDate = new Date(parseInt(sTime)).getFullYear();
+                if (data.StartTime == null || sDate > 2100) {
+                    countDownDate.setMinutes(countDownDate.getMinutes() + 45);
+                }
+                else {
+                    //countDownDate = new Date().getTime() - data.TimeRemaining;
+                    countDownDate.setMinutes(countDownDate.getMinutes() + 45);
+                    countDownDate.setSeconds(countDownDate.getSeconds() - data.TimeRemaining);
+                }
+
+                var x = setInterval(function () {
+                    var now = new Date().getTime();
+
+                    var distance = countDownDate - now;
+
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    minutes = (minutes < 10) ? "0" + minutes : minutes;
+                    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                    document.getElementById("Timer").innerHTML = "Time Remaining: " + "0" + hours + "  :  " + minutes + "  :  " + seconds;
+
+                    if (seconds == 0 && distance > 0) {
+                        $.ajax({
+                            method: "GET",
+                            url: "/Home/UpdateTime?examid=" + getUrlVars("examid")["examid"]
+                        });
+                    }
+
+                    if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("Timer").innerHTML = "Your examination time is finished.";
+                        $("#Question").hide();
+                        $("#Review").hide();
+                    }
+                }, 1000);
+
+            });
+
+            if (data.TimeRemaining == 0 || (new Date().getFullYear() - new Date(parseFloat(data.StartTime.replace("/Date(", "").replace(")/", ""))).getFullYear()) > 1) {
+                $("#Start").html("Start Your Exam");
+            }
+            else {
+                $("#Start").html("Continue Your Exam");
+            }
+
+            $("#Start").show();
+        }
+    });
+
+    var questions = null;
+    var questionStatus = new Array();
+    var serialNumber = 1;
+
+    function GetQuestions() {
+        $.ajax({
+            method: "GET", url: "/Home/GetQuestions?examId=" + getUrlVars("examid")["examid"] + "&subjectCode=" + getUrlVars("code")["code"]
+        }).done(function (data) {
+            questions = data;
+            ExamQuestionBind(0);
+            BuildReview();
+        });
+    }
+
+    function QuestionBind(i) {
+        var questionList = '<div class="form-group">';
+        var selectedValue = questions[i].answer != null ? questions[i].answer.trim() : "";
+
+        if (questions[i].type != 'header' && questions[i].type != 'label') {
+            questionList = questionList + '<div class="ques"> <strong> <span>' + parseInt(i + 1) + '. </span>' + questions[i].question + ' </strong> </div> <div id="dv_' + questions[i].id + '">';
+        }
+        if (questions[i].type == 'radio') {
+            for (var j = 0; j < questions[i].optionValues.length; j++) {
+                if (selectedValue != questions[i].optionValues[j].trim())
+                    questionList = questionList + '<label class="radio"> <input type="radio" value="' + (j + 1) + '" name="rdo_' + questions[i].id + '"> ' + questions[i].optionValues[j] + ' </label>';
+                else
+                    questionList = questionList + '<label class="radio"> <input type="radio" value="' + (j + 1) + '" name="rdo_' + questions[i].id + '" checked="checked"> ' + questions[i].optionValues[j] + ' </label>';
+            }
+        }
+        else if (questions[i - 1].type == 'text') {
+            questionList = questionList + '<textarea class="form-control" id="txt_' + questions[i].id + '_1" name="txt_' + questions[i].id + '" rows="2" placeholder="' + questions[i].placeHolder + '"></textarea>';
+        }
+        else if (questions[i - 1].type == 'dropdown') {
+            var element = "<select name='dd_" + questions[i].id + "'><option selected value='-1'>--Select Year--</option>"
+            for (var j = 0; j < questions[i].optionValues.length; j++) {
+                element += "<option value='" + questions[i].optionValues[j] + "'>" + questions[i].optionValues[j] + "</option>";
+            }
+            questionList = questionList + element + "</select>";
+        }
+        else if (questions[i - 1].type == 'header') {
+            questionList = questionList + '<div rows="2"><h3>' + questions[i].question + '</h3></div>';
+        }
+
+        var answerCount = 0;
+        for (j = 0; j < questions.length; j++) {
+            var state = (questions[j].answer == null || questions[j].answer == "") ? "Pending" : "Submitted";
+            answerCount = state == "Submitted" ? parseInt(answerCount) + 1 : parseInt(answerCount);
+        }
+
+        if (answerCount < questions.length) {
+            questionList = questionList + '</div><div class="btn btn-primary" onclick="ExamQuestionBind(' + parseFloat(i + 1) + ',\'Submitted\')">Submit</div><div class="btn btn-warning" onclick="ExamQuestionBind(' + parseFloat(i + 1) + ',\'Pending\')">Skip</div><div>Click on question number in following index to view pending questions. Finish Exam option will be available once you answer all questions. You need to click on Finish button to complete the examination.</div></div>';
+        }
+        else {
+            //questionList = questionList + '</div><div class="btn btn-primary" onclick="ExamQuestionBind(' + parseFloat(i + 1) + ',\'Submitted\')">Submit</div><div class="btn btn-warning" onclick="ExamQuestionBind(' + parseFloat(i + 1) + ',\'Pending\')">Skip</div><div class="btn btn-success" onclick="ConfirmUser()">Review</div></div>';
+            questionList = questionList + '</div><div class="btn btn-primary" id="btnFinish" onclick="FinishExam()">Finish & Submit</div></div>';
+        }
+
+        /*if (i <= questions.length) {
+            questionList = questionList + '</div><div class="btn btn-primary" onclick="ExamQuestionBind(' + parseFloat(i + 1) + ',\'Submitted\')">Submit</div><div class="btn btn-warning" onclick="ExamQuestionBind(' + parseFloat(i + 1) + ',\'Pending\')">Skip</div></div>';
+        }
+        else {
+            questionList = questionList + '</div><div class="btn btn-success" onclick="Review()">Review</div></div>';
+        }*/
+
+        $("#Question").html(questionList);
+    }
+
+    function ConfirmUser() {
+        if (confirm("You have submitted all the answers. Do you want to review?")) {
+            QuestionBind(0);
+        }
+        else {
+            if (confirm("Are you sure you want to finish the exam?")) {
+                alert("Thank you for finishing this online exam.");
+            }
+        }
+
+        return;
+    }
+
+    function FinishExam() {
+        $("#Question").hide();
+        $("#Timer").hide();
+        $("#Review").hide();
+        $("#Error").show();
+        $("#Error").html("Please wait, checking your responses!");
+        $.ajax({
+            method: "GET", url: "/Home/FinishExam?examId=" + getUrlVars()["examid"] + "&subjectCode=" + getUrlVars()["code"] + "&isDB=false"
+        }).done(function (data) {
+            $.ajax({
+                method: "GET", url: "/Home/FinishExam?examId=" + getUrlVars()["examid"] + "&subjectCode=" + getUrlVars()["code"] + "&isDB=true"
+            });
+
+            $("#btnFinish").html("Finish & Submit");
+            alert("Thank you for finishing this online exam.");
+            window.location.href = window.location.href;
+        });
+    }
+
+    function ExamQuestionBind(i, status) {
+        if (i >= 1 && status != "Pending") {
+            if ($("input[name='rdo_" + questions[i - 1].id + "']:checked").val() == undefined) {
+                alert("Please choose atleast one choice out of available choices.");
+                return;
+            }
+
+            questions[i - 1].answer = $("input[name='rdo_" + questions[i - 1].id + "']:checked")[0].labels[0].innerText;
+            var answer = {
+                "serial": parseInt(i + 1),
+                "qid": questions[i - 1].id,
+                "examid": getUrlVars()["examid"],
+                "answer": $("input[name='rdo_" + questions[i - 1].id + "']:checked")[0].labels[0].innerText.trim(),
+                "category": questions[i - 1].category,
+                "status": status,
+                "time": new Date().getUTCDate(),
+                "subjectCode": getUrlVars()["code"]
+            };
+
+            var obj = {};
+            obj.Answer = answer;
+
+            $.ajax({
+                method: "POST", contentType: 'application/json', dataType: 'json', url: "/Home/SubmitAnswer",
+                data: JSON.stringify(obj)
+            });
+
+            $.ajax({
+                method: "POST", contentType: 'application/json', dataType: 'json', url: "/Home/SaveAllAnswers?examId=" + getUrlVars("examid")["examid"] + "&subjectCode=" + getUrlVars("code")["code"],
+                data: JSON.stringify(questions)
+            });
+
+            BuildReview();
+        }
+
+        if (i == 100 && getUrlVars()["code"] == "ASNFS") {
+            alert("You have reached last question, you can review any of the skipped questions from Review Index. Click on question number to jump to skipped questions.");
+        }
+        else if (i == 20 && getUrlVars()["code"] == "FCVI22") {
+            alert("You have reached last question, you can review any of the skipped questions from Review Index. Click on question number to jump to skipped questions.");
+            ExamQuestionBind(0);
+        }
+        else if (i == 30 && getUrlVars()["code"] == "FCIV13") {
+            alert("You have reached last question, you can review any of the skipped questions from Review Index. Click on question number to jump to skipped questions.");
+            ExamQuestionBind(0);
+        }
+        else if (i == 30 && getUrlVars()["code"] == "FCIV16") {
+            alert("You have reached last question, you can review any of the skipped questions from Review Index. Click on question number to jump to skipped questions.");
+            ExamQuestionBind(0);
+        }
+        else if (i == 30 && getUrlVars()["code"] == "FG101") {
+            alert("You have reached last question, you can review any of the skipped questions from Review Index. Click on question number to jump to skipped questions.");
+            ExamQuestionBind(0);
+        }
+        else if (i == 30 && getUrlVars()["code"] == "FCVI27") {
+            alert("You have reached last question, you can review any of the skipped questions from Review Index. Click on question number to jump to skipped questions.");
+            ExamQuestionBind(0);
+        }
+        else if (i == 5 && getUrlVars()["code"] == "Demo") {
+            alert("You have reached last question, you can review any of the skipped questions from Review Index. Click on question number to jump to skipped questions.");
+            ExamQuestionBind(0);
+        }
+        else if (i == 50 && getUrlVars()["code"] == "SN101") {
+            alert("You have reached last question, you can review any of the skipped questions from Review Index. Click on question number to jump to skipped questions.");
+            ExamQuestionBind(0);
+        }
+
+        var questionList = '<div class="form-group">';
+
+        if (questions[i].type != 'header' && questions[i].type != 'label') {
+            questionList = questionList + '<div class="ques"> <strong> <span>' + parseInt(i + 1) + '. </span>' + questions[i].question + ' </strong> </div> <div id="dv_' + questions[i].id + '">';
+            //if (i < questions.length - 1)
+            //  serialNumber++;
+        }
+        if (questions[i].type == 'radio') {
+            var selectedValue = questions[i].answer != null ? questions[i].answer.trim() : "";
+            for (var j = 0; j < questions[i].optionValues.length; j++) {
+                if (selectedValue != questions[i].optionValues[j])
+                    questionList = questionList + '<label class="radio"> <input type="radio" value="' + (j + 1) + '" name="rdo_' + questions[i].id + '"> ' + questions[i].optionValues[j] + ' </label>';
+                else
+                    questionList = questionList + '<label class="radio"> <input type="radio" value="' + (j + 1) + '" name="rdo_' + questions[i].id + '" checked="checked"> ' + questions[i].optionValues[j] + ' </label>';
+            }
+        }
+        else if (questions[i].type == 'text') {
+            questionList = questionList + '<textarea class="form-control" id="txt_' + questions[i].id + '_1" name="txt_' + questions[i].id + '" rows="2" placeholder="' + questions[i].placeHolder + '"></textarea>';
+            //questionList = questionList + '<textarea class="form-control" id="txt_' + questions[i].id + '_2" name="txt_' + questions[i].id + '" rows="2" placeholder="' + questions[i].placeHolder + '"></textarea>';
+        }
+        else if (questions[i].type == 'dropdown') {
+            var element = "<select name='dd_" + questions[i].id + "'><option selected value='-1'>--Select Year--</option>"
+            for (var j = 0; j < questions[i].optionValues.length; j++) {
+                element += "<option value='" + questions[i].optionValues[j] + "'>" + questions[i].optionValues[j] + "</option>";
+            }
+            questionList = questionList + element + "</select>";
+        }
+        else if (questions[i].type == 'header') {
+            questionList = questionList + '<div rows="2"><h3>' + questions[i].question + '</h3></div>';
+        }
+
+        var answerCount = 0;
+        for (j = 0; j < questions.length; j++) {
+            var state = (questions[j].answer == null || questions[j].answer == "") ? "Pending" : "Submitted";
+            answerCount = state == "Submitted" ? parseInt(answerCount) + 1 : parseInt(answerCount);
+        }
+
+        if (answerCount < questions.length) {
+            questionList = questionList + '</div><div class="btn btn-primary" onclick="ExamQuestionBind(' + parseFloat(i + 1) + ',\'Submitted\')">Submit</div><div class="btn btn-warning" onclick="ExamQuestionBind(' + parseFloat(i + 1) + ',\'Pending\')">Skip</div><div>Click on question number in following index to view pending questions. Finish Exam option will be available once you answer all questions. You need to click on Finish button to complete the examination.</div></div>';
+        }
+        else {
+            //questionList = questionList + '</div><div class="btn btn-primary" onclick="ExamQuestionBind(' + parseFloat(i + 1) + ',\'Submitted\')">Submit</div><div class="btn btn-warning" onclick="ExamQuestionBind(' + parseFloat(i + 1) + ',\'Pending\')">Skip</div><div class="btn btn-success" onclick="ConfirmUser()">Review</div></div>';
+            questionList = questionList + '</div><div class="btn btn-primary" id="btnFinish" onclick="FinishExam()">Finish & Submit</div></div>';
+        }
+
+        $("#Question").html(questionList);
+    }
+</script>

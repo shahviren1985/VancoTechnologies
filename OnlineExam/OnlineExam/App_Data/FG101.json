@@ -1,0 +1,392 @@
+[
+  {
+    "id": "a0001",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following is a non communicable disease?",
+    "correctAnswer": "Diabetes",
+    "optionValues": [
+      "Chicken Pox",
+      "Measles",
+      "Diabetes",
+      "Tuberculosis"
+    ]
+  },
+  {
+    "id": "a0002",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following behavior modification ideas would you keep in mind when you go for grocery shopping?",
+    "correctAnswer": "Shop from a list and avoid buying anything that is not on your list",
+    "optionValues": [
+      "Shop when you are feeling hungry",
+      "Taste test everything available in the store",
+      "Purchase food without reading food labels",
+      "Shop from a list and avoid buying anything that is not on your list"
+    ]
+  },
+  {
+    "id": "a0003",
+    "type": "radio",
+    "category": "1",
+    "question": "Calcium and ________ are essential for healthy bones",
+    "correctAnswer": "Vitamin D",
+    "optionValues": [
+      "Vitamin K",
+      "Vitamin C",
+      "Vitamin E",
+      "Vitamin D"
+    ]
+  },
+  {
+    "id": "a0004",
+    "type": "radio",
+    "category": "1",
+    "question": "What is the full form of CDC?",
+    "correctAnswer": "Centers for Disease Control and Prevention",
+    "optionValues": [
+      "Cabinet for Disease Control and Prevention",
+      "Centers for Disease Control and Prevention",
+      "Commission for Disease Control and Prevention",
+      "Congregation for Disease Control and Prevention"
+    ]
+  },
+  {
+    "id": "a0005",
+    "type": "radio",
+    "category": "1",
+    "question": "___________ is the condition of not having enough sleep",
+    "correctAnswer": "Sleep deprivation",
+    "optionValues": [
+      "Sleep deprivation",
+      "Sleepover",
+      "Sleepwalking",
+      "Sleep paralysis"
+    ]
+  },
+  {
+    "id": "a0006",
+    "type": "radio",
+    "category": "1",
+    "question": "Which is the common test used to measure Speed as a component of fitness in an individual?",
+    "correctAnswer": "40-yard dash",
+    "optionValues": [
+      "20-yard dash",
+      "100-yard dash",
+      "40-yard dash",
+      "50-yard dash"
+    ]
+  },
+  {
+    "id": "a0007",
+    "type": "radio",
+    "category": "1",
+    "question": "Adult blood pressure is considered normal at",
+    "correctAnswer": "120/80 mm Hg",
+    "optionValues": [
+      "100/80 mm Hg",
+      "120/100 mm Hg",
+      "120/80 mm Hg",
+      "100/70 mm Hg"
+    ]
+  },
+  {
+    "id": "a0008",
+    "type": "radio",
+    "category": "1",
+    "question": "On an average women has ____ % of body fat",
+    "correctAnswer": "25 to 31 %",
+    "optionValues": [
+      "25 to 31 %",
+      "40 to 45 %",
+      "40 to 50 %",
+      "None of the above"
+    ]
+  },
+  {
+    "id": "a0009",
+    "type": "radio",
+    "category": "1",
+    "question": "The most common cause of COPD is",
+    "correctAnswer": "Smoking",
+    "optionValues": [
+      "High blood pressure",
+      "Raised glucose levels in the blood",
+      "Alcohol",
+      "Smoking"
+    ]
+  },
+  {
+    "id": "a0010",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following methods is considered as the new 'Gold Standard' in body composition testing?",
+    "correctAnswer": "Dual energy X-ray absorptiometry",
+    "optionValues": [
+      "Air displacement plethysmography",
+      "Dual energy X-ray absorptiometry",
+      "Underwater weighing",
+      "Bioelectric Impedance Analysis"
+    ]
+  },
+  {
+    "id": "a0011",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following metabolic risk factors contribute to the risk of NCDs?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Raised blood pressure",
+      "Overweight/obesity",
+	  "High blood glucose levels",
+	  "All of the above"
+    ]
+  },
+  {
+    "id": "a0012",
+    "type": "radio",
+    "category": "1",
+    "question": "_________ is defined as the body mass in kilograms divided by the square of the body height in metres",
+    "correctAnswer": "Body mass index",
+    "optionValues": [
+      "Ideal body weight",
+      "Bone mineral content",
+	  "Body mass index",
+	  "None of the above"
+    ]
+  },
+  {
+    "id": "a0013",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following are signs and symptoms of hypercholesterolemia?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Xanthomata",
+      "Xanthelasma",
+	  "Corneal arcus",
+	  "All of the above"
+    ]
+  },
+  {
+    "id": "a0014",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following are the components of fitness?",
+    "correctAnswer": "False",
+    "optionValues": [
+      "Cardiorespiratory endurance",
+      "Muscular endurance",
+	  "Muscular strength",
+	  "All of the above"
+    ]
+  },
+  {
+    "id": "a0015",
+    "type": "radio",
+    "category": "1",
+    "question": "Abdominal obesity, triglyceride level of 200mg/dL and fasting glucose of 150mg/dL indicates the person is suffering from __________",
+    "correctAnswer": "Metabolic syndrome",
+    "optionValues": [
+      "Cancer",
+      "Asthma",
+	  "Metabolic syndrome",
+	  "Arthritis"
+    ]
+  },
+  {
+    "id": "a0016",
+    "type": "radio",
+    "category": "1",
+    "question": "Which component of fitness is measured using the Cooper run?",
+    "correctAnswer": "Cardiorespiratory endurance",
+    "optionValues": [
+      "Speed",
+      "Cardiorespiratory endurance",
+	  "Muscular strength",
+	  "Balance"
+    ]
+  },
+  {
+    "id": "a0017",
+    "type": "radio",
+    "category": "1",
+    "question": "Chest tightness, breathlessness and wheezing are symptoms of ________________",
+    "correctAnswer": "Asthma",
+    "optionValues": [
+      "Osteoporosis",
+      "Diabetes",
+	  "Asthma",
+	  "Hypertension"
+    ]
+  },
+  {
+    "id": "a0018",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following are the benefits of fitness?",
+    "correctAnswer": "Both (First and second options)",
+    "optionValues": [
+      "Regular physical activity can improve your muscle strength and boost your endurance",
+      "Improves heart health",
+	  "Both (First and second options)",
+	  "None of the above"
+    ]
+  },
+  {
+    "id": "a0019",
+    "type": "radio",
+    "category": "1",
+    "question": "Which statement is correct for Osteoporosis:-",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Osteoporosis means Decrease in density of bones",
+      "The risk of osteoporosis increases after menopause",
+	  "There is loss of bone mass",
+	  "All of the above"
+    ]
+  },
+  {
+    "id": "a0020",
+    "type": "radio",
+    "category": "1",
+    "question": "Body composition is used to describe the percentages of ___________",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Body Fat",
+      "Bone",
+	  "Muscle and water",
+	  "All of the above"
+    ]
+  },
+  {
+    "id": "a0021",
+    "type": "radio",
+    "category": "1",
+    "question": "___________ is defined as the ability to carry out daily tasks with vigor and alertness, without undue fatigue, and with ample energy to enjoy leisure-time pursuits and respond to emergencies.",
+    "correctAnswer": "Physical fitness",
+    "optionValues": [
+      "Mental fitness",
+      "Physical fitness",
+	  "Cardiovascular fitness",
+	  "Muscular fitness"
+    ]
+  },
+  {
+    "id": "a0022",
+    "type": "radio",
+    "category": "1",
+    "question": "Broca’s Formula for IBW estimation for male",
+    "correctAnswer": "Ht. (cms) – 100",
+    "optionValues": [
+      "Ht. (cms) – 100",
+      "Ht. (inch) – 100",
+	  "Ht. (cms) – 105",
+	  "Ht. (inch) – 105"
+    ]
+  },
+  {
+    "id": "a0023",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following food is permitted to be consumed  in plenty  by a person suffering from Diabetes?",
+    "correctAnswer": "Green leafy vegetables",
+    "optionValues": [
+      "Mango",
+      "Green leafy vegetables",
+	  "Sweetened juices",
+	  "None of the above"
+    ]
+  },
+  {
+    "id": "a0024",
+    "type": "radio",
+    "category": "1",
+    "question": "BMI cutoff for normal individual according to WHO is ______",
+    "correctAnswer": "18.5 to 25 kg/m2",
+    "optionValues": [
+      "18.5 to 25 kg/m2",
+      "17.5 to 30 kg/m2",
+	  "25 to 30 kg/m2",
+	  "none of the above"
+    ]
+  },
+  {
+    "id": "a0025",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following is a side effect of cancer therapy?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Nausea and vomiting",
+      "Loss of appetite",
+	  "Sore mouth and throat",
+	  "All of the above"
+    ]
+  },
+  {
+    "id": "a0026",
+    "type": "radio",
+    "category": "1",
+    "question": "Which is the most important but often overlooked component of fitness?",
+    "correctAnswer": "Flexibility",
+    "optionValues": [
+      "Balance",
+      "Speed",
+	  "Flexibility",
+	  "Body composition"
+    ]
+  },
+  {
+    "id": "a0027",
+    "type": "radio",
+    "category": "1",
+    "question": "Female Hormone that is essential for healthy bones",
+    "correctAnswer": "Estrogen",
+    "optionValues": [
+      "Progesterone",
+      "Estrogen",
+	  "Progesterone and estrogen",
+	  "None of the above"
+    ]
+  },
+  {
+    "id": "a0028",
+    "type": "radio",
+    "category": "1",
+    "question": "In low sodium diet, which of the following food items can be used to make the food more palatable and appetizing?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Spices",
+      "Herbs",
+	  "Lemon juice",
+	  "All of the above"
+    ]
+  },
+  {
+    "id": "a0029",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following food items would make an excellent snack choice for a child coming back from school?",
+    "correctAnswer": "Fruit yoghurt",
+    "optionValues": [
+      "Fruit yoghurt",
+      "Chocolate",
+	  "Potato wafers",
+	  "Pizza"
+    ]
+  },
+  {
+    "id": "a0030",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following is not recommended to Hypertensive Patient?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "pickles",
+      "canned foods",
+	  "potato chips",
+	  "All of the above"
+    ]
+  }
+]

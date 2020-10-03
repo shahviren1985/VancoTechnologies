@@ -1,0 +1,392 @@
+﻿[
+  {
+    "id": "a0001",
+    "type": "radio",
+    "category": "1",
+    "question": "Predominant trans fatty acid in bovine fat is",
+    "correctAnswer": "Vaccenic acid",
+    "optionValues": [
+      "Oleic acid",
+      "Vaccenic acid",
+      "Alfa linolenic acid",
+      "Caproic acid"
+    ]
+  },
+  {
+    "id": "a0002",
+    "type": "radio",
+    "category": "1",
+    "question": "Zymogens are activated by the action of",
+    "correctAnswer": "CCK",
+    "optionValues": [
+      "Secretin",
+      "CCK",
+      "Bicarbonate",
+      "Pepsin"
+    ]
+  },
+  {
+    "id": "a0003",
+    "type": "radio",
+    "category": "1",
+    "question": "Fatty acid that may have Lp (a) reducing effect",
+    "correctAnswer": "Eicosapentaenoic acid",
+    "optionValues": [
+      "Arachidonic acid",
+      "Myristic acid",
+      "Linoleic acid",
+      "Eicosapentaenoic acid"
+    ]
+  },
+  {
+    "id": "a0004",
+    "type": "radio",
+    "category": "1",
+    "question": "_____________ amino acid besides alanine, that is responsible for inter tissue transfer of amino group generated from amino acid catabolism",
+    "correctAnswer": "Glutamine",
+    "optionValues": [
+      "Glutamate",
+      "Glutamine",
+      "Proline",
+      "Glycine"
+    ]
+  },
+  {
+    "id": "a0005",
+    "type": "radio",
+    "category": "1",
+    "question": "Phospholipid that makes up more than 80% of the total phospholipids of the lipid layer that lines alveoli",
+    "correctAnswer": "Phosphatidylcholine",
+    "optionValues": [
+      "Phosphatidylcholine",
+      "Phosphatidylethanolamine",
+      "Phosphatidylinositol",
+      "Phosphatidyliserine"
+    ]
+  },
+  {
+    "id": "a0006",
+    "type": "radio",
+    "category": "1",
+    "question": "Two totally indispensable amino acids",
+    "correctAnswer": "Lysine and threonine",
+    "optionValues": [
+      "Cysteine and proline",
+      "Lysine and tryptophan",
+      "Methionine and threonine",
+      "Lysine and threonine"
+    ]
+  },
+  {
+    "id": "a0007",
+    "type": "radio",
+    "category": "1",
+    "question": "Condition in which replacement of LCTs in the diet by MCTs is recommended",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Cystic fibrosis",
+      "Crohn’s disease",
+      "Pancreatitis",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0008",
+    "type": "radio",
+    "category": "1",
+    "question": "______ is a nitrogen containing non protein compound that acts as a methyl donor",
+    "correctAnswer": "Choline",
+    "optionValues": [
+      "Choline",
+      "Creatine",
+      "Carnosine",
+      "Carnitine"
+    ]
+  },
+  {
+    "id": "a0009",
+    "type": "radio",
+    "category": "1",
+    "question": "Identify the components of energy expenditure",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "SDA",
+      "BMR",
+      "Physical activity",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0010",
+    "type": "radio",
+    "category": "1",
+    "question": "Oxidation of leucine to ___________  spares essential gluconeogenic precursors",
+    "correctAnswer": "Acetyl CoA",
+    "optionValues": [
+      "Pyruvate",
+      "Lactate",
+      "Glutamate",
+      "Acetyl CoA"
+    ]
+  },
+  {
+    "id": "a0011",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following is NOT a form of non lysosomal protein degradation",
+    "correctAnswer": "Microautophagy",
+    "optionValues": [
+      "Ubiquitin System",
+      "Cystolic ATP dependent pathways",
+      "Calpain proteolytic pathway",
+      "Microautophagy"
+    ]
+  },
+  {
+    "id": "a0012",
+    "type": "radio",
+    "category": "1",
+    "question": "Enzyme involved in chylomicron metabolism",
+    "correctAnswer": "LPL",
+    "optionValues": [
+      "LCAT",
+      "LPL",
+      "IDL",
+      "None of the above"
+    ]
+  },
+  {
+    "id": "a0013",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following is a neurotransmitter of pancreatic phase of protein digestion",
+    "correctAnswer": "Secretin",
+    "optionValues": [
+      "Secretin",
+      "Acetylcholine",
+      "Histamine",
+      "Gastrin"
+    ]
+  },
+  {
+    "id": "a0014",
+    "type": "radio",
+    "category": "1",
+    "question": "Dietary source of omega 3 fatty acids",
+    "correctAnswer": "a & b",
+    "optionValues": [
+      "Flax seeds",
+      "Fish",
+      "a & b",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0015",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following amino acid is a part of the tripeptide glutathione",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Cysteine",
+      "Glutamate",
+      "Glycine",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0016",
+    "type": "radio",
+    "category": "1",
+    "question": "RMR values are generally higher than BMR values by",
+    "correctAnswer": "5 to 15%",
+    "optionValues": [
+      "1 to 5%",
+      "5 to 15%",
+      "15 to 25%",
+      "25 to 50%"
+    ]
+  },
+  {
+    "id": "a0017",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following amino acid is a precursor of serotonin?",
+    "correctAnswer": "Tryptophan",
+    "optionValues": [
+      "Phenylalanine",
+      "Tryptophan",
+      "Tyrosine",
+      "Threonine"
+    ]
+  },
+  {
+    "id": "a0018",
+    "type": "radio",
+    "category": "1",
+    "question": "TxA2 is",
+    "correctAnswer": "Vasoconstrictor",
+    "optionValues": [
+      "Vasoconstrictor",
+      "Antiaggregatory",
+      "antithrombotic",
+      "None of the above"
+    ]
+  },
+  {
+    "id": "a0019",
+    "type": "radio",
+    "category": "1",
+    "question": "In acidosis excretion of which nitrogenous product increases?",
+    "correctAnswer": "Ammonium",
+    "optionValues": [
+      "Ammonia",
+      "Ammonium",
+      "Urea",
+      "Uric Acid"
+    ]
+  },
+  {
+    "id": "a0020",
+    "type": "radio",
+    "category": "1",
+    "question": "The major catalyst of free radical reaction in vivo is",
+    "correctAnswer": "Fe",
+    "optionValues": [
+      "Fe",
+      "Hydroxyl radical",
+      "Peroxide Radical",
+      "Mn"
+    ]
+  },
+  {
+    "id": "a0021",
+    "type": "radio",
+    "category": "1",
+    "question": "Which one of the following is a risk factor for CVD?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Low HDL: LDL ratio",
+      "Increased VLDL",
+      "Increased Lp (A)",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0022",
+    "type": "radio",
+    "category": "1",
+    "question": "DHA deficiency in children may lead to increased susceptibility to",
+    "correctAnswer": "ADHD",
+    "optionValues": [
+      "LCAT",
+      "LCFA",
+      "ADHD",
+      "SCFA"
+    ]
+  },
+  {
+    "id": "a0023",
+    "type": "radio",
+    "category": "1",
+    "question": "______________ enzyme leads to depletion of glutathione stores in malnutrition",
+    "correctAnswer": "GST",
+    "optionValues": [
+      "GPX",
+      "GST",
+      "Superoxide Dismutase",
+      "GSH"
+    ]
+  },
+  {
+    "id": "a0024",
+    "type": "radio",
+    "category": "1",
+    "question": "Major source of MCTs in the diet",
+    "correctAnswer": "Coconut oil",
+    "optionValues": [
+      "Olive oil",
+      "Groundnut oil",
+      "Coconut oil",
+      "Sunflower oil"
+    ]
+  },
+  {
+    "id": "a0025",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following mineral is NOT a part of the antioxidant defence mechanism of our body?",
+    "correctAnswer": "Ca",
+    "optionValues": [
+      "Se",
+      "Mn",
+      "Cu",
+      "Ca"
+    ]
+  },
+  {
+    "id": "a0026",
+    "type": "radio",
+    "category": "1",
+    "question": "Identify the simple lipid from the following",
+    "correctAnswer": "Triglyceride",
+    "optionValues": [
+      "Lipoprotein",
+      "Fatty acids",
+      "Glycolipid",
+      "Triglyceride"
+    ]
+  },
+  {
+    "id": "a0027",
+    "type": "radio",
+    "category": "1",
+    "question": "Digestion of dietary lipids in small intestine requires",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Pancreatic lipase",
+      "Bile",
+      "Slightly alkaline pH",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0028",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following biochemical parameter increases in PEM",
+    "correctAnswer": "Serum Globulin",
+    "optionValues": [
+      "RBP",
+      "Ceruloplasmin",
+      "Serum Globulin",
+      "Transferrin"
+    ]
+  },
+  {
+    "id": "a0029",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following is a conjugated protein?",
+    "correctAnswer": "Glycoprotein",
+    "optionValues": [
+      "Globulin",
+      "Glycoprotein",
+      "Albumin",
+      "None of the above"
+    ]
+  },
+  {
+    "id": "a0030",
+    "type": "radio",
+    "category": "1",
+    "question": "Desired N6:N3 ratio is",
+    "correctAnswer": "4 to 10",
+    "optionValues": [
+      "4 to 10",
+      "10 to 15",
+      "15 to 25",
+      "None of the above"
+    ]
+  }
+  ]

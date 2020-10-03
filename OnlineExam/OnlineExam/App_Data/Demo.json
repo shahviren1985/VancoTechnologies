@@ -1,0 +1,63 @@
+[
+  {
+    "id": "a0001",
+    "type": "radio",
+    "category": "1",
+    "question": "College is affiliated to which university?",
+    "correctAnswer": "Mumbai",
+    "optionValues": [
+      "Mumbai",
+      "Delhi",
+      "Madar",
+      "NMIMS"
+    ]
+  },
+  {
+    "id": "a0002",
+    "type": "radio",
+    "category": "1",
+    "question": "College was established in ___________ year.",
+    "correctAnswer": "1959",
+    "optionValues": [
+      "1959",
+      "1995",
+      "1985",
+      "2004"
+    ]
+  },
+  {
+    "id": "a0003",
+    "type": "radio",
+    "category": "1",
+    "question": "How many specialisations are offered by college?",
+    "correctAnswer": "7",
+    "optionValues": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ]
+  },
+  {
+    "id": "a0004",
+    "type": "radio",
+    "category": "1",
+    "question": "Have you filled Student satisfactory survey?",
+    "correctAnswer": "Yes",
+    "optionValues": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "id": "a0005",
+    "type": "radio",
+    "category": "1",
+    "question": "Do you use your email on daily basis?",
+    "correctAnswer": "Yes",
+    "optionValues": [
+      "Yes",
+      "No"
+    ]
+  }
+]

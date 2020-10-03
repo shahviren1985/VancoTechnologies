@@ -1,0 +1,548 @@
+﻿[
+  {
+    "id": "a0001",
+    "type": "radio",
+    "category": "1",
+    "question": "Coffee is adulterated with",
+    "correctAnswer": "Chicory",
+    "optionValues": [
+      "Saw dust",
+      "Chicory",
+      "Ghee",
+      "All of these"
+    ]
+  },
+  {
+    "id": "a0002",
+    "type": "radio",
+    "category": "1",
+    "question": "Oxygen-sensitive samples should be stored under",
+    "correctAnswer": "Nitrogen",
+    "optionValues": [
+      "Nitrogen",
+      "Carbon dioxide",
+      "Sulphur dioxide",
+      "None of the above"
+    ]
+  },
+  {
+    "id": "a0003",
+    "type": "radio",
+    "category": "1",
+    "question": "Following preservatives are used to stabilise certain food substances during storage",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "mercuric chloride",
+      "potassium dichromate",
+      "chloroform",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0004",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following method can be used to eliminate or control enzyme activity?",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Temperature variations",
+      "changing the pH",
+      "Adding reducing agents",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0005",
+    "type": "radio",
+    "category": "1",
+    "question": "Freezer storage to curb enzyme activity usually need following temperature range",
+    "correctAnswer": "−20◦C to −30◦C",
+    "optionValues": [
+      "−20◦C to −30◦C",
+      "4◦C to 5◦C",
+      "-4◦C to -5◦C",
+      "None of the above"
+    ]
+  },
+  {
+    "id": "a0006",
+    "type": "radio",
+    "category": "1",
+    "question": "Following are effective controls in Microbial Growth",
+    "correctAnswer": "chemical preservatives",
+    "optionValues": [
+      "Salting out",
+      "chemical preservatives",
+      "Both of the above",
+      "None of the above"
+    ]
+  },
+  {
+    "id": "a0007",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following spectroscopy is widely used for estimations of alkali and alkaline earth metals (Group II)?",
+    "correctAnswer": "Flame photometry",
+    "optionValues": [
+      "Colorimetry",
+      "Flame photometry",
+      "Fluorimetry",
+      "Calorimetry"
+    ]
+  },
+  {
+    "id": "a0008",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following technique of food analysis is based on principle of differential partitioning between stationary and mobile phase?",
+    "correctAnswer": "Chromatography",
+    "optionValues": [
+      "Colorimetry",
+      "Flame photometry",
+      "Chromatography",
+      "Calorimetry"
+    ]
+  },
+  {
+    "id": "a0009",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following statement is correct in case of estimation of moisture?",
+    "correctAnswer": "The free water present on the surface, within pores cavities, capillaries and is generally more easily estimated as compared to the adsorbed moisture",
+    "optionValues": [
+      "The free water present on the surface, within pores cavities, capillaries and is generally more easily estimated as compared to the adsorbed moisture",
+      "The adsorbed moisture is generally more easily estimated as compared to the free water present on the surface, within pores, capillaries etc.",
+      "The absorbed moisture is tightly held by phospholipid of protoplasm.",
+      "Muffle furnace is used for moisture determination."
+    ]
+  },
+  {
+    "id": "a0010",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following process/s lead to overestimation of moisture content?",
+    "correctAnswer": "Volatilisation of organic acid",
+    "optionValues": [
+      "Volatilisation of organic acid",
+      "reduction of unsaturated fatty acid",
+      "Less headspace in storage container",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0011",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following is to be avoided/minimised during moisture estimation?",
+    "correctAnswer": "False",
+    "optionValues": [
+      "Heating of sample by friction during grinding",
+      "Keeping a large headspace in the storage container",
+      "Both of the above",
+      "None of the above"
+    ]
+  },
+  {
+    "id": "a0012",
+    "type": "radio",
+    "category": "1",
+    "question": "12.\tMoisture content is of great economic importance to a food manufacturer because water",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Is an inexpensive filler",
+      "Determines stability and shelf life of food",
+      "Is a quality factor for jam and jellies to prevent sugar crystallisation",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0013",
+    "type": "radio",
+    "category": "1",
+    "question": "Moisture content of Cheddar cheese should be",
+    "correctAnswer": "≤39%",
+    "optionValues": [
+      "≤39%",
+      "≤79%",
+      "≤20%",
+      "≤5%"
+    ]
+  },
+  {
+    "id": "a0014",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following is not a monosaccharide?",
+    "correctAnswer": "lactose",
+    "optionValues": [
+      "Galactose",
+      "lactose",
+      "Ribose",
+      "Fructose"
+    ]
+  },
+  {
+    "id": "a0015",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following sugar can be estimated by using Willstatter’s method?",
+    "correctAnswer": "Glucose",
+    "optionValues": [
+      "Fructose",
+      "Sucrose",
+      "Glucose",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0016",
+    "type": "radio",
+    "category": "1",
+    "question": "Sucrose estimation can be done by following method",
+    "correctAnswer": "Lane and Eynon’s method",
+    "optionValues": [
+      "Lane and Eynon’s method",
+      "Willstatter’s method",
+      "Both A and B",
+      "None of the above"
+    ]
+  },
+  {
+    "id": "a0017",
+    "type": "radio",
+    "category": "1",
+    "question": "The functional roles of phosphorus includes",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "The buffering of acid or alkali excesses",
+      "The temporary storage and transfer of the energy",
+      "Activation of many catalytic proteins",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0018",
+    "type": "radio",
+    "category": "1",
+    "question": "Phosphorus absorption is facilitated by",
+    "correctAnswer": "1,25-dihydroxyvitamin D",
+    "optionValues": [
+      "1,25-dihydroxyvitamin D",
+      "Aluminum-containing antacids",
+      "Pharmacologic doses of calcium carbonate",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0019",
+    "type": "radio",
+    "category": "1",
+    "question": "Following factor/s enhance calcium absorption",
+    "correctAnswer": "Presence of lactose",
+    "optionValues": [
+      "Presence of lactose",
+      "Lack of stomach acid",
+      "High phosphorus intake",
+      "High fiber diet"
+    ]
+  },
+  {
+    "id": "a0020",
+    "type": "radio",
+    "category": "1",
+    "question": "Rickets is a condition in infants and children which,",
+    "correctAnswer": "Begins with suboptimal bone mineralisation at the growth plate",
+    "optionValues": [
+      "Begins with suboptimal bone mineralisation at the growth plate",
+      "Excessive bone mineralisation",
+      "Leads to anorexia",
+      "Leads to reduction in vitamin D"
+    ]
+  },
+  {
+    "id": "a0021",
+    "type": "radio",
+    "category": "1",
+    "question": "In estimation of iron, iron forms red colored complex with",
+    "correctAnswer": "α, α-dipyridyl solution",
+    "optionValues": [
+      "Hydroquinone",
+      "α, α-dipyridyl solution",
+      "Acetate buffer",
+      "Glacial acetic acid"
+    ]
+  },
+  {
+    "id": "a0022",
+    "type": "radio",
+    "category": "1",
+    "question": "Iron is bound and transported in the body via",
+    "correctAnswer": "Transferrin",
+    "optionValues": [
+      "Ferritin",
+      "Transferrin",
+      "Hemosiderin",
+      "Myoglobin"
+    ]
+  },
+  {
+    "id": "a0023",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following is not preferred for fortification of food with iron",
+    "correctAnswer": "Ferrous gluconate",
+    "optionValues": [
+      "Ferrous gluconate",
+      "Ferrous fumarate",
+      "Ferrous pyrophosphate",
+      "Electrolytic iron powder"
+    ]
+  },
+  {
+    "id": "a0024",
+    "type": "radio",
+    "category": "1",
+    "question": "Appearance of blue color on addition of iodine in milk indicates presence of following adulterant",
+    "correctAnswer": "Starch",
+    "optionValues": [
+      "Sugar",
+      "Water",
+      "Starch",
+      "Salt"
+    ]
+  },
+  {
+    "id": "a0025",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following doesn’t have vitamin C activity?",
+    "correctAnswer": "Threonic acid",
+    "optionValues": [
+      "Ascorbic acid",
+      "Dehydroascorbic acid",
+      "Threonic acid",
+      "None of the above"
+    ]
+  },
+  {
+    "id": "a0026",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following anti-caking agent is used in table salt?",
+    "correctAnswer": "Magnesium carbonate",
+    "optionValues": [
+      "Aluminium carbonate",
+      "Magnesium carbonate",
+      "Aluminium sulphate",
+      "Magnesium Sulphate"
+    ]
+  },
+  {
+    "id": "a0027",
+    "type": "radio",
+    "category": "1",
+    "question": "Estimation of iodine in salt is done by using standard solution of",
+    "correctAnswer": "Sodium thiosulphate",
+    "optionValues": [
+      "Sodium tartarate",
+      "Sodium acetate",
+      "Sodium thiosulphate",
+      "Sodium persulphate"
+    ]
+  },
+  {
+    "id": "a0028",
+    "type": "radio",
+    "category": "1",
+    "question": "Iodine is added in salt in the form of",
+    "correctAnswer": "Potassium Iodide",
+    "optionValues": [
+      "Potassium Iodide",
+      "Calcium Iodide",
+      "Magnesium Iodide",
+      "Hydrogen Iodide"
+    ]
+  },
+  {
+    "id": "a0029",
+    "type": "radio",
+    "category": "1",
+    "question": "Fats are soluble in",
+    "correctAnswer": "All of the above",
+    "optionValues": [
+      "Ethyl ether",
+      "Hexane",
+      "Petroleum ether",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0030",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following method is used for estimation of protein and amino acids in food?",
+    "correctAnswer": "Kjeldahl",
+    "optionValues": [
+      "Kjeldahl",
+      "Willstatter",
+      "Soxhlet",
+      "Iodimetry"
+    ]
+  },
+  {
+    "id": "a0031",
+    "type": "radio",
+    "category": "1",
+    "question": "Nitrogen content of proteins in food can vary between",
+    "correctAnswer": "150-180 g/kg",
+    "optionValues": [
+      "150-180 g/kg",
+      "50-80 g/kg",
+      "25-50 g/kg",
+      "360-390 g/kg"
+    ]
+  },
+  {
+    "id": "a0032",
+    "type": "radio",
+    "category": "1",
+    "question": "The 200 g sample of salt is used entirely for estimation of iodine. Titer value by titrating against sodium thiosulphate came to be 5 ml. What is the amount of iodine in mg contained in 1 kg of salt? (1 ml of sodium thiosulphate is equal to 0.1 mg of Iodine)",
+    "correctAnswer": "2.5 mg/kg",
+    "optionValues": [
+      "0.529 mg/kg",
+      "2.5 mg/kg",
+      "21.16 mg/kg",
+      "25 mg/kg"
+    ]
+  },
+  {
+    "id": "a0033",
+    "type": "radio",
+    "category": "1",
+    "question": "Tendency of autoxidation in fats or oils increases with",
+    "correctAnswer": "Increasing double bonds",
+    "optionValues": [
+      "Decreasing double bonds",
+      "Increasing double bonds",
+      "Presence of Free fatty acids",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0034",
+    "type": "radio",
+    "category": "1",
+    "question": "PV mixture is",
+    "correctAnswer": "Acetic acid and chloroform",
+    "optionValues": [
+      "Acetic acid and pet ether",
+      "Acetic acid and chloroform",
+      "Acetic acid and ascorbic acid",
+      "Acetic acid and alcohol"
+    ]
+  },
+  {
+    "id": "a0035",
+    "type": "radio",
+    "category": "1",
+    "question": "Peroxide value is important in determination of",
+    "correctAnswer": "Oxidative rancidity in unsaturated fat or oil",
+    "optionValues": [
+      "Free fatty acid",
+      "Oxidative rancidity in unsaturated fat or oil",
+      "Hydrolytic rancidity in unsaturated fat or oil",
+      "Degree of unsaturation"
+    ]
+  },
+  {
+    "id": "a0036",
+    "type": "radio",
+    "category": "1",
+    "question": "2 g of wheat flour after processing gave 50 ml of diluted ash solution. The burette reading obtained against KMnO4 is 5 ml. what is the value of calcium content (mg/100g) in wheat flour?(1ml KMnO4 = 1mg of Ca)",
+    "correctAnswer": "250 mg/100g",
+    "optionValues": [
+      "20 mg/100g",
+      "25 mg/100g",
+      "50 mg/100g",
+      "250 mg/100g"
+    ]
+  },
+  {
+    "id": "a0037",
+    "type": "radio",
+    "category": "1",
+    "question": "Reducing sugar content of honey",
+    "correctAnswer": "85-90%",
+    "optionValues": [
+      "10 – 15%",
+      "45-50%",
+      "65-70%",
+      "85-90%"
+    ]
+  },
+  {
+    "id": "a0038",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following statement is not true with ash content of the food?",
+    "correctAnswer": "None of the above",
+    "optionValues": [
+      "Ash content represents the total mineral content in foods",
+      "Ashing is the first step in preparing a food sample for specific elemental analysis",
+      "The ash content of most fresh foods rarely is greater than 5%",
+      "None of the above"
+    ]
+  },
+  {
+    "id": "a0039",
+    "type": "radio",
+    "category": "1",
+    "question": "Acid value of fats and oils is a measure of",
+    "correctAnswer": "Free Fatty acids in the fats and oils",
+    "optionValues": [
+      "Free Fatty acids in the fats and oils",
+      "Oxidative rancidity of fats and oil",
+      "Type of fatty acids in fats and oils",
+      "All of the above"
+    ]
+  },
+  {
+    "id": "a0040",
+    "type": "radio",
+    "category": "1",
+    "question": "Which of the following statement is not true for Iodine value?",
+    "correctAnswer": "Iodine value of coconut oil is higher than iodine value of rice bran oil",
+    "optionValues": [
+      "It measures degree of unsaturation",
+      "helps in identifying oil or determining adulteration",
+      "Iodine value of coconut oil is higher than iodine value of rice bran oil",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0041",
+    "type": "radio",
+    "category": "1",
+    "question": "Among the following fats and oils which one will show highest Sap value",
+    "correctAnswer": "Coconut oil",
+    "optionValues": [
+      "Sunflower oil",
+      "Soyabean oil",
+      "Coconut oil",
+      "Olive oil"
+    ]
+  },
+  {
+    "id": "a0042",
+    "type": "radio",
+    "category": "1",
+    "question": "Soxhlet’s method is used to determine",
+    "correctAnswer": "Crude fat",
+    "optionValues": [
+      "Crude protein",
+      "Crude fat",
+      "Crude fiber",
+      "None of the above"
+    ]
+  }
+]

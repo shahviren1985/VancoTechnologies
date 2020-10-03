@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>
+        ASNFS - Online Certification for Sports Nutritionists
+    </title>
+    <script src="script/jquery-2.2.3.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+        .page-header {
+            float: left;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .panel-title h3 {
+            float: left;
+            margin-left: 20px;
+            font-size: 24px;
+            margin-top: 30px;
+            color: deepskyblue;
+        }
+
+        #StudentList, #CreateUser, #QuestionUpload {
+            width: 50%;
+            float: left;
+            border-right: 1px solid #999;
+            padding: 10px;
+        }
+
+        .list-records {
+            float: left;
+            width: 100%;
+        }
+
+            .list-records .row {
+                float: left;
+                width: 98%;
+                margin-left: 0px;
+            }
+
+                .list-records .row a {
+                    text-decoration: underline;
+                    color: deepskyblue;
+                    cursor: pointer;
+                }
+
+            .list-records div div {
+                float: left;
+                border: 1px solid #333;
+                padding: 5px;
+                text-align: left;
+                width: 150px;
+            }
+
+        .list-head div {
+            float: left;
+            width: 150px;
+            padding: 5px;
+            text-align: left;
+            border: 1px solid #333;
+        }
+
+        .panel-group {
+            float: left;
+            width: 99%;
+            margin-bottom: 10px;
+        }
+
+            .panel-group div {
+                float: left;
+                margin-right: 10px;
+                min-width: 120px;
+            }
+
+            .panel-group input {
+                border-radius: 3px;
+                border-radius: unset;
+            }
+
+        #Question {
+            width: 95%;
+            float: left;
+            margin: 20px;
+        }
+
+        .radio {
+            float: left;
+            width: 100%;
+        }
+
+        .form-group {
+            float: left;
+            width: 95%;
+        }
+
+            .form-group:hover {
+                background-color: #eee;
+            }
+
+        .close {
+            float: left;
+            width: 100%;
+            cursor: pointer;
+            color: red;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .Correct{
+            color: green;
+        }
+        .Incorrect{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-header">
+        <img src="img/logo.jpg" style="width: 100px; height: 90px; float: left;" alt="ASNFS" />
+        <div class="panel-title"><h3>Online Exam for Sports Nutritionists</h3></div>
+    </div>
+    <!-- Question upload, Create new user, view student list -->
+    <div>
+        <div id="StudentList">
+            <div class="panel-heading"><h3>Student List</h3></div>
+            <div class="panel">
+                <div class=list-head>
+                    <div>Student Name</div>
+                    <div>Correct Answers</div>
+                    <div>Date of Exam</div>
+                    <div>View Response</div>
+                </div>
+                <div class="list-records">
+
+                </div>
+            </div>
+        </div>
+        <div id="CreateUser">
+            <div class="panel-heading"><h3>Create New User</h3></div>
+            <div class="panel">
+                <div class="panel-group">
+                    <div>First Name</div>
+                    <div><input type="text" name="firstname" id="firstname" placeholder="First Name" maxlength="50" /></div>
+                </div>
+                <div class="panel-group">
+                    <div>Last Name</div>
+                    <div><input type="text" name="lastname" id="lastname" placeholder="Last Name" maxlength="50" /></div>
+                </div>
+                <div class="panel-group">
+                    <div>Email</div>
+                    <div><input type="text" name="email" id="email" placeholder="Email Address" maxlength="100" /></div>
+                </div>
+                <div class="panel-group">
+                    <div>Mobile Number</div>
+                    <div><input type="text" name="mobile" id="mobile" placeholder="Mobile" maxlength="10" /></div>
+                </div>
+                <div class="panel-group">
+                    <div>ExamId</div>
+                    <div><input type="text" name="examid" id="examid" placeholder="Exam Id (oe20SZ01a)" maxlength="10" /></div>
+                </div>
+                <div class="panel-group">
+                    <div>Membership</div>
+                    <div>
+                        <input type="radio" name="membership" checked="checked" value="Silver" /><label for="membership">Silver</label>
+                        <input type="radio" name="membership" value="Gold" /><label for="membership">Gold</label>
+                    </div>
+                </div>
+                <div class="panel-group">
+                    <div><input type="button" value="Create User" class="btn btn-primary" onclick="CreateUser();" /> </div>
+                </div>
+            </div>
+        </div>
+
+        <!--<div id="QuestionUpload">
+            <div class="panel-heading">Upload Questions</div>
+            <div class="panel">
+                <input type="file" placeholder="Question Bank XLSX file" onchange="UploadQuestions(this)" />
+            </div>
+        </div>-->
+    </div>
+    <div id="Question">
+    </div>
+</body>
+</html>
+<script>
+    function CreateUser() {
+        var student = {
+            "firstname": $("#firstname").val(),
+            "lastname": $("#lastname").val(),
+            "email": $("#email").val(),
+            "mobile": $("#mobile").val(),
+            "examid": $("#examid").val(),
+            "membership": $("input[name='membership']:checked").val()
+        };
+
+        $.ajax({
+            method: "POST", contentType: 'application/json', dataType: 'json', url: "/Home/CreateUser",
+            data: JSON.stringify(student)
+        }).done(function (data) {
+            alert("New user created successfully");
+        });
+    }
+
+    function GetStudentList() {
+        $.ajax({
+            method: "GET", url: "/Home/GetStudentList?subjectCode=ASNFS"
+        }).done(function (data) {
+            console.log(data);
+            var len = data.length;
+            for (i = 0; i < len; i++) {
+                var row = "<div class='row' correct='" + data[i].CorrectAnswers + "' name='" + data[i].FirstName + " " + data[i].LastName + "'><div>" + data[i].FirstName + " " + data[i].LastName + "</div><div>" + data[i].CorrectAnswers + "</div><div>" + data[i].StartTime + "</div><div><a onclick='GetQuestions(\"" + data[i].ExamId + "\",this)'>View Answers</a></div></div>";
+                $(".list-records").append(row);
+            }
+        });
+    }
+
+    var questions;
+    function GetQuestions(examid, element) {
+        var name = $(element).parent().parent().attr("name");
+        var correct = $(element).parent().parent().attr("correct");
+        $.ajax({
+            method: "GET", url: "/Home/GetStudentExamResponse?subjectCode=ASNFS&examId=" + examid
+        }).done(function (data) {
+            questions = data;
+            console.log(questions);
+            $("#Question").append("<div>Name: <span><b>" + name + "</b></span>,<span> Correct: <span><b>" + correct + "</b></span></div><div class='close' onclick='$(\"#Question\").empty();'>Close</div>");
+            for (i = 0; i < data.length; i++) {
+                QuestionBind(i);
+            }
+        });
+    }
+
+    function QuestionBind(i) {
+        var questionList = '<div class="form-group">';
+        var selectedValue = questions[i].answer != null ? questions[i].answer.trim() : "";
+
+        if (questions[i].type != 'header' && questions[i].type != 'label') {
+            questionList = questionList + '<div class="ques"> <strong> <span>' + parseInt(i + 1) + '. </span>' + questions[i].question + ' </strong> </div> <div id="dv_' + questions[i].id + '">';
+        }
+        if (questions[i].type == 'radio') {
+            for (var j = 0; j < questions[i].optionValues.length; j++) {
+                var className = questions[i].correctResponse == questions[i].optionValues[j].trim() ? "Correct" : "Incorrect";
+                if (selectedValue != questions[i].optionValues[j].trim())
+                    questionList = questionList + '<label class="radio"> <input type="radio" value="' + (j + 1) + '" name="rdo_' + questions[i].id + '"> ' + questions[i].optionValues[j] + ' </label>';
+                else
+                    questionList = questionList + '<label class="radio ' + className + '"> <input type="radio" value="' + (j + 1) + '" name="rdo_' + questions[i].id + '" checked="checked"> ' + questions[i].optionValues[j] + ' </label>';
+            }
+        }
+        else if (questions[i - 1].type == 'text') {
+            questionList = questionList + '<textarea class="form-control" id="txt_' + questions[i].id + '_1" name="txt_' + questions[i].id + '" rows="2" placeholder="' + questions[i].placeHolder + '"></textarea>';
+        }
+        else if (questions[i - 1].type == 'dropdown') {
+            var element = "<select name='dd_" + questions[i].id + "'><option selected value='-1'>--Select Year--</option>"
+            for (var j = 0; j < questions[i].optionValues.length; j++) {
+                element += "<option value='" + questions[i].optionValues[j] + "'>" + questions[i].optionValues[j] + "</option>";
+            }
+            questionList = questionList + element + "</select>";
+        }
+        else if (questions[i - 1].type == 'header') {
+            questionList = questionList + '<div rows="2"><h3>' + questions[i].question + '</h3></div>';
+        }
+
+        if (i <= questions.length) {
+            questionList = questionList + '</div></div>';
+        }
+        else {
+            questionList = questionList + '</div></div>';
+        }
+
+        $("#Question").append(questionList);
+    }
+
+    GetStudentList();
+</script>

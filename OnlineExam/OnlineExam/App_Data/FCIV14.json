@@ -1,0 +1,392 @@
+﻿[
+  {
+    "id": "a0001",
+    "type": "radio",
+    "category": "1",
+    "question": "The range of 2-hour post challenge glucose levels is - Impaired glucose tolerance",
+    "correctAnswer": "140 - 199 mg/dl",
+    "optionValues": [
+      "100 – 199 mg/dl",
+      "120 – 199 mg/dl",
+      "130 – 199 mg/dl",
+      "140 - 199 mg/dl",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0002",
+    "type": "radio",
+    "category": "1",
+    "question": "The range of impaired fasting glucose is",
+    "correctAnswer": "100 – 125 mg/dl",
+    "optionValues": [
+      "90 – 100 mg/dl",
+      "100 – 125 mg/dl",
+      "110 – 125 mg/dl",
+      "120 – 125 mg/dl",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0003",
+    "type": "radio",
+    "category": "1",
+    "question": "The antibodies which lead to destruction of beta cells is",
+    "correctAnswer": "all of the above",
+    "optionValues": [
+      "islet cell autoantibodies",
+      "IA2",
+      "GAD",
+      "all of the above",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0004",
+    "type": "radio",
+    "category": "1",
+    "question": "Hepatic glucose production leads to",
+    "correctAnswer": "lipotoxicity",
+    "optionValues": [
+      "lipolysis",
+      "lipotoxicity",
+      "glucotoxicity",
+      "all of the above",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0005",
+    "type": "radio",
+    "category": "1",
+    "question": "Congenital or acquired syndromes leads to",
+    "correctAnswer": "acanthosisnigricans",
+    "optionValues": [
+      "fibrocalculuspancreatopathy",
+      "protein deficient diabetes",
+      "acanthosisnigricans",
+      "all of the above",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0006",
+    "type": "radio",
+    "category": "1",
+    "question": "Endocrinopathy can coexist with altered functions of",
+    "correctAnswer": "all of the above",
+    "optionValues": [
+      "pituitary",
+      "adrenal",
+      "thyroid",
+      "all of the above",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0007",
+    "type": "radio",
+    "category": "1",
+    "question": "Normal ranges of oxygen tension (PaCO2) is",
+    "correctAnswer": "80 – 100 mm Hg",
+    "optionValues": [
+      "70 – 100 mm Hg",
+      "80 – 100 mm Hg",
+      "90 – 100 mm Hg",
+      "all of the above",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0008",
+    "type": "radio",
+    "category": "1",
+    "question": "Dyspnea is defined as",
+    "correctAnswer": "shortness of breath",
+    "optionValues": [
+      "decreased oxygen levels in the blood circulation",
+      "loss of intercoastal muscle mass",
+      "shortness of breath",
+      "all of the above",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0009",
+    "type": "radio",
+    "category": "1",
+    "question": "The organ responsible for long-term control of Blood Pressure is",
+    "correctAnswer": "Kidney",
+    "optionValues": [
+      "Lungs",
+      "Liver",
+      "Kidney",
+      "Heart",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0010",
+    "type": "radio",
+    "category": "1",
+    "question": "In moderate salt restriction the acceptable intake of sodium is",
+    "correctAnswer": "1-1.5g",
+    "optionValues": [
+      "2-3 g",
+      "1-1.5g",
+      "500-700 mg",
+      "200-300 mg",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0011",
+    "type": "radio",
+    "category": "1",
+    "question": "Systolic blood pressure in prehypertensive condition is",
+    "correctAnswer": "120-139 mmHg",
+    "optionValues": [
+      "≥160 mmHg",
+      "140-159 mmHg",
+      "<120 mmHg",
+      "120-139 mmHg",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0012",
+    "type": "radio",
+    "category": "1",
+    "question": "For hypercholesterolemic patients, dietary intake of cholesterol should be restricted to less than",
+    "correctAnswer": "200 mg/d",
+    "optionValues": [
+      "200 mg/d",
+      "250 mg/d",
+      "300 mg/d",
+      "350 mg/d",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0013",
+    "type": "radio",
+    "category": "1",
+    "question": "One of the risk factors for CVD is HDL level less than",
+    "correctAnswer": "40 mg/dL",
+    "optionValues": [
+      "55 mg/dL",
+      "45 mg/dL",
+      "50 mg/dL",
+      "40 mg/dL",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0014",
+    "type": "radio",
+    "category": "1",
+    "question": "Products labeled as ‘sodium free’ should have sodium content",
+    "correctAnswer": "<5 mg",
+    "optionValues": [
+      "0 mg",
+      "<5 mg",
+      "35 mg",
+      "140 mg",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0015",
+    "type": "radio",
+    "category": "1",
+    "question": "The instrument used to measure blood pressure is known as",
+    "correctAnswer": "Sphygmomanometer",
+    "optionValues": [
+      "Barometer",
+      "Glucometer",
+      "Infantometer",
+      "Sphygmomanometer",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0016",
+    "type": "radio",
+    "category": "1",
+    "question": "Normal serum triglyceride level is",
+    "correctAnswer": "<150 mg/dL",
+    "optionValues": [
+      "<150 mg/dL",
+      "150-199 mg/dL",
+      "200-499 mg/dL",
+      "≥500 mg/dL",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0017",
+    "type": "radio",
+    "category": "1",
+    "question": "Optimum serum LDL cholesterol level is",
+    "correctAnswer": "<100 mg/dL",
+    "optionValues": [
+      "<150 mg/dL",
+      "<120 mg/dL",
+      "<100 mg/dL",
+      "<160 mg/dL",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0018",
+    "type": "radio",
+    "category": "1",
+    "question": "Another name for Decompensated Heart Disease is",
+    "correctAnswer": "Myocardial Infarction",
+    "optionValues": [
+      "Myocardial Infarction",
+      "Angina Pectoris",
+      "Atherosclerosis",
+      "Ischemia",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0019",
+    "type": "radio",
+    "category": "1",
+    "question": "Risk factors for which intervention have proven to lower the CVD risk come under",
+    "correctAnswer": "Category 1",
+    "optionValues": [
+      "Category 4",
+      "Category 3",
+      "Category 2",
+      "Category 1",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0020",
+    "type": "radio",
+    "category": "1",
+    "question": "The phytochemicals present in soyabean and its products are:",
+    "correctAnswer": "Isoflavones",
+    "optionValues": [
+      "Anthocyanins",
+      "Isoflavones",
+      "Carotenoids",
+      "Sulfides",
+      "none of the above"
+    ]
+  },
+  {
+    "id": "a0021",
+    "type": "radio",
+    "category": "2",
+    "question": "Trachea is part of upper respiratory tract",
+    "correctAnswer": "False",
+    "optionValues": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "id": "a0022",
+    "type": "radio",
+    "category": "2",
+    "question": "Iron is a surfactant",
+    "correctAnswer": "False",
+    "optionValues": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "id": "a0023",
+    "type": "radio",
+    "category": "2",
+    "question": "Fat oxidation as a main energy source is preferred in COPD",
+    "correctAnswer": "True",
+    "optionValues": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "id": "a0024",
+    "type": "radio",
+    "category": "2",
+    "question": "Pathological changes in the small airways lead to Chronic Bronchitis",
+    "correctAnswer": "False",
+    "optionValues": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "id": "a0025",
+    "type": "radio",
+    "category": "2",
+    "question": "Acetoacetic acid leads to fruity odour of the breath",
+    "correctAnswer": "False",
+    "optionValues": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "id": "a0026",
+    "type": "radio",
+    "category": "2",
+    "question": "Sugar reading of > 200 mg/dl is indicative of risk to ketosis",
+    "correctAnswer": "False",
+    "optionValues": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "id": "a0027",
+    "type": "radio",
+    "category": "2",
+    "question": "Hyperventilation is one of the symptoms of ketoacidosic coma",
+    "correctAnswer": "True",
+    "optionValues": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "id": "a0028",
+    "type": "radio",
+    "category": "2",
+    "question": "HDL-cholesterol helps in the process of Reverse Cholesterol Transport",
+    "correctAnswer": "True",
+    "optionValues": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "id": "a0029",
+    "type": "radio",
+    "category": "2",
+    "question": "Step II TLC diet allows for the cholesterol intake upto300 mg/d",
+    "correctAnswer": "False",
+    "optionValues": [
+      "True",
+      "False"
+    ]
+  },
+  {
+    "id": "a0030",
+    "type": "radio",
+    "category": "2",
+    "question": "In TLC diet, saturated fat should provide <7 % of the total calories",
+    "correctAnswer": "True",
+    "optionValues": [
+      "True",
+      "False"
+    ]
+  }
+]

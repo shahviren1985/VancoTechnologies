@@ -1,0 +1,861 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>
+        SVT - Online Examination
+    </title>
+    <script src="script/jquery-2.2.3.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+        .page-header {
+            float: left;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .panel-title h3 {
+            float: left;
+            margin-left: 20px;
+            font-size: 24px;
+            margin-top: 30px;
+            color: deepskyblue;
+        }
+
+        #StudentList, #CreateUser, #QuestionUpload {
+            float: left;
+            border-right: 1px solid #999;
+            margin: 10px;
+        }
+		
+		#CreateUser{
+			width: 35% !important;
+			display: none;
+		}
+
+        .list-records {
+            float: left;
+            width: 100%;
+        }
+
+            .list-records .row {
+                float: left;
+                width: 98%;
+                margin-left: 0px;
+            }
+
+                .list-records .row a {
+                    text-decoration: underline;
+                    color: deepskyblue;
+                    cursor: pointer;
+                }
+
+            .list-records div div {
+                float: left;
+                border: 1px solid #333;
+                padding: 5px;
+                text-align: left;
+                width: 150px;
+            }
+
+        .list-head div {
+            float: left;
+            width: 150px;
+            padding: 5px;
+            text-align: left;
+            border: 1px solid #333;
+        }
+
+        .panel-group {
+            float: left;
+            width: 99%;
+            margin-bottom: 10px;
+        }
+
+            .panel-group div {
+                float: left;
+                margin-right: 10px;
+                min-width: 120px;
+            }
+
+            .panel-group input {
+                border-radius: 3px;
+                border-radius: unset;
+            }
+
+        #Question {
+            width: 95%;
+            float: left;
+            margin: 20px;
+        }
+
+        .radio {
+            float: left;
+            width: 100%;
+        }
+
+        .form-group {
+            float: left;
+            width: 95%;
+        }
+
+            .form-group:hover {
+                background-color: #eee;
+            }
+
+        .close {
+            float: left;
+            width: 100%;
+            cursor: pointer;
+            color: red;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .Correct {
+            color: green;
+        }
+
+        .Incorrect {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-header">
+        <img src="img/svt.png" style="width: 100px; height: 90px; float: left;" alt="SVT" />
+        <div class="panel-title"><h3>Online Exam</h3></div>
+    </div>
+    <!-- Question upload, Create new user, view student list -->
+    <div>
+        <div id="StudentList">
+            <div class="panel-heading"><h3>Student List</h3></div>
+            <div class="panel-heading"><h5>Paper: <span id="paperTitle"></span></h5></div>
+            <div class="btn btn-success" onclick="exportResults('results');">Download Report</div>
+            <div class="panel" style="width: 65%;">
+                <div class="list-head">
+                    <div>Roll Number</div>
+					<div>Student Name</div>
+                    <div>Correct Answers</div>
+                    <div>Date of Exam</div>
+                    <div>View Response</div>
+                </div>
+                <div class="list-records">
+
+                </div>
+            </div>
+            <table id="results" style="display: none" border="1">
+                <thead>
+                    <tr><td>Paper Title</td><td>Roll Number</td><td>Student Name</td><td>Score</td></tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div id="CreateUser">
+            <div class="panel-heading"><h3>Create New User</h3></div>
+            <div class="panel">
+                <div class="panel-group">
+                    <div>First Name</div>
+                    <div><input type="text" name="firstname" id="firstname" placeholder="First Name" maxlength="50" /></div>
+                </div>
+                <div class="panel-group">
+                    <div>Last Name</div>
+                    <div><input type="text" name="lastname" id="lastname" placeholder="Last Name" maxlength="50" /></div>
+                </div>
+                <div class="panel-group" style="display: none">
+                    <div>Email</div>
+                    <div><input type="text" name="email" id="email" placeholder="Email Address" maxlength="100" value="svt@svt.edu.in" /></div>
+                </div>
+                <div class="panel-group" style="display: none">
+                    <div>Mobile Number</div>
+                    <div><input type="text" name="mobile" id="mobile" placeholder="Mobile" maxlength="10" value="1234567890" /></div>
+                </div>
+                <div class="panel-group">
+                    <div>Subject</div>
+                    <div>
+                        <select id="ddSubject" class="panel-group">
+                            <option selected="selected" value="-1">--Select--</option>
+                            <option value="FCIV14">Therapeutic Dietetics</option>
+                            <option value="FCIV13">Functional Foods and introduction to Nutrigenomics</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="panel-group">
+                    <div>ExamId</div>
+                    <div><input type="text" name="examid" id="examid" placeholder="Exam Id (oe20SZ01a)" maxlength="10" /></div>
+                </div>
+                <div class="panel-group" style="display: none">
+                    <div>Membership</div>
+                    <div>
+                        <input type="radio" name="membership" checked="checked" value="Silver" /><label for="membership">Silver</label>
+                        <input type="radio" name="membership" value="Gold" /><label for="membership">Gold</label>
+                    </div>
+                </div>
+                <div class="panel-group">
+                    <div><input type="button" value="Create User" class="btn btn-primary" onclick="CreateUser();" /> </div>
+                </div>
+            </div>
+        </div>
+
+        <!--<div id="QuestionUpload">
+            <div class="panel-heading">Upload Questions</div>
+            <div class="panel">
+                <input type="file" placeholder="Question Bank XLSX file" onchange="UploadQuestions(this)" />
+            </div>
+        </div>-->
+    </div>
+    <div id="Question">
+    </div>
+</body>
+</html>
+<script>
+    function getUrlVars() {
+        var vars = [], hash;
+        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+        for (var i = 0; i < hashes.length; i++) {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+        }
+        return vars;
+    }
+
+    function CreateUser() {
+        var student = {
+            "firstname": $("#firstname").val(),
+            "lastname": $("#lastname").val(),
+            "email": $("#email").val(),
+            "mobile": $("#mobile").val(),
+            "examid": $("#examid").val(),
+            "membership": $("input[name='membership']:checked").val(),
+            "collegecode": $("#ddSubject").find("option:selected").val()
+        };
+
+        $.ajax({
+            method: "POST", contentType: 'application/json', dataType: 'json', url: "/Home/CreateUser",
+            data: JSON.stringify(student)
+        }).done(function (data) {
+            alert("New user created successfully");
+        });
+    }
+
+    function GetStudentList() {
+        $.ajax({
+            method: "GET", url: "/Home/GetStudentList?subjectCode=" + getUrlVars("code")["code"]
+        }).done(function (data) {
+            console.log(data);
+            var title = "";
+            for (j = 0; j < paperCodes.length; j++) {
+                if (paperCodes[j].code == getUrlVars("code")["code"]) {
+                    title = paperCodes[j].title;
+                    break;
+                }
+            }
+
+            var len = data.length;
+            $("#paperTitle").html(title);
+            for (i = 0; i < len; i++) {
+                var row = "<div class='row' correct='" + data[i].CorrectAnswers + "' name='" + data[i].FirstName + " " + data[i].LastName + "'><div>"+data[i].ExamId.substring(0,3)+"</div><div>" + data[i].FirstName + " " + data[i].LastName + "</div><div>" + data[i].CorrectAnswers + "</div><div>" + data[i].StartTime + "</div><div><a onclick='GetQuestions(\"" + data[i].ExamId + "\",this)'>View Answers</a></div></div>";
+                $(".list-records").append(row);
+
+                var trow = "<tr><td>" + title + "</td><td>" + data[i].ExamId.substring(0, 3) + "</td><td>" + data[i].FirstName + " " + data[i].LastName + "</td><td>" + data[i].CorrectAnswers + "</td></tr>";
+                $("#results tbody").append(trow);
+            }
+        });
+    }
+
+    var questions;
+    function GetQuestions(examid, element) {
+        var name = $(element).parent().parent().attr("name");
+        var correct = $(element).parent().parent().attr("correct");
+        $.ajax({
+            method: "GET", url: "/Home/GetStudentExamResponse?examId=" + examid + "&subjectCode=" + getUrlVars("code")["code"]
+        }).done(function (data) {
+            questions = data;
+            console.log(questions);
+            $("#Question").append("<div>Name: <span><b>" + name + "</b></span>,<span> Correct: <span><b>" + correct + "</b></span></div><div class='close' onclick='$(\"#Question\").empty();'>Close</div>");
+            for (i = 0; i < data.length; i++) {
+                QuestionBind(i);
+            }
+        });
+    }
+
+    function QuestionBind(i) {
+        var questionList = '<div class="form-group">';
+        var selectedValue = questions[i].answer != null ? questions[i].answer.trim() : "";
+
+        if (questions[i].type != 'header' && questions[i].type != 'label') {
+            questionList = questionList + '<div class="ques"> <strong> <span>' + parseInt(i + 1) + '. </span>' + questions[i].question + ' </strong> </div> <div id="dv_' + questions[i].id + '">';
+        }
+        if (questions[i].type == 'radio') {
+            for (var j = 0; j < questions[i].optionValues.length; j++) {
+                var className = questions[i].correctResponse == questions[i].optionValues[j].trim() ? "Correct" : "Incorrect";
+                if (selectedValue != questions[i].optionValues[j].trim())
+                    questionList = questionList + '<label class="radio"> <input type="radio" value="' + (j + 1) + '" name="rdo_' + questions[i].id + '"> ' + questions[i].optionValues[j] + ' </label>';
+                else
+                    questionList = questionList + '<label class="radio ' + className + '"> <input type="radio" value="' + (j + 1) + '" name="rdo_' + questions[i].id + '" checked="checked"> ' + questions[i].optionValues[j] + ' </label>';
+            }
+        }
+        else if (questions[i - 1].type == 'text') {
+            questionList = questionList + '<textarea class="form-control" id="txt_' + questions[i].id + '_1" name="txt_' + questions[i].id + '" rows="2" placeholder="' + questions[i].placeHolder + '"></textarea>';
+        }
+        else if (questions[i - 1].type == 'dropdown') {
+            var element = "<select name='dd_" + questions[i].id + "'><option selected value='-1'>--Select Year--</option>"
+            for (var j = 0; j < questions[i].optionValues.length; j++) {
+                element += "<option value='" + questions[i].optionValues[j] + "'>" + questions[i].optionValues[j] + "</option>";
+            }
+            questionList = questionList + element + "</select>";
+        }
+        else if (questions[i - 1].type == 'header') {
+            questionList = questionList + '<div rows="2"><h3>' + questions[i].question + '</h3></div>';
+        }
+
+        if (i <= questions.length) {
+            questionList = questionList + '</div></div>';
+        }
+        else {
+            questionList = questionList + '</div></div>';
+        }
+
+        $("#Question").append(questionList);
+    }
+
+    GetStudentList();
+</script>
+<script>
+    var paperCodes = [
+        {
+            "code": "ASNFS",
+            "title": "ASNFS"
+        },
+        {
+            "code": "FCIV13",
+            "title": "Functional foods and introduction to Nutrigenomics"
+        },
+        {
+            "code": "FCIV14",
+            "title": "Therapeutic Dietetics"
+        },
+        {
+            "code": "FCIV16",
+            "title": "MACRONUTRIENTS IN HEALTH AND DISEASES"
+        },
+		{
+            "code": "FCVI27",
+            "title": "Food Analysis"
+        }
+    ];
+
+    function exportResults(tableID, filename = '') {
+        var downloadLink;
+        filename = getUrlVars("code")["code"];
+        var dataType = 'application/vnd.ms-excel';
+        var tableSelect = document.getElementById(tableID);
+        var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+
+        // Specify file name
+        filename = filename ? filename + '.xls' : 'excel_data.xls';
+
+        // Create download link element
+        downloadLink = document.createElement("a");
+
+        document.body.appendChild(downloadLink);
+
+        if (navigator.msSaveOrOpenBlob) {
+            var blob = new Blob(['\ufeff', tableHTML], {
+                type: dataType
+            });
+            navigator.msSaveOrOpenBlob(blob, filename);
+        } else {
+            // Create a link to the file
+            downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+
+            // Setting the file name
+            downloadLink.download = filename;
+
+            //triggering the function
+            downloadLink.click();
+        }
+    }
+</script>
+<script>
+
+    function CreateBulkUsers() {
+        for (i = 0; i < users.length; i++) {
+            $.ajax({
+                method: "POST", contentType: 'application/json', dataType: 'json', url: "/Home/CreateUser",
+                data: JSON.stringify(users[i])
+            }).done(function (data) {
+                //alert("New user created successfully");
+            });
+        }
+
+        alert("New user created successfully");
+    }
+
+    var users = [
+            {
+                "rollnumber": 1,
+                "crn": "SM0001",
+                "lastname": "ARGADE",
+                "firstname": "KESHAV",
+                "mobilenumber": 1234567890,
+                "email": "argadekpchess@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "1SM0001SN101"
+            },
+            {
+                "rollnumber": 2,
+                "crn": "SM0002",
+                "lastname": "Aute",
+                "firstname": "Pooja",
+                "mobilenumber": 1234567890,
+                "email": "nutanaute@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "2SM0002SN101"
+            },
+            {
+                "rollnumber": 3,
+                "crn": "SM0003",
+                "lastname": "Dhulia",
+                "firstname": "Rashi",
+                "mobilenumber": 1234567890,
+                "email": "rashidhulia3@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "3SM0003SN101"
+            },
+            {
+                "rollnumber": 4,
+                "crn": "SM0004",
+                "lastname": "Dhure",
+                "firstname": "Suresh",
+                "mobilenumber": 1234567890,
+                "email": "sureshdhure2014@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "4SM0004SN101"
+            },
+            {
+                "rollnumber": 5,
+                "crn": "SM0005",
+                "lastname": "Faleiro",
+                "firstname": "Vilma",
+                "mobilenumber": 1234567890,
+                "email": "vilmafaleiro07@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "5SM0005SN101"
+            },
+            {
+                "rollnumber": 6,
+                "crn": "SM0006",
+                "lastname": "GADA",
+                "firstname": "PUJA",
+                "mobilenumber": 1234567890,
+                "email": "pujagada05@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "6SM0006SN101"
+            },
+            {
+                "rollnumber": 7,
+                "crn": "SM0007",
+                "lastname": "Gawade",
+                "firstname": "Rushikesh",
+                "mobilenumber": 1234567890,
+                "email": "rushigawade2398@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "7SM0007SN101"
+            },
+            {
+                "rollnumber": 8,
+                "crn": "SM0008",
+                "lastname": "Ghodeswar",
+                "firstname": "Mahesh",
+                "mobilenumber": 1234567890,
+                "email": "maheshghodeswar3388@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "8SM0008SN101"
+            },
+            {
+                "rollnumber": 9,
+                "crn": "SM0009",
+                "lastname": "Girkar",
+                "firstname": "Shamika",
+                "mobilenumber": 1234567890,
+                "email": "girkarshamika@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "9SM0009SN101"
+            },
+            {
+                "rollnumber": 10,
+                "crn": "SM0010",
+                "lastname": "Gurme",
+                "firstname": "Vitthal",
+                "mobilenumber": 1234567890,
+                "email": "vitthalgurme98@gamil.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "10SM0010SN101"
+            },
+            {
+                "rollnumber": 11,
+                "crn": "SM0011",
+                "lastname": "Holkar",
+                "firstname": "Rupali",
+                "mobilenumber": 1234567890,
+                "email": "holkarrupali@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "11SM0011SN101"
+            },
+            {
+                "rollnumber": 12,
+                "crn": "SM0012",
+                "lastname": "JADHAV",
+                "firstname": "SARTHAK",
+                "mobilenumber": 1234567890,
+                "email": "sarthakjadhav80@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "12SM0012SN101"
+            },
+            {
+                "rollnumber": 13,
+                "crn": "SM0013",
+                "lastname": "Jadhav",
+                "firstname": "Subhash",
+                "mobilenumber": 1234567890,
+                "email": "subhashjr789@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "13SM0013SN101"
+            },
+            {
+                "rollnumber": 14,
+                "crn": "SM0014",
+                "lastname": "Jadhav",
+                "firstname": "Pravin",
+                "mobilenumber": 1234567890,
+                "email": "pravin.sumtime@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "14SM0014SN101"
+            },
+            {
+                "rollnumber": 15,
+                "crn": "SM0015",
+                "lastname": "Jain",
+                "firstname": "Karan",
+                "mobilenumber": 1234567890,
+                "email": "jain.k7777@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "15SM0015SN101"
+            },
+            {
+                "rollnumber": 16,
+                "crn": "SM0016",
+                "lastname": "Kamble",
+                "firstname": "Vishal",
+                "mobilenumber": 1234567890,
+                "email": "kamblevishal457@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "16SM0016SN101"
+            },
+            {
+                "rollnumber": 17,
+                "crn": "SM0017",
+                "lastname": "Karale ",
+                "firstname": "Paurnima",
+                "mobilenumber": 1234567890,
+                "email": "paurnima.karale111@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "17SM0017SN101"
+            },
+            {
+                "rollnumber": 18,
+                "crn": "SM0018",
+                "lastname": "Kisku",
+                "firstname": "Saraswati",
+                "mobilenumber": 1234567890,
+                "email": "saraswatikisku1553@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "18SM0018SN101"
+            },
+            {
+                "rollnumber": 19,
+                "crn": "SM0019",
+                "lastname": "KULKARNI",
+                "firstname": "HRISHIKESH",
+                "mobilenumber": 1234567890,
+                "email": "hrk.kool.1996@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "19SM0019SN101"
+            },
+            {
+                "rollnumber": 20,
+                "crn": "SM0020",
+                "lastname": "Kumbhar",
+                "firstname": "Mohini",
+                "mobilenumber": 1234567890,
+                "email": "mohinikumbhar323@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "20SM0020SN101"
+            },
+            {
+                "rollnumber": 21,
+                "crn": "SM0021",
+                "lastname": "Landge",
+                "firstname": "Ganesh",
+                "mobilenumber": 1234567890,
+                "email": "ganeshjudoka73@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "21SM0021SN101"
+            },
+            {
+                "rollnumber": 22,
+                "crn": "SM0022",
+                "lastname": "MISHRA",
+                "firstname": "NEERAJ KUMAR",
+                "mobilenumber": 1234567890,
+                "email": "mishran21@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "22SM0022SN101"
+            },
+            {
+                "rollnumber": 23,
+                "crn": "SM0023",
+                "lastname": "MOHITE",
+                "firstname": "SHUBHAM",
+                "mobilenumber": 1234567890,
+                "email": "ssmohitetennis@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "23SM0023SN101"
+            },
+            {
+                "rollnumber": 24,
+                "crn": "SM0024",
+                "lastname": "Naik",
+                "firstname": "Parvath",
+                "mobilenumber": 1234567890,
+                "email": "parvathnaik@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "24SM0024SN101"
+            },
+            {
+                "rollnumber": 25,
+                "crn": "SM0025",
+                "lastname": "Namgil",
+                "firstname": "Nawang",
+                "mobilenumber": 1234567890,
+                "email": "nawangnamgil@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "25SM0025SN101"
+            },
+            {
+                "rollnumber": 26,
+                "crn": "SM0026",
+                "lastname": "Ngalung",
+                "firstname": "Pansowo",
+                "mobilenumber": 1234567890,
+                "email": "pansowo.zimikcom@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "26SM0026SN101"
+            },
+            {
+                "rollnumber": 27,
+                "crn": "SM0027",
+                "lastname": "Palconda",
+                "firstname": "Sagar",
+                "mobilenumber": 1234567890,
+                "email": "spalconda@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "27SM0027SN101"
+            },
+            {
+                "rollnumber": 28,
+                "crn": "SM0028",
+                "lastname": "Pharande",
+                "firstname": "Bhushan",
+                "mobilenumber": 1234567890,
+                "email": "vsp5567@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "28SM0028SN101"
+            },
+            {
+                "rollnumber": 29,
+                "crn": "SM0029",
+                "lastname": "Raiturcar",
+                "firstname": "Priya",
+                "mobilenumber": 1234567890,
+                "email": "priyaraiturcar1988@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "29SM0029SN101"
+            },
+            {
+                "rollnumber": 30,
+                "crn": "SM0030",
+                "lastname": "S",
+                "firstname": "Longkhani",
+                "mobilenumber": 1234567890,
+                "email": "longkhanichao@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "30SM0030SN101"
+            },
+            {
+                "rollnumber": 31,
+                "crn": "SM0031",
+                "lastname": "SAIKH",
+                "firstname": "MD LOKMAN",
+                "mobilenumber": 1234567890,
+                "email": "lokmansaikh2015@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "31SM0031SN101"
+            },
+            {
+                "rollnumber": 32,
+                "crn": "SM0032",
+                "lastname": "Sarwad",
+                "firstname": "Neeta",
+                "mobilenumber": 1234567890,
+                "email": "neeta2720@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "32SM0032SN101"
+            },
+            {
+                "rollnumber": 33,
+                "crn": "SM0033",
+                "lastname": "Sasun",
+                "firstname": "Pankaj",
+                "mobilenumber": 1234567890,
+                "email": "Pankajsasun@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "33SM0033SN101"
+            },
+            {
+                "rollnumber": 34,
+                "crn": "SM0034",
+                "lastname": "Sen",
+                "firstname": "Nitin",
+                "mobilenumber": 1234567890,
+                "email": "1993nitinkumarsen@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "34SM0034SN101"
+            },
+            {
+                "rollnumber": 35,
+                "crn": "SM0035",
+                "lastname": "SHINDE",
+                "firstname": "SHRIDEVI",
+                "mobilenumber": 1234567890,
+                "email": "Shridevi.shinde89@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "35SM0035SN101"
+            },
+            {
+                "rollnumber": 36,
+                "crn": "SM0036",
+                "lastname": "Sorate",
+                "firstname": "Stavan",
+                "mobilenumber": 1234567890,
+                "email": "stavansorate99@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "36SM0036SN101"
+            },
+            {
+                "rollnumber": 37,
+                "crn": "SM0037",
+                "lastname": "Supnekar",
+                "firstname": "Pranav",
+                "mobilenumber": 1234567890,
+                "email": "pranavsupnekar@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "37SM0037SN101"
+            },
+            {
+                "rollnumber": 38,
+                "crn": "SM0038",
+                "lastname": "TAWEDE",
+                "firstname": "VISHAL",
+                "mobilenumber": 1234567890,
+                "email": "vishaltawede@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "38SM0038SN101"
+            },
+            {
+                "rollnumber": 39,
+                "crn": "SM0039",
+                "lastname": "Tirkey",
+                "firstname": "Jenifer",
+                "mobilenumber": 1234567890,
+                "email": "ashwinijenifer456@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "39SM0039SN101"
+            },
+            {
+                "rollnumber": 40,
+                "crn": "SM0040",
+                "lastname": "Yadav",
+                "firstname": "Rahul",
+                "mobilenumber": 1234567890,
+                "email": "ry8018133@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "40SM0040SN101"
+            },
+            {
+                "rollnumber": 41,
+                "crn": "SM0041",
+                "lastname": "Zade",
+                "firstname": "Omkar",
+                "mobilenumber": 1234567890,
+                "email": "omkarzade60@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "41SM0041SN101"
+            },
+            {
+                "rollnumber": 42,
+                "crn": "SM0042",
+                "lastname": "Zala",
+                "firstname": "Zeenal",
+                "mobilenumber": 1234567890,
+                "email": "zee03nal12496@gmail.com",
+                "membership": "Silver",
+                "collegecode": "SN101",
+                "examid": "42SM0042SN101"
+            }
+        
+	];
+</script>
