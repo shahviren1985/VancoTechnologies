@@ -38,9 +38,8 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Util, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\Util.dll</HintPath>
+    <Reference Include="Util">
+      <HintPath>..\Util\bin\Release\Util.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

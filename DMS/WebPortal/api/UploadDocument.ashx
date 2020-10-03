@@ -13,6 +13,12 @@ public class UploadDocument : IHttpHandler
         string documentType = context.Request.QueryString["docType"].ToString();
         long ticks = DateTime.Now.Ticks;
         string fileName = context.Request.Headers["X-File-Name"];
+        
+        if (string.IsNullOrEmpty(fileName))
+        {
+            fileName = context.Request.QueryString["fileName"].ToString();
+        }
+        
         string fileNameWithoutExt = Path.GetFileNameWithoutExtension(fileName);
         
         System.Web.Script.Serialization.JavaScriptSerializer jss = new System.Web.Script.Serialization.JavaScriptSerializer();
