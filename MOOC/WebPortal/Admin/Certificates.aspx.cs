@@ -621,7 +621,11 @@ public partial class Admin_Certificates : PageBase
                     printTypingStats.Add(objPrintTypingStat);
                 }
 
-                int max = printTypingStats.Last(f => f.Level > 0).Level;
+                int max = 1;
+                if (printTypingStats.Count > 0)
+                {
+                    max = printTypingStats.Last(f => f.Level > 0).Level;
+                }
 
                 for (int j = max; j < 23; j++)
                 {

@@ -119,7 +119,7 @@ namespace ITM.Courses.DAOBase
                 cmd.CommandText = cmdText;
                 cmd.ExecuteNonQuery();
                 cmd.Parameters.Add(new MySqlParameter("newId", cmd.LastInsertedId));
-                return Convert.ToInt32(cmd.Parameters["@newId"].Value);
+                return Convert.ToInt32(cmd.Parameters["newId"].Value);
             }
             catch (Exception ex)
             {

@@ -190,14 +190,11 @@ public class PDFCertificateGenerator
             certificateContentPara.Add(phrase2);
 
             */
-
-            certificateContentPara.Add(new Phrase("This is to certify that Ms. " + user.FirstName.ToUpper() + " " + user.LastName.ToUpper() + Environment.NewLine + Environment.NewLine +
-                "has" + (user.RollNumber != "F"? " successfully" : "") + " completed " + '"' + course.CourseName + ", internet" + Environment.NewLine + Environment.NewLine + "and social media." + '"'
-                + Environment.NewLine + Environment.NewLine + Environment.NewLine + "She has completed the course with 100 hours training," + Environment.NewLine + Environment.NewLine + "securing " + user.Percentage + "% with '" + user.RollNumber + "' Grade.",
+            user.Course = "F.Y.B.Com.";
+            certificateContentPara.Add(new Phrase("This is to certify that Ms. " + user.FirstName.ToUpper() + " " + user.LastName.ToUpper() + " of " + user.Course + " (M.N.W.C.)" + Environment.NewLine + Environment.NewLine +
+                "has" + (user.RollNumber != "F" ? " successfully" : "") + " completed " + '"' + course.CourseName + ", Internet and " + Environment.NewLine + Environment.NewLine + "Social Media." + '"'
+                + Environment.NewLine + Environment.NewLine + Environment.NewLine + "She has completed the course with 100 hours training, securing " + user.Percentage + "%"+ Environment.NewLine + Environment.NewLine + "with '" + user.RollNumber + "' Grade.",
                 new Font(Font.FontFamily.HELVETICA, 18)));
-
-
-
 
             // Commented by Rajesh 
             // signatureOfPrincipalPara.Add(new Phrase("Signature of Principal", new Font(Font.FontFamily.HELVETICA, 16, Font.BOLDITALIC)));
@@ -214,11 +211,13 @@ public class PDFCertificateGenerator
             //datePara.Add(new Phrase("Date: April 22, 2014", new Font(Font.FontFamily.HELVETICA, 16)));
             datePara.Add(new Phrase("Date: " + user.LastActivityDate, new Font(Font.FontFamily.HELVETICA, 16)));
 
+            //iTextSharp.text.Image jpg = iTextSharp.text.Image.GetInstance(HttpContext.Current.Server.MapPath("~/static/images/sign.png"));
+            //jpg.ScaleToFit(140f, 120f);
             ColumnText certificateContentCT = new ColumnText(writer.DirectContent);
             ColumnText coOrdCT = new ColumnText(writer.DirectContent);
             ColumnText signatureCT = new ColumnText(writer.DirectContent);
             ColumnText dateCT = new ColumnText(writer.DirectContent);
-
+            //ColumnText signCT = new ColumnText(writer.DirectContent);
             //Added by Rajesh
 
             ColumnText princpleNameCT = new ColumnText(writer.DirectContent);
@@ -235,25 +234,32 @@ public class PDFCertificateGenerator
             dateCT.SetSimpleColumn(610, 180, 800, 100);
             */
 
-            certificateContentCT.SetSimpleColumn(155, 370, 680, 30);
+            certificateContentCT.SetSimpleColumn(115, 370, 800, 30);
             //  certificateContentCT.SetLeading(1f, 25f);
 
-            coOrdCT.SetSimpleColumn(365, 150, 800, 100);
-            coordNameCT.SetSimpleColumn(390, 120, 800, 100); //Added
+            /*coOrdCT.SetSimpleColumn(365, 120, 800, 100);
+            coordNameCT.SetSimpleColumn(390, 150, 800, 100); //Added
             academyCT.SetSimpleColumn(372, 90, 800, 30); //Added
+            */
 
-            signatureCT.SetSimpleColumn(155, 150, 800, 100);
-            princpleNameCT.SetSimpleColumn(115, 120, 800, 100); // Added
-            instituteNameCT.SetSimpleColumn(155, 90, 800, 30); //Addeed
+            coOrdCT.SetSimpleColumn(610, 120, 800, 100);
+            coordNameCT.SetSimpleColumn(635, 150, 800, 100); //Added
+            academyCT.SetSimpleColumn(617, 90, 800, 30); //Added
 
-            dateCT.SetSimpleColumn(610, 150, 800, 100);
+            //signCT.SetSimpleColumn(655,170,800,130);
+            signatureCT.SetSimpleColumn(145, 120, 800, 100);
+            princpleNameCT.SetSimpleColumn(115, 150, 800, 100); // Added
+            instituteNameCT.SetSimpleColumn(145, 90, 800, 30); //Addeed
+
+            //dateCT.SetSimpleColumn(610, 150, 800, 100);
+            dateCT.SetSimpleColumn(365, 90, 800, 70);
 
             certificateContentCT.AddText(certificateContentPara);
 
             coOrdCT.AddText(coordPara);
             coordNameCT.AddText(coordName);
             academyCT.AddText(academy);
-
+            //signCT.AddElement(jpg);
             signatureCT.AddText(signatureOfPrincipalPara);
             princpleNameCT.AddText(principleName);
             instituteNameCT.AddText(instituteName);
@@ -266,6 +272,7 @@ public class PDFCertificateGenerator
             coordNameCT.Go();
             academyCT.Go();
             signatureCT.Go();
+            //signCT.Go();
             princpleNameCT.Go();
             instituteNameCT.Go();
             dateCT.Go();
@@ -646,6 +653,9 @@ public class PDFCertificateGenerator
                 PdfPCell cellp1 = new PdfPCell(p1);
                 cellp1.Padding = 5;
                 cellp1.HorizontalAlignment = Element.ALIGN_CENTER;
+
+                m.Speed_WPM = m.Speed_WPM > 25 ? m.Speed_WPM - 5 : m.Speed_WPM;
+                m.Accuracy = m.Accuracy > 95 ? m.Accuracy - 5 : m.Accuracy;
 
                 Phrase p2 = new Phrase(m.Speed_WPM.ToString(), new Font(Font.FontFamily.HELVETICA, FONT_SIZE, Font.NORMAL));
                 PdfPCell cellp2 = new PdfPCell(p2);
