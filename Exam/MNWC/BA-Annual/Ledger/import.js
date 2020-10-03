@@ -4,10 +4,10 @@ var GrandExternal = 0;
 var GrandTotal = 0;
 var GrandGrade = "";
 var GrandGP = 0;
+var GrandGrace = 0;
 var GrandResult = "PASS";
 var ATKTCount = 0;
 var CurrentStudentRecord = 0;
-
 
 function uploadFile() {
     var files = $("#csvFile")[0].files;
@@ -20,17 +20,19 @@ function csvToJson(file, fileName) {
     reader.onload = function (progressEvent) {
         var data = "";
         var lines = this.result.split('\n');
-		
         for (var line = 0; line < lines.length; line++) {
             data += lines[line];
         }
         var json = JSON.parse(CSV2JSON(data));
 
         $("#csvFile").hide();
-        $("#marksheet").show();
-        $("#Marks").find("tr").remove();
-		
+        //$("#marksheet").show();
+        //$("#Marks").find("tr").remove();
 
+        //var header = "<tr><td>Code</td><td>Subject</td><td>Credits</td><td>Internal Marks <br/>(25)</td><td>External Marks <br/>(75)</td><td>Total Marks <br/>(100)</td><td>Grade</td></tr>";
+        //$("#Marks").append(header);
+		
+		
         /*if (CurrentStudentRecord == 0) {
             $("#Previous").hide();
         }
@@ -41,33 +43,26 @@ function csvToJson(file, fileName) {
         /*if (CurrentStudentRecord == json.length - 1)
             $("#Next").hide();
         else
-            $("#Next").show();*/
-        // for each row - update data on button click
+            $("#Next").show();
+        // for each row - update data on button click*/
 
         for (i = 0; i < json.length; i++) {
-			
             /*if (i < CurrentStudentRecord)
                 continue;
             else if (i > CurrentStudentRecord)
                 break;*/
-            //document.title = json[i].SeatNumber + "-" + json[i].LastName.toUpperCase() + " " + json[i].FirstName.toUpperCase();
-			
-            var commonTable = $("<div id='marksheet'><div id='HeaderDetails'><div class='HeaderDetails'>Statement of Marks</div><div class='CourseDetails' id='CourseName'></div><div class='ExamDetails'>Semester - IV, Examination held in <span id='ExamYear'></span></div></div><div id='StudentDetails'><span style='font-size:12pt; font-weight:bold;'>NAME OF THE STUDENT: &nbsp;</span><span id='StudentName'></span><div class='Medium'>MEDIUM: <span id='Medium'></span></div></div><div id='ExamCenterDetails'><div style='width: 20%;'>SEAT NO: <span id='SeatNumber'></span></div><div style='width: 20%;'>INSTITUTION: <span id='InstituteName'></span></div><div style='width: 32%;'>CENTRE: <span id='CenterName'></span></div><div id='PRNContainer' style='width: 28%; float:right; text-align:right;' >PRN: &nbsp; <span id='PRN'></span></div></div><table border='1' id='Marks'><thead><td><strong>Code</strong></td><td><b>Subject</b></td><td><b>Credits</b></td><td><b>Internal Marks <br/>(30)</b></td><td><b>External Marks <br/>(70)</b></td><td><b>Total Marks <br/>(100)</b></td><td><b>Grade</b></td></thead></table><br /><div id='SummaryDetails'><table border='1'><thead><td>Total Credits</td><td>G.P.A.</td><td>Grade</td><td>Grand Total</td><td>Result</td><td>Percentage</td></thead><tr><td id='TotalCredits'></td><td id='GPA'>-</td><td id='Grade'>-</td><td id='GrandTotal'>-</td><td id='Result'>-</td><td id='Percentage'>-</td></tr></table></div><div class='Place'>Place&nbsp;: &nbsp;<span id='Place'></span></div><div class='Date'>Date &nbsp;&nbsp;:  &nbsp;<span id='Date'></span></div><div><div class='Principal'>Principal <br/> Maniben Nanavati Women's College<br/>Vile Parle (W), Mumbai</div><div class='Controller'>Director <br/> Board Of Examinations and Evaluation <br/> S.N.D.T Women's University</div></div><div><div class='CollegeName'></div><div class='University'></div></div>	<div id='FooterDetails'>Note: PP=Pass, Ex=Exempted, RR=Result Reserved, ABS=Absent, F=Failed, *Indicates current appearance, +Indicates Grace marks given</div></div><footer />");
-            //var commonTable = $("<div id='marksheet'><div id='HeaderDetails'><div class='HeaderDetails'>Statement of Marks</div><div class='CourseDetails' id='CourseName'></div><div class='ExamDetails'>Examination held in <span id='ExamYear'></span></div></div><div id='StudentDetails'><span style='font-size:10pt; font-weight:bold;'>NAME OF THE STUDENT: &nbsp;</span><span id='StudentName'></span><div class='Medium'>MEDIUM: <span id='Medium'></span></div></div><div id='ExamCenterDetails'><div style='width: 20%;'>SEAT NO: <span id='SeatNumber'></span></div><div style='width: 20%;'>INSTITUTION: <span id='InstituteName'></span></div><div style='width: 32%;'>CENTRE: <span id='CenterName'></span></div><div id='PRNContainer' style='width: 25%; float:right; text-align:right;' >PRN: &nbsp; <span id='PRN'></span></div></div><table border='1' id='Marks'><thead><td><strong>Code</strong></td><td><b>Subject</b></td><td><b>Credits</b></td><td><b>Internal Marks <br/>(25)</b></td><td><b>External Marks <br/>(75)</b></td><td><b>Total Marks <br/>(100)</b></td><td><b>Grade</b></td></thead></table><br /><div id='SummaryDetails'><table border='1'><thead><td>Total Credits</td><td>G.P.A.</td><td>Grade</td><td>Grand Total</td><td>Result</td><td>Percentage</td></thead><tr><td id='TotalCredits'></td><td id='GPA'>-</td><td id='Grade'>-</td><td id='GrandTotal'>-</td><td id='Result'>-</td><td id='Percentage'>-</td></tr></table></div><div class='Place'>Place&nbsp;: &nbsp;<span id='Place'></span></div><div class='Date'>Date &nbsp;&nbsp;:  &nbsp;<span id='Date'></span></div><div><div class='Principal'>Principal <br/> Maniben Nanavati Women's College </div><div class='Controller'>Director <br/> Board Of Examinations and Evaluation <br/> S.N.D.T Women's University</div></div><div><div class='CollegeName'></div><div class='University'></div></div>	<div id='FooterDetails'>Note: PP=Pass, Ex=Exempted, RR=Result Reserved, AB=Absent, FF=Failed, *Indicates current appearance, +Indicates Grace marks given</div></div><footer />");
-
-			//var header = "<tr class='marksheads'><td style='width:10%'><b>Code</b></td><td style='width:49%'><b>Subject</b></td><td style='width:6%'><b>Credits</b></td><td style='width:10%'><b>Internal Marks<br/>(25)</b></td><td style='width:10%'><b>External Marks <br/>(75)</b></td><td style='width:10%'><b>Total Marks <br/>(100)</b></td><td style='width:5%'><b>Grade</b></td></tr>";
-			//$(commonTable).find("#Marks").append(header);
+			var commonTable = $("<div id='marksheet'><div id='HeaderDetails'><div><img src='logo.gif' class='Logo' alt='Logo' width='80' height='80' /></div><div class='HeaderDetails'>SNDT WOMEN'S UNIVERSITY, MUMBAI</div><div class='CollegeName'>NAME OF THE COLLEGE: MANIBEN NANAVATI WOMEN'S COLLEGE, VILE PARLE(WEST) MUMBAI - 400 056.</div><div class='Results'>COLLEGE RESULT SHEET FOR BACHELOR OF <span id='CourseName'>ARTS (B.A.) SEMESTER - II (REGULAR)</span> - EXAMINATION HELD IN <span id='ExamYear'>MARCH – 2017</span>.</div></div><div id='StudentOne'></div><table id='FooterDetails'><tr><td>PLACE: <span id='Place'></span></td><td style='padding-left: 80px;'>PRINCIPAL</td><td>CONTROLLER OF EXAMINATIONS</td></tr><tr><td>DATE: <span id='MarkSheetDate'></span></td><td>MANIBEN NANAVATI WOMEN'S COLLEGE</td><td>SNDT WOMEN'S UNIVERSITY</td></tr><tr><td colspan='3'>Note: PP=Pass, Ex=Exempted, RR=Result Reserved, AB=Absent, FF=Failed, *Indicates current appearance, +Indicates Grace marks given</td></tr></table></div>");
 		
-			$(commonTable).find("#CourseName").html(CourseExamName);
+            //document.title = json[i].SeatNumber + "-" + json[i].LastName.toUpperCase() + " " + json[i].FirstName.toUpperCase();
+            $(commonTable).find("#CourseName").html(CourseExamName);
             $(commonTable).find("#ExamYear").html(ExamYear);
             $(commonTable).find("#StudentName").html(json[i].LastName.toUpperCase() + " " + json[i].FirstName.toUpperCase() + " " + json[i].FatherName.toUpperCase() + " " + json[i].MotherName.toUpperCase());
-            $(commonTable).find("#Medium").html(json[i].Medium.toUpperCase());
-			//$(commonTable).find("#Medium").html(Medium);
-            
+            $(commonTable).find("#Medium").html(Medium);
+          
             $(commonTable).find("#InstituteName").html(Institution);
             $(commonTable).find("#CenterName").html(Center);
-            var prn = json[i].PRN == "" ? "-" :json[i].PRN.replace("'","").replace(",","");
-            $(commonTable).find("#PRN").html(prn);
+            
+            $(commonTable).find("#PRN").html(json[i].PRN);
             $(commonTable).find("#SeatNumber").html(json[i].SeatNumber);
 
             for (j = 0; j < PaperPerMarksheet; j++) {
@@ -101,31 +96,29 @@ function csvToJson(file, fileName) {
             }
 
             GrandGP = GrandGP / GrandCredit;
-            var tPercent = ((GrandTotal / TotalMarks) * 100).toFixed(2);
-            if (GrandGrade != "F"){
-                //GrandGrade = is35Passing ? GetGPA35(GrandGP) : GetGPA40(GrandGP);
-                GrandGrade = is35Passing ? CalculateGrade35(tPercent) : CalculateGrade40(tPercent);
-            }
+
+            if (GrandGrade != "F")
+                GrandGrade = GetGPA35(GrandGP);
+
             var tr = PrepareTotalRecord(GrandCredit, GrandInternal, GrandExternal, GrandTotal, GrandGrade);
             $(commonTable).find("#Marks").append(tr);
 
             // Populate footer
-            $(commonTable).find("#TotalCredits").html("<b>" + json[i].TotalCredits + "</b>");
-            $(commonTable).find("#GrandTotal").html("<b>" + GrandTotal + " / " + TotalMarks + "</b>");
+            $("#TotalCredits").html("<b>" + json[i].TotalCredits + "</b>");
+            $("#GrandTotal").html("<b>" + GrandTotal + " / " + TotalMarks + "</b>");
 
             GrandResult = (ATKTCount == 0) ? GrandResult : ATKTCount < 6 ? "ATKT" : "FAIL";
 
             $(commonTable).find("#Result").html("<b>" + GrandResult + "</b>");
-            //console.log(GrandGrade);
+
             if (GrandGrade != "F") {
                 $(commonTable).find("#GPA").html("<b>" + GrandGP.toFixed(2) + "</b>");
-                //$(commonTable).find("#GPA").html("<b>3.6</b>");
-                //$(commonTable).find("#Grade").html("<b>-</b>");
-               $(commonTable).find("#Grade").html("<b>" + GrandGrade + "</b>");
+                $(commonTable).find("#Grade").html("<b>" + GrandGrade + "</b>");
+               
                 var percent = ((GrandTotal / TotalMarks) * 100).toFixed(2);
                 $(commonTable).find("#Percentage").html("<b>" + percent + "&#37;" + "</b>");
             }
-            else {
+			else {
                 $(commonTable).find("#GPA").html("<b>-</b>");
                 $(commonTable).find("#Grade").html("<b>" + GrandGrade + "</b>");
                 var percent = ((GrandTotal / TotalMarks) * 100).toFixed(2);

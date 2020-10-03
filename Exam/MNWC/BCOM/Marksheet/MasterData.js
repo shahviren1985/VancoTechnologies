@@ -1,13 +1,13 @@
 var PaperPerMarksheet = 6;
 var TotalMarks = "600";
-var MarkSheetDate = "01/06/2019";
+var MarkSheetDate = "04/02/2020";
 var is35Passing = true;
 //var CourseExamName = "BACHELOR OF ARTS (B.A.) Semester-II";
 var CourseExamName = "BACHELOR OF COMMERCE (B.Com)";
 //var CourseExamName = "BACHELOR OF COMMERCE WITH ACCOUNTANCY, FINANCE AND INSURANCE Semester - I";
 //var CourseExamName = "BACHELOR OF MANAGEMENT STUDIES (B.M.S) Semester - I";
 
-var ExamYear = "April - 2019";
+var ExamYear = "MARCH - 2009";
 //var ExamYear = "April - 2017";
 var Medium = "ENGLISH";
 //var Medium = "GUJARATI";
@@ -117,7 +117,14 @@ var PaperCodes =
 	"140219":{"PaperTitle":"FINANCIAL ACCOUNTANCY","Credits":"4"},
 	"140319":{"PaperTitle":"FOUNDATION COURSE & INFORMATION TECHNOLOGY","Credits":"4"},
 	"140419":{"PaperTitle":"BASICS OF BUSINESS COMMUNICATION","Credits":"4"},
-	"140519":{"PaperTitle":"MANAGEMENT THEORY & PRACTICE","Credits":"4"}
+	"140519":{"PaperTitle":"MANAGEMENT THEORY & PRACTICE","Credits":"4"},
+	
+	"1201":{"PaperTitle":"ENGLISH (H.L.)","Credits":"4"},
+	"4205":{"PaperTitle":"ECONOMICS P-II","Credits":"4"},
+	"4206":{"PaperTitle":"COMMERCE P-II","Credits":"4"},
+	"4207":{"PaperTitle":"ACCOUNTANCY P-II","Credits":"4"},
+	"324":{"PaperTitle":"TOURISM & TRAVEL MANAGEMENT - P-III","Credits":"4"},
+	"424":{"PaperTitle":"TOURISM & TRAVEL MANAGEMENT - P-IV","Credits":"4"}
 };
 
 /*{

@@ -1,13 +1,13 @@
 var PaperPerMarksheet = 6;
 var TotalMarks = "600";
-var MarkSheetDate = "01/06/2019";
+var MarkSheetDate = "03/02/2020";
 var is35Passing = true;
 var CourseExamName = "BACHELOR OF ARTS (B.A.)";
 //var CourseExamName = "BACHELOR OF COMMERCE (B.Com) Semester-II";
 //var CourseExamName = "BACHELOR OF COMMERCE WITH ACCOUNTANCY, FINANCE AND INSURANCE Semester - I";
 //var CourseExamName = "BACHELOR OF MANAGEMENT STUDIES (B.M.S) Semester - I";
 
-var ExamYear = "April - 2019";
+var ExamYear = "March - 2009";
 //var ExamYear = "April - 2017";
 var Medium = "ENGLISH";
 //var Medium = "GUJARATI";
@@ -119,6 +119,13 @@ var PaperCodes =
 	"480627":{"PaperTitle":"MANAGEMENT OF CHILD & YOUTH CENTRE (PR)","Credits":"4"},
 	"140110": {"PaperTitle":"DC PSYCHOLOGY PAPER­I GENERAL PSYCHOLOGY","Credits":"4"},
 	"140210": {"PaperTitle":"DC PSYCHOLOGY PAPER­II DEVELOPMENT PSYCHOLOGY","Credits":"4"},
+	
+	"1101":{"PaperTitle":"ENGLISH","Credits":"4"},
+	"3139":{"PaperTitle":"WOMEN IN CHANGING INDIA","Credits":"4"},
+	"3140":{"PaperTitle":"HISTORY AS HERITAGE","Credits":"4"},
+	"4110":{"PaperTitle":"PSYCHOLOGY D.C. 1","Credits":"4"},
+	"4210": {"PaperTitle":"PSYCHOLOGY D.C. 2","Credits":"4"},
+	"8127": {"PaperTitle":"CHILD CARE A.C.","Credits":"4"}
 };
 
 /*{

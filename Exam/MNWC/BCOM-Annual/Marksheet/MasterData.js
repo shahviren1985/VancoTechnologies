@@ -1,13 +1,13 @@
 var PaperPerMarksheet = 6;
 var TotalMarks = "600";
-var MarkSheetDate = "01/06/2019";//"14/12/2015";//"02/05/2018";
+var MarkSheetDate = "10/02/2020";
 var is35Passing = true;
-var LEDGER_LAST_RECORD = 2;
-var CourseExamName = "BACHELOR OF ARTS (B.A.)";
-//var CourseExamName = "BACHELOR OF COMMERCE (B.Com) Semester-II";
-//var CourseExamName = "BACHELOR OF COMMERCE WITH ACCOUNTANCY, FINANCE AND INSURANCE Semester-I";
-//var CourseExamName = "BACHELOR OF MANAGEMENT STUDIES (B.M.S) Semester-I";
-var ExamYear = "April - 2019";//"MARCH/APRIL - 2018";
+//var CourseExamName = "BACHELOR OF ARTS (B.A.) Semester-II";
+var CourseExamName = "BACHELOR OF COMMERCE (B.Com)";
+//var CourseExamName = "BACHELOR OF COMMERCE WITH ACCOUNTANCY, FINANCE AND INSURANCE Semester - I";
+//var CourseExamName = "BACHELOR OF MANAGEMENT STUDIES (B.M.S) Semester - I";
+
+var ExamYear = "March/April, 2009";
 //var ExamYear = "April - 2017";
 var Medium = "ENGLISH";
 //var Medium = "GUJARATI";
@@ -16,29 +16,40 @@ var Center = "008 - VILE PARLE (W)";
 var Place = "Mumbai";
 var PaperCodes = 
 {
+	"105118":{"PaperTitle":"COMPUTER APPLICATION PAPER - I","Credits":"4"},
+	"105218":{"PaperTitle":"COMPUTER APPLICATION PAPER - II","Credits":"4"},
+	"105124":{"PaperTitle":"TOURISM & TRAVEL MANAGEMENT TOURISM BUSINESS (PAPER - I)","Credits":"4"},
+	"105224":{"PaperTitle":"TOURISM & TRAVEL MANAGEMENT TOURISM ORGANISATIONS (PAPER-II)","Credits":"4"},
+	"105152":{"PaperTitle":"OFFICE MANAGEMENT AND SECRETARIAL PRACTICE - PAPER-I TYPING-I","Credits":"4"},
+	"105252":{"PaperTitle":"OFFICE MANAGEMENT AND SECRETARIAL PRACTICE - PAPER-II THEORY-I","Credits":"4"},
+	"145105":{"PaperTitle":"BUSINESS ECONOMICS PAPER I THEORY OF CONSUMER BEHAVIOUR AND DEMAND","Credits":"4"},
+	"145106":{"PaperTitle":"PRINCIPLES OF MANAGEMENT","Credits":"4"},
+	"145107":{"PaperTitle":"ACCOUNTANCY PAPER-I FINANCIAL ACCOUNTING","Credits":"4"},
+	"145108":{"PaperTitle":"BUSINESS MATHEMATICS PAPER - I","Credits":"4"},
+	"145109":{"PaperTitle":"BUSINESS ENVIRONMENT","Credits":"4"},
 	"100124":{"PaperTitle":"TOURISM BUSINESS PAPER-I","Credits":"4"},
 	"100152":{"PaperTitle":"SHORTHAND & TYPING PAPER-I","Credits":"4"},
 	"100224":{"PaperTitle":"TOURISM ORGANISATIONS PAPER-II","Credits":"4"},
 	"100252":{"PaperTitle":"OFFICE MANAGEMENT PAPER-II","Credits":"4"},
-	"110101":{"PaperTitle":"CC ENGLISH PAPER-I","Credits":"4"},
-	//"      ":{"PaperTitle":"ENGLISH CC PAPER (H.L.) EMPOWERING ENGLISH - I","Credits":"4"},
-	"145101":{"PaperTitle":"DC PAPER -I BASIC CONCEPTS GENRE OF LITERARY STUDY","Credits":"4"},
-	"145201":{"PaperTitle":"DC PAPER-II EXPLORING LITERARY STUDIES LITERARY TERMS","Credits":"4"},
+	//"110101":{"PaperTitle":"CC ENGLISH PAPER-I HL ELEMENTARY COURSE IN LANG & COMM. SKILLS","Credits":"4"},
+	"110101":{"PaperTitle":"ENGLISH CC PAPER (H.L.) EMPOWERING ENGLISH - I","Credits":"4"},
 	"130100":{"PaperTitle":"FC PAPER -I HISTORY AS HERITAGE","Credits":"4"},
 	"130200":{"PaperTitle":"FC PAPER-II WOMEN IN CHANGING INDIA","Credits":"4"},
 	"140101":{"PaperTitle":"DC PAPER -I BASIC CONCEPTS GENRE OF LITERARY STUDY/ INTRODUCTION TO LITERARY STUDIES CONCEPTS & GENRE","Credits":"4"},
-	"140105":{"PaperTitle":"ECONOMICS PAPER-I","Credits":"4"},
-	"140106":{"PaperTitle":"PRINCIPLES OF BUSINESS MANAGEMENT","Credits":"4"},
+	
+	//"140105":{"PaperTitle":"ECONOMICS PAPER-I ANALYSIS OF CONSUMERS BEHAVIOUR","Credits":"4"},
+	//"140106":{"PaperTitle":"PRINCIPLES OF BUSINESS MANAGEMENT","Credits":"4"},
+	"140105":{"PaperTitle":"ECONOMICS I - ANALYSIS OF CONSUMERS BEHAVIOUR","Credits":"4"},
+	"140106":{"PaperTitle":"COMMERCE I - PRINCIPLES OF BUSINESS","Credits":"4"},
+	
 	"140107":{"PaperTitle":"ACCOUNTING-I FINANCIAL ACCOUNTING","Credits":"4"},
 	"140108":{"PaperTitle":"BUSINESS MATHEMATICS & STATISTICS","Credits":"4"},
 	"140109":{"PaperTitle":"COMMERCIAL GEOGRAPHY","Credits":"4"},
-	"140111":{"PaperTitle":"DC SOCIOLOGY PAPER-I RURAL SOCIOLOGY","Credits":"4"},
-	"140211":{"PaperTitle":"DC SOCIOLOGY PAPER-II INTRODUCTION TO SOCIOLOGY","Credits":"4"},
+	
 	"140201":{"PaperTitle":"DC PAPER-II EXPLORING LITERARY STUDIES LITERARY TERMS & CRITICAL APPROACHES","Credits":"4"},
 	"145102":{"PaperTitle":"DC GUJARATI PAPER-I BHASHA KAUSHAL, GADHYA SWARUP ANE NIYAT KRUTIO NO ABHYAS","Credits":"4"},
-	"145106":{"PaperTitle":"DC ECONOMICS PAPER-I ECONOMY OF MAHARASHTRA","Credits":"4"},
+	/*"145106":{"PaperTitle":"DC ECONOMICS PAPER-I ECONOMY OF MAHARASHTRA","Credits":"4"},*/
 	"145110":{"PaperTitle":"DC PSYCHOLOGY PAPER-I GENERAL PSYCHOLOGY","Credits":"4"},
-	"140110":{"PaperTitle":"DC PSYCHOLOGY PAPER-I GENERAL PSYCHOLOGY - I","Credits":"4"},
 	"145111":{"PaperTitle":"SOCIOLOGY PAPER-I SOCIOLOGY OF INDIAN SOCIETY","Credits":"4"},
 	"145202":{"PaperTitle":"DC GUJARATI PAPER-II ANUVADKALA ANE ANUDIT KRUTIO NO ABHYAS","Credits":"4"},
 	"145206":{"PaperTitle":"DC ECONOMICS PAPER-II PRINCIPLES OF ECONOMICS","Credits":"4"},
@@ -48,41 +59,43 @@ var PaperCodes =
 	"175103":{"PaperTitle":"AC HINDI PAPER-I AADHUNIK GADHYA HINDI KAHANI","Credits":"4"},
 	"180126":{"PaperTitle":"CAPC PAPER-I FUNDAMENTAL OF FOOD SCIENCE","Credits":"4"},
 	"180127":{"PaperTitle":"CAPC PAPER-I  CHILD DEVELOPMENT","Credits":"4"},
+	"205324":{"PaperTitle":"TOURISM & TRAVEL MANAGEMENT TOURISM PRODUCTS - INDIA (PAPER III)","Credits":"4"},
 	"200324":{"PaperTitle":"TTM","Credits":"4"},
 	"200352":{"PaperTitle":"OMSP","Credits":"4"},
-	"204206":{"PaperTitle":"COMMERCE","Credits":"4"},
-	// "210201":{"PaperTitle":"ENGLISH CC PAPER (H.L.) EMPOWERING ENGLISH- II","Credits":"4"},
-	"210201":{"PaperTitle":"CC ENGLISH PAPER-II HL  ELEMENTARY COURSE IN LANGUAGE AND COMMUNICATION SKILLS","Credits":"4"},
-	//"      ":{"PaperTitle":"ENGLISH CC PAPER (H.L.) EMPOWERING ENGLISH- II","Credits":"4"},
-	// "230300":{"PaperTitle":"PERSONALITY DEVELOPMENT","Credits":"4"},
-	"230300":{"PaperTitle":"FC PAPER III-PERSONALITY DEVELOPMENT","Credits":"4"},
-	// "230400":{"PaperTitle":"ENVIRONMENTAL STUDIES","Credits":"4"},
-	"230400":{"PaperTitle":"FC PAPER IV-ENVIRONMENTAL STUDIES","Credits":"4"},
-	"240205":{"PaperTitle":"BUSINESS ECONOMICS","Credits":"4"},
-	"240206":{"PaperTitle":"COMMERCE","Credits":"4"},
-	"240207":{"PaperTitle":"ACCOUNTANCY","Credits":"4"},
+	"205352":{"PaperTitle":"OFFICE MANAGEMENT AND SECRETARIAL PRACTICE- PAPER III TYPING","Credits":"4"},
+	"240205":{"PaperTitle":"ECONOMICS II - ANALYSIS OF MARKETS","Credits":"4"},
+	//"240205":{"PaperTitle":"BUSINESS ECONOMICS PAPER II ANALYSIS OF MARKETS","Credits":"4"},
+	"240206":{"PaperTitle":"COMMERCIAL II -  PRINCIPLES OF MARKETING MANAGEMENT","Credits":"4"},
+	//"240206":{"PaperTitle":"COMMERCIAL PAPER-II PRINCIPAL OF MARKETING MANAGEMENT","Credits":"4"},
+	//"240207":{"PaperTitle":"ACCOUNTANCY PAPER - II ADVANCED FINANCIAL ACCOUNTING","Credits":"4"},
+	"240207":{"PaperTitle":"ACCOUNTANCY II - ADVANCED FINANCIAL ACCOUNTING","Credits":"4"},
 	"240208":{"PaperTitle":"BUSINESS STATISTICS","Credits":"4"},
 	"240209":{"PaperTitle":"ENVIRONMENTAL STUDIES","Credits":"4"},
+
+	"204206":{"PaperTitle":"COMMERCE","Credits":"4"},
+	//"210201":{"PaperTitle":"CC ENGLISH PAPER-II HL ELEMENTARY COURSE IN LANG & COMM. SKILLS","Credits":"4"},
+	//"210201":{"PaperTitle":"ENGLISH PAPER-II","Credits":"4"},
+	//“210201":{"PaperTitle":"ENGLISH CC","Credits":"4"},
+	"210201":{"PaperTitle":"ENGLISH CC PAPER (H.L.) EMPOWERING ENGLISH- II","Credits":"4"},
+	"230300":{"PaperTitle":"PERSONALITY DEVELOPMENT","Credits":"4"},
+	"230400":{"PaperTitle":"ENVIRONMENTAL STUDIES","Credits":"4"},
+	"245205":{"PaperTitle":"BUSINESS ECONOMICS PAPER II THEORY OF PRODUCTION, COSTS AND COMPETITIVE MARKETS","Credits":"4"},
+	"245206":{"PaperTitle":"HUMAN RESOURCE MANAGEMENT","Credits":"4"},
+	"245207":{"PaperTitle":"ACCOUNTANCY PAPER - II ADVANCED FINANCIAL ACCOUNTING","Credits":"4"},
+	"245208":{"PaperTitle":"BUSINESS STATISTICS PAPER II","Credits":"4"},
+	"245209":{"PaperTitle":"ENVIRONMENTAL STUDIES","Credits":"4"},
 	"240301":{"PaperTitle":"ENGLISH PAPER-III THE NINETEENTH CENTURY NOVEL","Credits":"4"},
 	"240401":{"PaperTitle":"ENGLISH PAPER-IV ROMANTIC & VICTORIAN POETRY","Credits":"4"},
-	"240311":{"PaperTitle":"SOCIOLOGY PAPER-III URBAN SOCIOLOGY","Credits":"4"},
-	"240411":{"PaperTitle":"SOCIOLOGY PAPER-IV SOCIAL PROBLEM AND DISORGANISATION","Credits":"4"},
 	"245302":{"PaperTitle":"GUJARATI PAPER -III PADHYA SWARUP ANE KRUTINO ABHYAS","Credits":"4"},
 	"245306":{"PaperTitle":"ECONOMICS PAPER-IIIA MACRO LEVEL PROBLEM IN THE ECONOMY OF MAHARASHTRA","Credits":"4"},
 	"245310":{"PaperTitle":"PSYCHOLOGY PAPER-III GENERAL PSYCHOLOGY-BASIC COGNITIVE PROCESS","Credits":"4"},
-	// "240310":{"PaperTitle":"PSYCHOLOGY PAPER-III GENERAL PSYCHOLOGY","Credits":"4"},
-	"240310":{"PaperTitle":"DC PSYCHOLOGY PAPER - III - GENERAL PSYCHOLOGY","Credits":"4"},
 	"245311":{"PaperTitle":"SOCIOLOGY PAPER-III SOCIAL PROBLEM IN INDIA","Credits":"4"},
 	"245402":{"PaperTitle":"GUJARATI PAPER-IV LOKNATYA BHAVAI","Credits":"4"},
 	"245406":{"PaperTitle":"ECONOMICS PAPER-IV BASICS OF MONEY , BANKING ,INTERNATIONAL TRADE & PUBLIC FINANCE","Credits":"4"},
-	"245410":{"PaperTitle":"PSYCHOLOGY PAPER-IV DEVELOPMENTAL PSYCHOLOGY","Credits":"4"},
-	 
-	// "240410":{"PaperTitle":"PSYCHOLOGY PAPER-IV DEVELOPMENTAL PSYCHOLOGY","Credits":"4"},
-	"240410":{"PaperTitle":"DC PSYCHOLOGY PAPER-IV - DEVELOPMENTAL PSYCHOLOGY","Credits":"4"},
+	"245410":{"PaperTitle":"PSYCHOLOGY PAPER-IV DEVELOPMENTAL PSYCHOLOGY ","Credits":"4"},
 	"245411":{"PaperTitle":"SOCIOLOGY PAPER-IV INTRODUCTION TO SOCIOLOGY","Credits":"4"},
 	"250201":{"PaperTitle":"ENGLISH CC PAPER (L.L.) EXPLORING ENGLISH","Credits":"4"},
 	"275203":{"PaperTitle":"AC HINDI PAPER-II, AADHUNIK PADHYA HINDI KAVITA","Credits":"4"},
-	"270203":{"PaperTitle":"AC HINDI PAPER-II, AADHUNIK PADHYA HINDI KAVITA","Credits":"4"},
 	"280226":{"PaperTitle":"CAPC PAPER - II FUNDAMENTAL OF NUTRITION","Credits":"4"},
 	"280227":{"PaperTitle":"CAPC PAPER-II - ADOLESCENT DEVELOPMENT","Credits":"4"},
 	"2001":{"PaperTitle":"MARKETING MANAGEMENT","Credits":"4"},
@@ -106,25 +119,14 @@ var PaperCodes =
 	"140419":{"PaperTitle":"BASICS OF BUSINESS COMMUNICATION","Credits":"4"},
 	"140519":{"PaperTitle":"MANAGEMENT THEORY & PRACTICE","Credits":"4"},
 	
-	"410401":{"PaperTitle":"ENGLISH CC PAPER-IV AN ADVANCE COURSE IN WRITING AND COMPREHENSION SKILLS","Credits":"4"},
-	"430600":{"PaperTitle":"FC PAPER-VI CURRENT SOCIAL ISSUES & PROBLEMS","Credits":"4"},
-	"440710":{"PaperTitle":"PSYCHOLOGY DC PAPER-VII PERSONALITY THEORIES","Credits":"4"},
-	"440711":{"PaperTitle":"SOCIOLOGY DC PAPER-VII WOMEN AND SOCIETY","Credits":"4"},
-	"440810":{"PaperTitle":"PSYCHOLOGY DC PAPER-VIII RESEARCH METHODS","Credits":"4"},
-	"440811":{"PaperTitle":"SOCIOLOGY DC PAPER-VIII SOCIOLOGY OF TRIBAL SOCIETY","Credits":"4"},
-	"460211":{"PaperTitle":"SOCIOLOGY APC PAPER-II EDUCATION AND SOCIETY","Credits":"4"},
-	"470403":{"PaperTitle":"HINDI AC PAPER-IV AADHUNIK EKANKI","Credits":"4"},
-	"480527":{"PaperTitle":"CHILD CARE AND GUIDANCE","Credits":"4"},
-	"480627":{"PaperTitle":"MANAGEMENT OF CHILD & YOUTH CENTRE (PR)","Credits":"4"},
-	"140110": {"PaperTitle":"DC PSYCHOLOGY PAPER­I GENERAL PSYCHOLOGY","Credits":"4"},
-	"140210": {"PaperTitle":"DC PSYCHOLOGY PAPER­II DEVELOPMENT PSYCHOLOGY","Credits":"4"},
-	"1101":{"PaperTitle":"ENGLISH","Credits":"4"},
-	"3139":{"PaperTitle":"WOMEN IN CHANGING INDIA","Credits":"4"},
-	"3140":{"PaperTitle":"HISTORY AS HERITAGE","Credits":"4"},
-	"4110":{"PaperTitle":"PSYCHOLOGY D.C. 1","Credits":"4"},
-	"4210": {"PaperTitle":"PSYCHOLOGY D.C. 2","Credits":"4"},
-	"8127": {"PaperTitle":"CHILD CARE A.C.","Credits":"4"}
+	"1201":{"PaperTitle":"ENGLISH (H.L.)","Credits":"4"},
+	"4205":{"PaperTitle":"ECONOMICS P-II","Credits":"4"},
+	"4206":{"PaperTitle":"COMMERCE P-II","Credits":"4"},
+	"4207":{"PaperTitle":"ACCOUNTANCY P-II","Credits":"4"},
+	"324":{"PaperTitle":"TOURISM & TRAVEL MANAGEMENT - P-III","Credits":"4"},
+	"424":{"PaperTitle":"TOURISM & TRAVEL MANAGEMENT - P-IV","Credits":"4"}
 };
+
 /*{
 	"110101" : { "PaperTitle":"ENGLISH CC PAPER (H.L.) EMPOWERING ENGLISH", "Credits":"4" },
 	"130100" : { "PaperTitle":"FC PAPER I-HISTORY AS HERITAGE", "Credits":"4" },

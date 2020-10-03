@@ -52,7 +52,7 @@ function csvToJson(file, fileName) {
                 break;*/
             //document.title = json[i].SeatNumber + "-" + json[i].LastName.toUpperCase() + " " + json[i].FirstName.toUpperCase();
 			
-            var commonTable = $("<div id='marksheet'><div id='HeaderDetails'><div class='HeaderDetails'>Statement of Marks</div><div class='CourseDetails' id='CourseName'></div><div class='ExamDetails'>Semester - IV, Examination held in <span id='ExamYear'></span></div></div><div id='StudentDetails'><span style='font-size:12pt; font-weight:bold;'>NAME OF THE STUDENT: &nbsp;</span><span id='StudentName'></span><div class='Medium'>MEDIUM: <span id='Medium'></span></div></div><div id='ExamCenterDetails'><div style='width: 20%;'>SEAT NO: <span id='SeatNumber'></span></div><div style='width: 20%;'>INSTITUTION: <span id='InstituteName'></span></div><div style='width: 32%;'>CENTRE: <span id='CenterName'></span></div><div id='PRNContainer' style='width: 28%; float:right; text-align:right;' >PRN: &nbsp; <span id='PRN'></span></div></div><table border='1' id='Marks'><thead><td><strong>Code</strong></td><td><b>Subject</b></td><td><b>Credits</b></td><td><b>Internal Marks <br/>(30)</b></td><td><b>External Marks <br/>(70)</b></td><td><b>Total Marks <br/>(100)</b></td><td><b>Grade</b></td></thead></table><br /><div id='SummaryDetails'><table border='1'><thead><td>Total Credits</td><td>G.P.A.</td><td>Grade</td><td>Grand Total</td><td>Result</td><td>Percentage</td></thead><tr><td id='TotalCredits'></td><td id='GPA'>-</td><td id='Grade'>-</td><td id='GrandTotal'>-</td><td id='Result'>-</td><td id='Percentage'>-</td></tr></table></div><div class='Place'>Place&nbsp;: &nbsp;<span id='Place'></span></div><div class='Date'>Date &nbsp;&nbsp;:  &nbsp;<span id='Date'></span></div><div><div class='Principal'>Principal <br/> Maniben Nanavati Women's College<br/>Vile Parle (W), Mumbai</div><div class='Controller'>Director <br/> Board Of Examinations and Evaluation <br/> S.N.D.T Women's University</div></div><div><div class='CollegeName'></div><div class='University'></div></div>	<div id='FooterDetails'>Note: PP=Pass, Ex=Exempted, RR=Result Reserved, ABS=Absent, F=Failed, *Indicates current appearance, +Indicates Grace marks given</div></div><footer />");
+            var commonTable = $("<div id='marksheet'><div id='HeaderDetails'><div id='CollegeDetails'></div><div class='HeaderDetails'>Statement of Marks</div><div class='CourseDetails' id='CourseName'></div><div class='ExamDetails'>First Year Examination held in <span id='ExamYear'></span></div></div><div id='StudentDetails'><span style='font-size:12pt; font-weight:bold;'>NAME OF THE STUDENT: &nbsp;</span><span id='StudentName'></span><div class='Medium'>MEDIUM: <span id='Medium'></span></div></div><div id='ExamCenterDetails'><div style='width: 20%;'>SEAT NO: <span id='SeatNumber'></span></div><div style='width: 20%;'>INSTITUTION: <span id='InstituteName'></span></div><div style='width: 32%;'>CENTRE: <span id='CenterName'></span></div></div><table border='1' id='Marks'><thead><td><strong>Code</strong></td><td><b>Subject</b></td><td><b>Internal Marks<br/>(Minimum 12 out of 30)</b></td><td><b>External Marks<br/>(Minimum 28 out of 30)</b></td><td><b>Total Marks<br/>(Minimum 40 out of 100)</b></td></thead></table><br /><div id='SummaryDetails'><table border='1'><thead><td>Total Internal Marks</td><td>Total External Marks</td><td>Grand Total</td><td>Result</td></thead><tr><td id='TotalCredits'></td><td id='GPA'>-</td><td id='Grade'>-</td><td id='GrandTotal'>-</td></tr></table></div><div class='Place'>Place&nbsp;: &nbsp;<span id='Place'></span></div><div class='Date'>Date &nbsp;&nbsp;:  &nbsp;<span id='Date'></span></div><div><div class='Principal'>Principal <br/> Maniben Nanavati Women's College<br/>Vile Parle (W), Mumbai</div></div><div><div class='CollegeName'></div><div class='University'></div><div class='Controller'>Director <br/> Board Of Examinations and Evaluation <br/> S.N.D.T Women's University</div></div>	<div id='FooterDetails'>Note: PP=Pass, Ex=Exempted, RR=Result Reserved, ABS=Absent, F=Failed, *Indicates current appearance, +Indicates Grace marks given, **Indicates Incentive marks for National Service Scheme</div></div><footer />");
             //var commonTable = $("<div id='marksheet'><div id='HeaderDetails'><div class='HeaderDetails'>Statement of Marks</div><div class='CourseDetails' id='CourseName'></div><div class='ExamDetails'>Examination held in <span id='ExamYear'></span></div></div><div id='StudentDetails'><span style='font-size:10pt; font-weight:bold;'>NAME OF THE STUDENT: &nbsp;</span><span id='StudentName'></span><div class='Medium'>MEDIUM: <span id='Medium'></span></div></div><div id='ExamCenterDetails'><div style='width: 20%;'>SEAT NO: <span id='SeatNumber'></span></div><div style='width: 20%;'>INSTITUTION: <span id='InstituteName'></span></div><div style='width: 32%;'>CENTRE: <span id='CenterName'></span></div><div id='PRNContainer' style='width: 25%; float:right; text-align:right;' >PRN: &nbsp; <span id='PRN'></span></div></div><table border='1' id='Marks'><thead><td><strong>Code</strong></td><td><b>Subject</b></td><td><b>Credits</b></td><td><b>Internal Marks <br/>(25)</b></td><td><b>External Marks <br/>(75)</b></td><td><b>Total Marks <br/>(100)</b></td><td><b>Grade</b></td></thead></table><br /><div id='SummaryDetails'><table border='1'><thead><td>Total Credits</td><td>G.P.A.</td><td>Grade</td><td>Grand Total</td><td>Result</td><td>Percentage</td></thead><tr><td id='TotalCredits'></td><td id='GPA'>-</td><td id='Grade'>-</td><td id='GrandTotal'>-</td><td id='Result'>-</td><td id='Percentage'>-</td></tr></table></div><div class='Place'>Place&nbsp;: &nbsp;<span id='Place'></span></div><div class='Date'>Date &nbsp;&nbsp;:  &nbsp;<span id='Date'></span></div><div><div class='Principal'>Principal <br/> Maniben Nanavati Women's College </div><div class='Controller'>Director <br/> Board Of Examinations and Evaluation <br/> S.N.D.T Women's University</div></div><div><div class='CollegeName'></div><div class='University'></div></div>	<div id='FooterDetails'>Note: PP=Pass, Ex=Exempted, RR=Result Reserved, AB=Absent, FF=Failed, *Indicates current appearance, +Indicates Grace marks given</div></div><footer />");
 
 			//var header = "<tr class='marksheads'><td style='width:10%'><b>Code</b></td><td style='width:49%'><b>Subject</b></td><td style='width:6%'><b>Credits</b></td><td style='width:10%'><b>Internal Marks<br/>(25)</b></td><td style='width:10%'><b>External Marks <br/>(75)</b></td><td style='width:10%'><b>Total Marks <br/>(100)</b></td><td style='width:5%'><b>Grade</b></td></tr>";
@@ -110,18 +110,20 @@ function csvToJson(file, fileName) {
             $(commonTable).find("#Marks").append(tr);
 
             // Populate footer
-            $(commonTable).find("#TotalCredits").html("<b>" + json[i].TotalCredits + "</b>");
-            $(commonTable).find("#GrandTotal").html("<b>" + GrandTotal + " / " + TotalMarks + "</b>");
+			
+			//$(commonTable).find("#NSS").html("<b>5</b>");
+            $(commonTable).find("#TotalCredits").html("<b>" + GrandInternal + "</b>");
+            $(commonTable).find("#GrandTotal").html("<b>Second Class</b>");
 
             GrandResult = (ATKTCount == 0) ? GrandResult : ATKTCount < 6 ? "ATKT" : "FAIL";
 
             $(commonTable).find("#Result").html("<b>" + GrandResult + "</b>");
             //console.log(GrandGrade);
             if (GrandGrade != "F") {
-                $(commonTable).find("#GPA").html("<b>" + GrandGP.toFixed(2) + "</b>");
+                $(commonTable).find("#GPA").html("<b>" + GrandExternal + "</b>");
                 //$(commonTable).find("#GPA").html("<b>3.6</b>");
                 //$(commonTable).find("#Grade").html("<b>-</b>");
-               $(commonTable).find("#Grade").html("<b>" + GrandGrade + "</b>");
+               $(commonTable).find("#Grade").html("<b>**" + (parseInt(GrandTotal) + (5)) + " / " + TotalMarks + "</b>");
                 var percent = ((GrandTotal / TotalMarks) * 100).toFixed(2);
                 $(commonTable).find("#Percentage").html("<b>" + percent + "&#37;" + "</b>");
             }
@@ -143,8 +145,8 @@ function csvToJson(file, fileName) {
             GrandGP = 0;
             ATKTCount = 0;
             GrandResult = "PASS";
-			
 			$("#MarksheetContainer").append(commonTable);
+			PrepareCollegeDetails();
         }
 
 

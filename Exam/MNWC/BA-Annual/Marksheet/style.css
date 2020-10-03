@@ -8,8 +8,49 @@ html
 	font-family: Arial;
 	margin:10px;
 }
-
-
+#MarksheetContainer{
+	border: 4px;
+    border-style: solid;
+    border-color: royalblue;
+	overflow: auto;
+}
+#CollegeDetails div{
+	float: left;
+}
+#CollegeDetails img{
+	position: absolute;
+	top: 10px;
+	margin: 10px;
+	width: 125px;
+	height: 90px;
+}
+.collegelogo{
+	right: 0px; 
+	height: 70px;
+	width: 70px;
+}
+.sndtnaac{position: absolute; top: 115px; left: 15px; font-size: 12px; font-weight: bold; color: royalblue;}
+.h1{
+	float: left;
+	margin-left: 5%;
+	font-size: 18px;
+	width: 90%;
+	text-align: center;
+	font-weight: bold;
+}
+.uni{margin-top: 5px;}
+.h3{
+float: left;
+font-size: 16px;
+width: 95%;
+text-align: center;
+}
+.h5{
+float: left;
+font-size: 14px;
+width: 95%;
+text-align: center;
+}
 table {
     border-collapse: collapse;
 	border: 2px solid black; 
@@ -25,11 +66,15 @@ th, td {
 	float: left;
 	text-align: center;
 	width: 100%;
-	margin-top: 30%;
-	font-size: 15pt;
+	margin-top: 5%;
+	font-size: 24px;
 	font-weight:bold;
 }
-.CourseDetails
+#StudentDetails,#ExamCenterDetails,#Marks,#SummaryDetails,.Place,.Date,#FooterDetails{
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.CollegeDetails
 {
 	float: left;
 	text-align: center;
@@ -37,6 +82,7 @@ th, td {
 	margin-top: 21%;
 	font-size: 11px;
 	font-weight:bold;
+	border-bottom: 4px solid royalblue;
 }
 .ExamDetails
 {
@@ -44,32 +90,31 @@ th, td {
 	text-align: center;
 	width: 100%;
 	margin-top: 20%;
-	font-size: 12pt;
+	font-size: 14px;
 	font-weight:bold;
 }
 .CourseDetails
 {
+text-align: center;
 	margin-top: 35px;
-	font-size: 16px; 	
+	font-size: 20px; 	
 }
 .ExamDetails{
-	margin-top: 0px;
-	font-size: 14px;
+	margin-top: 5px;
+	font-size: 18px;
 }
 
 #StudentDetails {
 	float: left;
-	width: 100%;
-	margin-top: 10px;
-	font-size:10pt;
+	width: 96%;
+	margin-top: 20px;
+	font-size:9pt;
 	font-weight:bold;
 }
 #StudentName {
-	 font-size:12pt; 
+	 font-size:11pt; 
 	/*font-size:10pt;	*/
 	font-weight:bold;
-	
-	
 }
 .Medium {
 	float: right;
@@ -86,9 +131,10 @@ th, td {
 {
 	float: left;
 	font-size:13px;
-	width: 100%;
+	width: 96%;
 	margin-top:10px;
 	font-weight: bold;
+	margin-bottom: 10px;
 }
 #ExamCenterDetails div
 {
@@ -97,39 +143,39 @@ th, td {
 }
 
 .marksheads td { height:65px; font-size: 12px !important;}
-#Marks  {width: 100%; text-align: center;}
-#Marks td { height:62px; font-size: 14px;}
+#Marks  {width: 96%; text-align: center;}
+#Marks td { height:40px; font-size: 13px;}
 
 
 #SummaryDetails table {width: 100%; text-align: center; font-weight:bold; margin-top: -10px; margin-bottom: 10px}
 .marksdetails {
 	font-weight:bold;}
 
-.Place{margin-top: 0px;}
+.Place{margin-top: 20px;}
 .Place,.Date{
 	float: left;
 	text-align: left;
-	width: 100%;
+	width: 96%;
 	font-weight:bold;
-	font-size:10pt;
+	font-size:11pt;
 }
 .Principal
 {
 	float: left;
 	margin-top: 60px;
 	width: 40%;
-	margin-left: 2%;
+	margin-left: 6%;
 	text-align: center;
 	font-weight:bold;
-	font-size: 13px;
+	font-size: 14px;
 }
 .Controller{
-	float: right;
-	margin-top: 60px;
+
+	margin-top: 120px;
 	
 	text-align: center;
 	font-weight:bold;
-	font-size: 13px;
+	font-size: 14px;
 }
 .CollegeName{
 	float: left;
@@ -146,8 +192,9 @@ th, td {
 
 #FooterDetails{
 	float: left;
-	width: 100%;
-	margin-top: 15px;
+	width: 96%;
+	margin-top: 80px;
+	margin-bottom: 10px;
 	text-align: left;
 	font-size: 10px;
 	
@@ -161,13 +208,12 @@ th, td {
     visibility: visible;
   }
   #MarksheetContainer {
+    margin: 10px;
     position: absolute;
     left: 0;
     top: 0;
   }
 }
 	footer {page-break-after: initial;}
-
-  }
   	
 

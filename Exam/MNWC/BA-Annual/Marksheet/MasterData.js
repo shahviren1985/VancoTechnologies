@@ -1,19 +1,20 @@
 var PaperPerMarksheet = 6;
 var TotalMarks = "600";
-var MarkSheetDate = "01/06/2019";//"14/12/2015";//"02/05/2018";
+var MarkSheetDate = "10/02/2020";
 var is35Passing = true;
-var LEDGER_LAST_RECORD = 2;
 var CourseExamName = "BACHELOR OF ARTS (B.A.)";
 //var CourseExamName = "BACHELOR OF COMMERCE (B.Com) Semester-II";
-//var CourseExamName = "BACHELOR OF COMMERCE WITH ACCOUNTANCY, FINANCE AND INSURANCE Semester-I";
-//var CourseExamName = "BACHELOR OF MANAGEMENT STUDIES (B.M.S) Semester-I";
-var ExamYear = "April - 2019";//"MARCH/APRIL - 2018";
+//var CourseExamName = "BACHELOR OF COMMERCE WITH ACCOUNTANCY, FINANCE AND INSURANCE Semester - I";
+//var CourseExamName = "BACHELOR OF MANAGEMENT STUDIES (B.M.S) Semester - I";
+
+var ExamYear = "March, 2009";
 //var ExamYear = "April - 2017";
 var Medium = "ENGLISH";
 //var Medium = "GUJARATI";
 var Institution = "027";
 var Center = "008 - VILE PARLE (W)";
 var Place = "Mumbai";
+
 var PaperCodes = 
 {
 	"100124":{"PaperTitle":"TOURISM BUSINESS PAPER-I","Credits":"4"},
@@ -22,8 +23,6 @@ var PaperCodes =
 	"100252":{"PaperTitle":"OFFICE MANAGEMENT PAPER-II","Credits":"4"},
 	"110101":{"PaperTitle":"CC ENGLISH PAPER-I","Credits":"4"},
 	//"      ":{"PaperTitle":"ENGLISH CC PAPER (H.L.) EMPOWERING ENGLISH - I","Credits":"4"},
-	"145101":{"PaperTitle":"DC PAPER -I BASIC CONCEPTS GENRE OF LITERARY STUDY","Credits":"4"},
-	"145201":{"PaperTitle":"DC PAPER-II EXPLORING LITERARY STUDIES LITERARY TERMS","Credits":"4"},
 	"130100":{"PaperTitle":"FC PAPER -I HISTORY AS HERITAGE","Credits":"4"},
 	"130200":{"PaperTitle":"FC PAPER-II WOMEN IN CHANGING INDIA","Credits":"4"},
 	"140101":{"PaperTitle":"DC PAPER -I BASIC CONCEPTS GENRE OF LITERARY STUDY/ INTRODUCTION TO LITERARY STUDIES CONCEPTS & GENRE","Credits":"4"},
@@ -40,6 +39,8 @@ var PaperCodes =
 	"145110":{"PaperTitle":"DC PSYCHOLOGY PAPER-I GENERAL PSYCHOLOGY","Credits":"4"},
 	"140110":{"PaperTitle":"DC PSYCHOLOGY PAPER-I GENERAL PSYCHOLOGY - I","Credits":"4"},
 	"145111":{"PaperTitle":"SOCIOLOGY PAPER-I SOCIOLOGY OF INDIAN SOCIETY","Credits":"4"},
+	"145101":{"PaperTitle":"DC PAPER -I BASIC CONCEPTS GENRE OF LITERARY STUDY","Credits":"4"},
+	"145201":{"PaperTitle":"DC PAPER-II EXPLORING LITERARY STUDIES LITERARY TERMS","Credits":"4"},
 	"145202":{"PaperTitle":"DC GUJARATI PAPER-II ANUVADKALA ANE ANUDIT KRUTIO NO ABHYAS","Credits":"4"},
 	"145206":{"PaperTitle":"DC ECONOMICS PAPER-II PRINCIPLES OF ECONOMICS","Credits":"4"},
 	"145210":{"PaperTitle":"DC PSYCHOLOGY PAPER-II DEVELOPMENT PSYCHOLOGY","Credits":"4"},
@@ -118,6 +119,7 @@ var PaperCodes =
 	"480627":{"PaperTitle":"MANAGEMENT OF CHILD & YOUTH CENTRE (PR)","Credits":"4"},
 	"140110": {"PaperTitle":"DC PSYCHOLOGY PAPER­I GENERAL PSYCHOLOGY","Credits":"4"},
 	"140210": {"PaperTitle":"DC PSYCHOLOGY PAPER­II DEVELOPMENT PSYCHOLOGY","Credits":"4"},
+	
 	"1101":{"PaperTitle":"ENGLISH","Credits":"4"},
 	"3139":{"PaperTitle":"WOMEN IN CHANGING INDIA","Credits":"4"},
 	"3140":{"PaperTitle":"HISTORY AS HERITAGE","Credits":"4"},
@@ -125,6 +127,7 @@ var PaperCodes =
 	"4210": {"PaperTitle":"PSYCHOLOGY D.C. 2","Credits":"4"},
 	"8127": {"PaperTitle":"CHILD CARE A.C.","Credits":"4"}
 };
+
 /*{
 	"110101" : { "PaperTitle":"ENGLISH CC PAPER (H.L.) EMPOWERING ENGLISH", "Credits":"4" },
 	"130100" : { "PaperTitle":"FC PAPER I-HISTORY AS HERITAGE", "Credits":"4" },
