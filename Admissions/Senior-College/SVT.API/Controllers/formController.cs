@@ -1,38 +1,36 @@
-﻿using System;
+﻿using iTextSharp.text;
+using iTextSharp.text.pdf;
+using iTextSharp.tool.xml;
+using iTextSharp.tool.xml.css;
+using iTextSharp.tool.xml.html;
+using iTextSharp.tool.xml.parser;
+using iTextSharp.tool.xml.pipeline.css;
+using iTextSharp.tool.xml.pipeline.end;
+using iTextSharp.tool.xml.pipeline.html;
+using SVT.API.Classes;
+using SVT.Business.Model;
+using SVT.Business.Services;
+using SVT.Infrastructure;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Globalization;
 using System.IO;
 using System.IO.Compression;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Web.Http;
-using System.Web;
-using System.Web.Script.Serialization;
-using System.Threading.Tasks;
-using System.Diagnostics;
-using SVT.Business.Services;
-using SVT.Business.Model;
-using SVT.Infrastructure;
-using System.Text;
-using System.Text.RegularExpressions;
-using iTextSharp.text;
-using iTextSharp.text.pdf;
-using iTextSharp.tool.xml;
-using iTextSharp.tool.xml.html;
-using iTextSharp.tool.xml.pipeline.html;
-using iTextSharp.tool.xml.css;
-using iTextSharp.tool.xml.pipeline.end;
-using iTextSharp.tool.xml.pipeline.css;
-using iTextSharp.tool.xml.parser;
-using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Drawing.Imaging;
-using SVT.API.Classes;
-using System.Data.SqlClient;
-using System.Data;
 using System.Net.Http.Headers;
 using System.Reflection;
-using System.Globalization;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+using System.Web;
+using System.Web.Http;
+using System.Configuration;
+using System.Net;
+using System.Net.Mail;
 
 namespace SVL.API.Controllers
 {
@@ -41,33 +39,55 @@ namespace SVL.API.Controllers
         [HttpPost]
         public async Task<HttpResponseMessage> PostFormData()
         {
+            string parentSignaturePath = string.Empty;
+            string filePathLC = string.Empty;
+            string casteCertificatePath = string.Empty;
+            string gapYearCertificatePath = string.Empty;
+            string migrationCertificatePath = string.Empty;
+            string signPath=string.Empty;
+            string adharPath = string.Empty;
+
             if (!Request.Content.IsMimeMultipartContent())
             {
                 return Request.CreateResponse(HttpStatusCode.OK, "plesae enter the data in form.");
             }
+
             var message = string.Empty;
             StudentDetail studentDetail = new StudentDetail();
+            string formDta = "";
             if (!GetFormExpireDate())
             {
-                string root = HttpContext.Current.Server.MapPath("~/App_Data");
-                var provider = new MultipartFormDataStreamProvider(root);
-
                 try
                 {
-                    await Request.Content.ReadAsMultipartAsync(provider);
+                   string root = HttpContext.Current.Server.MapPath("~/App_Data");
+                   var provider = new MultipartFormDataStreamProvider(root);
+                   Logger.WriteErrorLog(formDta, "Starting reading keys...", "", "");
+                   await Request.Content.ReadAsMultipartAsync(provider);
 
-                    #region  ID
+                   if (provider == null || provider.FormData == null)
+                   {
+                       Logger.WriteErrorLog(formDta, "Provider is null", "", "");
+                   }
 
-                    if (!string.IsNullOrEmpty(provider.FormData.GetValues("Id")[0].String()))
-                    {
-                        studentDetail.Id = provider.FormData.GetValues("Id")[0].ToInteger();
-                    }
-                    else
-                    {
-                        studentDetail.DateRegistered = DateTime.Now;
-                    }
+                   string[] keys = provider.FormData.AllKeys;
+                   for (int i = 0; i < keys.Length; i++)
+                   {
+                       Logger.WriteLog(keys[i] + ": " + provider.FormData[keys[i]]);
+                       formDta += keys[i] + ": " + provider.FormData[keys[i]] + Environment.NewLine;
+                   }
 
-                    #endregion
+                   Logger.WriteLog(formDta);
+                   
+                   #region  ID
+                   if (!string.IsNullOrEmpty(provider.FormData.GetValues("Id")[0].String()))
+                   {
+                       studentDetail.Id = provider.FormData.GetValues("Id")[0].ToInteger();
+                   }
+                   else
+                   {
+                       studentDetail.DateRegistered = DateTime.Now;
+                   }
+                   #endregion
 
                     #region Get Form Data for All the Controls
 
@@ -230,6 +250,19 @@ namespace SVL.API.Controllers
                         studentDetail.MotherMiddleName = provider.FormData.GetValues("MotherMiddleName")[0].String();
                     }
 
+                    #endregion
+
+                    #region Validated HSCSeatNumber 
+                    string hscSeatNumber = provider.FormData.GetValues("HscSeatNumber")[0].String();
+                    if (string.IsNullOrEmpty(hscSeatNumber))
+                    {
+                        message = "Please enter HSC Seat Number.";
+                        return Request.CreateResponse(HttpStatusCode.Unauthorized, message);
+                    }
+                    else
+                    {
+                        studentDetail.HscSeatNumber = hscSeatNumber;
+                    }
                     #endregion
 
                     #region  Validate AadharNumber and also Assign Value if proper
@@ -832,11 +865,12 @@ namespace SVL.API.Controllers
 
                     using (ServiceContext service = new ServiceContext())
                     {
+                        try 
+                        { 
                         var id = service.Save(studentDetail);
                         if (id > 0)
                         {
                             bool markDuplicate = SetDuplicateRecord(id.ToString(), studentDetail.AadharNumber);
-
 
                             var studentData = service.SelectObject<StudentDetail>(id);
 
@@ -870,6 +904,7 @@ namespace SVL.API.Controllers
                                             imgCompress.Width = 566;
                                             imgCompress.Save(photonewpath, newpath);
                                             imgCompress.Save(photonewtThumbpath, newpath);
+                                            
                                         }
                                         studentData.Photo = photonewpath;
                                     }
@@ -912,6 +947,7 @@ namespace SVL.API.Controllers
                                             imgCompress.Save(signaturenewpath, newpath);
                                             imgCompress.Save(signaturenewThumbpath, newpath);
 
+
                                         }
                                         studentData.SignaturePath = signaturenewpath;
                                     }
@@ -926,9 +962,518 @@ namespace SVL.API.Controllers
                                 studentData.SignaturePath = provider.FormData.GetValues("hdnSignature")[0].String();
                             }
 
+                            if (provider.FileData[2] != null)
+                            {
+                                MultipartFileData signature = provider.FileData[2];
+                                if (Regex.Replace(signature.Headers.ContentDisposition.FileName.Split('.')[0], @"[^\w\d]", "") != "")
+                                {
+                                    string fsName = signature.Headers.ContentDisposition.FileName;
+                                    string[] fsPartData = fsName.Split('.');
+
+                                    if (fsPartData.Length > 1)
+                                    {
+                                        string newpath = SVT.Infrastructure.ProjectConfiguration.SignaturePath;
+                                        string extantion = Regex.Replace(fsPartData[fsPartData.Length - 1], @"[^\w\d]", "");// Regex.Replace(signature.Headers.ContentDisposition.FileName.Split('.')[1], @"[^\w\d]", "");
+                                        string signaturenewpath = id + "_" + studentData.FirstName + "_" + studentData.LastName + "_ParentSign_" + Convert.ToDateTime(studentData.DateRegistered).ToString("ddmmyyyy_hhmmss") + "." + extantion;
+                                        string signaturenewThumbpath = id + "_" + studentData.FirstName + "_" + studentData.LastName + "_ParentSign_Thumb_" + Convert.ToDateTime(studentData.DateRegistered).ToString("ddmmyyyy_hhmmss") + "." + extantion;
+                                        FileInfo f1 = new FileInfo(signature.LocalFileName);
+                                        if (f1.Exists)
+                                        {
+                                            if (!Directory.Exists(newpath))
+                                            {
+                                                Directory.CreateDirectory(newpath);
+                                            }
+                                            ImageCompress imgCompress = ImageCompress.GetImageCompressObject;
+                                            imgCompress.GetImage = new System.Drawing.Bitmap(signature.LocalFileName);
+                                            imgCompress.Height = 566;
+                                            imgCompress.Width = 566;
+                                            imgCompress.Save(signaturenewpath, newpath);
+                                            signPath = signaturenewpath;
+                                            //imgCompress.Save(signaturenewThumbpath, newpath);
+
+
+                                        }
+                                        parentSignaturePath = signaturenewpath;
+                                    }
+                                }
+                                else
+                                {
+                                    parentSignaturePath = provider.FormData.GetValues("hdnSignature")[0].String();
+                                }
+                            }
+                            else
+                            {
+                                parentSignaturePath = provider.FormData.GetValues("hdnParentSignature")[0].String();
+                            }
                             #endregion
 
                             var repatedId = service.Save(studentData);
+                            //string FolderId = provider.FormData.GetValues("FolderId")[0].String(); ;
+                            //save pdf
+
+                            //Directory.Move(HttpContext.Current.Server.MapPath("~/data/PDF/" + FolderId), HttpContext.Current.Server.MapPath("~/data/PDF/" + repatedId));
+                            if (!Directory.Exists(HttpContext.Current.Server.MapPath("~/data/PDF/" + repatedId)))
+                            {
+                                Directory.CreateDirectory(HttpContext.Current.Server.MapPath("~/data/PDF/" + repatedId));
+                            }
+
+                            //--saving parent signature
+                            StudentPdfDetail studentDoc1 = new StudentPdfDetail();
+                            studentDoc1.PDFPath = "Signature/" + parentSignaturePath;
+                            studentDoc1.StudentId = repatedId;
+                            var docId = service.SavePDFDetails(studentDoc1);
+                            //--saving parent signature
+
+                            //--Aadhar
+                            /*var postedFile = HttpContext.Current.Request.Files[3];
+                            var filePath = HttpContext.Current.Server.MapPath("~/data/PDF/" + repatedId + "/" + postedFile.FileName);
+                            postedFile.SaveAs(filePath);*/
+                            string filePath = string.Empty, filePathHSC = string.Empty, filePathSSC = string.Empty;
+                            string filePathRation = string.Empty, filePathESuvidha = string.Empty, filePathDC = string.Empty;
+                            string filePathUndertaking = string.Empty;
+                            string filePathEligibility = string.Empty;
+                            try
+                            {
+                                try
+                                {
+                                    StudentPdfDetail studentDocAdhar = new StudentPdfDetail();
+                                    if (string.IsNullOrEmpty(provider.FormData.GetValues("AadharFileName")[0].String()))
+                                    {
+                                        studentDocAdhar.PDFPath = provider.FormData.GetValues("hdnAadharCardURL")[0].String();
+                                        filePath = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + provider.FormData.GetValues("hdnAadharCardURL")[0].String();
+
+                                    }
+                                    else 
+                                    {
+                                        studentDocAdhar.PDFPath = repatedId + "/" + provider.FormData.GetValues("AadharFileName")[0].String();
+                                        File.Move(HttpContext.Current.Server.MapPath(@"~/data/temp/" + provider.FormData.GetValues("AadharFileName")[0].String()), HttpContext.Current.Server.MapPath("~/data/PDF/" + repatedId + "/" + provider.FormData.GetValues("AadharFileName")[0].String()));
+                                        filePath = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + repatedId + "/" + provider.FormData.GetValues("AadharFileName")[0].String();
+
+                                    }
+                                    studentDocAdhar.StudentId = repatedId;
+                                    var docIdAdhar = service.SavePDFDetails(studentDocAdhar);
+                                  
+                                }
+                                catch(Exception ex)
+                                {
+
+                                        string sName = provider.FormData.GetValues("FirstName")[0].String() + "-" + provider.FormData.GetValues("LastName")[0].String();
+                                        Logger.WriteErrorLog(formDta, sName, ex.Message, ex.StackTrace);
+                                        
+
+                                    
+                                }
+
+
+                                //--HSC
+                                /*var postedFileHSC = HttpContext.Current.Request.Files[4];
+                                var filePathHSC = HttpContext.Current.Server.MapPath("~/data/PDF/" + repatedId + "/" + postedFileHSC.FileName);
+                                postedFileHSC.SaveAs(filePathHSC);*/
+
+                                try
+                                {
+                                    StudentPdfDetail studentDocHSC = new StudentPdfDetail();
+                                    if (string.IsNullOrEmpty(provider.FormData.GetValues("HscFileName")[0].String()))
+                                    {
+                                        studentDocHSC.PDFPath = provider.FormData.GetValues("hdnHSCMarksheetURL")[0].String();
+                                        filePathHSC = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + provider.FormData.GetValues("hdnHSCMarksheetURL")[0].String();
+
+                                    }
+                                    else
+                                    {
+                                        studentDocHSC.PDFPath = repatedId + "/" + provider.FormData.GetValues("HscFileName")[0].String();
+                                        File.Move(HttpContext.Current.Server.MapPath(@"~/data/temp/" + provider.FormData.GetValues("HscFileName")[0].String()), HttpContext.Current.Server.MapPath("~/data/PDF/" + repatedId + "/" + provider.FormData.GetValues("HscFileName")[0].String()));
+                                        filePathHSC = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + repatedId + "/" + provider.FormData.GetValues("HscFileName")[0].String();
+
+                                    }
+                                    studentDocHSC.StudentId = repatedId;
+                                    var docIdHsc = service.SavePDFDetails(studentDocHSC);
+                                }
+                                catch(Exception ex)
+                                {
+                                        string sName = provider.FormData.GetValues("FirstName")[0].String() + "-" + provider.FormData.GetValues("LastName")[0].String();
+                                        Logger.WriteErrorLog(formDta, sName, ex.Message, ex.StackTrace);
+                                        
+                                    }
+                                //--HSC
+
+                                //--SSC
+                                /*var postedFileSSC = HttpContext.Current.Request.Files[5];
+                                var filePathSSC = HttpContext.Current.Server.MapPath("~/data/PDF/" + repatedId + "/" + postedFileSSC.FileName);
+                                postedFileSSC.SaveAs(filePathSSC);*/
+                                try
+                                {
+                                    StudentPdfDetail studentDocSSC = new StudentPdfDetail();
+                                    if (string.IsNullOrEmpty(provider.FormData.GetValues("SscFileName")[0].String()))
+                                    {
+                                        studentDocSSC.PDFPath = provider.FormData.GetValues("hdnSSCMarksheetURL")[0].String();
+                                        filePathSSC = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + provider.FormData.GetValues("hdnSSCMarksheetURL")[0].String();
+
+                                    }
+                                    else
+                                    {
+                                        studentDocSSC.PDFPath = repatedId + "/" + provider.FormData.GetValues("SscFileName")[0].String();
+                                        File.Move(HttpContext.Current.Server.MapPath(@"~/data/temp/" + provider.FormData.GetValues("SscFileName")[0].String()), HttpContext.Current.Server.MapPath("~/data/PDF/" + repatedId + "/" + provider.FormData.GetValues("SscFileName")[0].String()));
+                                        filePathSSC = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + repatedId + "/" + provider.FormData.GetValues("SscFileName")[0].String();
+
+                                    }
+                                    studentDocSSC.StudentId = repatedId;
+                                    var docIdSsc = service.SavePDFDetails(studentDocSSC);
+                                }
+                                catch(Exception ex)
+                                {
+                                        string sName = provider.FormData.GetValues("FirstName")[0].String() + "-" + provider.FormData.GetValues("LastName")[0].String();
+                                        Logger.WriteErrorLog(formDta, sName, ex.Message, ex.StackTrace);
+                                        
+                                }
+                                //--SSC
+
+
+                                //--LC
+                                /*var postedFileLC = HttpContext.Current.Request.Files[6];
+                                var filePathLC = HttpContext.Current.Server.MapPath("~/data/PDF/" + repatedId + "/" + postedFileLC.FileName);
+                                postedFileLC.SaveAs(filePathLC);*/
+                                try
+                                {
+                                    StudentPdfDetail studentDocLC = new StudentPdfDetail();
+                                    if (string.IsNullOrEmpty(provider.FormData.GetValues("LeavingFileName")[0].String()))
+                                    {
+                                        studentDocLC.PDFPath = provider.FormData.GetValues("hdnLeavingCertificateURL")[0].String();
+                                        filePathLC = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + provider.FormData.GetValues("hdnLeavingCertificateURL")[0].String();
+
+                                    }
+                                    else
+                                    {
+                                        studentDocLC.PDFPath = repatedId + "/" + provider.FormData.GetValues("LeavingFileName")[0].String();
+                                        File.Move(HttpContext.Current.Server.MapPath(@"~/data/temp/" + provider.FormData.GetValues("LeavingFileName")[0].String()), HttpContext.Current.Server.MapPath("~/data/PDF/" + repatedId + "/" + provider.FormData.GetValues("LeavingFileName")[0].String()));
+                                        filePathLC = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + repatedId + "/" + provider.FormData.GetValues("LeavingFileName")[0].String();
+
+                                    }
+                                    
+                                    studentDocLC.StudentId = repatedId;
+                                    var docIdLc = service.SavePDFDetails(studentDocLC);
+                                }
+                                catch(Exception ex)
+                                {
+                                        string sName = provider.FormData.GetValues("FirstName")[0].String() + "-" + provider.FormData.GetValues("LastName")[0].String();
+                                        Logger.WriteErrorLog(formDta, sName, ex.Message, ex.StackTrace);
+                                        
+                                    }
+                                //--LC
+
+                                //--Caste certificate
+                                if (provider.FormData.GetValues("Category")[0].String() == "Reserved")
+                                {
+                                    /*var postedFileCastCertificate = HttpContext.Current.Request.Files[7];
+                                    var filePathCS = HttpContext.Current.Server.MapPath("~/data/PDF/" + repatedId + "/" + postedFileCastCertificate.FileName);
+                                    postedFileCastCertificate.SaveAs(filePathCS);*/
+                                    try
+                                    {
+                                        StudentPdfDetail studentDocCS = new StudentPdfDetail();
+                                        if (string.IsNullOrEmpty(provider.FormData.GetValues("CasteCertificateFileName")[0].String()))
+                                        {
+                                            studentDocCS.PDFPath = provider.FormData.GetValues("hdnCasteCertificateURL")[0].String();
+                                            casteCertificatePath = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + provider.FormData.GetValues("hdnCasteCertificateURL")[0].String();
+
+                                        }
+                                        else
+                                        {
+                                            studentDocCS.PDFPath = repatedId + "/" + provider.FormData.GetValues("CasteCertificateFileName")[0].String();
+                                            File.Move(HttpContext.Current.Server.MapPath(@"~/data/temp/" + provider.FormData.GetValues("CasteCertificateFileName")[0].String()), HttpContext.Current.Server.MapPath("~/data/PDF/" + repatedId + "/" + provider.FormData.GetValues("CasteCertificateFileName")[0].String()));
+                                            casteCertificatePath = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + repatedId + "/" + provider.FormData.GetValues("CasteCertificateFileName")[0].String();
+
+                                        }
+                                        
+                                        studentDocCS.StudentId = repatedId;
+                                        var docIdCs = service.SavePDFDetails(studentDocCS);
+                                       }
+                                    catch(Exception ex)
+                                    {
+                                            string sName = provider.FormData.GetValues("FirstName")[0].String() + "-" + provider.FormData.GetValues("LastName")[0].String();
+                                            Logger.WriteErrorLog(formDta, sName, ex.Message, ex.StackTrace);
+                                            
+                                        }
+                                }
+                                //--Caste certificate
+
+
+                                //--Gap Year
+                                if (Convert.ToInt16(provider.FormData.GetValues("YearLastExamPassed")[0]) != DateTime.Now.Year)
+                                {
+                                    /*var postedGapCertificate = HttpContext.Current.Request.Files[8];
+
+                                    var filePathGS = HttpContext.Current.Server.MapPath("~/data/PDF/" + repatedId + "/" + postedGapCertificate.FileName);
+                                    postedGapCertificate.SaveAs(filePathGS);*/
+                                    try
+                                    {
+                                        StudentPdfDetail studentDocGS = new StudentPdfDetail();
+                                        if (string.IsNullOrEmpty(provider.FormData.GetValues("GapCertificateFileName")[0].String()))
+                                        {
+                                            studentDocGS.PDFPath = provider.FormData.GetValues("hdnGapCertificateURL")[0].String();
+                                            gapYearCertificatePath = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + provider.FormData.GetValues("hdnGapCertificateURL")[0].String();
+
+                                        }
+                                        else
+                                        {
+                                            studentDocGS.PDFPath = repatedId + "/" + provider.FormData.GetValues("GapCertificateFileName")[0].String();
+                                            File.Move(HttpContext.Current.Server.MapPath(@"~/data/temp/" + provider.FormData.GetValues("GapCertificateFileName")[0].String()), HttpContext.Current.Server.MapPath("~/data/PDF/" + repatedId + "/" + provider.FormData.GetValues("GapCertificateFileName")[0].String()));
+                                            gapYearCertificatePath = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + repatedId + "/" + provider.FormData.GetValues("GapCertificateFileName")[0].String();
+
+                                        }
+                                        
+                                        studentDocGS.StudentId = repatedId;
+                                        var docIdCs = service.SavePDFDetails(studentDocGS);
+                                    }
+                                    catch(Exception ex)
+                                    {
+                                            string sName = provider.FormData.GetValues("FirstName")[0].String() + "-" + provider.FormData.GetValues("LastName")[0].String();
+                                            Logger.WriteErrorLog(formDta, sName, ex.Message, ex.StackTrace);
+                                            
+                                        }
+                                    
+                                }
+                                //--Gap Year
+
+                                //--Migration certificate
+                                if (Convert.ToString(provider.FormData.GetValues("drpDwnState")[0]) != "Maharashtra")
+                                {
+                                    /*var postedMigrationCertificate = HttpContext.Current.Request.Files[9];
+
+                                    var filePathMS = HttpContext.Current.Server.MapPath("~/data/PDF/" + repatedId + "/" + postedMigrationCertificate.FileName);
+                                    postedMigrationCertificate.SaveAs(filePathMS);*/
+                                    try
+                                    {
+                                        StudentPdfDetail studentDocMS = new StudentPdfDetail();
+                                        if (string.IsNullOrEmpty(provider.FormData.GetValues("MigrationCertificateFileName")[0].String()))
+                                        {
+                                            studentDocMS.PDFPath = provider.FormData.GetValues("hdnMigrationCertificateURL")[0].String();
+                                            migrationCertificatePath = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + provider.FormData.GetValues("hdnMigrationCertificateURL")[0].String();
+
+                                        }
+                                        else
+                                        {
+                                            studentDocMS.PDFPath = repatedId + "/" + provider.FormData.GetValues("MigrationCertificateFileName")[0].String();
+                                            File.Move(HttpContext.Current.Server.MapPath(@"~/data/temp/" + provider.FormData.GetValues("MigrationCertificateFileName")[0].String()), HttpContext.Current.Server.MapPath("~/data/PDF/" + repatedId + "/" + provider.FormData.GetValues("MigrationCertificateFileName")[0].String()));
+                                            migrationCertificatePath = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + repatedId + "/" + provider.FormData.GetValues("MigrationCertificateFileName")[0].String(); ; ;
+
+                                        }
+                                        
+                                        studentDocMS.StudentId = repatedId;
+                                        var docIdCs = service.SavePDFDetails(studentDocMS);
+                                    }
+                                    catch(Exception ex)
+                                    {
+                                            string sName = provider.FormData.GetValues("FirstName")[0].String() + "-" + provider.FormData.GetValues("LastName")[0].String();
+                                            Logger.WriteErrorLog(formDta, sName, ex.Message, ex.StackTrace);
+                                            
+                                        }
+                                    
+                                }//--Migration certificate
+                                
+                                if (provider.FormData.GetValues("DisabilityCertificateFileName")[0] != null && !string.IsNullOrEmpty(provider.FormData.GetValues("DisabilityCertificateFileName")[0].String()))
+                                {
+                                    try
+                                    {
+                                        StudentPdfDetail studentDocDC = new StudentPdfDetail();
+                                        if (string.IsNullOrEmpty(provider.FormData.GetValues("DisabilityCertificateFileName")[0].String()))
+                                        {
+                                            studentDocDC.PDFPath = provider.FormData.GetValues("hdnDisabilityCertificateURL")[0].String();
+                                            filePathDC = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + provider.FormData.GetValues("hdnDisabilityCertificateURL")[0].String();
+
+                                        }
+                                        else
+                                        {
+                                            studentDocDC.PDFPath = repatedId + "/" + provider.FormData.GetValues("DisabilityCertificateFileName")[0].String();
+                                            File.Move(HttpContext.Current.Server.MapPath(@"~/data/temp/" + provider.FormData.GetValues("DisabilityCertificateFileName")[0].String()), HttpContext.Current.Server.MapPath("~/data/PDF/" + repatedId + "/" + provider.FormData.GetValues("DisabilityCertificateFileName")[0].String()));
+                                            filePathDC = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + repatedId + "/" + provider.FormData.GetValues("DisabilityCertificateFileName")[0].String();
+
+                                        }
+                                        
+                                        studentDocDC.StudentId = repatedId;
+                                        var docIdDc = service.SavePDFDetails(studentDocDC);
+                                        }
+                                    catch(Exception ex)
+                                    {
+                                            string sName = provider.FormData.GetValues("FirstName")[0].String() + "-" + provider.FormData.GetValues("LastName")[0].String();
+                                            Logger.WriteErrorLog(formDta, sName, ex.Message, ex.StackTrace);
+                                           
+                                        }
+                                    
+                                }// Disability Certificate
+                                else
+                                {
+                                    if (!string.IsNullOrEmpty(provider.FormData.GetValues("hdnDisabilityCertificateURL")[0].String()))
+                                    {
+                                        filePathDC = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + provider.FormData.GetValues("hdnDisabilityCertificateURL")[0].String();
+                                    }
+
+                                }
+                                if (provider.FormData.GetValues("RationCardFileName")[0] != null && !string.IsNullOrEmpty(provider.FormData.GetValues("RationCardFileName")[0].String()))
+                                {
+                                    try
+                                    {
+                                        StudentPdfDetail studentDocRC = new StudentPdfDetail();
+                                        if (string.IsNullOrEmpty(provider.FormData.GetValues("RationCardFileName")[0].String()))
+                                        {
+                                            studentDocRC.PDFPath = provider.FormData.GetValues("hdnRationCardUrl")[0].String();
+                                            filePathRation = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + provider.FormData.GetValues("hdnRationCardUrl")[0].String();
+
+                                        }
+                                        else
+                                        {
+                                            studentDocRC.PDFPath = repatedId + "/" + provider.FormData.GetValues("RationCardFileName")[0].String();
+                                            File.Move(HttpContext.Current.Server.MapPath(@"~/data/temp/" + provider.FormData.GetValues("RationCardFileName")[0].String()), HttpContext.Current.Server.MapPath("~/data/PDF/" + repatedId + "/" + provider.FormData.GetValues("RationCardFileName")[0].String()));
+                                            filePathRation = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + repatedId + "/" + provider.FormData.GetValues("RationCardFileName")[0].String();
+
+                                        }
+
+                                        studentDocRC.StudentId = repatedId;
+                                        var docIdRc = service.SavePDFDetails(studentDocRC);
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                            string sName = provider.FormData.GetValues("FirstName")[0].String() + "-" + provider.FormData.GetValues("LastName")[0].String();
+                                            Logger.WriteErrorLog(formDta, sName, ex.Message, ex.StackTrace);
+                                            
+                                        }
+
+                                }// Ration Card
+                                else 
+                                {
+                                    if (!string.IsNullOrEmpty(provider.FormData.GetValues("hdnRationCardUrl")[0].String())) 
+                                    {
+                                        filePathRation = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + provider.FormData.GetValues("hdnRationCardUrl")[0].String();
+                                    }
+                                    
+                                }
+                                if (provider.FormData.GetValues("UndertakingFileName")[0] != null && !string.IsNullOrEmpty(provider.FormData.GetValues("UndertakingFileName")[0].String()))
+                                {
+                                    try
+                                    {
+                                        StudentPdfDetail studentDocUndertaking = new StudentPdfDetail();
+                                        if (string.IsNullOrEmpty(provider.FormData.GetValues("UndertakingFileName")[0].String()))
+                                        {
+                                            studentDocUndertaking.PDFPath = provider.FormData.GetValues("hdnUnderTakingUrl")[0].String();
+                                            filePathUndertaking = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + provider.FormData.GetValues("hdnUnderTakingUrl")[0].String();
+
+                                        }
+                                        else
+                                        {
+                                            studentDocUndertaking.PDFPath = repatedId + "/" + provider.FormData.GetValues("UndertakingFileName")[0].String();
+                                            File.Move(HttpContext.Current.Server.MapPath(@"~/data/temp/" + provider.FormData.GetValues("UndertakingFileName")[0].String()), HttpContext.Current.Server.MapPath("~/data/PDF/" + repatedId + "/" + provider.FormData.GetValues("UndertakingFileName")[0].String()));
+                                            filePathUndertaking = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + repatedId + "/" + provider.FormData.GetValues("UndertakingFileName")[0].String();
+
+                                        }
+                                        
+                                        studentDocUndertaking.StudentId = repatedId;
+                                        var docIdRc = service.SavePDFDetails(studentDocUndertaking);
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                            string sName = provider.FormData.GetValues("FirstName")[0].String() + "-" + provider.FormData.GetValues("LastName")[0].String();
+                                            Logger.WriteErrorLog(formDta, sName, ex.Message, ex.StackTrace);
+                                            
+                                        }
+
+                                }// Undertaking
+                                else
+                                {
+                                    if (!string.IsNullOrEmpty(provider.FormData.GetValues("hdnUnderTakingUrl")[0].String()))
+                                    {
+                                        filePathUndertaking = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + provider.FormData.GetValues("hdnUnderTakingUrl")[0].String();
+                                    }
+
+                                }
+
+                                if (provider.FormData.GetValues("EligibilityFileName")[0] != null && !string.IsNullOrEmpty(provider.FormData.GetValues("EligibilityFileName")[0].String()))
+                                    {
+                                        try
+                                        {
+                                            StudentPdfDetail studentDocEligibility = new StudentPdfDetail();
+                                            if (string.IsNullOrEmpty(provider.FormData.GetValues("EligibilityFileName")[0].String()))
+                                            {
+                                                studentDocEligibility.PDFPath = provider.FormData.GetValues("hdnEligibilityUrl")[0].String();
+                                                filePathEligibility = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + provider.FormData.GetValues("hdnEligibilityUrl")[0].String();
+
+                                            }
+                                            else
+                                            {
+                                                studentDocEligibility.PDFPath = repatedId + "/" + provider.FormData.GetValues("EligibilityFileName")[0].String();
+                                                File.Move(HttpContext.Current.Server.MapPath(@"~/data/temp/" + provider.FormData.GetValues("EligibilityFileName")[0].String()), HttpContext.Current.Server.MapPath("~/data/PDF/" + repatedId + "/" + provider.FormData.GetValues("EligibilityFileName")[0].String()));
+                                                filePathEligibility = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + repatedId + "/" + provider.FormData.GetValues("EligibilityFileName")[0].String();
+
+                                            }
+
+                                            studentDocEligibility.StudentId = repatedId;
+                                            var docIdRc = service.SavePDFDetails(studentDocEligibility);
+                                        }
+                                        catch (Exception ex)
+                                        {
+                                            string sName = provider.FormData.GetValues("FirstName")[0].String() + "-" + provider.FormData.GetValues("LastName")[0].String();
+                                            Logger.WriteErrorLog(formDta, sName, ex.Message, ex.StackTrace);
+
+                                        }
+
+                                    }// Undertaking
+                                    else
+                                    {
+                                        if (!string.IsNullOrEmpty(provider.FormData.GetValues("hdnEligibilityUrl")[0].String()))
+                                        {
+                                            filePathEligibility = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + provider.FormData.GetValues("hdnEligibilityUrl")[0].String();
+                                        }
+
+                                    }
+
+                                if (provider.FormData.GetValues("ESuvidhaTicketFileName")[0] != null && !string.IsNullOrEmpty(provider.FormData.GetValues("ESuvidhaTicketFileName")[0].String()))
+                                {
+                                    try
+                                    {
+                                        StudentPdfDetail studentDocET = new StudentPdfDetail();
+                                        if (string.IsNullOrEmpty(provider.FormData.GetValues("ESuvidhaTicketFileName")[0].String()))
+                                        {
+                                            studentDocET.PDFPath = provider.FormData.GetValues("hdnSNDTUrl")[0].String();
+                                            filePathESuvidha = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + provider.FormData.GetValues("hdnSNDTUrl")[0].String();
+
+                                        }
+                                        else
+                                        {
+                                            studentDocET.PDFPath = repatedId + "/" + provider.FormData.GetValues("ESuvidhaTicketFileName")[0].String();
+                                            File.Move(HttpContext.Current.Server.MapPath(@"~/data/temp/" + provider.FormData.GetValues("ESuvidhaTicketFileName")[0].String()), HttpContext.Current.Server.MapPath("~/data/PDF/" + repatedId + "/" + provider.FormData.GetValues("ESuvidhaTicketFileName")[0].String()));
+                                            filePathESuvidha = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + repatedId + "/" + provider.FormData.GetValues("ESuvidhaTicketFileName")[0].String();
+
+                                        }
+                                        
+                                        studentDocET.StudentId = repatedId;
+                                        var docIdRc = service.SavePDFDetails(studentDocET);
+                                        }
+                                    catch(Exception ex)
+                                    {
+                                            string sName = provider.FormData.GetValues("FirstName")[0].String() + "-" + provider.FormData.GetValues("LastName")[0].String();
+                                            Logger.WriteErrorLog(formDta, sName, ex.Message, ex.StackTrace);
+                                            
+                                        }
+                                    
+                                }// ESuvidha Ticket
+                                else
+                                {
+                                    if (!string.IsNullOrEmpty(provider.FormData.GetValues("hdnSNDTUrl")[0].String()))
+                                    {
+                                        filePathESuvidha = ConfigurationManager.AppSettings["BASE_URL"] + "data/PDF/" + provider.FormData.GetValues("hdnSNDTUrl")[0].String();
+                                    }
+
+                                }
+                            }
+                            catch(Exception ex)
+                            {
+                                    string sName = provider.FormData.GetValues("FirstName")[0].String() + "-" + provider.FormData.GetValues("LastName")[0].String();
+                                        Logger.WriteErrorLog(formDta, sName, ex.Message, ex.StackTrace);
+                                    
+                                }
+                            
+
+                            //save pdf
+
+
                             if (studentDetail.IsSubmitted == false)
                             {
                                 var encryptedId = SVT.Infrastructure.EncryptionDecryption.GetEncrypt(id.ToString());
@@ -936,7 +1481,7 @@ namespace SVL.API.Controllers
                             }
                             else
                             {
-                                DownloadPDF(studentData);
+                                DownloadPDF(studentData,signPath,filePath,filePathHSC,filePathSSC, filePathLC,casteCertificatePath,gapYearCertificatePath,migrationCertificatePath, filePathDC, filePathRation,filePathESuvidha, filePathUndertaking);
                                 string path = "data/PDF/" + id + "_" + studentData.FirstName + "_" + studentData.LastName + "_" + Convert.ToDateTime(studentData.DateRegistered).ToString("ddmmyyyy_hhmmss") + ".pdf";
                                 return Request.CreateResponse(HttpStatusCode.OK, path + ":~" + id);
                             }
@@ -946,22 +1491,32 @@ namespace SVL.API.Controllers
                             message = "An error occurred in code.";
                             return Request.CreateResponse(HttpStatusCode.Unauthorized, message);
                         }
+                        }
+                        catch (Exception ex)
+                        {
+                            string sName = provider.FormData.GetValues("FirstName")[0].String() + "-" + provider.FormData.GetValues("LastName")[0].String();
+                            Logger.WriteErrorLog(formDta, sName, ex.Message, ex.StackTrace);
+                            throw ex;
+
+                        }
                     }
                     #endregion
                 }
                 catch (System.Exception e)
                 {
+                    //string sName = provider.FormData.GetValues("FirstName")[0].String() + "-" + provider.FormData.GetValues("LastName")[0].String();
+                    Logger.WriteErrorLog(formDta, "Parent Error Block",e.Message,e.StackTrace);
                     return Request.CreateErrorResponse(HttpStatusCode.InternalServerError, e.Message + e.StackTrace);
                 }
                 finally
                 {
-                    string[] files = Directory.GetFiles(root);
+                    /*string[] files = Directory.GetFiles(root);
                     foreach (string file in files)
                     {
                         FileInfo fi = new FileInfo(file);
                         if (fi.LastAccessTime < DateTime.Now.AddDays(-1))
                             fi.Delete();
-                    }
+                    }*/
                 }
             }
             else
@@ -1004,14 +1559,31 @@ namespace SVL.API.Controllers
             {
                 using (ServiceContext service = new ServiceContext())
                 {
-                    if (id != null)
+                    int SId = id.ToInteger();
+                    if (SId<1)
                     {
                         var newid = SVT.Infrastructure.EncryptionDecryption.GetDecrypt(id);
                         studentDetail.Id = newid.ToInteger();
                     }
+                    else
+                    studentDetail.Id = id.ToInteger();
+
                     var student = service.Search(studentDetail, 1, null, null).FirstOrDefault();
 
                     student.StudentPdfURL = "data/PDF/" + student.Id + "_" + student.FirstName + "_" + student.LastName + "_" + Convert.ToDateTime(student.DateRegistered).ToString("ddmmyyyy_hhmmss") + ".pdf";
+                    student.ParentSignaturePath = GetDocPath(student.Id,"parentsign");
+                    student.AadharCardURL= GetDocPath(student.Id, "aadhar");
+                    student.HSCMarksheetURL = GetDocPath(student.Id, "hsc");
+                    student.SSCMarksheetURL = GetDocPath(student.Id, "ssc");
+                    student.LeavingCertificateURL= GetDocPath(student.Id, "leaving");
+                    student.CasteCertificateURL = GetDocPath(student.Id, "caste");
+                    student.GapCertificateURL = GetDocPath(student.Id, "gap");
+                    student.MigrationCertificateURL = GetDocPath(student.Id, "migration");
+                    student.DisabilityCertificateURL = GetDocPath(student.Id, "disability");
+                    student.RationCardUrl= GetDocPath(student.Id, "ration");
+                    student.SNDTUrl = GetDocPath(student.Id, "esuvidha");
+                    student.EligibilityUrl = GetDocPath(student.Id, "eligibility");
+                    student.UnderTakingUrl = GetDocPath(student.Id, "undertaking");
                     return student;
                 }
             }
@@ -1074,7 +1646,10 @@ namespace SVL.API.Controllers
                         selectedvalue.LastName = student.LastName;
                         selectedvalue.EncryptedId = SVT.Infrastructure.EncryptionDecryption.GetEncrypt(selectedvalue.Id.ToString());
                         selectedvalue.StudentPdfURL = "data/Pdf/" + student.Id + "_" + student.FirstName + "_" + student.LastName + "_" + Convert.ToDateTime(student.DateRegistered).ToString("ddmmyyyy_hhmmss") + ".pdf";
-
+                        selectedvalue.Category = student.Category;
+                        selectedvalue.Caste = student.Caste;
+                        selectedvalue.IsNRIStudent = student.IsNRIStudent;
+                        selectedvalue.IsNRI= student.IsNRI;
                         selectedvalue.CourseAdmittedRound1 = student.CourseAdmittedRound1;
                         selectedvalue.CourseAdmittedRound2 = student.CourseAdmittedRound2;
                         selectedvalue.CourseAdmittedRound3 = student.CourseAdmittedRound3;
@@ -1088,7 +1663,7 @@ namespace SVL.API.Controllers
             }
             return Request.CreateResponse(HttpStatusCode.OK, searchstudentDetail);
         }
-
+                                                                                                                                                                            
         [HttpGet]
         public HttpResponseMessage GetReport()
         {
@@ -1096,10 +1671,24 @@ namespace SVL.API.Controllers
             return Request.CreateResponse(HttpStatusCode.OK, "Report generated successfully");
         }
 
-        public static void DownloadPDF(StudentDetail studentDetailModel)
+        public static void DownloadPDF(StudentDetail studentDetailModel, string parentSignPath, string adharPath, string hscPath, string sscPath, string leavinCertificatePath, string casteCertificatePath, string gapYearCertificatePath, string migrationCertificatePath, string disabilityCertificatePath, string rationCardPath, string esuvidhaPath, string undertaking)
         {
+            string _parentSignPath = String.IsNullOrEmpty(parentSignPath) ? "-" : parentSignPath;
+            string _adharPath = String.IsNullOrEmpty(adharPath) ? "-" : adharPath;
+            string _hscPath = String.IsNullOrEmpty(hscPath) ? "-" : hscPath;
+            string _sscPath = String.IsNullOrEmpty(sscPath) ? "-" : sscPath;
+            string _leavinCertificatePath = String.IsNullOrEmpty(leavinCertificatePath) ? "-" : leavinCertificatePath;
+            string _casteCertificatePath = String.IsNullOrEmpty(casteCertificatePath) ? "-" : casteCertificatePath;
+            string _gapYearCertificatePath = String.IsNullOrEmpty(gapYearCertificatePath) ? "-" : gapYearCertificatePath;
+            string _migrationCertificatePath = String.IsNullOrEmpty(migrationCertificatePath) ? "-" : migrationCertificatePath;
+            string _rationCardPath = String.IsNullOrEmpty(rationCardPath) ? "-" : rationCardPath;
+            string _eSuvidhaPath = String.IsNullOrEmpty(esuvidhaPath) ? "-" : esuvidhaPath;
+            string _disabilityCertificatePath = String.IsNullOrEmpty(disabilityCertificatePath) ? "-" : disabilityCertificatePath;
+            string _undertaking = String.IsNullOrEmpty(undertaking) ? "-" : undertaking;
+
             string templateName = studentDetailModel.IsHostelRequired == true ? "~/Templates/PDFHtmlHostel.html" : "~/Templates/PDFHtml.html";
             string HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath(templateName));
+            TimeZoneInfo INDIAN_ZONE = TimeZoneInfo.FindSystemTimeZoneById("India Standard Time");
 
             if (studentDetailModel != null)
             {
@@ -1114,7 +1703,8 @@ namespace SVL.API.Controllers
                 HTMLContent = HTMLContent.Replace("{{ Firstname }}", studentDetailModel.FirstName);
                 HTMLContent = HTMLContent.Replace("{{ Middlename }}", studentDetailModel.FatherName);
                 HTMLContent = HTMLContent.Replace("{{ Mothername }}", studentDetailModel.MotherName);
-
+                HTMLContent = HTMLContent.Replace("{{ DateTime }}", TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, INDIAN_ZONE).ToString("dd/MM/yyyy HH:mm:ss"));
+                HTMLContent = HTMLContent.Replace("{{ HSCSeatNumber }}", studentDetailModel.HscSeatNumber);
                 // update it
                 HTMLContent = HTMLContent.Replace("{{ Specialization }}", "");
                 HTMLContent = HTMLContent.Replace("{{ Incharge }}", "");
@@ -1370,16 +1960,22 @@ namespace SVL.API.Controllers
 
                 #endregion
 
-                HTMLContent = HTMLContent.Replace("{{ AFirst }}", "");
-                HTMLContent = HTMLContent.Replace("{{ ASecond }}", "");
+                HTMLContent = HTMLContent.Replace("{{ AadharLink }}", _adharPath);
+
+                HTMLContent = HTMLContent.Replace("{{ AFirst }}", _hscPath);
+                HTMLContent = HTMLContent.Replace("{{ ASecond }}", _leavinCertificatePath);
                 HTMLContent = HTMLContent.Replace("{{ AThird }}", "");
-                HTMLContent = HTMLContent.Replace("{{ AFourth }}", "");
-                HTMLContent = HTMLContent.Replace("{{ AFifth }}", "");
-                HTMLContent = HTMLContent.Replace("{{ ASixth }}", "");
+                HTMLContent = HTMLContent.Replace("{{ AFourth }}", _gapYearCertificatePath);
+                HTMLContent = HTMLContent.Replace("{{ AFifth }}", _migrationCertificatePath);
+                HTMLContent = HTMLContent.Replace("{{ ASixth }}", _hscPath);
                 HTMLContent = HTMLContent.Replace("{{ ASeventh }}", "");
-                HTMLContent = HTMLContent.Replace("{{ AEighth }}", "");
+                HTMLContent = HTMLContent.Replace("{{ AEighth }}", _casteCertificatePath);
                 HTMLContent = HTMLContent.Replace("{{ ANinth }}", "");
-                HTMLContent = HTMLContent.Replace("{{ ATenth }}", "");
+                HTMLContent = HTMLContent.Replace("{{ ATenth }}", _rationCardPath);
+                HTMLContent = HTMLContent.Replace("{{ AEleven }}", _eSuvidhaPath);
+                HTMLContent = HTMLContent.Replace("{{ ATwelve }}", _disabilityCertificatePath);
+                HTMLContent = HTMLContent.Replace("{{ AThirteen }}", _undertaking);
+
 
                 #region Set Course Preference Value
 
@@ -1566,7 +2162,7 @@ namespace SVL.API.Controllers
                 return "Please pass proper parameter";
             }
 
-            if (round == "Round1")
+            if (round == "Round1" || round == "ROUND1")
             {
                 GetRound1PreviewList(isSVT, category, round, true);
                 return "Merit List for Round " + round + " generated successfully";
@@ -2970,7 +3566,7 @@ namespace SVL.API.Controllers
 
         public List<PreviewStudentDetails> GetPreviewList(bool isSVT, string category, string round)
         {
-            if (round == "Round1")
+            if (round == "Round1" || round == "ROUND1")
             {
                 return GetRound1PreviewList(isSVT, category, round);
             }
@@ -4931,6 +5527,18 @@ namespace SVL.API.Controllers
                         seats = category.obc;
                     }
                     break;
+                case "sebc":
+                    if (category.sebc > 0)
+                    {
+                        seats = category.sebc;
+                    }
+                    break;
+                case "sbc":
+                    if (category.sbc > 0)
+                    {
+                        seats = category.sbc;
+                    }
+                    break;
             }
 
             return seats;
@@ -5227,6 +5835,250 @@ namespace SVL.API.Controllers
             }
         }
 
+        [HttpPost]
+        public HttpResponseMessage UpdateStatus(string Id,string value)
+        {
+            if (string.IsNullOrEmpty(Id) || string.IsNullOrEmpty(value))
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new BaseClass() { IsSuccess = false, ErrorMessage = "Please pass proper parameter" });
+            }
+            else
+            {
+                string connetionString = null;
+                SqlConnection connection = null;
+                SqlCommand command;
+                string sql = null;
+                string key = string.Empty;
+                try
+                {
+
+                    connetionString = System.Configuration.ConfigurationManager.ConnectionStrings["RCTDBConnection"].ConnectionString;
+                    connection = new SqlConnection(connetionString);
+                    if (connection.State == ConnectionState.Open)
+                        connection.Close();
+
+                    connection.Open();
+                    if (!string.IsNullOrEmpty(value))
+                    {
+                        
+                            sql = string.Format("Update StudentDetails set IsSubmitted='{0}' where Id='{1}'", value.ToInteger(), Id.ToInteger());
+                            command = new SqlCommand(sql, connection);
+                            command.ExecuteNonQuery();
+                        
+                    }
+                    return Request.CreateResponse(HttpStatusCode.OK, new BaseClass() { IsSuccess = true, SuccessMessage = "Status updated successfully." });
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    connection.Close();
+                }
+
+            }
+        }
+        [HttpGet]
+        public HttpResponseMessage GetEmailBody(string Id)
+        {
+            //try { SendEmail(); }
+            //catch { return Request.CreateResponse(HttpStatusCode.OK, new BaseClass() { IsSuccess = false, ErrorMessage = "Please pass proper parameter" }); }
+            if (string.IsNullOrEmpty(Id))
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new BaseClass() { IsSuccess = false, ErrorMessage = "Please pass proper parameter" });
+            }
+            else
+            {
+                string connetionString = null;
+                SqlConnection connection = null;
+                SqlCommand command;
+                string sql = null;
+                string key = string.Empty;
+                try
+                {
+
+                    connetionString = System.Configuration.ConfigurationManager.ConnectionStrings["RCTDBConnection"].ConnectionString;
+                    connection = new SqlConnection(connetionString);
+                    if (connection.State == ConnectionState.Open)
+                        connection.Close();
+
+                    connection.Open();
+                    string EmailBody = string.Empty;
+                    if (!string.IsNullOrEmpty(Id))
+                    {
+
+                        sql = string.Format("Select FirstName from StudentDetails where Id='{0}'", Id);
+                        command = new SqlCommand(sql, connection);
+                        string FirstName = Convert.ToString(command.ExecuteScalar());
+                        
+                        EmailBody += "Hello "+ FirstName+","+Environment.NewLine+ Environment.NewLine;
+                        EmailBody += "Thank you for applying to Sir Vithaldas Thackersey College of Home Science (Autonomous). We have received your application." + Environment.NewLine + Environment.NewLine;
+                        EmailBody += "Your application Id is "+Id+"." + Environment.NewLine + Environment.NewLine;
+                        EmailBody += "We request you to reupload following documents into your application:"+Environment.NewLine+"#selecteddocuments#"+ Environment.NewLine + Environment.NewLine;
+                        EmailBody += "Steps to edit your application form:" + Environment.NewLine;
+                        EmailBody += "1. Go to this page - https://vancotech.com/Admissions/Graduates/index.html" + Environment.NewLine+"2. Click on edit link. Enter your four digit application number, last name and date of birth to search your application. Click on search."+Environment.NewLine+"3. Upload documents."+ Environment.NewLine+ Environment.NewLine;
+                        EmailBody += "Thank you," + Environment.NewLine+ Environment.NewLine + "Sir Vithaldas Thackersey College of Home Science (Autonomous)";
+                    }
+                    return Request.CreateResponse(HttpStatusCode.OK, new BaseClass() { IsSuccess = true, SuccessMessage = EmailBody });
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    connection.Close();
+                }
+
+            }
+        }
+        [HttpPost]
+        public HttpResponseMessage SendEmail(MailProp mailProp)
+        {
+            var pendingItems = mailProp.docs.Split(',');
+            string pendinguploaditems = "";
+            int idx = 1;
+            foreach (var item in pendingItems)
+            {
+                pendinguploaditems += idx + ". " + item + Environment.NewLine;
+                idx++;
+            }
+            mailProp.mailbody=mailProp.mailbody.Replace("#selecteddocuments#", pendinguploaditems);
+            using (MailMessage mail = new MailMessage())
+            {
+                mail.From = new MailAddress(ConfigurationManager.AppSettings["EmailFrom"].ToString());
+                mail.To.Add(GetStudentEmail(mailProp.Id));
+                mail.CC.Add("svt.admissions@gmail.com");
+                mail.Subject = mailProp.sub;
+                mail.Body = mailProp.mailbody;
+                mail.IsBodyHtml = false;
+                //using (SmtpClient smtp = new SmtpClient(ConfigurationManager.AppSettings["smtp"].ToString(),ConfigurationManager.AppSettings["smtpport"].ToInteger()))
+                using (SmtpClient smtp = new SmtpClient())
+                {
+                    //smtp.Credentials = new NetworkCredential(ConfigurationManager.AppSettings["EmailFrom"].ToString(), ConfigurationManager.AppSettings["smtppassword"].ToString());
+                    //smtp.EnableSsl = true;
+                    try {
+                        smtp.Send(mail);
+                    }
+                    catch (Exception ex) 
+                    {
+                        return Request.CreateResponse(HttpStatusCode.OK, new BaseClass() { IsSuccess = false, ErrorMessage = ex.Message + "," + ex.StackTrace });
+                    }
+                    UpdateStatus(mailProp.Id) ;
+                    return Request.CreateResponse(HttpStatusCode.OK, new BaseClass() { IsSuccess = true, SuccessMessage = "Mail sent successfully." });
+
+                }
+            }
+        }
+
+        private string GetStudentEmail(string Id) {
+            string connetionString = null;
+            SqlConnection connection = null;
+            SqlCommand command;
+            string sql = null;
+            string key = string.Empty;
+            try
+            {
+
+                connetionString = System.Configuration.ConfigurationManager.ConnectionStrings["RCTDBConnection"].ConnectionString;
+                connection = new SqlConnection(connetionString);
+                if (connection.State == ConnectionState.Open)
+                    connection.Close();
+
+                connection.Open();
+                string Email = "";
+                if (!string.IsNullOrEmpty(Id))
+                {
+
+                    sql = string.Format("Select Email from StudentDetails where Id='{0}'", Id);
+                    command = new SqlCommand(sql, connection);
+                    Email = Convert.ToString(command.ExecuteScalar());
+                }
+                return Email;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+        private string GetDocPath(int Id,string Name)
+        {
+            string connetionString = null;
+            SqlConnection connection = null;
+            SqlCommand command;
+            string sql = null;
+            string key = string.Empty;
+            try
+            {
+
+                connetionString = System.Configuration.ConfigurationManager.ConnectionStrings["RCTDBConnection"].ConnectionString;
+                connection = new SqlConnection(connetionString);
+                if (connection.State == ConnectionState.Open)
+                    connection.Close();
+
+                connection.Open();
+                string DocName = "";
+                if (!string.IsNullOrEmpty(Name))
+                {
+
+                    sql = string.Format("Select PDFPath from StudentPdfDetails where PDFPath like '%{0}%' AND  StudentId='{1}'", Name,Id);
+                    command = new SqlCommand(sql, connection);
+                    DocName = Convert.ToString(command.ExecuteScalar());
+                }
+                return DocName;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+        private void UpdateStatus(string Id) {
+           
+            {
+                string connetionString = null;
+                SqlConnection connection = null;
+                SqlCommand command;
+                string sql = null;
+                string key = string.Empty;
+                try
+                {
+
+                    connetionString = System.Configuration.ConfigurationManager.ConnectionStrings["RCTDBConnection"].ConnectionString;
+                    connection = new SqlConnection(connetionString);
+                    if (connection.State == ConnectionState.Open)
+                        connection.Close();
+
+                    connection.Open();
+                    if (!string.IsNullOrEmpty(Id))
+                    {
+
+                        sql = string.Format("Update StudentDetails set IsSubmitted='{0}' where Id='{1}'", 0, Id.ToInteger());
+                        command = new SqlCommand(sql, connection);
+                        command.ExecuteNonQuery();
+
+                    }
+                    
+                }
+                catch (Exception ex)
+                {
+                    throw ex;
+                }
+                finally
+                {
+                    connection.Close();
+                }
+
+            }
+        }
         public bool SetDuplicateRecord(string Id, string aadharNumber)
         {
             string connetionString = null;
@@ -7622,7 +8474,8 @@ namespace SVL.API.Controllers
                 }
                 else
                     HTMLContent = HTMLContent.Replace("{{ IsHostelRequired }}", "No");
-
+                
+                HTMLContent = HTMLContent.Replace("{{ HSCSeatNumber }}", studentDetailModel.HscSeatNumber);
                 if (studentDetailModel.VoterId == true)
                 {
                     HTMLContent = HTMLContent.Replace("{{ VoterId }}", "Yes");
@@ -8858,7 +9711,7 @@ namespace SVL.API.Controllers
 
             #region Open Internal
             #region Development Counselling
-            dt = serviceRef.GenerateReports(specialisation, true, true,3);
+            dt = serviceRef.GenerateReports(specialisation, true, true, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Open.html"));
 
@@ -8877,7 +9730,7 @@ namespace SVL.API.Controllers
 
             #region Early Childhood care & Education
             specialisation = "Early Childhood care & Education";
-            dt = serviceRef.GenerateReports(specialisation, true, true,3);
+            dt = serviceRef.GenerateReports(specialisation, true, true, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Open.html"));
 
@@ -8897,7 +9750,7 @@ namespace SVL.API.Controllers
 
             #region Interior Design & Resource Management
             specialisation = "Interior Design & Resource Management";
-            dt = serviceRef.GenerateReports(specialisation, true, true,3);
+            dt = serviceRef.GenerateReports(specialisation, true, true, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Open.html"));
 
@@ -8916,7 +9769,7 @@ namespace SVL.API.Controllers
 
             #region Textiles & Apparel Designing
             specialisation = "Textiles & Apparel Designing";
-            dt = serviceRef.GenerateReports(specialisation, true, true,3);
+            dt = serviceRef.GenerateReports(specialisation, true, true, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Open.html"));
 
@@ -8935,7 +9788,7 @@ namespace SVL.API.Controllers
 
             #region Hospitality & Tourism Management
             specialisation = "Hospitality & Tourism Management";
-            dt = serviceRef.GenerateReports(specialisation, true, true,3);
+            dt = serviceRef.GenerateReports(specialisation, true, true, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Open.html"));
 
@@ -8954,7 +9807,7 @@ namespace SVL.API.Controllers
 
             #region Mass Communication & Extension
             specialisation = "Mass Communication & Extension";
-            dt = serviceRef.GenerateReports(specialisation, true, true,3);
+            dt = serviceRef.GenerateReports(specialisation, true, true, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Open.html"));
 
@@ -8973,7 +9826,7 @@ namespace SVL.API.Controllers
 
             #region Food, Nutrition and Dietetics
             specialisation = "Food, Nutrition and Dietetics";
-            dt = serviceRef.GenerateReports(specialisation, true, true,3);
+            dt = serviceRef.GenerateReports(specialisation, true, true, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Open.html"));
 
@@ -8994,7 +9847,7 @@ namespace SVL.API.Controllers
             #region Open External
             #region Development Counselling
             specialisation = "Developmental Counselling";
-            dt = serviceRef.GenerateReports(specialisation, false, true,3);
+            dt = serviceRef.GenerateReports(specialisation, false, true, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Open.html"));
 
@@ -9012,7 +9865,7 @@ namespace SVL.API.Controllers
             #endregion
             #region Early Childhood care & Education
             specialisation = "Early Childhood care & Education";
-            dt = serviceRef.GenerateReports(specialisation, false, true,3);
+            dt = serviceRef.GenerateReports(specialisation, false, true, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Open.html"));
 
@@ -9032,7 +9885,7 @@ namespace SVL.API.Controllers
 
             #region Interior Design & Resource Management
             specialisation = "Interior Design & Resource Management";
-            dt = serviceRef.GenerateReports(specialisation, false, true,3);
+            dt = serviceRef.GenerateReports(specialisation, false, true, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Open.html"));
             rowHTMLItems = string.Empty;
@@ -9050,7 +9903,7 @@ namespace SVL.API.Controllers
 
             #region Textiles & Apparel Designing
             specialisation = "Textiles & Apparel Designing";
-            dt = serviceRef.GenerateReports(specialisation, false, true,3);
+            dt = serviceRef.GenerateReports(specialisation, false, true, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Open.html"));
             rowHTMLItems = string.Empty;
@@ -9068,7 +9921,7 @@ namespace SVL.API.Controllers
 
             #region Hospitality & Tourism Management
             specialisation = "Hospitality & Tourism Management";
-            dt = serviceRef.GenerateReports(specialisation, false, true,3);
+            dt = serviceRef.GenerateReports(specialisation, false, true, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Open.html"));
             rowHTMLItems = string.Empty;
@@ -9086,7 +9939,7 @@ namespace SVL.API.Controllers
 
             #region Mass Communication & Extension
             specialisation = "Mass Communication & Extension";
-            dt = serviceRef.GenerateReports(specialisation, false, true,3);
+            dt = serviceRef.GenerateReports(specialisation, false, true, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Open.html"));
 
@@ -9105,7 +9958,7 @@ namespace SVL.API.Controllers
 
             #region Food, Nutrition and Dietetics
             specialisation = "Food, Nutrition and Dietetics";
-            dt = serviceRef.GenerateReports(specialisation, false, true,3);
+            dt = serviceRef.GenerateReports(specialisation, false, true, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Open.html"));
 
@@ -9126,7 +9979,7 @@ namespace SVL.API.Controllers
             #region Reserved Internal
             #region Development Counselling
             specialisation = "Developmental Counselling";
-            dt = serviceRef.GenerateReports(specialisation, true, false,3);
+            dt = serviceRef.GenerateReports(specialisation, true, false, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Reserved.html"));
 
@@ -9145,7 +9998,7 @@ namespace SVL.API.Controllers
 
             #region Early Childhood care & Education
             specialisation = "Early Childhood care & Education";
-            dt = serviceRef.GenerateReports(specialisation, true, false,3);
+            dt = serviceRef.GenerateReports(specialisation, true, false, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Reserved.html"));
 
@@ -9165,7 +10018,7 @@ namespace SVL.API.Controllers
 
             #region Interior Design & Resource Management
             specialisation = "Interior Design & Resource Management";
-            dt = serviceRef.GenerateReports(specialisation, true, false,3);
+            dt = serviceRef.GenerateReports(specialisation, true, false, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Reserved.html"));
 
@@ -9184,7 +10037,7 @@ namespace SVL.API.Controllers
 
             #region Textiles & Apparel Designing
             specialisation = "Textiles & Apparel Designing";
-            dt = serviceRef.GenerateReports(specialisation, true, false,3);
+            dt = serviceRef.GenerateReports(specialisation, true, false, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Reserved.html"));
 
@@ -9203,7 +10056,7 @@ namespace SVL.API.Controllers
 
             #region Hospitality & Tourism Management
             specialisation = "Hospitality & Tourism Management";
-            dt = serviceRef.GenerateReports(specialisation, true, false,3);
+            dt = serviceRef.GenerateReports(specialisation, true, false, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Reserved.html"));
 
@@ -9222,7 +10075,7 @@ namespace SVL.API.Controllers
 
             #region Mass Communication & Extension
             specialisation = "Mass Communication & Extension";
-            dt = serviceRef.GenerateReports(specialisation, true, false,3);
+            dt = serviceRef.GenerateReports(specialisation, true, false, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Reserved.html"));
 
@@ -9241,7 +10094,7 @@ namespace SVL.API.Controllers
 
             #region Food, Nutrition and Dietetics
             specialisation = "Food, Nutrition and Dietetics";
-            dt = serviceRef.GenerateReports(specialisation, true, false,3);
+            dt = serviceRef.GenerateReports(specialisation, true, false, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Reserved.html"));
             HTMLContent = HTMLContent.Replace("{{SVTStudent}}", "SVT");
@@ -9262,7 +10115,7 @@ namespace SVL.API.Controllers
             #region Reserved External
             #region Development Counselling
             specialisation = "Developmental Counselling";
-            dt = serviceRef.GenerateReports(specialisation, false, false,3);
+            dt = serviceRef.GenerateReports(specialisation, false, false, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Reserved.html"));
 
@@ -9281,7 +10134,7 @@ namespace SVL.API.Controllers
 
             #region Early Childhood care & Education
             specialisation = "Early Childhood care & Education";
-            dt = serviceRef.GenerateReports(specialisation, false, false,3);
+            dt = serviceRef.GenerateReports(specialisation, false, false, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Reserved.html"));
 
@@ -9301,7 +10154,7 @@ namespace SVL.API.Controllers
 
             #region Interior Design & Resource Management
             specialisation = "Interior Design & Resource Management";
-            dt = serviceRef.GenerateReports(specialisation, false, false,3);
+            dt = serviceRef.GenerateReports(specialisation, false, false, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Reserved.html"));
 
@@ -9320,7 +10173,7 @@ namespace SVL.API.Controllers
 
             #region Textiles & Apparel Designing
             specialisation = "Textiles & Apparel Designing";
-            dt = serviceRef.GenerateReports(specialisation, false, false,3);
+            dt = serviceRef.GenerateReports(specialisation, false, false, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Reserved.html"));
 
@@ -9339,7 +10192,7 @@ namespace SVL.API.Controllers
 
             #region Hospitality & Tourism Management
             specialisation = "Hospitality & Tourism Management";
-            dt = serviceRef.GenerateReports(specialisation, false, false,3);
+            dt = serviceRef.GenerateReports(specialisation, false, false, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Reserved.html"));
 
@@ -9358,7 +10211,7 @@ namespace SVL.API.Controllers
 
             #region Mass Communication & Extension
             specialisation = "Mass Communication & Extension";
-            dt = serviceRef.GenerateReports(specialisation, false, false,3);
+            dt = serviceRef.GenerateReports(specialisation, false, false, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Reserved.html"));
 
@@ -9377,7 +10230,7 @@ namespace SVL.API.Controllers
 
             #region Food, Nutrition and Dietetics
             specialisation = "Food, Nutrition and Dietetics";
-            dt = serviceRef.GenerateReports(specialisation, false, false,3);
+            dt = serviceRef.GenerateReports(specialisation, false, false, 3);
 
             HTMLContent = File.ReadAllText(System.Web.HttpContext.Current.Server.MapPath("~/Templates/Merit-List-3-Reserved.html"));
 

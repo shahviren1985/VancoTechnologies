@@ -1,6 +1,11 @@
 
 
-const BASE_API_HOST = 'https://vancotech.com/Admissions/Graduates/api';
+//const BASE_API_HOST = 'http://admissions.svt.edu.in/api';
+//const BASE_API_HOST = "https://vancotech.com/admissions/Graduates/api/";
+const BASE_API_HOST = 'http://localhost:50076/api';
+//const BASE_URL = "https://vancotech.com/admissions/Graduates/";
+const BASE_URL = "http://localhost:50076/";
+var USERID = "";
 var AADHAR_EXIST = false;
 
 function isEmail(email) {
@@ -336,10 +341,14 @@ function savePageDataPostImageAjax(obj, formName, successCallBack, errorCallBack
                 errorCallBack('Requested page not found. [404]');
             }
             else if (jqXHR.status != '200') {
-                AjaxCallError(jqXHR.responseJSON)
+                AjaxCallError(jqXHR.responseJSON);
             }
+            $('#btnSave').removeAttr('disabled');
+            $('#submitBtn').removeAttr('disabled');
         },
         success: function (jqxhr) {
+            $('#submitBtn').removeAttr('disabled');
+            $('#btnSave').removeAttr('disabled');
             successCallBack(jqxhr);
         }
     });
@@ -354,12 +363,12 @@ function hideLoading() {
 }
 
 var isDisplayLoader = false;
-$(document).ajaxStart(function () {
+/*$(document).ajaxStart(function () {
     showLoading();
 });
 
-$(document).ajaxComplete(function () { });
+$(document).ajaxComplete(function () { hideLoading(); });
 
 $(document).ajaxStop(function () {
     hideLoading();
-});
+});*/

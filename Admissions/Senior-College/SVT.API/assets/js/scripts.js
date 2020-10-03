@@ -290,7 +290,17 @@ function CheckValidation() {
         $('#MKCLFormNumber').addClass('input-error');
         errorInInput = true;
     }
-    
+
+    if ($('#HscSeatNumber').val().trim() == "") {
+        $('#HscSeatNumber').addClass('input-error');
+        errorInInput = true;
+    }
+
+    if ($('#BloodGroup :selected').val() == "-" || $('#BloodGroup :selected').length == 0) {
+        $('#BloodGroup').addClass('input-error');
+        errorInInput = true;
+    }
+
     // Hostel reason is mandatory if ishostelrequired is ticked
     if ($('#IsHostelRequired:checked').length == 1) {
         if ($('#HostelReason').val().trim() == "") {

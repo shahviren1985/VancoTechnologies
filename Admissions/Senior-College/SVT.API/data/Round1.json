@@ -1,51 +1,51 @@
 [
   {
     "specialisation": "Developmental Counselling",
-    "SVTOpenInternal": "90",
-    "SVTReservedInternal": "90",
-    "ExternalOpen": "90",
-    "ExternalReserved": "90"
+    "SVTOpenInternal": "47.23",
+    "SVTReservedInternal": "99",
+    "ExternalOpen": "56.15",
+    "ExternalReserved": "47.38"
   },	
   {
     "specialisation": "Early Childhood care & Education",
-    "SVTOpenInternal": "90",
-    "SVTReservedInternal": "90",
-    "ExternalOpen": "90",
-    "ExternalReserved": "90"
+    "SVTOpenInternal": "50.62",
+    "SVTReservedInternal": "99",
+    "ExternalOpen": "56",
+    "ExternalReserved": "48.77"
   },
   {
     "specialisation": "Food, Nutrition and Dietetics",
-    "SVTOpenInternal": "90",
-    "SVTReservedInternal": "90",
-    "ExternalOpen": "90",
-    "ExternalReserved": "90"
+    "SVTOpenInternal": "62.62",
+    "SVTReservedInternal": "69.23",
+    "ExternalOpen": "60",
+    "ExternalReserved": "65.69"
   },
   {
     "specialisation": "Hospitality & Tourism Management",
-     "SVTOpenInternal": "90",
-    "SVTReservedInternal": "90",
-    "ExternalOpen": "90",
-    "ExternalReserved": "90"
+    "SVTOpenInternal": "50",
+    "SVTReservedInternal": "99",
+    "ExternalOpen": "51.54",
+    "ExternalReserved": "47.08"
   },
   {
     "specialisation": "Interior Design & Resource Management",
-     "SVTOpenInternal": "90",
-    "SVTReservedInternal": "90",
-    "ExternalOpen": "90",
-    "ExternalReserved": "90"
+     "SVTOpenInternal": "50.46",
+    "SVTReservedInternal": "99",
+    "ExternalOpen": "52",
+    "ExternalReserved": "48.15"
   },
   {
     "specialisation": "Mass Communication & Extension",
-    "SVTOpenInternal": "90",
-    "SVTReservedInternal": "90",
-    "ExternalOpen": "90",
-    "ExternalReserved": "90"
+    "SVTOpenInternal": "52",
+    "SVTReservedInternal": "52.77",
+    "ExternalOpen": "50",
+    "ExternalReserved": "48.62"
   },
   {
     "specialisation": "Textiles & Apparel Designing",
-    "SVTOpenInternal": "90",
-    "SVTReservedInternal": "90",
-    "ExternalOpen": "90",
-    "ExternalReserved": "90"
+    "SVTOpenInternal": "52.31",
+    "SVTReservedInternal": "99",
+    "ExternalOpen": "50.15",
+    "ExternalReserved": "47.43"
   }
 ]

@@ -16,6 +16,44 @@ namespace SVT.Business.Model
     /// This class is used to Define Model for Table - StudentDetails
     /// </summary>
     /// <CreatedBy>Kaushik</CreatedBy>
+    /// <CreatedDate>26-June-2020</CreatedDate>
+    /// <ModifiedBy></ModifiedBy>
+    /// <ModifiedDate></ModifiedDate>
+    /// <ReviewBy></ReviewBy>
+    /// <ReviewDate></ReviewDate>
+    [Table("StudentPdfDetails")]
+    public sealed class StudentPdfDetail : BaseModel
+    {
+        #region Properties
+
+        /// <summary>
+        /// Gets or sets the Id value.
+        /// </summary>
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
+
+        /// <summary>
+        /// Gets or sets the MKCLFormNumber value.
+        /// </summary>
+        [Required(ErrorMessage = "*")]        
+        public int StudentId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the FirstName value.
+        /// </summary>
+        [Required(ErrorMessage = "*")]
+        [StringLength(100, ErrorMessage = "*")]
+        public string PDFPath { get; set; }
+
+        
+        #endregion
+    }
+
+
+    /// <summary>
+    /// This class is used to Define Model for Table - StudentDetails
+    /// </summary>
+    /// <CreatedBy>Kaushik</CreatedBy>
     /// <CreatedDate>13-Feb-2018</CreatedDate>
     /// <ModifiedBy></ModifiedBy>
     /// <ModifiedDate></ModifiedDate>
@@ -730,6 +768,42 @@ namespace SVT.Business.Model
         public string StudentPdfURL { get; set; }
 
         [NotMapped]
+        public string AadharCardURL { get; set; }
+
+        [NotMapped]
+        public string SSCMarksheetURL { get; set; }
+
+        [NotMapped]
+        public string HSCMarksheetURL { get; set; }
+
+        [NotMapped]
+        public string CasteCertificateURL { get; set; }
+
+        [NotMapped]
+        public string DisabilityCertificateURL { get; set; }
+
+        [NotMapped]
+        public string GapCertificateURL { get; set; }
+
+        [NotMapped]
+        public string MigrationCertificateURL { get; set; }
+
+        [NotMapped]
+        public string LeavingCertificateURL { get; set; }
+        [NotMapped]
+        public string ParentSignaturePath { get; set; }
+
+        [NotMapped]
+        public string RationCardUrl { get; set; }
+        [NotMapped]
+        public string UnderTakingUrl { get; set; }
+        [NotMapped]
+        public string SNDTUrl { get; set; }
+
+        [NotMapped]
+        public string EligibilityUrl { get; set; }
+
+        [NotMapped]
         public bool? IsDuplicate { get; set; }
 
         [StringLength(100, ErrorMessage = "*")]
@@ -744,6 +818,8 @@ namespace SVT.Business.Model
 
         public bool? VoterId { get; set; }
         public string VoterNumber { get; set; }
+        public string HscSeatNumber { get; set; }
+
         public string ResidenceState { get; set; }
         public string PinCode { get; set; }
         public string DisabilityNumber { get; set; }
@@ -758,6 +834,13 @@ namespace SVT.Business.Model
         public bool? IsNRI { get; set; }
         public string AboutCollege { get; set; }
         #endregion
+    }
+    public class MailProp 
+    {
+    public string sub { get; set; }
+        public string mailbody { get; set; }
+        public string docs { get; set; }
+        public string Id { get; set; }
     }
 
 }

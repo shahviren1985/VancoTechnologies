@@ -81,7 +81,9 @@ function getStudentList(pageNo, filterQuery = "") {
                         <input type="checkbox" id="IsFeesPaid" class="studentOperation" data-formid="${student.Id}" data-formNumber="${student.MKCLFormNumber}" ${student["Fees Paid"] == "Yes" ? "checked" : ""} />
                     </td>
                     <td> <a href="${BASE_HOST}/data/pdf/${student.PDFPath}" target="_blank" ><i class="fa fa-download"></i></a> </td>
-                    </tr>
+                    <td> <a href="${BASE_HOST}/Register.html?id=${student.Id}&role=admin" target="_blank" ><i class="glyphicon glyphicon-pencil"></i></a> | <a><i data-toggle="modal" onclick="SetId(${student.Id})" data-target="#basicExampleModal" class="glyphicon glyphicon-ok"></i></a> | <a><i data-toggle="modal" data-target="#modalEmail" onclick="openEmailPopUp(${student.Id})" class="glyphicon glyphicon-envelope"></i></a> </td>
+
+</tr>
                 `)
             })
             renderPaginationLinks(response.Count, pageSize, pageNo)
@@ -210,4 +212,130 @@ function getOperationtextMsg(operation) {
         case "IsFeesPaid":
             return "Fees Paid";
     }
+}
+function SetId(id)
+{
+    $("#hdnId").val(id);
+
+}
+function ClearId() { $("#hdnId").val(''); }
+function ChangeStatus() {
+    let SId = $("#hdnId").val();
+    let Statusval = $("#selectStatus").val(); 
+    let url = `${BASE_API_HOST}/Form/UpdateStatus?id=` + SId + `&value=` + Statusval;
+    
+    $.ajax({
+        type: 'POST',
+        url: url,
+        success: (response) => {
+            if (response.isSuccess) {
+                
+                let ele = $(`<div class="box box-success box-solid">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Success</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="remove">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box-body">
+                  `+ response.SuccessMessage+`
+                </div>
+            </div>`);
+                $('.messageDiv').append(ele).removeClass('hide');
+
+                setTimeout(() => {
+                    ele.remove();
+                }, 4000);
+                $("#btnpopupclose").click();
+                $('.box-success').boxWidget();
+                
+            }
+        }
+    })
+}
+function openEmailPopUp(id)
+{
+    $("#hdnId").val(id);
+    let url = `${BASE_API_HOST}/Form/GetEmailBody?id=` + id;
+
+    $.ajax({
+        type: 'GET',
+        url: url,
+        success: (response) => {
+            if (response.isSuccess) {
+
+                $("#txtAreaEmailbody").val(response.SuccessMessage);
+
+            }
+        }
+    })
+}
+function SendEmail()
+{
+    var pendingdocuments = "";
+    var subject = $("#txtSubject").val();
+    var mailbody = $("#txtAreaEmailbody").val();
+    $(".form-check").each(function (index) {
+        var chk = $(this).find("input");       
+        if ($("#" + chk.attr('id')).is(':checked'))
+        {
+            //alert($(this).text());
+            var lbl = $(this).find("label");
+            if (pendingdocuments=="")
+            {
+                pendingdocuments += $("#" + lbl.attr('id')).text();
+            }
+            else
+            {
+                pendingdocuments += "," + $("#" + lbl.attr('id')).text();
+            }
+            
+        }
+    });
+    //mailbody = mailbody.replace(":","*");
+      //let url = `${BASE_API_HOST}/Form/SendEmail?sub=` + subject + `&mailbody=` + mailbody+`&docs=` + pendingdocuments;
+    let url = `${BASE_API_HOST}/Form/SendEmail`;
+    //var formData = { subject: subject, mailBody: mailbody, pendingDocs: pendingdocuments }; //Array
+    var MailProp = new Object();
+    MailProp.sub = subject;
+    MailProp.mailbody = mailbody;
+    MailProp.docs = pendingdocuments;
+    MailProp.Id = $("#hdnId").val();
+    $.ajax({
+        type: 'POST',
+        url: url,
+        data: JSON.stringify(MailProp),
+        dataType: "json",
+        //traditional: true,
+        contentType: "application/json; charset=utf-8",
+        success: (response) => {
+            if (response.isSuccess) {
+
+                let ele = $(`<div class="box box-success box-solid">
+                <div class="box-header with-border">
+                    <h3 class="box-title">Success</h3>
+                    <div class="box-tools pull-right">
+                        <button type="button" class="btn btn-box-tool" data-widget="remove">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="box-body">
+                  `+ response.SuccessMessage + `
+                </div>
+            </div>`);
+                $('.messageDiv').append(ele).removeClass('hide');
+
+                setTimeout(() => {
+                    ele.remove();
+                }, 4000);
+                $("#btnEmailpopupclose").click();
+                $('.box-success').boxWidget();
+
+            }
+        }
+    })
+
 }

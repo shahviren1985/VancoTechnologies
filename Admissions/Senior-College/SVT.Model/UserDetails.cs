@@ -47,4 +47,13 @@ namespace SVT.Business.Model
         public string LastName { get; set; }
 
     }
+
+    public class FileClass : BaseClass
+    {
+        [JsonProperty("file")]
+        public string File { get; set; }
+
+        [JsonProperty("type")]
+        public string FileType { get; set; }
+    }
 }

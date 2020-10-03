@@ -49,9 +49,7 @@
                 <a class="navbar-brand" href="index.html">SVT Admission Form</a>
             </div>
             <div class="collapse navbar-collapse" id="top-navbar-1">
-                <h1>
-                    <strong>SVT</strong> Admission Form
-                </h1>
+                <h1 style="float: left; margin-left: 30px; text-align: left">Graduation Admission Form</h1>
             </div>
         </div>
     </nav>
@@ -82,7 +80,7 @@
 
                             <fieldset id="divMain">
                                 <div class="row">
-                                    Please Fill the Registration Form or Edit Registration Form.
+                                    Please Fill the Registration Form.
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6" id="divAdmissionBtn">
@@ -203,8 +201,8 @@
                                         <div class="form-group">
                                             <div class="col-sm-12" style="padding-top: 34px;">
                                                 <div class='embed-responsive' style='padding-bottom:150%;'>
-                                                    <!--<iframe id="viewPdf" scrolling="no" height="900px"></iframe>-->
-                                                    <object id="viewPdf" type='application/pdf' width='100%' height='100%'></object>
+                                                    <iframe id="viewPdf" scrolling="no" height="900px"></iframe>
+                                                    <!--<object id="viewPdf" type='application/pdf' width='100%' height='100%'></object>-->
                                                 </div>
                                             </div>
                                         </div>
@@ -214,7 +212,7 @@
 
 
 
-                            <fieldset id="StudentAdmissionStatus" style="display:none">
+                            <fieldset id="StudentAdmissionStatus" style="display: none">
                                 <h4>Admission Status</h4>
                                 <div class="form-detail">
                                     <div class="col-md-12">
@@ -236,7 +234,7 @@
                                                     <thead>
                                                         <tr>
                                                             <th></th>
-                                                            <!--<th>Round 1</th>-->
+                                                            <th>Round 1</th>
                                                             <th>Round 2</th>
                                                             <th>Round 3</th>
                                                         </tr>
@@ -244,24 +242,30 @@
                                                     <tbody>
                                                         <tr class="seatRow" data-course="${d.specialisation}">
                                                             <th scope="row">Admitted</th>
-                                                            <!--<td id="admittedRnd1"></td>-->
+                                                            <td id="admittedRnd1"></td>
                                                             <td id="admittedRnd2"></td>
                                                             <td id="admittedRnd3"></td>
                                                         </tr>
                                                         <tr>
                                                             <th scope="row">Course Admitted</th>
-                                                            <!--<td id="courseRnd1"></td>-->
+                                                            <td id="courseRnd1"></td>
                                                             <td id="courseRnd2"></td>
                                                             <td id="courseRnd3"></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <div class="col-sm-6 f1-buttons">
+                                                            <button type="button" id="btnAppPayment" class="btn btn-next">Make Payment</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div id="feesnotes">
                                                     <b style="color: red">Notes:</b><br />
                                                     <ul>
-                                                        <!--<li>Check the fees for your course - <a href="#">Fee Structure - 2019-20</a></li>-->
-                                                        <li>Please pay your fees on or before July 5, 2019 - 3:00 PM. Your admission will be cancelled if you don't secure your seat. </li>
-                                                        <li>Admission Procedure - Check Step IV in the admission procedure. <a href="http://svt.edu.in/download/Admission-Procedure.pdf">Admission Procedure</a></li>
+                                                        <li>Please pay your fees on or before September 18, 2020 - 11:59 PM. Your admission will be cancelled if you don't secure your seat. </li>
+                                                        <!--<li>Admission Procedure - Check Step IV in the admission procedure. <a href="http://svt.edu.in/download/Admission-Procedure.pdf">Admission Procedure</a></li>-->
                                                     </ul>
 
                                                 </div>
@@ -385,18 +389,64 @@
 
                             $('#lblStdForm').text(data.Id);
                             $('#lblStdName').text(data.FirstName + " " + data.LastName);
-                            //$('#courseRnd1').text(data.CourseAdmittedRound1 ? data.CourseAdmittedRound1 : " - ");
+                            $('#courseRnd1').text(data.CourseAdmittedRound1 ? data.CourseAdmittedRound1 : " - ");
+
+                            if (data.CourseAdmittedRound1 || data.CourseAdmittedRound2){
+								$("#btnAppPayment").hide();
+							}
+							else if(data.CourseAdmittedRound3 == null){
+								$("#btnAppPayment").hide();
+							}
+							else{
+								$("#btnAppPayment").show();
+							}
+							
+                            $("#btnAppPayment").click(function () {
+                                var isNri = data.IsNRI == false ? 0 + "&t=0" : 1 + "&t=2";
+                                var isReserved = (data.Caste == "SC" || data.Caste == "ST") ? 1 : 0;
+                                var specialization = data.CourseAdmittedRound3;
+                                switch (data.CourseAdmittedRound3) {
+                                    case "Developmental Counselling":
+                                        specialization = 1;
+                                        break;
+                                    case "Early Childhood care & Education":
+                                        specialization = 2;
+                                        break;
+                                    case "Food, Nutrition and Dietetics":
+                                        specialization = 3;
+                                        break;
+                                    case "Hospitality & Tourism Management":
+                                        specialization = 4;
+                                        break;
+                                    case "Interior Design & Resource Management":
+                                        specialization = 5;
+                                        break;
+                                    case "Mass Communication & Extension":
+                                        specialization = 6;
+                                        break;
+                                    case "Textiles & Apparel Designing":
+                                        specialization = 7;
+                                        break;
+                                }
+                                
+                                document.location.href = "https://svt.vancotech.com/fee-payment-form?p=1&n=" + isNri + "&r=" + isReserved + "&s=" + specialization;
+                            });
+
+                            // Show Make payment button
+                            // 
+
+
                             $('#courseRnd2').text(data.CourseAdmittedRound2 ? data.CourseAdmittedRound2 : " - ");
                             $('#courseRnd3').text(data.CourseAdmittedRound3 ? data.CourseAdmittedRound3 : " - ");
-                            if (data.CourseAdmittedRound2 || data.CourseAdmittedRound3) {
+                            /*if (data.CourseAdmittedRound2 || data.CourseAdmittedRound3) {
                                 $('#feesnotes').show();
                             }
                             else {
                                 $('#feesnotes').hide();
-                            }
+                            }*/
 
-                            //$('#courseRnd3').text(data.CourseAdmittedRound3 ? data.CourseAdmittedRound3 : " - ");
-                            //$('#admittedRnd1').text(data.AdmittedRound1 ? (data.AdmittedRound1 ? "Yes" : "No") : '-');
+                            $('#courseRnd3').text(data.CourseAdmittedRound3 ? data.CourseAdmittedRound3 : " - ");
+                            $('#admittedRnd1').text(data.AdmittedRound1 ? (data.AdmittedRound1 ? "Yes" : "No") : '-');
                             $('#admittedRnd2').text(data.AdmittedRound2 ? (data.AdmittedRound2 ? "Yes" : "No") : '-');
                             $('#admittedRnd3').text(data.AdmittedRound3 ? (data.AdmittedRound3 ? "Yes" : "No") : '-');
 
@@ -454,7 +504,7 @@
                             $('#studentId').attr('src', data.EncryptedId);
                             $('#ViewDetail').show();
                             if (data.IsSubmitted) {
-                                $('#viewPdf').attr('data', data.StudentPdfURL);
+                                $('#viewPdf').attr('src', data.StudentPdfURL);
                                 $('#btnView').hide();
                                 $('#btnPDF').show();
                             } else {
@@ -492,7 +542,7 @@
         $("#txtBirthDate").datepicker({
             changeMonth: true,
             changeYear: true,
-            yearRange: '1960:2019',
+            yearRange: '1960:2020',
             dateFormat: 'dd-MM-yy',
             defaultDate: new Date(2002, 0, 1)
         });
@@ -500,7 +550,7 @@
         $("#txtAppBirthDate").datepicker({
             changeMonth: true,
             changeYear: true,
-            yearRange: '1960:2019',
+            yearRange: '1960:2020',
             dateFormat: 'dd-MM-yy',
             defaultDate: new Date(2001, 0, 1)
         });
@@ -532,10 +582,10 @@
             }
         });
     </script>
-    <div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 100%; width: 100%; z-index: -999999; position: fixed;">
+    <!--<div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 100%; width: 100%; z-index: -999999; position: fixed;">
         <img style="position: absolute; margin: 0px; padding: 0px; border: medium none; width: 100%; height: 100%; max-height: none; max-width: none; z-index: -999999; left: 0px; top: 0px;"
              src="assets/ico/bg_1.jpg">
-    </div>
+    </div>-->
 </body>
 
 </html>

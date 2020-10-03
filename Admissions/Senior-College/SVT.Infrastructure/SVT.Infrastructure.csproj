@@ -56,6 +56,7 @@
     <Compile Include="EnumHelper.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="IOManager.cs" />
+    <Compile Include="Logger.cs" />
     <Compile Include="ProjectConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

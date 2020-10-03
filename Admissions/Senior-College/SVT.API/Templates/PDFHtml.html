@@ -50,7 +50,7 @@
                                 <tr class="borderTable">
                                     <td style="width:25%">MKCL Form No. &nbsp;&nbsp;{{ MKCLno }}</td>
                                     <td style="width:50%;text-align:center;font-weight: bold; font-size: 14px;">
-                                        DEGREE COLLEGE ADMISSION FORM
+                                        DEGREE COLLEGE ADMISSION FORM (2020-21)
                                     </td>
                                     <td style="width:25%;text-align:right;">
                                         <b>Form no.</b> &nbsp;&nbsp;{{ Fno }}
@@ -104,7 +104,7 @@
                                         <div style="height: 20px;">
                                             Incharge : &nbsp; <span>{{ Incharge }}</span>
                                         </div>
-                                        <div style="height: 20px;">Date : &nbsp; <span>&nbsp;</span></div>
+                                        <div style="height: 20px;">Date : &nbsp; <span>{{ DateTime }}</span></div>
                                     </td>
                                     <td style="width:45%;" class="borderTable">
                                         <table style="width:100%;">
@@ -372,6 +372,14 @@
                                         <b>Voter Card Number</b>&nbsp; <span>{{ VoterNumber }}</span>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td class="borderTable">
+                                        <b>HSC Seat Number</b>&nbsp; <span>{{ HSCSeatNumber }}</span>
+                                    </td>
+                                    <td class="borderTable">
+                                        &nbsp;
+                                    </td>
+                                </tr>
                             </table>
                         </td>
                     </tr>
@@ -572,7 +580,7 @@
                                 <li>For students who choose English (Semester II) will be offered Functional/Advanced English based on their proficiency in the language.</li>
                             </ol>
                             <br /><br />
-                            _______________________<br />
+                            <img style="height:60px; width:100px;" src="{{ Sign }}" /><br />
                             Signature of the student
                         </td>
                     </tr>
@@ -591,10 +599,10 @@
                     </tr>
                     <tr>
                         <td>
-                            <br /><br />Place: ___________________ &nbsp;&nbsp;&nbsp;&nbsp;
+                            <br /><br />Place: Mumbai &nbsp;&nbsp;&nbsp;&nbsp;
 
-                            Date: ___________________&nbsp;&nbsp;&nbsp;&nbsp;
-                            Signature of the student: ___________________
+                            Date: {{ DateTime }}&nbsp;&nbsp;&nbsp;&nbsp;
+                            Signature of the student: <img style="height:60px; width:100px;" src="{{ Sign }}" />
                         </td>
                     </tr>
                     <tr>
@@ -609,11 +617,11 @@
                     </tr>
                     <tr>
                         <td>
-                            <br /><br />Place: ___________________&nbsp;&nbsp;&nbsp;&nbsp;
+                            <br /><br />Place: Mumbai &nbsp;&nbsp;&nbsp;&nbsp;
 
-                            Date: ___________________&nbsp;&nbsp;&nbsp;&nbsp;
+                            Date: {{ DateTime }}&nbsp;&nbsp;&nbsp;&nbsp;
 
-                            Signature of the Guardian: ___________________
+                            Signature of the Guardian: ____________________________________
                         </td>
                     </tr>
                     <tr style="page-break-before:always">
@@ -662,14 +670,15 @@
                                 <tr>
                                     <td class="borderTable">1</td>
                                     <td class="borderTable">HSC examination mark sheet</td>
-                                    <td class="borderTable">Attested True Copy</td>
-                                    <td class="borderTable">{{ AFirst }}</td>
+                                    <td class="borderTable">Scanned Copy</td>
+                                    <td class="borderTable"><a href="{{ AFirst }}">View</a></td>
                                 </tr>
                                 <tr>
                                     <td class="borderTable">2</td>
                                     <td class="borderTable">School or College Leaving Certificate</td>
-                                    <td class="borderTable">Original</td>
-                                    <td class="borderTable">{{ ASecond }}</td>
+                                    <td class="borderTable">Scanned Copy</td>
+                                    <td class="borderTable"><a href="{{ ASecond }}">View</a></td>
+                                    <!--<td class="borderTable">{{ ASecond }}</td>-->
                                 </tr>
                                 <tr>
                                     <td class="borderTable">3</td>
@@ -680,25 +689,28 @@
                                 <tr>
                                     <td class="borderTable">4</td>
                                     <td class="borderTable">Student who are not fresher and have taken Gap should provide Gap Certificate </td>
-                                    <td class="borderTable">(Affidavit in stamp paper)</td>
-                                    <td class="borderTable">{{ AFourth }}</td>
+                                    <td class="borderTable">(Affidavit in stamp paper - Scanned Copy)</td>
+                                    <td class="borderTable"><a href="{{ AFourth }}">View</a></td>
+                                    <!--<td class="borderTable">{{ AFourth }}</td>-->
                                 </tr>
                                 <tr>
                                     <td class="borderTable">5</td>
                                     <td class="borderTable">Migration certificate/ Transfer certificate from the previous board</td>
-                                    <td class="borderTable">(Other Board Students)</td>
-                                    <td class="borderTable">{{ AFifth }}</td>
+                                    <td class="borderTable">(Other Board Students - Scanned Copy)</td>
+                                    <td class="borderTable"><a href="{{ AFifth }}">View</a></td>
+                                    <!--<td class="borderTable">{{ AFifth }}</td>-->
                                 </tr>
                                 <tr>
                                     <td class="borderTable">6</td>
                                     <td class="borderTable">Passing certificate of H.S.C. or equivalent examination.</td>
-                                    <td class="borderTable">Attested True Copy/Original</td>
-                                    <td class="borderTable">{{ ASixth }}</td>
+                                    <td class="borderTable">Scanned Copy</td>
+                                    <td class="borderTable"><a href="{{ ASixth }}">View</a></td>
+                                    <!--<td class="borderTable">{{ ASixth }}</td>-->
                                 </tr>
                                 <tr>
                                     <td class="borderTable">7</td>
                                     <td class="borderTable">Eligibility certificate.</td>
-                                    <td class="borderTable">(Other board)</td>
+                                    <td class="borderTable">(Other board - Scanned Copy)</td>
                                     <td class="borderTable">{{ ASeventh }}</td>
                                 </tr>
                                 <tr>
@@ -714,38 +726,46 @@
                                             <li>All reserve categories open Bank Account at any nationalize bank</li>
                                         </ul>
                                     </td>
-                                    <td class="borderTable">Attested True Copy</td>
-                                    <td class="borderTable">{{ AEighth }}</td>
+                                    <td class="borderTable">Scanned Copy</td>
+                                    <td class="borderTable"><a href="{{ AEighth }}">View</a></td>
+                                    <!--<td class="borderTable">{{ AEighth }}</td>-->
                                 </tr>
                                 <tr>
                                     <td class="borderTable">9</td>
                                     <td class="borderTable">Aadhar Card </td>
-                                    <td class="borderTable">Attested True Copy</td>
-                                    <td class="borderTable">{{ ANinth }}</td>
+                                    <td class="borderTable">Scanned Copy</td>
+                                    <td class="borderTable"><a href="{{ AadharLink }}">View</a></td>
+                                    <!--<td class="borderTable">{{ ANinth }}</td>-->
                                 </tr>
                                 <tr>
                                     <td class="borderTable">10</td>
                                     <td class="borderTable">Ration Card  </td>
-                                    <td class="borderTable">Attested True Copy</td>
-                                    <td class="borderTable">{{ ATenth }}</td>
+                                    <td class="borderTable">Scanned Copy</td>
+                                    <td class="borderTable"><a href="{{ ATenth }}">View</a></td>
                                 </tr>
                                 <tr>
                                     <td class="borderTable">11</td>
                                     <td class="borderTable">eSuvidha Ticket</td>
                                     <td class="borderTable">Original Printout from University Site: http://sndt.digitaluniversity.ac</td>
-                                    <td class="borderTable">{{ ATenth }}</td>
+                                    <td class="borderTable"><a href="{{ AEleven }}">View</a></td>
                                 </tr>
                                 <tr>
                                     <td class="borderTable">12</td>
                                     <td class="borderTable">Disability Certificate</td>
-                                    <td class="borderTable">Disability Certificate having disability number.</td>
-                                    <td class="borderTable">{{ ATenth }}</td>
+                                    <td class="borderTable">Scanned Copy of Disability Certificate having disability number.</td>
+                                    <td class="borderTable"><a href="{{ ATwelve }}">View</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="borderTable">13</td>
+                                    <td class="borderTable">Undertaking Form</td>
+                                    <td class="borderTable">Scanned Copy of Undertaking form.</td>
+                                    <td class="borderTable"><a href="{{ AThirteen }}">View</a></td>
                                 </tr>
                                 <tr>
                                     <td colspan="4">
                                         <br /><br />
                                         <br /><br />
-                                        <b>Signature of the student:_____________________________________</b><br />
+                                        <b>Signature of the student: <img style="height:60px; width:100px;" src="{{ Sign }}" /></b><br />
                                     </td>
 
                                 </tr>

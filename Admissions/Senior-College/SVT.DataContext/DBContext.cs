@@ -156,6 +156,31 @@
         }
 
         /// <summary>
+        /// Save the PDF details corresponding to student Id
+        /// </summary>
+        /// <typeparam name="TEntity">Model Type</typeparam>
+        /// <param name="entity">Save the PDF details corresponding to student Id</param>
+        /// <returns>Save records id value</returns>
+        public virtual int SavePDFDetails<TEntity>(TEntity entity)
+        {
+            if ((this.CheckForDuplicate && !this.HasDuplicate(entity)) || !this.CheckForDuplicate)
+            {
+                string procedureName = "UspStudentDocumentDetailsSave";
+
+                System.Collections.ObjectModel.Collection<DBParameters> parameters = AddParameters(entity);
+
+                /*Execute Stored Procedure*/
+                object primaryKeyValue = DBClient.ExecuteProcedure(procedureName, ExecuteType.ExecuteScalar, parameters, this.DatabaseConnection);
+
+                return Convert.ToInt32(primaryKeyValue, CultureInfo.InvariantCulture);
+            }
+            else
+            {
+                return -1;
+            }
+        }
+
+        /// <summary>
         /// Delete the matching record with primary key value
         /// </summary>
         /// <typeparam name="TEntity">Model Type</typeparam>

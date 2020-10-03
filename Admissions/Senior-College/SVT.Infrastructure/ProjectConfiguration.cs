@@ -524,6 +524,26 @@
                     return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data/Photos/");
             }
         }
+        public static string LogPath
+        {
+            get
+            {
+                if (HttpContext.Current != null)
+                    return HttpContext.Current.Server.MapPath("~/data/RequestLogs/");
+                else
+                    return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data/RequestLogs/");
+            }
+        }
+        public static string LogErrorPath
+        {
+            get
+            {
+                if (HttpContext.Current != null)
+                    return HttpContext.Current.Server.MapPath("~/data/ErrorLogs/");
+                else
+                    return Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data/ErrorLogs/");
+            }
+        }
 
         public static string SignaturePath
         {

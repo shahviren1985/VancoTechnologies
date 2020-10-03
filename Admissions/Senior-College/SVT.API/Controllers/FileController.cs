@@ -24,25 +24,30 @@ namespace SVT.API.Controllers
         {
             try
             {
+                //string guid = Guid.NewGuid().ToString();
                 string folderName = (string)HttpContext.Current.Request.RequestContext.RouteData.Values["id"];
                 string subFolderName = (string)HttpContext.Current.Request.RequestContext.RouteData.Values["subid"];
                 string filePath = string.Empty;
+                
                 if (HttpContext.Current.Request.Files.AllKeys.Any())
                 {
+                    string fileName = string.Empty;
                     foreach (string file in HttpContext.Current.Request.Files)
                     {
                         var postedFile = HttpContext.Current.Request.Files[file];
                         if (postedFile != null && postedFile.ContentLength > 0)
                         {
-                            string path = System.Web.Hosting.HostingEnvironment.MapPath(@"~/" + folderName + "/" + subFolderName + "/");
+                            string path = System.Web.Hosting.HostingEnvironment.MapPath(@"~/data/temp/");
                             if (!Directory.Exists(path))
                             {
                                 Directory.CreateDirectory(path);
                             }
-                            filePath = path + Path.GetFileName(postedFile.FileName);
+                            string time = DateTime.Now.ToString("yyyy-MM-dd HH mm ss");
+                            fileName = folderName + "_" + Path.GetFileNameWithoutExtension(postedFile.FileName) + "_" + time.Replace(" ", "_") + Path.GetExtension(postedFile.FileName);
+                            filePath = path + folderName + "_" + Path.GetFileNameWithoutExtension(postedFile.FileName) + "_" + time.Replace(" ", "_") + Path.GetExtension(postedFile.FileName);
                             if (File.Exists(filePath))
                             {
-                                string archivePath = System.Web.Hosting.HostingEnvironment.MapPath(@"~/" + folderName + "/" + subFolderName + "/" + Path.GetFileNameWithoutExtension(postedFile.FileName) + "_" + DateTime.Now.ToString("yyyy-MM-dd HH mm ss") + Path.GetExtension(postedFile.FileName));
+                                string archivePath = System.Web.Hosting.HostingEnvironment.MapPath(@"~/data/PDF/" + folderName + "/" + Path.GetFileNameWithoutExtension(postedFile.FileName) + "_" + DateTime.Now.ToString("yyyy-MM-dd HH mm ss") + Path.GetExtension(postedFile.FileName));
                                 System.IO.File.Move(filePath, archivePath);
                             }
                             postedFile.SaveAs(filePath);
@@ -53,7 +58,7 @@ namespace SVT.API.Controllers
                         }
 
                     }
-                    return Request.CreateResponse(HttpStatusCode.OK, new BaseClass() { IsSuccess = true, SuccessMessage = "File saved successfully" });
+                    return Request.CreateResponse(HttpStatusCode.OK, new FileClass() { IsSuccess = true, FileType = folderName, File = fileName,  SuccessMessage = "File saved successfully" });
                 }
                 else
                 {

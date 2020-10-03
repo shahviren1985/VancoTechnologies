@@ -5,6 +5,9 @@
 const BASE_API_HOST = 'http://localhost:50076/api';
 const BASE_HOST = 'http://localhost:50076/';
 
+//const BASE_API_HOST = 'http://admissions.svt.edu.in/api';
+//const BASE_HOST = 'http://admissions.svt.edu.in/';
+
 let SPECIALISATION = ["Developmental Counselling", "Early Childhood care & Education", "Food, Nutrition and Dietetics", "Hospitality & Tourism Management", "Interior Design & Resource Management", "Mass Communication & Extension", "Textiles & Apparel Designing"]
 /* let CUT_OFF_LIST = [] */
 function login(data, successCb) {

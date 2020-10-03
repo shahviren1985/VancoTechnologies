@@ -1,22 +1,30 @@
-input[type="text"], 
-input[type="password"], 
-select,section.form-control,
-textarea, 
+input[type="text"],
+input[type="password"],
+select, section.form-control,
+textarea,
 textarea.form-control {
-	height: 44px !important;
+    height: 44px !important;
     margin: 0;
     padding: 0 10px;
     vertical-align: middle;
     background: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid #002147;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
     font-weight: 300;
     line-height: 44px;
     color: #3a3b3d !important;
-    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
-    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
-    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    -webkit-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
     text-transform: uppercase;
 }
     input[type="text"]:focus,
