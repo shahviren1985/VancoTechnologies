@@ -1,0 +1,78 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+<div id="content-wrapper">
+	<div class="container-fluid">
+		
+		<!-- Breadcrumbs-->
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item">
+				<a href="<?php echo base_url('staff/staffs'); ?>">Home</a>
+			</li>
+			<li class="breadcrumb-item">Approve Elective</li>
+		</ol>
+			 		
+		<div class="card1">
+			<div class="card-header" id="approve_elective">
+				Approve Elective
+			</div>
+			<div class="card-body">
+				<form method="POST" id="approve_elective_form">
+				<input type="hidden" name="department" id="department" value="<?php echo $staff_details[0]->department; ?>">
+				<input type="hidden" name="username" id="username" value="<?php echo $this->session->userdata('userID'); ?>">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="form-group">
+								<label for="program" class="control-label">Program</label><br>
+								<input type="radio" name="program" id="program" value="Regular" checked>
+								<label for="regular" class="form-check-label">Regular</label> &nbsp;
+								<input type="radio" name="program" id="program" value="Honors">
+								<label for="Honors" class="form-check-label">Honors</label>
+							</div>
+						</div>	
+						<div class="col-sm-3">
+							<div class="form-group">
+								<label for="sem" class="control-label">Semester</label>
+								<select name="sem" id="sem" class="form-control">
+									<option selected>Select Semester</option>
+									<option value="1" selected>1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+								</select>
+							</div>
+						</div>	
+						<div class="col-sm-3">
+							<div class="form-group">
+								<label for="year" class="control-label">Year</label>
+								<select name="year" class="form-control">
+									<option selected>Select Year</option>
+									<?php  
+										$cur_year = date('Y');
+										$next_year = $cur_year + 1;
+										for($i=2019; $i <= $next_year; $i++){
+											echo '<option value='.$i.'>'.$i.'</option>'; 
+										}
+									?>	
+								</select>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<br>
+							<input type="submit" class="btn btn-primary" name="submit" value="Submit">
+						</div>
+					</div>
+				</form>
+				<p>&nbsp;</p>
+				<div class="iframe-container">
+					<?php
+					 $username = $this->session->userdata('userID'); 
+					//echo "<pre>"; print_r($staff_details); echo "</pre>";	
+						$department = $staff_details[0]->department;
+					 ?>
+					<iframe src="https://vancotech.com/Exams/bachelors/ui/ApproveElective.html?specialization=<?php echo $department; ?>&semester=1&year=2019&program=regular&approvedby=<?php echo $username; ?>" width="100%" height="500px"></iframe>  
+				</div>
+			</div>
+		</div>	
+	</div>
+<!-- /.container-fluid -->  

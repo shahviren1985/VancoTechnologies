@@ -1,0 +1,101 @@
+/* custom style for student */
+.privacy_links {
+    margin-left: 20px;
+}
+.privacy_links a{
+	margin-right:10px;
+}
+.show {
+	display: block !important;
+}
+
+.mb-20 {
+	margin-bottom: 20px !important;
+}
+
+.aliceblue {
+	background: aliceblue;
+}
+
+#userDropdown {
+	color: #343a40;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+.accordion .card{margin-bottom:10px;}
+.accordion .card-header > a{display:block;padding: .75rem 1.25rem;cursor:pointer;}
+.toggleCard{float:right;margin-top:-5px;display:inline-block}
+.accordion .card-header {padding:0px;}
+.list_files .fas{
+	font-size: 48px;
+	display: block;
+	color: #CB0606;
+	margin-bottom:10px;
+}
+.list_files a{
+	padding: 50px 10px 40px;
+    display: block;
+    text-align: center;
+    background: #fff;	
+    color: #000;
+	box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+	outline: 1px solid;
+    outline-offset: -5px;
+    outline-color: #999;
+	font-weight: 500;
+	text-transform: uppercase;
+	height:100%;
+}
+.list_files > div{margin-bottom:25px;}
+.bg-dark{background:#ddd !important;}
+.navbar-dark .navbar-brand{color:#333 !important;}
+select option:disabled {
+    background-color: #e9ecef;
+}
+input[type="radio"]:disabled {
+    background-color: #e9ecef;
+}
+.price_box{
+	background:#e9ecef;
+	padding:5px 10px;
+}
+.required-mark{color:#f00;}
+.hiddenrow{
+	display:none;
+}
+.leave_head{
+	margin-bottom:20px;
+}
+td.disabled.day {
+    opacity: .5;
+}
+.editrequest{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.isdisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none;
+  pointer-events: none;
+}
+.text_disabled input[type="submit"]{visibility:hidden;}
+.edit_data{display:none;}
+#edit_data{float:right;display:inline-block;color:#007bff;text-decoration:underline;cursor:pointer;}
+.no-balance{
+	padding:20% 0;
+}
+.subheading-info{
+	font-size:20px;
+	margin-top:0;
+	margin-bottom:30px;
+}
+@media only screen and (max-width:441px){
+	.privacy_links {
+		margin-left: 0;
+		display: block;
+		margin-top: 20px;
+	}
+}

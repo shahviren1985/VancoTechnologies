@@ -1,0 +1,80 @@
+
+@media only screen and (max-width:1040px){
+	
+	.text-head h3{
+		font-size:28px;
+	}
+	.text-head  h4{
+		font-size: 20px;
+	}
+	.text-head p {
+		font-size: 16px;
+	}
+	.form_grid h4 {
+		font-size: 20px;
+		padding-bottom: 5px;
+	}
+	
+}
+@media only screen and (max-width:991px){
+	.contspace{
+		padding:0;
+	}
+}
+
+@media only screen and (max-width:1040px){
+	.text-head h3 {
+		font-size: 24px;
+	}
+	.text-head h4 {
+		font-size: 18px;
+	}
+	.form_grid h4{
+		font-size:18px;
+	}
+}
+@media only screen and (max-width:767px){
+	.logo img{
+		display:block;
+		margin:0 auto;
+		width: 110px;
+	}
+	.row.maintop {
+		-webkit-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+	}
+	.form_grid h4{
+		padding-bottom:10px;
+	}
+	.office_grid{
+		border-right:none;
+	}
+	.office_sec{
+		border:none;
+	}
+	.appropriate {
+		margin-top: 20px;
+	}
+	.form_grid  .form-group{
+		margin-bottom:5px;
+	}
+	.radio_flex{
+		display:block;
+	}
+}
+@media only screen and (max-width:484px){
+	.form_grid .form-check-inline {
+		margin-right: 0;
+		width: 100%;
+	}
+	.form_grid .examination .form-control{
+		width:100%;
+	}
+}
+
+
+
+
+
+
+

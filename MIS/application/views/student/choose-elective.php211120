@@ -1,0 +1,152 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
+<div id="content-wrapper">
+	<div class="container-fluid">
+		
+		<!-- Breadcrumbs-->
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item">
+				<a href="<?php echo base_url('student/home'); ?>">Home</a>
+			</li>
+			<li class="breadcrumb-item">Choose Elective</li>
+		</ol>
+			 		
+		<div class="card">
+			<div class="card-header" id="parent_feedback">
+				Choose Elective
+			</div>
+			<div class="card-body">
+				<?php /*$course = $course_details[0]->course_name;
+						if($course == ""){
+							$course = "honours";
+						}
+					<iframe src="https://vancotech.com/Exams/bachelors/ui/ChooseElective.html?crn=<?php echo $user_details[0]->userID; ?>&specialisation=<?php echo $user_details[0]->specialization; ?>&course=<?php echo $course; ?>&year=<?php echo $user_details[0]->course_name; ?>" width="100%" height="500px"></iframe> */
+					
+					//echo '<pre>'; print_r($user_details); echo '</pre>';
+					//echo '<pre>'; print_r($course_details); echo '</pre>';
+					
+					$course = $course_details[0]->course_name;
+					if($course == ""){
+						$course = "Regular";
+					}
+					
+					if($user_details[0]->first_name == ""){
+						$fname = "";
+					}else{
+						$fname = $user_details[0]->first_name;
+					}
+					
+					if($user_details[0]->middle_name == ""){
+						$mname = "";
+					}else{
+						$mname = $user_details[0]->middle_name;
+					}
+					
+					if($user_details[0]->last_name == ""){
+						$lname = '';
+					}else{
+						$lname = $user_details[0]->last_name;
+					}
+					
+					$name = $fname.' '.$mname.' '.$lname;
+					$month_list1 = array('Apr','May','Jun','Jul','Aug','Sep');
+					$month_list2 = array('Oct','Nov','Dec','Jan','Feb','Mar');
+					//$month_list2 = array('Apr','May','Jun','Jul','Aug','Sep');
+					$cur_year = date('Y');
+					$cur_month = date('M');
+					$course_name = $user_details[0]->course_name;
+					if($course_name == 'FY'){
+						if(in_array($cur_month, $month_list1)){
+							$sem = 1;
+							$year = date('Y'); 	
+						}elseif(in_array($cur_month, $month_list2)){
+							$sem = 2;
+							$year = date('Y')+1;
+						}
+					}elseif($course_name == 'SY'){
+						if(in_array($cur_month, $month_list1)){
+							$sem = 3;
+							$year = date('Y'); 	
+						}elseif(in_array($cur_month, $month_list2)){
+							$sem = 4;
+							$year = date('Y'); 	
+							//$year = date('Y')+1;
+						}
+					}elseif($course_name == 'TY'){
+						if(in_array($cur_month, $month_list1)){
+							$sem = 5;
+							$year = date('Y'); 	
+						}elseif(in_array($cur_month, $month_list2)){
+							$sem = 6;
+							$year = date('Y'); 	
+							//$year = date('Y')+1;
+						}
+					}
+					/* $difference = $cur_year - $admission_year;
+					if($difference == 0){
+						if(in_array($cur_month, $month_list1)){
+							$sem = 1;
+							$year = date('Y'); 	
+						}else{
+							$sem = 2;
+							$year = date('Y')+1;
+						}
+					}elseif($difference == 1){
+						if(in_array($cur_month, $month_list1)){
+							$sem = 3;
+							$year = date('Y'); 	
+						}else{
+							$sem = 4;
+							$year = date('Y')+1;
+						}
+					}elseif($difference == 2){
+						if(in_array($cur_month, $month_list1)){
+							$sem = 5;
+							$year = date('Y'); 	
+						}else{
+							$sem = 6;	
+							$year = date('Y')+1;
+						}
+					}elseif($difference == 3){
+						$sem = 6;	
+						$year = date('Y');
+					} */			
+				?>
+				<?php if($course_name == 'FY')
+				{
+				?>
+    				<span>Choose Semester for General Electives</span>
+    				<select id="ddSemester" onchange="Loadiframe();">
+                        <option value="-1" selected="selected">--Select Semester--</option>
+                        <option value="3">Semester 3</option>
+                        <option value="4">Semester 4</option>
+                        <option value="5">Semester 5</option>
+                        <option value="6">Semester 6</option>
+                    </select>
+                <?php } ?>
+				<?php if($course_name == 'SY')
+				{
+				?>
+				    <span>Choose Semester Discipline Specific Electives (DSE)</span>
+				    <select id="ddSemester" onchange="Loadiframe();">
+                        <option value="-1" selected="selected">--Select Semester--</option>
+                        <option value="3">Semester 3</option>
+                        <option value="4">Semester 4</option>
+                        <option value="5">Semester 5</option>
+                        <option value="6">Semester 6</option>
+                    </select>
+				<?php } ?>
+				<br/><br/>
+				<iframe style="display: none" src="https://vancotech.com/Exams/bachelors/ui/SelectElective.html?program=<?php echo $course; ?>&specialization=<?php echo $course_details[0]->short_form; ?>&name=<?php echo $name; ?>&rollNumber=<?php echo $user_details[0]->roll_number; ?>&crn=<?php echo $user_details[0]->userID; ?>&year=<?php echo $year; ?>&semester=<?php echo $sem; ?>" width="100%" height="500px" id="iframe"></iframe>
+
+			</div>
+		</div>	
+	</div>
+	<script>
+	    function Loadiframe(){
+	        var semester = $("#ddSemester").children("option:selected").val();
+	        var path = $("#iframe").attr("src");
+	        path = path.substring(0,path.lastIndexOf("=")+1);
+	        $("#iframe").attr("src",path+semester).show();
+	    }
+	</script>
+<!-- /.container-fluid -->  

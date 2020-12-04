@@ -1,0 +1,94 @@
+<?php defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Pagesstaff extends CI_Controller {
+
+	public function __construct() {
+		parent::__construct();
+		if( $this->session->userdata("logged_in") == null || $this->session->userdata("id") == null || $this->session->userdata("role") != '4') {
+			redirect(site_url(), 'refresh');
+        }
+		$this->load->library('form_validation');
+		
+	}
+
+	public function documents() {
+		$this->load->model('staff/staff');
+		$userID = $this->session->userdata("userID");
+		$data['staff_details'] = $this->staff->get_entry( $userID );
+		$this->load->view('staff/common/header', $data);
+		$this->load->view('staff/documents');
+		$this->load->view('staff/common/footer');
+	}
+	
+	public function view_attendance() {
+		$this->load->model('staff/staff');
+		$userID = $this->session->userdata("userID");
+		$data['staff'] = $this->staff->get_entry( $userID );
+		$data['staff_details'] = $this->staff->get_entry( $userID );
+		$this->load->view('staff/common/header', $data);
+		$this->load->view('staff/view-attendance',$data);
+		$this->load->view('staff/common/footer');
+	}
+	
+	public function approve_elective() {
+/* 		$this->load->model('staff/staff');
+		$userID = $this->session->userdata("userID");
+		$data['staff'] = $this->staff->get_entry( $userID ); */
+		$this->load->model('staff/staff');
+		$userID = $this->session->userdata("userID");
+		$data['staff_details'] = $this->staff->get_entry( $userID );
+		$this->load->view('staff/common/header', $data);
+		$this->load->view('staff/approve-elective');
+		$this->load->view('staff/common/footer');
+	}
+	
+	public function leave_application() {
+		$this->load->model('staff/staff');
+		$userID = $this->session->userdata("userID");
+		$data['staff_details'] = $this->staff->get_entry( $userID );
+		$employee_code = $data['staff_details'][0]->employee_code;
+		$data['leave_request'] = $this->staff->get_leave_request($employee_code);
+		$data['request'] = $this->staff->get_request_by_id($userID);
+		$this->load->view('staff/common/header', $data);
+		$this->load->view('staff/leave_application', $data);
+		$this->load->view('staff/common/footer');
+	}	
+	
+	public function leave_request_list() {
+		$this->load->model('staff/staff');
+		$userID = $this->session->userdata("userID");
+		$data['staff_details'] = $this->staff->get_entry($userID );
+		$role = $data['staff_details'][0]->role;
+		$dept = $data['staff_details'][0]->department;
+		if($role == 'HOD'){
+			$data['staff'] = $this->staff->get_staff_by_department($dept);
+		}else{
+			$data['leave_request'] = $this->staff->get_all_leave_details();
+		}
+		$employee_code = $data['staff_details'][0]->employee_code;
+		$data['request'] = $this->staff->get_request_by_id($userID);
+		$this->load->view('staff/common/header', $data);
+		$this->load->view('staff/leave_request_list', $data);
+		$this->load->view('staff/common/footer');
+	}
+	
+/* 	public function feedback() {
+		$this->load->view('student/common/header');
+		$this->load->view('student/feedback');
+		$this->load->view('student/common/footer');
+	}
+	
+	public function performance() {
+		$this->load->model('student/student');
+		$userID = $this->session->userdata("userID");
+		$data['student'] = $this->student->get_entry( $userID );
+		$this->load->view('student/common/header');
+		$this->load->view('student/performance',$data);
+		$this->load->view('student/common/footer');
+	}
+	public function applications() {
+		$this->load->view('student/common/header');
+		$this->load->view('student/applications');
+		$this->load->view('student/common/footer');
+	} */
+}
